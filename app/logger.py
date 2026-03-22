@@ -1,21 +1,24 @@
+from __future__ import annotations
+
 import logging
-from typing import Optional
+import sys
 
 
-def get_logger(name: Optional[str] = None) -> logging.Logger:
-    logger = logging.getLogger(name if name else "stock_monitor")
+def get_logger(name: str) -> logging.Logger:
+    logger = logging.getLogger(name)
 
-    if not logger.handlers:
-        logger.setLevel(logging.INFO)
+    if logger.handlers:
+        return logger
 
-        formatter = logging.Formatter(
-            fmt="%(asctime)s | %(levelname)s | %(name)s | %(message)s"
-        )
+    logger.setLevel(logging.INFO)
 
-        console_handler = logging.StreamHandler()
-        console_handler.setFormatter(formatter)
+    handler = logging.StreamHandler(sys.stdout)
+    formatter = logging.Formatter(
+        "[%(asctime)s] [%(levelname)s] [%(name)s] %(message)s"
+    )
+    handler.setFormatter(formatter)
 
-        logger.addHandler(console_handler)
-        logger.propagate = False
+    logger.addHandler(handler)
+    logger.propagate = False
 
     return logger

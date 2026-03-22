@@ -2,7 +2,10 @@ from __future__ import annotations
 
 from fastapi import FastAPI, Request
 
+from app.storage.user_store import UserStore
+
 app = FastAPI()
+user_store = UserStore()
 
 
 @app.get("/")
@@ -24,7 +27,10 @@ async def webhook(request: Request) -> dict[str, str]:
         event_type = event.get("type")
 
         if user_id:
-            print(f"[FOUND USER ID] event_type={event_type} userId={user_id}")
+            is_new = user_store.add_user(user_id)
+            print(
+                f"[FOUND USER ID] event_type={event_type} userId={user_id} new_user={is_new}"
+            )
         else:
             print(f"[NO USER ID] event_type={event_type} source={source}")
 

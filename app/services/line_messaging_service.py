@@ -1,9 +1,10 @@
 from __future__ import annotations
 
-from typing import Optional
+from typing import Any
 
 import requests
 
+from app.config import settings
 from app.logger import get_logger
 
 logger = get_logger(__name__)
@@ -14,11 +15,8 @@ class LineMessagingServiceError(Exception):
 
 
 class LineMessagingService:
-    """
-    Send messages via LINE Messaging API push message endpoint.
-    """
-
     PUSH_URL = "https://api.line.me/v2/bot/message/push"
+    REPLY_URL = "https://api.line.me/v2/bot/message/reply"
     DEFAULT_TIMEOUT_SECONDS = 10
 
     def __init__(
@@ -29,34 +27,39 @@ class LineMessagingService:
         self.channel_access_token = channel_access_token.strip()
         self.timeout_seconds = timeout_seconds
 
-    def send_text_message(self, to_user_id: str, message: str) -> bool:
-        """
-        Send a text push message to a LINE user.
-
-        Args:
-            to_user_id: LINE user ID
-            message: Message text
-
-        Returns:
-            True if successful
-
-        Raises:
-            LineMessagingServiceError
-        """
+    def _get_headers(self) -> dict[str, str]:
         if not self.channel_access_token:
             raise LineMessagingServiceError("LINE channel access token is empty.")
 
-        if not to_user_id or not to_user_id.strip():
-            raise LineMessagingServiceError("LINE target user ID is empty.")
-
-        if not message or not message.strip():
-            raise LineMessagingServiceError("Message is empty.")
-
-        headers = {
+        return {
             "Authorization": f"Bearer {self.channel_access_token}",
             "Content-Type": "application/json",
         }
 
+    def _post(self, url: str, payload: dict[str, Any]) -> bool:
+        try:
+            response = requests.post(
+                url,
+                headers=self._get_headers(),
+                json=payload,
+                timeout=self.timeout_seconds,
+            )
+        except requests.RequestException as exc:
+            logger.error(f"LINE API request error: {exc}")
+            raise LineMessagingServiceError(str(exc)) from exc
+
+        if response.status_code >= 400:
+            logger.error(
+                "LINE API request failed. "
+                f"status={response.status_code}, body={response.text}"
+            )
+            raise LineMessagingServiceError(
+                f"LINE API request failed with status {response.status_code}"
+            )
+
+        return True
+
+    def push_text_message(self, to_user_id: str, message: str) -> bool:
         payload = {
             "to": to_user_id,
             "messages": [
@@ -66,37 +69,29 @@ class LineMessagingService:
                 }
             ],
         }
+        return self._post(self.PUSH_URL, payload)
 
-        logger.info("Sending LINE Messaging API push message to user_id=%s", to_user_id)
+    def reply_text_message(self, reply_token: str, message: str) -> bool:
+        payload = {
+            "replyToken": reply_token,
+            "messages": [
+                {
+                    "type": "text",
+                    "text": message,
+                }
+            ],
+        }
+        return self._post(self.REPLY_URL, payload)
 
-        try:
-            response = requests.post(
-                self.PUSH_URL,
-                headers=headers,
-                json=payload,
-                timeout=self.timeout_seconds,
-            )
-        except requests.RequestException as exc:
-            logger.exception("LINE Messaging API request failed: %s", exc)
-            raise LineMessagingServiceError(
-                f"LINE Messaging API request failed: {exc}"
-            ) from exc
 
-        if response.status_code not in (200, 201):
-            logger.error(
-                "LINE Messaging API returned non-success status: %s, body=%s",
-                response.status_code,
-                response.text,
-            )
-            raise LineMessagingServiceError(
-                f"LINE Messaging API failed with status {response.status_code}: {response.text}"
-            )
+line_messaging_service = LineMessagingService(
+    channel_access_token=settings.line_channel_access_token
+)
 
-        logger.info("LINE Messaging API push message sent successfully.")
-        return True
 
-    def send_stock_report(self, to_user_id: str, report_text: str) -> bool:
-        """
-        Send stock report via LINE Messaging API.
-        """
-        return self.send_text_message(to_user_id=to_user_id, message=report_text)
+def push_text(to_user_id: str, message: str) -> bool:
+    return line_messaging_service.push_text_message(to_user_id, message)
+
+
+def reply_text(reply_token: str, message: str) -> bool:
+    return line_messaging_service.reply_text_message(reply_token, message)
