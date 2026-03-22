@@ -115,7 +115,7 @@ class StockProvider:
             previous_close=self._to_float(self._safe_get(info, "previousClose")),
             trailing_pe=self._to_float(self._safe_get(info, "trailingPE")),
             forward_pe=self._to_float(self._safe_get(info, "forwardPE")),
-            dividend_yield=self._normalize_ratio(self._safe_get(info, "dividendYield")),
+            dividend_yield=self._to_float(self._safe_get(info, "dividendYield")),
             roe=self._normalize_ratio(self._safe_get(info, "returnOnEquity")),
             gross_margin=self._normalize_ratio(self._safe_get(info, "grossMargins")),
             operating_margin=self._normalize_ratio(self._safe_get(info, "operatingMargins")),
