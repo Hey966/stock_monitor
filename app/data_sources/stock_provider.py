@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from dataclasses import dataclass, asdict
+from dataclasses import asdict, dataclass
 from datetime import datetime
 from typing import Any, Optional
 
@@ -92,43 +92,63 @@ class StockProvider:
             StockDataFetchError: If Yahoo Finance request fails.
         """
         normalized_symbol = self._normalize_symbol(symbol)
-        logger.info("Fetching stock data for symbol=%s normalized=%s", symbol, normalized_symbol)
+        logger.info(
+            "Fetching stock data for symbol=%s normalized=%s",
+            symbol,
+            normalized_symbol,
+        )
 
         try:
             ticker = yf.Ticker(normalized_symbol)
             info = ticker.info
         except Exception as exc:
             logger.exception("Failed to fetch stock data from Yahoo Finance: %s", exc)
-            raise StockDataFetchError(f"Failed to fetch data for symbol '{normalized_symbol}'.") from exc
+            raise StockDataFetchError(
+                f"Failed to fetch data for symbol '{normalized_symbol}'."
+            ) from exc
 
         if not info or self._is_invalid_info(info):
-            logger.warning("Invalid or empty stock info returned for symbol=%s", normalized_symbol)
-            raise StockNotFoundError(f"Stock '{normalized_symbol}' not found or unavailable.")
+            logger.warning(
+                "Invalid or empty stock info returned for symbol=%s",
+                normalized_symbol,
+            )
+            raise StockNotFoundError(
+                f"Stock '{normalized_symbol}' not found or unavailable."
+            )
 
         stock_data = StockData(
             symbol=symbol,
             ticker=normalized_symbol,
-            company_name=self._safe_get(info, "longName") or self._safe_get(info, "shortName"),
+            company_name=self._safe_get(info, "longName")
+            or self._safe_get(info, "shortName"),
             currency=self._safe_get(info, "currency"),
             market_cap=self._to_float(self._safe_get(info, "marketCap")),
             current_price=self._extract_current_price(info),
             previous_close=self._to_float(self._safe_get(info, "previousClose")),
             trailing_pe=self._to_float(self._safe_get(info, "trailingPE")),
             forward_pe=self._to_float(self._safe_get(info, "forwardPE")),
-            dividend_yield=self._to_float(self._safe_get(info, "dividendYield")),
+            dividend_yield=self._normalize_ratio(self._safe_get(info, "dividendYield")),
             roe=self._normalize_ratio(self._safe_get(info, "returnOnEquity")),
             gross_margin=self._normalize_ratio(self._safe_get(info, "grossMargins")),
-            operating_margin=self._normalize_ratio(self._safe_get(info, "operatingMargins")),
+            operating_margin=self._normalize_ratio(
+                self._safe_get(info, "operatingMargins")
+            ),
             profit_margin=self._normalize_ratio(self._safe_get(info, "profitMargins")),
             debt_to_equity=self._to_float(self._safe_get(info, "debtToEquity")),
             current_ratio=self._to_float(self._safe_get(info, "currentRatio")),
             quick_ratio=self._to_float(self._safe_get(info, "quickRatio")),
             revenue_growth=self._normalize_ratio(self._safe_get(info, "revenueGrowth")),
-            earnings_growth=self._normalize_ratio(self._safe_get(info, "earningsGrowth")),
-            return_on_assets=self._normalize_ratio(self._safe_get(info, "returnOnAssets")),
+            earnings_growth=self._normalize_ratio(
+                self._safe_get(info, "earningsGrowth")
+            ),
+            return_on_assets=self._normalize_ratio(
+                self._safe_get(info, "returnOnAssets")
+            ),
             fifty_two_week_high=self._to_float(self._safe_get(info, "fiftyTwoWeekHigh")),
             fifty_two_week_low=self._to_float(self._safe_get(info, "fiftyTwoWeekLow")),
-            regular_market_volume=self._to_float(self._safe_get(info, "regularMarketVolume")),
+            regular_market_volume=self._to_float(
+                self._safe_get(info, "regularMarketVolume")
+            ),
             average_volume=self._to_float(self._safe_get(info, "averageVolume")),
             fetched_at=datetime.utcnow().isoformat(),
         )
@@ -143,7 +163,7 @@ class StockProvider:
     def get_price_history(
         self,
         symbol: str,
-        period: str = "10y",
+        period: str = "1y",
         interval: str = "1d",
         auto_adjust: bool = False,
     ) -> pd.DataFrame:
@@ -152,7 +172,7 @@ class StockProvider:
 
         Args:
             symbol: Stock symbol, e.g. '2330', 'AAPL'
-            period: e.g. '1y', '5y', '10y'
+            period: e.g. '1mo', '6mo', '1y', '5y'
             interval: e.g. '1d', '1wk', '1mo'
             auto_adjust: Whether to auto adjust prices
 
@@ -197,6 +217,22 @@ class StockProvider:
         )
         return history
 
+    def get_latest_close_price(self, symbol: str) -> float:
+        """
+        Get latest close price from recent history.
+        More stable fallback than relying only on ticker.info.
+        """
+        history = self.get_price_history(symbol=symbol, period="5d", interval="1d")
+
+        if "Close" not in history.columns:
+            raise StockDataFetchError(f"Missing Close column for symbol '{symbol}'.")
+
+        close_series = history["Close"].dropna()
+        if close_series.empty:
+            raise StockDataFetchError(f"No close price available for symbol '{symbol}'.")
+
+        return float(close_series.iloc[-1])
+
     def _normalize_symbol(self, symbol: str) -> str:
         """
         Normalize ticker symbol.
@@ -236,11 +272,16 @@ class StockProvider:
 
         Example:
         0.356 -> 35.6
+        3.5   -> 3.5
         """
         if value is None:
             return None
+
         try:
-            return float(value) * 100
+            value = float(value)
+            if value > 1:
+                return value
+            return value * 100
         except (TypeError, ValueError):
             return None
 

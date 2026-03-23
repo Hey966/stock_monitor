@@ -5,4 +5,4 @@ REM 切換資料夾
 cd /d C:\Users\jack0\Desktop\stock_monitor
 
 REM 執行程式
-python -m app.main
+python run.py

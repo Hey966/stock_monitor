@@ -7,6 +7,7 @@ from app.api.routes.monitor import router as monitor_router
 from app.api.routes.webhook import router as webhook_router
 from app.config import settings
 from app.logger import get_logger
+from app.scheduler.job_manager import start_scheduler, stop_scheduler
 
 logger = get_logger(__name__)
 
@@ -21,10 +22,14 @@ def create_app() -> FastAPI:
     @app.on_event("startup")
     async def on_startup() -> None:
         logger.info("Application startup")
+        if settings.enable_scheduler:
+            start_scheduler()
 
     @app.on_event("shutdown")
     async def on_shutdown() -> None:
         logger.info("Application shutdown")
+        if settings.enable_scheduler:
+            stop_scheduler()
 
     return app
 
