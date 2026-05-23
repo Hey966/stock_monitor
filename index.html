@@ -12,15 +12,26 @@
       <div>
         <p class="eyebrow">Stock Analysis Assistant</p>
         <h1>股票短線分析助手</h1>
-        <p class="subtitle">用「趨勢、量、位置、停損」快速整理買點、賣點與風險。</p>
+        <p class="subtitle">把技術分析、主力行為、進出場計畫整理成一套新手能用的看盤流程。</p>
       </div>
       <div class="stock-input-card">
         <label for="stockName">股票名稱 / 代號</label>
         <input id="stockName" value="2330 台積電" />
+        <div class="mode-switch" data-field="mode">
+          <button class="active" data-value="basic">新手模式</button>
+          <button data-value="advanced">進階模式</button>
+        </div>
       </div>
     </section>
 
-    <section class="grid cards">
+    <nav class="section-tabs">
+      <a href="#basic">基本判斷</a>
+      <a href="#indicators">指標教學</a>
+      <a href="#mainforce">主力提醒</a>
+      <a href="#plan">進出場</a>
+    </nav>
+
+    <section id="basic" class="grid cards">
       <article class="card">
         <h2>1. 趨勢</h2>
         <div class="button-group" data-field="trend">
@@ -45,16 +56,18 @@
         <div class="button-group" data-field="position">
           <button class="active" data-value="pullback">回測不破</button>
           <button data-value="support">靠近支撐</button>
+          <button data-value="breakoutFail">突破失敗</button>
           <button data-value="chase">高檔追價</button>
         </div>
       </article>
 
       <article class="card">
-        <h2>4. 風險</h2>
-        <div class="button-group" data-field="risk">
-          <button data-value="low">低</button>
-          <button class="active" data-value="medium">中</button>
-          <button data-value="high">高</button>
+        <h2>4. K棒訊號</h2>
+        <div class="button-group" data-field="candle">
+          <button class="active" data-value="normalCandle">普通</button>
+          <button data-value="longRed">長紅K</button>
+          <button data-value="upperShadow">長上影線</button>
+          <button data-value="longBlack">高檔長黑</button>
         </div>
       </article>
     </section>
@@ -68,7 +81,69 @@
       <div id="notes" class="notes"></div>
     </section>
 
-    <section class="plan-card">
+    <section id="indicators" class="indicator-card advanced-zone">
+      <div class="section-title">
+        <div>
+          <p class="eyebrow small">Indicator Guide</p>
+          <h2>指標教學與判斷</h2>
+        </div>
+        <p>指標只當輔助，不要單靠 KD、RSI、MACD 買賣。</p>
+      </div>
+
+      <div class="grid indicator-grid">
+        <article class="mini-card">
+          <h3>均線 MA</h3>
+          <div class="button-group" data-field="ma">
+            <button class="active" data-value="maBull">黃線 &gt; 藍線 &gt; 紫線</button>
+            <button data-value="maMixed">均線糾結</button>
+            <button data-value="maBear">黃線 &lt; 藍線 &lt; 紫線</button>
+          </div>
+        </article>
+
+        <article class="mini-card">
+          <h3>RSI</h3>
+          <div class="button-group" data-field="rsi">
+            <button data-value="rsiHot">RSI &gt; 70 偏熱</button>
+            <button class="active" data-value="rsiMid">30~70 中性</button>
+            <button data-value="rsiCold">RSI &lt; 30 偏冷</button>
+          </div>
+        </article>
+
+        <article class="mini-card">
+          <h3>KD</h3>
+          <div class="button-group" data-field="kd">
+            <button class="active" data-value="kdUp">K 向上穿 D</button>
+            <button data-value="kdDown">K 向下跌破 D</button>
+            <button data-value="kdHighTurn">高檔下彎</button>
+            <button data-value="kdHighStrong">高檔鈍化</button>
+          </div>
+        </article>
+
+        <article class="mini-card">
+          <h3>MACD</h3>
+          <div class="button-group" data-field="macd">
+            <button class="active" data-value="macdExpand">紅柱放大</button>
+            <button data-value="macdShrink">紅柱縮小</button>
+            <button data-value="macdGreen">綠柱放大</button>
+          </div>
+        </article>
+      </div>
+
+      <div id="indicatorNotes" class="notes indicator-notes"></div>
+    </section>
+
+    <section id="mainforce" class="mainforce-card advanced-zone">
+      <div class="section-title">
+        <div>
+          <p class="eyebrow small">Main Force Warnings</p>
+          <h2>主力與假訊號提醒</h2>
+        </div>
+        <p>把當沖觀念加入：不是看到型態就買，而是看資金行為。</p>
+      </div>
+      <div id="warningList" class="warning-list"></div>
+    </section>
+
+    <section id="plan" class="plan-card">
       <h2>進出場計畫</h2>
       <div class="grid plan-inputs">
         <label>預計買點
