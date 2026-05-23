@@ -3,18 +3,20 @@ const BACKEND_URL = "https://stock-monitor-b6d6.onrender.com";
 const pageTitles = {
   dashboard: "總覽",
   quote: "即時報價",
+  watchlist: "自選股",
   analysis: "分析工具",
   plan: "交易計畫",
   learn: "學習筆記",
 };
 
 const state = {
+  currentQuote: null,
   mode: "basic",
   trend: "up",
-  volume: "breakout",
-  position: "pullback",
+  volume: "normal",
+  position: "support",
   candle: "normalCandle",
-  ma: "maBull",
+  ma: "maMixed",
   rsi: "rsiMid",
   kd: "kdUp",
   macd: "macdExpand",
@@ -60,9 +62,47 @@ function switchPage(page) {
   window.scrollTo(0, 0);
 }
 
+function setActiveChoice(field, value) {
+  state[field] = value;
+  document.querySelectorAll(`[data-field="${field}"] button`).forEach((btn) => {
+    btn.classList.toggle("active", btn.dataset.value === value);
+  });
+}
+
+function syncStateFromQuote(data) {
+  const changeRate = Number(data.change_rate || 0);
+  const volumeRatio = Number(data.volume_ratio || 0);
+  const close = Number(data.close || 0);
+  const open = Number(data.open || 0);
+  const high = Number(data.high || 0);
+  const low = Number(data.low || 0);
+
+  if (changeRate > 1) setActiveChoice("trend", "up");
+  else if (changeRate < -1) setActiveChoice("trend", "down");
+  else setActiveChoice("trend", "side");
+
+  if (volumeRatio >= 1.5 && changeRate > 0) setActiveChoice("volume", "breakout");
+  else if (volumeRatio >= 1.5 && changeRate <= 0.5) setActiveChoice("volume", "highNoUp");
+  else if (volumeRatio < 0.8) setActiveChoice("volume", "low");
+  else setActiveChoice("volume", "normal");
+
+  if (changeRate >= 3) setActiveChoice("position", "chase");
+  else if (close && low && close <= low * 1.01) setActiveChoice("position", "support");
+  else if (close && high && close < high * 0.995 && changeRate > 0) setActiveChoice("position", "breakoutFail");
+  else setActiveChoice("position", "pullback");
+
+  if (close < open && Math.abs(changeRate) > 1.5) setActiveChoice("candle", "longBlack");
+  else if (high && close && high > close * 1.01) setActiveChoice("candle", "upperShadow");
+  else if (close > open && changeRate > 1) setActiveChoice("candle", "longRed");
+  else setActiveChoice("candle", "normalCandle");
+}
+
 function calculateScore() {
   let score = 0;
   const notes = [];
+  if (!state.currentQuote) notes.push("尚未查詢股票：請先輸入股票代號，所有功能才會依照同一檔股票更新。");
+  if (state.currentQuote) notes.push(`目前分析標的：${state.currentQuote.code} ${state.currentQuote.name || ""}，現價 ${state.currentQuote.close ?? "-"}，漲跌幅 ${state.currentQuote.change_rate ?? "-"}%。`);
+
   if (state.trend === "up") score += 2;
   if (state.trend === "down") score -= 2;
   notes.push(labels[state.trend]);
@@ -79,17 +119,20 @@ function calculateScore() {
   if (state.candle === "upperShadow") score -= 2;
   if (state.candle === "longBlack") score -= 3;
   notes.push(labels[state.candle]);
-  if (state.mode === "advanced") {
-    if (state.ma === "maBull") score += 1;
-    if (state.ma === "maBear") score -= 1;
-    if (state.rsi === "rsiHot" || state.rsi === "rsiCold") score -= 1;
-    if (state.kd === "kdUp") score += 1;
-    if (state.kd === "kdDown" || state.kd === "kdHighTurn") score -= 1;
-    if (state.macd === "macdExpand") score += 1;
-    if (state.macd === "macdShrink") score -= 1;
-    if (state.macd === "macdGreen") score -= 2;
-  }
   return { score, notes };
+}
+
+function updateTitles() {
+  const q = state.currentQuote;
+  const name = q ? `${q.code} ${q.name || ""}` : "請先查詢一檔股票";
+  const currentStockTitle = document.querySelector("#currentStockTitle");
+  const currentStockDesc = document.querySelector("#currentStockDesc");
+  const analysisTitle = document.querySelector("#analysisTitle");
+  const planTitle = document.querySelector("#planTitle");
+  if (currentStockTitle) currentStockTitle.textContent = q ? `${name} 總覽` : name;
+  if (currentStockDesc) currentStockDesc.textContent = q ? `現價 ${q.close ?? "-"}，漲跌 ${q.change_price ?? "-"}，量比 ${q.volume_ratio ?? "-"}。` : "查詢後，總覽、報價、分析、交易計畫都會依照同一檔股票更新。";
+  if (analysisTitle) analysisTitle.textContent = q ? `${name} 分析工具` : "分析工具";
+  if (planTitle) planTitle.textContent = q ? `${name} 交易計畫` : "交易計畫";
 }
 
 function updateAnalysis() {
@@ -98,24 +141,17 @@ function updateAnalysis() {
   const action = document.querySelector("#resultAction");
   if (badge && action) {
     badge.className = "badge watch";
-    badge.textContent = "🟡 等待觀察";
-    action.textContent = "先不要急著進場，等訊號更明確。";
-    if (score >= 5) {
-      badge.className = "badge good";
-      badge.textContent = "🟢 可觀察進場";
-      action.textContent = "可規劃小部位，停損一定要先設好。";
-    }
-    if (score <= -2) {
-      badge.className = "badge bad";
-      badge.textContent = "🔴 不建議進場";
-      action.textContent = "風險偏高，先避開或等回測重新站穩。";
-    }
+    badge.textContent = state.currentQuote ? "🟡 等待觀察" : "🟡 等待查詢";
+    action.textContent = state.currentQuote ? "先不要急著進場，等訊號更明確。" : "請先輸入股票代號並查詢。";
+    if (state.currentQuote && score >= 5) { badge.className = "badge good"; badge.textContent = "🟢 可觀察進場"; action.textContent = "可規劃小部位，停損一定要先設好。"; }
+    if (state.currentQuote && score <= -2) { badge.className = "badge bad"; badge.textContent = "🔴 不建議進場"; action.textContent = "風險偏高，先避開或等回測重新站穩。"; }
   }
   const notesBox = document.querySelector("#notes");
   if (notesBox) notesBox.innerHTML = notes.map((note) => `<div class="note">${note}</div>`).join("");
   updateIndicatorNotes();
   updateWarnings();
   updateMode();
+  updateTitles();
   updatePlan();
 }
 
@@ -130,6 +166,7 @@ function updateWarnings() {
   const box = document.querySelector("#warningList");
   if (!box) return;
   const warnings = [];
+  if (!state.currentQuote) warnings.push(["尚未查詢", "先查詢股票後，這裡會依照該股票報價產生提醒。"]);
   if (state.volume === "highNoUp") warnings.push(["爆量不漲", "可能是高檔換手或主力倒貨，短線不追。"]);
   if (state.position === "breakoutFail") warnings.push(["假突破風險", "突破後站不穩，容易套住追價買盤。"]);
   if (state.candle === "upperShadow") warnings.push(["長上影線", "上方賣壓重，先等回測確認。"]);
@@ -139,12 +176,17 @@ function updateWarnings() {
 }
 
 function updateMode() {
-  document.querySelectorAll(".advanced-zone").forEach((zone) => {
-    zone.style.display = state.mode === "advanced" ? "block" : "none";
-  });
+  document.querySelectorAll(".advanced-zone").forEach((zone) => { zone.style.display = state.mode === "advanced" ? "block" : "none"; });
 }
 
-function updatePlan() {
+function updatePlan(autoFill = false) {
+  const q = state.currentQuote;
+  if (autoFill && q?.close) {
+    const close = Number(q.close);
+    document.querySelector("#entryPrice").value = close;
+    document.querySelector("#supportPrice").value = Math.round(close * 0.985 * 100) / 100;
+    document.querySelector("#pressurePrice").value = Math.round(close * 1.02 * 100) / 100;
+  }
   const entry = Number(document.querySelector("#entryPrice")?.value);
   const support = Number(document.querySelector("#supportPrice")?.value);
   const pressure = Number(document.querySelector("#pressurePrice")?.value);
@@ -152,9 +194,15 @@ function updatePlan() {
   const lossPctEl = document.querySelector("#lossPct");
   const profitPctEl = document.querySelector("#profitPct");
   if (!stopLogic || !lossPctEl || !profitPctEl) return;
-  stopLogic.textContent = `跌破 ${support || "支撐"}，代表看錯就退`;
+  stopLogic.textContent = entry && support ? `跌破 ${support}，代表 ${q?.code || "這檔股票"} 看錯就退` : "請先查詢股票";
   lossPctEl.textContent = entry && support ? `${(((entry - support) / entry) * 100).toFixed(2)}%` : "-";
   profitPctEl.textContent = entry && pressure ? `${(((pressure - entry) / entry) * 100).toFixed(2)}%` : "-";
+}
+
+function renderQuote(data) {
+  const changeRate = typeof data.change_rate === "number" ? data.change_rate.toFixed(2) : "-";
+  const changePrice = typeof data.change_price === "number" ? data.change_price.toFixed(2) : "-";
+  return `<div class="quote-grid"><div><p>股票</p><strong>${data.code} ${data.name || ""}</strong></div><div><p>現價</p><strong>${data.close ?? "-"}</strong></div><div><p>漲跌</p><strong>${changePrice}</strong></div><div><p>漲跌幅</p><strong>${changeRate}%</strong></div><div><p>最高</p><strong>${data.high ?? "-"}</strong></div><div><p>最低</p><strong>${data.low ?? "-"}</strong></div><div><p>量比</p><strong>${data.volume_ratio ?? "-"}</strong></div><div><p>成交量</p><strong>${data.volume ?? "-"}</strong></div><div><p>買價 / 買量</p><strong>${data.buy_price ?? "-"} / ${data.buy_volume ?? "-"}</strong></div><div><p>賣價 / 賣量</p><strong>${data.sell_price ?? "-"} / ${data.sell_volume ?? "-"}</strong></div><div><p>均價</p><strong>${data.average_price ?? "-"}</strong></div></div>`;
 }
 
 async function fetchQuote() {
@@ -162,21 +210,25 @@ async function fetchQuote() {
   const quoteBox = document.querySelector("#quoteResult");
   const quoteSummary = document.querySelector("#quoteSummary");
   const codeMatch = input?.value.match(/\d{4,6}/);
-  if (!codeMatch) return;
+  if (!codeMatch) {
+    alert("請先輸入股票代號，例如 2330");
+    return;
+  }
   const code = codeMatch[0];
-  const loading = `<div class="quote-loading">查詢 ${code} 報價中… Render 免費版第一次可能要等 50 秒。</div>`;
+  const loading = `<div class="quote-loading">查詢 ${code} 報價中…</div>`;
   if (quoteBox) quoteBox.innerHTML = loading;
   if (quoteSummary) quoteSummary.innerHTML = loading;
-  switchPage("quote");
   try {
     const response = await fetch(`${BACKEND_URL}/api/quote?code=${code}`);
     if (!response.ok) throw new Error(await response.text());
     const data = await response.json();
-    const changeRate = typeof data.change_rate === "number" ? data.change_rate.toFixed(2) : "-";
-    const changePrice = typeof data.change_price === "number" ? data.change_price.toFixed(2) : "-";
-    const html = `<div class="quote-grid"><div><p>股票</p><strong>${data.code} ${data.name || ""}</strong></div><div><p>現價</p><strong>${data.close ?? "-"}</strong></div><div><p>漲跌</p><strong>${changePrice}</strong></div><div><p>漲跌幅</p><strong>${changeRate}%</strong></div><div><p>最高</p><strong>${data.high ?? "-"}</strong></div><div><p>最低</p><strong>${data.low ?? "-"}</strong></div><div><p>量比</p><strong>${data.volume_ratio ?? "-"}</strong></div><div><p>成交量</p><strong>${data.volume ?? "-"}</strong></div><div><p>買價 / 買量</p><strong>${data.buy_price ?? "-"} / ${data.buy_volume ?? "-"}</strong></div><div><p>賣價 / 賣量</p><strong>${data.sell_price ?? "-"} / ${data.sell_volume ?? "-"}</strong></div><div><p>均價</p><strong>${data.average_price ?? "-"}</strong></div></div>`;
+    state.currentQuote = data;
+    syncStateFromQuote(data);
+    const html = renderQuote(data);
     if (quoteBox) quoteBox.innerHTML = html;
     if (quoteSummary) quoteSummary.innerHTML = html;
+    updatePlan(true);
+    updateAnalysis();
   } catch (error) {
     const msg = `<div class="quote-error">報價查詢失敗：${error.message}</div>`;
     if (quoteBox) quoteBox.innerHTML = msg;
@@ -193,7 +245,7 @@ document.querySelectorAll(".button-group, .mode-switch").forEach((group) => grou
   state[group.dataset.field] = button.dataset.value;
   updateAnalysis();
 }));
-document.querySelectorAll("input").forEach((input) => input.addEventListener("input", updateAnalysis));
+document.querySelectorAll("input").forEach((input) => input.addEventListener("input", () => updatePlan(false)));
 document.querySelector("#fetchQuoteBtn")?.addEventListener("click", fetchQuote);
 document.querySelector("#refreshAppBtn")?.addEventListener("click", () => location.href = `${location.pathname}?v=${Date.now()}`);
 
