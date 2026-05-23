@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>股票短線分析助手</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <section class="hero">
+      <div>
+        <p class="eyebrow">Stock Analysis Assistant</p>
+        <h1>股票短線分析助手</h1>
+        <p class="subtitle">用「趨勢、量、位置、停損」快速整理買點、賣點與風險。</p>
+      </div>
+      <div class="stock-input-card">
+        <label for="stockName">股票名稱 / 代號</label>
+        <input id="stockName" value="2330 台積電" />
+      </div>
+    </section>
+
+    <section class="grid cards">
+      <article class="card">
+        <h2>1. 趨勢</h2>
+        <div class="button-group" data-field="trend">
+          <button class="active" data-value="up">上升趨勢</button>
+          <button data-value="side">橫盤整理</button>
+          <button data-value="down">下降趨勢</button>
+        </div>
+      </article>
+
+      <article class="card">
+        <h2>2. 成交量</h2>
+        <div class="button-group" data-field="volume">
+          <button class="active" data-value="breakout">放量突破</button>
+          <button data-value="normal">普通</button>
+          <button data-value="low">量縮</button>
+          <button data-value="highNoUp">爆量不漲</button>
+        </div>
+      </article>
+
+      <article class="card">
+        <h2>3. 位置</h2>
+        <div class="button-group" data-field="position">
+          <button class="active" data-value="pullback">回測不破</button>
+          <button data-value="support">靠近支撐</button>
+          <button data-value="chase">高檔追價</button>
+        </div>
+      </article>
+
+      <article class="card">
+        <h2>4. 風險</h2>
+        <div class="button-group" data-field="risk">
+          <button data-value="low">低</button>
+          <button class="active" data-value="medium">中</button>
+          <button data-value="high">高</button>
+        </div>
+      </article>
+    </section>
+
+    <section class="result-card">
+      <div class="result-header">
+        <h2 id="resultTitle">2330 台積電 分析結果</h2>
+        <span id="resultBadge" class="badge watch">觀察</span>
+      </div>
+      <p id="resultAction" class="action-text">先不要急著進場，等訊號更明確。</p>
+      <div id="notes" class="notes"></div>
+    </section>
+
+    <section class="plan-card">
+      <h2>進出場計畫</h2>
+      <div class="grid plan-inputs">
+        <label>預計買點
+          <input id="entryPrice" type="number" value="2250" />
+        </label>
+        <label>支撐 / 停損
+          <input id="supportPrice" type="number" value="2245" />
+        </label>
+        <label>壓力 / 第一賣點
+          <input id="pressurePrice" type="number" value="2265" />
+        </label>
+      </div>
+      <div class="grid metrics">
+        <div>
+          <p>停損邏輯</p>
+          <strong id="stopLogic">跌破 2245，代表看錯就退</strong>
+        </div>
+        <div>
+          <p>預估風險</p>
+          <strong id="lossPct">0.22%</strong>
+        </div>
+        <div>
+          <p>預估空間</p>
+          <strong id="profitPct">0.67%</strong>
+        </div>
+      </div>
+      <p class="warning">提醒：買之前一定要先寫下買點、停損、第一賣點。不要買了才想怎麼辦。</p>
+    </section>
+
+    <section class="learn-card">
+      <h2>新手看盤四步驟</h2>
+      <div class="grid learn-grid">
+        <div><strong>1. 先看趨勢</strong><p>上升趨勢優先，下降趨勢不要亂接刀。</p></div>
+        <div><strong>2. 再看成交量</strong><p>上漲最好有量，爆量不漲要小心。</p></div>
+        <div><strong>3. 看位置</strong><p>回測不破比追高安全，突破要確認站得穩。</p></div>
+        <div><strong>4. 先設停損</strong><p>跌破關鍵支撐代表看錯，不要凹單。</p></div>
+      </div>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
