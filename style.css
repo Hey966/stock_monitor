@@ -1,0 +1,260 @@
+:root {
+  --bg: #f4f7fb;
+  --card: #ffffff;
+  --text: #172033;
+  --muted: #667085;
+  --line: #e4e7ec;
+  --primary: #2563eb;
+  --primary-dark: #1d4ed8;
+  --green: #dcfce7;
+  --green-text: #166534;
+  --yellow: #fef9c3;
+  --yellow-text: #854d0e;
+  --red: #fee2e2;
+  --red-text: #991b1b;
+  --shadow: 0 18px 50px rgba(15, 23, 42, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans TC", sans-serif;
+  background: radial-gradient(circle at top left, #dbeafe, transparent 30%), var(--bg);
+  color: var(--text);
+}
+
+.app {
+  width: min(1180px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 36px 0 56px;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 24px;
+  align-items: end;
+  margin-bottom: 24px;
+}
+
+.eyebrow {
+  color: var(--primary);
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin: 0 0 10px;
+}
+
+h1 {
+  font-size: clamp(32px, 5vw, 56px);
+  line-height: 1;
+  margin: 0;
+}
+
+.subtitle {
+  color: var(--muted);
+  font-size: 18px;
+  margin: 16px 0 0;
+}
+
+.stock-input-card,
+.card,
+.result-card,
+.plan-card,
+.learn-card {
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  box-shadow: var(--shadow);
+}
+
+.stock-input-card {
+  padding: 20px;
+}
+
+label {
+  display: grid;
+  gap: 8px;
+  color: var(--muted);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+input {
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 13px 14px;
+  font-size: 16px;
+  outline: none;
+  background: #fff;
+}
+
+input:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.12);
+}
+
+.grid {
+  display: grid;
+  gap: 16px;
+}
+
+.cards {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.card {
+  padding: 20px;
+}
+
+.card h2,
+.result-card h2,
+.plan-card h2,
+.learn-card h2 {
+  margin: 0 0 16px;
+  font-size: 20px;
+}
+
+.button-group {
+  display: grid;
+  gap: 10px;
+}
+
+button {
+  border: 1px solid var(--line);
+  background: #fff;
+  color: var(--text);
+  border-radius: 14px;
+  padding: 12px 14px;
+  text-align: left;
+  cursor: pointer;
+  font-weight: 800;
+  transition: 0.18s ease;
+}
+
+button:hover {
+  border-color: var(--primary);
+  transform: translateY(-1px);
+}
+
+button.active {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: #fff;
+}
+
+.result-card,
+.plan-card,
+.learn-card {
+  padding: 24px;
+  margin-top: 20px;
+}
+
+.result-header {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  padding: 7px 12px;
+  font-weight: 900;
+  font-size: 14px;
+}
+
+.badge.good {
+  background: var(--green);
+  color: var(--green-text);
+}
+
+.badge.watch {
+  background: var(--yellow);
+  color: var(--yellow-text);
+}
+
+.badge.bad {
+  background: var(--red);
+  color: var(--red-text);
+}
+
+.action-text {
+  font-size: 20px;
+  font-weight: 800;
+  margin: 6px 0 18px;
+}
+
+.notes {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.note {
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 16px;
+  background: #fff;
+  color: #344054;
+}
+
+.plan-inputs,
+.metrics,
+.learn-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.metrics div,
+.learn-grid div {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 18px;
+}
+
+.metrics p,
+.learn-grid p {
+  color: var(--muted);
+  margin: 0 0 6px;
+}
+
+.metrics strong {
+  font-size: 20px;
+}
+
+.warning {
+  background: #fffbeb;
+  border: 1px solid #fde68a;
+  color: #92400e;
+  padding: 16px;
+  border-radius: 18px;
+  margin: 18px 0 0;
+  font-weight: 700;
+}
+
+.learn-grid {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.learn-grid strong {
+  display: block;
+  margin-bottom: 8px;
+}
+
+@media (max-width: 900px) {
+  .hero,
+  .cards,
+  .notes,
+  .plan-inputs,
+  .metrics,
+  .learn-grid {
+    grid-template-columns: 1fr;
+  }
+}
