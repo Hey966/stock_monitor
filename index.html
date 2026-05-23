@@ -2,64 +2,136 @@
 <html lang="zh-Hant">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#0f172a" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#080b12" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-title" content="股票助手" />
-  <link rel="manifest" href="manifest.json?v=20260524-pwa-1" />
-  <link rel="icon" href="icon.svg?v=20260524-pwa-1" type="image/svg+xml" />
-  <link rel="apple-touch-icon" href="icon.svg?v=20260524-pwa-1" />
-  <title>股票短線分析助手</title>
-  <link rel="stylesheet" href="style.css?v=20260524-pwa-1" />
+  <link rel="manifest" href="manifest.json?v=20260524-pro-ui" />
+  <link rel="icon" href="icon.svg?v=20260524-pro-ui" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="icon.svg?v=20260524-pro-ui" />
+  <title>當沖 衝衝衝</title>
+  <link rel="stylesheet" href="style.css?v=20260524-pro-ui" />
 </head>
 <body>
-  <div class="shell">
-    <aside class="sidebar">
-      <div class="brand"><div class="brand-icon">衝</div><div><strong>當沖 衝衝衝</strong><span>Stock Assistant</span></div></div>
-      <nav class="nav" aria-label="主要功能">
-        <button class="nav-item active" data-page="dashboard">總覽</button><button class="nav-item" data-page="quote">即時報價</button><button class="nav-item" data-page="watchlist">自選股</button><button class="nav-item" data-page="analysis">分析工具</button><button class="nav-item" data-page="plan">交易計畫</button><button class="nav-item" data-page="learn">學習筆記</button>
-      </nav>
-      <button id="refreshAppBtn" class="refresh-btn">刷新新版</button>
-      <p class="sidebar-note">資料由 Render 後端串接永豐 Shioaji。先報價與分析，不做下單。</p>
-    </aside>
-
-    <main class="content">
-      <header class="topbar">
-        <div><p class="eyebrow">Stock Analysis Assistant</p><h1 id="pageTitle">總覽</h1></div>
-        <div class="quick-input">
-          <label for="stockName">股票代號 / 名稱</label>
-          <div class="quick-row"><input id="stockName" placeholder="例如：2330 台積電" /><button id="fetchQuoteBtn" class="primary-action">查詢</button></div>
+  <main class="app-shell">
+    <header class="app-header">
+      <div class="brand-row">
+        <div class="app-logo">衝</div>
+        <div>
+          <p class="muted-label">Stock Assistant</p>
+          <h1>當沖 衝衝衝</h1>
         </div>
-      </header>
+        <button id="refreshAppBtn" class="ghost-btn">更新</button>
+      </div>
 
-      <section id="page-dashboard" class="page active">
-        <div class="hero-card"><div><span class="pill">新手安全版</span><h2 id="currentStockTitle">請先查詢一檔股票</h2><p id="currentStockDesc">查詢後，總覽、報價、分析、交易計畫都會依照同一檔股票更新。</p></div><div class="signal-card"><span id="resultBadge" class="badge watch">🟡 等待查詢</span><strong id="resultAction">請先輸入股票代號並查詢。</strong></div></div>
-        <div class="grid overview-grid"><article class="panel"><h3>即時報價摘要</h3><div id="quoteSummary" class="quote-placeholder">尚未查詢報價。</div></article><article class="panel"><h3>短線分析摘要</h3><div id="notes" class="notes compact"></div></article></div>
+      <section class="search-card">
+        <label for="stockName">查詢股票</label>
+        <div class="search-row">
+          <input id="stockName" inputmode="numeric" placeholder="輸入代號，例如 2330" />
+          <button id="fetchQuoteBtn">查詢</button>
+        </div>
+      </section>
+    </header>
+
+    <section id="page-dashboard" class="page active">
+      <section class="hero-panel">
+        <div>
+          <p class="muted-label">目前標的</p>
+          <h2 id="currentStockTitle">請先查詢一檔股票</h2>
+          <p id="currentStockDesc">查詢後，報價、分析、交易計畫會一起更新。</p>
+        </div>
+        <div class="decision-box">
+          <span id="resultBadge" class="badge watch">等待查詢</span>
+          <strong id="resultAction">輸入股票代號開始分析。</strong>
+        </div>
       </section>
 
-      <section id="page-quote" class="page"><div class="section-title"><div><p class="eyebrow small">Live Quote</p><h2>即時報價</h2></div><p>所有資料依照上方查詢的股票代號更新。</p></div><div id="quoteResult" class="quote-placeholder large">輸入股票代號後，按「查詢」。</div></section>
-
-      <section id="page-watchlist" class="page"><div class="section-title"><div><p class="eyebrow small">Watchlist</p><h2>自選股</h2></div><p>新增常看的股票，之後點一下就能查報價。</p></div><div class="panel"><div class="quick-row"><input id="watchCode" placeholder="例如：2330 台積電" /><button id="addWatchBtn" class="primary-action">新增</button></div><div id="watchList" class="watch-list"></div></div></section>
-
-      <section id="page-analysis" class="page">
-        <div class="section-title"><div><p class="eyebrow small">Analysis</p><h2 id="analysisTitle">分析工具</h2></div><p>分析結果會依照目前查詢的股票資料輔助判斷。</p></div>
-        <div class="mode-switch" data-field="mode"><button class="active" data-value="basic">新手模式</button><button data-value="advanced">進階模式</button></div>
-        <div class="grid cards">
-          <article class="card"><h3>1. 趨勢</h3><div class="button-group" data-field="trend"><button class="active" data-value="up">上升趨勢</button><button data-value="side">橫盤整理</button><button data-value="down">下降趨勢</button></div></article>
-          <article class="card"><h3>2. 成交量</h3><div class="button-group" data-field="volume"><button class="active" data-value="breakout">放量突破</button><button data-value="normal">普通</button><button data-value="low">量縮</button><button data-value="highNoUp">爆量不漲</button></div></article>
-          <article class="card"><h3>3. 位置</h3><div class="button-group" data-field="position"><button class="active" data-value="pullback">回測不破</button><button data-value="support">靠近支撐</button><button data-value="breakoutFail">突破失敗</button><button data-value="chase">高檔追價</button></div></article>
-          <article class="card"><h3>4. K棒</h3><div class="button-group" data-field="candle"><button class="active" data-value="normalCandle">普通</button><button data-value="longRed">長紅K</button><button data-value="upperShadow">長上影線</button><button data-value="longBlack">高檔長黑</button></div></article>
-        </div>
-        <div class="advanced-zone"><h2>進階指標</h2><div class="grid indicator-grid"><article class="mini-card"><h3>均線 MA</h3><div class="button-group" data-field="ma"><button class="active" data-value="maBull">黃 &gt; 藍 &gt; 紫</button><button data-value="maMixed">均線糾結</button><button data-value="maBear">黃 &lt; 藍 &lt; 紫</button></div></article><article class="mini-card"><h3>RSI</h3><div class="button-group" data-field="rsi"><button data-value="rsiHot">RSI &gt; 70</button><button class="active" data-value="rsiMid">30~70</button><button data-value="rsiCold">RSI &lt; 30</button></div></article><article class="mini-card"><h3>KD</h3><div class="button-group" data-field="kd"><button class="active" data-value="kdUp">K 上穿 D</button><button data-value="kdDown">K 下破 D</button><button data-value="kdHighTurn">高檔下彎</button><button data-value="kdHighStrong">高檔鈍化</button></div></article><article class="mini-card"><h3>MACD</h3><div class="button-group" data-field="macd"><button class="active" data-value="macdExpand">紅柱放大</button><button data-value="macdShrink">紅柱縮小</button><button data-value="macdGreen">綠柱放大</button></div></article></div><div id="indicatorNotes" class="notes"></div></div>
-        <div class="panel danger-panel"><h3>主力與假訊號提醒</h3><div id="warningList" class="warning-list"></div></div>
+      <section class="section-block">
+        <div class="section-head"><h3>即時摘要</h3><button class="link-btn nav-shortcut" data-page="quote">看完整報價</button></div>
+        <div id="quoteSummary" class="empty-card">尚未查詢報價</div>
       </section>
 
-      <section id="page-plan" class="page"><div class="section-title"><div><p class="eyebrow small">Trade Plan</p><h2 id="planTitle">交易計畫</h2></div><p>買點、停損、第一賣點會以查詢到的現價附近自動帶入。</p></div><div class="panel"><div class="grid plan-inputs"><label>預計買點<input id="entryPrice" type="number" placeholder="查詢後自動帶入" /></label><label>支撐 / 停損<input id="supportPrice" type="number" placeholder="查詢後自動帶入" /></label><label>壓力 / 第一賣點<input id="pressurePrice" type="number" placeholder="查詢後自動帶入" /></label></div><div class="grid metrics"><div><p>停損邏輯</p><strong id="stopLogic">請先查詢股票</strong></div><div><p>預估風險</p><strong id="lossPct">-</strong></div><div><p>預估空間</p><strong id="profitPct">-</strong></div></div><p class="warning">提醒：短線不是凹單。跌破你設定的關鍵位置，就代表原本假設失敗。</p></div></section>
+      <section class="section-block">
+        <div class="section-head"><h3>分析摘要</h3><button class="link-btn nav-shortcut" data-page="analysis">調整條件</button></div>
+        <div id="notes" class="note-list"></div>
+      </section>
+    </section>
 
-      <section id="page-learn" class="page"><div class="section-title"><div><p class="eyebrow small">Learning</p><h2>學習筆記</h2></div><p>把目前教材重點整理成最簡單的看盤流程。</p></div><div class="grid learn-grid"><div><strong>1. 先看趨勢</strong><p>上升趨勢優先，下降趨勢不要亂接刀。</p></div><div><strong>2. 再看成交量</strong><p>上漲最好有量，爆量不漲要小心。</p></div><div><strong>3. 看位置</strong><p>回測不破比追高安全，突破要確認站得穩。</p></div><div><strong>4. 先設停損</strong><p>跌破關鍵支撐代表看錯，不要凹單。</p></div><div><strong>5. 小心假突破</strong><p>突破沒量、突破後站不穩，都不要急著追。</p></div><div><strong>6. 主力思維</strong><p>不要只看型態，要看資金是在進場、洗盤還是出貨。</p></div></div></section>
-    </main>
-  </div>
-  <nav class="bottom-nav" aria-label="手機功能切換"><button class="nav-item active" data-page="dashboard">總覽</button><button class="nav-item" data-page="quote">報價</button><button class="nav-item" data-page="watchlist">自選</button><button class="nav-item" data-page="analysis">分析</button><button class="nav-item" data-page="plan">計畫</button><button class="nav-item" data-page="learn">筆記</button></nav>
-  <script src="app.js?v=20260524-pwa-1"></script>
+    <section id="page-quote" class="page">
+      <div class="page-title"><p class="muted-label">Live Quote</p><h2>即時報價</h2></div>
+      <div id="quoteResult" class="empty-card large">輸入股票代號後，按「查詢」。</div>
+    </section>
+
+    <section id="page-watchlist" class="page">
+      <div class="page-title"><p class="muted-label">Watchlist</p><h2>自選股</h2></div>
+      <div class="glass-card">
+        <label for="watchCode">新增自選</label>
+        <div class="search-row compact"><input id="watchCode" placeholder="例如：6215 和椿" /><button id="addWatchBtn">新增</button></div>
+        <div id="watchList" class="watch-list"></div>
+      </div>
+    </section>
+
+    <section id="page-analysis" class="page">
+      <div class="page-title"><p class="muted-label">Analysis</p><h2 id="analysisTitle">分析工具</h2></div>
+      <div class="mode-switch chip-row" data-field="mode"><button class="active" data-value="basic">新手</button><button data-value="advanced">進階</button></div>
+
+      <div class="analysis-grid">
+        <article class="tool-card"><h3>趨勢</h3><div class="button-group" data-field="trend"><button class="active" data-value="up">上升</button><button data-value="side">橫盤</button><button data-value="down">下降</button></div></article>
+        <article class="tool-card"><h3>成交量</h3><div class="button-group" data-field="volume"><button data-value="breakout">放量突破</button><button class="active" data-value="normal">普通</button><button data-value="low">量縮</button><button data-value="highNoUp">爆量不漲</button></div></article>
+        <article class="tool-card"><h3>位置</h3><div class="button-group" data-field="position"><button data-value="pullback">回測不破</button><button class="active" data-value="support">靠近支撐</button><button data-value="breakoutFail">突破失敗</button><button data-value="chase">高檔追價</button></div></article>
+        <article class="tool-card"><h3>K棒</h3><div class="button-group" data-field="candle"><button class="active" data-value="normalCandle">普通</button><button data-value="longRed">長紅</button><button data-value="upperShadow">上影線</button><button data-value="longBlack">長黑</button></div></article>
+      </div>
+
+      <div class="advanced-zone">
+        <div class="page-title small-title"><h2>進階指標</h2></div>
+        <div class="analysis-grid">
+          <article class="tool-card"><h3>均線</h3><div class="button-group" data-field="ma"><button data-value="maBull">多頭</button><button class="active" data-value="maMixed">糾結</button><button data-value="maBear">空頭</button></div></article>
+          <article class="tool-card"><h3>RSI</h3><div class="button-group" data-field="rsi"><button data-value="rsiHot">過熱</button><button class="active" data-value="rsiMid">中性</button><button data-value="rsiCold">偏冷</button></div></article>
+          <article class="tool-card"><h3>KD</h3><div class="button-group" data-field="kd"><button class="active" data-value="kdUp">轉強</button><button data-value="kdDown">轉弱</button><button data-value="kdHighTurn">高檔下彎</button><button data-value="kdHighStrong">高檔鈍化</button></div></article>
+          <article class="tool-card"><h3>MACD</h3><div class="button-group" data-field="macd"><button class="active" data-value="macdExpand">紅柱放大</button><button data-value="macdShrink">紅柱縮小</button><button data-value="macdGreen">綠柱放大</button></div></article>
+        </div>
+        <div id="indicatorNotes" class="note-list"></div>
+      </div>
+
+      <section class="section-block"><h3>主力與假訊號</h3><div id="warningList" class="warning-list"></div></section>
+    </section>
+
+    <section id="page-plan" class="page">
+      <div class="page-title"><p class="muted-label">Trade Plan</p><h2 id="planTitle">交易計畫</h2></div>
+      <div class="glass-card">
+        <div class="plan-grid">
+          <label>預計買點<input id="entryPrice" type="number" placeholder="查詢後自動帶入" /></label>
+          <label>支撐 / 停損<input id="supportPrice" type="number" placeholder="查詢後自動帶入" /></label>
+          <label>壓力 / 第一賣點<input id="pressurePrice" type="number" placeholder="查詢後自動帶入" /></label>
+        </div>
+        <div class="metric-grid">
+          <div><span>停損邏輯</span><strong id="stopLogic">請先查詢股票</strong></div>
+          <div><span>預估風險</span><strong id="lossPct">-</strong></div>
+          <div><span>預估空間</span><strong id="profitPct">-</strong></div>
+        </div>
+        <p class="risk-tip">短線不是凹單。跌破設定位置，就代表原本假設失敗。</p>
+      </div>
+    </section>
+
+    <section id="page-learn" class="page">
+      <div class="page-title"><p class="muted-label">Learning</p><h2>學習筆記</h2></div>
+      <div class="learn-list">
+        <div><strong>先看趨勢</strong><p>上升趨勢優先，下降趨勢不要亂接刀。</p></div>
+        <div><strong>再看成交量</strong><p>上漲最好有量，爆量不漲要小心。</p></div>
+        <div><strong>看位置</strong><p>回測不破比追高安全。</p></div>
+        <div><strong>先設停損</strong><p>買之前先知道哪裡代表看錯。</p></div>
+      </div>
+    </section>
+  </main>
+
+  <nav class="bottom-nav" aria-label="手機功能切換">
+    <button class="nav-item active" data-page="dashboard">總覽</button>
+    <button class="nav-item" data-page="quote">報價</button>
+    <button class="nav-item" data-page="watchlist">自選</button>
+    <button class="nav-item" data-page="analysis">分析</button>
+    <button class="nav-item" data-page="plan">計畫</button>
+  </nav>
+
+  <script src="app.js?v=20260524-pro-ui"></script>
 </body>
 </html>
