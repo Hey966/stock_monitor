@@ -29,6 +29,12 @@ class QuoteResponse(BaseModel):
     volume: int | None = None
     change_price: float | None = None
     change_rate: float | None = None
+    buy_price: float | None = None
+    buy_volume: int | None = None
+    sell_price: float | None = None
+    sell_volume: int | None = None
+    volume_ratio: float | None = None
+    average_price: float | None = None
     raw: dict[str, Any]
 
 
@@ -51,7 +57,7 @@ async def lifespan(app: FastAPI):
 app = FastAPI(
     title="Stock Monitor Backend",
     description="Safe backend bridge for GitHub Pages frontend and Sinotrade Shioaji.",
-    version="0.1.0",
+    version="0.1.1",
     lifespan=lifespan,
 )
 
@@ -63,6 +69,14 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+
+def pick_number(raw: dict[str, Any], *keys: str) -> float | int | None:
+    for key in keys:
+        value = raw.get(key)
+        if value is not None:
+            return value
+    return None
 
 
 @app.get("/")
@@ -91,24 +105,31 @@ def get_quote(code: str = Query(..., description="Taiwan stock code, e.g. 2330")
         raise HTTPException(status_code=502, detail=f"Failed to fetch quote from Shioaji: {exc}") from exc
 
     raw = snapshot.__dict__.copy()
-    close = raw.get("close")
-    reference = raw.get("reference") or raw.get("yesterday_close")
+    close = pick_number(raw, "close")
+    change_price = pick_number(raw, "change_price")
+    change_rate = pick_number(raw, "change_rate")
 
-    change_price = None
-    change_rate = None
-    if close is not None and reference:
+    reference = pick_number(raw, "reference", "yesterday_close")
+    if change_price is None and close is not None and reference:
         change_price = float(close) - float(reference)
-        change_rate = change_price / float(reference) * 100
+    if change_rate is None and change_price is not None and reference:
+        change_rate = float(change_price) / float(reference) * 100
 
     return QuoteResponse(
         code=code,
         name=getattr(contract, "name", None),
         close=close,
-        open=raw.get("open"),
-        high=raw.get("high"),
-        low=raw.get("low"),
-        volume=raw.get("total_volume") or raw.get("volume"),
+        open=pick_number(raw, "open"),
+        high=pick_number(raw, "high"),
+        low=pick_number(raw, "low"),
+        volume=pick_number(raw, "total_volume", "volume"),
         change_price=change_price,
         change_rate=change_rate,
+        buy_price=pick_number(raw, "buy_price"),
+        buy_volume=pick_number(raw, "buy_volume"),
+        sell_price=pick_number(raw, "sell_price"),
+        sell_volume=pick_number(raw, "sell_volume"),
+        volume_ratio=pick_number(raw, "volume_ratio"),
+        average_price=pick_number(raw, "average_price"),
         raw=raw,
     )
