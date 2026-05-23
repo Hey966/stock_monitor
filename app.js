@@ -1,5 +1,13 @@
 const BACKEND_URL = "https://stock-monitor-b6d6.onrender.com";
 
+const pageTitles = {
+  dashboard: "總覽",
+  quote: "即時報價",
+  analysis: "分析工具",
+  plan: "交易計畫",
+  learn: "學習筆記",
+};
+
 const state = {
   mode: "basic",
   trend: "up",
@@ -43,73 +51,68 @@ const labels = {
   macdGreen: "MACD 綠柱放大：短線偏弱。",
 };
 
+function switchPage(page) {
+  document.querySelectorAll(".page").forEach((el) => el.classList.remove("active"));
+  document.querySelector(`#page-${page}`)?.classList.add("active");
+  document.querySelectorAll(".nav-item").forEach((btn) => btn.classList.toggle("active", btn.dataset.page === page));
+  const title = document.querySelector("#pageTitle");
+  if (title) title.textContent = pageTitles[page] || "總覽";
+  window.scrollTo(0, 0);
+}
+
 function calculateScore() {
   let score = 0;
   const notes = [];
-
   if (state.trend === "up") score += 2;
   if (state.trend === "down") score -= 2;
   notes.push(labels[state.trend]);
-
   if (state.volume === "breakout") score += 2;
   if (state.volume === "low") score += state.position === "pullback" ? 1 : -1;
   if (state.volume === "highNoUp") score -= 2;
   notes.push(labels[state.volume]);
-
   if (state.position === "pullback") score += 2;
   if (state.position === "support") score += 1;
   if (state.position === "breakoutFail") score -= 2;
   if (state.position === "chase") score -= 2;
   notes.push(labels[state.position]);
-
   if (state.candle === "longRed") score += state.position === "chase" ? -1 : 1;
   if (state.candle === "upperShadow") score -= 2;
   if (state.candle === "longBlack") score -= 3;
   notes.push(labels[state.candle]);
-
   if (state.mode === "advanced") {
     if (state.ma === "maBull") score += 1;
     if (state.ma === "maBear") score -= 1;
-    if (state.rsi === "rsiHot") score -= 1;
-    if (state.rsi === "rsiCold") score -= 1;
+    if (state.rsi === "rsiHot" || state.rsi === "rsiCold") score -= 1;
     if (state.kd === "kdUp") score += 1;
     if (state.kd === "kdDown" || state.kd === "kdHighTurn") score -= 1;
     if (state.macd === "macdExpand") score += 1;
     if (state.macd === "macdShrink") score -= 1;
     if (state.macd === "macdGreen") score -= 2;
   }
-
   return { score, notes };
 }
 
 function updateAnalysis() {
-  const stockName = document.querySelector("#stockName")?.value || "這檔股票";
   const { score, notes } = calculateScore();
-  const title = document.querySelector("#resultTitle");
   const badge = document.querySelector("#resultBadge");
   const action = document.querySelector("#resultAction");
+  if (badge && action) {
+    badge.className = "badge watch";
+    badge.textContent = "🟡 等待觀察";
+    action.textContent = "先不要急著進場，等訊號更明確。";
+    if (score >= 5) {
+      badge.className = "badge good";
+      badge.textContent = "🟢 可觀察進場";
+      action.textContent = "可規劃小部位，停損一定要先設好。";
+    }
+    if (score <= -2) {
+      badge.className = "badge bad";
+      badge.textContent = "🔴 不建議進場";
+      action.textContent = "風險偏高，先避開或等回測重新站穩。";
+    }
+  }
   const notesBox = document.querySelector("#notes");
-
-  if (!title || !badge || !action || !notesBox) return;
-
-  title.textContent = `${stockName} 分析結果`;
-  badge.className = "badge watch";
-  badge.textContent = "🟡 等待觀察";
-  action.textContent = "先不要急著進場，等訊號更明確。";
-
-  if (score >= 5) {
-    badge.className = "badge good";
-    badge.textContent = "🟢 可觀察進場";
-    action.textContent = "可規劃小部位，停損一定要先設好。";
-  }
-
-  if (score <= -2) {
-    badge.className = "badge bad";
-    badge.textContent = "🔴 不建議進場";
-    action.textContent = "風險偏高，先避開或等回測重新站穩。";
-  }
-
-  notesBox.innerHTML = notes.map((note) => `<div class="note">${note}</div>`).join("");
+  if (notesBox) notesBox.innerHTML = notes.map((note) => `<div class="note">${note}</div>`).join("");
   updateIndicatorNotes();
   updateWarnings();
   updateMode();
@@ -127,22 +130,16 @@ function updateWarnings() {
   const box = document.querySelector("#warningList");
   if (!box) return;
   const warnings = [];
-
   if (state.volume === "highNoUp") warnings.push(["爆量不漲", "可能是高檔換手或主力倒貨，短線不追。"]);
   if (state.position === "breakoutFail") warnings.push(["假突破風險", "突破後站不穩，容易套住追價買盤。"]);
   if (state.candle === "upperShadow") warnings.push(["長上影線", "上方賣壓重，先等回測確認。"]);
   if (state.candle === "longBlack") warnings.push(["高檔長黑", "賣壓明顯，優先保護本金。"]);
-  if (state.rsi === "rsiHot" && state.position === "chase") warnings.push(["過熱追價", "RSI 偏熱又高檔追價，是新手最容易套牢的位置。"]);
-  if (state.macd === "macdShrink") warnings.push(["動能變弱", "MACD 紅柱縮小，代表上漲力道正在降溫。"]);
-
   if (!warnings.length) warnings.push(["目前無重大警訊", "仍要確認支撐、停損與風險報酬比。"]);
-
   box.innerHTML = warnings.map(([title, text]) => `<div class="warning-item"><strong>${title}</strong><p>${text}</p></div>`).join("");
 }
 
 function updateMode() {
-  const zones = document.querySelectorAll(".advanced-zone");
-  zones.forEach((zone) => {
+  document.querySelectorAll(".advanced-zone").forEach((zone) => {
     zone.style.display = state.mode === "advanced" ? "block" : "none";
   });
 }
@@ -151,72 +148,53 @@ function updatePlan() {
   const entry = Number(document.querySelector("#entryPrice")?.value);
   const support = Number(document.querySelector("#supportPrice")?.value);
   const pressure = Number(document.querySelector("#pressurePrice")?.value);
-
   const stopLogic = document.querySelector("#stopLogic");
   const lossPctEl = document.querySelector("#lossPct");
   const profitPctEl = document.querySelector("#profitPct");
   if (!stopLogic || !lossPctEl || !profitPctEl) return;
-
   stopLogic.textContent = `跌破 ${support || "支撐"}，代表看錯就退`;
-  const lossPct = entry && support ? (((entry - support) / entry) * 100).toFixed(2) : "-";
-  const profitPct = entry && pressure ? (((pressure - entry) / entry) * 100).toFixed(2) : "-";
-  lossPctEl.textContent = `${lossPct}%`;
-  profitPctEl.textContent = `${profitPct}%`;
+  lossPctEl.textContent = entry && support ? `${(((entry - support) / entry) * 100).toFixed(2)}%` : "-";
+  profitPctEl.textContent = entry && pressure ? `${(((pressure - entry) / entry) * 100).toFixed(2)}%` : "-";
 }
 
 async function fetchQuote() {
   const input = document.querySelector("#stockName");
   const quoteBox = document.querySelector("#quoteResult");
-  if (!input || !quoteBox) return;
-
-  const codeMatch = input.value.match(/\d{4,6}/);
-  if (!codeMatch) {
-    quoteBox.innerHTML = `<div class="quote-error">請先輸入股票代號，例如 2330。</div>`;
-    return;
-  }
-
+  const quoteSummary = document.querySelector("#quoteSummary");
+  const codeMatch = input?.value.match(/\d{4,6}/);
+  if (!codeMatch) return;
   const code = codeMatch[0];
-  quoteBox.innerHTML = `<div class="quote-loading">查詢 ${code} 報價中… Render 免費版第一次可能要等 50 秒。</div>`;
-
+  const loading = `<div class="quote-loading">查詢 ${code} 報價中… Render 免費版第一次可能要等 50 秒。</div>`;
+  if (quoteBox) quoteBox.innerHTML = loading;
+  if (quoteSummary) quoteSummary.innerHTML = loading;
+  switchPage("quote");
   try {
     const response = await fetch(`${BACKEND_URL}/api/quote?code=${code}`);
-    if (!response.ok) {
-      const text = await response.text();
-      throw new Error(text);
-    }
+    if (!response.ok) throw new Error(await response.text());
     const data = await response.json();
     const changeRate = typeof data.change_rate === "number" ? data.change_rate.toFixed(2) : "-";
     const changePrice = typeof data.change_price === "number" ? data.change_price.toFixed(2) : "-";
-    quoteBox.innerHTML = `
-      <div class="quote-grid">
-        <div><p>股票</p><strong>${data.code} ${data.name || ""}</strong></div>
-        <div><p>現價</p><strong>${data.close ?? "-"}</strong></div>
-        <div><p>漲跌</p><strong>${changePrice}</strong></div>
-        <div><p>漲跌幅</p><strong>${changeRate}%</strong></div>
-        <div><p>最高</p><strong>${data.high ?? "-"}</strong></div>
-        <div><p>最低</p><strong>${data.low ?? "-"}</strong></div>
-        <div><p>成交量</p><strong>${data.volume ?? "-"}</strong></div>
-      </div>`;
+    const html = `<div class="quote-grid"><div><p>股票</p><strong>${data.code} ${data.name || ""}</strong></div><div><p>現價</p><strong>${data.close ?? "-"}</strong></div><div><p>漲跌</p><strong>${changePrice}</strong></div><div><p>漲跌幅</p><strong>${changeRate}%</strong></div><div><p>最高</p><strong>${data.high ?? "-"}</strong></div><div><p>最低</p><strong>${data.low ?? "-"}</strong></div><div><p>量比</p><strong>${data.volume_ratio ?? "-"}</strong></div><div><p>成交量</p><strong>${data.volume ?? "-"}</strong></div><div><p>買價 / 買量</p><strong>${data.buy_price ?? "-"} / ${data.buy_volume ?? "-"}</strong></div><div><p>賣價 / 賣量</p><strong>${data.sell_price ?? "-"} / ${data.sell_volume ?? "-"}</strong></div><div><p>均價</p><strong>${data.average_price ?? "-"}</strong></div></div>`;
+    if (quoteBox) quoteBox.innerHTML = html;
+    if (quoteSummary) quoteSummary.innerHTML = html;
   } catch (error) {
-    quoteBox.innerHTML = `<div class="quote-error">報價查詢失敗：${error.message}</div>`;
+    const msg = `<div class="quote-error">報價查詢失敗：${error.message}</div>`;
+    if (quoteBox) quoteBox.innerHTML = msg;
+    if (quoteSummary) quoteSummary.innerHTML = msg;
   }
 }
 
-document.querySelectorAll(".button-group, .mode-switch").forEach((group) => {
-  group.addEventListener("click", (event) => {
-    const button = event.target.closest("button");
-    if (!button) return;
-    group.querySelectorAll("button").forEach((btn) => btn.classList.remove("active"));
-    button.classList.add("active");
-    state[group.dataset.field] = button.dataset.value;
-    updateAnalysis();
-  });
-});
-
-document.querySelectorAll("input").forEach((input) => {
-  input.addEventListener("input", updateAnalysis);
-});
-
+document.querySelectorAll(".nav-item[data-page]").forEach((button) => button.addEventListener("click", () => switchPage(button.dataset.page)));
+document.querySelectorAll(".button-group, .mode-switch").forEach((group) => group.addEventListener("click", (event) => {
+  const button = event.target.closest("button");
+  if (!button) return;
+  group.querySelectorAll("button").forEach((btn) => btn.classList.remove("active"));
+  button.classList.add("active");
+  state[group.dataset.field] = button.dataset.value;
+  updateAnalysis();
+}));
+document.querySelectorAll("input").forEach((input) => input.addEventListener("input", updateAnalysis));
 document.querySelector("#fetchQuoteBtn")?.addEventListener("click", fetchQuote);
+document.querySelector("#refreshAppBtn")?.addEventListener("click", () => location.href = `${location.pathname}?v=${Date.now()}`);
 
 updateAnalysis();
