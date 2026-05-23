@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import os
 from contextlib import asynccontextmanager
+from datetime import date, timedelta
 from typing import Any
 
 import shioaji as sj
@@ -38,6 +39,21 @@ class QuoteResponse(BaseModel):
     raw: dict[str, Any]
 
 
+class KBarItem(BaseModel):
+    ts: str
+    open: float
+    high: float
+    low: float
+    close: float
+    volume: int | float
+
+
+class KBarsResponse(BaseModel):
+    code: str
+    interval: str
+    items: list[KBarItem]
+
+
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     global api
@@ -57,7 +73,7 @@ async def lifespan(app: FastAPI):
 app = FastAPI(
     title="Stock Monitor Backend",
     description="Safe backend bridge for GitHub Pages frontend and Sinotrade Shioaji.",
-    version="0.1.1",
+    version="0.2.0",
     lifespan=lifespan,
 )
 
@@ -79,6 +95,15 @@ def pick_number(raw: dict[str, Any], *keys: str) -> float | int | None:
     return None
 
 
+def get_stock_contract(code: str):
+    if api is None:
+        raise HTTPException(status_code=503, detail="Shioaji API is not initialized")
+    try:
+        return api.Contracts.Stocks[code]
+    except Exception as exc:
+        raise HTTPException(status_code=404, detail=f"Cannot find stock code: {code}") from exc
+
+
 @app.get("/")
 def root() -> dict[str, str]:
     return {"status": "ok", "message": "Stock Monitor Backend is running"}
@@ -94,10 +119,7 @@ def get_quote(code: str = Query(..., description="Taiwan stock code, e.g. 2330")
     if api is None:
         raise HTTPException(status_code=503, detail="Shioaji API is not initialized")
 
-    try:
-        contract = api.Contracts.Stocks[code]
-    except Exception as exc:
-        raise HTTPException(status_code=404, detail=f"Cannot find stock code: {code}") from exc
+    contract = get_stock_contract(code)
 
     try:
         snapshot = api.snapshots([contract])[0]
@@ -133,3 +155,44 @@ def get_quote(code: str = Query(..., description="Taiwan stock code, e.g. 2330")
         average_price=pick_number(raw, "average_price"),
         raw=raw,
     )
+
+
+@app.get("/api/kbars", response_model=KBarsResponse)
+def get_kbars(
+    code: str = Query(..., description="Taiwan stock code, e.g. 2330"),
+    days: int = Query(1, ge=1, le=5),
+) -> KBarsResponse:
+    if api is None:
+        raise HTTPException(status_code=503, detail="Shioaji API is not initialized")
+
+    contract = get_stock_contract(code)
+    end = date.today()
+    start = end - timedelta(days=max(days - 1, 0))
+
+    try:
+        kbars = api.kbars(contract, start=start.isoformat(), end=end.isoformat())
+    except Exception as exc:
+        raise HTTPException(status_code=502, detail=f"Failed to fetch kbars from Shioaji: {exc}") from exc
+
+    rows: list[KBarItem] = []
+    for ts, open_, high, low, close, volume in zip(
+        kbars.ts,
+        kbars.Open,
+        kbars.High,
+        kbars.Low,
+        kbars.Close,
+        kbars.Volume,
+        strict=False,
+    ):
+        rows.append(
+            KBarItem(
+                ts=str(ts),
+                open=float(open_),
+                high=float(high),
+                low=float(low),
+                close=float(close),
+                volume=float(volume),
+            )
+        )
+
+    return KBarsResponse(code=code, interval="1m", items=rows[-120:])
