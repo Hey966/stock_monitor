@@ -129,10 +129,10 @@ function updateTitles() {
   const currentStockDesc = document.querySelector("#currentStockDesc");
   const analysisTitle = document.querySelector("#analysisTitle");
   const planTitle = document.querySelector("#planTitle");
-  if (currentStockTitle) currentStockTitle.textContent = q ? `${name} 總覽` : name;
+  if (currentStockTitle) currentStockTitle.textContent = q ? `${q.code} ${q.name || ""}` : name;
   if (currentStockDesc) currentStockDesc.textContent = q ? `現價 ${q.close ?? "-"}，漲跌 ${q.change_price ?? "-"}，量比 ${q.volume_ratio ?? "-"}。` : "查詢後，總覽、報價、分析、交易計畫都會依照同一檔股票更新。";
-  if (analysisTitle) analysisTitle.textContent = q ? `${name} 分析工具` : "分析工具";
-  if (planTitle) planTitle.textContent = q ? `${name} 交易計畫` : "交易計畫";
+  if (analysisTitle) analysisTitle.textContent = q ? `${name} 分析` : "分析工具";
+  if (planTitle) planTitle.textContent = q ? `${name} 計畫` : "交易計畫";
 }
 
 function updateAnalysis() {
@@ -141,10 +141,10 @@ function updateAnalysis() {
   const action = document.querySelector("#resultAction");
   if (badge && action) {
     badge.className = "badge watch";
-    badge.textContent = state.currentQuote ? "🟡 等待觀察" : "🟡 等待查詢";
-    action.textContent = state.currentQuote ? "先不要急著進場，等訊號更明確。" : "請先輸入股票代號並查詢。";
-    if (state.currentQuote && score >= 5) { badge.className = "badge good"; badge.textContent = "🟢 可觀察進場"; action.textContent = "可規劃小部位，停損一定要先設好。"; }
-    if (state.currentQuote && score <= -2) { badge.className = "badge bad"; badge.textContent = "🔴 不建議進場"; action.textContent = "風險偏高，先避開或等回測重新站穩。"; }
+    badge.textContent = state.currentQuote ? "等待觀察" : "等待查詢";
+    action.textContent = state.currentQuote ? "先不要急著進場，等訊號更明確。" : "輸入股票代號開始分析。";
+    if (state.currentQuote && score >= 5) { badge.className = "badge good"; badge.textContent = "可觀察進場"; action.textContent = "可規劃小部位，停損一定要先設好。"; }
+    if (state.currentQuote && score <= -2) { badge.className = "badge bad"; badge.textContent = "不建議進場"; action.textContent = "風險偏高，先避開或等回測重新站穩。"; }
   }
   const notesBox = document.querySelector("#notes");
   if (notesBox) notesBox.innerHTML = notes.map((note) => `<div class="note">${note}</div>`).join("");
@@ -199,10 +199,32 @@ function updatePlan(autoFill = false) {
   profitPctEl.textContent = entry && pressure ? `${(((pressure - entry) / entry) * 100).toFixed(2)}%` : "-";
 }
 
+function formatNumber(value, digits = 2) {
+  if (typeof value !== "number") return value ?? "-";
+  return Number.isInteger(value) ? String(value) : value.toFixed(digits);
+}
+
 function renderQuote(data) {
-  const changeRate = typeof data.change_rate === "number" ? data.change_rate.toFixed(2) : "-";
-  const changePrice = typeof data.change_price === "number" ? data.change_price.toFixed(2) : "-";
-  return `<div class="quote-grid"><div><p>股票</p><strong>${data.code} ${data.name || ""}</strong></div><div><p>現價</p><strong>${data.close ?? "-"}</strong></div><div><p>漲跌</p><strong>${changePrice}</strong></div><div><p>漲跌幅</p><strong>${changeRate}%</strong></div><div><p>最高</p><strong>${data.high ?? "-"}</strong></div><div><p>最低</p><strong>${data.low ?? "-"}</strong></div><div><p>量比</p><strong>${data.volume_ratio ?? "-"}</strong></div><div><p>成交量</p><strong>${data.volume ?? "-"}</strong></div><div><p>買價 / 買量</p><strong>${data.buy_price ?? "-"} / ${data.buy_volume ?? "-"}</strong></div><div><p>賣價 / 賣量</p><strong>${data.sell_price ?? "-"} / ${data.sell_volume ?? "-"}</strong></div><div><p>均價</p><strong>${data.average_price ?? "-"}</strong></div></div>`;
+  const rate = typeof data.change_rate === "number" ? data.change_rate : 0;
+  const price = typeof data.change_price === "number" ? data.change_price : 0;
+  const direction = rate > 0 ? "up" : rate < 0 ? "down" : "flat";
+  const arrow = rate > 0 ? "▲" : rate < 0 ? "▼" : "—";
+  const sign = price > 0 ? "+" : "";
+  return `<div class="stock-hero ${direction}">
+    <div><p>股票</p><h2>${data.code} ${data.name || ""}</h2></div>
+    <div class="price-main">${data.close ?? "-"}</div>
+    <div class="change-line">${arrow} ${sign}${formatNumber(price)} / ${sign}${formatNumber(rate)}%</div>
+  </div>
+  <div class="quote-grid compact-quote">
+    <div><p>開盤</p><strong>${data.open ?? "-"}</strong></div>
+    <div><p>最高</p><strong>${data.high ?? "-"}</strong></div>
+    <div><p>最低</p><strong>${data.low ?? "-"}</strong></div>
+    <div><p>量比</p><strong>${data.volume_ratio ?? "-"}</strong></div>
+    <div><p>成交量</p><strong>${data.volume ?? "-"}</strong></div>
+    <div><p>均價</p><strong>${data.average_price ?? "-"}</strong></div>
+    <div><p>買價 / 買量</p><strong>${data.buy_price ?? "-"} / ${data.buy_volume ?? "-"}</strong></div>
+    <div><p>賣價 / 賣量</p><strong>${data.sell_price ?? "-"} / ${data.sell_volume ?? "-"}</strong></div>
+  </div>`;
 }
 
 async function fetchQuote() {
@@ -236,7 +258,7 @@ async function fetchQuote() {
   }
 }
 
-document.querySelectorAll(".nav-item[data-page]").forEach((button) => button.addEventListener("click", () => switchPage(button.dataset.page)));
+document.querySelectorAll(".nav-item[data-page], .nav-shortcut[data-page]").forEach((button) => button.addEventListener("click", () => switchPage(button.dataset.page)));
 document.querySelectorAll(".button-group, .mode-switch").forEach((group) => group.addEventListener("click", (event) => {
   const button = event.target.closest("button");
   if (!button) return;
@@ -248,5 +270,9 @@ document.querySelectorAll(".button-group, .mode-switch").forEach((group) => grou
 document.querySelectorAll("input").forEach((input) => input.addEventListener("input", () => updatePlan(false)));
 document.querySelector("#fetchQuoteBtn")?.addEventListener("click", fetchQuote);
 document.querySelector("#refreshAppBtn")?.addEventListener("click", () => location.href = `${location.pathname}?v=${Date.now()}`);
+
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => navigator.serviceWorker.register("./sw.js").catch(() => {}));
+}
 
 updateAnalysis();
