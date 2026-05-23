@@ -7,19 +7,14 @@
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-title" content="股票助手" />
   <title>股票短線分析助手</title>
-  <link rel="stylesheet" href="style.css?v=20260524-watchlist" />
+  <link rel="stylesheet" href="style.css?v=20260524-stock-sync" />
 </head>
 <body>
   <div class="shell">
     <aside class="sidebar">
       <div class="brand"><div class="brand-icon">衝</div><div><strong>當沖 衝衝衝</strong><span>Stock Assistant</span></div></div>
       <nav class="nav" aria-label="主要功能">
-        <button class="nav-item active" data-page="dashboard">總覽</button>
-        <button class="nav-item" data-page="quote">即時報價</button>
-        <button class="nav-item" data-page="watchlist">自選股</button>
-        <button class="nav-item" data-page="analysis">分析工具</button>
-        <button class="nav-item" data-page="plan">交易計畫</button>
-        <button class="nav-item" data-page="learn">學習筆記</button>
+        <button class="nav-item active" data-page="dashboard">總覽</button><button class="nav-item" data-page="quote">即時報價</button><button class="nav-item" data-page="watchlist">自選股</button><button class="nav-item" data-page="analysis">分析工具</button><button class="nav-item" data-page="plan">交易計畫</button><button class="nav-item" data-page="learn">學習筆記</button>
       </nav>
       <button id="refreshAppBtn" class="refresh-btn">刷新新版</button>
       <p class="sidebar-note">資料由 Render 後端串接永豐 Shioaji。先報價與分析，不做下單。</p>
@@ -30,30 +25,21 @@
         <div><p class="eyebrow">Stock Analysis Assistant</p><h1 id="pageTitle">總覽</h1></div>
         <div class="quick-input">
           <label for="stockName">股票代號 / 名稱</label>
-          <div class="quick-row"><input id="stockName" value="2330 台積電" /><button id="fetchQuoteBtn" class="primary-action">查詢</button></div>
+          <div class="quick-row"><input id="stockName" placeholder="例如：2330 台積電" /><button id="fetchQuoteBtn" class="primary-action">查詢</button></div>
         </div>
       </header>
 
       <section id="page-dashboard" class="page active">
-        <div class="hero-card"><div><span class="pill">新手安全版</span><h2>先看資料，再做判斷</h2><p>整理即時報價、量價狀態、主力風險、停損與第一賣點。目標不是預測，而是避免亂追高。</p></div><div class="signal-card"><span id="resultBadge" class="badge watch">🟡 等待觀察</span><strong id="resultAction">先不要急著進場，等訊號更明確。</strong></div></div>
+        <div class="hero-card"><div><span class="pill">新手安全版</span><h2 id="currentStockTitle">請先查詢一檔股票</h2><p id="currentStockDesc">查詢後，總覽、報價、分析、交易計畫都會依照同一檔股票更新。</p></div><div class="signal-card"><span id="resultBadge" class="badge watch">🟡 等待查詢</span><strong id="resultAction">請先輸入股票代號並查詢。</strong></div></div>
         <div class="grid overview-grid"><article class="panel"><h3>即時報價摘要</h3><div id="quoteSummary" class="quote-placeholder">尚未查詢報價。</div></article><article class="panel"><h3>短線分析摘要</h3><div id="notes" class="notes compact"></div></article></div>
       </section>
 
-      <section id="page-quote" class="page">
-        <div class="section-title"><div><p class="eyebrow small">Live Quote</p><h2>即時報價</h2></div><p>輸入股票代號後查詢現價、漲跌、量比、買賣盤。</p></div>
-        <div id="quoteResult" class="quote-placeholder large">輸入股票代號後，按「查詢」。Render 免費版第一次可能要等比較久。</div>
-      </section>
+      <section id="page-quote" class="page"><div class="section-title"><div><p class="eyebrow small">Live Quote</p><h2>即時報價</h2></div><p>所有資料依照上方查詢的股票代號更新。</p></div><div id="quoteResult" class="quote-placeholder large">輸入股票代號後，按「查詢」。</div></section>
 
-      <section id="page-watchlist" class="page">
-        <div class="section-title"><div><p class="eyebrow small">Watchlist</p><h2>自選股</h2></div><p>新增常看的股票，之後點一下就能查報價。</p></div>
-        <div class="panel">
-          <div class="quick-row"><input id="watchCode" placeholder="例如：2330 台積電" /><button id="addWatchBtn" class="primary-action">新增</button></div>
-          <div id="watchList" class="watch-list"></div>
-        </div>
-      </section>
+      <section id="page-watchlist" class="page"><div class="section-title"><div><p class="eyebrow small">Watchlist</p><h2>自選股</h2></div><p>新增常看的股票，之後點一下就能查報價。</p></div><div class="panel"><div class="quick-row"><input id="watchCode" placeholder="例如：2330 台積電" /><button id="addWatchBtn" class="primary-action">新增</button></div><div id="watchList" class="watch-list"></div></div></section>
 
       <section id="page-analysis" class="page">
-        <div class="section-title"><div><p class="eyebrow small">Analysis</p><h2>分析工具</h2></div><p>用技術面＋主力風險，判斷現在適不適合追。</p></div>
+        <div class="section-title"><div><p class="eyebrow small">Analysis</p><h2 id="analysisTitle">分析工具</h2></div><p>分析結果會依照目前查詢的股票資料輔助判斷。</p></div>
         <div class="mode-switch" data-field="mode"><button class="active" data-value="basic">新手模式</button><button data-value="advanced">進階模式</button></div>
         <div class="grid cards">
           <article class="card"><h3>1. 趨勢</h3><div class="button-group" data-field="trend"><button class="active" data-value="up">上升趨勢</button><button data-value="side">橫盤整理</button><button data-value="down">下降趨勢</button></div></article>
@@ -65,14 +51,12 @@
         <div class="panel danger-panel"><h3>主力與假訊號提醒</h3><div id="warningList" class="warning-list"></div></div>
       </section>
 
-      <section id="page-plan" class="page"><div class="section-title"><div><p class="eyebrow small">Trade Plan</p><h2>交易計畫</h2></div><p>買之前先想好：哪裡買、哪裡錯、哪裡先跑。</p></div><div class="panel"><div class="grid plan-inputs"><label>預計買點<input id="entryPrice" type="number" value="2250" /></label><label>支撐 / 停損<input id="supportPrice" type="number" value="2245" /></label><label>壓力 / 第一賣點<input id="pressurePrice" type="number" value="2265" /></label></div><div class="grid metrics"><div><p>停損邏輯</p><strong id="stopLogic">跌破 2245，代表看錯就退</strong></div><div><p>預估風險</p><strong id="lossPct">0.22%</strong></div><div><p>預估空間</p><strong id="profitPct">0.67%</strong></div></div><p class="warning">提醒：短線不是凹單。跌破你設定的關鍵位置，就代表原本假設失敗。</p></div></section>
+      <section id="page-plan" class="page"><div class="section-title"><div><p class="eyebrow small">Trade Plan</p><h2 id="planTitle">交易計畫</h2></div><p>買點、停損、第一賣點會以查詢到的現價附近自動帶入。</p></div><div class="panel"><div class="grid plan-inputs"><label>預計買點<input id="entryPrice" type="number" placeholder="查詢後自動帶入" /></label><label>支撐 / 停損<input id="supportPrice" type="number" placeholder="查詢後自動帶入" /></label><label>壓力 / 第一賣點<input id="pressurePrice" type="number" placeholder="查詢後自動帶入" /></label></div><div class="grid metrics"><div><p>停損邏輯</p><strong id="stopLogic">請先查詢股票</strong></div><div><p>預估風險</p><strong id="lossPct">-</strong></div><div><p>預估空間</p><strong id="profitPct">-</strong></div></div><p class="warning">提醒：短線不是凹單。跌破你設定的關鍵位置，就代表原本假設失敗。</p></div></section>
 
       <section id="page-learn" class="page"><div class="section-title"><div><p class="eyebrow small">Learning</p><h2>學習筆記</h2></div><p>把目前教材重點整理成最簡單的看盤流程。</p></div><div class="grid learn-grid"><div><strong>1. 先看趨勢</strong><p>上升趨勢優先，下降趨勢不要亂接刀。</p></div><div><strong>2. 再看成交量</strong><p>上漲最好有量，爆量不漲要小心。</p></div><div><strong>3. 看位置</strong><p>回測不破比追高安全，突破要確認站得穩。</p></div><div><strong>4. 先設停損</strong><p>跌破關鍵支撐代表看錯，不要凹單。</p></div><div><strong>5. 小心假突破</strong><p>突破沒量、突破後站不穩，都不要急著追。</p></div><div><strong>6. 主力思維</strong><p>不要只看型態，要看資金是在進場、洗盤還是出貨。</p></div></div></section>
     </main>
   </div>
-
   <nav class="bottom-nav" aria-label="手機功能切換"><button class="nav-item active" data-page="dashboard">總覽</button><button class="nav-item" data-page="quote">報價</button><button class="nav-item" data-page="watchlist">自選</button><button class="nav-item" data-page="analysis">分析</button><button class="nav-item" data-page="plan">計畫</button><button class="nav-item" data-page="learn">筆記</button></nav>
-
-  <script src="app.js?v=20260524-watchlist"></script>
+  <script src="app.js?v=20260524-stock-sync"></script>
 </body>
 </html>
