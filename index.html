@@ -7,14 +7,14 @@
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-title" content="STX 看盤" />
   <title>STX 現代看盤</title>
-  <link rel="stylesheet" href="pro.css?v=20260524-search-label-1" />
+  <link rel="stylesheet" href="pro.css?v=20260524-market-home-1" />
 </head>
 <body class="pro-body modern-body">
   <main class="pro-app modern-app">
     <header class="modern-header">
       <button id="openSearchPage" class="modern-icon">‹</button>
       <div class="modern-title-wrap"><strong id="proTitle">2330 台積電</strong><span>上市｜電子權值</span></div>
-      <button class="modern-icon">☆</button>
+      <div class="modern-top-actions"><button class="modern-star">☆</button><button class="modern-more">⋮</button></div>
     </header>
 
     <section class="modern-price-head">
@@ -23,11 +23,21 @@
     </section>
 
     <section id="page-search" class="modern-page">
-      <h2 class="page-heading">搜尋股票</h2>
+      <h2 class="page-heading">搜尋主介面</h2>
+      <section class="market-hero">
+        <div><span>加權指數</span><strong id="marketIndex">42267.97</strong><p id="marketChange" class="up">▲ 899.76 / 2.17%</p></div>
+        <div class="market-score"><b id="marketScore">78</b><span>大盤強度</span></div>
+      </section>
       <section class="search-panel">
-        <span>輸入股票代號</span>
+        <span>搜尋股票代號</span>
         <div class="watch-input"><input id="proCode" inputmode="numeric" value="2330" placeholder="例如 2330" /><button id="proSearch">查詢</button></div>
-        <p>查詢後會自動回到總覽，並同步更新報價、K線、分析與計畫。</p>
+        <p id="marketSummary">大盤偏多，短線可優先觀察強勢股回測支撐。</p>
+      </section>
+      <section class="market-grid">
+        <article><span>櫃買指數</span><strong>423.25</strong><p class="up">▲ 13.45</p></article>
+        <article><span>盤勢判斷</span><strong id="marketMood">偏多</strong><p>站上均線，量能溫和放大</p></article>
+        <article><span>當沖環境</span><strong id="daytradeMood">可操作</strong><p>追高風險仍需控管</p></article>
+        <article><span>風險提醒</span><strong>勿追高</strong><p>急拉後等回測再進</p></article>
       </section>
     </section>
 
@@ -57,6 +67,6 @@
     <section id="page-plan" class="modern-page"><h2 class="page-heading">交易計畫</h2><section class="plan-panel"><span>AI 買點</span><strong id="planEntry">-</strong><p id="planEntryText">等待資料</p></section><section class="plan-panel"><span>停損位置</span><strong id="planStop">-</strong><p id="planStopText">等待資料</p></section><section class="plan-panel"><span>目標 / 壓力</span><strong id="planTarget">-</strong><p id="planTargetText">等待資料</p></section><section class="plan-panel warning"><span>紀律提醒</span><strong>跌破停損不凹單</strong><p>當沖先保命，再談獲利。</p></section></section>
     <nav class="pro-bottom-nav modern-bottom"><button class="active" data-page="overview">⌂<br>總覽</button><button data-page="quote">▧<br>報價</button><button data-page="watch">☆<br>自選</button><button data-page="analysis">◴<br>分析</button><button data-page="plan">▣<br>計畫</button></nav>
   </main>
-  <script src="pro.js?v=20260524-search-label-1"></script>
+  <script src="pro.js?v=20260524-market-home-1"></script>
 </body>
 </html>
