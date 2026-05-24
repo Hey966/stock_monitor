@@ -6,11 +6,8 @@
   <meta name="theme-color" content="#090d15" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-title" content="STX 看盤" />
-  <link rel="manifest" href="manifest.json?v=20260524-pro-1" />
-  <link rel="icon" href="icon.svg?v=20260524-pro-1" type="image/svg+xml" />
-  <link rel="apple-touch-icon" href="icon.svg?v=20260524-pro-1" />
   <title>STX 專業看盤</title>
-  <link rel="stylesheet" href="style.css?v=20260524-pro-1" />
+  <link rel="stylesheet" href="pro.css?v=20260524-pro-fix-2" />
 </head>
 <body class="pro-body">
   <main class="pro-app">
@@ -28,9 +25,12 @@
         <span>加權 <b class="up">42267.97 ▲899.76</b></span>
         <span>櫃買 <b class="up">423.25 ▲13.45</b></span>
       </div>
-      <div class="pro-tags"><span class="active">整</span><span>零</span><span>上市</span><span>收盤</span><button>買賣現沖</button></div>
       <div class="pro-title-row">
-        <div><h1 id="proTitle">2330 台積電</h1><strong id="proPrice" class="pro-price">-</strong><p id="proChange" class="up">-</p></div>
+        <div>
+          <h1 id="proTitle">2330 台積電</h1>
+          <strong id="proPrice" class="pro-price">-</strong>
+          <p id="proChange" class="up">-</p>
+        </div>
         <div class="pro-stats">
           <span>最高 <b id="proHigh" class="up">-</b></span>
           <span>最低 <b id="proLow" class="down">-</b></span>
@@ -42,15 +42,11 @@
         <div>買價 / 買量 <b id="proBid">-</b></div>
         <div>賣價 / 賣量 <b id="proAsk">-</b></div>
       </div>
-      <nav class="pro-tabs"><button>行情</button><button class="active">K線</button><button>評析</button><button>新聞</button><button>籌碼</button><button>基本</button></nav>
     </section>
 
     <section class="pro-chart-section">
-      <div class="pro-chart-title">
-        <span>整股技術線圖</span>
-        <small id="proStatus">準備中</small>
-      </div>
-      <div class="pro-periods"><button>日</button><button>週</button><button>月</button><button class="active">1分</button><button>5分</button><button>15分</button><button>還日⌄</button></div>
+      <div class="pro-chart-title"><span>整股技術線圖</span><small id="proStatus">準備中</small></div>
+      <div class="pro-periods"><button>日</button><button>週</button><button>月</button><button class="active">1分</button><button>5分</button><button>15分</button></div>
       <canvas id="proCanvas" class="pro-canvas"></canvas>
       <div id="proSignal" class="pro-signal">讀取資料中...</div>
     </section>
@@ -60,9 +56,9 @@
     </section>
 
     <nav class="pro-bottom-nav">
-      <button class="active">▭<br>總覽</button><button>⌁<br>選股</button><button class="order">下單匣</button><button>▦<br>自選</button><button>○<br>帳務</button>
+      <button class="active">總覽</button><button>選股</button><button class="order">下單</button><button>自選</button><button>帳務</button>
     </nav>
   </main>
-  <script src="pro.js?v=20260524-pro-1"></script>
+  <script src="pro.js?v=20260524-pro-fix-2"></script>
 </body>
 </html>
