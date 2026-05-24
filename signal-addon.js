@@ -18,6 +18,20 @@
   function roundTick(v, dir = 0) { const t = tickUnit(v); if (dir > 0) return Math.ceil(v / t) * t; if (dir < 0) return Math.floor(v / t) * t; return Math.round(v / t) * t; }
   function zoneText(a, b) { const x = Math.min(a, b), y = Math.max(a, b); return `${price(x)}~${price(y)}`; }
   function isGoldenTime() { const d = new Date(); const m = d.getHours() * 60 + d.getMinutes(); return m >= 540 && m <= 630; }
+  function openingMethod(q, bars) {
+    const first = bars[0] || {};
+    const firstOpen = num(first.open) || num(q.open);
+    const firstClose = num(first.close) || num(q.close);
+    const nowClose = num(q.close) || firstClose;
+    const ref = num(q.reference_price) || num(q.yesterday_close) || firstOpen;
+    const gapUp = firstOpen >= ref;
+    const firstRed = firstClose >= firstOpen;
+    const aboveFirst = nowClose >= firstClose;
+    if (gapUp && firstRed && aboveFirst) return { name: '開高走高', score: 12, bias: '偏多' };
+    if (gapUp && (!firstRed || !aboveFirst)) return { name: '開高走低', score: -18, bias: '偏空' };
+    if (!gapUp && firstRed && aboveFirst) return { name: '開低走高', score: 8, bias: '轉強' };
+    return { name: '開低走低', score: -16, bias: '偏空' };
+  }
 
   function analyzeKline(quote, bars) {
     const list = bars.slice(-45);
@@ -42,12 +56,14 @@
     const tick = tickUnit(close);
     const openMove = open ? Math.abs((close - open) / open * 100) : 0;
     const totalVol = num(quote.volume);
+    const openType = openingMethod(quote, bars || []);
 
-    let score = 50;
-    const good = [], risk = [], pattern = [];
+    let score = 50 + openType.score;
+    const good = [], risk = [], pattern = [openType.name];
     const add = (pts, tag) => { score += pts; good.push(tag); };
     const sub = (pts, tag) => { score -= pts; risk.push(tag); };
 
+    if (openType.score > 0) good.push(`${openType.name}，盤勢${openType.bias}`); else risk.push(`${openType.name}，盤勢${openType.bias}`);
     if (openMove >= 5) sub(35, '開盤後漲跌已超過5%，空間不足');
     if (totalVol && totalVol < 1000) sub(18, '成交量未達1000張，流動性不足');
     if (isGoldenTime()) add(6, '位於9:00~10:30黃金時段'); else sub(5, '非黃金時段，降低出手分數');
@@ -83,12 +99,13 @@
     const secondTarget = roundTick(firstTarget + Math.max(firstTarget - riskLine, close * 0.008) * 0.65, 1);
     const holdRate = score >= 85 && rr >= 1.8 ? 70 : score >= 75 && rr >= 1.4 ? 55 : score >= 65 ? 25 : 0;
     const action = score >= 85 && rr >= 1.8 ? `${holdRate}% 可保留到第二賣點，其餘第一賣點先落袋` : score >= 75 && rr >= 1.4 ? `${holdRate}% 嘗試留第二賣點，第一賣點先減碼` : score >= 65 ? '未達75分，只等待回測確認，不主動出手' : '規則未達標，等待下一個高勝率位置';
-    return { score, status, regime, entryLow, entryHigh, riskLine, firstTarget, secondTarget, rr, holdRate, action, good, risk, pattern };
+    return { score, status, regime, openType, entryLow, entryHigh, riskLine, firstTarget, secondTarget, rr, holdRate, action, good, risk, pattern };
   }
 
   function row(label, value, note, type = '') { return `<div class="decision-row ${type}"><span>${label}</span><strong>${value}</strong><small>${note}</small></div>`; }
   function decisionHTML(d) {
     return `<div class="decision-list expert">
+      ${row('開盤四法', d.openType.name, `盤勢${d.openType.bias}｜分數影響 ${d.openType.score > 0 ? '+' : ''}${d.openType.score}`, d.openType.score > 0 ? 'good' : 'bad')}
       ${row('市場狀態', d.regime, '依價、量、五檔與K線型態判斷', d.regime === '多方盤' ? 'good' : d.regime === '陷阱盤' || d.regime === '弱勢盤' ? 'bad' : '')}
       ${row('規則判斷', d.status, `分數 ${d.score}/100｜75分才達股票當沖出手門檻`, d.score >= 75 ? 'good' : d.score < 55 ? 'bad' : '')}
       ${row('進場區間', zoneText(d.entryLow, d.entryHigh), '支撐/VWAP上方等回測不破，不追第一根急拉')}
@@ -107,8 +124,8 @@
     if ($('#analysisSummary')) $('#analysisSummary').innerHTML = html;
     if ($('#analysisTags')) $('#analysisTags').innerHTML = (d.good.length ? d.good : ['等待回測']).map((x) => `<span>${x}</span>`).join('');
     if ($('#riskTags')) $('#riskTags').innerHTML = (d.risk.length ? d.risk : ['暫無明顯風險']).map((x) => `<span>${x}</span>`).join('');
-    if ($('.modern-alerts')) $('.modern-alerts').innerHTML = `<b>⚡ 規則判斷</b><span>${d.regime}</span><span>${d.status}</span><span>停損 ${price(d.riskLine)}</span><span>第一 ${price(d.firstTarget)}</span>`;
-    const rows = [['門檻', d.score >= 75 ? '達標' : '未達', `分數 ${d.score}/100`], ['停損', price(d.riskLine), '跌破失敗'], ['第一賣點', price(d.firstTarget), `RR ${Number.isFinite(d.rr) ? d.rr.toFixed(2) : '-'}`], ['第二賣點', price(d.secondTarget), `${d.holdRate}% 觀察保留`]];
+    if ($('.modern-alerts')) $('.modern-alerts').innerHTML = `<b>⚡ 規則判斷</b><span>${d.openType.name}</span><span>${d.status}</span><span>停損 ${price(d.riskLine)}</span><span>第一 ${price(d.firstTarget)}</span>`;
+    const rows = [['門檻', d.score >= 75 ? '達標' : '未達', `分數 ${d.score}/100`], ['開盤', d.openType.name, d.openType.bias], ['第一賣點', price(d.firstTarget), `RR ${Number.isFinite(d.rr) ? d.rr.toFixed(2) : '-'}`], ['第二賣點', price(d.secondTarget), `${d.holdRate}% 觀察保留`]];
     $$('.modern-cards article').forEach((card, i) => { if (!card || !rows[i]) return; card.querySelector('span').textContent = rows[i][0]; card.querySelector('strong').textContent = rows[i][1]; card.querySelector('p').textContent = rows[i][2]; });
     [['aiEntry', zoneText(d.entryLow, d.entryHigh)], ['aiStop', price(d.riskLine)], ['aiTarget', price(d.firstTarget)], ['planEntry', zoneText(d.entryLow, d.entryHigh)], ['planStop', price(d.riskLine)], ['planTarget', price(d.firstTarget)]].forEach(([id, text]) => { const el = $('#' + id); if (el) el.textContent = text; });
     [['aiEntryText', `規則判斷：${d.regime}｜${d.status}`], ['aiStopText', `停損位置：${price(d.riskLine)}`], ['aiTargetText', `第一：${price(d.firstTarget)}｜第二：${price(d.secondTarget)}`], ['planEntryText', `進場區間：${zoneText(d.entryLow, d.entryHigh)}`], ['planStopText', `停損位置：${price(d.riskLine)}`], ['planTargetText', `推薦處置：${d.action}`]].forEach(([id, text]) => { const el = $('#' + id); if (el) el.textContent = text; });
