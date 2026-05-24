@@ -14,7 +14,7 @@
     try {
       const [quote, kbars] = await Promise.all([getJSON(`${BACKEND}/api/quote?code=${state.code}`), getJSON(`${BACKEND}/api/kbars?code=${state.code}&days=5`)]);
       state.quote = quote; state.kbars = kbars.items || [];
-      renderQuote(); drawChart(); updateSignal(); updateSmartCards();
+      renderQuote(); drawChart(); updateSignal(); updateSmartCards(); updateTradePoints();
       $('#proStatus').textContent = `已更新 ${new Date().toLocaleTimeString('zh-TW', { hour: '2-digit', minute: '2-digit', second: '2-digit' })}`;
     } catch (e) { $('#proStatus').textContent = '讀取失敗'; $('#proSignal').textContent = `讀取失敗：${e.message}`; }
   }
@@ -70,6 +70,29 @@
     if(n(last.close)<n(prev.close)){score-=8; warnings.push('K線偏弱');}
     score=Math.max(0,Math.min(100,Math.round(score)));
     return {score,tags,warnings,bull:score,bear:100-score,trend:score>=75?'多頭排列':score>=55?'偏多整理':score>=40?'震盪觀望':'空方偏強',action:score>=75?'回測不破可觀察':score>=55?'等待突破確認':score>=40?'先等方向':'避免追價'};
+  }
+
+  function calcTradePoints(){
+    const q=state.quote||{}, data=state.kbars||[], recent=data.slice(-30); if(!recent.length) return null;
+    const close=n(q.close)||n(recent.at(-1)?.close), avg=n(q.average_price)||vwap(recent)||close;
+    const support=Math.min(...recent.slice(-20).map(b=>n(b.low)).filter(Boolean));
+    const pressure=Math.max(...recent.slice(-20).map(b=>n(b.high)).filter(Boolean));
+    const score=computeSignal().score;
+    let entry=score>=65 ? Math.max(avg,support) : avg;
+    let stop=support || close*0.985;
+    let target=pressure || close*1.015;
+    if(target<=entry) target=entry+(entry-stop)*1.6;
+    return {entry,stop,target,score,rr:(target-entry)/Math.max(entry-stop,.01)};
+  }
+
+  function updateTradePoints(){
+    const p=calcTradePoints(); if(!p) return;
+    $('#aiEntry').textContent=fmt(p.entry);
+    $('#aiStop').textContent=fmt(p.stop);
+    $('#aiTarget').textContent=fmt(p.target);
+    $('#aiEntryText').textContent=p.score>=65?'偏強：等回測均價/支撐':'分數不足：先觀察';
+    $('#aiStopText').textContent=`跌破 ${fmt(p.stop)} 代表假設失敗`;
+    $('#aiTargetText').textContent=p.rr>=1.2?'風報比可觀察':'空間偏小，避免追價';
   }
 
   function updateSmartCards(){
