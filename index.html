@@ -7,26 +7,34 @@
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-title" content="STX 看盤" />
   <title>STX 現代看盤</title>
-  <link rel="stylesheet" href="pro.css?v=20260524-pages-1" />
+  <link rel="stylesheet" href="pro.css?v=20260524-search-label-1" />
 </head>
 <body class="pro-body modern-body">
   <main class="pro-app modern-app">
     <header class="modern-header">
-      <button id="proRefresh" class="modern-icon">‹</button>
+      <button id="openSearchPage" class="modern-icon">‹</button>
       <div class="modern-title-wrap"><strong id="proTitle">2330 台積電</strong><span>上市｜電子權值</span></div>
       <button class="modern-icon">☆</button>
     </header>
 
     <section class="modern-price-head">
       <div class="modern-price-main"><strong id="proPrice" class="pro-price">-</strong><span id="proChange" class="up">-</span></div>
-      <div class="modern-search"><input id="proCode" class="pro-code-input" inputmode="numeric" value="2330" /><button id="proSearch" class="pro-search-btn">查詢</button></div>
+      <div id="stockCodeLabel" class="stock-code-label">2330</div>
+    </section>
+
+    <section id="page-search" class="modern-page">
+      <h2 class="page-heading">搜尋股票</h2>
+      <section class="search-panel">
+        <span>輸入股票代號</span>
+        <div class="watch-input"><input id="proCode" inputmode="numeric" value="2330" placeholder="例如 2330" /><button id="proSearch">查詢</button></div>
+        <p>查詢後會自動回到總覽，並同步更新報價、K線、分析與計畫。</p>
+      </section>
     </section>
 
     <section id="page-overview" class="modern-page active">
       <section class="modern-metrics">
         <article><span>成交量</span><b id="proVol">-</b></article><article><span>均價</span><b id="proAvg">-</b></article><article><span>最高</span><b id="proHigh" class="up">-</b></article><article><span>最低</span><b id="proLow" class="down">-</b></article><article><span>買價 / 買量</span><b id="proBid">-</b></article><article><span>賣價 / 賣量</span><b id="proAsk">-</b></article>
       </section>
-
       <section class="modern-chart-card pro-chart-section">
         <div class="modern-chart-head"><strong>K線走勢</strong><button class="modern-close">×</button></div>
         <div class="pro-periods modern-periods"><button class="active">1分</button><button>5分</button><button>15分</button><button>30分</button><button>日</button><button>週</button><button>月</button></div>
@@ -34,51 +42,21 @@
         <canvas id="proCanvas" class="pro-canvas modern-canvas"></canvas>
         <div id="proSignal" class="pro-signal modern-signal">讀取資料中...</div>
       </section>
-
       <section class="modern-points">
-        <article><span>AI 買點</span><strong id="aiEntry">-</strong><p id="aiEntryText">等待資料</p></article>
-        <article><span>停損</span><strong id="aiStop">-</strong><p id="aiStopText">等待資料</p></article>
-        <article><span>壓力 / 賣點</span><strong id="aiTarget">-</strong><p id="aiTargetText">等待資料</p></article>
+        <article><span>AI 買點</span><strong id="aiEntry">-</strong><p id="aiEntryText">等待資料</p></article><article><span>停損</span><strong id="aiStop">-</strong><p id="aiStopText">等待資料</p></article><article><span>壓力 / 賣點</span><strong id="aiTarget">-</strong><p id="aiTargetText">等待資料</p></article>
       </section>
-
       <section class="modern-cards">
         <article><span>多空力道</span><strong>63</strong><p>多方強勢</p></article><article><span>主力動向</span><strong>買超</strong><p>連續 3 日買超</p></article><article><span>量能狀態</span><strong>爆量</strong><p>較昨日 +258%</p></article><article><span>趨勢判斷</span><strong>多頭排列</strong><p>短多強勢</p></article>
       </section>
       <section class="modern-alerts"><b>⚡ 即時提醒</b><span>等待訊號</span></section>
     </section>
 
-    <section id="page-quote" class="modern-page">
-      <h2 class="page-heading">完整報價</h2>
-      <div class="quote-detail-grid">
-        <article><span>現價</span><b id="qClose">-</b></article><article><span>漲跌幅</span><b id="qChange">-</b></article><article><span>開盤</span><b id="qOpen">-</b></article><article><span>最高</span><b id="qHigh">-</b></article><article><span>最低</span><b id="qLow">-</b></article><article><span>總量</span><b id="qVol">-</b></article><article><span>買價 / 買量</span><b id="qBid">-</b></article><article><span>賣價 / 賣量</span><b id="qAsk">-</b></article><article><span>量比</span><b id="qVolRatio">-</b></article>
-      </div>
-    </section>
-
-    <section id="page-watch" class="modern-page">
-      <h2 class="page-heading">自選股</h2>
-      <div class="watch-input"><input id="watchInput" inputmode="numeric" placeholder="新增股票代號，例如 2317" /><button id="watchAdd">新增</button></div>
-      <div id="watchList" class="watch-modern-list"></div>
-    </section>
-
-    <section id="page-analysis" class="modern-page">
-      <h2 class="page-heading">AI 分析</h2>
-      <section class="analysis-panel"><h3>目前結論</h3><p id="analysisSummary">查詢後自動產生分析。</p></section>
-      <section class="analysis-panel"><h3>多空條件</h3><div id="analysisTags" class="analysis-tags"></div></section>
-      <section class="analysis-panel"><h3>風險提醒</h3><div id="riskTags" class="analysis-tags danger"></div></section>
-    </section>
-
-    <section id="page-plan" class="modern-page">
-      <h2 class="page-heading">交易計畫</h2>
-      <section class="plan-panel"><span>AI 買點</span><strong id="planEntry">-</strong><p id="planEntryText">等待資料</p></section>
-      <section class="plan-panel"><span>停損位置</span><strong id="planStop">-</strong><p id="planStopText">等待資料</p></section>
-      <section class="plan-panel"><span>目標 / 壓力</span><strong id="planTarget">-</strong><p id="planTargetText">等待資料</p></section>
-      <section class="plan-panel warning"><span>紀律提醒</span><strong>跌破停損不凹單</strong><p>當沖先保命，再談獲利。</p></section>
-    </section>
-
-    <nav class="pro-bottom-nav modern-bottom">
-      <button class="active" data-page="overview">⌂<br>總覽</button><button data-page="quote">▧<br>報價</button><button data-page="watch">☆<br>自選</button><button data-page="analysis">◴<br>分析</button><button data-page="plan">▣<br>計畫</button>
-    </nav>
+    <section id="page-quote" class="modern-page"><h2 class="page-heading">完整報價</h2><div class="quote-detail-grid"><article><span>現價</span><b id="qClose">-</b></article><article><span>漲跌幅</span><b id="qChange">-</b></article><article><span>開盤</span><b id="qOpen">-</b></article><article><span>最高</span><b id="qHigh">-</b></article><article><span>最低</span><b id="qLow">-</b></article><article><span>總量</span><b id="qVol">-</b></article><article><span>買價 / 買量</span><b id="qBid">-</b></article><article><span>賣價 / 賣量</span><b id="qAsk">-</b></article><article><span>量比</span><b id="qVolRatio">-</b></article></div></section>
+    <section id="page-watch" class="modern-page"><h2 class="page-heading">自選股</h2><div class="watch-input"><input id="watchInput" inputmode="numeric" placeholder="新增股票代號，例如 2317" /><button id="watchAdd">新增</button></div><div id="watchList" class="watch-modern-list"></div></section>
+    <section id="page-analysis" class="modern-page"><h2 class="page-heading">AI 分析</h2><section class="analysis-panel"><h3>目前結論</h3><p id="analysisSummary">查詢後自動產生分析。</p></section><section class="analysis-panel"><h3>多空條件</h3><div id="analysisTags" class="analysis-tags"></div></section><section class="analysis-panel"><h3>風險提醒</h3><div id="riskTags" class="analysis-tags danger"></div></section></section>
+    <section id="page-plan" class="modern-page"><h2 class="page-heading">交易計畫</h2><section class="plan-panel"><span>AI 買點</span><strong id="planEntry">-</strong><p id="planEntryText">等待資料</p></section><section class="plan-panel"><span>停損位置</span><strong id="planStop">-</strong><p id="planStopText">等待資料</p></section><section class="plan-panel"><span>目標 / 壓力</span><strong id="planTarget">-</strong><p id="planTargetText">等待資料</p></section><section class="plan-panel warning"><span>紀律提醒</span><strong>跌破停損不凹單</strong><p>當沖先保命，再談獲利。</p></section></section>
+    <nav class="pro-bottom-nav modern-bottom"><button class="active" data-page="overview">⌂<br>總覽</button><button data-page="quote">▧<br>報價</button><button data-page="watch">☆<br>自選</button><button data-page="analysis">◴<br>分析</button><button data-page="plan">▣<br>計畫</button></nav>
   </main>
-  <script src="pro.js?v=20260524-pages-1"></script>
+  <script src="pro.js?v=20260524-search-label-1"></script>
 </body>
 </html>
