@@ -5,6 +5,8 @@
   const num = (v) => Number.isFinite(Number(v)) ? Number(v) : 0;
   const price = (v) => Number.isFinite(Number(v)) ? Number(v).toFixed(2).replace(/\.00$/, '') : '-';
   let lastRun = 0;
+  let lastKbarAt = 0;
+  let cachedKbars = [];
 
   async function getJSON(url) {
     const r = await fetch(url, { cache: 'no-store' });
@@ -124,24 +126,30 @@
     if ($('#analysisSummary')) $('#analysisSummary').innerHTML = html;
     if ($('#analysisTags')) $('#analysisTags').innerHTML = (d.good.length ? d.good : ['等待回測']).map((x) => `<span>${x}</span>`).join('');
     if ($('#riskTags')) $('#riskTags').innerHTML = (d.risk.length ? d.risk : ['暫無明顯風險']).map((x) => `<span>${x}</span>`).join('');
-    if ($('.modern-alerts')) $('.modern-alerts').innerHTML = `<b>⚡ 規則判斷</b><span>${d.openType.name}</span><span>${d.status}</span><span>停損 ${price(d.riskLine)}</span><span>第一 ${price(d.firstTarget)}</span>`;
+    if ($('.modern-alerts')) $('.modern-alerts').innerHTML = `<b>⚡ 快速規則</b><span>${d.openType.name}</span><span>${d.status}</span><span>分數 ${d.score}</span><span>第一 ${price(d.firstTarget)}</span>`;
     const rows = [['門檻', d.score >= 75 ? '達標' : '未達', `分數 ${d.score}/100`], ['開盤', d.openType.name, d.openType.bias], ['第一賣點', price(d.firstTarget), `RR ${Number.isFinite(d.rr) ? d.rr.toFixed(2) : '-'}`], ['第二賣點', price(d.secondTarget), `${d.holdRate}% 觀察保留`]];
     $$('.modern-cards article').forEach((card, i) => { if (!card || !rows[i]) return; card.querySelector('span').textContent = rows[i][0]; card.querySelector('strong').textContent = rows[i][1]; card.querySelector('p').textContent = rows[i][2]; });
     [['aiEntry', zoneText(d.entryLow, d.entryHigh)], ['aiStop', price(d.riskLine)], ['aiTarget', price(d.firstTarget)], ['planEntry', zoneText(d.entryLow, d.entryHigh)], ['planStop', price(d.riskLine)], ['planTarget', price(d.firstTarget)]].forEach(([id, text]) => { const el = $('#' + id); if (el) el.textContent = text; });
     [['aiEntryText', `規則判斷：${d.regime}｜${d.status}`], ['aiStopText', `停損位置：${price(d.riskLine)}`], ['aiTargetText', `第一：${price(d.firstTarget)}｜第二：${price(d.secondTarget)}`], ['planEntryText', `進場區間：${zoneText(d.entryLow, d.entryHigh)}`], ['planStopText', `停損位置：${price(d.riskLine)}`], ['planTargetText', `推薦處置：${d.action}`]].forEach(([id, text]) => { const el = $('#' + id); if (el) el.textContent = text; });
   }
 
-  async function update(code) {
-    const [quote, kbars] = await Promise.all([getJSON(`${API}/api/quote?code=${code}`), getJSON(`${API}/api/kbars?code=${code}&days=5`)]);
-    renderDecision(analyzeKline(quote, kbars.items || []));
+  async function updateFast(code) {
+    const now = Date.now();
+    const quote = await getJSON(`${API}/api/quote?code=${code}`);
+    if (!cachedKbars.length || now - lastKbarAt > 10000) {
+      const kbars = await getJSON(`${API}/api/kbars?code=${code}&days=5`);
+      cachedKbars = kbars.items || [];
+      lastKbarAt = now;
+    }
+    renderDecision(analyzeKline(quote, cachedKbars));
   }
 
   setInterval(() => {
     const code = ($('#stockCodeLabel')?.textContent || '').match(/\d{4,6}/)?.[0];
     if (!code) return;
     const now = Date.now();
-    if (now - lastRun < 3000) return;
+    if (now - lastRun < 900) return;
     lastRun = now;
-    update(code).catch(() => {});
-  }, 1000);
+    updateFast(code).catch(() => {});
+  }, 500);
 })();
