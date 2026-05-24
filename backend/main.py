@@ -52,6 +52,10 @@ class KBarsResponse(BaseModel):
     code: str
     interval: str
     items: list[KBarItem]
+    count: int
+    start: str | None = None
+    end: str | None = None
+    message: str | None = None
 
 
 @asynccontextmanager
@@ -73,7 +77,7 @@ async def lifespan(app: FastAPI):
 app = FastAPI(
     title="Stock Monitor Backend",
     description="Safe backend bridge for GitHub Pages frontend and Sinotrade Shioaji.",
-    version="0.2.0",
+    version="0.2.1",
     lifespan=lifespan,
 )
 
@@ -102,6 +106,30 @@ def get_stock_contract(code: str):
         return api.Contracts.Stocks[code]
     except Exception as exc:
         raise HTTPException(status_code=404, detail=f"Cannot find stock code: {code}") from exc
+
+
+def normalize_kbars(kbars: Any) -> list[KBarItem]:
+    rows: list[KBarItem] = []
+    for ts, open_, high, low, close, volume in zip(
+        getattr(kbars, "ts", []),
+        getattr(kbars, "Open", []),
+        getattr(kbars, "High", []),
+        getattr(kbars, "Low", []),
+        getattr(kbars, "Close", []),
+        getattr(kbars, "Volume", []),
+        strict=False,
+    ):
+        rows.append(
+            KBarItem(
+                ts=str(ts),
+                open=float(open_),
+                high=float(high),
+                low=float(low),
+                close=float(close),
+                volume=float(volume),
+            )
+        )
+    return rows
 
 
 @app.get("/")
@@ -160,39 +188,50 @@ def get_quote(code: str = Query(..., description="Taiwan stock code, e.g. 2330")
 @app.get("/api/kbars", response_model=KBarsResponse)
 def get_kbars(
     code: str = Query(..., description="Taiwan stock code, e.g. 2330"),
-    days: int = Query(1, ge=1, le=5),
+    days: int = Query(5, ge=1, le=10),
 ) -> KBarsResponse:
     if api is None:
         raise HTTPException(status_code=503, detail="Shioaji API is not initialized")
 
     contract = get_stock_contract(code)
     end = date.today()
-    start = end - timedelta(days=max(days - 1, 0))
+    all_rows: list[KBarItem] = []
+    used_start: date | None = None
+    used_end: date | None = None
 
-    try:
-        kbars = api.kbars(contract, start=start.isoformat(), end=end.isoformat())
-    except Exception as exc:
-        raise HTTPException(status_code=502, detail=f"Failed to fetch kbars from Shioaji: {exc}") from exc
+    # 先抓使用者指定天數；如果遇到假日/盤前/資料不足，自動往前擴大到 10 天。
+    for lookback in [days, 7, 10]:
+        start = end - timedelta(days=lookback - 1)
+        try:
+            kbars = api.kbars(contract, start=start.isoformat(), end=end.isoformat())
+            rows = normalize_kbars(kbars)
+        except Exception as exc:
+            raise HTTPException(status_code=502, detail=f"Failed to fetch kbars from Shioaji: {exc}") from exc
 
-    rows: list[KBarItem] = []
-    for ts, open_, high, low, close, volume in zip(
-        kbars.ts,
-        kbars.Open,
-        kbars.High,
-        kbars.Low,
-        kbars.Close,
-        kbars.Volume,
-        strict=False,
-    ):
-        rows.append(
-            KBarItem(
-                ts=str(ts),
-                open=float(open_),
-                high=float(high),
-                low=float(low),
-                close=float(close),
-                volume=float(volume),
-            )
+        if len(rows) >= 3:
+            all_rows = rows
+            used_start = start
+            used_end = end
+            break
+
+    if not all_rows:
+        return KBarsResponse(
+            code=code,
+            interval="1m",
+            items=[],
+            count=0,
+            start=None,
+            end=None,
+            message="No K-bar data returned. It may be non-trading time, holiday, or Shioaji permission/data limitation.",
         )
 
-    return KBarsResponse(code=code, interval="1m", items=rows[-120:])
+    latest_rows = all_rows[-120:]
+    return KBarsResponse(
+        code=code,
+        interval="1m",
+        items=latest_rows,
+        count=len(latest_rows),
+        start=used_start.isoformat() if used_start else None,
+        end=used_end.isoformat() if used_end else None,
+        message="ok",
+    )
