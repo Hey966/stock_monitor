@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   <meta name="theme-color" content="#06101f" />
   <title>STX 當沖規則系統</title>
-  <link rel="stylesheet" href="pro.css?v=fast-rule-v2" />
+  <link rel="stylesheet" href="pro.css?v=fast-rule-v3" />
 </head>
 <body class="pro-body modern-body">
   <main class="pro-app modern-app">
@@ -53,11 +53,12 @@
     <section id="page-watch" class="modern-page"><h2 class="page-heading">自選股</h2><div class="watch-input"><input id="watchInput" inputmode="numeric" placeholder="新增股票代號，例如 2317" /><button id="watchAdd">新增</button></div><div id="watchList" class="watch-modern-list"></div></section>
     <section id="page-analysis" class="modern-page"><h2 class="page-heading">規則分析</h2><section class="analysis-panel"><h3>目前結論</h3><p id="analysisSummary">等待分析。</p></section><section class="analysis-panel"><h3>多方條件</h3><div id="analysisTags" class="analysis-tags"><span>等待資料</span></div></section><section class="analysis-panel"><h3>風險提醒</h3><div id="riskTags" class="analysis-tags danger"><span>等待資料</span></div></section></section>
     <section id="page-plan" class="modern-page"><h2 class="page-heading">交易計畫</h2><section class="plan-panel"><span>進場區間</span><strong id="planEntry">-</strong><p id="planEntryText">等待資料</p></section><section class="plan-panel"><span>停損位置</span><strong id="planStop">-</strong><p id="planStopText">等待資料</p></section><section class="plan-panel"><span>目標 / 壓力</span><strong id="planTarget">-</strong><p id="planTargetText">等待資料</p></section><section class="plan-panel warning"><span>紀律提醒</span><strong>當沖先保命</strong><p>跌破停損不凹單。</p></section></section>
+    <div class="app-version">STX Rules Engine v fast-rule-v3</div>
     <nav class="pro-bottom-nav modern-bottom"><button data-page="overview">⌂<br>總覽</button><button data-page="quote">▧<br>報價</button><button data-page="watch">☆<br>自選</button><button data-page="analysis">◴<br>分析</button><button data-page="plan">▣<br>計畫</button></nav>
   </main>
-  <script src="daytrade-source.js?v=fast-rule-v2"></script>
-  <script src="stx-core-v2.js?v=fast-rule-v2"></script>
-  <script src="overview-home-fix.js?v=fast-rule-v2"></script>
-  <script src="signal-addon.js?v=fast-rule-v2"></script>
+  <script src="daytrade-source.js?v=fast-rule-v3"></script>
+  <script src="stx-core-v2.js?v=fast-rule-v3"></script>
+  <script src="overview-home-fix.js?v=fast-rule-v3"></script>
+  <script src="signal-addon.js?v=fast-rule-v3"></script>
 </body>
 </html>
