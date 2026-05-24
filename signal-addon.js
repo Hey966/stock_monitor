@@ -43,25 +43,41 @@
     if (upper > body * 1.35 && upper / range > 0.35 && close >= (pressure || close) * 0.995) { score -= 22; risk.push('長上影靠近壓力'); pattern.push('假突破'); }
     if (num(last.close) < num(prev.low)) { score -= 18; risk.push('跌破前低'); pattern.push('轉弱K'); }
     score = Math.max(0, Math.min(100, Math.round(score)));
-    const status = score >= 78 ? '可觀察' : score >= 65 ? '等回測' : score >= 50 ? '先觀察' : '不適合';
+    const status = score >= 90 ? '趕緊觀察' : score >= 78 ? '可觀察' : score >= 65 ? '等回測' : score >= 50 ? '先觀察' : '危險，別碰';
     const observe = Math.max(mid, support || mid);
     const riskLine = support || close * 0.985;
     let firstTarget = pressure || close * 1.015;
     if (firstTarget <= observe) firstTarget = observe + Math.max(observe - riskLine, close * 0.006) * 1.5;
-    return { score, status, observe, riskLine, firstTarget, good, risk, pattern };
+    const secondTarget = firstTarget + Math.max(firstTarget - riskLine, close * 0.008) * 0.65;
+    const holdRate = score >= 85 ? 70 : score >= 75 ? 55 : score >= 65 ? 35 : score >= 50 ? 20 : 0;
+    const action = score >= 85 ? `${holdRate}% 可保留到第二賣點，其餘第一賣點先落袋` : score >= 70 ? `${holdRate}% 可嘗試留到第二賣點，第一賣點先減碼` : score >= 55 ? `只適合短看第一賣點，保留比例約 ${holdRate}%` : '不建議進場，等待下一個回測不破訊號';
+    return { score, status, observe, riskLine, firstTarget, secondTarget, holdRate, action, good, risk, pattern };
+  }
+
+  function lineBlock(d) {
+    return [
+      `K線判斷：${d.status}（分數 ${d.score}/100）`,
+      `觀察線：${price(d.observe)}，重點是回測不破`,
+      `止損點：${price(d.riskLine)}，跌破代表短線轉弱`,
+      `第一賣點：${price(d.firstTarget)}，靠近壓力先留意`,
+      `第二賣點：${price(d.secondTarget)}，需量價續強才看`,
+      `推薦處置：${d.action}`,
+      `主要原因：${(d.good[0] || d.pattern[0] || '等待明確型態')}`,
+      `風險提醒：${(d.risk[0] || '暫無明顯風險')}`
+    ].join('\n');
   }
 
   function renderDecision(d) {
-    const summary = `K線判斷：${d.status}｜分數 ${d.score}/100｜觀察線 ${price(d.observe)}｜風險線 ${price(d.riskLine)}｜第一壓力 ${price(d.firstTarget)}`;
+    const summary = lineBlock(d);
     if ($('#proSignal')) $('#proSignal').textContent = summary;
     if ($('#analysisSummary')) $('#analysisSummary').textContent = summary;
     if ($('#analysisTags')) $('#analysisTags').innerHTML = (d.good.length ? d.good : ['等待回測']).map((x) => `<span>${x}</span>`).join('');
     if ($('#riskTags')) $('#riskTags').innerHTML = (d.risk.length ? d.risk : ['暫無明顯風險']).map((x) => `<span>${x}</span>`).join('');
-    if ($('.modern-alerts')) $('.modern-alerts').innerHTML = `<b>⚡ K線判斷</b><span>${d.status}</span><span>${d.pattern.join(' / ') || '等待型態'}</span><span>風險線 ${price(d.riskLine)}</span><span>第一壓力 ${price(d.firstTarget)}</span>`;
-    const rows = [['現在狀態', d.status, `分數 ${d.score}/100`], ['K線型態', d.pattern.join(' / ') || '等待型態', d.good[0] || '等待確認'], ['止損時機', price(d.riskLine), '跌破風險線需保守'], ['第一賣點', price(d.firstTarget), '接近壓力先留意']];
+    if ($('.modern-alerts')) $('.modern-alerts').innerHTML = `<b>⚡ K線判斷</b><span>${d.status}</span><span>止損 ${price(d.riskLine)}</span><span>第一 ${price(d.firstTarget)}</span><span>第二 ${price(d.secondTarget)}</span>`;
+    const rows = [['K線判斷', d.status, `分數 ${d.score}/100`], ['止損點', price(d.riskLine), '跌破短線轉弱'], ['第一賣點', price(d.firstTarget), '靠近壓力先留意'], ['第二賣點', price(d.secondTarget), `${d.holdRate}% 觀察保留`]];
     $$('.modern-cards article').forEach((card, i) => { if (!card || !rows[i]) return; card.querySelector('span').textContent = rows[i][0]; card.querySelector('strong').textContent = rows[i][1]; card.querySelector('p').textContent = rows[i][2]; });
     [['aiEntry', price(d.observe)], ['aiStop', price(d.riskLine)], ['aiTarget', price(d.firstTarget)], ['planEntry', price(d.observe)], ['planStop', price(d.riskLine)], ['planTarget', price(d.firstTarget)]].forEach(([id, text]) => { const el = $('#' + id); if (el) el.textContent = text; });
-    [['aiEntryText', `觀察線 ${price(d.observe)}，重點是回測不破`], ['aiStopText', `跌破 ${price(d.riskLine)} 代表短線轉弱`], ['aiTargetText', `第一壓力 ${price(d.firstTarget)}，接近先留意`], ['planEntryText', `觀察線 ${price(d.observe)}，重點是回測不破`], ['planStopText', `跌破 ${price(d.riskLine)} 代表短線轉弱`], ['planTargetText', `第一壓力 ${price(d.firstTarget)}，接近先留意`]].forEach(([id, text]) => { const el = $('#' + id); if (el) el.textContent = text; });
+    [['aiEntryText', `K線判斷：${d.status}`], ['aiStopText', `止損點：${price(d.riskLine)}`], ['aiTargetText', `第一賣點：${price(d.firstTarget)}｜第二賣點：${price(d.secondTarget)}`], ['planEntryText', `觀察線：${price(d.observe)}`], ['planStopText', `止損點：${price(d.riskLine)}`], ['planTargetText', `推薦處置：${d.action}`]].forEach(([id, text]) => { const el = $('#' + id); if (el) el.textContent = text; });
   }
 
   async function update(code) {
