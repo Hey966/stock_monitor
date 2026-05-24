@@ -4,8 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   <meta name="theme-color" content="#06101f" />
-  <title>STX 當沖決策系統</title>
-  <link rel="stylesheet" href="pro.css?v=corev2-6" />
+  <title>STX 當沖規則系統</title>
+  <link rel="stylesheet" href="pro.css?v=rules-v1" />
 </head>
 <body class="pro-body modern-body">
   <main class="pro-app modern-app">
@@ -44,20 +44,20 @@
         <article><span>成交量</span><b id="proVol">-</b></article><article><span>均價</span><b id="proAvg">-</b></article><article><span>最高</span><b id="proHigh">-</b></article><article><span>最低</span><b id="proLow">-</b></article><article><span>買價 / 買量</span><b id="proBid">-</b></article><article><span>賣價 / 賣量</span><b id="proAsk">-</b></article>
       </section>
       <section class="modern-chart-card pro-chart-section"><div class="modern-chart-head"><strong>K線走勢</strong><button class="modern-close">×</button></div><div class="pro-periods modern-periods"><button class="active">1分</button><button>5分</button><button>15分</button><button>30分</button><button>日</button><button>週</button><button>月</button></div><div class="modern-status"><span>MA5</span><span>MA10</span><span>VWAP</span><small id="proStatus">等待查詢</small></div><canvas id="proCanvas" class="pro-canvas modern-canvas"></canvas><div id="proSignal" class="pro-signal modern-signal">請先搜尋股票。</div></section>
-      <section class="modern-points"><article><span>AI 買點</span><strong id="aiEntry">-</strong><p id="aiEntryText">等待資料</p></article><article><span>停損</span><strong id="aiStop">-</strong><p id="aiStopText">等待資料</p></article><article><span>壓力 / 賣點</span><strong id="aiTarget">-</strong><p id="aiTargetText">等待資料</p></article></section>
+      <section class="modern-points"><article><span>進場區間</span><strong id="aiEntry">-</strong><p id="aiEntryText">等待資料</p></article><article><span>停損</span><strong id="aiStop">-</strong><p id="aiStopText">等待資料</p></article><article><span>壓力 / 賣點</span><strong id="aiTarget">-</strong><p id="aiTargetText">等待資料</p></article></section>
       <section class="modern-cards"><article><span>勝率門檻</span><strong>-</strong><p>等待分析</p></article><article><span>主力手法</span><strong>-</strong><p>等待分析</p></article><article><span>五檔強弱</span><strong>-</strong><p>等待分析</p></article><article><span>量價判斷</span><strong>-</strong><p>等待分析</p></article></section>
       <section class="modern-alerts"><b>⚡ 即時提醒</b><span>等待分析</span></section>
     </section>
 
     <section id="page-quote" class="modern-page"><h2 class="page-heading">完整報價</h2><div class="quote-detail-grid"><article><span>現價</span><b id="qClose">-</b></article><article><span>漲跌幅</span><b id="qChange">-</b></article><article><span>開盤</span><b id="qOpen">-</b></article><article><span>最高</span><b id="qHigh">-</b></article><article><span>最低</span><b id="qLow">-</b></article><article><span>總量</span><b id="qVol">-</b></article><article><span>買價 / 買量</span><b id="qBid">-</b></article><article><span>賣價 / 賣量</span><b id="qAsk">-</b></article><article><span>量比</span><b id="qVolRatio">-</b></article></div></section>
     <section id="page-watch" class="modern-page"><h2 class="page-heading">自選股</h2><div class="watch-input"><input id="watchInput" inputmode="numeric" placeholder="新增股票代號，例如 2317" /><button id="watchAdd">新增</button></div><div id="watchList" class="watch-modern-list"></div></section>
-    <section id="page-analysis" class="modern-page"><h2 class="page-heading">AI 分析</h2><section class="analysis-panel"><h3>目前結論</h3><p id="analysisSummary">等待分析。</p></section><section class="analysis-panel"><h3>多方條件</h3><div id="analysisTags" class="analysis-tags"><span>等待資料</span></div></section><section class="analysis-panel"><h3>風險提醒</h3><div id="riskTags" class="analysis-tags danger"><span>等待資料</span></div></section></section>
-    <section id="page-plan" class="modern-page"><h2 class="page-heading">交易計畫</h2><section class="plan-panel"><span>AI 買點</span><strong id="planEntry">-</strong><p id="planEntryText">等待資料</p></section><section class="plan-panel"><span>停損位置</span><strong id="planStop">-</strong><p id="planStopText">等待資料</p></section><section class="plan-panel"><span>目標 / 壓力</span><strong id="planTarget">-</strong><p id="planTargetText">等待資料</p></section><section class="plan-panel warning"><span>紀律提醒</span><strong>當沖先保命</strong><p>跌破停損不凹單。</p></section></section>
+    <section id="page-analysis" class="modern-page"><h2 class="page-heading">規則分析</h2><section class="analysis-panel"><h3>目前結論</h3><p id="analysisSummary">等待分析。</p></section><section class="analysis-panel"><h3>多方條件</h3><div id="analysisTags" class="analysis-tags"><span>等待資料</span></div></section><section class="analysis-panel"><h3>風險提醒</h3><div id="riskTags" class="analysis-tags danger"><span>等待資料</span></div></section></section>
+    <section id="page-plan" class="modern-page"><h2 class="page-heading">交易計畫</h2><section class="plan-panel"><span>進場區間</span><strong id="planEntry">-</strong><p id="planEntryText">等待資料</p></section><section class="plan-panel"><span>停損位置</span><strong id="planStop">-</strong><p id="planStopText">等待資料</p></section><section class="plan-panel"><span>目標 / 壓力</span><strong id="planTarget">-</strong><p id="planTargetText">等待資料</p></section><section class="plan-panel warning"><span>紀律提醒</span><strong>當沖先保命</strong><p>跌破停損不凹單。</p></section></section>
     <nav class="pro-bottom-nav modern-bottom"><button data-page="overview">⌂<br>總覽</button><button data-page="quote">▧<br>報價</button><button data-page="watch">☆<br>自選</button><button data-page="analysis">◴<br>分析</button><button data-page="plan">▣<br>計畫</button></nav>
   </main>
-  <script src="daytrade-source.js?v=corev2-6"></script>
-  <script src="stx-core-v2.js?v=corev2-6"></script>
-  <script src="overview-home-fix.js?v=corev2-6"></script>
-  <script src="signal-addon.js?v=corev2-6"></script>
+  <script src="daytrade-source.js?v=rules-v1"></script>
+  <script src="stx-core-v2.js?v=rules-v1"></script>
+  <script src="overview-home-fix.js?v=rules-v1"></script>
+  <script src="signal-addon.js?v=rules-v1"></script>
 </body>
 </html>
