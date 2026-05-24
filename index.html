@@ -3,62 +3,69 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-  <meta name="theme-color" content="#090d15" />
+  <meta name="theme-color" content="#06101f" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-title" content="STX 看盤" />
-  <title>STX 專業看盤</title>
-  <link rel="stylesheet" href="pro.css?v=20260524-pro-fix-2" />
+  <title>STX 現代看盤</title>
+  <link rel="stylesheet" href="pro.css?v=20260524-modern-1" />
 </head>
-<body class="pro-body">
-  <main class="pro-app">
-    <header class="pro-topbar">
-      <button id="proRefresh" class="pro-icon-btn">‹</button>
-      <div class="pro-search-wrap">
+<body class="pro-body modern-body">
+  <main class="pro-app modern-app">
+    <header class="modern-header">
+      <button id="proRefresh" class="modern-icon">‹</button>
+      <div class="modern-title-wrap">
+        <strong id="proTitle">2330 台積電</strong>
+        <span>上市｜電子權值</span>
+      </div>
+      <button class="modern-icon">☆</button>
+    </header>
+
+    <section class="modern-price-head">
+      <div class="modern-price-main">
+        <strong id="proPrice" class="pro-price">-</strong>
+        <span id="proChange" class="up">-</span>
+      </div>
+      <div class="modern-search">
         <input id="proCode" class="pro-code-input" inputmode="numeric" value="2330" />
         <button id="proSearch" class="pro-search-btn">查詢</button>
       </div>
-      <button class="pro-icon-btn">⌕</button>
-    </header>
-
-    <section class="pro-quote-head">
-      <div class="pro-market-row">
-        <span>加權 <b class="up">42267.97 ▲899.76</b></span>
-        <span>櫃買 <b class="up">423.25 ▲13.45</b></span>
-      </div>
-      <div class="pro-title-row">
-        <div>
-          <h1 id="proTitle">2330 台積電</h1>
-          <strong id="proPrice" class="pro-price">-</strong>
-          <p id="proChange" class="up">-</p>
-        </div>
-        <div class="pro-stats">
-          <span>最高 <b id="proHigh" class="up">-</b></span>
-          <span>最低 <b id="proLow" class="down">-</b></span>
-          <span>均價 <b id="proAvg">-</b></span>
-          <span>總量 <b id="proVol">-</b></span>
-        </div>
-      </div>
-      <div class="pro-bidask">
-        <div>買價 / 買量 <b id="proBid">-</b></div>
-        <div>賣價 / 賣量 <b id="proAsk">-</b></div>
-      </div>
     </section>
 
-    <section class="pro-chart-section">
-      <div class="pro-chart-title"><span>整股技術線圖</span><small id="proStatus">準備中</small></div>
-      <div class="pro-periods"><button>日</button><button>週</button><button>月</button><button class="active">1分</button><button>5分</button><button>15分</button></div>
-      <canvas id="proCanvas" class="pro-canvas"></canvas>
-      <div id="proSignal" class="pro-signal">讀取資料中...</div>
+    <section class="modern-metrics">
+      <article><span>成交量</span><b id="proVol">-</b></article>
+      <article><span>均價</span><b id="proAvg">-</b></article>
+      <article><span>最高</span><b id="proHigh" class="up">-</b></article>
+      <article><span>最低</span><b id="proLow" class="down">-</b></article>
+      <article><span>買價 / 買量</span><b id="proBid">-</b></article>
+      <article><span>賣價 / 賣量</span><b id="proAsk">-</b></article>
     </section>
 
-    <section class="pro-action-row">
-      <button class="active">RSI<br>MACD</button><button>KD<br>MACD</button><button>VOL<br>RSI</button><button>VOL<br>當沖量</button><button>外資<br>投信</button>
+    <section class="modern-chart-card pro-chart-section">
+      <div class="modern-chart-head">
+        <strong>K線走勢</strong>
+        <button class="modern-close">×</button>
+      </div>
+      <div class="pro-periods modern-periods"><button class="active">1分</button><button>5分</button><button>15分</button><button>30分</button><button>日</button><button>週</button><button>月</button></div>
+      <div class="modern-status"><span>MA5</span><span>MA10</span><span>VWAP</span><small id="proStatus">準備中</small></div>
+      <canvas id="proCanvas" class="pro-canvas modern-canvas"></canvas>
+      <div id="proSignal" class="pro-signal modern-signal">讀取資料中...</div>
     </section>
 
-    <nav class="pro-bottom-nav">
-      <button class="active">總覽</button><button>選股</button><button class="order">下單</button><button>自選</button><button>帳務</button>
+    <section class="modern-cards">
+      <article><span>多空力道</span><strong>63</strong><p>多方強勢</p></article>
+      <article><span>主力動向</span><strong>買超</strong><p>連續 3 日買超</p></article>
+      <article><span>量能狀態</span><strong>爆量</strong><p>較昨日 +258%</p></article>
+      <article><span>趨勢判斷</span><strong>多頭排列</strong><p>短多強勢</p></article>
+    </section>
+
+    <section class="modern-alerts">
+      <b>⚡ 即時提醒</b><span>爆量</span><span>K線偏弱</span><span>跌破短均</span><span>接近支撐</span>
+    </section>
+
+    <nav class="pro-bottom-nav modern-bottom">
+      <button class="active">⌂<br>總覽</button><button>▧<br>報價</button><button>☆<br>自選</button><button>◴<br>分析</button><button>▣<br>計畫</button>
     </nav>
   </main>
-  <script src="pro.js?v=20260524-pro-fix-2"></script>
+  <script src="pro.js?v=20260524-modern-1"></script>
 </body>
 </html>
