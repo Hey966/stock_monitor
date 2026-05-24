@@ -54,30 +54,34 @@
     return { score, status, observe, riskLine, firstTarget, secondTarget, holdRate, action, good, risk, pattern };
   }
 
-  function lineBlock(d) {
-    return [
-      `K線判斷：${d.status}（分數 ${d.score}/100）`,
-      `觀察線：${price(d.observe)}，重點是回測不破`,
-      `止損點：${price(d.riskLine)}，跌破代表短線轉弱`,
-      `第一賣點：${price(d.firstTarget)}，靠近壓力先留意`,
-      `第二賣點：${price(d.secondTarget)}，需量價續強才看`,
-      `推薦處置：${d.action}`,
-      `主要原因：${(d.good[0] || d.pattern[0] || '等待明確型態')}`,
-      `風險提醒：${(d.risk[0] || '暫無明顯風險')}`
-    ].join('\n');
+  function row(label, value, note, type = '') {
+    return `<div class="decision-row ${type}"><span>${label}</span><strong>${value}</strong><small>${note}</small></div>`;
+  }
+
+  function decisionHTML(d) {
+    return `<div class="decision-list">
+      ${row('K線判斷', d.status, `分數 ${d.score}/100｜${d.pattern.join(' / ') || '等待型態'}`, d.score >= 78 ? 'good' : d.score < 50 ? 'bad' : '')}
+      ${row('進場觀察', price(d.observe), '依教材：回測不破才是重點，不追第一根急拉')}
+      ${row('止損點', price(d.riskLine), '跌破代表短線轉弱，當沖不凹單', 'bad')}
+      ${row('第一賣點', price(d.firstTarget), '接近壓力先分批處理')}
+      ${row('第二賣點', price(d.secondTarget), '需量價續強才看，不強就不等')}
+      ${row('推薦處置', d.action, `保留比例參考 ${d.holdRate}%`)}
+      ${row('主要原因', d.good[0] || d.pattern[0] || '等待明確型態', '依K線教學規則判斷')}
+      ${row('風險提醒', d.risk[0] || '暫無明顯風險', '若出現爆量不漲、長上影、跌破均價要保守', d.risk.length ? 'bad' : '')}
+    </div>`;
   }
 
   function renderDecision(d) {
-    const summary = lineBlock(d);
-    if ($('#proSignal')) $('#proSignal').textContent = summary;
-    if ($('#analysisSummary')) $('#analysisSummary').textContent = summary;
+    const html = decisionHTML(d);
+    if ($('#proSignal')) $('#proSignal').innerHTML = html;
+    if ($('#analysisSummary')) $('#analysisSummary').innerHTML = html;
     if ($('#analysisTags')) $('#analysisTags').innerHTML = (d.good.length ? d.good : ['等待回測']).map((x) => `<span>${x}</span>`).join('');
     if ($('#riskTags')) $('#riskTags').innerHTML = (d.risk.length ? d.risk : ['暫無明顯風險']).map((x) => `<span>${x}</span>`).join('');
     if ($('.modern-alerts')) $('.modern-alerts').innerHTML = `<b>⚡ K線判斷</b><span>${d.status}</span><span>止損 ${price(d.riskLine)}</span><span>第一 ${price(d.firstTarget)}</span><span>第二 ${price(d.secondTarget)}</span>`;
     const rows = [['K線判斷', d.status, `分數 ${d.score}/100`], ['止損點', price(d.riskLine), '跌破短線轉弱'], ['第一賣點', price(d.firstTarget), '靠近壓力先留意'], ['第二賣點', price(d.secondTarget), `${d.holdRate}% 觀察保留`]];
     $$('.modern-cards article').forEach((card, i) => { if (!card || !rows[i]) return; card.querySelector('span').textContent = rows[i][0]; card.querySelector('strong').textContent = rows[i][1]; card.querySelector('p').textContent = rows[i][2]; });
     [['aiEntry', price(d.observe)], ['aiStop', price(d.riskLine)], ['aiTarget', price(d.firstTarget)], ['planEntry', price(d.observe)], ['planStop', price(d.riskLine)], ['planTarget', price(d.firstTarget)]].forEach(([id, text]) => { const el = $('#' + id); if (el) el.textContent = text; });
-    [['aiEntryText', `K線判斷：${d.status}`], ['aiStopText', `止損點：${price(d.riskLine)}`], ['aiTargetText', `第一賣點：${price(d.firstTarget)}｜第二賣點：${price(d.secondTarget)}`], ['planEntryText', `觀察線：${price(d.observe)}`], ['planStopText', `止損點：${price(d.riskLine)}`], ['planTargetText', `推薦處置：${d.action}`]].forEach(([id, text]) => { const el = $('#' + id); if (el) el.textContent = text; });
+    [['aiEntryText', `K線判斷：${d.status}`], ['aiStopText', `止損點：${price(d.riskLine)}`], ['aiTargetText', `第一賣點：${price(d.firstTarget)}｜第二賣點：${price(d.secondTarget)}`], ['planEntryText', `進場觀察：${price(d.observe)}`], ['planStopText', `止損點：${price(d.riskLine)}`], ['planTargetText', `推薦處置：${d.action}`]].forEach(([id, text]) => { const el = $('#' + id); if (el) el.textContent = text; });
   }
 
   async function update(code) {
@@ -89,8 +93,8 @@
     const code = ($('#stockCodeLabel')?.textContent || '').match(/\d{4,6}/)?.[0];
     if (!code) return;
     const now = Date.now();
-    if (now - lastRun < 5000) return;
+    if (now - lastRun < 3000) return;
     lastRun = now;
     update(code).catch(() => {});
-  }, 1200);
+  }, 1000);
 })();
