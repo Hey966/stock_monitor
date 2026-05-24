@@ -3,58 +3,66 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-  <meta name="theme-color" content="#080b12" />
+  <meta name="theme-color" content="#090d15" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
-  <meta name="apple-mobile-web-app-title" content="股票助手" />
-  <link rel="manifest" href="manifest.json?v=20260524-inspect-1" />
-  <link rel="icon" href="icon.svg?v=20260524-inspect-1" type="image/svg+xml" />
-  <link rel="apple-touch-icon" href="icon.svg?v=20260524-inspect-1" />
-  <title>當沖 衝衝衝</title>
-  <link rel="stylesheet" href="style.css?v=20260524-inspect-1" />
+  <meta name="apple-mobile-web-app-title" content="STX 看盤" />
+  <link rel="manifest" href="manifest.json?v=20260524-pro-1" />
+  <link rel="icon" href="icon.svg?v=20260524-pro-1" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="icon.svg?v=20260524-pro-1" />
+  <title>STX 專業看盤</title>
+  <link rel="stylesheet" href="style.css?v=20260524-pro-1" />
 </head>
-<body>
-  <main class="app-shell">
-    <header class="app-header">
-      <div class="brand-row">
-        <div class="app-logo">衝</div>
-        <div><p class="muted-label">Stock Assistant</p><h1>當沖 衝衝衝</h1></div>
-        <button id="refreshAppBtn" class="ghost-btn">更新</button>
+<body class="pro-body">
+  <main class="pro-app">
+    <header class="pro-topbar">
+      <button id="proRefresh" class="pro-icon-btn">‹</button>
+      <div class="pro-search-wrap">
+        <input id="proCode" class="pro-code-input" inputmode="numeric" value="2330" />
+        <button id="proSearch" class="pro-search-btn">查詢</button>
       </div>
-      <section class="search-card">
-        <label for="stockName">查詢股票</label>
-        <div class="search-row"><input id="stockName" inputmode="numeric" placeholder="輸入代號，例如 2330" /><button id="fetchQuoteBtn">查詢</button></div>
-      </section>
+      <button class="pro-icon-btn">⌕</button>
     </header>
 
-    <section id="page-dashboard" class="page active">
-      <section class="hero-panel"><div><p class="muted-label">目前標的</p><h2 id="currentStockTitle">請先查詢一檔股票</h2><p id="currentStockDesc">查詢後，報價、K 線、分析、交易計畫會一起更新。</p></div><div class="decision-box"><span id="resultBadge" class="badge watch">等待查詢</span><strong id="resultAction">輸入股票代號開始分析。</strong></div></section>
-      <section class="section-block"><div class="section-head"><h3>即時摘要</h3><button class="link-btn nav-shortcut" data-page="quote">看完整報價</button></div><div id="quoteSummary" class="empty-card">尚未查詢報價</div></section>
-      <section class="section-block"><div class="section-head"><h3>1 分 K 線</h3><span id="klineStatus" class="muted-label">尚未查詢</span></div><canvas id="klineCanvas" class="kline-canvas" height="260"></canvas><div id="klineSignal" class="kline-signal">查詢股票後，這裡會依照最新 K 線判斷短線狀態。</div></section>
-      <section class="section-block"><div class="section-head"><h3>分析摘要</h3><button class="link-btn nav-shortcut" data-page="analysis">調整條件</button></div><div id="notes" class="note-list"></div></section>
-    </section>
-
-    <section id="page-quote" class="page"><div class="page-title"><p class="muted-label">Live Quote</p><h2>即時報價</h2></div><div id="quoteResult" class="empty-card large">輸入股票代號後，按「查詢」。</div></section>
-    <section id="page-watchlist" class="page"><div class="page-title"><p class="muted-label">Watchlist</p><h2>自選股</h2></div><div class="glass-card"><label for="watchCode">新增自選</label><div class="search-row compact"><input id="watchCode" placeholder="例如：6215 和椿" /><button id="addWatchBtn">新增</button></div><div id="watchList" class="watch-list"></div></div></section>
-
-    <section id="page-analysis" class="page">
-      <div class="page-title"><p class="muted-label">Analysis</p><h2 id="analysisTitle">分析工具</h2></div>
-      <section class="section-block"><div class="section-head"><h3>K 線判斷</h3><span class="muted-label">Auto</span></div><div id="klineSignalAnalysis" class="kline-signal">尚未取得 K 線。</div></section>
-      <div class="mode-switch chip-row" data-field="mode"><button class="active" data-value="basic">新手</button><button data-value="advanced">進階</button></div>
-      <div class="analysis-grid">
-        <article class="tool-card"><h3>趨勢</h3><div class="button-group" data-field="trend"><button class="active" data-value="up">上升</button><button data-value="side">橫盤</button><button data-value="down">下降</button></div></article>
-        <article class="tool-card"><h3>成交量</h3><div class="button-group" data-field="volume"><button data-value="breakout">放量突破</button><button class="active" data-value="normal">普通</button><button data-value="low">量縮</button><button data-value="highNoUp">爆量不漲</button></div></article>
-        <article class="tool-card"><h3>位置</h3><div class="button-group" data-field="position"><button data-value="pullback">回測不破</button><button class="active" data-value="support">靠近支撐</button><button data-value="breakoutFail">突破失敗</button><button data-value="chase">高檔追價</button></div></article>
-        <article class="tool-card"><h3>K棒</h3><div class="button-group" data-field="candle"><button class="active" data-value="normalCandle">普通</button><button data-value="longRed">長紅</button><button data-value="upperShadow">上影線</button><button data-value="longBlack">長黑</button></div></article>
+    <section class="pro-quote-head">
+      <div class="pro-market-row">
+        <span>加權 <b class="up">42267.97 ▲899.76</b></span>
+        <span>櫃買 <b class="up">423.25 ▲13.45</b></span>
       </div>
-      <div class="advanced-zone"><div class="page-title small-title"><h2>進階指標</h2></div><div class="analysis-grid"><article class="tool-card"><h3>均線</h3><div class="button-group" data-field="ma"><button data-value="maBull">多頭</button><button class="active" data-value="maMixed">糾結</button><button data-value="maBear">空頭</button></div></article><article class="tool-card"><h3>RSI</h3><div class="button-group" data-field="rsi"><button data-value="rsiHot">過熱</button><button class="active" data-value="rsiMid">中性</button><button data-value="rsiCold">偏冷</button></div></article><article class="tool-card"><h3>KD</h3><div class="button-group" data-field="kd"><button class="active" data-value="kdUp">轉強</button><button data-value="kdDown">轉弱</button><button data-value="kdHighTurn">高檔下彎</button><button data-value="kdHighStrong">高檔鈍化</button></div></article><article class="tool-card"><h3>MACD</h3><div class="button-group" data-field="macd"><button class="active" data-value="macdExpand">紅柱放大</button><button data-value="macdShrink">紅柱縮小</button><button data-value="macdGreen">綠柱放大</button></div></article></div><div id="indicatorNotes" class="note-list"></div></div>
-      <section class="section-block"><h3>主力與假訊號</h3><div id="warningList" class="warning-list"></div></section>
+      <div class="pro-tags"><span class="active">整</span><span>零</span><span>上市</span><span>收盤</span><button>買賣現沖</button></div>
+      <div class="pro-title-row">
+        <div><h1 id="proTitle">2330 台積電</h1><strong id="proPrice" class="pro-price">-</strong><p id="proChange" class="up">-</p></div>
+        <div class="pro-stats">
+          <span>最高 <b id="proHigh" class="up">-</b></span>
+          <span>最低 <b id="proLow" class="down">-</b></span>
+          <span>均價 <b id="proAvg">-</b></span>
+          <span>總量 <b id="proVol">-</b></span>
+        </div>
+      </div>
+      <div class="pro-bidask">
+        <div>買價 / 買量 <b id="proBid">-</b></div>
+        <div>賣價 / 賣量 <b id="proAsk">-</b></div>
+      </div>
+      <nav class="pro-tabs"><button>行情</button><button class="active">K線</button><button>評析</button><button>新聞</button><button>籌碼</button><button>基本</button></nav>
     </section>
 
-    <section id="page-plan" class="page"><div class="page-title"><p class="muted-label">Trade Plan</p><h2 id="planTitle">交易計畫</h2></div><div class="glass-card"><div class="plan-grid"><label>預計買點<input id="entryPrice" type="number" placeholder="查詢後自動帶入" /></label><label>支撐 / 停損<input id="supportPrice" type="number" placeholder="查詢後自動帶入" /></label><label>壓力 / 第一賣點<input id="pressurePrice" type="number" placeholder="查詢後自動帶入" /></label></div><div class="metric-grid"><div><span>停損邏輯</span><strong id="stopLogic">請先查詢股票</strong></div><div><span>預估風險</span><strong id="lossPct">-</strong></div><div><span>預估空間</span><strong id="profitPct">-</strong></div></div><p class="risk-tip">短線不是凹單。跌破設定位置，就代表原本假設失敗。</p></div></section>
-    <section id="page-learn" class="page"><div class="page-title"><p class="muted-label">Learning</p><h2>學習筆記</h2></div><div class="learn-list"><div><strong>先看趨勢</strong><p>上升趨勢優先，下降趨勢不要亂接刀。</p></div><div><strong>再看成交量</strong><p>上漲最好有量，爆量不漲要小心。</p></div><div><strong>看位置</strong><p>回測不破比追高安全。</p></div><div><strong>先設停損</strong><p>買之前先知道哪裡代表看錯。</p></div></div></section>
+    <section class="pro-chart-section">
+      <div class="pro-chart-title">
+        <span>整股技術線圖</span>
+        <small id="proStatus">準備中</small>
+      </div>
+      <div class="pro-periods"><button>日</button><button>週</button><button>月</button><button class="active">1分</button><button>5分</button><button>15分</button><button>還日⌄</button></div>
+      <canvas id="proCanvas" class="pro-canvas"></canvas>
+      <div id="proSignal" class="pro-signal">讀取資料中...</div>
+    </section>
+
+    <section class="pro-action-row">
+      <button class="active">RSI<br>MACD</button><button>KD<br>MACD</button><button>VOL<br>RSI</button><button>VOL<br>當沖量</button><button>外資<br>投信</button>
+    </section>
+
+    <nav class="pro-bottom-nav">
+      <button class="active">▭<br>總覽</button><button>⌁<br>選股</button><button class="order">下單匣</button><button>▦<br>自選</button><button>○<br>帳務</button>
+    </nav>
   </main>
-  <nav class="bottom-nav" aria-label="手機功能切換"><button class="nav-item active" data-page="dashboard">總覽</button><button class="nav-item" data-page="quote">報價</button><button class="nav-item" data-page="watchlist">自選</button><button class="nav-item" data-page="analysis">分析</button><button class="nav-item" data-page="plan">計畫</button></nav>
-  <script src="app.js?v=20260524-inspect-1"></script>
-  <script src="kline-pan.js?v=20260524-inspect-1"></script>
+  <script src="pro.js?v=20260524-pro-1"></script>
 </body>
 </html>
