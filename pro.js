@@ -14,7 +14,7 @@
     try {
       const [quote, kbars] = await Promise.all([getJSON(`${BACKEND}/api/quote?code=${state.code}`), getJSON(`${BACKEND}/api/kbars?code=${state.code}&days=5`)]);
       state.quote = quote; state.kbars = kbars.items || [];
-      renderQuote(); drawChart(); updateSignal(); updateSmartCards(); updateTradePoints();
+      renderQuote(); drawChart(); updateSignal(); updateSmartCards(); updateTradePoints(); updateQuotePage(); updateAnalysisPage(); updatePlanPage();
       $('#proStatus').textContent = `已更新 ${new Date().toLocaleTimeString('zh-TW', { hour: '2-digit', minute: '2-digit', second: '2-digit' })}`;
     } catch (e) { $('#proStatus').textContent = '讀取失敗'; $('#proSignal').textContent = `讀取失敗：${e.message}`; }
   }
@@ -87,12 +87,15 @@
 
   function updateTradePoints(){
     const p=calcTradePoints(); if(!p) return;
-    $('#aiEntry').textContent=fmt(p.entry);
-    $('#aiStop').textContent=fmt(p.stop);
-    $('#aiTarget').textContent=fmt(p.target);
-    $('#aiEntryText').textContent=p.score>=65?'偏強：等回測均價/支撐':'分數不足：先觀察';
-    $('#aiStopText').textContent=`跌破 ${fmt(p.stop)} 代表假設失敗`;
-    $('#aiTargetText').textContent=p.rr>=1.2?'風報比可觀察':'空間偏小，避免追價';
+    const set=(id,val)=>{const el=$(id); if(el) el.textContent=val;};
+    set('#aiEntry',fmt(p.entry)); set('#aiStop',fmt(p.stop)); set('#aiTarget',fmt(p.target));
+    set('#aiEntryText',p.score>=65?'偏強：等回測均價/支撐':'分數不足：先觀察');
+    set('#aiStopText',`跌破 ${fmt(p.stop)} 代表假設失敗`);
+    set('#aiTargetText',p.rr>=1.2?'風報比可觀察':'空間偏小，避免追價');
+    set('#planEntry',fmt(p.entry)); set('#planStop',fmt(p.stop)); set('#planTarget',fmt(p.target));
+    set('#planEntryText',p.score>=65?'可等回測不破再進':'先等強度回升');
+    set('#planStopText',`跌破 ${fmt(p.stop)} 就出場`);
+    set('#planTargetText',`第一目標 ${fmt(p.target)}，風報比 ${fmt(p.rr)}`);
   }
 
   function updateSmartCards(){
@@ -103,8 +106,34 @@
     const box=document.querySelector('.modern-alerts'); if(box){ const items=[...s.tags,...s.warnings].slice(0,4); box.innerHTML=`<b>⚡ 即時提醒</b>${items.map(t=>`<span>${t}</span>`).join('') || '<span>等待訊號</span>'}`; }
   }
 
+  function updateQuotePage(){
+    const q=state.quote||{}; const set=(id,val)=>{const el=$(id); if(el) el.textContent=val;};
+    set('#qClose',fmt(q.close)); set('#qChange',`${fmt(q.change_price)} / ${fmt(q.change_rate)}%`); set('#qOpen',fmt(q.open)); set('#qHigh',fmt(q.high)); set('#qLow',fmt(q.low)); set('#qVol',fmt(q.volume,0)); set('#qBid',`${fmt(q.buy_price)} / ${fmt(q.buy_volume,0)}`); set('#qAsk',`${fmt(q.sell_price)} / ${fmt(q.sell_volume,0)}`); set('#qVolRatio',fmt(q.volume_ratio));
+  }
+  function updateAnalysisPage(){
+    const s=computeSignal(); const summary=$('#analysisSummary'); if(summary) summary.textContent=`AI 強度 ${s.score}/100，${s.trend}，建議：${s.action}`;
+    const tags=$('#analysisTags'); if(tags) tags.innerHTML=s.tags.map(t=>`<span>${t}</span>`).join('') || '<span>等待多方訊號</span>';
+    const risks=$('#riskTags'); if(risks) risks.innerHTML=s.warnings.map(t=>`<span>${t}</span>`).join('') || '<span>暫無明顯風險</span>';
+  }
+  function updatePlanPage(){ updateTradePoints(); }
+  function switchPage(page){
+    document.querySelectorAll('.modern-page').forEach(p=>p.classList.toggle('active',p.id===`page-${page}`));
+    document.querySelectorAll('.modern-bottom button').forEach(b=>b.classList.toggle('active',b.dataset.page===page));
+    if(page==='overview') setTimeout(drawChart,60);
+    window.scrollTo({top:0,behavior:'smooth'});
+  }
+  function bindPages(){
+    document.querySelectorAll('.modern-bottom button[data-page]').forEach(btn=>btn.addEventListener('click',()=>switchPage(btn.dataset.page)));
+  }
+  function bindWatch(){
+    const render=()=>{const list=$('#watchList'); if(!list) return; const arr=JSON.parse(localStorage.getItem('stx_watch')||'[]'); list.innerHTML=arr.map(code=>`<button class="watch-chip" data-code="${code}">${code}</button>`).join('') || '<p class="empty-watch">尚未新增自選股</p>';};
+    $('#watchAdd')?.addEventListener('click',()=>{const code=$('#watchInput')?.value.match(/\d{4,6}/)?.[0]; if(!code) return; const arr=JSON.parse(localStorage.getItem('stx_watch')||'[]'); localStorage.setItem('stx_watch',JSON.stringify([code,...arr.filter(x=>x!==code)].slice(0,12))); $('#watchInput').value=''; render();});
+    $('#watchList')?.addEventListener('click',e=>{const btn=e.target.closest('[data-code]'); if(!btn) return; load(btn.dataset.code); switchPage('overview');});
+    render();
+  }
+
   function updateSignal(){ const data=state.kbars||[]; if(data.length<5) return; const s=computeSignal(); $('#proSignal').textContent=`AI 強度 ${s.score}/100｜${s.action}`; }
-  function bind(){ $('#proSearch')?.addEventListener('click',()=>load($('#proCode').value)); $('#proRefresh')?.addEventListener('click',()=>load(state.code)); $('#proCode')?.addEventListener('keydown',e=>{if(e.key==='Enter')load($('#proCode').value);}); const canvas=$('#proCanvas'); let sx=0,sp=0,lp=null; canvas.addEventListener('pointerdown',e=>{sx=e.clientX;sp=state.pan;lp=setTimeout(()=>{state.cross=true;setCross(e);drawChart();},420);}); canvas.addEventListener('pointermove',e=>{const dx=e.clientX-sx;if(Math.abs(dx)>5)clearTimeout(lp); if(state.cross)setCross(e); state.pan=Math.max(0,sp+dx/11); drawChart();}); canvas.addEventListener('pointerup',()=>clearTimeout(lp)); window.addEventListener('resize',drawChart); }
+  function bind(){ $('#proSearch')?.addEventListener('click',()=>load($('#proCode').value)); $('#proRefresh')?.addEventListener('click',()=>load(state.code)); $('#proCode')?.addEventListener('keydown',e=>{if(e.key==='Enter')load($('#proCode').value);}); const canvas=$('#proCanvas'); let sx=0,sp=0,lp=null; canvas.addEventListener('pointerdown',e=>{sx=e.clientX;sp=state.pan;lp=setTimeout(()=>{state.cross=true;setCross(e);drawChart();},420);}); canvas.addEventListener('pointermove',e=>{const dx=e.clientX-sx;if(Math.abs(dx)>5)clearTimeout(lp); if(state.cross)setCross(e); state.pan=Math.max(0,sp+dx/11); drawChart();}); canvas.addEventListener('pointerup',()=>clearTimeout(lp)); window.addEventListener('resize',drawChart); bindPages(); bindWatch(); }
   function setCross(e){const canvas=$('#proCanvas'),rect=canvas.getBoundingClientRect(),W=rect.width,padL=42,padR=42,step=11,visible=Math.max(24,Math.floor((W-padL-padR)/step)),x=e.clientX-rect.left;state.crossIndex=Math.max(0,Math.min(visible-1,Math.round((x-padL-step/2)/step)));}
   window.addEventListener('load',()=>{bind();load('2330');state.timer=setInterval(()=>load(state.code),15000);});
 })();
