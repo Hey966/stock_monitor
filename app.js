@@ -11,6 +11,9 @@ const pageTitles = {
 
 const state = {
   currentQuote: null,
+  currentCode: null,
+  kbars: [],
+  klineTimer: null,
   mode: "basic",
   trend: "up",
   volume: "normal",
@@ -102,6 +105,7 @@ function calculateScore() {
   const notes = [];
   if (!state.currentQuote) notes.push("尚未查詢股票：請先輸入股票代號，所有功能才會依照同一檔股票更新。");
   if (state.currentQuote) notes.push(`目前分析標的：${state.currentQuote.code} ${state.currentQuote.name || ""}，現價 ${state.currentQuote.close ?? "-"}，漲跌幅 ${state.currentQuote.change_rate ?? "-"}%。`);
+  if (state.kbars.length) notes.push(analyzeKbars(state.kbars).message);
 
   if (state.trend === "up") score += 2;
   if (state.trend === "down") score -= 2;
@@ -130,7 +134,7 @@ function updateTitles() {
   const analysisTitle = document.querySelector("#analysisTitle");
   const planTitle = document.querySelector("#planTitle");
   if (currentStockTitle) currentStockTitle.textContent = q ? `${q.code} ${q.name || ""}` : name;
-  if (currentStockDesc) currentStockDesc.textContent = q ? `現價 ${q.close ?? "-"}，漲跌 ${q.change_price ?? "-"}，量比 ${q.volume_ratio ?? "-"}。` : "查詢後，總覽、報價、分析、交易計畫都會依照同一檔股票更新。";
+  if (currentStockDesc) currentStockDesc.textContent = q ? `現價 ${q.close ?? "-"}，漲跌 ${q.change_price ?? "-"}，量比 ${q.volume_ratio ?? "-"}。` : "查詢後，總覽、報價、K 線、分析、交易計畫都會依照同一檔股票更新。";
   if (analysisTitle) analysisTitle.textContent = q ? `${name} 分析` : "分析工具";
   if (planTitle) planTitle.textContent = q ? `${name} 計畫` : "交易計畫";
 }
@@ -227,6 +231,130 @@ function renderQuote(data) {
   </div>`;
 }
 
+function analyzeKbars(items) {
+  if (!items || items.length < 3) return { type: "wait", message: "K 線資料不足，先等待更多資料。" };
+  const last = items[items.length - 1];
+  const prev = items[items.length - 2];
+  const recent = items.slice(-8);
+  const avgVolume = recent.reduce((sum, item) => sum + Number(item.volume || 0), 0) / recent.length;
+  const lastVolume = Number(last.volume || 0);
+  const body = Math.abs(last.close - last.open);
+  const range = Math.max(last.high - last.low, 0.01);
+  const upperShadow = last.high - Math.max(last.open, last.close);
+  const isRed = last.close >= last.open;
+  const isBreakHigh = last.close >= Math.max(...recent.slice(0, -1).map((item) => item.high));
+  const isBreakLow = last.close <= Math.min(...recent.slice(0, -1).map((item) => item.low));
+  const ma5 = recent.slice(-5).reduce((sum, item) => sum + item.close, 0) / Math.min(5, recent.length);
+
+  if (isBreakHigh && isRed && lastVolume > avgVolume * 1.3) {
+    return { type: "strong", message: "K 線偏強：最新 1 分 K 放量突破短線高點，可等回測不破再觀察進場。" };
+  }
+  if (upperShadow / range > 0.45 && last.close < prev.close) {
+    return { type: "danger", message: "K 線轉弱：最新 K 棒上影線偏長，代表上方賣壓重，短線不適合追。" };
+  }
+  if (isBreakLow || last.close < ma5) {
+    return { type: "danger", message: "K 線偏弱：跌破短線低點或 5 根均價，當沖多單要先保守。" };
+  }
+  if (body / range < 0.35) {
+    return { type: "wait", message: "K 線整理中：實體偏小，方向還不明確，先等突破或跌破。" };
+  }
+  return { type: "wait", message: "K 線中性：目前沒有明顯突破或轉弱訊號。" };
+}
+
+function drawKline(items) {
+  const canvas = document.querySelector("#klineCanvas");
+  if (!canvas || !items?.length) return;
+  const dpr = window.devicePixelRatio || 1;
+  const rect = canvas.getBoundingClientRect();
+  canvas.width = Math.max(rect.width * dpr, 320);
+  canvas.height = 260 * dpr;
+  const ctx = canvas.getContext("2d");
+  ctx.scale(dpr, dpr);
+  const width = rect.width || 320;
+  const height = 260;
+  ctx.clearRect(0, 0, width, height);
+  ctx.fillStyle = "rgba(255,255,255,0.03)";
+  ctx.fillRect(0, 0, width, height);
+
+  const data = items.slice(-60);
+  const high = Math.max(...data.map((item) => item.high));
+  const low = Math.min(...data.map((item) => item.low));
+  const priceRange = Math.max(high - low, 0.01);
+  const pad = 18;
+  const chartH = height - 55;
+  const candleW = Math.max((width - pad * 2) / data.length * 0.58, 3);
+
+  ctx.strokeStyle = "rgba(255,255,255,.08)";
+  ctx.lineWidth = 1;
+  for (let i = 0; i < 4; i += 1) {
+    const y = pad + (chartH / 3) * i;
+    ctx.beginPath(); ctx.moveTo(pad, y); ctx.lineTo(width - pad, y); ctx.stroke();
+  }
+
+  function y(price) { return pad + ((high - price) / priceRange) * chartH; }
+  data.forEach((bar, index) => {
+    const x = pad + index * ((width - pad * 2) / data.length) + candleW;
+    const up = bar.close >= bar.open;
+    ctx.strokeStyle = up ? "#ff4d6d" : "#23d18b";
+    ctx.fillStyle = up ? "#ff4d6d" : "#23d18b";
+    ctx.beginPath(); ctx.moveTo(x, y(bar.high)); ctx.lineTo(x, y(bar.low)); ctx.stroke();
+    const bodyTop = y(Math.max(bar.open, bar.close));
+    const bodyBottom = y(Math.min(bar.open, bar.close));
+    ctx.fillRect(x - candleW / 2, bodyTop, candleW, Math.max(bodyBottom - bodyTop, 2));
+  });
+
+  ctx.fillStyle = "rgba(255,255,255,.62)";
+  ctx.font = "12px -apple-system,BlinkMacSystemFont,Segoe UI";
+  ctx.fillText(String(high.toFixed(2)).replace(/\.00$/, ""), pad, 14);
+  ctx.fillText(String(low.toFixed(2)).replace(/\.00$/, ""), pad, height - 10);
+}
+
+function applyKlineSignal(items) {
+  const signal = analyzeKbars(items);
+  const text = signal.message;
+  ["#klineSignal", "#klineSignalAnalysis"].forEach((selector) => {
+    const el = document.querySelector(selector);
+    if (!el) return;
+    el.className = `kline-signal ${signal.type}`;
+    el.textContent = text;
+  });
+  if (signal.type === "strong") {
+    setActiveChoice("trend", "up");
+    setActiveChoice("volume", "breakout");
+    setActiveChoice("candle", "longRed");
+  }
+  if (signal.type === "danger") {
+    setActiveChoice("candle", "upperShadow");
+    setActiveChoice("position", "breakoutFail");
+  }
+  updateAnalysis();
+}
+
+async function fetchKbars(code) {
+  const status = document.querySelector("#klineStatus");
+  if (status) status.textContent = "更新中...";
+  try {
+    const response = await fetch(`${BACKEND_URL}/api/kbars?code=${code}&days=1`);
+    if (!response.ok) throw new Error(await response.text());
+    const data = await response.json();
+    state.kbars = data.items || [];
+    drawKline(state.kbars);
+    applyKlineSignal(state.kbars);
+    if (status) status.textContent = `已更新 ${new Date().toLocaleTimeString("zh-TW", { hour: "2-digit", minute: "2-digit", second: "2-digit" })}`;
+  } catch (error) {
+    if (status) status.textContent = "K 線讀取失敗";
+    const el = document.querySelector("#klineSignal");
+    if (el) el.textContent = `K 線讀取失敗：${error.message}`;
+  }
+}
+
+function startKlineAutoRefresh(code) {
+  state.currentCode = code;
+  if (state.klineTimer) clearInterval(state.klineTimer);
+  fetchKbars(code);
+  state.klineTimer = setInterval(() => fetchKbars(code), 15000);
+}
+
 async function fetchQuote() {
   const input = document.querySelector("#stockName");
   const quoteBox = document.querySelector("#quoteResult");
@@ -251,6 +379,7 @@ async function fetchQuote() {
     if (quoteSummary) quoteSummary.innerHTML = html;
     updatePlan(true);
     updateAnalysis();
+    startKlineAutoRefresh(code);
   } catch (error) {
     const msg = `<div class="quote-error">報價查詢失敗：${error.message}</div>`;
     if (quoteBox) quoteBox.innerHTML = msg;
@@ -270,6 +399,7 @@ document.querySelectorAll(".button-group, .mode-switch").forEach((group) => grou
 document.querySelectorAll("input").forEach((input) => input.addEventListener("input", () => updatePlan(false)));
 document.querySelector("#fetchQuoteBtn")?.addEventListener("click", fetchQuote);
 document.querySelector("#refreshAppBtn")?.addEventListener("click", () => location.href = `${location.pathname}?v=${Date.now()}`);
+window.addEventListener("resize", () => { if (state.kbars.length) drawKline(state.kbars); });
 
 if ("serviceWorker" in navigator) {
   window.addEventListener("load", () => navigator.serviceWorker.register("./sw.js").catch(() => {}));
