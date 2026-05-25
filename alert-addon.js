@@ -23,9 +23,9 @@
   async function pushDiscord(code, score, title, tags) {
     const key = `stx_push_${code}_${title}`;
     const last = Number(localStorage.getItem(key) || 0);
-    if (Date.now() - last < 10 * 60 * 1000) return;
+    if (Date.now() - last < 3 * 60 * 1000) return;
     localStorage.setItem(key, String(Date.now()));
-    const message = encodeURIComponent(tags.length ? tags.join('｜') : '盤中強勢訊號');
+    const message = encodeURIComponent(tags.length ? tags.join('｜') : '盤中訊號');
     const url = `${API}/api/discord-alert?code=${encodeURIComponent(code)}&score=${score}&title=${encodeURIComponent(title)}&message=${message}`;
     try { await fetch(url, { cache: 'no-store' }); } catch (e) {}
   }
@@ -53,7 +53,7 @@
     if ($('#alertTitle')) $('#alertTitle').textContent = title;
     if ($('#alertReason')) $('#alertReason').textContent = reason;
     if ($('#alertTags')) $('#alertTags').innerHTML = tags.length ? tags.slice(0, 8).map(x => `<span>${x}</span>`).join('') : '<span>等待資料</span>';
-    if (f !== null && f >= 88 && level === 'good') pushDiscord(codeNow(), f, 'STX強勢警報', tags);
+    if (f !== null && f >= 78 && level === 'good') pushDiscord(codeNow(), f, f >= 88 ? 'STX強勢警報' : 'STX可觀察警報', tags);
   }
   window.STX_ALERT_RENDER = render;
   window.addEventListener('load', () => setInterval(render, 1500));
