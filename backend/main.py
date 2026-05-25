@@ -13,6 +13,7 @@ from pydantic import BaseModel
 
 from news_engine import get_news_payload
 from chips_engine import get_chips_payload
+from discord_engine import send_discord_alert
 
 load_dotenv()
 SHIOAJI_API_KEY = os.getenv("SHIOAJI_API_KEY", "")
@@ -67,7 +68,7 @@ async def lifespan(app: FastAPI):
     if api is not None:
         api.logout()
 
-app = FastAPI(title="Stock Monitor Backend", version="0.4.0", lifespan=lifespan)
+app = FastAPI(title="Stock Monitor Backend", version="0.5.0", lifespan=lifespan)
 origins = [x.strip() for x in CORS_ORIGINS.split(",") if x.strip()]
 app.add_middleware(CORSMiddleware, allow_origins=origins if origins else ["*"], allow_credentials=True, allow_methods=["*"], allow_headers=["*"])
 
@@ -112,6 +113,13 @@ def get_chips(code: str = Query(...)):
         return get_chips_payload(code=code)
     except Exception as exc:
         raise HTTPException(status_code=502, detail=f"Failed to fetch chips: {exc}") from exc
+
+@app.get("/api/discord-alert")
+def discord_alert(code: str = Query(...), score: int = Query(...), title: str = Query("STX 警報"), message: str = Query("盤中警報觸發")):
+    try:
+        return send_discord_alert({"code": code, "score": score, "title": title, "message": message})
+    except Exception as exc:
+        raise HTTPException(status_code=502, detail=f"Failed to send discord alert: {exc}") from exc
 
 @app.get("/api/quote", response_model=QuoteResponse)
 def get_quote(code: str = Query(...)):
