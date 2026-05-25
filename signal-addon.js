@@ -5,6 +5,7 @@
   const num = (v) => Number.isFinite(Number(v)) ? Number(v) : 0;
   const price = (v) => Number.isFinite(Number(v)) ? Number(v).toFixed(2).replace(/\.00$/, '') : '-';
   let lastRun = 0, lastKbarAt = 0, cachedKbars = [], lastDecision = null, lastQuote = null;
+  const radarCodes = ['2330','2317','2454','2308','2382','3231','3661','6215','2357','2603','2618','2881','2882','2891','3037','3017','2368','4966'];
 
   async function getJSON(url) { const r = await fetch(url, { cache: 'no-store' }); if (!r.ok) throw new Error('fetch failed'); return r.json(); }
   function avg(a) { return a.length ? a.reduce((x, y) => x + y, 0) / a.length : 0; }
@@ -15,111 +16,34 @@
   function isGoldenTime() { const d = new Date(); const m = d.getHours()*60 + d.getMinutes(); return m >= 540 && m <= 630; }
   function ema(values, period) { const k = 2 / (period + 1); let e = values[0] || 0; return values.map((v, i) => { e = i ? v * k + e * (1-k) : v; return e; }); }
   function rsi(values, period) { if (values.length <= period) return null; let gains = 0, losses = 0; for (let i = values.length - period; i < values.length; i++) { const diff = values[i] - values[i-1]; if (diff >= 0) gains += diff; else losses -= diff; } if (!losses) return 100; const rs = gains / losses; return 100 - (100 / (1 + rs)); }
-  function indicators(bars, closeNow) {
-    const closes = bars.map(b => num(b.close)).filter(Boolean); if (closeNow) closes[closes.length - 1] = closeNow;
-    const ma5 = avg(closes.slice(-5)), ma10 = avg(closes.slice(-10)), ma20 = avg(closes.slice(-20));
-    const rsi5 = rsi(closes, 5), rsi10 = rsi(closes, 10);
-    const e12 = ema(closes, 12), e26 = ema(closes, 26); const dif = e12.map((v,i)=>v-(e26[i]||v)); const sig = ema(dif, 9); const hist = dif.at(-1) - sig.at(-1);
-    return { ma5, ma10, ma20, rsi5, rsi10, macd: { dif: dif.at(-1), signal: sig.at(-1), hist } };
-  }
-  function openingMethod(q, bars) {
-    const first = bars[0] || {}; const firstOpen = num(first.open) || num(q.open); const firstClose = num(first.close) || num(q.close); const nowClose = num(q.close) || firstClose; const ref = num(q.reference_price) || num(q.yesterday_close) || firstOpen;
-    const gapUp = firstOpen >= ref, firstRed = firstClose >= firstOpen, aboveFirst = nowClose >= firstClose;
-    if (gapUp && firstRed && aboveFirst) return { name:'開高走高', score:12, bias:'偏多' };
-    if (gapUp && (!firstRed || !aboveFirst)) return { name:'開高走低', score:-18, bias:'偏空' };
-    if (!gapUp && firstRed && aboveFirst) return { name:'開低走高', score:8, bias:'轉強' };
-    return { name:'開低走低', score:-16, bias:'偏空' };
-  }
+  function indicators(bars, closeNow) { const closes = bars.map(b => num(b.close)).filter(Boolean); if (closeNow && closes.length) closes[closes.length - 1] = closeNow; const ma5 = avg(closes.slice(-5)), ma10 = avg(closes.slice(-10)), ma20 = avg(closes.slice(-20)); const rsi5 = rsi(closes, 5), rsi10 = rsi(closes, 10); const e12 = ema(closes, 12), e26 = ema(closes, 26); const dif = e12.map((v,i)=>v-(e26[i]||v)); const sig = ema(dif, 9); const hist = dif.at(-1) - sig.at(-1); return { ma5, ma10, ma20, rsi5, rsi10, macd: { dif: dif.at(-1), signal: sig.at(-1), hist } }; }
+  function openingMethod(q, bars) { const first = bars[0] || {}; const firstOpen = num(first.open) || num(q.open); const firstClose = num(first.close) || num(q.close); const nowClose = num(q.close) || firstClose; const ref = num(q.reference_price) || num(q.yesterday_close) || firstOpen; const gapUp = firstOpen >= ref, firstRed = firstClose >= firstOpen, aboveFirst = nowClose >= firstClose; if (gapUp && firstRed && aboveFirst) return { name:'開高走高', score:12, bias:'偏多' }; if (gapUp && (!firstRed || !aboveFirst)) return { name:'開高走低', score:-18, bias:'偏空' }; if (!gapUp && firstRed && aboveFirst) return { name:'開低走高', score:8, bias:'轉強' }; return { name:'開低走低', score:-16, bias:'偏空' }; }
 
   function analyzeKline(quote, bars) {
-    const list = bars.slice(-60); const last = list.at(-1)||{}, prev = list.at(-2)||{};
-    const close = num(quote.close) || num(last.close); const open = num(quote.open) || num(list[0]?.open) || close; const mid = num(quote.average_price) || calcVwap(list) || close;
-    const lows = list.slice(-24).map(b=>num(b.low)).filter(Boolean), highs = list.slice(-24).map(b=>num(b.high)).filter(Boolean);
-    const support = Math.min(...lows), pressure = Math.max(...highs); const volAvg = avg(list.slice(-16,-1).map(b=>num(b.volume))); const volNow = num(last.volume) || num(quote.volume);
-    const strongVol = volAvg > 0 && volNow > volAvg * 1.6; const body = Math.abs(num(last.close)-num(last.open)) || 0.01; const range = Math.max(num(last.high)-num(last.low), tickUnit(close));
-    const upper = num(last.high) - Math.max(num(last.open), num(last.close)); const lower = Math.min(num(last.open), num(last.close)) - num(last.low);
-    const buyStrong = num(quote.buy_volume) > num(quote.sell_volume) * 1.15; const sellStrong = num(quote.sell_volume) > num(quote.buy_volume) * 1.15;
-    const tick = tickUnit(close); const openMove = open ? Math.abs((close-open)/open*100) : 0; const totalVol = num(quote.volume); const openType = openingMethod(quote, list);
-    const ind = indicators(list, close);
-    let score = 50 + openType.score; const good = [], risk = [], pattern = [openType.name];
-    const add = (pts, tag) => { score += pts; good.push(tag); }; const sub = (pts, tag) => { score -= pts; risk.push(tag); };
-
-    if (openType.score > 0) good.push(`${openType.name}，盤勢${openType.bias}`); else risk.push(`${openType.name}，盤勢${openType.bias}`);
-    if (openMove >= 5) sub(35, '開盤後漲跌已超過5%，空間不足');
-    if (totalVol && totalVol < 1000) sub(18, '成交量未達1000張，流動性不足');
-    if (volAvg && volNow > volAvg * 1.3) add(8, '成交量放大'); else if (volAvg && volNow < volAvg * .65) sub(8, '成交量萎縮');
-    if (isGoldenTime()) add(6, '位於9:00~10:30黃金時段'); else sub(5, '非黃金時段，降低出手分數');
-    if (close >= mid) add(14, '站上均價/VWAP'); else sub(18, '跌破均價/VWAP');
-    if (ind.ma5 && close > ind.ma5 && ind.ma5 > ind.ma10 && ind.ma10 > ind.ma20) add(14, 'MA5/10/20多頭排列');
-    else if (ind.ma5 && close < ind.ma5 && ind.ma5 < ind.ma10) sub(14, '跌破MA5且短均轉弱');
-    if (ind.rsi5 !== null && ind.rsi10 !== null) { if (ind.rsi5 > 55 && ind.rsi10 > 50 && ind.rsi5 < 82) add(9, 'RSI5/10偏多未過熱'); if (ind.rsi5 >= 85) sub(8, 'RSI5過熱，追價風險'); if (ind.rsi5 < 45 && ind.rsi10 < 50) sub(9, 'RSI轉弱'); }
-    if (Number.isFinite(ind.macd.hist)) { if (ind.macd.dif > ind.macd.signal && ind.macd.hist > 0) add(10, 'MACD翻多'); if (ind.macd.dif < ind.macd.signal && ind.macd.hist < 0) sub(10, 'MACD翻弱'); }
-    if (buyStrong) add(10, '五檔買盤較強'); if (sellStrong) sub(12, '五檔賣壓較重');
-    if (support && num(last.low) <= Math.max(mid, support)*1.004 && close > Math.max(mid, support)) { add(18, '回測不破'); pattern.push('回測不破'); }
-    if (num(last.close) > num(prev.high) && num(last.close) >= num(last.open)) { add(12, '紅K突破前高'); pattern.push('多方續攻'); }
-    if (strongVol && num(quote.change_rate) > 0.3 && upper/body < 1.35) { add(12, '放量突破'); pattern.push('爆量突破'); }
-    if (lower > body*1.15 && close >= mid) { add(8, '下影承接'); pattern.push('承接轉強'); }
-    if (strongVol && num(quote.change_rate) <= 0.3) { sub(18, '爆量不漲'); pattern.push('爆量不漲'); }
-    if (upper > body*1.35 && upper/range > .35 && close >= (pressure || close)*.995) { sub(24, '長上影靠近壓力'); pattern.push('假突破'); }
-    if (num(last.close) < num(prev.low)) { sub(18, '黑K跌破前低'); pattern.push('轉弱K'); }
-
-    score = Math.max(0, Math.min(100, Math.round(score)));
-    let regime = '震盪盤'; if (score >= 75 && close >= mid) regime = '多方盤'; if (score < 55 || close < mid) regime = '弱勢盤'; if (risk.includes('爆量不漲') || risk.includes('長上影靠近壓力')) regime = '陷阱盤';
-    const status = score >= 85 ? '高勝率觀察' : score >= 75 ? '達出手門檻' : score >= 65 ? '等回測確認' : score >= 55 ? '只觀察不出手' : '不符合規則';
-    const base = Math.max(mid, support || mid); const buffer = Math.max(tick*2, close*.0015, range*.12); const entryLow = roundTick(base + tick, 1), entryHigh = roundTick(base + buffer, 1);
-    const stopBuffer = Math.max(tick*2, close*.002, range*.18); const riskLine = Math.min(roundTick(num(last.low)-stopBuffer, -1), roundTick((support||base)-stopBuffer, -1));
-    let firstTarget = roundTick(Math.max(pressure || 0, entryHigh*1.02), 1); if (firstTarget <= entryHigh) firstTarget = roundTick(entryHigh + Math.max(entryHigh-riskLine, close*.006)*1.5, 1);
-    const rr = (firstTarget-entryHigh) / Math.max(entryHigh-riskLine, tick); const secondTarget = roundTick(firstTarget + Math.max(firstTarget-riskLine, close*.008)*.65, 1);
-    const holdRate = score >= 85 && rr >= 1.8 ? 70 : score >= 75 && rr >= 1.4 ? 55 : score >= 65 ? 25 : 0;
-    const action = score >= 85 && rr >= 1.8 ? `${holdRate}% 可保留到第二賣點，其餘第一賣點先落袋` : score >= 75 && rr >= 1.4 ? `${holdRate}% 嘗試留第二賣點，第一賣點先減碼` : score >= 65 ? '未達75分，只等待回測確認，不主動出手' : '規則未達標，等待下一個高勝率位置';
-    return { score, status, regime, openType, entryLow, entryHigh, riskLine, firstTarget, secondTarget, rr, holdRate, action, good, risk, pattern, ind, close, mid };
+    const list = bars.slice(-60); const last = list.at(-1)||{}, prev = list.at(-2)||{}; const close = num(quote.close) || num(last.close); const open = num(quote.open) || num(list[0]?.open) || close; const mid = num(quote.average_price) || calcVwap(list) || close;
+    const lows = list.slice(-24).map(b=>num(b.low)).filter(Boolean), highs = list.slice(-24).map(b=>num(b.high)).filter(Boolean); const support = Math.min(...lows), pressure = Math.max(...highs); const volAvg = avg(list.slice(-16,-1).map(b=>num(b.volume))); const volNow = num(last.volume) || num(quote.volume);
+    const strongVol = volAvg > 0 && volNow > volAvg * 1.6; const body = Math.abs(num(last.close)-num(last.open)) || 0.01; const range = Math.max(num(last.high)-num(last.low), tickUnit(close)); const upper = num(last.high) - Math.max(num(last.open), num(last.close)); const lower = Math.min(num(last.open), num(last.close)) - num(last.low);
+    const buyStrong = num(quote.buy_volume) > num(quote.sell_volume) * 1.15; const sellStrong = num(quote.sell_volume) > num(quote.buy_volume) * 1.15; const tick = tickUnit(close); const openMove = open ? Math.abs((close-open)/open*100) : 0; const totalVol = num(quote.volume); const openType = openingMethod(quote, list); const ind = indicators(list, close);
+    let score = 50 + openType.score; const good = [], risk = [], pattern = [openType.name]; const add = (pts, tag) => { score += pts; good.push(tag); }; const sub = (pts, tag) => { score -= pts; risk.push(tag); };
+    if (openType.score > 0) good.push(`${openType.name}，盤勢${openType.bias}`); else risk.push(`${openType.name}，盤勢${openType.bias}`); if (openMove >= 5) sub(35, '開盤後漲跌已超過5%，空間不足'); if (totalVol && totalVol < 1000) sub(18, '成交量未達1000張，流動性不足'); if (volAvg && volNow > volAvg * 1.3) add(8, '成交量放大'); else if (volAvg && volNow < volAvg * .65) sub(8, '成交量萎縮'); if (isGoldenTime()) add(6, '位於9:00~10:30黃金時段'); else sub(5, '非黃金時段，降低出手分數'); if (close >= mid) add(14, '站上均價/VWAP'); else sub(18, '跌破均價/VWAP');
+    if (ind.ma5 && close > ind.ma5 && ind.ma5 > ind.ma10 && ind.ma10 > ind.ma20) add(14, 'MA5/10/20多頭排列'); else if (ind.ma5 && close < ind.ma5 && ind.ma5 < ind.ma10) sub(14, '跌破MA5且短均轉弱'); if (ind.rsi5 !== null && ind.rsi10 !== null) { if (ind.rsi5 > 55 && ind.rsi10 > 50 && ind.rsi5 < 82) add(9, 'RSI5/10偏多未過熱'); if (ind.rsi5 >= 85) sub(8, 'RSI5過熱，追價風險'); if (ind.rsi5 < 45 && ind.rsi10 < 50) sub(9, 'RSI轉弱'); } if (Number.isFinite(ind.macd.hist)) { if (ind.macd.dif > ind.macd.signal && ind.macd.hist > 0) add(10, 'MACD翻多'); if (ind.macd.dif < ind.macd.signal && ind.macd.hist < 0) sub(10, 'MACD翻弱'); }
+    if (buyStrong) add(10, '五檔買盤較強'); if (sellStrong) sub(12, '五檔賣壓較重'); if (support && num(last.low) <= Math.max(mid, support)*1.004 && close > Math.max(mid, support)) { add(18, '回測不破'); pattern.push('回測不破'); } if (num(last.close) > num(prev.high) && num(last.close) >= num(last.open)) { add(12, '紅K突破前高'); pattern.push('多方續攻'); } if (strongVol && num(quote.change_rate) > 0.3 && upper/body < 1.35) { add(12, '放量突破'); pattern.push('爆量突破'); } if (lower > body*1.15 && close >= mid) { add(8, '下影承接'); pattern.push('承接轉強'); } if (strongVol && num(quote.change_rate) <= 0.3) { sub(18, '爆量不漲'); pattern.push('爆量不漲'); } if (upper > body*1.35 && upper/range > .35 && close >= (pressure || close)*.995) { sub(24, '長上影靠近壓力'); pattern.push('假突破'); } if (num(last.close) < num(prev.low)) { sub(18, '黑K跌破前低'); pattern.push('轉弱K'); }
+    score = Math.max(0, Math.min(100, Math.round(score))); let regime = '震盪盤'; if (score >= 75 && close >= mid) regime = '多方盤'; if (score < 55 || close < mid) regime = '弱勢盤'; if (risk.includes('爆量不漲') || risk.includes('長上影靠近壓力')) regime = '陷阱盤'; const status = score >= 85 ? '高勝率觀察' : score >= 75 ? '達出手門檻' : score >= 65 ? '等回測確認' : score >= 55 ? '只觀察不出手' : '不符合規則';
+    const base = Math.max(mid, support || mid); const buffer = Math.max(tick*2, close*.0015, range*.12); const entryLow = roundTick(base + tick, 1), entryHigh = roundTick(base + buffer, 1); const stopBuffer = Math.max(tick*2, close*.002, range*.18); const riskLine = Math.min(roundTick(num(last.low)-stopBuffer, -1), roundTick((support||base)-stopBuffer, -1)); let firstTarget = roundTick(Math.max(pressure || 0, entryHigh*1.02), 1); if (firstTarget <= entryHigh) firstTarget = roundTick(entryHigh + Math.max(entryHigh-riskLine, close*.006)*1.5, 1); const rr = (firstTarget-entryHigh) / Math.max(entryHigh-riskLine, tick); const secondTarget = roundTick(firstTarget + Math.max(firstTarget-riskLine, close*.008)*.65, 1); const holdRate = score >= 85 && rr >= 1.8 ? 70 : score >= 75 && rr >= 1.4 ? 55 : score >= 65 ? 25 : 0; const action = score >= 85 && rr >= 1.8 ? `${holdRate}% 可保留到第二賣點，其餘第一賣點先落袋` : score >= 75 && rr >= 1.4 ? `${holdRate}% 嘗試留第二賣點，第一賣點先減碼` : score >= 65 ? '未達75分，只等待回測確認，不主動出手' : '規則未達標，等待下一個高勝率位置';
+    return { score, status, regime, openType, entryLow, entryHigh, riskLine, firstTarget, secondTarget, rr, holdRate, action, good, risk, pattern, ind, close, mid, quote };
   }
 
   function row(label, value, note, type='') { return `<div class="decision-row ${type}"><span>${label}</span><strong>${value}</strong><small>${note}</small></div>`; }
-  function decisionHTML(d) { return `<div class="decision-list expert">
-    ${row('開盤四法', d.openType.name, `盤勢${d.openType.bias}｜分數影響 ${d.openType.score > 0 ? '+' : ''}${d.openType.score}`, d.openType.score > 0 ? 'good' : 'bad')}
-    ${row('市場狀態', d.regime, '依價、量、均線、RSI、MACD、五檔與K線判斷', d.regime === '多方盤' ? 'good' : d.regime === '陷阱盤' || d.regime === '弱勢盤' ? 'bad' : '')}
-    ${row('規則判斷', d.status, `分數 ${d.score}/100｜75分才達股票當沖出手門檻`, d.score >= 75 ? 'good' : d.score < 55 ? 'bad' : '')}
-    ${row('技術指標', `MA ${price(d.ind.ma5)}/${price(d.ind.ma10)}/${price(d.ind.ma20)}`, `RSI5 ${price(d.ind.rsi5)}｜RSI10 ${price(d.ind.rsi10)}｜MACD柱 ${price(d.ind.macd.hist)}`)}
-    ${row('進場區間', zoneText(d.entryLow, d.entryHigh), '支撐/VWAP上方等回測不破，不追第一根急拉')}
-    ${row('停損位置', price(d.riskLine), '取5分K低點與支撐下方，跌破假設失敗', 'bad')}
-    ${row('第一賣點', price(d.firstTarget), `以2%目標/壓力區估算｜風報比 ${Number.isFinite(d.rr) ? d.rr.toFixed(2) : '-'}`)}
-    ${row('第二賣點', price(d.secondTarget), '需量價續強才看，不強就不等')}
-    ${row('推薦處置', d.action, `保留比例參考 ${d.holdRate}%`)}
-    ${row('命中規則', d.good[0] || d.pattern[0] || '等待明確型態', '固定位置、轉折訊號、成交量與指標配合')}
-    ${row('風險規則', d.risk[0] || '暫無明顯風險', '爆量不漲、長上影、跌破均價、指標轉弱都要保守', d.risk.length ? 'bad' : '')}
-  </div>`; }
-
-  function summaryDecision(d) {
-    let title = d.score >= 75 && d.rr >= 1.4 ? '✅ 可觀察進場' : d.score >= 65 ? '⚠ 等回測確認' : '❌ 暫不進場';
-    const reasons = [d.openType.name, d.regime, `分數${d.score}`, d.good.slice(0,3).join('、') || '等待多方條件'];
-    return { title, reason: reasons.join('｜') };
-  }
-  function sellDecision(d, q) {
-    const input = $('#buyPriceInput'); const buy = num(input?.value || localStorage.getItem('stx_buy_price'));
-    if (!buy) return { title:'等待買入價', reason:'輸入買入價格後，會依目前價格、K線、MA、RSI、MACD、VWAP、停損與賣點即時判斷。', type:'' };
-    const close = d.close || num(q.close); const pnl = (close - buy) / buy * 100;
-    let title = '✅ 可續抱', reason = `目前損益 ${pnl.toFixed(2)}%｜尚未觸發停損或賣點。`, type = 'good';
-    if (close <= d.riskLine || close <= buy * .98 || d.score < 55) { title = '❌ 建議出場'; reason = `目前損益 ${pnl.toFixed(2)}%｜跌破停損/規則轉弱，當沖不凹單。`; type = 'bad'; }
-    else if (close >= d.secondTarget || (d.ind.rsi5 >= 85 && d.ind.macd.hist < 0)) { title = '✅ 第二賣點到，建議大幅出場'; reason = `目前損益 ${pnl.toFixed(2)}%｜已接近第二賣點或指標過熱轉弱。`; type = 'good'; }
-    else if (close >= d.firstTarget || d.risk.length >= 2) { title = '⚠ 建議減碼'; reason = `目前損益 ${pnl.toFixed(2)}%｜到第一賣點或風險訊號增加，先落袋一部分。`; type = ''; }
-    return { title, reason, type };
-  }
-
-  function renderDecision(d, quote) {
-    lastDecision = d; lastQuote = quote;
-    const html = decisionHTML(d); if ($('#proSignal')) $('#proSignal').innerHTML = html; if ($('#analysisSummary')) $('#analysisSummary').innerHTML = html;
-    const sd = summaryDecision(d); if ($('#entrySummaryTitle')) $('#entrySummaryTitle').textContent = sd.title; if ($('#entrySummaryReason')) $('#entrySummaryReason').textContent = sd.reason;
-    const sell = sellDecision(d, quote); if ($('#sellSummaryTitle')) $('#sellSummaryTitle').textContent = sell.title; if ($('#sellSummaryReason')) $('#sellSummaryReason').textContent = sell.reason; const sp = $('#sellSummaryPanel'); if (sp) sp.className = `entry-summary-panel sell-summary-panel ${sell.type}`;
-    if ($('#analysisTags')) $('#analysisTags').innerHTML = (d.good.length ? d.good : ['等待回測']).slice(0,8).map(x => `<span>${x}</span>`).join('');
-    if ($('#riskTags')) $('#riskTags').innerHTML = (d.risk.length ? d.risk : ['暫無明顯風險']).slice(0,8).map(x => `<span>${x}</span>`).join('');
-    if ($('.modern-alerts')) $('.modern-alerts').innerHTML = `<b>⚡ 多因子規則</b><span>${d.openType.name}</span><span>${d.status}</span><span>RSI5 ${price(d.ind.rsi5)}</span><span>MACD ${price(d.ind.macd.hist)}</span>`;
-    const rows = [['門檻', d.score >= 75 ? '達標' : '未達', `分數 ${d.score}/100`], ['MA', price(d.ind.ma5), `10 ${price(d.ind.ma10)} / 20 ${price(d.ind.ma20)}`], ['RSI', price(d.ind.rsi5), `RSI10 ${price(d.ind.rsi10)}`], ['MACD', price(d.ind.macd.hist), d.ind.macd.hist >= 0 ? '偏多' : '偏弱']];
-    $$('.modern-cards article').forEach((card,i)=>{ if(!card||!rows[i])return; card.querySelector('span').textContent=rows[i][0]; card.querySelector('strong').textContent=rows[i][1]; card.querySelector('p').textContent=rows[i][2]; });
-    [['aiEntry', zoneText(d.entryLow,d.entryHigh)], ['aiStop', price(d.riskLine)], ['aiTarget', price(d.firstTarget)], ['planEntry', zoneText(d.entryLow,d.entryHigh)], ['planStop', price(d.riskLine)], ['planTarget', price(d.firstTarget)]].forEach(([id,text])=>{ const el=$('#'+id); if(el) el.textContent=text; });
-  }
+  function decisionHTML(d) { return `<div class="decision-list expert">${row('開盤四法', d.openType.name, `盤勢${d.openType.bias}`, d.openType.score > 0 ? 'good' : 'bad')}${row('市場狀態', d.regime, '依價、量、均線、RSI、MACD、五檔與K線判斷', d.regime === '多方盤' ? 'good' : d.regime === '陷阱盤' || d.regime === '弱勢盤' ? 'bad' : '')}${row('規則判斷', d.status, `分數 ${d.score}/100｜75分才達股票當沖出手門檻`, d.score >= 75 ? 'good' : d.score < 55 ? 'bad' : '')}${row('技術指標', `MA ${price(d.ind.ma5)}/${price(d.ind.ma10)}/${price(d.ind.ma20)}`, `RSI5 ${price(d.ind.rsi5)}｜RSI10 ${price(d.ind.rsi10)}｜MACD柱 ${price(d.ind.macd.hist)}`)}${row('進場區間', zoneText(d.entryLow, d.entryHigh), '支撐/VWAP上方等回測不破，不追第一根急拉')}${row('停損位置', price(d.riskLine), '取5分K低點與支撐下方，跌破假設失敗', 'bad')}${row('第一賣點', price(d.firstTarget), `風報比 ${Number.isFinite(d.rr) ? d.rr.toFixed(2) : '-'}`)}${row('第二賣點', price(d.secondTarget), '需量價續強才看')}${row('推薦處置', d.action, `保留比例參考 ${d.holdRate}%`)}${row('命中規則', d.good[0] || d.pattern[0] || '等待明確型態', '成交量與指標配合')}${row('風險規則', d.risk[0] || '暫無明顯風險', '指標轉弱要保守', d.risk.length ? 'bad' : '')}</div>`; }
+  function summaryDecision(d) { const title = d.score >= 75 && d.rr >= 1.4 ? '✅ 可觀察進場' : d.score >= 65 ? '⚠ 等回測確認' : '❌ 暫不進場'; return { title, reason: [d.openType.name, d.regime, `分數${d.score}`, d.good.slice(0,3).join('、') || '等待多方條件'].join('｜') }; }
+  function sellDecision(d, q) { const input = $('#buyPriceInput'); const buy = num(input?.value || localStorage.getItem('stx_buy_price')); if (!buy) return { title:'等待買入價', reason:'輸入買入價格後，會依目前價格、K線、MA、RSI、MACD、VWAP、停損與賣點即時判斷。', type:'' }; const close = d.close || num(q.close); const pnl = (close - buy) / buy * 100; let title = '✅ 可續抱', reason = `目前損益 ${pnl.toFixed(2)}%｜尚未觸發停損或賣點。`, type = 'good'; if (close <= d.riskLine || close <= buy * .98 || d.score < 55) { title = '❌ 建議出場'; reason = `目前損益 ${pnl.toFixed(2)}%｜跌破停損/規則轉弱，當沖不凹單。`; type = 'bad'; } else if (close >= d.secondTarget || (d.ind.rsi5 >= 85 && d.ind.macd.hist < 0)) { title = '✅ 第二賣點到，建議大幅出場'; reason = `目前損益 ${pnl.toFixed(2)}%｜已接近第二賣點或指標過熱轉弱。`; type = 'good'; } else if (close >= d.firstTarget || d.risk.length >= 2) { title = '⚠ 建議減碼'; reason = `目前損益 ${pnl.toFixed(2)}%｜到第一賣點或風險訊號增加，先落袋一部分。`; type = ''; } return { title, reason, type }; }
+  function renderDecision(d, quote) { lastDecision = d; lastQuote = quote; const html = decisionHTML(d); if ($('#proSignal')) $('#proSignal').innerHTML = html; if ($('#analysisSummary')) $('#analysisSummary').innerHTML = html; const sd = summaryDecision(d); if ($('#entrySummaryTitle')) $('#entrySummaryTitle').textContent = sd.title; if ($('#entrySummaryReason')) $('#entrySummaryReason').textContent = sd.reason; const sell = sellDecision(d, quote); if ($('#sellSummaryTitle')) $('#sellSummaryTitle').textContent = sell.title; if ($('#sellSummaryReason')) $('#sellSummaryReason').textContent = sell.reason; const sp = $('#sellSummaryPanel'); if (sp) sp.className = `entry-summary-panel sell-summary-panel ${sell.type}`; if ($('#analysisTags')) $('#analysisTags').innerHTML = (d.good.length ? d.good : ['等待回測']).slice(0,8).map(x => `<span>${x}</span>`).join(''); if ($('#riskTags')) $('#riskTags').innerHTML = (d.risk.length ? d.risk : ['暫無明顯風險']).slice(0,8).map(x => `<span>${x}</span>`).join(''); if ($('.modern-alerts')) $('.modern-alerts').innerHTML = `<b>⚡ 多因子規則</b><span>${d.openType.name}</span><span>${d.status}</span><span>RSI5 ${price(d.ind.rsi5)}</span><span>MACD ${price(d.ind.macd.hist)}</span>`; const rows = [['門檻', d.score >= 75 ? '達標' : '未達', `分數 ${d.score}/100`], ['MA', price(d.ind.ma5), `10 ${price(d.ind.ma10)} / 20 ${price(d.ind.ma20)}`], ['RSI', price(d.ind.rsi5), `RSI10 ${price(d.ind.rsi10)}`], ['MACD', price(d.ind.macd.hist), d.ind.macd.hist >= 0 ? '偏多' : '偏弱']]; $$('.modern-cards article').forEach((card,i)=>{ if(!card||!rows[i])return; card.querySelector('span').textContent=rows[i][0]; card.querySelector('strong').textContent=rows[i][1]; card.querySelector('p').textContent=rows[i][2]; }); [['aiEntry', zoneText(d.entryLow,d.entryHigh)], ['aiStop', price(d.riskLine)], ['aiTarget', price(d.firstTarget)], ['planEntry', zoneText(d.entryLow,d.entryHigh)], ['planStop', price(d.riskLine)], ['planTarget', price(d.firstTarget)]].forEach(([id,text])=>{ const el=$('#'+id); if(el) el.textContent=text; }); }
 
   function bindBuyInput() { const btn = $('#saveBuyPrice'), input = $('#buyPriceInput'); if (!input || input.dataset.bound) return; input.dataset.bound='1'; input.value = localStorage.getItem('stx_buy_price') || ''; const save = () => { localStorage.setItem('stx_buy_price', input.value || ''); if (lastDecision) renderDecision(lastDecision, lastQuote || {}); }; input.addEventListener('input', save); btn?.addEventListener('click', save); }
-  async function updateFast(code) { bindBuyInput(); const now = Date.now(); const quote = await getJSON(`${API}/api/quote?code=${code}`); if (!cachedKbars.length || now - lastKbarAt > 10000) { const kbars = await getJSON(`${API}/api/kbars?code=${code}&days=5`); cachedKbars = kbars.items || []; lastKbarAt = now; } renderDecision(analyzeKline(quote, cachedKbars), quote); }
+  async function updateFast(code, force=false) { bindBuyInput(); const now = Date.now(); const quote = await getJSON(`${API}/api/quote?code=${code}`); if (force || !cachedKbars.length || now - lastKbarAt > 10000) { const kbars = await getJSON(`${API}/api/kbars?code=${code}&days=5`); cachedKbars = kbars.items || []; lastKbarAt = now; } renderDecision(analyzeKline(quote, cachedKbars), quote); }
+
+  async function scanRadar() { const listEl = $('#radarList'); if (listEl) listEl.innerHTML = '<div class="radar-card"><strong>掃描中...</strong><p>正在抓取候選股資料</p></div>'; const results = []; for (const code of radarCodes) { try { const [quote, kbars] = await Promise.all([getJSON(`${API}/api/quote?code=${code}`), getJSON(`${API}/api/kbars?code=${code}&days=5`)]); const d = analyzeKline(quote, kbars.items || []); results.push({ code, quote, d }); } catch(e) {} } results.sort((a,b)=>b.d.score-a.d.score); const top = results.slice(0,10); if ($('#marketRadarTitle')) $('#marketRadarTitle').textContent = top[0]?.d.score >= 75 ? '市場有可觀察標的' : '市場偏保守'; if ($('#marketRadarReason')) $('#marketRadarReason').textContent = `已掃描 ${results.length} 檔｜75分以上 ${results.filter(x=>x.d.score>=75).length} 檔`; if (listEl) listEl.innerHTML = top.map(x => `<div class="radar-card"><strong>${x.code} ${x.quote.name || ''}<em>${x.d.score}分</em></strong><p>${x.d.status}｜${x.d.good.slice(0,3).join(' / ') || '等待條件'}</p><small>現價 ${price(x.d.close)}｜第一 ${price(x.d.firstTarget)}｜停損 ${price(x.d.riskLine)}</small></div>`).join('') || '<div class="radar-card"><strong>暫無資料</strong><p>請稍後再刷新。</p></div>'; }
+  async function refreshAll() { const btn = $('#marketRefresh'); if (btn) btn.textContent = '⟳'; const code = ($('#stockCodeLabel')?.textContent || '').match(/\d{4,6}/)?.[0]; if (code) await updateFast(code, true).catch(()=>{}); await scanRadar().catch(()=>{}); if (btn) btn.textContent = '↻'; }
+  $('#marketRefresh')?.addEventListener('click', refreshAll);
   setInterval(() => { const code = ($('#stockCodeLabel')?.textContent || '').match(/\d{4,6}/)?.[0]; if (!code) return; const now=Date.now(); if (now-lastRun < 900) return; lastRun=now; updateFast(code).catch(()=>{}); }, 500);
 })();
