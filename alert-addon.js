@@ -1,5 +1,10 @@
 (() => {
+  const API = 'https://stock-monitor-b6d6.onrender.com';
   const $ = (s) => document.querySelector(s);
+  function codeNow() {
+    const label = ($('#stockCodeLabel')?.textContent || '') + ' ' + ($('#proCode')?.value || '');
+    return (label.match(/\d{4,6}/) || [''])[0] || 'STX';
+  }
   function ensure() {
     if ($('#alertPanel')) return;
     const host = $('#fusionPanel') || $('#entrySummaryPanel');
@@ -10,21 +15,19 @@
     el.innerHTML = '<span>盤中警報</span><strong id="alertTitle">等待訊號</strong><p id="alertReason">搜尋股票後，系統會監控多因子變化。</p><div id="alertTags" class="analysis-tags"><span>等待資料</span></div>';
     host.parentNode.insertBefore(el, host.nextSibling);
   }
-  function firstNum(text) {
-    const m = String(text || '').match(/[+-]?\d+/);
-    return m ? Number(m[0]) : null;
-  }
-  function fusionScore() {
-    return firstNum($('#fusionTitle')?.textContent || '');
-  }
-  function chipScore() {
-    return firstNum($('#chipsSummaryTitle')?.textContent || '');
-  }
-  function newsScore() {
-    return firstNum($('#newsSummaryTitle')?.textContent || '');
-  }
-  function signalText() {
-    return (($('#proSignal')?.textContent || '') + ' ' + ($('#entrySummaryReason')?.textContent || '')).trim();
+  function firstNum(text) { const m = String(text || '').match(/[+-]?\d+/); return m ? Number(m[0]) : null; }
+  function fusionScore() { return firstNum($('#fusionTitle')?.textContent || ''); }
+  function chipScore() { return firstNum($('#chipsSummaryTitle')?.textContent || ''); }
+  function newsScore() { return firstNum($('#newsSummaryTitle')?.textContent || ''); }
+  function signalText() { return (($('#proSignal')?.textContent || '') + ' ' + ($('#entrySummaryReason')?.textContent || '')).trim(); }
+  async function pushDiscord(code, score, title, tags) {
+    const key = `stx_push_${code}_${title}`;
+    const last = Number(localStorage.getItem(key) || 0);
+    if (Date.now() - last < 10 * 60 * 1000) return;
+    localStorage.setItem(key, String(Date.now()));
+    const message = encodeURIComponent(tags.length ? tags.join('｜') : '盤中強勢訊號');
+    const url = `${API}/api/discord-alert?code=${encodeURIComponent(code)}&score=${score}&title=${encodeURIComponent(title)}&message=${message}`;
+    try { await fetch(url, { cache: 'no-store' }); } catch (e) {}
   }
   function render() {
     ensure();
@@ -50,6 +53,7 @@
     if ($('#alertTitle')) $('#alertTitle').textContent = title;
     if ($('#alertReason')) $('#alertReason').textContent = reason;
     if ($('#alertTags')) $('#alertTags').innerHTML = tags.length ? tags.slice(0, 8).map(x => `<span>${x}</span>`).join('') : '<span>等待資料</span>';
+    if (f !== null && f >= 88 && level === 'good') pushDiscord(codeNow(), f, 'STX強勢警報', tags);
   }
   window.STX_ALERT_RENDER = render;
   window.addEventListener('load', () => setInterval(render, 1500));
