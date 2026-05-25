@@ -1,1 +1,19 @@
-{"name":"Stock Assistant","short_name":"Stock","start_url":"/stock_monitor/","scope":"/stock_monitor/","display":"standalone","background_color":"#eef4ff","theme_color":"#0f172a","icons":[{"src":"icon.svg","sizes":"any","type":"image/svg+xml"}]}
+{
+  "name": "STX 多因子當沖系統",
+  "short_name": "STX",
+  "description": "STX 多因子台股當沖分析與 Discord 警報終端",
+  "start_url": "/stock_monitor/",
+  "scope": "/stock_monitor/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#06101f",
+  "theme_color": "#06101f",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
