@@ -11,6 +11,8 @@ from fastapi import FastAPI, HTTPException, Query
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 
+from news_engine import get_news_payload
+
 load_dotenv()
 
 SHIOAJI_API_KEY = os.getenv("SHIOAJI_API_KEY", "")
@@ -77,7 +79,7 @@ async def lifespan(app: FastAPI):
 app = FastAPI(
     title="Stock Monitor Backend",
     description="Safe backend bridge for GitHub Pages frontend and Sinotrade Shioaji.",
-    version="0.2.1",
+    version="0.3.0",
     lifespan=lifespan,
 )
 
@@ -140,6 +142,18 @@ def root() -> dict[str, str]:
 @app.get("/health")
 def health() -> dict[str, bool]:
     return {"ok": True, "logged_in": bool(api and api.stock_account)}
+
+
+@app.get("/api/news")
+def get_news(
+    code: str = Query(..., description="Taiwan stock code, e.g. 2330"),
+    name: str = Query(..., description="Company name, e.g. 台積電"),
+    symbol: str | None = Query(None, description="Optional Finnhub symbol, e.g. TSM"),
+) -> dict[str, Any]:
+    try:
+        return get_news_payload(code=code, name=name, symbol=symbol)
+    except Exception as exc:
+        raise HTTPException(status_code=502, detail=f"Failed to fetch news: {exc}") from exc
 
 
 @app.get("/api/quote", response_model=QuoteResponse)
