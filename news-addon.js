@@ -21,6 +21,7 @@
       <span>即時新聞判斷</span>
       <strong id="newsSummaryTitle">等待新聞</strong>
       <p id="newsSummaryReason">搜尋股票後，會抓取即時新聞並計算新聞分數。</p>
+      <div id="newsTotalScore" class="sell-cost-grid"></div>
       <div id="newsList" class="analysis-tags news-tags"><span>等待資料</span></div>
     `;
     host.parentNode.insertBefore(panel, host.nextSibling);
@@ -32,9 +33,7 @@
     if (!code) code = ($('#proCode')?.value || '').match(/\d{4,6}/)?.[0] || '';
     const title = ($('#proTitle')?.textContent || '').trim();
     let name = nameMap[code] || '';
-    if (title && code && title.includes(code)) {
-      name = title.replace(code, '').trim() || name;
-    }
+    if (title && code && title.includes(code)) name = title.replace(code, '').trim() || name;
     return { code, name };
   }
 
@@ -44,12 +43,52 @@
     return { title: `新聞中性 ${score >= 0 ? '+' : ''}${score}`, type: '' };
   }
 
+  function getTechScore() {
+    const text = ($('#entrySummaryReason')?.textContent || '') + ' ' + ($('#analysisSummary')?.textContent || '');
+    const m = text.match(/分數\s*(\d{1,3})/);
+    const score = m ? Number(m[1]) : null;
+    return Number.isFinite(score) ? Math.max(0, Math.min(100, score)) : null;
+  }
+
+  function weightedScore(tech, news) {
+    const newsBoost = Math.max(-12, Math.min(12, Math.round(news * 0.4)));
+    if (!Number.isFinite(tech)) return { total: null, newsBoost };
+    return { total: Math.max(0, Math.min(100, tech + newsBoost)), newsBoost };
+  }
+
+  function renderWeightedSummary(data) {
+    const tech = getTechScore();
+    const news = Number(data.newsScore || 0);
+    const { total, newsBoost } = weightedScore(tech, news);
+    const box = $('#newsTotalScore');
+    if (box) {
+      box.innerHTML = `
+        <span>技術分<b>${tech ?? '-'}</b></span>
+        <span>新聞修正<b>${newsBoost >= 0 ? '+' : ''}${newsBoost}</b></span>
+        <span>新聞分<b>${news >= 0 ? '+' : ''}${news}</b></span>
+        <span>加權總分<b>${total ?? '-'}</b></span>
+      `;
+    }
+    if (total !== null && $('#entrySummaryTitle')) {
+      if (total >= 85) $('#entrySummaryTitle').textContent = '🔥 新聞加權強勢觀察';
+      else if (total >= 75) $('#entrySummaryTitle').textContent = '✅ 新聞加權可觀察';
+      else if (total >= 65) $('#entrySummaryTitle').textContent = '⚠ 新聞加權等確認';
+      else $('#entrySummaryTitle').textContent = '❌ 新聞加權暫不進場';
+    }
+    if (total !== null && $('#entrySummaryReason')) {
+      const original = $('#entrySummaryReason').dataset.originalReason || $('#entrySummaryReason').textContent;
+      $('#entrySummaryReason').dataset.originalReason = original;
+      $('#entrySummaryReason').textContent = `${original}｜新聞修正 ${newsBoost >= 0 ? '+' : ''}${newsBoost}｜總分 ${total}`;
+    }
+  }
+
   function renderLoading() {
     ensureNewsPanel();
     const panel = $('#newsSummaryPanel');
     if (panel) panel.className = 'entry-summary-panel terminal-news-panel';
     if ($('#newsSummaryTitle')) $('#newsSummaryTitle').textContent = '新聞更新中';
     if ($('#newsSummaryReason')) $('#newsSummaryReason').textContent = '正在讀取即時新聞來源。';
+    if ($('#newsTotalScore')) $('#newsTotalScore').innerHTML = '';
     if ($('#newsList')) $('#newsList').innerHTML = '<span>讀取中</span>';
   }
 
@@ -61,6 +100,7 @@
     if (panel) panel.className = `entry-summary-panel terminal-news-panel ${st.type}`;
     if ($('#newsSummaryTitle')) $('#newsSummaryTitle').textContent = st.title;
     if ($('#newsSummaryReason')) $('#newsSummaryReason').textContent = data.summary || '新聞資料已更新。';
+    renderWeightedSummary(data);
     const items = Array.isArray(data.items) ? data.items.slice(0, 5) : [];
     if ($('#newsList')) {
       $('#newsList').innerHTML = items.length
@@ -75,6 +115,7 @@
     if (panel) panel.className = 'entry-summary-panel terminal-news-panel bad';
     if ($('#newsSummaryTitle')) $('#newsSummaryTitle').textContent = '新聞讀取失敗';
     if ($('#newsSummaryReason')) $('#newsSummaryReason').textContent = message || '稍後請按右上角刷新。';
+    if ($('#newsTotalScore')) $('#newsTotalScore').innerHTML = '';
     if ($('#newsList')) $('#newsList').innerHTML = '<span>等待重試</span>';
   }
 
@@ -113,9 +154,7 @@
   window.STX_UPDATE_NEWS = updateNews;
   window.addEventListener('load', () => setTimeout(() => updateNews(false), 900));
   document.addEventListener('click', (e) => {
-    if (e.target && (e.target.id === 'proSearch' || e.target.id === 'marketRefresh')) {
-      setTimeout(() => updateNews(true), 1200);
-    }
+    if (e.target && (e.target.id === 'proSearch' || e.target.id === 'marketRefresh')) setTimeout(() => updateNews(true), 1200);
   }, true);
   setInterval(() => updateNews(false), 120000);
 })();
