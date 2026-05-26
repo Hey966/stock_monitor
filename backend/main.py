@@ -14,6 +14,7 @@ from pydantic import BaseModel
 from news_engine import get_news_payload
 from chips_engine import get_chips_payload
 from discord_engine import send_discord_alert
+from pro_engine import build_pro_analysis
 
 load_dotenv()
 SHIOAJI_API_KEY = os.getenv("SHIOAJI_API_KEY", "")
@@ -68,7 +69,7 @@ async def lifespan(app: FastAPI):
     if api is not None:
         api.logout()
 
-app = FastAPI(title="Stock Monitor Backend", version="0.5.0", lifespan=lifespan)
+app = FastAPI(title="Stock Monitor Backend", version="0.6.0", lifespan=lifespan)
 origins = [x.strip() for x in CORS_ORIGINS.split(",") if x.strip()]
 app.add_middleware(CORSMiddleware, allow_origins=origins if origins else ["*"], allow_credentials=True, allow_methods=["*"], allow_headers=["*"])
 
@@ -91,6 +92,42 @@ def normalize_kbars(kbars: Any) -> list[KBarItem]:
     for ts, o, h, l, c, v in zip(getattr(kbars, "ts", []), getattr(kbars, "Open", []), getattr(kbars, "High", []), getattr(kbars, "Low", []), getattr(kbars, "Close", []), getattr(kbars, "Volume", []), strict=False):
         rows.append(KBarItem(ts=str(ts), open=float(o), high=float(h), low=float(l), close=float(c), volume=float(v)))
     return rows
+
+def make_quote_payload(code: str) -> tuple[Any, dict[str, Any]]:
+    if api is None:
+        raise HTTPException(status_code=503, detail="Shioaji API is not initialized")
+    contract = get_stock_contract(code)
+    try:
+        snapshot = api.snapshots([contract])[0]
+    except Exception as exc:
+        raise HTTPException(status_code=502, detail=f"Failed to fetch quote from Shioaji: {exc}") from exc
+    raw = snapshot.__dict__.copy()
+    close = pick_number(raw, "close")
+    change_price = pick_number(raw, "change_price")
+    change_rate = pick_number(raw, "change_rate")
+    reference = pick_number(raw, "reference", "yesterday_close")
+    if change_price is None and close is not None and reference:
+        change_price = float(close) - float(reference)
+    if change_rate is None and change_price is not None and reference:
+        change_rate = float(change_price) / float(reference) * 100
+    payload = dict(code=code, name=getattr(contract, "name", None), close=close, open=pick_number(raw, "open"), high=pick_number(raw, "high"), low=pick_number(raw, "low"), volume=pick_number(raw, "total_volume", "volume"), change_price=change_price, change_rate=change_rate, buy_price=pick_number(raw, "buy_price"), buy_volume=pick_number(raw, "buy_volume"), sell_price=pick_number(raw, "sell_price"), sell_volume=pick_number(raw, "sell_volume"), volume_ratio=pick_number(raw, "volume_ratio"), average_price=pick_number(raw, "average_price"), raw=raw)
+    return contract, payload
+
+def fetch_kbar_rows(contract: Any, days: int = 5) -> tuple[list[KBarItem], date | None, date | None]:
+    if api is None:
+        raise HTTPException(status_code=503, detail="Shioaji API is not initialized")
+    end = date.today()
+    rows, used_start, used_end = [], None, None
+    for lookback in [days, 7, 10]:
+        start = end - timedelta(days=lookback - 1)
+        try:
+            rows = normalize_kbars(api.kbars(contract, start=start.isoformat(), end=end.isoformat()))
+        except Exception as exc:
+            raise HTTPException(status_code=502, detail=f"Failed to fetch kbars from Shioaji: {exc}") from exc
+        if len(rows) >= 3:
+            used_start, used_end = start, end
+            break
+    return rows, used_start, used_end
 
 @app.get("/")
 def root():
@@ -121,42 +158,26 @@ def discord_alert(code: str = Query(...), score: int = Query(...), title: str = 
     except Exception as exc:
         raise HTTPException(status_code=502, detail=f"Failed to send discord alert: {exc}") from exc
 
+@app.get("/api/pro-analysis")
+def get_pro_analysis(code: str = Query(...)):
+    try:
+        contract, quote = make_quote_payload(code)
+        rows, _, _ = fetch_kbar_rows(contract, days=5)
+        return build_pro_analysis(code=code, quote=quote, rows=rows[-180:])
+    except HTTPException:
+        raise
+    except Exception as exc:
+        raise HTTPException(status_code=502, detail=f"Failed to run pro analysis: {exc}") from exc
+
 @app.get("/api/quote", response_model=QuoteResponse)
 def get_quote(code: str = Query(...)):
-    if api is None:
-        raise HTTPException(status_code=503, detail="Shioaji API is not initialized")
-    contract = get_stock_contract(code)
-    try:
-        snapshot = api.snapshots([contract])[0]
-    except Exception as exc:
-        raise HTTPException(status_code=502, detail=f"Failed to fetch quote from Shioaji: {exc}") from exc
-    raw = snapshot.__dict__.copy()
-    close = pick_number(raw, "close")
-    change_price = pick_number(raw, "change_price")
-    change_rate = pick_number(raw, "change_rate")
-    reference = pick_number(raw, "reference", "yesterday_close")
-    if change_price is None and close is not None and reference:
-        change_price = float(close) - float(reference)
-    if change_rate is None and change_price is not None and reference:
-        change_rate = float(change_price) / float(reference) * 100
-    return QuoteResponse(code=code, name=getattr(contract, "name", None), close=close, open=pick_number(raw, "open"), high=pick_number(raw, "high"), low=pick_number(raw, "low"), volume=pick_number(raw, "total_volume", "volume"), change_price=change_price, change_rate=change_rate, buy_price=pick_number(raw, "buy_price"), buy_volume=pick_number(raw, "buy_volume"), sell_price=pick_number(raw, "sell_price"), sell_volume=pick_number(raw, "sell_volume"), volume_ratio=pick_number(raw, "volume_ratio"), average_price=pick_number(raw, "average_price"), raw=raw)
+    _, quote = make_quote_payload(code)
+    return QuoteResponse(**quote)
 
 @app.get("/api/kbars", response_model=KBarsResponse)
 def get_kbars(code: str = Query(...), days: int = Query(5, ge=1, le=10)):
-    if api is None:
-        raise HTTPException(status_code=503, detail="Shioaji API is not initialized")
     contract = get_stock_contract(code)
-    end = date.today()
-    rows, used_start, used_end = [], None, None
-    for lookback in [days, 7, 10]:
-        start = end - timedelta(days=lookback - 1)
-        try:
-            rows = normalize_kbars(api.kbars(contract, start=start.isoformat(), end=end.isoformat()))
-        except Exception as exc:
-            raise HTTPException(status_code=502, detail=f"Failed to fetch kbars from Shioaji: {exc}") from exc
-        if len(rows) >= 3:
-            used_start, used_end = start, end
-            break
+    rows, used_start, used_end = fetch_kbar_rows(contract, days=days)
     if not rows:
         return KBarsResponse(code=code, interval="1m", items=[], count=0, message="No K-bar data returned.")
     latest = rows[-120:]
