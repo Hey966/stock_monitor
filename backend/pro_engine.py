@@ -34,9 +34,22 @@ def _slope(values: list[float]) -> float:
     return values[-1] - values[0]
 
 
+def _range_pct(start: float | None, end: float | None) -> float:
+    if not start or not end:
+        return 0.0
+    return (end - start) / start * 100
+
+
+def _last_change_pct(closes: list[float], bars: int) -> float:
+    if len(closes) < bars + 1:
+        return 0.0
+    return _range_pct(closes[-bars - 1], closes[-1])
+
+
 def build_pro_analysis(code: str, quote: dict[str, Any], rows: list[Any]) -> dict[str, Any]:
     reasons: list[str] = []
     risks: list[str] = []
+    traps: list[str] = []
     signals: dict[str, Any] = {}
     score = 45
 
@@ -51,6 +64,8 @@ def build_pro_analysis(code: str, quote: dict[str, Any], rows: list[Any]) -> dic
 
     recent = rows[-30:]
     closes = [_f(getattr(r, "close", None), 0) or 0 for r in recent]
+    highs = [_f(getattr(r, "high", None), 0) or 0 for r in recent]
+    lows = [_f(getattr(r, "low", None), 0) or 0 for r in recent]
     vols = [_f(getattr(r, "volume", None), 0) or 0 for r in recent]
     vwap = _vwap(rows)
     ma5 = mean(closes[-5:]) if len(closes) >= 5 else None
@@ -59,7 +74,10 @@ def build_pro_analysis(code: str, quote: dict[str, Any], rows: list[Any]) -> dic
     base_vol = mean(vols[-30:-5]) if len(vols) >= 30 else (mean(vols) if vols else 0)
     rel_vol = recent_vol / base_vol if base_vol else 0
     slope = _slope(closes[-8:]) if len(closes) >= 8 else 0
+    chg3 = _last_change_pct(closes, 3)
+    chg5 = _last_change_pct(closes, 5)
 
+    # Base technical engine
     if close and vwap:
         signals["vwap"] = round(vwap, 3)
         if close > vwap:
@@ -122,13 +140,14 @@ def build_pro_analysis(code: str, quote: dict[str, Any], rows: list[Any]) -> dic
         score -= 10
         risks.append("跌幅偏大，短線偏弱")
 
+    intraday_pos = None
     if close and high and low and high > low:
-        pos = (close - low) / (high - low)
-        signals["intraday_position"] = round(pos, 3)
-        if pos >= 0.75:
+        intraday_pos = (close - low) / (high - low)
+        signals["intraday_position"] = round(intraday_pos, 3)
+        if intraday_pos >= 0.75:
             score += 7
             reasons.append("價格位於盤中高檔區")
-        elif pos <= 0.35:
+        elif intraday_pos <= 0.35:
             score -= 8
             risks.append("價格靠近盤中低檔區")
 
@@ -141,19 +160,70 @@ def build_pro_analysis(code: str, quote: dict[str, Any], rows: list[Any]) -> dic
             score -= 5
             risks.append("目前為黑 K，短線承壓")
 
+    distance_to_vwap = None
     if close and vwap:
-        dist = (close - vwap) / vwap * 100
-        signals["distance_to_vwap_pct"] = round(dist, 2)
-        if dist > 2.2:
+        distance_to_vwap = (close - vwap) / vwap * 100
+        signals["distance_to_vwap_pct"] = round(distance_to_vwap, 2)
+        if distance_to_vwap > 2.2:
             score -= 10
             risks.append("離 VWAP 過遠，追價風險升高")
-        elif 0 <= dist <= 1.2:
+        elif 0 <= distance_to_vwap <= 1.2:
             score += 5
             reasons.append("距 VWAP 不遠，適合等回測")
 
+    # STX Pro Engine v3 Trap Engine
+    signals["last_3_bar_change_pct"] = round(chg3, 2)
+    signals["last_5_bar_change_pct"] = round(chg5, 2)
+    trap_block = False
+
+    if chg3 >= 2.0 or chg5 >= 3.0:
+        score -= 18
+        trap_block = True
+        traps.append("急拉未確認回測，禁止追價")
+
+    if distance_to_vwap is not None and distance_to_vwap >= 2.0:
+        score -= 14
+        trap_block = True
+        traps.append("價格離 VWAP 過遠，追價風險過高")
+
+    if open_ and high and close and high > open_:
+        fade_from_high = (high - close) / high * 100
+        signals["fade_from_high_pct"] = round(fade_from_high, 2)
+        if open_ > 0 and close < open_ and fade_from_high >= 1.2:
+            score -= 18
+            trap_block = True
+            traps.append("開高走低，疑似誘多陷阱")
+
+    if intraday_pos is not None and rel_vol >= 2.2 and intraday_pos <= 0.45:
+        score -= 15
+        trap_block = True
+        traps.append("高量但價格不在高位，疑似出貨或壓盤")
+
+    pullback_ok = False
+    if close and vwap and lows:
+        recent_low = min(lows[-5:]) if len(lows) >= 5 else min(lows)
+        pullback_ok = recent_low >= vwap * 0.995 and close > vwap and chg3 < 1.6
+        signals["pullback_hold_vwap"] = pullback_ok
+        if pullback_ok:
+            score += 12
+            reasons.append("回測 VWAP 附近不破，結構較健康")
+        elif close > vwap and (chg3 >= 2.0 or chg5 >= 3.0):
+            traps.append("尚未完成回測不破，暫不追高")
+            trap_block = True
+
+    if traps:
+        risks.extend(["陷阱：" + x for x in traps[:5]])
+
     score = max(0, min(100, int(round(score))))
-    if score >= 88:
-        level, action, entry = "strong", "強勢觀察，等回測不破再進", True
+    signals["trap_block"] = trap_block
+    signals["trap_reasons"] = traps
+
+    if trap_block:
+        level, action, entry = "blocked", "禁止進場，等待回測不破", False
+    elif score >= 88 and pullback_ok:
+        level, action, entry = "strong", "強勢可進，仍需小停損", True
+    elif score >= 88:
+        level, action, entry = "strong_watch", "強勢觀察，等回測不破再進", False
     elif score >= 76:
         level, action, entry = "watch", "可觀察，不追高", False
     elif score >= 60:
@@ -181,8 +251,9 @@ def build_pro_analysis(code: str, quote: dict[str, Any], rows: list[Any]) -> dic
         "stop": stop,
         "target": target,
         "reasons": reasons[:8],
-        "risks": risks[:8],
+        "risks": risks[:10],
+        "traps": traps[:8],
         "signals": signals,
         "quote": {k: v for k, v in quote.items() if k != "raw"},
-        "message": "STX Pro Engine v2：後端計算，前端只顯示。",
+        "message": "STX Pro Engine v3：加入 Trap Engine，避免追高與假突破。",
     }
