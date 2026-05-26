@@ -5,8 +5,14 @@
   let pushing = false;
 
   function codeNow() {
-    const label = ($('#stockCodeLabel')?.textContent || '') + ' ' + ($('#proCode')?.value || '');
+    const label = ($('#stockCodeLabel')?.textContent || '') + ' ' + ($('#proCode')?.value || '') + ' ' + ($('#proTitle')?.textContent || '');
     return (label.match(/\d{4,6}/) || [''])[0] || 'STX';
+  }
+
+  function setStatus(text) {
+    pushStatus = text;
+    const el = $('#discordPushStatus');
+    if (el) el.textContent = text;
   }
 
   function ensure() {
@@ -21,13 +27,13 @@
   }
 
   function ensureStatusField() {
-    const p = $('#alertPanel');
+    const p = $('#alertPanel') || Array.from(document.querySelectorAll('.entry-summary-panel')).find(x => /盤中警報/.test(x.innerText || ''));
     if (!p || $('#discordPushStatus')) return;
     const status = document.createElement('p');
     status.id = 'discordPushStatus';
     status.style.cssText = 'margin-top:8px;font-weight:800;color:#f8d36b';
-    status.textContent = 'Discord：等待觸發';
-    const tags = $('#alertTags');
+    status.textContent = pushStatus || 'Discord：等待觸發';
+    const tags = $('#alertTags') || p.querySelector('.analysis-tags');
     p.insertBefore(status, tags || null);
   }
 
@@ -37,6 +43,21 @@
   }
 
   function readVisibleFusionScore() {
+    const body = document.body?.innerText || '';
+    const patterns = [
+      /多因子總分[\s\S]{0,120}(?:\||｜)\s*(\d{1,3})\b/,
+      /強勢可觀察進場\s*(?:\||｜)\s*(\d{1,3})\b/,
+      /可觀察進場\s*(?:\||｜)\s*(\d{1,3})\b/,
+      /強勢警報[\s\S]{0,80}(\d{1,3})\b/
+    ];
+    for (const p of patterns) {
+      const m = body.match(p);
+      if (m) {
+        const value = Number(m[1]);
+        if (Number.isFinite(value) && value >= 0 && value <= 100) return value;
+      }
+    }
+
     const candidates = [
       $('#fusionTitle')?.textContent || '',
       $('#entrySummaryTitle')?.textContent || '',
@@ -49,28 +70,31 @@
         if (Number.isFinite(value) && value >= 0 && value <= 100) return value;
       }
     }
-    const bodyText = document.body?.innerText || '';
-    const m = bodyText.match(/多因子總分[\s\S]{0,80}(?:\||｜)\s*(\d{1,3})\b/);
-    if (m) return Number(m[1]);
     return null;
+  }
+
+  function visibleAlertTriggered(score) {
+    const body = document.body?.innerText || '';
+    if (/強勢警報|強勢可觀察進場|可觀察警報|可觀察進場/.test(body) && score !== null && score >= 78) return true;
+    return false;
   }
 
   function fusionScore() { return readVisibleFusionScore(); }
   function chipScore() { return firstNum($('#chipsSummaryTitle')?.textContent || ''); }
   function newsScore() { return firstNum($('#newsSummaryTitle')?.textContent || ''); }
-  function signalText() { return (($('#proSignal')?.textContent || '') + ' ' + ($('#entrySummaryReason')?.textContent || '') + ' ' + ($('#alertTitle')?.textContent || '')).trim(); }
+  function signalText() { return (($('#proSignal')?.textContent || '') + ' ' + ($('#entrySummaryReason')?.textContent || '') + ' ' + ($('#alertTitle')?.textContent || '') + ' ' + (document.body?.innerText || '')).trim(); }
 
   async function pushDiscord(code, score, title, tags) {
     if (pushing) return;
-    const key = `stx_push_v4_${code}_${title}_${score}`;
+    const key = `stx_push_v5_${code}_${title}_${score}`;
     const last = Number(localStorage.getItem(key) || 0);
     if (Date.now() - last < 60 * 1000) {
-      pushStatus = 'Discord：冷卻中';
+      setStatus('Discord：冷卻中');
       return;
     }
 
     pushing = true;
-    pushStatus = 'Discord：送出中...';
+    setStatus('Discord：送出中...');
     const messageText = tags.length ? tags.join('｜') : '盤中訊號';
     const url = `${API}/api/discord-alert?code=${encodeURIComponent(code)}&score=${encodeURIComponent(score)}&title=${encodeURIComponent(title)}&message=${encodeURIComponent(messageText)}&t=${Date.now()}`;
 
@@ -78,9 +102,9 @@
       const res = await fetch(url, { cache: 'no-store' });
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       localStorage.setItem(key, String(Date.now()));
-      pushStatus = 'Discord：已送出';
+      setStatus('Discord：已送出');
     } catch (e) {
-      pushStatus = 'Discord：送出失敗';
+      setStatus('Discord：送出失敗');
     } finally {
       pushing = false;
     }
@@ -98,7 +122,8 @@
     let title = '等待確認';
     let reason = f === null ? '尚未讀到多因子分數。' : '尚未出現明確盤中警報。';
 
-    if (f !== null && f >= 88) { title = '🔥 強勢警報'; reason = '多因子總分進入強勢區，仍需確認回測不破。'; level = 'good'; tags.push('總分強勢'); }
+    const forced = visibleAlertTriggered(f);
+    if ((f !== null && f >= 88) || forced) { title = f !== null && f >= 88 ? '🔥 強勢警報' : '✅ 可觀察警報'; reason = '畫面警報已觸發，正在同步 Discord。'; level = 'good'; tags.push(f >= 88 ? '總分強勢' : '可觀察'); }
     else if (f !== null && f >= 78) { title = '✅ 可觀察警報'; reason = '多因子分數偏多，可等待低風險進場點。'; level = 'good'; tags.push('可觀察'); }
     else if (f !== null && f < 60) { title = '❌ 風險警報'; reason = '多因子分數不足，避免追價與硬做。'; level = 'bad'; tags.push('分數不足'); }
 
@@ -116,14 +141,14 @@
     if ($('#discordPushStatus')) $('#discordPushStatus').textContent = pushStatus || (f === null ? 'Discord：等待分數' : 'Discord：等待觸發');
     if ($('#alertTags')) $('#alertTags').innerHTML = tags.length ? tags.slice(0, 8).map(x => `<span>${x}</span>`).join('') : '<span>等待資料</span>';
 
-    if (f !== null && f >= 78 && level === 'good') {
-      pushDiscord(codeNow(), f, f >= 88 ? 'STX強勢警報' : 'STX可觀察警報', tags);
+    if ((f !== null && f >= 78 && level === 'good') || forced) {
+      pushDiscord(codeNow(), f || 78, (f || 0) >= 88 ? 'STX強勢警報' : 'STX可觀察警報', tags);
     }
   }
 
   window.STX_ALERT_RENDER = render;
-  window.addEventListener('load', () => setInterval(render, 1500));
+  window.addEventListener('load', () => setInterval(render, 1200));
   document.addEventListener('click', e => {
-    if (e.target && (e.target.id === 'proSearch' || e.target.id === 'marketRefresh')) setTimeout(render, 2600);
+    if (e.target && (e.target.id === 'proSearch' || e.target.id === 'marketRefresh')) setTimeout(render, 1800);
   }, true);
 })();
