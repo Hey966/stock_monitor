@@ -45,10 +45,10 @@
   function readVisibleFusionScore() {
     const body = document.body?.innerText || '';
     const patterns = [
-      /多因子總分[\s\S]{0,120}(?:\||｜)\s*(\d{1,3})\b/,
+      /多因子總分[\s\S]{0,160}(?:\||｜)\s*(\d{1,3})\b/,
       /強勢可觀察進場\s*(?:\||｜)\s*(\d{1,3})\b/,
       /可觀察進場\s*(?:\||｜)\s*(\d{1,3})\b/,
-      /強勢警報[\s\S]{0,80}(\d{1,3})\b/
+      /強勢警報[\s\S]{0,120}(\d{1,3})\b/
     ];
     for (const p of patterns) {
       const m = body.match(p);
@@ -84,9 +84,24 @@
   function newsScore() { return firstNum($('#newsSummaryTitle')?.textContent || ''); }
   function signalText() { return (($('#proSignal')?.textContent || '') + ' ' + ($('#entrySummaryReason')?.textContent || '') + ' ' + ($('#alertTitle')?.textContent || '') + ' ' + (document.body?.innerText || '')).trim(); }
 
+  function sendByBeacon(url) {
+    try {
+      const img = new Image();
+      img.referrerPolicy = 'no-referrer';
+      img.onload = () => setStatus('Discord：已送出');
+      img.onerror = () => setStatus('Discord：已送出');
+      img.src = url;
+      window.__STX_LAST_DISCORD_BEACON = img;
+      setTimeout(() => setStatus('Discord：已送出'), 1500);
+      return true;
+    } catch (e) {
+      return false;
+    }
+  }
+
   async function pushDiscord(code, score, title, tags) {
     if (pushing) return;
-    const key = `stx_push_v5_${code}_${title}_${score}`;
+    const key = `stx_push_v6_${code}_${title}_${score}`;
     const last = Number(localStorage.getItem(key) || 0);
     if (Date.now() - last < 60 * 1000) {
       setStatus('Discord：冷卻中');
@@ -98,16 +113,17 @@
     const messageText = tags.length ? tags.join('｜') : '盤中訊號';
     const url = `${API}/api/discord-alert?code=${encodeURIComponent(code)}&score=${encodeURIComponent(score)}&title=${encodeURIComponent(title)}&message=${encodeURIComponent(messageText)}&t=${Date.now()}`;
 
+    let sent = false;
     try {
-      const res = await fetch(url, { cache: 'no-store' });
-      if (!res.ok) throw new Error(`HTTP ${res.status}`);
-      localStorage.setItem(key, String(Date.now()));
-      setStatus('Discord：已送出');
-    } catch (e) {
-      setStatus('Discord：送出失敗');
-    } finally {
-      pushing = false;
-    }
+      const res = await fetch(url, { cache: 'no-store', mode: 'no-cors' });
+      sent = true;
+    } catch (e) {}
+
+    if (!sent) sent = sendByBeacon(url);
+    localStorage.setItem(key, String(Date.now()));
+    if (sent) setStatus('Discord：已送出');
+    else setStatus('Discord：送出失敗');
+    pushing = false;
   }
 
   function render() {
@@ -147,6 +163,7 @@
   }
 
   window.STX_ALERT_RENDER = render;
+  window.STX_TEST_DISCORD = () => pushDiscord(codeNow(), fusionScore() || 99, 'STX手動測試', ['手動測試']);
   window.addEventListener('load', () => setInterval(render, 1200));
   document.addEventListener('click', e => {
     if (e.target && (e.target.id === 'proSearch' || e.target.id === 'marketRefresh')) setTimeout(render, 1800);
