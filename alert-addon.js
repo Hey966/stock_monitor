@@ -36,14 +36,33 @@
     return m ? Number(m[0]) : null;
   }
 
-  function fusionScore() { return firstNum($('#fusionTitle')?.textContent || ''); }
+  function readVisibleFusionScore() {
+    const candidates = [
+      $('#fusionTitle')?.textContent || '',
+      $('#entrySummaryTitle')?.textContent || '',
+      ...Array.from(document.querySelectorAll('.entry-summary-panel strong, .terminal-main-signal strong')).map(x => x.textContent || '')
+    ];
+    for (const text of candidates) {
+      const m = String(text).match(/(?:\||｜)\s*(\d{1,3})\b|\b(100|[1-9]?\d)\b\s*$/);
+      if (m) {
+        const value = Number(m[1] || m[2]);
+        if (Number.isFinite(value) && value >= 0 && value <= 100) return value;
+      }
+    }
+    const bodyText = document.body?.innerText || '';
+    const m = bodyText.match(/多因子總分[\s\S]{0,80}(?:\||｜)\s*(\d{1,3})\b/);
+    if (m) return Number(m[1]);
+    return null;
+  }
+
+  function fusionScore() { return readVisibleFusionScore(); }
   function chipScore() { return firstNum($('#chipsSummaryTitle')?.textContent || ''); }
   function newsScore() { return firstNum($('#newsSummaryTitle')?.textContent || ''); }
-  function signalText() { return (($('#proSignal')?.textContent || '') + ' ' + ($('#entrySummaryReason')?.textContent || '')).trim(); }
+  function signalText() { return (($('#proSignal')?.textContent || '') + ' ' + ($('#entrySummaryReason')?.textContent || '') + ' ' + ($('#alertTitle')?.textContent || '')).trim(); }
 
   async function pushDiscord(code, score, title, tags) {
     if (pushing) return;
-    const key = `stx_push_v3_${code}_${title}`;
+    const key = `stx_push_v4_${code}_${title}_${score}`;
     const last = Number(localStorage.getItem(key) || 0);
     if (Date.now() - last < 60 * 1000) {
       pushStatus = 'Discord：冷卻中';
@@ -77,7 +96,7 @@
     const tags = [];
     let level = 'watch';
     let title = '等待確認';
-    let reason = '尚未出現明確盤中警報。';
+    let reason = f === null ? '尚未讀到多因子分數。' : '尚未出現明確盤中警報。';
 
     if (f !== null && f >= 88) { title = '🔥 強勢警報'; reason = '多因子總分進入強勢區，仍需確認回測不破。'; level = 'good'; tags.push('總分強勢'); }
     else if (f !== null && f >= 78) { title = '✅ 可觀察警報'; reason = '多因子分數偏多，可等待低風險進場點。'; level = 'good'; tags.push('可觀察'); }
@@ -94,7 +113,7 @@
     if (p) p.className = 'entry-summary-panel terminal-alert-panel ' + (level === 'good' ? 'good' : level === 'bad' ? 'bad' : '');
     if ($('#alertTitle')) $('#alertTitle').textContent = title;
     if ($('#alertReason')) $('#alertReason').textContent = reason;
-    if ($('#discordPushStatus')) $('#discordPushStatus').textContent = pushStatus || 'Discord：等待觸發';
+    if ($('#discordPushStatus')) $('#discordPushStatus').textContent = pushStatus || (f === null ? 'Discord：等待分數' : 'Discord：等待觸發');
     if ($('#alertTags')) $('#alertTags').innerHTML = tags.length ? tags.slice(0, 8).map(x => `<span>${x}</span>`).join('') : '<span>等待資料</span>';
 
     if (f !== null && f >= 78 && level === 'good') {
