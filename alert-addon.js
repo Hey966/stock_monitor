@@ -2,6 +2,7 @@
   const API = 'https://stock-monitor-b6d6.onrender.com';
   const $ = (s) => document.querySelector(s);
   let pushStatus = '';
+  let pushing = false;
 
   function codeNow() {
     const label = ($('#stockCodeLabel')?.textContent || '') + ' ' + ($('#proCode')?.value || '');
@@ -15,8 +16,19 @@
     const el = document.createElement('section');
     el.id = 'alertPanel';
     el.className = 'entry-summary-panel terminal-alert-panel';
-    el.innerHTML = '<span>盤中警報</span><strong id="alertTitle">等待訊號</strong><p id="alertReason">搜尋股票後，系統會監控多因子變化。</p><div id="alertTags" class="analysis-tags"><span>等待資料</span></div>';
+    el.innerHTML = '<span>盤中警報</span><strong id="alertTitle">等待訊號</strong><p id="alertReason">搜尋股票後，系統會監控多因子變化。</p><p id="discordPushStatus" style="margin-top:8px;font-weight:800;color:#f8d36b">Discord：等待觸發</p><div id="alertTags" class="analysis-tags"><span>等待資料</span></div>';
     host.parentNode.insertBefore(el, host.nextSibling);
+  }
+
+  function ensureStatusField() {
+    const p = $('#alertPanel');
+    if (!p || $('#discordPushStatus')) return;
+    const status = document.createElement('p');
+    status.id = 'discordPushStatus';
+    status.style.cssText = 'margin-top:8px;font-weight:800;color:#f8d36b';
+    status.textContent = 'Discord：等待觸發';
+    const tags = $('#alertTags');
+    p.insertBefore(status, tags || null);
   }
 
   function firstNum(text) {
@@ -30,13 +42,16 @@
   function signalText() { return (($('#proSignal')?.textContent || '') + ' ' + ($('#entrySummaryReason')?.textContent || '')).trim(); }
 
   async function pushDiscord(code, score, title, tags) {
-    const key = `stx_push_v2_${code}_${title}`;
+    if (pushing) return;
+    const key = `stx_push_v3_${code}_${title}`;
     const last = Number(localStorage.getItem(key) || 0);
     if (Date.now() - last < 60 * 1000) {
       pushStatus = 'Discord：冷卻中';
       return;
     }
 
+    pushing = true;
+    pushStatus = 'Discord：送出中...';
     const messageText = tags.length ? tags.join('｜') : '盤中訊號';
     const url = `${API}/api/discord-alert?code=${encodeURIComponent(code)}&score=${encodeURIComponent(score)}&title=${encodeURIComponent(title)}&message=${encodeURIComponent(messageText)}&t=${Date.now()}`;
 
@@ -47,11 +62,14 @@
       pushStatus = 'Discord：已送出';
     } catch (e) {
       pushStatus = 'Discord：送出失敗';
+    } finally {
+      pushing = false;
     }
   }
 
   function render() {
     ensure();
+    ensureStatusField();
     const f = fusionScore();
     const c = chipScore();
     const n = newsScore();
@@ -75,7 +93,8 @@
     const p = $('#alertPanel');
     if (p) p.className = 'entry-summary-panel terminal-alert-panel ' + (level === 'good' ? 'good' : level === 'bad' ? 'bad' : '');
     if ($('#alertTitle')) $('#alertTitle').textContent = title;
-    if ($('#alertReason')) $('#alertReason').textContent = pushStatus ? `${reason}｜${pushStatus}` : reason;
+    if ($('#alertReason')) $('#alertReason').textContent = reason;
+    if ($('#discordPushStatus')) $('#discordPushStatus').textContent = pushStatus || 'Discord：等待觸發';
     if ($('#alertTags')) $('#alertTags').innerHTML = tags.length ? tags.slice(0, 8).map(x => `<span>${x}</span>`).join('') : '<span>等待資料</span>';
 
     if (f !== null && f >= 78 && level === 'good') {
