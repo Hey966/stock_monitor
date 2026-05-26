@@ -1,5 +1,6 @@
 (() => {
   const API = 'https://stock-monitor-b6d6.onrender.com';
+  const ALERT_THRESHOLD = 85;
   const $ = (s) => document.querySelector(s);
   let pushStatus = '';
   let pushing = false;
@@ -75,7 +76,7 @@
 
   function visibleAlertTriggered(score) {
     const body = document.body?.innerText || '';
-    if (/強勢警報|強勢可觀察進場|可觀察警報|可觀察進場/.test(body) && score !== null && score >= 78) return true;
+    if (/強勢警報|強勢可觀察進場|可觀察警報|可觀察進場/.test(body) && score !== null && score > ALERT_THRESHOLD) return true;
     return false;
   }
 
@@ -101,7 +102,7 @@
 
   async function pushDiscord(code, score, title, tags) {
     if (pushing) return;
-    const key = `stx_push_v6_${code}_${title}_${score}`;
+    const key = `stx_push_v7_${code}_${title}_${score}`;
     const last = Number(localStorage.getItem(key) || 0);
     if (Date.now() - last < 60 * 1000) {
       setStatus('Discord：冷卻中');
@@ -115,7 +116,7 @@
 
     let sent = false;
     try {
-      const res = await fetch(url, { cache: 'no-store', mode: 'no-cors' });
+      await fetch(url, { cache: 'no-store', mode: 'no-cors' });
       sent = true;
     } catch (e) {}
 
@@ -136,12 +137,25 @@
     const tags = [];
     let level = 'watch';
     let title = '等待確認';
-    let reason = f === null ? '尚未讀到多因子分數。' : '尚未出現明確盤中警報。';
+    let reason = f === null ? '尚未讀到多因子分數。' : `分數需大於 ${ALERT_THRESHOLD} 才會推播 Discord。`;
 
     const forced = visibleAlertTriggered(f);
-    if ((f !== null && f >= 88) || forced) { title = f !== null && f >= 88 ? '🔥 強勢警報' : '✅ 可觀察警報'; reason = '畫面警報已觸發，正在同步 Discord。'; level = 'good'; tags.push(f >= 88 ? '總分強勢' : '可觀察'); }
-    else if (f !== null && f >= 78) { title = '✅ 可觀察警報'; reason = '多因子分數偏多，可等待低風險進場點。'; level = 'good'; tags.push('可觀察'); }
-    else if (f !== null && f < 60) { title = '❌ 風險警報'; reason = '多因子分數不足，避免追價與硬做。'; level = 'bad'; tags.push('分數不足'); }
+    if ((f !== null && f > ALERT_THRESHOLD) || forced) {
+      title = f !== null && f >= 88 ? '🔥 強勢警報' : '✅ 可觀察警報';
+      reason = `分數 ${f} 已大於 ${ALERT_THRESHOLD}，正在同步 Discord。`;
+      level = 'good';
+      tags.push(f >= 88 ? '總分強勢' : '可觀察');
+    } else if (f !== null && f >= 78) {
+      title = '✅ 可觀察警報';
+      reason = `多因子分數偏多，但未大於 ${ALERT_THRESHOLD}，不推播 Discord。`;
+      level = 'good';
+      tags.push('可觀察');
+    } else if (f !== null && f < 60) {
+      title = '❌ 風險警報';
+      reason = '多因子分數不足，避免追價與硬做。';
+      level = 'bad';
+      tags.push('分數不足');
+    }
 
     if (c !== null && c >= 18) tags.push('法人偏多');
     if (c !== null && c <= -18) { tags.push('法人偏空'); level = 'bad'; }
@@ -154,11 +168,11 @@
     if (p) p.className = 'entry-summary-panel terminal-alert-panel ' + (level === 'good' ? 'good' : level === 'bad' ? 'bad' : '');
     if ($('#alertTitle')) $('#alertTitle').textContent = title;
     if ($('#alertReason')) $('#alertReason').textContent = reason;
-    if ($('#discordPushStatus')) $('#discordPushStatus').textContent = pushStatus || (f === null ? 'Discord：等待分數' : 'Discord：等待觸發');
+    if ($('#discordPushStatus')) $('#discordPushStatus').textContent = pushStatus || (f === null ? 'Discord：等待分數' : `Discord：等待 > ${ALERT_THRESHOLD}`);
     if ($('#alertTags')) $('#alertTags').innerHTML = tags.length ? tags.slice(0, 8).map(x => `<span>${x}</span>`).join('') : '<span>等待資料</span>';
 
-    if ((f !== null && f >= 78 && level === 'good') || forced) {
-      pushDiscord(codeNow(), f || 78, (f || 0) >= 88 ? 'STX強勢警報' : 'STX可觀察警報', tags);
+    if ((f !== null && f > ALERT_THRESHOLD && level === 'good') || forced) {
+      pushDiscord(codeNow(), f || (ALERT_THRESHOLD + 1), (f || 0) >= 88 ? 'STX強勢警報' : 'STX可觀察警報', tags);
     }
   }
 
