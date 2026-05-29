@@ -15,6 +15,7 @@ from news_engine import get_news_payload
 from chips_engine import get_chips_payload
 from discord_engine import send_discord_alert
 from pro_engine import build_pro_analysis
+from replay_engine import get_logs, get_stats, save_signal, update_results
 
 load_dotenv()
 SHIOAJI_API_KEY = os.getenv("SHIOAJI_API_KEY", "")
@@ -69,7 +70,7 @@ async def lifespan(app: FastAPI):
     if api is not None:
         api.logout()
 
-app = FastAPI(title="Stock Monitor Backend", version="0.6.0", lifespan=lifespan)
+app = FastAPI(title="Stock Monitor Backend", version="0.7.0", lifespan=lifespan)
 origins = [x.strip() for x in CORS_ORIGINS.split(",") if x.strip()]
 app.add_middleware(CORSMiddleware, allow_origins=origins if origins else ["*"], allow_credentials=True, allow_methods=["*"], allow_headers=["*"])
 
@@ -129,6 +130,15 @@ def fetch_kbar_rows(contract: Any, days: int = 5) -> tuple[list[KBarItem], date 
             break
     return rows, used_start, used_end
 
+def market_payload_for(code: str) -> dict[str, Any] | None:
+    if code == "2330":
+        return None
+    try:
+        _, market_quote = make_quote_payload("2330")
+        return {k: v for k, v in market_quote.items() if k != "raw"}
+    except Exception:
+        return None
+
 @app.get("/")
 def root():
     return {"status": "ok", "message": "Stock Monitor Backend is running"}
@@ -163,15 +173,28 @@ def get_pro_analysis(code: str = Query(...)):
     try:
         contract, quote = make_quote_payload(code)
         rows, _, _ = fetch_kbar_rows(contract, days=5)
-        return build_pro_analysis(code=code, quote=quote, rows=rows[-180:])
+        analysis = build_pro_analysis(code=code, quote=quote, rows=rows[-180:], market=market_payload_for(code))
+        replay = save_signal(analysis)
+        update_results(code, quote.get("close"))
+        analysis["replay"] = replay
+        return analysis
     except HTTPException:
         raise
     except Exception as exc:
         raise HTTPException(status_code=502, detail=f"Failed to run pro analysis: {exc}") from exc
 
+@app.get("/api/replay-log")
+def replay_log(limit: int = Query(100, ge=1, le=500)):
+    return get_logs(limit=limit)
+
+@app.get("/api/replay-stats")
+def replay_stats():
+    return get_stats()
+
 @app.get("/api/quote", response_model=QuoteResponse)
 def get_quote(code: str = Query(...)):
     _, quote = make_quote_payload(code)
+    update_results(code, quote.get("close"))
     return QuoteResponse(**quote)
 
 @app.get("/api/kbars", response_model=KBarsResponse)
