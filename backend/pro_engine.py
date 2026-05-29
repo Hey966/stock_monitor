@@ -46,7 +46,49 @@ def _last_change_pct(closes: list[float], bars: int) -> float:
     return _range_pct(closes[-bars - 1], closes[-1])
 
 
-def build_pro_analysis(code: str, quote: dict[str, Any], rows: list[Any]) -> dict[str, Any]:
+def _market_bias(market: dict[str, Any] | None) -> tuple[str, int, list[str], dict[str, Any]]:
+    if not market:
+        return "unknown", 0, ["尚未取得大盤同步資料"], {"status": "missing"}
+    change_rate = _f(market.get("change_rate"), 0) or 0
+    close = _f(market.get("close"))
+    open_ = _f(market.get("open"))
+    high = _f(market.get("high"))
+    low = _f(market.get("low"))
+    pos = None
+    if close and high and low and high > low:
+        pos = (close - low) / (high - low)
+    red = bool(close and open_ and close >= open_)
+    score = 0
+    notes: list[str] = []
+    if change_rate >= 0.8:
+        score += 2
+        notes.append("權值股偏強")
+    elif change_rate <= -0.8:
+        score -= 2
+        notes.append("權值股偏弱")
+    if red:
+        score += 1
+        notes.append("權值股紅K")
+    else:
+        score -= 1
+        notes.append("權值股黑K或轉弱")
+    if pos is not None:
+        if pos >= 0.65:
+            score += 1
+            notes.append("權值股位於盤中高檔")
+        elif pos <= 0.35:
+            score -= 1
+            notes.append("權值股靠近盤中低檔")
+    if score >= 2:
+        status = "bull"
+    elif score <= -2:
+        status = "bear"
+    else:
+        status = "neutral"
+    return status, score, notes, {"status": status, "score": score, "change_rate": round(change_rate, 2), "red_k": red, "intraday_position": round(pos, 3) if pos is not None else None, "name": market.get("name"), "code": market.get("code")}
+
+
+def build_pro_analysis(code: str, quote: dict[str, Any], rows: list[Any], market: dict[str, Any] | None = None) -> dict[str, Any]:
     reasons: list[str] = []
     risks: list[str] = []
     traps: list[str] = []
@@ -64,7 +106,6 @@ def build_pro_analysis(code: str, quote: dict[str, Any], rows: list[Any]) -> dic
 
     recent = rows[-30:]
     closes = [_f(getattr(r, "close", None), 0) or 0 for r in recent]
-    highs = [_f(getattr(r, "high", None), 0) or 0 for r in recent]
     lows = [_f(getattr(r, "low", None), 0) or 0 for r in recent]
     vols = [_f(getattr(r, "volume", None), 0) or 0 for r in recent]
     vwap = _vwap(rows)
@@ -77,7 +118,29 @@ def build_pro_analysis(code: str, quote: dict[str, Any], rows: list[Any]) -> dic
     chg3 = _last_change_pct(closes, 3)
     chg5 = _last_change_pct(closes, 5)
 
-    # Base technical engine
+    market_status, market_score, market_notes, market_signal = _market_bias(market)
+    signals["market_sync"] = market_signal
+    if code != "2330":
+        if market_status == "bull" and change_rate > 0:
+            score += 8
+            reasons.append("大盤權值同步偏多")
+        elif market_status == "bear" and change_rate > 0:
+            score -= 12
+            risks.append("個股偏強但權值股偏弱，容易被大盤拖累")
+        elif market_status == "bear" and change_rate <= 0:
+            score -= 8
+            risks.append("個股與權值股同步偏弱")
+        elif market_status == "neutral":
+            score -= 2
+            risks.append("大盤同步性普通，訊號需保守")
+    else:
+        reasons.append("此股為權值核心參考，市場同步以自身為主")
+    for note in market_notes[:2]:
+        if market_status == "bear":
+            risks.append("市場：" + note)
+        elif market_status == "bull":
+            reasons.append("市場：" + note)
+
     if close and vwap:
         signals["vwap"] = round(vwap, 3)
         if close > vwap:
@@ -171,7 +234,6 @@ def build_pro_analysis(code: str, quote: dict[str, Any], rows: list[Any]) -> dic
             score += 5
             reasons.append("距 VWAP 不遠，適合等回測")
 
-    # STX Pro Engine v3 Trap Engine
     signals["last_3_bar_change_pct"] = round(chg3, 2)
     signals["last_5_bar_change_pct"] = round(chg5, 2)
     trap_block = False
@@ -255,5 +317,5 @@ def build_pro_analysis(code: str, quote: dict[str, Any], rows: list[Any]) -> dic
         "traps": traps[:8],
         "signals": signals,
         "quote": {k: v for k, v in quote.items() if k != "raw"},
-        "message": "STX Pro Engine v3：加入 Trap Engine，避免追高與假突破。",
+        "message": "STX Pro Engine v4：加入 Market Sync Engine 與 Trap Engine。",
     }
