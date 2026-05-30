@@ -94,6 +94,7 @@ def build_pro_analysis(code: str, quote: dict[str, Any], rows: list[Any], market
     traps: list[str] = []
     signals: dict[str, Any] = {}
     score = 45
+    score_cap: int | None = None
 
     close = _f(quote.get("close"))
     open_ = _f(quote.get("open"))
@@ -188,6 +189,15 @@ def build_pro_analysis(code: str, quote: dict[str, Any], rows: list[Any], market
         elif imbalance <= -0.25:
             score -= 12
             risks.append("五檔委賣壓力較大")
+        if imbalance <= -0.90:
+            score_cap = 75 if score_cap is None else min(score_cap, 75)
+            risks.append("五檔委賣極強，分數上限 75")
+        elif imbalance <= -0.80:
+            score_cap = 80 if score_cap is None else min(score_cap, 80)
+            risks.append("五檔委賣明顯壓制，分數上限 80")
+        elif imbalance <= -0.50:
+            score_cap = 88 if score_cap is None else min(score_cap, 88)
+            risks.append("五檔委賣偏重，分數上限 88")
     else:
         signals["orderbook_imbalance"] = None
         risks.append("尚未取得有效五檔量資料")
@@ -277,6 +287,9 @@ def build_pro_analysis(code: str, quote: dict[str, Any], rows: list[Any], market
         risks.extend(["陷阱：" + x for x in traps[:5]])
 
     score = max(0, min(100, int(round(score))))
+    if score_cap is not None and score > score_cap:
+        score = score_cap
+    signals["orderbook_risk_cap"] = score_cap
     signals["trap_block"] = trap_block
     signals["trap_reasons"] = traps
 
@@ -317,5 +330,5 @@ def build_pro_analysis(code: str, quote: dict[str, Any], rows: list[Any], market
         "traps": traps[:8],
         "signals": signals,
         "quote": {k: v for k, v in quote.items() if k != "raw"},
-        "message": "STX Pro Engine v4：加入 Market Sync Engine 與 Trap Engine。",
+        "message": "STX Pro Engine v4.1：加入 Orderbook Risk Cap、Market Sync 與 Trap Engine。",
     }
