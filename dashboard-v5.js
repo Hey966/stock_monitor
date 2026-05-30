@@ -2,6 +2,33 @@
   const API = 'https://stock-monitor-b6d6.onrender.com';
   const $ = (s) => document.querySelector(s);
 
+  function marketText(status) {
+    if (status === 'bull') return '多頭同步';
+    if (status === 'bear') return '空頭同步';
+    if (status === 'neutral') return '中性盤';
+    return '尚無資料';
+  }
+
+  function levelText(level) {
+    const map = {
+      strong: '強勢可進',
+      strong_watch: '強勢觀察',
+      watch: '觀察中',
+      neutral: '中性等待',
+      risk: '風險偏高',
+      blocked: '禁止進場'
+    };
+    return map[level] || level || '-';
+  }
+
+  function capText(cap) {
+    if (!cap) return '無封頂';
+    if (Number(cap) <= 75) return `${cap}｜五檔賣壓極強`;
+    if (Number(cap) <= 80) return `${cap}｜五檔賣壓明顯`;
+    if (Number(cap) <= 88) return `${cap}｜五檔賣壓偏重`;
+    return String(cap);
+  }
+
   function ensureDashboard() {
     if ($('#stxDashboardV5')) return;
     const host = $('#page-search') || $('.modern-page.active') || document.querySelector('main');
@@ -10,18 +37,18 @@
     panel.id = 'stxDashboardV5';
     panel.className = 'entry-summary-panel terminal-main-signal';
     panel.innerHTML = `
-      <span>STX Dashboard v5</span>
+      <span>STX 智能戰情中心 v5.1</span>
       <strong id="dashEngineVersion">等待 Pro Engine</strong>
-      <p id="dashSummary">整合 Pro Engine、Market Sync、Risk Cap 與 Replay 勝率。</p>
+      <p id="dashSummary">整合專業分析、大盤同步、五檔風險封頂與回測勝率。</p>
       <div class="quote-detail-grid" style="margin-top:12px">
-        <article><span>Replay Signals</span><b id="dashReplaySignals">-</b></article>
-        <article><span>Win Rate</span><b id="dashWinRate">-</b></article>
-        <article><span>Avg Return</span><b id="dashAvgReturn">-</b></article>
-        <article><span>Trap Block</span><b id="dashTrapCount">-</b></article>
-        <article><span>Market Sync</span><b id="dashMarketSync">-</b></article>
-        <article><span>Risk Cap</span><b id="dashRiskCap">-</b></article>
+        <article><span>回測訊號數</span><b id="dashReplaySignals">-</b></article>
+        <article><span>勝率</span><b id="dashWinRate">-</b></article>
+        <article><span>平均報酬</span><b id="dashAvgReturn">-</b></article>
+        <article><span>陷阱攔截</span><b id="dashTrapCount">-</b></article>
+        <article><span>大盤同步</span><b id="dashMarketSync">-</b></article>
+        <article><span>風險封頂</span><b id="dashRiskCap">-</b></article>
       </div>
-      <div id="dashRecentSignals" class="analysis-tags" style="margin-top:12px"><span>等待 Replay</span></div>
+      <div id="dashRecentSignals" class="analysis-tags" style="margin-top:12px"><span>等待回測資料</span></div>
     `;
     host.insertBefore(panel, host.firstChild?.nextSibling || host.firstChild);
   }
@@ -34,13 +61,14 @@
   function renderPro(data) {
     ensureDashboard();
     if (!data) return;
-    setText('#dashEngineVersion', data.message || 'STX Pro Engine v5 Dashboard');
+    setText('#dashEngineVersion', data.message || 'STX 智能戰情中心 v5.1');
     const ms = data.signals?.market_sync;
     const cap = data.signals?.orderbook_risk_cap;
-    setText('#dashMarketSync', ms?.status ? `${ms.status} ${ms.score ?? ''}` : '-');
-    setText('#dashRiskCap', cap ? String(cap) : '無');
-    const trap = data.signals?.trap_block ? 'Trap Block' : 'No Trap';
-    setText('#dashSummary', `${data.name || data.code || ''}｜Score ${data.score ?? '-'}｜${data.action || '-'}｜${trap}`);
+    setText('#dashMarketSync', ms?.status ? `${marketText(ms.status)} ${ms.score ?? ''}` : '尚無資料');
+    setText('#dashRiskCap', capText(cap));
+    const trap = data.signals?.trap_block ? '🔴 已攔截風險' : '🟢 無陷阱';
+    const level = levelText(data.level);
+    setText('#dashSummary', `${data.name || data.code || ''}｜分數 ${data.score ?? '-'}｜${level}｜${trap}`);
   }
 
   function renderStats(stats) {
@@ -54,8 +82,8 @@
     const box = $('#dashRecentSignals');
     if (box) {
       box.innerHTML = latest.length
-        ? latest.map(x => `<span>${x.code}｜${x.score}｜${x.level}${x.results?.latest_pct !== undefined ? `｜${x.results.latest_pct}%` : ''}</span>`).join('')
-        : '<span>尚無 Replay 訊號</span>';
+        ? latest.map(x => `<span>${x.code}｜${x.score}分｜${levelText(x.level)}${x.results?.latest_pct !== undefined ? `｜${x.results.latest_pct}%` : ''}</span>`).join('')
+        : '<span>尚無回測訊號</span>';
     }
   }
 
