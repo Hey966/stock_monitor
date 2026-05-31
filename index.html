@@ -4,42 +4,42 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   <meta name="theme-color" content="#06101f" />
-  <title>STX Dashboard v5</title>
-  <link rel="manifest" href="manifest.json?v=build-008" />
-  <link rel="stylesheet" href="pro.css?v=build-008" />
+  <title>STX 智能戰情中心 v5.1</title>
+  <link rel="manifest" href="manifest.json?v=build-009" />
+  <link rel="stylesheet" href="pro.css?v=build-009" />
 </head>
 <body class="pro-body modern-body">
   <main class="pro-app modern-app">
     <header class="modern-header">
       <button id="openSearchPage" class="modern-icon">‹</button>
-      <div class="modern-title-wrap"><strong id="proTitle">STX Dashboard v5</strong><span>Pro Engine｜Replay｜Market Sync</span></div>
+      <div class="modern-title-wrap"><strong id="proTitle">STX 智能戰情中心</strong><span>Pro Engine｜Replay｜Market Sync</span></div>
       <div class="modern-top-actions"><button id="marketRefresh" class="modern-star">↻</button><button class="modern-more">⋮</button></div>
     </header>
     <section class="modern-price-head"><div class="modern-price-main"><strong id="proPrice" class="pro-price">-</strong><span id="proChange">請先搜尋股票</span></div><div id="stockCodeLabel" class="stock-code-label">搜尋</div></section>
-    <section id="page-search" class="modern-page active"><h2 class="page-heading">搜尋主介面</h2><section class="market-hero"><div><span>加權指數</span><strong id="marketIndex">-</strong><p id="marketChange" class="up">等待更新</p></div><div class="market-score"><b id="marketScore">-</b><span>大盤強度</span></div></section><section class="search-panel"><span>搜尋股票代號</span><div class="watch-input"><input id="proCode" inputmode="numeric" value="" placeholder="例如 2330" /><button id="proSearch">查詢</button></div><p id="marketSummary">依當沖教材規則分析大盤與個股強弱。</p></section><section class="market-grid terminal-grid"><article><span>盤勢判斷</span><strong id="marketMood">等待資料</strong><p>分析中</p></article><article><span>當沖環境</span><strong id="daytradeMood">等待資料</strong><p>分析中</p></article><article><span>核心規則</span><strong>回測不破</strong><p>不追第一根急拉</p></article><article><span>風險提醒</span><strong>先看主力</strong><p>再看技術指標</p></article></section></section>
+    <section id="page-search" class="modern-page active"><h2 class="page-heading">搜尋主介面</h2><section class="search-panel"><span>搜尋股票代號</span><div class="watch-input"><input id="proCode" inputmode="numeric" value="" placeholder="例如 2330" /><button id="proSearch">查詢</button></div><p id="marketSummary">輸入股票代號後，STX 會同步分析個股、大盤、五檔風險與 Replay 紀錄。</p></section><section class="market-hero"><div><span>加權指數</span><strong id="marketIndex">-</strong><p id="marketChange" class="up">等待更新</p></div><div class="market-score"><b id="marketScore">-</b><span>大盤強度</span></div></section><section class="market-grid terminal-grid"><article><span>盤勢判斷</span><strong id="marketMood">等待資料</strong><p>分析中</p></article><article><span>當沖環境</span><strong id="daytradeMood">等待資料</strong><p>分析中</p></article><article><span>核心規則</span><strong>回測不破</strong><p>不追第一根急拉</p></article><article><span>風險提醒</span><strong>先看主力</strong><p>再看技術指標</p></article></section></section>
     <section id="page-overview" class="modern-page"><section class="modern-metrics"><article><span>成交量</span><b id="proVol">-</b></article><article><span>均價</span><b id="proAvg">-</b></article><article><span>最高</span><b id="proHigh">-</b></article><article><span>最低</span><b id="proLow">-</b></article><article><span>買價 / 買量</span><b id="proBid">-</b></article><article><span>賣價 / 賣量</span><b id="proAsk">-</b></article></section><section class="modern-chart-card pro-chart-section"><div class="modern-chart-head"><strong>K線走勢</strong><button class="modern-close">×</button></div><div class="pro-periods modern-periods"><button class="active">1分</button><button>5分</button><button>15分</button><button>30分</button><button>日</button><button>週</button><button>月</button></div><div class="modern-status"><span>MA5</span><span>MA10</span><span>VWAP</span><small id="proStatus">等待查詢</small></div><canvas id="proCanvas" class="pro-canvas modern-canvas"></canvas><div id="proSignal" class="pro-signal modern-signal">請先搜尋股票。</div></section><section class="modern-points terminal-trade-strip"><article><span>進場區間</span><strong id="aiEntry">-</strong><p id="aiEntryText">等待資料</p></article><article><span>停損</span><strong id="aiStop">-</strong><p id="aiStopText">等待資料</p></article><article><span>壓力 / 賣點</span><strong id="aiTarget">-</strong><p id="aiTargetText">等待資料</p></article></section><section class="modern-cards terminal-indicators"><article><span>勝率門檻</span><strong>-</strong><p>等待分析</p></article><article><span>主力手法</span><strong>-</strong><p>等待分析</p></article><article><span>五檔強弱</span><strong>-</strong><p>等待分析</p></article><article><span>量價判斷</span><strong>-</strong><p>等待分析</p></article></section><section class="modern-alerts"><b>⚡ 即時提醒</b><span>等待分析</span></section></section>
     <section id="page-quote" class="modern-page"><h2 class="page-heading">完整報價</h2><div class="quote-detail-grid"><article><span>現價</span><b id="qClose">-</b></article><article><span>漲跌幅</span><b id="qChange">-</b></article><article><span>開盤</span><b id="qOpen">-</b></article><article><span>最高</span><b id="qHigh">-</b></article><article><span>最低</span><b id="qLow">-</b></article><article><span>總量</span><b id="qVol">-</b></article><article><span>買價 / 買量</span><b id="qBid">-</b></article><article><span>賣價 / 賣量</span><b id="qAsk">-</b></article><article><span>量比</span><b id="qVolRatio">-</b></article></div></section>
     <section id="page-watch" class="modern-page"><h2 class="page-heading">自選股</h2><div class="watch-input"><input id="watchInput" inputmode="numeric" placeholder="新增股票代號，例如 2317" /><button id="watchAdd">新增</button></div><div id="watchList" class="watch-modern-list"></div></section>
     <section id="page-analysis" class="modern-page"><h2 class="page-heading">規則分析</h2><section id="entrySummaryPanel" class="entry-summary-panel terminal-main-signal"><span>統整判斷</span><strong id="entrySummaryTitle">等待分析</strong><p id="entrySummaryReason">請先搜尋股票。</p></section><section id="sellSummaryPanel" class="entry-summary-panel sell-summary-panel terminal-sell-panel"><span>賣出判斷</span><div class="sell-input-row"><input id="buyPriceInput" inputmode="decimal" placeholder="買入價格" /><input id="shareQtyInput" inputmode="numeric" placeholder="股數" /></div><strong id="sellSummaryTitle">等待買入價</strong><p id="sellSummaryReason">輸入買入價格與股數後，會自動估算含成本損益與不虧出場價。</p></section><section class="analysis-panel terminal-analysis-board"><h3>目前結論</h3><p id="analysisSummary">等待分析。</p></section><section class="analysis-panel terminal-factor-board"><h3>多方條件</h3><div id="analysisTags" class="analysis-tags"><span>等待資料</span></div></section><section class="analysis-panel terminal-risk-board"><h3>風險提醒</h3><div id="riskTags" class="analysis-tags danger"><span>等待資料</span></div></section></section>
     <section id="page-radar" class="modern-page"><h2 class="page-heading">台股雷達</h2><section class="entry-summary-panel terminal-radar-head"><span>市場狀態</span><strong id="marketRadarTitle">等待掃描</strong><p id="marketRadarReason">按右上角刷新，可掃描台股候選股。</p></section><div id="radarList" class="radar-list"><div class="radar-card"><strong>等待掃描</strong><p>按右上角 ↻ 更新。</p></div></div></section>
     <section id="page-plan" class="modern-page"><h2 class="page-heading">交易計畫</h2><section class="plan-panel"><span>進場區間</span><strong id="planEntry">-</strong><p id="planEntryText">等待資料</p></section><section class="plan-panel"><span>停損位置</span><strong id="planStop">-</strong><p id="planStopText">等待資料</p></section><section class="plan-panel"><span>目標 / 壓力</span><strong id="planTarget">-</strong><p id="planTargetText">等待資料</p></section><section class="plan-panel warning"><span>紀律提醒</span><strong>當沖先保命</strong><p>跌破停損不凹單。</p></section></section>
-    <div class="app-version">STX Dashboard v5 build-008</div>
+    <div class="app-version">STX 智能戰情中心 v5.1 build-009</div>
     <nav class="pro-bottom-nav modern-bottom"><button data-page="overview">⌂<br>總覽</button><button data-page="quote">▧<br>報價</button><button data-page="analysis">◴<br>分析</button><button data-page="radar">◎<br>雷達</button><button data-page="plan">▣<br>計畫</button></nav>
   </main>
-  <script src="daytrade-source.js?v=build-008"></script>
-  <script src="stx-core-v2.js?v=build-008"></script>
-  <script src="overview-home-fix.js?v=build-008"></script>
-  <script src="signal-addon.js?v=build-008"></script>
-  <script src="news-addon.js?v=build-008"></script>
-  <script src="chips-addon.js?v=build-008"></script>
-  <script src="fusion-addon.js?v=build-008"></script>
-  <script src="alert-addon.js?v=build-008"></script>
-  <script src="pro-engine-addon.js?v=build-008"></script>
-  <script src="dashboard-v5.js?v=build-008"></script>
-  <script src="update-helper.js?v=build-008"></script>
+  <script src="daytrade-source.js?v=build-009"></script>
+  <script src="stx-core-v2.js?v=build-009"></script>
+  <script src="overview-home-fix.js?v=build-009"></script>
+  <script src="signal-addon.js?v=build-009"></script>
+  <script src="news-addon.js?v=build-009"></script>
+  <script src="chips-addon.js?v=build-009"></script>
+  <script src="fusion-addon.js?v=build-009"></script>
+  <script src="alert-addon.js?v=build-009"></script>
+  <script src="pro-engine-addon.js?v=build-009"></script>
+  <script src="dashboard-v5.js?v=build-009"></script>
+  <script src="update-helper.js?v=build-009"></script>
   <script>
     if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('./service-worker.js?v=build-008');
+      navigator.serviceWorker.register('./service-worker.js?v=build-009');
     }
   </script>
 </body>
