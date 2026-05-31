@@ -50,7 +50,12 @@
       </div>
       <div id="dashRecentSignals" class="analysis-tags" style="margin-top:12px"><span>等待回測資料</span></div>
     `;
-    host.insertBefore(panel, host.firstChild?.nextSibling || host.firstChild);
+    const searchPanel = host.querySelector('.search-panel');
+    if (searchPanel) {
+      searchPanel.insertAdjacentElement('afterend', panel);
+    } else {
+      host.insertBefore(panel, host.firstChild?.nextSibling || host.firstChild);
+    }
   }
 
   function setText(id, text) {
