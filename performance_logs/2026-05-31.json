@@ -1,7 +1,7 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-05-31T14:00:29.076645+00:00",
-  "count": 3,
+  "updated_at": "2026-05-31T14:00:30.161785+00:00",
+  "count": 4,
   "items": [
     {
       "key": "ai_pool:2317:100:289.0",
@@ -60,6 +60,26 @@
       "score": 100,
       "change_rate_at_signal": 9.68,
       "volume_ratio_at_signal": 2.7,
+      "alert": null,
+      "results": {}
+    },
+    {
+      "key": "ai_pool:3443:100:4670.0",
+      "module": "ai_pool",
+      "reason": "api_ai_pool",
+      "created_at": "2026-05-31T14:00:29.853332+00:00",
+      "updated_at": "2026-05-31T14:00:29.853350+00:00",
+      "status": "open",
+      "code": "3443",
+      "name": "創意",
+      "sector": "半導體",
+      "entry_price": 4670.0,
+      "last_price": 4670.0,
+      "best_price": 4670.0,
+      "worst_price": 4670.0,
+      "score": 100,
+      "change_rate_at_signal": 1.74,
+      "volume_ratio_at_signal": 1.87,
       "alert": null,
       "results": {}
     }
