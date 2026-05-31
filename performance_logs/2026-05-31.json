@@ -1,7 +1,7 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-05-31T14:01:17.562583+00:00",
-  "count": 29,
+  "updated_at": "2026-05-31T14:01:19.177247+00:00",
+  "count": 30,
   "items": [
     {
       "key": "ai_pool:2317:100:289.0",
@@ -581,6 +581,26 @@
       "change_rate_at_signal": 9.33,
       "volume_ratio_at_signal": 3.1,
       "alert": "隔日沖風險警報",
+      "results": {}
+    },
+    {
+      "key": "fund_flow:3481:100:51.0",
+      "module": "fund_flow",
+      "reason": "api_fund_flow",
+      "created_at": "2026-05-31T14:01:18.627912+00:00",
+      "updated_at": "2026-05-31T14:01:18.627929+00:00",
+      "status": "open",
+      "code": "3481",
+      "name": "群創",
+      "sector": "面板",
+      "entry_price": 51.0,
+      "last_price": 51.0,
+      "best_price": 51.0,
+      "worst_price": 51.0,
+      "score": 100,
+      "change_rate_at_signal": 9.91,
+      "volume_ratio_at_signal": 0.71,
+      "alert": "大戶進場警報",
       "results": {}
     }
   ]
