@@ -1,7 +1,7 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-05-31T14:00:40.724392+00:00",
-  "count": 14,
+  "updated_at": "2026-05-31T14:00:42.278428+00:00",
+  "count": 15,
   "items": [
     {
       "key": "ai_pool:2317:100:289.0",
@@ -280,6 +280,26 @@
       "score": 80,
       "change_rate_at_signal": 2.61,
       "volume_ratio_at_signal": 2.34,
+      "alert": null,
+      "results": {}
+    },
+    {
+      "key": "ai_pool:2618:78:36.05",
+      "module": "ai_pool",
+      "reason": "api_ai_pool",
+      "created_at": "2026-05-31T14:00:41.963103+00:00",
+      "updated_at": "2026-05-31T14:00:41.963120+00:00",
+      "status": "open",
+      "code": "2618",
+      "name": "長榮航",
+      "sector": "航運",
+      "entry_price": 36.05,
+      "last_price": 36.05,
+      "best_price": 36.05,
+      "worst_price": 36.05,
+      "score": 78,
+      "change_rate_at_signal": 2.12,
+      "volume_ratio_at_signal": 1.43,
       "alert": null,
       "results": {}
     }
