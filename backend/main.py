@@ -23,6 +23,21 @@ SHIOAJI_SECRET_KEY = os.getenv("SHIOAJI_SECRET_KEY", "")
 CORS_ORIGINS = os.getenv("CORS_ORIGINS", "*")
 api: sj.Shioaji | None = None
 
+SCAN_UNIVERSE = [
+    "2330", "2317", "2454", "2382", "2308", "3037", "3231", "3017", "3324", "3661",
+    "3443", "3711", "2376", "2356", "2324", "2379", "2368", "8046", "5347", "6215",
+    "1513", "1514", "1605", "1609", "2615", "2609", "2618", "2409", "3481", "2344",
+]
+
+SECTOR_MAP = {
+    "2330": "半導體", "2454": "半導體", "3037": "半導體", "2379": "半導體", "3443": "半導體",
+    "3661": "半導體", "2344": "半導體", "8046": "半導體", "5347": "半導體", "3711": "半導體",
+    "2317": "AI伺服器", "2382": "AI伺服器", "3231": "AI伺服器", "3017": "AI散熱", "3324": "AI散熱",
+    "2376": "電腦週邊", "2356": "電腦週邊", "2324": "電腦週邊", "2368": "PCB", "6215": "PCB",
+    "2308": "重電", "1513": "重電", "1514": "重電", "1605": "電線電纜", "1609": "電線電纜",
+    "2615": "航運", "2609": "航運", "2618": "航運", "2409": "面板", "3481": "面板",
+}
+
 class QuoteResponse(BaseModel):
     code: str
     name: str | None = None
@@ -70,7 +85,7 @@ async def lifespan(app: FastAPI):
     if api is not None:
         api.logout()
 
-app = FastAPI(title="Stock Monitor Backend", version="0.7.0", lifespan=lifespan)
+app = FastAPI(title="Stock Monitor Backend", version="0.8.0", lifespan=lifespan)
 origins = [x.strip() for x in CORS_ORIGINS.split(",") if x.strip()]
 app.add_middleware(CORSMiddleware, allow_origins=origins if origins else ["*"], allow_credentials=True, allow_methods=["*"], allow_headers=["*"])
 
@@ -139,6 +154,98 @@ def market_payload_for(code: str) -> dict[str, Any] | None:
     except Exception:
         return None
 
+def scan_score(quote: dict[str, Any]) -> int:
+    score = 50
+    change = float(quote.get("change_rate") or 0)
+    vol_ratio = float(quote.get("volume_ratio") or 0)
+    close = float(quote.get("close") or 0)
+    open_ = float(quote.get("open") or 0)
+    high = float(quote.get("high") or 0)
+    low = float(quote.get("low") or 0)
+    avg = float(quote.get("average_price") or 0)
+    buy = float(quote.get("buy_volume") or 0)
+    sell = float(quote.get("sell_volume") or 0)
+
+    if change > 0:
+        score += min(change * 6, 20)
+    else:
+        score += max(change * 6, -20)
+    if vol_ratio >= 2:
+        score += 16
+    elif vol_ratio >= 1.3:
+        score += 9
+    elif 0 < vol_ratio < 0.8:
+        score -= 8
+    if avg and close > avg:
+        score += 10
+    elif avg and close < avg:
+        score -= 10
+    if open_ and close > open_:
+        score += 8
+    elif open_ and close < open_:
+        score -= 8
+    if high and low and high > low:
+        pos = (close - low) / (high - low)
+        if pos >= 0.75:
+            score += 8
+        elif pos <= 0.35:
+            score -= 8
+    if buy or sell:
+        imb = (buy - sell) / max(buy + sell, 1)
+        if imb >= 0.25:
+            score += 8
+        elif imb <= -0.25:
+            score -= 10
+    if change >= 4:
+        score -= 10
+    return max(0, min(100, int(round(score))))
+
+def scan_mood(score: int) -> str:
+    if score >= 85:
+        return "強勢攻擊"
+    if score >= 75:
+        return "強勢觀察"
+    if score >= 65:
+        return "偏多觀察"
+    if score >= 50:
+        return "中性"
+    return "轉弱"
+
+def build_market_scan(limit: int = 5) -> dict[str, Any]:
+    items: list[dict[str, Any]] = []
+    errors: list[dict[str, str]] = []
+    for code in SCAN_UNIVERSE:
+        try:
+            _, quote = make_quote_payload(code)
+            score = scan_score(quote)
+            sector = SECTOR_MAP.get(code, "其他")
+            items.append({
+                "code": code,
+                "name": quote.get("name"),
+                "sector": sector,
+                "score": score,
+                "mood": scan_mood(score),
+                "close": quote.get("close"),
+                "change_rate": quote.get("change_rate"),
+                "volume_ratio": quote.get("volume_ratio"),
+            })
+        except Exception as exc:
+            errors.append({"code": code, "message": str(exc)[:120]})
+    ranked = sorted(items, key=lambda x: x["score"], reverse=True)
+    sector_map: dict[str, dict[str, Any]] = {}
+    for item in ranked:
+        row = sector_map.setdefault(item["sector"], {"sector": item["sector"], "count": 0, "score_sum": 0, "top_codes": []})
+        row["count"] += 1
+        row["score_sum"] += item["score"]
+        if len(row["top_codes"]) < 5:
+            row["top_codes"].append(item["code"])
+    sectors = []
+    for row in sector_map.values():
+        row["avg_score"] = round(row["score_sum"] / max(row["count"], 1), 2)
+        sectors.append(row)
+    sectors.sort(key=lambda x: (x["avg_score"], x["count"]), reverse=True)
+    return {"ok": True, "universe_size": len(SCAN_UNIVERSE), "scanned": len(items), "errors": errors, "top5": ranked[:limit], "sectors": sectors[:5], "strongest_sector": sectors[0] if sectors else None}
+
 @app.get("/")
 def root():
     return {"status": "ok", "message": "Stock Monitor Backend is running"}
@@ -182,6 +289,13 @@ def get_pro_analysis(code: str = Query(...)):
         raise
     except Exception as exc:
         raise HTTPException(status_code=502, detail=f"Failed to run pro analysis: {exc}") from exc
+
+@app.get("/api/market-scan")
+def market_scan(limit: int = Query(5, ge=1, le=10)):
+    try:
+        return build_market_scan(limit=limit)
+    except Exception as exc:
+        raise HTTPException(status_code=502, detail=f"Failed to run market scan: {exc}") from exc
 
 @app.get("/api/replay-log")
 def replay_log(limit: int = Query(100, ge=1, le=500)):
