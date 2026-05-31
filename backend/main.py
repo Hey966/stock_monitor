@@ -85,7 +85,7 @@ async def lifespan(app: FastAPI):
     if api is not None:
         api.logout()
 
-app = FastAPI(title="Stock Monitor Backend", version="0.8.1", lifespan=lifespan)
+app = FastAPI(title="Stock Monitor Backend", version="0.8.2", lifespan=lifespan)
 origins = [x.strip() for x in CORS_ORIGINS.split(",") if x.strip()]
 app.add_middleware(CORSMiddleware, allow_origins=origins if origins else ["*"], allow_credentials=True, allow_methods=["*"], allow_headers=["*"])
 
@@ -243,7 +243,20 @@ def build_market_scan(limit: int = 5) -> dict[str, Any]:
         row["avg_score"] = round(row["score_sum"] / max(row["count"], 1), 2)
         sectors.append(row)
     sectors.sort(key=lambda x: (x["avg_score"], x["count"]), reverse=True)
-    return {"ok": True, "universe_size": len(SCAN_UNIVERSE), "scanned": len(items), "errors": errors, "top5": ranked[:limit], "sectors": sectors[:5], "strongest_sector": sectors[0] if sectors else None}
+    return {"ok": True, "universe_size": len(SCAN_UNIVERSE), "scanned": len(items), "errors": errors, "top5": ranked[:limit], "items": ranked, "sectors": sectors[:5], "strongest_sector": sectors[0] if sectors else None}
+
+def build_ai_pool(limit: int = 20) -> dict[str, Any]:
+    scan = build_market_scan(limit=max(limit, 10))
+    items = scan.get("items", [])[:limit]
+    groups: dict[str, list[dict[str, Any]]] = {}
+    for item in scan.get("items", []):
+        groups.setdefault(str(item.get("sector") or "其他"), []).append(item)
+    sector_rank = []
+    for sector, rows in groups.items():
+        avg = round(sum(int(x.get("score") or 0) for x in rows) / max(len(rows), 1), 2)
+        sector_rank.append({"sector": sector, "avg_score": avg, "count": len(rows), "items": rows[:5]})
+    sector_rank.sort(key=lambda x: (x["avg_score"], x["count"]), reverse=True)
+    return {"ok": True, "version": "AI Pool v1", "pool_size": len(items), "top20": items, "sectors": sector_rank, "source": "market_scan"}
 
 @app.get("/")
 def root():
@@ -304,6 +317,13 @@ def market_scan(limit: int = Query(5, ge=1, le=10)):
         return build_market_scan(limit=limit)
     except Exception as exc:
         raise HTTPException(status_code=502, detail=f"Failed to run market scan: {exc}") from exc
+
+@app.get("/api/ai-pool")
+def ai_pool(limit: int = Query(20, ge=5, le=30)):
+    try:
+        return build_ai_pool(limit=limit)
+    except Exception as exc:
+        raise HTTPException(status_code=502, detail=f"Failed to build AI pool: {exc}") from exc
 
 @app.get("/api/replay-log")
 def replay_log(limit: int = Query(100, ge=1, le=500)):
