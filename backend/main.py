@@ -13,7 +13,7 @@ from pydantic import BaseModel
 
 from news_engine import get_news_payload
 from chips_engine import get_chips_payload
-from discord_engine import send_discord_alert
+from discord_engine import send_battle_report, send_discord_alert
 from pro_engine import build_pro_analysis
 from replay_engine import get_logs, get_stats, save_signal, update_results
 
@@ -85,7 +85,7 @@ async def lifespan(app: FastAPI):
     if api is not None:
         api.logout()
 
-app = FastAPI(title="Stock Monitor Backend", version="0.8.0", lifespan=lifespan)
+app = FastAPI(title="Stock Monitor Backend", version="0.8.1", lifespan=lifespan)
 origins = [x.strip() for x in CORS_ORIGINS.split(",") if x.strip()]
 app.add_middleware(CORSMiddleware, allow_origins=origins if origins else ["*"], allow_credentials=True, allow_methods=["*"], allow_headers=["*"])
 
@@ -165,7 +165,6 @@ def scan_score(quote: dict[str, Any]) -> int:
     avg = float(quote.get("average_price") or 0)
     buy = float(quote.get("buy_volume") or 0)
     sell = float(quote.get("sell_volume") or 0)
-
     if change > 0:
         score += min(change * 6, 20)
     else:
@@ -274,6 +273,15 @@ def discord_alert(code: str = Query(...), score: int = Query(...), title: str = 
         return send_discord_alert({"code": code, "score": score, "title": title, "message": message})
     except Exception as exc:
         raise HTTPException(status_code=502, detail=f"Failed to send discord alert: {exc}") from exc
+
+@app.get("/api/discord-battle-report")
+def discord_battle_report(limit: int = Query(10, ge=1, le=10)):
+    try:
+        scan = build_market_scan(limit=limit)
+        stats = get_stats()
+        return send_battle_report(scan, stats)
+    except Exception as exc:
+        raise HTTPException(status_code=502, detail=f"Failed to send Discord battle report: {exc}") from exc
 
 @app.get("/api/pro-analysis")
 def get_pro_analysis(code: str = Query(...)):
