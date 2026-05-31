@@ -1,7 +1,7 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-05-31T14:00:36.319495+00:00",
-  "count": 9,
+  "updated_at": "2026-05-31T14:00:37.474397+00:00",
+  "count": 10,
   "items": [
     {
       "key": "ai_pool:2317:100:289.0",
@@ -180,6 +180,26 @@
       "score": 92,
       "change_rate_at_signal": 9.33,
       "volume_ratio_at_signal": 3.1,
+      "alert": null,
+      "results": {}
+    },
+    {
+      "key": "ai_pool:3481:86:51.0",
+      "module": "ai_pool",
+      "reason": "api_ai_pool",
+      "created_at": "2026-05-31T14:00:37.146895+00:00",
+      "updated_at": "2026-05-31T14:00:37.146909+00:00",
+      "status": "open",
+      "code": "3481",
+      "name": "群創",
+      "sector": "面板",
+      "entry_price": 51.0,
+      "last_price": 51.0,
+      "best_price": 51.0,
+      "worst_price": 51.0,
+      "score": 86,
+      "change_rate_at_signal": 9.91,
+      "volume_ratio_at_signal": 0.71,
       "alert": null,
       "results": {}
     }
