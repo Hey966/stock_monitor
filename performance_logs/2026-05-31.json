@@ -1,7 +1,7 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-05-31T14:00:37.474397+00:00",
-  "count": 10,
+  "updated_at": "2026-05-31T14:00:38.593420+00:00",
+  "count": 11,
   "items": [
     {
       "key": "ai_pool:2317:100:289.0",
@@ -200,6 +200,26 @@
       "score": 86,
       "change_rate_at_signal": 9.91,
       "volume_ratio_at_signal": 0.71,
+      "alert": null,
+      "results": {}
+    },
+    {
+      "key": "ai_pool:2344:86:158.0",
+      "module": "ai_pool",
+      "reason": "api_ai_pool",
+      "created_at": "2026-05-31T14:00:38.278529+00:00",
+      "updated_at": "2026-05-31T14:00:38.278545+00:00",
+      "status": "open",
+      "code": "2344",
+      "name": "華邦電",
+      "sector": "半導體",
+      "entry_price": 158.0,
+      "last_price": 158.0,
+      "best_price": 158.0,
+      "worst_price": 158.0,
+      "score": 86,
+      "change_rate_at_signal": 9.72,
+      "volume_ratio_at_signal": 0.69,
       "alert": null,
       "results": {}
     }
