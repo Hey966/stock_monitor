@@ -29,6 +29,24 @@
     return String(cap);
   }
 
+  function pctText(v) {
+    const n = Number(v);
+    if (!Number.isFinite(n)) return '-';
+    return `${n > 0 ? '+' : ''}${n}%`;
+  }
+
+  function signalReturn(item) {
+    const r = item?.results || {};
+    const vals = [r.latest_pct, r.pct_5m, r.pct_10m, r.pct_30m, r.max_gain]
+      .map(Number)
+      .filter(Number.isFinite);
+    return vals.length ? Math.max(...vals) : null;
+  }
+
+  function sectorOf(item) {
+    return item?.sector || item?.industry || item?.group || item?.category || '強勢股';
+  }
+
   function ensureDashboard() {
     if ($('#stxDashboardV5')) return;
     const host = $('#page-search') || $('.modern-page.active') || document.querySelector('main');
@@ -37,9 +55,19 @@
     panel.id = 'stxDashboardV5';
     panel.className = 'entry-summary-panel terminal-main-signal';
     panel.innerHTML = `
-      <span>STX 智能戰情中心 v5.1</span>
+      <span>STX AI 戰情中心</span>
       <strong id="dashEngineVersion">等待 Pro Engine</strong>
-      <p id="dashSummary">整合專業分析、大盤同步、五檔風險封頂與回測勝率。</p>
+      <p id="dashSummary">搜尋股票 → STX AI 戰情中心 → 即時大盤 → 熱門強勢股 TOP5 → Replay 勝率面板 → 雷達掃描。</p>
+
+      <div class="quote-detail-grid" style="margin-top:12px">
+        <article><span>今日最佳訊號</span><b id="dashBestSignal">-</b></article>
+        <article><span>今日最強族群</span><b id="dashStrongGroup">-</b></article>
+        <article><span>成功訊號</span><b id="dashSuccessCount">-</b></article>
+        <article><span>熱門強勢股 TOP5</span><b id="dashHotTopCount">-</b></article>
+      </div>
+
+      <div id="dashHotTop5" class="analysis-tags" style="margin-top:12px"><span>等待強勢股資料</span></div>
+
       <div class="quote-detail-grid" style="margin-top:12px">
         <article><span>回測訊號數</span><b id="dashReplaySignals">-</b></article>
         <article><span>勝率</span><b id="dashWinRate">-</b></article>
@@ -48,7 +76,8 @@
         <article><span>大盤同步</span><b id="dashMarketSync">-</b></article>
         <article><span>風險封頂</span><b id="dashRiskCap">-</b></article>
       </div>
-      <div id="dashRecentSignals" class="analysis-tags" style="margin-top:12px"><span>等待回測資料</span></div>
+
+      <div id="dashRecentSignals" class="analysis-tags" style="margin-top:12px"><span>等待最近5筆成功訊號</span></div>
     `;
     const searchPanel = host.querySelector('.search-panel');
     if (searchPanel) {
@@ -66,7 +95,7 @@
   function renderPro(data) {
     ensureDashboard();
     if (!data) return;
-    setText('#dashEngineVersion', data.message || 'STX 智能戰情中心 v5.1');
+    setText('#dashEngineVersion', data.message || 'STX AI 戰情中心');
     const ms = data.signals?.market_sync;
     const cap = data.signals?.orderbook_risk_cap;
     setText('#dashMarketSync', ms?.status ? `${marketText(ms.status)} ${ms.score ?? ''}` : '尚無資料');
@@ -79,16 +108,50 @@
   function renderStats(stats) {
     ensureDashboard();
     if (!stats || !stats.ok) return;
+
+    const latest = Array.isArray(stats.latest) ? stats.latest.slice().reverse() : [];
+    const ranked = latest.slice().sort((a, b) => Number(b.score || 0) - Number(a.score || 0));
+    const hotTop5 = ranked.filter(x => !x.trap_block).slice(0, 5);
+    const success = latest.filter(x => {
+      const ret = signalReturn(x);
+      return ret !== null && ret > 0;
+    });
+    const best = success.slice().sort((a, b) => (signalReturn(b) ?? -999) - (signalReturn(a) ?? -999))[0] || hotTop5[0];
+
+    const sectorScore = new Map();
+    ranked.forEach(x => {
+      if (x.trap_block) return;
+      const sector = sectorOf(x);
+      const old = sectorScore.get(sector) || { count: 0, score: 0 };
+      old.count += 1;
+      old.score += Number(x.score || 0);
+      sectorScore.set(sector, old);
+    });
+    const strongestSector = [...sectorScore.entries()]
+      .sort((a, b) => (b[1].score / b[1].count) - (a[1].score / a[1].count))[0];
+
     setText('#dashReplaySignals', stats.total_signals ?? 0);
     setText('#dashWinRate', stats.win_rate === null || stats.win_rate === undefined ? '-' : `${stats.win_rate}%`);
     setText('#dashAvgReturn', stats.avg_latest_pct === null || stats.avg_latest_pct === undefined ? '-' : `${stats.avg_latest_pct}%`);
     setText('#dashTrapCount', stats.trap_block_count ?? 0);
-    const latest = Array.isArray(stats.latest) ? stats.latest.slice(-6).reverse() : [];
+    setText('#dashBestSignal', best ? `${best.code}｜${best.score ?? '-'}分` : '-');
+    setText('#dashStrongGroup', strongestSector ? `${strongestSector[0]}｜${Math.round(strongestSector[1].score / strongestSector[1].count)}分` : '-');
+    setText('#dashSuccessCount', success.length);
+    setText('#dashHotTopCount', hotTop5.length);
+
+    const hotBox = $('#dashHotTop5');
+    if (hotBox) {
+      hotBox.innerHTML = hotTop5.length
+        ? hotTop5.map((x, i) => `<span>TOP${i + 1} ${x.code}｜${x.score}分｜${levelText(x.level)}</span>`).join('')
+        : '<span>尚無熱門強勢股</span>';
+    }
+
+    const recent5 = success.slice(0, 5);
     const box = $('#dashRecentSignals');
     if (box) {
-      box.innerHTML = latest.length
-        ? latest.map(x => `<span>${x.code}｜${x.score}分｜${levelText(x.level)}${x.results?.latest_pct !== undefined ? `｜${x.results.latest_pct}%` : ''}</span>`).join('')
-        : '<span>尚無回測訊號</span>';
+      box.innerHTML = recent5.length
+        ? recent5.map(x => `<span>${x.code}｜${x.score}分｜${levelText(x.level)}｜${pctText(signalReturn(x))}</span>`).join('')
+        : '<span>尚無最近5筆成功訊號</span>';
     }
   }
 
