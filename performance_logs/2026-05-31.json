@@ -1,7 +1,7 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-05-31T14:00:44.945822+00:00",
-  "count": 17,
+  "updated_at": "2026-05-31T14:00:46.904585+00:00",
+  "count": 18,
   "items": [
     {
       "key": "ai_pool:2317:100:289.0",
@@ -340,6 +340,26 @@
       "score": 76,
       "change_rate_at_signal": 8.49,
       "volume_ratio_at_signal": 0.89,
+      "alert": null,
+      "results": {}
+    },
+    {
+      "key": "ai_pool:6215:70:127.5",
+      "module": "ai_pool",
+      "reason": "api_ai_pool",
+      "created_at": "2026-05-31T14:00:45.998161+00:00",
+      "updated_at": "2026-05-31T14:00:45.998178+00:00",
+      "status": "open",
+      "code": "6215",
+      "name": "和椿",
+      "sector": "PCB",
+      "entry_price": 127.5,
+      "last_price": 127.5,
+      "best_price": 127.5,
+      "worst_price": 127.5,
+      "score": 70,
+      "change_rate_at_signal": 2.4,
+      "volume_ratio_at_signal": 1.1,
       "alert": null,
       "results": {}
     }
