@@ -53,7 +53,7 @@
     panel.innerHTML = `
       <span>STX AI 戰情中心 v5.2</span>
       <strong id="dashEngineVersion">等待 Pro Engine</strong>
-      <p id="dashSummary">搜尋股票 → STX AI 戰情中心 → 即時大盤 → 熱門強勢股 TOP5 → Replay 勝率面板 → 雷達掃描。</p>
+      <p id="dashSummary">搜尋股票 → STX AI 戰情中心 → 即時大盤 → 強勢股 → Replay 勝率 → 籌碼戰情 → 雷達掃描。</p>
 
       <div class="quote-detail-grid" style="margin-top:12px">
         <article><span>今日最佳訊號</span><b id="dashBestSignal">-</b></article>
@@ -74,6 +74,21 @@
       </div>
 
       <div id="dashRecentSignals" class="analysis-tags" style="margin-top:12px"><span>等待最近5筆成功訊號</span></div>
+
+      <section class="entry-summary-panel terminal-main-signal" style="margin-top:14px">
+        <span>籌碼戰情中心</span>
+        <strong id="fundFlowTitle">等待資金流資料</strong>
+        <p id="fundFlowSummary">資金流向 → 主力籌碼偵測 → 隔日沖偵測 → 大戶進出警報。</p>
+        <div class="quote-detail-grid" style="margin-top:12px">
+          <article><span>資金流入 TOP1</span><b id="fundTopOne">-</b></article>
+          <article><span>主力進場 TOP1</span><b id="bigPlayerTopOne">-</b></article>
+          <article><span>隔日沖風險 TOP1</span><b id="dayTradeRiskTopOne">-</b></article>
+          <article><span>大戶警報</span><b id="fundAlertCount">-</b></article>
+        </div>
+        <div id="fundFlowTopList" class="analysis-tags" style="margin-top:12px"><span>等待資金流排行</span></div>
+        <div id="bigPlayerTopList" class="analysis-tags" style="margin-top:12px"><span>等待主力籌碼排行</span></div>
+        <div id="dayTradeRiskList" class="analysis-tags danger" style="margin-top:12px"><span>等待隔日沖風險</span></div>
+      </section>
     `;
     const searchPanel = host.querySelector('.search-panel');
     if (searchPanel) {
@@ -146,6 +161,48 @@
     }
   }
 
+  function stockLabel(x, scoreKey) {
+    if (!x) return '-';
+    return `${x.code} ${x.name || ''}｜${x[scoreKey] ?? '-'}分`;
+  }
+
+  function renderFundFlow(data) {
+    ensureDashboard();
+    if (!data || !data.ok) return;
+    const fund = Array.isArray(data.fund_flow_top) ? data.fund_flow_top : [];
+    const big = Array.isArray(data.big_player_top) ? data.big_player_top : [];
+    const risk = Array.isArray(data.day_trade_watch) ? data.day_trade_watch : [];
+    const alerts = Array.isArray(data.alerts) ? data.alerts : [];
+
+    setText('#fundFlowTitle', `Fund Flow Engine｜${data.total ?? 0} 檔`);
+    setText('#fundTopOne', stockLabel(fund[0], 'fund_score'));
+    setText('#bigPlayerTopOne', stockLabel(big[0], 'big_player_score'));
+    setText('#dayTradeRiskTopOne', stockLabel(risk[0], 'day_trade_risk'));
+    setText('#fundAlertCount', alerts.length);
+    setText('#fundFlowSummary', alerts.length ? `目前 ${alerts.length} 筆籌碼警報。` : '目前無籌碼警報，持續監控資金流。');
+
+    const fundBox = $('#fundFlowTopList');
+    if (fundBox) {
+      fundBox.innerHTML = fund.slice(0, 5).length
+        ? fund.slice(0, 5).map((x, i) => `<span>資金TOP${i + 1} ${x.code}｜${x.fund_score}分｜${x.fund_flow}</span>`).join('')
+        : '<span>尚無資金流資料</span>';
+    }
+
+    const bigBox = $('#bigPlayerTopList');
+    if (bigBox) {
+      bigBox.innerHTML = big.slice(0, 5).length
+        ? big.slice(0, 5).map((x, i) => `<span>主力TOP${i + 1} ${x.code}｜${x.big_player_score}分｜${x.chip_signal}</span>`).join('')
+        : '<span>尚無主力籌碼資料</span>';
+    }
+
+    const riskBox = $('#dayTradeRiskList');
+    if (riskBox) {
+      riskBox.innerHTML = risk.slice(0, 5).length
+        ? risk.slice(0, 5).map((x, i) => `<span>隔日沖TOP${i + 1} ${x.code}｜${x.day_trade_risk}分｜${x.day_trade_signal}</span>`).join('')
+        : '<span>尚無隔日沖風險資料</span>';
+    }
+  }
+
   async function fetchStats() {
     ensureDashboard();
     try {
@@ -170,8 +227,19 @@
     }
   }
 
+  async function fetchFundFlow() {
+    ensureDashboard();
+    try {
+      const res = await fetch(`${API}/api/fund-flow?limit=20&t=${Date.now()}`, { cache: 'no-store' });
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      renderFundFlow(await res.json());
+    } catch (e) {
+      setText('#fundFlowTitle', '籌碼 API 錯誤');
+    }
+  }
+
   async function refreshAll() {
-    await Promise.allSettled([fetchStats(), fetchMarketScan()]);
+    await Promise.allSettled([fetchStats(), fetchMarketScan(), fetchFundFlow()]);
   }
 
   window.STX_DASHBOARD_V5_REFRESH = refreshAll;
@@ -185,5 +253,6 @@
     refreshAll();
     setInterval(fetchStats, 15000);
     setInterval(fetchMarketScan, 30000);
+    setInterval(fetchFundFlow, 30000);
   });
 })();
