@@ -85,7 +85,7 @@ async def lifespan(app: FastAPI):
     if api is not None:
         api.logout()
 
-app = FastAPI(title="Stock Monitor Backend", version="0.8.2", lifespan=lifespan)
+app = FastAPI(title="Stock Monitor Backend", version="0.8.3", lifespan=lifespan)
 origins = [x.strip() for x in CORS_ORIGINS.split(",") if x.strip()]
 app.add_middleware(CORSMiddleware, allow_origins=origins if origins else ["*"], allow_credentials=True, allow_methods=["*"], allow_headers=["*"])
 
@@ -94,6 +94,14 @@ def pick_number(raw: dict[str, Any], *keys: str):
         if raw.get(key) is not None:
             return raw.get(key)
     return None
+
+def _float(v: Any, default: float = 0.0) -> float:
+    try:
+        if v is None:
+            return default
+        return float(v)
+    except Exception:
+        return default
 
 def get_stock_contract(code: str):
     if api is None:
@@ -156,15 +164,15 @@ def market_payload_for(code: str) -> dict[str, Any] | None:
 
 def scan_score(quote: dict[str, Any]) -> int:
     score = 50
-    change = float(quote.get("change_rate") or 0)
-    vol_ratio = float(quote.get("volume_ratio") or 0)
-    close = float(quote.get("close") or 0)
-    open_ = float(quote.get("open") or 0)
-    high = float(quote.get("high") or 0)
-    low = float(quote.get("low") or 0)
-    avg = float(quote.get("average_price") or 0)
-    buy = float(quote.get("buy_volume") or 0)
-    sell = float(quote.get("sell_volume") or 0)
+    change = _float(quote.get("change_rate"))
+    vol_ratio = _float(quote.get("volume_ratio"))
+    close = _float(quote.get("close"))
+    open_ = _float(quote.get("open"))
+    high = _float(quote.get("high"))
+    low = _float(quote.get("low"))
+    avg = _float(quote.get("average_price"))
+    buy = _float(quote.get("buy_volume"))
+    sell = _float(quote.get("sell_volume"))
     if change > 0:
         score += min(change * 6, 20)
     else:
@@ -218,6 +226,12 @@ def build_market_scan(limit: int = 5) -> dict[str, Any]:
             _, quote = make_quote_payload(code)
             score = scan_score(quote)
             sector = SECTOR_MAP.get(code, "其他")
+            close = _float(quote.get("close"))
+            high = _float(quote.get("high"))
+            low = _float(quote.get("low"))
+            intraday_position = None
+            if high and low and high > low:
+                intraday_position = round((close - low) / (high - low), 3)
             items.append({
                 "code": code,
                 "name": quote.get("name"),
@@ -225,8 +239,12 @@ def build_market_scan(limit: int = 5) -> dict[str, Any]:
                 "score": score,
                 "mood": scan_mood(score),
                 "close": quote.get("close"),
+                "open": quote.get("open"),
+                "high": quote.get("high"),
+                "low": quote.get("low"),
                 "change_rate": quote.get("change_rate"),
                 "volume_ratio": quote.get("volume_ratio"),
+                "intraday_position": intraday_position,
             })
         except Exception as exc:
             errors.append({"code": code, "message": str(exc)[:120]})
@@ -257,6 +275,30 @@ def build_ai_pool(limit: int = 20) -> dict[str, Any]:
         sector_rank.append({"sector": sector, "avg_score": avg, "count": len(rows), "items": rows[:5]})
     sector_rank.sort(key=lambda x: (x["avg_score"], x["count"]), reverse=True)
     return {"ok": True, "version": "AI Pool v1", "pool_size": len(items), "top20": items, "sectors": sector_rank, "source": "market_scan"}
+
+def build_breakout_alerts(limit: int = 20, min_score: int = 85, send: bool = False) -> dict[str, Any]:
+    pool = build_ai_pool(limit=limit)
+    alerts: list[dict[str, Any]] = []
+    for item in pool.get("top20", []):
+        score = int(item.get("score") or 0)
+        change = _float(item.get("change_rate"))
+        volume_ratio = _float(item.get("volume_ratio"))
+        pos = item.get("intraday_position")
+        near_high = pos is not None and _float(pos) >= 0.82
+        controlled_gain = 0.8 <= change <= 4.0
+        volume_breakout = volume_ratio >= 2.0
+        if score >= min_score and controlled_gain and volume_breakout and near_high:
+            reasons = ["分數達標", "量比放大", "價格接近日高", "漲幅未過熱"]
+            alert = {**item, "alert_type": "breakout", "reasons": reasons}
+            alerts.append(alert)
+            if send:
+                send_discord_alert({
+                    "code": item.get("code"),
+                    "score": score,
+                    "title": "STX 突破警報",
+                    "message": f"{item.get('name') or ''}｜{item.get('sector')}｜漲幅 {change:.2f}%｜量比 {volume_ratio:.2f}｜接近日高。",
+                })
+    return {"ok": True, "version": "Breakout Alert v1", "checked": len(pool.get("top20", [])), "alert_count": len(alerts), "alerts": alerts, "sent": bool(send)}
 
 @app.get("/")
 def root():
@@ -324,6 +366,13 @@ def ai_pool(limit: int = Query(20, ge=5, le=30)):
         return build_ai_pool(limit=limit)
     except Exception as exc:
         raise HTTPException(status_code=502, detail=f"Failed to build AI pool: {exc}") from exc
+
+@app.get("/api/breakout-alerts")
+def breakout_alerts(limit: int = Query(20, ge=5, le=30), min_score: int = Query(85, ge=70, le=100), send: bool = Query(False)):
+    try:
+        return build_breakout_alerts(limit=limit, min_score=min_score, send=send)
+    except Exception as exc:
+        raise HTTPException(status_code=502, detail=f"Failed to build breakout alerts: {exc}") from exc
 
 @app.get("/api/replay-log")
 def replay_log(limit: int = Query(100, ge=1, le=500)):
