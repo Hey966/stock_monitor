@@ -1,7 +1,7 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-05-31T14:01:03.718396+00:00",
-  "count": 21,
+  "updated_at": "2026-05-31T14:01:05.070466+00:00",
+  "count": 22,
   "items": [
     {
       "key": "ai_pool:2317:100:289.0",
@@ -420,6 +420,26 @@
       "score": 100,
       "change_rate_at_signal": 9.88,
       "volume_ratio_at_signal": 3.94,
+      "alert": "隔日沖風險警報",
+      "results": {}
+    },
+    {
+      "key": "fund_flow:2382:100:339.0",
+      "module": "fund_flow",
+      "reason": "api_fund_flow",
+      "created_at": "2026-05-31T14:01:04.733361+00:00",
+      "updated_at": "2026-05-31T14:01:04.733377+00:00",
+      "status": "open",
+      "code": "2382",
+      "name": "廣達",
+      "sector": "AI伺服器",
+      "entry_price": 339.0,
+      "last_price": 339.0,
+      "best_price": 339.0,
+      "worst_price": 339.0,
+      "score": 100,
+      "change_rate_at_signal": 9.88,
+      "volume_ratio_at_signal": 2.02,
       "alert": "隔日沖風險警報",
       "results": {}
     }
