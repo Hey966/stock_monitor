@@ -1,7 +1,7 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-05-31T14:00:32.966422+00:00",
-  "count": 6,
+  "updated_at": "2026-05-31T14:00:34.043982+00:00",
+  "count": 7,
   "items": [
     {
       "key": "ai_pool:2317:100:289.0",
@@ -120,6 +120,26 @@
       "score": 94,
       "change_rate_at_signal": 5.97,
       "volume_ratio_at_signal": 0.91,
+      "alert": null,
+      "results": {}
+    },
+    {
+      "key": "ai_pool:2615:94:82.0",
+      "module": "ai_pool",
+      "reason": "api_ai_pool",
+      "created_at": "2026-05-31T14:00:33.742034+00:00",
+      "updated_at": "2026-05-31T14:00:33.742048+00:00",
+      "status": "open",
+      "code": "2615",
+      "name": "萬海",
+      "sector": "航運",
+      "entry_price": 82.0,
+      "last_price": 82.0,
+      "best_price": 82.0,
+      "worst_price": 82.0,
+      "score": 94,
+      "change_rate_at_signal": 1.61,
+      "volume_ratio_at_signal": 1.21,
       "alert": null,
       "results": {}
     }
