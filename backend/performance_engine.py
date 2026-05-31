@@ -3,6 +3,7 @@ from __future__ import annotations
 import base64
 import json
 import os
+import time
 import urllib.error
 import urllib.request
 from datetime import datetime, timezone
@@ -112,27 +113,36 @@ def _github_read_day(path: str) -> tuple[list[dict[str, Any]], str | None]:
 def _github_write_day(path: str, rows: list[dict[str, Any]]) -> bool:
     if not GITHUB_TOKEN:
         return False
-    old_rows, sha = _github_read_day(path)
-    merged: dict[str, dict[str, Any]] = {}
-    for row in old_rows + rows:
-        key = str(row.get("key") or f"{row.get('module')}:{row.get('created_at')}:{row.get('code')}")
-        merged[key] = row
-    ordered = sorted(merged.values(), key=lambda x: str(x.get("created_at", "")))
-    body = {
-        "version": "STX Module Performance v1",
-        "updated_at": _now(),
-        "count": len(ordered),
-        "items": ordered,
-    }
-    content = base64.b64encode(json.dumps(body, ensure_ascii=False, indent=2).encode("utf-8")).decode("ascii")
-    payload: dict[str, Any] = {
-        "message": f"Update STX performance log {path}",
-        "content": content,
-        "branch": GITHUB_BRANCH,
-    }
-    if sha:
-        payload["sha"] = sha
-    return _github_api(path, "PUT", payload) is not None
+
+    for attempt in range(3):
+        old_rows, sha = _github_read_day(path)
+        merged: dict[str, dict[str, Any]] = {}
+        for row in old_rows + rows:
+            key = str(row.get("key") or f"{row.get('module')}:{row.get('created_at')}:{row.get('code')}")
+            merged[key] = row
+        ordered = sorted(merged.values(), key=lambda x: str(x.get("created_at", "")))
+        body = {
+            "version": "STX Module Performance v1",
+            "updated_at": _now(),
+            "count": len(ordered),
+            "items": ordered,
+        }
+        content = base64.b64encode(json.dumps(body, ensure_ascii=False, indent=2).encode("utf-8")).decode("ascii")
+        payload: dict[str, Any] = {
+            "message": f"Update STX performance log {path}",
+            "content": content,
+            "branch": GITHUB_BRANCH,
+        }
+        if sha:
+            payload["sha"] = sha
+        try:
+            return _github_api(path, "PUT", payload) is not None
+        except urllib.error.HTTPError as exc:
+            if exc.code == 409 and attempt < 2:
+                time.sleep(0.35 * (attempt + 1))
+                continue
+            raise
+    return False
 
 
 def _load(limit: int | None = None) -> list[dict[str, Any]]:
@@ -163,20 +173,14 @@ def _module_score(item: dict[str, Any], module: str) -> int:
     return 0
 
 
-def record_module_signal(module: str, item: dict[str, Any], reason: str = "auto") -> dict[str, Any]:
+def _build_row(module: str, item: dict[str, Any], reason: str = "auto") -> dict[str, Any] | None:
     code = str(item.get("code") or "")
     entry = _f(item.get("close") or item.get("entry_price"))
     if not code or not entry:
-        return {"ok": False, "saved": False, "reason": "missing_code_or_price"}
-
+        return None
     score = _module_score(item, module)
     key = f"{module}:{code}:{score}:{entry}"
-    rows = _load()
-    for old in reversed(rows[-200:]):
-        if old.get("key") == key and old.get("status") == "open":
-            return {"ok": True, "saved": False, "reason": "duplicate", "item": old}
-
-    row = {
+    return {
         "key": key,
         "module": module,
         "reason": reason,
@@ -196,6 +200,16 @@ def record_module_signal(module: str, item: dict[str, Any], reason: str = "auto"
         "alert": item.get("alert") or item.get("alert_type"),
         "results": {},
     }
+
+
+def record_module_signal(module: str, item: dict[str, Any], reason: str = "auto") -> dict[str, Any]:
+    row = _build_row(module, item, reason)
+    if not row:
+        return {"ok": False, "saved": False, "reason": "missing_code_or_price"}
+    rows = _load()
+    for old in reversed(rows[-200:]):
+        if old.get("key") == row.get("key") and old.get("status") == "open":
+            return {"ok": True, "saved": False, "reason": "duplicate", "item": old}
     rows.append(row)
     synced = _save(rows)
     row["github_synced"] = synced
@@ -203,15 +217,23 @@ def record_module_signal(module: str, item: dict[str, Any], reason: str = "auto"
 
 
 def record_module_signals(module: str, items: list[dict[str, Any]], reason: str = "auto", limit: int = 20) -> dict[str, Any]:
+    rows = _load()
+    existing_open = {str(r.get("key")) for r in rows if r.get("status") == "open"}
     saved = 0
     skipped = 0
     for item in items[:limit]:
-        result = record_module_signal(module, item, reason=reason)
-        if result.get("saved"):
-            saved += 1
-        else:
+        row = _build_row(module, item, reason)
+        if not row:
             skipped += 1
-    return {"ok": True, "module": module, "saved": saved, "skipped": skipped}
+            continue
+        if str(row.get("key")) in existing_open:
+            skipped += 1
+            continue
+        rows.append(row)
+        existing_open.add(str(row.get("key")))
+        saved += 1
+    synced = _save(rows) if saved else False
+    return {"ok": True, "module": module, "saved": saved, "skipped": skipped, "github_synced": synced}
 
 
 def update_module_results(code: str, current_price: float | int | None) -> dict[str, Any]:
