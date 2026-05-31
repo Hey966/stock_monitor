@@ -1,7 +1,7 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-05-31T14:00:48.473032+00:00",
-  "count": 19,
+  "updated_at": "2026-05-31T14:00:50.272608+00:00",
+  "count": 20,
   "items": [
     {
       "key": "ai_pool:2317:100:289.0",
@@ -380,6 +380,26 @@
       "score": 69,
       "change_rate_at_signal": 3.29,
       "volume_ratio_at_signal": 1.95,
+      "alert": null,
+      "results": {}
+    },
+    {
+      "key": "ai_pool:2368:58:1320.0",
+      "module": "ai_pool",
+      "reason": "api_ai_pool",
+      "created_at": "2026-05-31T14:00:49.917916+00:00",
+      "updated_at": "2026-05-31T14:00:49.917931+00:00",
+      "status": "open",
+      "code": "2368",
+      "name": "金像電",
+      "sector": "PCB",
+      "entry_price": 1320.0,
+      "last_price": 1320.0,
+      "best_price": 1320.0,
+      "worst_price": 1320.0,
+      "score": 58,
+      "change_rate_at_signal": 1.14,
+      "volume_ratio_at_signal": 1.31,
       "alert": null,
       "results": {}
     }
