@@ -1,7 +1,7 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-05-31T14:01:09.956384+00:00",
-  "count": 25,
+  "updated_at": "2026-05-31T14:01:11.973523+00:00",
+  "count": 26,
   "items": [
     {
       "key": "ai_pool:2317:100:289.0",
@@ -501,6 +501,26 @@
       "change_rate_at_signal": 9.55,
       "volume_ratio_at_signal": 4.74,
       "alert": "隔日沖風險警報",
+      "results": {}
+    },
+    {
+      "key": "fund_flow:3324:88:1065.0",
+      "module": "fund_flow",
+      "reason": "api_fund_flow",
+      "created_at": "2026-05-31T14:01:10.943600+00:00",
+      "updated_at": "2026-05-31T14:01:10.943618+00:00",
+      "status": "open",
+      "code": "3324",
+      "name": "雙鴻",
+      "sector": "AI散熱",
+      "entry_price": 1065.0,
+      "last_price": 1065.0,
+      "best_price": 1065.0,
+      "worst_price": 1065.0,
+      "score": 88,
+      "change_rate_at_signal": 5.97,
+      "volume_ratio_at_signal": 0.91,
+      "alert": "大戶進場警報",
       "results": {}
     }
   ]
