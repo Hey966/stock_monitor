@@ -1,7 +1,7 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-05-31T14:00:34.043982+00:00",
-  "count": 7,
+  "updated_at": "2026-05-31T14:00:35.176741+00:00",
+  "count": 8,
   "items": [
     {
       "key": "ai_pool:2317:100:289.0",
@@ -140,6 +140,26 @@
       "score": 94,
       "change_rate_at_signal": 1.61,
       "volume_ratio_at_signal": 1.21,
+      "alert": null,
+      "results": {}
+    },
+    {
+      "key": "ai_pool:1605:92:38.75",
+      "module": "ai_pool",
+      "reason": "api_ai_pool",
+      "created_at": "2026-05-31T14:00:34.869803+00:00",
+      "updated_at": "2026-05-31T14:00:34.869820+00:00",
+      "status": "open",
+      "code": "1605",
+      "name": "華新",
+      "sector": "電線電纜",
+      "entry_price": 38.75,
+      "last_price": 38.75,
+      "best_price": 38.75,
+      "worst_price": 38.75,
+      "score": 92,
+      "change_rate_at_signal": 7.63,
+      "volume_ratio_at_signal": 2.21,
       "alert": null,
       "results": {}
     }
