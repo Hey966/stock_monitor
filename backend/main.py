@@ -92,7 +92,7 @@ async def lifespan(app: FastAPI):
     if api is not None:
         api.logout()
 
-app = FastAPI(title="Stock Monitor Backend", version="0.8.5", lifespan=lifespan)
+app = FastAPI(title="Stock Monitor Backend", version="0.8.6", lifespan=lifespan)
 origins = [x.strip() for x in CORS_ORIGINS.split(",") if x.strip()]
 app.add_middleware(CORSMiddleware, allow_origins=origins if origins else ["*"], allow_credentials=True, allow_methods=["*"], allow_headers=["*"])
 
@@ -326,6 +326,34 @@ def build_fund_flow(limit: int = 20, send: bool = False, record: bool = False) -
     report["recorded"] = record_module_signals("fund_flow", report.get("alerts", []), reason="api_fund_flow", limit=limit) if record else None
     return report
 
+def build_cron_run(limit: int = 20, send: bool = True) -> dict[str, Any]:
+    ai = build_ai_pool(limit=limit, record=True)
+    breakout = build_breakout_alerts(limit=limit, min_score=85, send=send, record=True)
+    fund = build_fund_flow(limit=limit, send=send, record=True)
+    perf = get_module_performance()
+    return {
+        "ok": True,
+        "version": "STX Scheduler v1",
+        "limit": limit,
+        "send": bool(send),
+        "ai_pool": ai.get("recorded"),
+        "breakout": {
+            "alert_count": breakout.get("alert_count"),
+            "recorded": breakout.get("recorded"),
+            "sent": breakout.get("sent"),
+        },
+        "fund_flow": {
+            "alert_count": len(fund.get("alerts", [])),
+            "recorded": fund.get("recorded"),
+            "sent": fund.get("sent"),
+        },
+        "performance": {
+            "total_signals": perf.get("total_signals"),
+            "tracked_results": perf.get("tracked_results"),
+            "github_path": perf.get("github_path"),
+        },
+    }
+
 @app.get("/")
 def root():
     return {"status": "ok", "message": "Stock Monitor Backend is running"}
@@ -363,6 +391,13 @@ def discord_battle_report(limit: int = Query(10, ge=1, le=10)):
         return send_battle_report(scan, stats)
     except Exception as exc:
         raise HTTPException(status_code=502, detail=f"Failed to send Discord battle report: {exc}") from exc
+
+@app.get("/api/cron-run")
+def cron_run(limit: int = Query(20, ge=5, le=30), send: bool = Query(True)):
+    try:
+        return build_cron_run(limit=limit, send=send)
+    except Exception as exc:
+        raise HTTPException(status_code=502, detail=f"Failed to run scheduler: {exc}") from exc
 
 @app.get("/api/pro-analysis")
 def get_pro_analysis(code: str = Query(...)):
