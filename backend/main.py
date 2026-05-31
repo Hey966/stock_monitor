@@ -15,6 +15,12 @@ from news_engine import get_news_payload
 from chips_engine import get_chips_payload
 from discord_engine import send_battle_report, send_discord_alert
 from fund_flow_engine import build_fund_flow_report
+from performance_engine import (
+    get_module_performance,
+    get_performance_logs,
+    record_module_signals,
+    update_module_results,
+)
 from pro_engine import build_pro_analysis
 from replay_engine import get_logs, get_stats, save_signal, update_results
 
@@ -86,7 +92,7 @@ async def lifespan(app: FastAPI):
     if api is not None:
         api.logout()
 
-app = FastAPI(title="Stock Monitor Backend", version="0.8.4", lifespan=lifespan)
+app = FastAPI(title="Stock Monitor Backend", version="0.8.5", lifespan=lifespan)
 origins = [x.strip() for x in CORS_ORIGINS.split(",") if x.strip()]
 app.add_middleware(CORSMiddleware, allow_origins=origins if origins else ["*"], allow_credentials=True, allow_methods=["*"], allow_headers=["*"])
 
@@ -266,7 +272,7 @@ def build_market_scan(limit: int = 5) -> dict[str, Any]:
     sectors.sort(key=lambda x: (x["avg_score"], x["count"]), reverse=True)
     return {"ok": True, "universe_size": len(SCAN_UNIVERSE), "scanned": len(items), "errors": errors, "top5": ranked[:limit], "items": ranked, "sectors": sectors[:5], "strongest_sector": sectors[0] if sectors else None}
 
-def build_ai_pool(limit: int = 20) -> dict[str, Any]:
+def build_ai_pool(limit: int = 20, record: bool = False) -> dict[str, Any]:
     scan = build_market_scan(limit=max(limit, 10))
     items = scan.get("items", [])[:limit]
     groups: dict[str, list[dict[str, Any]]] = {}
@@ -277,10 +283,11 @@ def build_ai_pool(limit: int = 20) -> dict[str, Any]:
         avg = round(sum(int(x.get("score") or 0) for x in rows) / max(len(rows), 1), 2)
         sector_rank.append({"sector": sector, "avg_score": avg, "count": len(rows), "items": rows[:5]})
     sector_rank.sort(key=lambda x: (x["avg_score"], x["count"]), reverse=True)
-    return {"ok": True, "version": "AI Pool v1", "pool_size": len(items), "top20": items, "sectors": sector_rank, "source": "market_scan"}
+    recorded = record_module_signals("ai_pool", items, reason="api_ai_pool", limit=limit) if record else None
+    return {"ok": True, "version": "AI Pool v1", "pool_size": len(items), "top20": items, "sectors": sector_rank, "source": "market_scan", "recorded": recorded}
 
-def build_breakout_alerts(limit: int = 20, min_score: int = 85, send: bool = False) -> dict[str, Any]:
-    pool = build_ai_pool(limit=limit)
+def build_breakout_alerts(limit: int = 20, min_score: int = 85, send: bool = False, record: bool = False) -> dict[str, Any]:
+    pool = build_ai_pool(limit=limit, record=False)
     alerts: list[dict[str, Any]] = []
     for item in pool.get("top20", []):
         score = int(item.get("score") or 0)
@@ -301,9 +308,10 @@ def build_breakout_alerts(limit: int = 20, min_score: int = 85, send: bool = Fal
                     "title": "STX 突破警報",
                     "message": f"{item.get('name') or ''}｜{item.get('sector')}｜漲幅 {change:.2f}%｜量比 {volume_ratio:.2f}｜接近日高。",
                 })
-    return {"ok": True, "version": "Breakout Alert v1", "checked": len(pool.get("top20", [])), "alert_count": len(alerts), "alerts": alerts, "sent": bool(send)}
+    recorded = record_module_signals("breakout", alerts, reason="api_breakout", limit=limit) if record else None
+    return {"ok": True, "version": "Breakout Alert v1", "checked": len(pool.get("top20", [])), "alert_count": len(alerts), "alerts": alerts, "sent": bool(send), "recorded": recorded}
 
-def build_fund_flow(limit: int = 20, send: bool = False) -> dict[str, Any]:
+def build_fund_flow(limit: int = 20, send: bool = False, record: bool = False) -> dict[str, Any]:
     scan = build_market_scan(limit=max(10, min(limit, 30)))
     report = build_fund_flow_report(scan, limit=limit)
     if send:
@@ -315,6 +323,7 @@ def build_fund_flow(limit: int = 20, send: bool = False) -> dict[str, Any]:
                 "message": f"{item.get('name') or ''}｜{item.get('sector')}｜資金 {item.get('fund_score')}｜主力 {item.get('big_player_score')}｜隔日沖風險 {item.get('day_trade_risk')}｜{item.get('chip_signal')}。",
             })
     report["sent"] = bool(send)
+    report["recorded"] = record_module_signals("fund_flow", report.get("alerts", []), reason="api_fund_flow", limit=limit) if record else None
     return report
 
 @app.get("/")
@@ -363,6 +372,7 @@ def get_pro_analysis(code: str = Query(...)):
         analysis = build_pro_analysis(code=code, quote=quote, rows=rows[-180:], market=market_payload_for(code))
         replay = save_signal(analysis)
         update_results(code, quote.get("close"))
+        update_module_results(code, quote.get("close"))
         analysis["replay"] = replay
         return analysis
     except HTTPException:
@@ -378,25 +388,33 @@ def market_scan(limit: int = Query(5, ge=1, le=10)):
         raise HTTPException(status_code=502, detail=f"Failed to run market scan: {exc}") from exc
 
 @app.get("/api/ai-pool")
-def ai_pool(limit: int = Query(20, ge=5, le=30)):
+def ai_pool(limit: int = Query(20, ge=5, le=30), record: bool = Query(False)):
     try:
-        return build_ai_pool(limit=limit)
+        return build_ai_pool(limit=limit, record=record)
     except Exception as exc:
         raise HTTPException(status_code=502, detail=f"Failed to build AI pool: {exc}") from exc
 
 @app.get("/api/breakout-alerts")
-def breakout_alerts(limit: int = Query(20, ge=5, le=30), min_score: int = Query(85, ge=70, le=100), send: bool = Query(False)):
+def breakout_alerts(limit: int = Query(20, ge=5, le=30), min_score: int = Query(85, ge=70, le=100), send: bool = Query(False), record: bool = Query(False)):
     try:
-        return build_breakout_alerts(limit=limit, min_score=min_score, send=send)
+        return build_breakout_alerts(limit=limit, min_score=min_score, send=send, record=record)
     except Exception as exc:
         raise HTTPException(status_code=502, detail=f"Failed to build breakout alerts: {exc}") from exc
 
 @app.get("/api/fund-flow")
-def fund_flow(limit: int = Query(20, ge=5, le=30), send: bool = Query(False)):
+def fund_flow(limit: int = Query(20, ge=5, le=30), send: bool = Query(False), record: bool = Query(False)):
     try:
-        return build_fund_flow(limit=limit, send=send)
+        return build_fund_flow(limit=limit, send=send, record=record)
     except Exception as exc:
         raise HTTPException(status_code=502, detail=f"Failed to build fund flow report: {exc}") from exc
+
+@app.get("/api/performance")
+def performance():
+    return get_module_performance()
+
+@app.get("/api/performance-log")
+def performance_log(limit: int = Query(200, ge=1, le=1000)):
+    return get_performance_logs(limit=limit)
 
 @app.get("/api/replay-log")
 def replay_log(limit: int = Query(100, ge=1, le=500)):
@@ -410,6 +428,7 @@ def replay_stats():
 def get_quote(code: str = Query(...)):
     _, quote = make_quote_payload(code)
     update_results(code, quote.get("close"))
+    update_module_results(code, quote.get("close"))
     return QuoteResponse(**quote)
 
 @app.get("/api/kbars", response_model=KBarsResponse)
