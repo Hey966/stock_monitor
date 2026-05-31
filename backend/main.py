@@ -14,6 +14,7 @@ from pydantic import BaseModel
 from news_engine import get_news_payload
 from chips_engine import get_chips_payload
 from discord_engine import send_battle_report, send_discord_alert
+from fund_flow_engine import build_fund_flow_report
 from pro_engine import build_pro_analysis
 from replay_engine import get_logs, get_stats, save_signal, update_results
 
@@ -85,7 +86,7 @@ async def lifespan(app: FastAPI):
     if api is not None:
         api.logout()
 
-app = FastAPI(title="Stock Monitor Backend", version="0.8.3", lifespan=lifespan)
+app = FastAPI(title="Stock Monitor Backend", version="0.8.4", lifespan=lifespan)
 origins = [x.strip() for x in CORS_ORIGINS.split(",") if x.strip()]
 app.add_middleware(CORSMiddleware, allow_origins=origins if origins else ["*"], allow_credentials=True, allow_methods=["*"], allow_headers=["*"])
 
@@ -244,6 +245,8 @@ def build_market_scan(limit: int = 5) -> dict[str, Any]:
                 "low": quote.get("low"),
                 "change_rate": quote.get("change_rate"),
                 "volume_ratio": quote.get("volume_ratio"),
+                "buy_volume": quote.get("buy_volume"),
+                "sell_volume": quote.get("sell_volume"),
                 "intraday_position": intraday_position,
             })
         except Exception as exc:
@@ -299,6 +302,20 @@ def build_breakout_alerts(limit: int = 20, min_score: int = 85, send: bool = Fal
                     "message": f"{item.get('name') or ''}｜{item.get('sector')}｜漲幅 {change:.2f}%｜量比 {volume_ratio:.2f}｜接近日高。",
                 })
     return {"ok": True, "version": "Breakout Alert v1", "checked": len(pool.get("top20", [])), "alert_count": len(alerts), "alerts": alerts, "sent": bool(send)}
+
+def build_fund_flow(limit: int = 20, send: bool = False) -> dict[str, Any]:
+    scan = build_market_scan(limit=max(10, min(limit, 30)))
+    report = build_fund_flow_report(scan, limit=limit)
+    if send:
+        for item in report.get("alerts", [])[:8]:
+            send_discord_alert({
+                "code": item.get("code"),
+                "score": item.get("fund_score"),
+                "title": item.get("alert") or "STX 資金流警報",
+                "message": f"{item.get('name') or ''}｜{item.get('sector')}｜資金 {item.get('fund_score')}｜主力 {item.get('big_player_score')}｜隔日沖風險 {item.get('day_trade_risk')}｜{item.get('chip_signal')}。",
+            })
+    report["sent"] = bool(send)
+    return report
 
 @app.get("/")
 def root():
@@ -373,6 +390,13 @@ def breakout_alerts(limit: int = Query(20, ge=5, le=30), min_score: int = Query(
         return build_breakout_alerts(limit=limit, min_score=min_score, send=send)
     except Exception as exc:
         raise HTTPException(status_code=502, detail=f"Failed to build breakout alerts: {exc}") from exc
+
+@app.get("/api/fund-flow")
+def fund_flow(limit: int = Query(20, ge=5, le=30), send: bool = Query(False)):
+    try:
+        return build_fund_flow(limit=limit, send=send)
+    except Exception as exc:
+        raise HTTPException(status_code=502, detail=f"Failed to build fund flow report: {exc}") from exc
 
 @app.get("/api/replay-log")
 def replay_log(limit: int = Query(100, ge=1, le=500)):
