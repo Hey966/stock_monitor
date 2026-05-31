@@ -1,14 +1,20 @@
 from __future__ import annotations
 
+import base64
 import json
 import os
-import sqlite3
+import urllib.error
+import urllib.request
 from datetime import datetime, timezone
 from pathlib import Path
 from statistics import mean
 from typing import Any
 
-DB_PATH = Path(os.getenv("STX_REPLAY_DB", "/tmp/stx_replay.db"))
+CACHE_PATH = Path(os.getenv("STX_REPLAY_CACHE", "/tmp/stx_replay_cache.json"))
+GITHUB_TOKEN = os.getenv("GITHUB_TOKEN", "")
+GITHUB_REPO = os.getenv("GITHUB_REPO", "Hey966/stock_monitor")
+GITHUB_BRANCH = os.getenv("GITHUB_BRANCH", "main")
+GITHUB_LOG_DIR = os.getenv("STX_REPLAY_GITHUB_DIR", "replay_logs")
 
 
 def _now_dt() -> datetime:
@@ -17,6 +23,10 @@ def _now_dt() -> datetime:
 
 def _now() -> str:
     return _now_dt().isoformat()
+
+
+def _today_path() -> str:
+    return f"{GITHUB_LOG_DIR}/{_now_dt().date().isoformat()}.json"
 
 
 def _age_minutes(ts: str | None) -> float:
@@ -50,104 +60,115 @@ def _pct(price: float, entry: float) -> float:
     return round((price - entry) / entry * 100, 3)
 
 
-def _json_dumps(v: Any) -> str:
-    return json.dumps(v, ensure_ascii=False)
-
-
-def _json_loads(v: Any, default: Any = None) -> Any:
+def _cache_load() -> list[dict[str, Any]]:
     try:
-        if v in (None, ""):
-            return default
-        return json.loads(v)
+        if not CACHE_PATH.exists():
+            return []
+        data = json.loads(CACHE_PATH.read_text(encoding="utf-8"))
+        return data if isinstance(data, list) else []
     except Exception:
-        return default
+        return []
 
 
-def _conn() -> sqlite3.Connection:
-    DB_PATH.parent.mkdir(parents=True, exist_ok=True)
-    conn = sqlite3.connect(DB_PATH)
-    conn.row_factory = sqlite3.Row
-    conn.execute("PRAGMA journal_mode=WAL")
-    conn.execute("PRAGMA busy_timeout=5000")
-    init_db(conn)
-    return conn
+def _cache_save(rows: list[dict[str, Any]]) -> None:
+    CACHE_PATH.parent.mkdir(parents=True, exist_ok=True)
+    CACHE_PATH.write_text(json.dumps(rows[-3000:], ensure_ascii=False, indent=2), encoding="utf-8")
 
 
-def init_db(conn: sqlite3.Connection | None = None) -> None:
-    own = conn is None
-    if conn is None:
-        DB_PATH.parent.mkdir(parents=True, exist_ok=True)
-        conn = sqlite3.connect(DB_PATH)
-    conn.execute(
-        """
-        CREATE TABLE IF NOT EXISTS replay_logs (
-            id INTEGER PRIMARY KEY AUTOINCREMENT,
-            key TEXT UNIQUE,
-            created_at TEXT NOT NULL,
-            updated_at TEXT,
-            status TEXT DEFAULT 'open',
-            code TEXT NOT NULL,
-            name TEXT,
-            score INTEGER,
-            level TEXT,
-            action TEXT,
-            entry_price REAL,
-            last_price REAL,
-            best_price REAL,
-            worst_price REAL,
-            age_minutes REAL,
-            trap_block INTEGER DEFAULT 0,
-            traps_json TEXT,
-            market_sync_json TEXT,
-            signals_json TEXT,
-            results_json TEXT DEFAULT '{}'
-        )
-        """
-    )
-    conn.execute("CREATE INDEX IF NOT EXISTS idx_replay_code_status ON replay_logs(code, status)")
-    conn.execute("CREATE INDEX IF NOT EXISTS idx_replay_created_at ON replay_logs(created_at)")
-    if own:
-        conn.commit()
-        conn.close()
-
-
-def _row_to_item(row: sqlite3.Row) -> dict[str, Any]:
-    results = _json_loads(row["results_json"], {}) or {}
-    item = {
-        "id": row["id"],
-        "key": row["key"],
-        "created_at": row["created_at"],
-        "updated_at": row["updated_at"],
-        "status": row["status"],
-        "code": row["code"],
-        "name": row["name"],
-        "score": row["score"],
-        "level": row["level"],
-        "action": row["action"],
-        "entry_price": row["entry_price"],
-        "last_price": row["last_price"],
-        "best_price": row["best_price"],
-        "worst_price": row["worst_price"],
-        "age_minutes": row["age_minutes"],
-        "trap_block": bool(row["trap_block"]),
-        "traps": _json_loads(row["traps_json"], []) or [],
-        "market_sync": _json_loads(row["market_sync_json"], None),
-        "signals": _json_loads(row["signals_json"], {}) or {},
-        "results": results,
+def _github_headers() -> dict[str, str]:
+    headers = {
+        "Accept": "application/vnd.github+json",
+        "X-GitHub-Api-Version": "2022-11-28",
+        "User-Agent": "STX-Replay-Storage",
     }
-    return {k: v for k, v in item.items() if v is not None}
+    if GITHUB_TOKEN:
+        headers["Authorization"] = f"Bearer {GITHUB_TOKEN}"
+    return headers
+
+
+def _github_api(path: str, method: str = "GET", payload: dict[str, Any] | None = None) -> dict[str, Any] | None:
+    if not GITHUB_TOKEN:
+        return None
+    url = f"https://api.github.com/repos/{GITHUB_REPO}/contents/{path}"
+    if method == "GET":
+        url += f"?ref={GITHUB_BRANCH}"
+    data = None
+    if payload is not None:
+        data = json.dumps(payload).encode("utf-8")
+    req = urllib.request.Request(url, data=data, headers=_github_headers(), method=method)
+    try:
+        with urllib.request.urlopen(req, timeout=8) as resp:
+            return json.loads(resp.read().decode("utf-8"))
+    except urllib.error.HTTPError as exc:
+        if exc.code == 404:
+            return None
+        raise
+    except Exception:
+        return None
+
+
+def _github_read_day(path: str) -> tuple[list[dict[str, Any]], str | None]:
+    obj = _github_api(path, "GET")
+    if not obj:
+        return [], None
+    try:
+        content = base64.b64decode(obj.get("content", "")).decode("utf-8")
+        data = json.loads(content)
+        rows = data.get("items", data) if isinstance(data, dict) else data
+        return (rows if isinstance(rows, list) else []), obj.get("sha")
+    except Exception:
+        return [], obj.get("sha")
+
+
+def _github_write_day(path: str, rows: list[dict[str, Any]]) -> bool:
+    if not GITHUB_TOKEN:
+        return False
+    old_rows, sha = _github_read_day(path)
+    merged: dict[str, dict[str, Any]] = {}
+    for row in old_rows + rows:
+        key = str(row.get("key") or f"{row.get('created_at')}:{row.get('code')}")
+        merged[key] = row
+    ordered = sorted(merged.values(), key=lambda x: str(x.get("created_at", "")))
+    body = {
+        "version": "STX Replay Storage v2 GitHub JSON Edition",
+        "updated_at": _now(),
+        "count": len(ordered),
+        "items": ordered,
+    }
+    content = base64.b64encode(json.dumps(body, ensure_ascii=False, indent=2).encode("utf-8")).decode("ascii")
+    payload: dict[str, Any] = {
+        "message": f"Update STX replay log {path}",
+        "content": content,
+        "branch": GITHUB_BRANCH,
+    }
+    if sha:
+        payload["sha"] = sha
+    return _github_api(path, "PUT", payload) is not None
+
+
+def _sync_today_to_github(rows: list[dict[str, Any]]) -> bool:
+    today = _now_dt().date().isoformat()
+    today_rows = [r for r in rows if str(r.get("created_at", "")).startswith(today)]
+    if not today_rows:
+        return False
+    return _github_write_day(_today_path(), today_rows)
 
 
 def _load(limit: int | None = None) -> list[dict[str, Any]]:
-    with _conn() as conn:
-        if limit:
-            rows = conn.execute(
-                "SELECT * FROM replay_logs ORDER BY id DESC LIMIT ?",
-                (limit,),
-            ).fetchall()
-            return [_row_to_item(r) for r in reversed(rows)]
-        rows = conn.execute("SELECT * FROM replay_logs ORDER BY id ASC").fetchall()
-        return [_row_to_item(r) for r in rows]
+    rows = _cache_load()
+    if not rows and GITHUB_TOKEN:
+        gh_rows, _ = _github_read_day(_today_path())
+        if gh_rows:
+            rows = gh_rows
+            _cache_save(rows)
+    if limit:
+        return rows[-limit:]
+    return rows
+
+
+def _save(rows: list[dict[str, Any]]) -> bool:
+    _cache_save(rows)
+    return _sync_today_to_github(rows)
 
 
 def should_record(analysis: dict[str, Any]) -> bool:
@@ -161,6 +182,7 @@ def save_signal(analysis: dict[str, Any]) -> dict[str, Any]:
     if not should_record(analysis):
         return {"ok": True, "saved": False, "reason": "below_record_threshold"}
 
+    rows = _load()
     code = str(analysis.get("code") or "")
     quote = analysis.get("quote") or {}
     signals = analysis.get("signals") or {}
@@ -168,53 +190,42 @@ def save_signal(analysis: dict[str, Any]) -> dict[str, Any]:
     score = _i(analysis.get("score"), 0)
     key = f"{code}:{score}:{analysis.get('level')}:{entry}"
 
-    with _conn() as conn:
-        old = conn.execute(
-            "SELECT * FROM replay_logs WHERE key = ? AND status = 'open' ORDER BY id DESC LIMIT 1",
-            (key,),
-        ).fetchone()
-        if old:
-            return {"ok": True, "saved": False, "reason": "duplicate", "item": _row_to_item(old)}
+    for old in reversed(rows[-50:]):
+        if old.get("key") == key and old.get("status") == "open":
+            return {"ok": True, "saved": False, "reason": "duplicate", "item": old}
 
-        item_signals = {
+    item = {
+        "key": key,
+        "created_at": _now(),
+        "updated_at": _now(),
+        "status": "open",
+        "code": code,
+        "name": analysis.get("name"),
+        "score": score,
+        "level": analysis.get("level"),
+        "action": analysis.get("action"),
+        "entry_price": entry,
+        "last_price": entry,
+        "best_price": entry,
+        "worst_price": entry,
+        "age_minutes": 0,
+        "trap_block": bool(signals.get("trap_block")),
+        "traps": analysis.get("traps") or [],
+        "market_sync": signals.get("market_sync"),
+        "signals": {
             "vwap": signals.get("vwap"),
             "relative_volume": signals.get("relative_volume"),
             "orderbook_imbalance": signals.get("orderbook_imbalance"),
             "orderbook_risk_cap": signals.get("orderbook_risk_cap"),
             "pullback_hold_vwap": signals.get("pullback_hold_vwap"),
             "distance_to_vwap_pct": signals.get("distance_to_vwap_pct"),
-        }
-        now = _now()
-        conn.execute(
-            """
-            INSERT INTO replay_logs (
-                key, created_at, updated_at, status, code, name, score, level, action,
-                entry_price, last_price, best_price, worst_price, age_minutes,
-                trap_block, traps_json, market_sync_json, signals_json, results_json
-            ) VALUES (?, ?, ?, 'open', ?, ?, ?, ?, ?, ?, ?, ?, ?, 0, ?, ?, ?, ?, '{}')
-            """,
-            (
-                key,
-                now,
-                now,
-                code,
-                analysis.get("name"),
-                score,
-                analysis.get("level"),
-                analysis.get("action"),
-                entry,
-                entry,
-                entry,
-                entry,
-                1 if signals.get("trap_block") else 0,
-                _json_dumps(analysis.get("traps") or []),
-                _json_dumps(signals.get("market_sync")),
-                _json_dumps(item_signals),
-            ),
-        )
-        conn.commit()
-        row = conn.execute("SELECT * FROM replay_logs WHERE key = ?", (key,)).fetchone()
-        return {"ok": True, "saved": True, "item": _row_to_item(row)}
+        },
+        "results": {},
+    }
+    rows.append(item)
+    synced = _save(rows)
+    item["github_synced"] = synced
+    return {"ok": True, "saved": True, "storage": "github_json", "github_synced": synced, "item": item}
 
 
 def update_results(code: str, current_price: float | int | None) -> dict[str, Any]:
@@ -222,52 +233,51 @@ def update_results(code: str, current_price: float | int | None) -> dict[str, An
     if price is None:
         return {"ok": False, "updated": 0, "reason": "missing_price"}
 
+    rows = _load()
     updated = 0
-    with _conn() as conn:
-        rows = conn.execute(
-            "SELECT * FROM replay_logs WHERE code = ? AND status = 'open' ORDER BY id ASC",
-            (code,),
-        ).fetchall()
-        for row in rows:
-            item = _row_to_item(row)
-            entry = _f(item.get("entry_price"))
-            if not entry:
-                continue
-            age = _age_minutes(item.get("created_at"))
-            best_price = max(_f(item.get("best_price"), price) or price, price)
-            worst_price = min(_f(item.get("worst_price"), price) or price, price)
-            result = item.setdefault("results", {})
-            result["latest_pct"] = _pct(price, entry)
-            result["max_gain"] = _pct(best_price, entry)
-            result["max_drawdown"] = _pct(worst_price, entry)
-            if age >= 5 and "pct_5m" not in result:
-                result["pct_5m"] = _pct(price, entry)
-            if age >= 10 and "pct_10m" not in result:
-                result["pct_10m"] = _pct(price, entry)
-            status = item.get("status", "open")
-            if age >= 30 and "pct_30m" not in result:
-                result["pct_30m"] = _pct(price, entry)
-                status = "closed"
+    for item in rows:
+        if item.get("code") != code or item.get("status") != "open":
+            continue
+        entry = _f(item.get("entry_price"))
+        if not entry:
+            continue
+        age = _age_minutes(item.get("created_at"))
+        best_price = max(_f(item.get("best_price"), price) or price, price)
+        worst_price = min(_f(item.get("worst_price"), price) or price, price)
+        result = item.setdefault("results", {})
+        result["latest_pct"] = _pct(price, entry)
+        result["max_gain"] = _pct(best_price, entry)
+        result["max_drawdown"] = _pct(worst_price, entry)
+        if age >= 5 and "pct_5m" not in result:
+            result["pct_5m"] = _pct(price, entry)
+        if age >= 10 and "pct_10m" not in result:
+            result["pct_10m"] = _pct(price, entry)
+        if age >= 30 and "pct_30m" not in result:
+            result["pct_30m"] = _pct(price, entry)
+            item["status"] = "closed"
+        item["best_price"] = best_price
+        item["worst_price"] = worst_price
+        item["age_minutes"] = round(age, 2)
+        item["last_price"] = price
+        item["updated_at"] = _now()
+        updated += 1
 
-            conn.execute(
-                """
-                UPDATE replay_logs
-                SET updated_at = ?, status = ?, last_price = ?, best_price = ?, worst_price = ?,
-                    age_minutes = ?, results_json = ?
-                WHERE id = ?
-                """,
-                (_now(), status, price, best_price, worst_price, round(age, 2), _json_dumps(result), row["id"]),
-            )
-            updated += 1
-        conn.commit()
-    return {"ok": True, "updated": updated}
+    synced = _save(rows) if updated else False
+    return {"ok": True, "updated": updated, "storage": "github_json", "github_synced": synced}
 
 
 def get_logs(limit: int = 100) -> dict[str, Any]:
-    rows = _load(limit=limit)
-    with _conn() as conn:
-        count = conn.execute("SELECT COUNT(*) FROM replay_logs").fetchone()[0]
-    return {"ok": True, "storage": "sqlite", "db_path": str(DB_PATH), "count": count, "items": rows}
+    rows = _load()
+    return {
+        "ok": True,
+        "storage": "github_json",
+        "github_enabled": bool(GITHUB_TOKEN),
+        "github_repo": GITHUB_REPO,
+        "github_path": _today_path(),
+        "cache_path": str(CACHE_PATH),
+        "count": len(rows),
+        "items": rows[-limit:],
+    }
 
 
 def _tracked(rows: list[dict[str, Any]], field: str) -> list[dict[str, Any]]:
@@ -294,9 +304,12 @@ def get_stats() -> dict[str, Any]:
     strong = [r for r in rows if int(_f(r.get("score"), 0) or 0) >= 85 and not r.get("trap_block")]
     return {
         "ok": True,
-        "version": "STX Replay Storage v1 + Replay Engine v2",
-        "storage": "sqlite",
-        "db_path": str(DB_PATH),
+        "version": "STX Replay Storage v2 GitHub JSON Edition + Replay Engine v2",
+        "storage": "github_json",
+        "github_enabled": bool(GITHUB_TOKEN),
+        "github_repo": GITHUB_REPO,
+        "github_path": _today_path(),
+        "cache_path": str(CACHE_PATH),
         "total_signals": len(rows),
         "open_signals": len([r for r in rows if r.get("status") == "open"]),
         "closed_signals": len([r for r in rows if r.get("status") == "closed"]),
