@@ -1,7 +1,7 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-05-31T14:00:46.904585+00:00",
-  "count": 18,
+  "updated_at": "2026-05-31T14:00:48.473032+00:00",
+  "count": 19,
   "items": [
     {
       "key": "ai_pool:2317:100:289.0",
@@ -360,6 +360,26 @@
       "score": 70,
       "change_rate_at_signal": 2.4,
       "volume_ratio_at_signal": 1.1,
+      "alert": null,
+      "results": {}
+    },
+    {
+      "key": "ai_pool:3017:69:2665.0",
+      "module": "ai_pool",
+      "reason": "api_ai_pool",
+      "created_at": "2026-05-31T14:00:47.923589+00:00",
+      "updated_at": "2026-05-31T14:00:47.923603+00:00",
+      "status": "open",
+      "code": "3017",
+      "name": "奇鋐",
+      "sector": "AI散熱",
+      "entry_price": 2665.0,
+      "last_price": 2665.0,
+      "best_price": 2665.0,
+      "worst_price": 2665.0,
+      "score": 69,
+      "change_rate_at_signal": 3.29,
+      "volume_ratio_at_signal": 1.95,
       "alert": null,
       "results": {}
     }
