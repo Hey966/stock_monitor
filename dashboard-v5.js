@@ -43,10 +43,6 @@
     return vals.length ? Math.max(...vals) : null;
   }
 
-  function sectorOf(item) {
-    return item?.sector || item?.industry || item?.group || item?.category || '強勢股';
-  }
-
   function ensureDashboard() {
     if ($('#stxDashboardV5')) return;
     const host = $('#page-search') || $('.modern-page.active') || document.querySelector('main');
@@ -55,7 +51,7 @@
     panel.id = 'stxDashboardV5';
     panel.className = 'entry-summary-panel terminal-main-signal';
     panel.innerHTML = `
-      <span>STX AI 戰情中心</span>
+      <span>STX AI 戰情中心 v5.2</span>
       <strong id="dashEngineVersion">等待 Pro Engine</strong>
       <p id="dashSummary">搜尋股票 → STX AI 戰情中心 → 即時大盤 → 熱門強勢股 TOP5 → Replay 勝率面板 → 雷達掃描。</p>
 
@@ -66,7 +62,7 @@
         <article><span>熱門強勢股 TOP5</span><b id="dashHotTopCount">-</b></article>
       </div>
 
-      <div id="dashHotTop5" class="analysis-tags" style="margin-top:12px"><span>等待強勢股資料</span></div>
+      <div id="dashHotTop5" class="analysis-tags" style="margin-top:12px"><span>等待市場掃描</span></div>
 
       <div class="quote-detail-grid" style="margin-top:12px">
         <article><span>回測訊號數</span><b id="dashReplaySignals">-</b></article>
@@ -95,7 +91,7 @@
   function renderPro(data) {
     ensureDashboard();
     if (!data) return;
-    setText('#dashEngineVersion', data.message || 'STX AI 戰情中心');
+    setText('#dashEngineVersion', data.message || 'STX AI 戰情中心 v5.2');
     const ms = data.signals?.market_sync;
     const cap = data.signals?.orderbook_risk_cap;
     setText('#dashMarketSync', ms?.status ? `${marketText(ms.status)} ${ms.score ?? ''}` : '尚無資料');
@@ -110,41 +106,18 @@
     if (!stats || !stats.ok) return;
 
     const latest = Array.isArray(stats.latest) ? stats.latest.slice().reverse() : [];
-    const ranked = latest.slice().sort((a, b) => Number(b.score || 0) - Number(a.score || 0));
-    const hotTop5 = ranked.filter(x => !x.trap_block).slice(0, 5);
     const success = latest.filter(x => {
       const ret = signalReturn(x);
       return ret !== null && ret > 0;
     });
-    const best = success.slice().sort((a, b) => (signalReturn(b) ?? -999) - (signalReturn(a) ?? -999))[0] || hotTop5[0];
-
-    const sectorScore = new Map();
-    ranked.forEach(x => {
-      if (x.trap_block) return;
-      const sector = sectorOf(x);
-      const old = sectorScore.get(sector) || { count: 0, score: 0 };
-      old.count += 1;
-      old.score += Number(x.score || 0);
-      sectorScore.set(sector, old);
-    });
-    const strongestSector = [...sectorScore.entries()]
-      .sort((a, b) => (b[1].score / b[1].count) - (a[1].score / a[1].count))[0];
+    const best = success.slice().sort((a, b) => (signalReturn(b) ?? -999) - (signalReturn(a) ?? -999))[0];
 
     setText('#dashReplaySignals', stats.total_signals ?? 0);
     setText('#dashWinRate', stats.win_rate === null || stats.win_rate === undefined ? '-' : `${stats.win_rate}%`);
     setText('#dashAvgReturn', stats.avg_latest_pct === null || stats.avg_latest_pct === undefined ? '-' : `${stats.avg_latest_pct}%`);
     setText('#dashTrapCount', stats.trap_block_count ?? 0);
-    setText('#dashBestSignal', best ? `${best.code}｜${best.score ?? '-'}分` : '-');
-    setText('#dashStrongGroup', strongestSector ? `${strongestSector[0]}｜${Math.round(strongestSector[1].score / strongestSector[1].count)}分` : '-');
+    setText('#dashBestSignal', best ? `${best.code}｜${pctText(signalReturn(best))}` : '-');
     setText('#dashSuccessCount', success.length);
-    setText('#dashHotTopCount', hotTop5.length);
-
-    const hotBox = $('#dashHotTop5');
-    if (hotBox) {
-      hotBox.innerHTML = hotTop5.length
-        ? hotTop5.map((x, i) => `<span>TOP${i + 1} ${x.code}｜${x.score}分｜${levelText(x.level)}</span>`).join('')
-        : '<span>尚無熱門強勢股</span>';
-    }
 
     const recent5 = success.slice(0, 5);
     const box = $('#dashRecentSignals');
@@ -152,6 +125,24 @@
       box.innerHTML = recent5.length
         ? recent5.map(x => `<span>${x.code}｜${x.score}分｜${levelText(x.level)}｜${pctText(signalReturn(x))}</span>`).join('')
         : '<span>尚無最近5筆成功訊號</span>';
+    }
+  }
+
+  function renderMarketScan(data) {
+    ensureDashboard();
+    if (!data || !data.ok) return;
+
+    const top5 = Array.isArray(data.top5) ? data.top5 : [];
+    const strongest = data.strongest_sector;
+
+    setText('#dashHotTopCount', top5.length);
+    setText('#dashStrongGroup', strongest ? `${strongest.sector}｜${strongest.avg_score}分` : '-');
+
+    const hotBox = $('#dashHotTop5');
+    if (hotBox) {
+      hotBox.innerHTML = top5.length
+        ? top5.map((x, i) => `<span>TOP${i + 1} ${x.code} ${x.name || ''}｜${x.sector || '其他'}｜${x.score}分｜${pctText(x.change_rate)}</span>`).join('')
+        : '<span>尚無即時強勢股</span>';
     }
   }
 
@@ -166,15 +157,33 @@
     }
   }
 
-  window.STX_DASHBOARD_V5_REFRESH = fetchStats;
+  async function fetchMarketScan() {
+    ensureDashboard();
+    try {
+      const res = await fetch(`${API}/api/market-scan?limit=5&t=${Date.now()}`, { cache: 'no-store' });
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      renderMarketScan(await res.json());
+    } catch (e) {
+      setText('#dashHotTopCount', '掃描錯誤');
+      const hotBox = $('#dashHotTop5');
+      if (hotBox) hotBox.innerHTML = '<span>市場掃描 API 尚未回應</span>';
+    }
+  }
+
+  async function refreshAll() {
+    await Promise.allSettled([fetchStats(), fetchMarketScan()]);
+  }
+
+  window.STX_DASHBOARD_V5_REFRESH = refreshAll;
   window.addEventListener('stx-pro-analysis', e => {
     renderPro(e.detail);
-    setTimeout(fetchStats, 400);
+    setTimeout(refreshAll, 400);
   });
   window.addEventListener('load', () => {
     ensureDashboard();
     renderPro(window.STX_PRO_ANALYSIS);
-    fetchStats();
+    refreshAll();
     setInterval(fetchStats, 15000);
+    setInterval(fetchMarketScan, 30000);
   });
 })();
