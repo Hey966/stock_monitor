@@ -1,7 +1,7 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-05-31T14:00:35.176741+00:00",
-  "count": 8,
+  "updated_at": "2026-05-31T14:00:36.319495+00:00",
+  "count": 9,
   "items": [
     {
       "key": "ai_pool:2317:100:289.0",
@@ -160,6 +160,26 @@
       "score": 92,
       "change_rate_at_signal": 7.63,
       "volume_ratio_at_signal": 2.21,
+      "alert": null,
+      "results": {}
+    },
+    {
+      "key": "ai_pool:1609:92:39.25",
+      "module": "ai_pool",
+      "reason": "api_ai_pool",
+      "created_at": "2026-05-31T14:00:36.002069+00:00",
+      "updated_at": "2026-05-31T14:00:36.002081+00:00",
+      "status": "open",
+      "code": "1609",
+      "name": "大亞",
+      "sector": "電線電纜",
+      "entry_price": 39.25,
+      "last_price": 39.25,
+      "best_price": 39.25,
+      "worst_price": 39.25,
+      "score": 92,
+      "change_rate_at_signal": 9.33,
+      "volume_ratio_at_signal": 3.1,
       "alert": null,
       "results": {}
     }
