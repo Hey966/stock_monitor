@@ -23,6 +23,7 @@ from performance_engine import (
 )
 from pro_engine import build_pro_analysis
 from replay_engine import get_logs, get_stats, save_signal, update_results
+from stx_query_engine import build_stx_query_response
 
 load_dotenv()
 SHIOAJI_API_KEY = os.getenv("SHIOAJI_API_KEY", "")
@@ -394,6 +395,15 @@ def cron_run(limit: int = Query(20, ge=5, le=30), send: bool = Query(True)):
         return build_cron_run(limit=limit, send=send)
     except Exception as exc:
         raise HTTPException(status_code=502, detail=f"Failed to run scheduler: {exc}") from exc
+
+@app.get("/api/stx-query")
+def stx_query(q: str = Query(...), limit: int = Query(5, ge=1, le=10)):
+    try:
+        scan = build_market_scan(limit=max(limit, 10))
+        fund_report = build_fund_flow_report(scan, limit=20)
+        return build_stx_query_response(q=q, scan=scan, fund_report=fund_report, limit=limit)
+    except Exception as exc:
+        raise HTTPException(status_code=502, detail=f"Failed to run STX query: {exc}") from exc
 
 @app.get("/api/pro-analysis")
 def get_pro_analysis(code: str = Query(...)):
