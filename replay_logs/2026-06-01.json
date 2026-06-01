@@ -1,6 +1,6 @@
 {
   "version": "STX Replay Storage v2 GitHub JSON Edition",
-  "updated_at": "2026-06-01T01:24:19.725739+00:00",
+  "updated_at": "2026-06-01T01:24:21.730258+00:00",
   "count": 3,
   "items": [
     {
@@ -90,7 +90,7 @@
     {
       "key": "3481:40:blocked:54.6",
       "created_at": "2026-06-01T01:23:23.234041+00:00",
-      "updated_at": "2026-06-01T01:24:19.410280+00:00",
+      "updated_at": "2026-06-01T01:24:21.401417+00:00",
       "status": "open",
       "code": "3481",
       "name": "群創",
@@ -98,10 +98,10 @@
       "level": "blocked",
       "action": "禁止進場，等待回測不破",
       "entry_price": 54.6,
-      "last_price": 54.5,
+      "last_price": 54.6,
       "best_price": 54.6,
       "worst_price": 54.4,
-      "age_minutes": 0.94,
+      "age_minutes": 0.97,
       "trap_block": true,
       "traps": [
         "價格離 VWAP 過遠，追價風險過高"
@@ -124,7 +124,7 @@
         "distance_to_vwap_pct": 4.21
       },
       "results": {
-        "latest_pct": -0.183,
+        "latest_pct": 0.0,
         "max_gain": 0.0,
         "max_drawdown": -0.366
       }
