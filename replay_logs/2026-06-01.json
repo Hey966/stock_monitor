@@ -1,7 +1,7 @@
 {
   "version": "STX Replay Storage v2 GitHub JSON Edition",
-  "updated_at": "2026-06-01T01:31:42.289572+00:00",
-  "count": 12,
+  "updated_at": "2026-06-01T01:31:43.548003+00:00",
+  "count": 13,
   "items": [
     {
       "key": "2454:40:blocked:4590.0",
@@ -90,7 +90,7 @@
     {
       "key": "3481:40:blocked:54.6",
       "created_at": "2026-06-01T01:23:23.234041+00:00",
-      "updated_at": "2026-06-01T01:31:41.754507+00:00",
+      "updated_at": "2026-06-01T01:31:42.743357+00:00",
       "status": "open",
       "code": "3481",
       "name": "群創",
@@ -101,7 +101,7 @@
       "last_price": 56.1,
       "best_price": 56.1,
       "worst_price": 54.4,
-      "age_minutes": 8.31,
+      "age_minutes": 8.33,
       "trap_block": true,
       "traps": [
         "價格離 VWAP 過遠，追價風險過高"
@@ -343,7 +343,7 @@
     {
       "key": "3481:43:blocked:55.3",
       "created_at": "2026-06-01T01:28:07.809092+00:00",
-      "updated_at": "2026-06-01T01:31:41.754524+00:00",
+      "updated_at": "2026-06-01T01:31:42.743372+00:00",
       "status": "open",
       "code": "3481",
       "name": "群創",
@@ -354,7 +354,7 @@
       "last_price": 56.1,
       "best_price": 56.1,
       "worst_price": 55.3,
-      "age_minutes": 3.57,
+      "age_minutes": 3.58,
       "trap_block": true,
       "traps": [
         "價格離 VWAP 過遠，追價風險過高"
@@ -385,7 +385,7 @@
     {
       "key": "3481:33:blocked:55.3",
       "created_at": "2026-06-01T01:28:15.966688+00:00",
-      "updated_at": "2026-06-01T01:31:41.754532+00:00",
+      "updated_at": "2026-06-01T01:31:42.743379+00:00",
       "status": "open",
       "code": "3481",
       "name": "群創",
@@ -396,7 +396,7 @@
       "last_price": 56.1,
       "best_price": 56.1,
       "worst_price": 55.3,
-      "age_minutes": 3.43,
+      "age_minutes": 3.45,
       "trap_block": true,
       "traps": [
         "價格離 VWAP 過遠，追價風險過高"
@@ -427,7 +427,7 @@
     {
       "key": "3481:43:blocked:55.4",
       "created_at": "2026-06-01T01:28:24.567738+00:00",
-      "updated_at": "2026-06-01T01:31:41.754539+00:00",
+      "updated_at": "2026-06-01T01:31:42.743386+00:00",
       "status": "open",
       "code": "3481",
       "name": "群創",
@@ -438,7 +438,7 @@
       "last_price": 56.1,
       "best_price": 56.1,
       "worst_price": 55.3,
-      "age_minutes": 3.29,
+      "age_minutes": 3.3,
       "trap_block": true,
       "traps": [
         "價格離 VWAP 過遠，追價風險過高"
@@ -469,7 +469,7 @@
     {
       "key": "3481:33:blocked:55.4",
       "created_at": "2026-06-01T01:28:32.583459+00:00",
-      "updated_at": "2026-06-01T01:31:41.754545+00:00",
+      "updated_at": "2026-06-01T01:31:42.743392+00:00",
       "status": "open",
       "code": "3481",
       "name": "群創",
@@ -480,7 +480,7 @@
       "last_price": 56.1,
       "best_price": 56.1,
       "worst_price": 55.4,
-      "age_minutes": 3.15,
+      "age_minutes": 3.17,
       "trap_block": true,
       "traps": [
         "價格離 VWAP 過遠，追價風險過高"
@@ -507,6 +507,44 @@
         "max_gain": 1.264,
         "max_drawdown": 0.0
       }
+    },
+    {
+      "key": "3481:85:blocked:56.1",
+      "created_at": "2026-06-01T01:31:42.994397+00:00",
+      "updated_at": "2026-06-01T01:31:42.994408+00:00",
+      "status": "open",
+      "code": "3481",
+      "name": "群創",
+      "score": 85,
+      "level": "blocked",
+      "action": "禁止進場，等待回測不破",
+      "entry_price": 56.1,
+      "last_price": 56.1,
+      "best_price": 56.1,
+      "worst_price": 56.1,
+      "age_minutes": 0,
+      "trap_block": true,
+      "traps": [
+        "價格離 VWAP 過遠，追價風險過高"
+      ],
+      "market_sync": {
+        "status": "bull",
+        "score": 2,
+        "change_rate": 0.63,
+        "red_k": true,
+        "intraday_position": 1.0,
+        "name": "台積電",
+        "code": "2330"
+      },
+      "signals": {
+        "vwap": 52.961,
+        "relative_volume": 2.16,
+        "orderbook_imbalance": 1.0,
+        "orderbook_risk_cap": null,
+        "pullback_hold_vwap": true,
+        "distance_to_vwap_pct": 5.93
+      },
+      "results": {}
     }
   ]
 }
