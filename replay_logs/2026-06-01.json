@@ -1,7 +1,7 @@
 {
   "version": "STX Replay Storage v2 GitHub JSON Edition",
-  "updated_at": "2026-06-01T01:25:51.791822+00:00",
-  "count": 3,
+  "updated_at": "2026-06-01T01:26:21.677459+00:00",
+  "count": 4,
   "items": [
     {
       "key": "2454:40:blocked:4590.0",
@@ -128,6 +128,44 @@
         "max_gain": 1.465,
         "max_drawdown": -0.366
       }
+    },
+    {
+      "key": "6770:26:blocked:90.5",
+      "created_at": "2026-06-01T01:26:21.355071+00:00",
+      "updated_at": "2026-06-01T01:26:21.355083+00:00",
+      "status": "open",
+      "code": "6770",
+      "name": "力積電",
+      "score": 26,
+      "level": "blocked",
+      "action": "禁止進場，等待回測不破",
+      "entry_price": 90.5,
+      "last_price": 90.5,
+      "best_price": 90.5,
+      "worst_price": 90.5,
+      "age_minutes": 0,
+      "trap_block": true,
+      "traps": [
+        "開高走低，疑似誘多陷阱"
+      ],
+      "market_sync": {
+        "status": "bull",
+        "score": 2,
+        "change_rate": 0.42,
+        "red_k": true,
+        "intraday_position": 0.75,
+        "name": "台積電",
+        "code": "2330"
+      },
+      "signals": {
+        "vwap": 89.437,
+        "relative_volume": 0.35,
+        "orderbook_imbalance": -0.974,
+        "orderbook_risk_cap": 75,
+        "pullback_hold_vwap": true,
+        "distance_to_vwap_pct": 1.19
+      },
+      "results": {}
     }
   ]
 }
