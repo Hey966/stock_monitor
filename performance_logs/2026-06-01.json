@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-01T01:29:04.026920+00:00",
+  "updated_at": "2026-06-01T01:29:08.237915+00:00",
   "count": 20,
   "items": [
     {
@@ -88,14 +88,14 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-01T01:29:02.772252+00:00",
-      "updated_at": "2026-06-01T01:29:03.734365+00:00",
+      "updated_at": "2026-06-01T01:29:07.705069+00:00",
       "status": "open",
       "code": "3481",
       "name": "群創",
       "sector": "面板",
       "entry_price": 55.8,
       "last_price": 55.8,
-      "best_price": 55.8,
+      "best_price": 55.9,
       "worst_price": 55.8,
       "score": 86,
       "change_rate_at_signal": 9.41,
@@ -103,10 +103,10 @@
       "alert": null,
       "results": {
         "latest_pct": 0.0,
-        "max_gain": 0.0,
+        "max_gain": 0.179,
         "max_drawdown": 0.0
       },
-      "age_minutes": 0.02
+      "age_minutes": 0.08
     },
     {
       "key": "ai_pool:2609:80:54.6",
