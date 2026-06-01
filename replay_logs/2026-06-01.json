@@ -1,6 +1,6 @@
 {
   "version": "STX Replay Storage v2 GitHub JSON Edition",
-  "updated_at": "2026-06-01T01:28:37.771921+00:00",
+  "updated_at": "2026-06-01T01:28:38.903320+00:00",
   "count": 12,
   "items": [
     {
@@ -90,7 +90,7 @@
     {
       "key": "3481:40:blocked:54.6",
       "created_at": "2026-06-01T01:23:23.234041+00:00",
-      "updated_at": "2026-06-01T01:28:37.219049+00:00",
+      "updated_at": "2026-06-01T01:28:38.310930+00:00",
       "status": "open",
       "code": "3481",
       "name": "群創",
@@ -98,10 +98,10 @@
       "level": "blocked",
       "action": "禁止進場，等待回測不破",
       "entry_price": 54.6,
-      "last_price": 55.4,
+      "last_price": 55.5,
       "best_price": 55.5,
       "worst_price": 54.4,
-      "age_minutes": 5.23,
+      "age_minutes": 5.25,
       "trap_block": true,
       "traps": [
         "價格離 VWAP 過遠，追價風險過高"
@@ -124,7 +124,7 @@
         "distance_to_vwap_pct": 4.21
       },
       "results": {
-        "latest_pct": 1.465,
+        "latest_pct": 1.648,
         "max_gain": 1.648,
         "max_drawdown": -0.366,
         "pct_5m": 1.465
@@ -343,7 +343,7 @@
     {
       "key": "3481:43:blocked:55.3",
       "created_at": "2026-06-01T01:28:07.809092+00:00",
-      "updated_at": "2026-06-01T01:28:37.219065+00:00",
+      "updated_at": "2026-06-01T01:28:38.310945+00:00",
       "status": "open",
       "code": "3481",
       "name": "群創",
@@ -351,10 +351,10 @@
       "level": "blocked",
       "action": "禁止進場，等待回測不破",
       "entry_price": 55.3,
-      "last_price": 55.4,
+      "last_price": 55.5,
       "best_price": 55.5,
       "worst_price": 55.3,
-      "age_minutes": 0.49,
+      "age_minutes": 0.51,
       "trap_block": true,
       "traps": [
         "價格離 VWAP 過遠，追價風險過高"
@@ -377,7 +377,7 @@
         "distance_to_vwap_pct": 5.22
       },
       "results": {
-        "latest_pct": 0.181,
+        "latest_pct": 0.362,
         "max_gain": 0.362,
         "max_drawdown": 0.0
       }
@@ -385,7 +385,7 @@
     {
       "key": "3481:33:blocked:55.3",
       "created_at": "2026-06-01T01:28:15.966688+00:00",
-      "updated_at": "2026-06-01T01:28:37.219071+00:00",
+      "updated_at": "2026-06-01T01:28:38.310951+00:00",
       "status": "open",
       "code": "3481",
       "name": "群創",
@@ -393,10 +393,10 @@
       "level": "blocked",
       "action": "禁止進場，等待回測不破",
       "entry_price": 55.3,
-      "last_price": 55.4,
+      "last_price": 55.5,
       "best_price": 55.5,
       "worst_price": 55.3,
-      "age_minutes": 0.35,
+      "age_minutes": 0.37,
       "trap_block": true,
       "traps": [
         "價格離 VWAP 過遠，追價風險過高"
@@ -419,7 +419,7 @@
         "distance_to_vwap_pct": 5.22
       },
       "results": {
-        "latest_pct": 0.181,
+        "latest_pct": 0.362,
         "max_gain": 0.362,
         "max_drawdown": 0.0
       }
@@ -427,7 +427,7 @@
     {
       "key": "3481:43:blocked:55.4",
       "created_at": "2026-06-01T01:28:24.567738+00:00",
-      "updated_at": "2026-06-01T01:28:37.219076+00:00",
+      "updated_at": "2026-06-01T01:28:38.310956+00:00",
       "status": "open",
       "code": "3481",
       "name": "群創",
@@ -435,10 +435,10 @@
       "level": "blocked",
       "action": "禁止進場，等待回測不破",
       "entry_price": 55.4,
-      "last_price": 55.4,
+      "last_price": 55.5,
       "best_price": 55.5,
       "worst_price": 55.3,
-      "age_minutes": 0.21,
+      "age_minutes": 0.23,
       "trap_block": true,
       "traps": [
         "價格離 VWAP 過遠，追價風險過高"
@@ -461,7 +461,7 @@
         "distance_to_vwap_pct": 5.4
       },
       "results": {
-        "latest_pct": 0.0,
+        "latest_pct": 0.181,
         "max_gain": 0.181,
         "max_drawdown": -0.181
       }
@@ -469,7 +469,7 @@
     {
       "key": "3481:33:blocked:55.4",
       "created_at": "2026-06-01T01:28:32.583459+00:00",
-      "updated_at": "2026-06-01T01:28:37.219081+00:00",
+      "updated_at": "2026-06-01T01:28:38.310962+00:00",
       "status": "open",
       "code": "3481",
       "name": "群創",
@@ -477,10 +477,10 @@
       "level": "blocked",
       "action": "禁止進場，等待回測不破",
       "entry_price": 55.4,
-      "last_price": 55.4,
+      "last_price": 55.5,
       "best_price": 55.5,
       "worst_price": 55.4,
-      "age_minutes": 0.08,
+      "age_minutes": 0.1,
       "trap_block": true,
       "traps": [
         "價格離 VWAP 過遠，追價風險過高"
@@ -503,7 +503,7 @@
         "distance_to_vwap_pct": 5.4
       },
       "results": {
-        "latest_pct": 0.0,
+        "latest_pct": 0.181,
         "max_gain": 0.181,
         "max_drawdown": 0.0
       }
