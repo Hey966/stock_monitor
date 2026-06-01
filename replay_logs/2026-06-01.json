@@ -1,6 +1,6 @@
 {
   "version": "STX Replay Storage v2 GitHub JSON Edition",
-  "updated_at": "2026-06-01T01:26:40.053950+00:00",
+  "updated_at": "2026-06-01T01:26:46.023366+00:00",
   "count": 5,
   "items": [
     {
@@ -132,7 +132,7 @@
     {
       "key": "6770:26:blocked:90.5",
       "created_at": "2026-06-01T01:26:21.355071+00:00",
-      "updated_at": "2026-06-01T01:26:39.275005+00:00",
+      "updated_at": "2026-06-01T01:26:45.688708+00:00",
       "status": "open",
       "code": "6770",
       "name": "力積電",
@@ -140,10 +140,10 @@
       "level": "blocked",
       "action": "禁止進場，等待回測不破",
       "entry_price": 90.5,
-      "last_price": 90.7,
-      "best_price": 90.7,
+      "last_price": 90.8,
+      "best_price": 90.8,
       "worst_price": 90.5,
-      "age_minutes": 0.3,
+      "age_minutes": 0.41,
       "trap_block": true,
       "traps": [
         "開高走低，疑似誘多陷阱"
@@ -166,15 +166,15 @@
         "distance_to_vwap_pct": 1.19
       },
       "results": {
-        "latest_pct": 0.221,
-        "max_gain": 0.221,
+        "latest_pct": 0.331,
+        "max_gain": 0.331,
         "max_drawdown": 0.0
       }
     },
     {
       "key": "6770:21:blocked:90.7",
       "created_at": "2026-06-01T01:26:32.660650+00:00",
-      "updated_at": "2026-06-01T01:26:39.275020+00:00",
+      "updated_at": "2026-06-01T01:26:45.688726+00:00",
       "status": "open",
       "code": "6770",
       "name": "力積電",
@@ -182,10 +182,10 @@
       "level": "blocked",
       "action": "禁止進場，等待回測不破",
       "entry_price": 90.7,
-      "last_price": 90.7,
-      "best_price": 90.7,
+      "last_price": 90.8,
+      "best_price": 90.8,
       "worst_price": 90.7,
-      "age_minutes": 0.11,
+      "age_minutes": 0.22,
       "trap_block": true,
       "traps": [
         "開高走低，疑似誘多陷阱"
@@ -208,8 +208,8 @@
         "distance_to_vwap_pct": 1.41
       },
       "results": {
-        "latest_pct": 0.0,
-        "max_gain": 0.0,
+        "latest_pct": 0.11,
+        "max_gain": 0.11,
         "max_drawdown": 0.0
       }
     }
