@@ -1,7 +1,7 @@
 {
   "version": "STX Replay Storage v2 GitHub JSON Edition",
-  "updated_at": "2026-06-01T01:23:21.736227+00:00",
-  "count": 2,
+  "updated_at": "2026-06-01T01:23:23.562106+00:00",
+  "count": 3,
   "items": [
     {
       "key": "2454:40:blocked:4590.0",
@@ -86,6 +86,44 @@
         "max_gain": 0.0,
         "max_drawdown": -0.326
       }
+    },
+    {
+      "key": "3481:40:blocked:54.6",
+      "created_at": "2026-06-01T01:23:23.234041+00:00",
+      "updated_at": "2026-06-01T01:23:23.234052+00:00",
+      "status": "open",
+      "code": "3481",
+      "name": "群創",
+      "score": 40,
+      "level": "blocked",
+      "action": "禁止進場，等待回測不破",
+      "entry_price": 54.6,
+      "last_price": 54.6,
+      "best_price": 54.6,
+      "worst_price": 54.6,
+      "age_minutes": 0,
+      "trap_block": true,
+      "traps": [
+        "價格離 VWAP 過遠，追價風險過高"
+      ],
+      "market_sync": {
+        "status": "bull",
+        "score": 2,
+        "change_rate": 0.42,
+        "red_k": true,
+        "intraday_position": 0.75,
+        "name": "台積電",
+        "code": "2330"
+      },
+      "signals": {
+        "vwap": 52.392,
+        "relative_volume": 0.34,
+        "orderbook_imbalance": 0.606,
+        "orderbook_risk_cap": null,
+        "pullback_hold_vwap": true,
+        "distance_to_vwap_pct": 4.21
+      },
+      "results": {}
     }
   ]
 }
