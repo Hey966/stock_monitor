@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-01T06:35:05.379674+00:00",
+  "updated_at": "2026-06-01T09:12:34.573341+00:00",
   "count": 118,
   "items": [
     {
@@ -229,25 +229,29 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-01T01:29:02.772296+00:00",
-      "updated_at": "2026-06-01T01:31:42.480208+00:00",
-      "status": "open",
+      "updated_at": "2026-06-01T09:12:34.017245+00:00",
+      "status": "closed",
       "code": "2330",
       "name": "台積電",
       "sector": "半導體",
       "entry_price": 2365.0,
-      "last_price": 2370.0,
+      "last_price": 2355.0,
       "best_price": 2370.0,
-      "worst_price": 2365.0,
+      "worst_price": 2355.0,
       "score": 71,
       "change_rate_at_signal": 0.42,
       "volume_ratio_at_signal": 0.07,
       "alert": null,
       "results": {
-        "latest_pct": 0.211,
+        "latest_pct": -0.423,
         "max_gain": 0.211,
-        "max_drawdown": 0.0
+        "max_drawdown": -0.423,
+        "pct_5m": -0.423,
+        "pct_10m": -0.423,
+        "pct_30m": -0.423,
+        "pct_close_proxy": -0.423
       },
-      "age_minutes": 2.66
+      "age_minutes": 463.52
     },
     {
       "key": "ai_pool:2376:70:388.5",
@@ -789,20 +793,29 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-01T01:54:36.811689+00:00",
-      "updated_at": "2026-06-01T01:54:36.811692+00:00",
-      "status": "open",
+      "updated_at": "2026-06-01T09:12:34.017275+00:00",
+      "status": "closed",
       "code": "2330",
       "name": "台積電",
       "sector": "半導體",
       "entry_price": 2370.0,
-      "last_price": 2370.0,
+      "last_price": 2355.0,
       "best_price": 2370.0,
-      "worst_price": 2370.0,
+      "worst_price": 2355.0,
       "score": 72,
       "change_rate_at_signal": 0.63,
       "volume_ratio_at_signal": 0.09,
       "alert": null,
-      "results": {}
+      "results": {
+        "latest_pct": -0.633,
+        "max_gain": 0.0,
+        "max_drawdown": -0.633,
+        "pct_5m": -0.633,
+        "pct_10m": -0.633,
+        "pct_30m": -0.633,
+        "pct_close_proxy": -0.633
+      },
+      "age_minutes": 437.95
     },
     {
       "key": "fund_flow:3017:93:2825.0",
