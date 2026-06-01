@@ -13,7 +13,7 @@ from pydantic import BaseModel
 
 from news_engine import get_news_payload
 from chips_engine import get_chips_payload
-from discord_engine import send_battle_report, send_discord_alert
+from discord_engine import send_battle_report, send_discord_alert, send_grouped_alerts
 from fund_flow_engine import build_fund_flow_report
 from performance_engine import (
     get_module_performance,
@@ -314,15 +314,11 @@ def build_breakout_alerts(limit: int = 20, min_score: int = 85, send: bool = Fal
 def build_fund_flow(limit: int = 20, send: bool = False, record: bool = False) -> dict[str, Any]:
     scan = build_market_scan(limit=max(10, min(limit, 30)))
     report = build_fund_flow_report(scan, limit=limit)
+    send_result = None
     if send:
-        for item in report.get("alerts", [])[:8]:
-            send_discord_alert({
-                "code": item.get("code"),
-                "score": item.get("fund_score"),
-                "title": item.get("alert") or "STX 資金流警報",
-                "message": f"{item.get('name') or ''}｜{item.get('sector')}｜資金 {item.get('fund_score')}｜主力 {item.get('big_player_score')}｜隔日沖風險 {item.get('day_trade_risk')}｜{item.get('chip_signal')}。",
-            })
+        send_result = send_grouped_alerts(report.get("alerts", [])[:20], title="STX 資金流警報")
     report["sent"] = bool(send)
+    report["send_result"] = send_result
     report["recorded"] = record_module_signals("fund_flow", report.get("alerts", []), reason="api_fund_flow", limit=limit) if record else None
     return report
 
