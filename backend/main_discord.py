@@ -5,10 +5,12 @@ import os
 import urllib.request
 
 from dotenv import load_dotenv
-from fastapi import HTTPException, Query, Request
+from fastapi import BackgroundTasks, HTTPException, Query, Request
 
 from discord_interactions_engine import verify_discord_signature
-from main import app
+from fund_flow_engine import build_fund_flow_report
+from main import app, build_market_scan
+from stx_query_engine import build_stx_query_response
 
 load_dotenv()
 DISCORD_PUBLIC_KEY = os.getenv("DISCORD_PUBLIC_KEY", "").strip()
@@ -25,8 +27,39 @@ def _get_option_q(payload: dict) -> str:
     return ""
 
 
+def _run_stx_query(q: str) -> str:
+    scan = build_market_scan(limit=10)
+    fund_report = build_fund_flow_report(scan, limit=20)
+    result = build_stx_query_response(q=q, scan=scan, fund_report=fund_report, limit=5)
+    return str(result.get("message") or "STX 查詢沒有回傳內容。")[:1900]
+
+
+def _patch_original_response(application_id: str, token: str, content: str) -> None:
+    url = f"https://discord.com/api/v10/webhooks/{application_id}/{token}/messages/@original"
+    body = json.dumps({"content": content[:1900]}).encode("utf-8")
+    req = urllib.request.Request(
+        url,
+        data=body,
+        headers={"Content-Type": "application/json", "User-Agent": "STX-Discord-Analysis"},
+        method="PATCH",
+    )
+    with urllib.request.urlopen(req, timeout=20) as res:
+        res.read()
+
+
+def _background_stx_reply(application_id: str, token: str, q: str) -> None:
+    try:
+        content = _run_stx_query(q)
+    except Exception as exc:
+        content = f"STX 查詢失敗：{str(exc)[:160]}"
+    try:
+        _patch_original_response(application_id, token, content)
+    except Exception as exc:
+        print(f"Failed to patch Discord response: {exc}")
+
+
 @app.post("/api/discord-interactions")
-async def discord_interactions(request: Request):
+async def discord_interactions(request: Request, background_tasks: BackgroundTasks):
     body = await request.body()
     verify_discord_signature(DISCORD_PUBLIC_KEY, request, body)
     payload = json.loads(body.decode("utf-8"))
@@ -38,7 +71,12 @@ async def discord_interactions(request: Request):
     if not q:
         return {"type": 4, "data": {"content": "請輸入查詢內容，例如：/stx q:2356", "flags": 64}}
 
-    return {"type": 4, "data": {"content": f"✅ STX Bot 已收到查詢：{q}\n互動通道正常，下一步接完整股票分析。"}}
+    application_id = str(payload.get("application_id") or DISCORD_APPLICATION_ID)
+    token = str(payload.get("token") or "")
+    if application_id and token:
+        background_tasks.add_task(_background_stx_reply, application_id, token, q)
+
+    return {"type": 5, "data": {"content": f"STX 查詢中：{q}"}}
 
 
 @app.get("/api/discord-register-commands")
