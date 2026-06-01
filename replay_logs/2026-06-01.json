@@ -1,7 +1,7 @@
 {
   "version": "STX Replay Storage v2 GitHub JSON Edition",
-  "updated_at": "2026-06-01T01:49:02.896797+00:00",
-  "count": 14,
+  "updated_at": "2026-06-01T12:57:49.019309+00:00",
+  "count": 15,
   "items": [
     {
       "key": "2454:40:blocked:4590.0",
@@ -598,6 +598,45 @@
         "max_gain": 0.168,
         "max_drawdown": 0.0
       }
+    },
+    {
+      "key": "2317:0:blocked:293.5",
+      "created_at": "2026-06-01T12:57:48.473647+00:00",
+      "updated_at": "2026-06-01T12:57:48.473659+00:00",
+      "status": "open",
+      "code": "2317",
+      "name": "鴻海",
+      "score": 0,
+      "level": "blocked",
+      "action": "禁止進場，等待回測不破",
+      "entry_price": 293.5,
+      "last_price": 293.5,
+      "best_price": 293.5,
+      "worst_price": 293.5,
+      "age_minutes": 0,
+      "trap_block": true,
+      "traps": [
+        "開高走低，疑似誘多陷阱",
+        "高量但價格不在高位，疑似出貨或壓盤"
+      ],
+      "market_sync": {
+        "status": "neutral",
+        "score": 0,
+        "change_rate": 0,
+        "red_k": true,
+        "intraday_position": 0.077,
+        "name": "台積電",
+        "code": "2330"
+      },
+      "signals": {
+        "vwap": 295.327,
+        "relative_volume": 3.09,
+        "orderbook_imbalance": -0.156,
+        "orderbook_risk_cap": null,
+        "pullback_hold_vwap": false,
+        "distance_to_vwap_pct": -0.62
+      },
+      "results": {}
     }
   ]
 }
