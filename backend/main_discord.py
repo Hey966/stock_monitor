@@ -7,10 +7,8 @@ import urllib.request
 from dotenv import load_dotenv
 from fastapi import HTTPException, Query, Request
 
-from discord_interactions_engine import build_discord_response, verify_discord_signature
-from fund_flow_engine import build_fund_flow_report
-from main import app, build_market_scan
-from stx_query_engine import build_stx_query_response
+from discord_interactions_engine import verify_discord_signature
+from main import app
 
 load_dotenv()
 DISCORD_PUBLIC_KEY = os.getenv("DISCORD_PUBLIC_KEY", "").strip()
@@ -19,18 +17,28 @@ DISCORD_APPLICATION_ID = os.getenv("DISCORD_APPLICATION_ID", "").strip()
 DISCORD_GUILD_ID = os.getenv("DISCORD_GUILD_ID", "").strip()
 
 
-def run_stx_query(q: str) -> str:
-    scan = build_market_scan(limit=10)
-    fund_report = build_fund_flow_report(scan, limit=20)
-    result = build_stx_query_response(q=q, scan=scan, fund_report=fund_report, limit=5)
-    return str(result.get("message") or "STX 查詢沒有回傳內容。")[:1900]
+def _get_option_q(payload: dict) -> str:
+    data = payload.get("data") or {}
+    for opt in data.get("options") or []:
+        if opt.get("name") == "q":
+            return str(opt.get("value") or "").strip()
+    return ""
 
 
 @app.post("/api/discord-interactions")
 async def discord_interactions(request: Request):
     body = await request.body()
     verify_discord_signature(DISCORD_PUBLIC_KEY, request, body)
-    return build_discord_response(body, run_stx_query)
+    payload = json.loads(body.decode("utf-8"))
+
+    if payload.get("type") == 1:
+        return {"type": 1}
+
+    q = _get_option_q(payload)
+    if not q:
+        return {"type": 4, "data": {"content": "請輸入查詢內容，例如：/stx q:2356", "flags": 64}}
+
+    return {"type": 4, "data": {"content": f"✅ STX Bot 已收到查詢：{q}\n互動通道正常，下一步接完整股票分析。"}}
 
 
 @app.get("/api/discord-register-commands")
