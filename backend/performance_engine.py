@@ -16,6 +16,7 @@ GITHUB_TOKEN = os.getenv("GITHUB_TOKEN", "")
 GITHUB_REPO = os.getenv("GITHUB_REPO", "Hey966/stock_monitor")
 GITHUB_BRANCH = os.getenv("GITHUB_BRANCH", "main")
 GITHUB_LOG_DIR = os.getenv("STX_PERFORMANCE_GITHUB_DIR", "performance_logs")
+LAST_GITHUB_ERROR = ""
 
 
 def _now_dt() -> datetime:
@@ -78,6 +79,11 @@ def _github_headers() -> dict[str, str]:
     return headers
 
 
+def _set_github_error(message: str) -> None:
+    global LAST_GITHUB_ERROR
+    LAST_GITHUB_ERROR = message[:300]
+
+
 def _github_api(path: str, method: str = "GET", payload: dict[str, Any] | None = None) -> dict[str, Any] | None:
     if not GITHUB_TOKEN:
         return None
@@ -92,8 +98,14 @@ def _github_api(path: str, method: str = "GET", payload: dict[str, Any] | None =
     except urllib.error.HTTPError as exc:
         if exc.code == 404:
             return None
+        try:
+            body = exc.read().decode("utf-8")
+        except Exception:
+            body = str(exc)
+        _set_github_error(f"HTTP {exc.code}: {body}")
         raise
-    except Exception:
+    except Exception as exc:
+        _set_github_error(str(exc))
         return None
 
 
@@ -141,17 +153,24 @@ def _github_write_day(path: str, rows: list[dict[str, Any]]) -> bool:
             if exc.code == 409 and attempt < 2:
                 time.sleep(0.35 * (attempt + 1))
                 continue
-            raise
+            _set_github_error(f"GitHub write skipped after HTTP {exc.code}")
+            return False
+        except Exception as exc:
+            _set_github_error(f"GitHub write skipped: {exc}")
+            return False
     return False
 
 
 def _load(limit: int | None = None) -> list[dict[str, Any]]:
     rows = _cache_load()
     if not rows and GITHUB_TOKEN:
-        gh_rows, _ = _github_read_day(_today_path())
-        if gh_rows:
-            rows = gh_rows
-            _cache_save(rows)
+        try:
+            gh_rows, _ = _github_read_day(_today_path())
+            if gh_rows:
+                rows = gh_rows
+                _cache_save(rows)
+        except Exception:
+            pass
     return rows[-limit:] if limit else rows
 
 
@@ -159,7 +178,11 @@ def _save(rows: list[dict[str, Any]]) -> bool:
     _cache_save(rows)
     today = _now_dt().date().isoformat()
     today_rows = [r for r in rows if str(r.get("created_at", "")).startswith(today)]
-    return _github_write_day(_today_path(), today_rows) if today_rows else False
+    try:
+        return _github_write_day(_today_path(), today_rows) if today_rows else False
+    except Exception as exc:
+        _set_github_error(f"GitHub sync failed but cache saved: {exc}")
+        return False
 
 
 def _module_score(item: dict[str, Any], module: str) -> int:
@@ -213,7 +236,7 @@ def record_module_signal(module: str, item: dict[str, Any], reason: str = "auto"
     rows.append(row)
     synced = _save(rows)
     row["github_synced"] = synced
-    return {"ok": True, "saved": True, "github_synced": synced, "item": row}
+    return {"ok": True, "saved": True, "github_synced": synced, "github_error": LAST_GITHUB_ERROR if not synced else "", "item": row}
 
 
 def record_module_signals(module: str, items: list[dict[str, Any]], reason: str = "auto", limit: int = 20) -> dict[str, Any]:
@@ -233,7 +256,7 @@ def record_module_signals(module: str, items: list[dict[str, Any]], reason: str 
         existing_open.add(str(row.get("key")))
         saved += 1
     synced = _save(rows) if saved else False
-    return {"ok": True, "module": module, "saved": saved, "skipped": skipped, "github_synced": synced}
+    return {"ok": True, "module": module, "saved": saved, "skipped": skipped, "github_synced": synced, "github_error": LAST_GITHUB_ERROR if saved and not synced else ""}
 
 
 def update_module_results(code: str, current_price: float | int | None) -> dict[str, Any]:
@@ -273,7 +296,7 @@ def update_module_results(code: str, current_price: float | int | None) -> dict[
         updated += 1
 
     synced = _save(rows) if updated else False
-    return {"ok": True, "updated": updated, "github_synced": synced}
+    return {"ok": True, "updated": updated, "github_synced": synced, "github_error": LAST_GITHUB_ERROR if updated and not synced else ""}
 
 
 def get_performance_logs(limit: int = 200) -> dict[str, Any]:
@@ -285,6 +308,7 @@ def get_performance_logs(limit: int = 200) -> dict[str, Any]:
         "github_enabled": bool(GITHUB_TOKEN),
         "github_repo": GITHUB_REPO,
         "github_path": _today_path(),
+        "github_last_error": LAST_GITHUB_ERROR,
         "count": len(rows),
         "items": rows[-limit:],
     }
@@ -347,6 +371,7 @@ def get_module_performance() -> dict[str, Any]:
         "github_enabled": bool(GITHUB_TOKEN),
         "github_repo": GITHUB_REPO,
         "github_path": _today_path(),
+        "github_last_error": LAST_GITHUB_ERROR,
         "total_signals": len(rows),
         "tracked_results": len(_tracked(rows, "latest_pct")),
         "modules": module_stats,
