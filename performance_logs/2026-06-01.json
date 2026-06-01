@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-01T01:31:54.097080+00:00",
+  "updated_at": "2026-06-01T01:31:56.197159+00:00",
   "count": 20,
   "items": [
     {
@@ -88,7 +88,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-01T01:29:02.772252+00:00",
-      "updated_at": "2026-06-01T01:31:50.102003+00:00",
+      "updated_at": "2026-06-01T01:31:52.163604+00:00",
       "status": "open",
       "code": "3481",
       "name": "群創",
@@ -106,7 +106,7 @@
         "max_gain": 0.538,
         "max_drawdown": -0.179
       },
-      "age_minutes": 2.79
+      "age_minutes": 2.82
     },
     {
       "key": "ai_pool:2609:80:54.6",
@@ -198,7 +198,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-01T01:29:02.772289+00:00",
-      "updated_at": "2026-06-01T01:29:02.772291+00:00",
+      "updated_at": "2026-06-01T01:31:53.805275+00:00",
       "status": "open",
       "code": "2618",
       "name": "長榮航",
@@ -211,7 +211,12 @@
       "change_rate_at_signal": 3.19,
       "volume_ratio_at_signal": 0.12,
       "alert": null,
-      "results": {}
+      "results": {
+        "latest_pct": 0.0,
+        "max_gain": 0.0,
+        "max_drawdown": 0.0
+      },
+      "age_minutes": 2.85
     },
     {
       "key": "ai_pool:2330:71:2365.0",
@@ -368,7 +373,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-01T01:29:02.772344+00:00",
-      "updated_at": "2026-06-01T01:29:02.772346+00:00",
+      "updated_at": "2026-06-01T01:31:51.250102+00:00",
       "status": "open",
       "code": "3661",
       "name": "世芯-KY",
@@ -381,7 +386,12 @@
       "change_rate_at_signal": 4.86,
       "volume_ratio_at_signal": 0.33,
       "alert": null,
-      "results": {}
+      "results": {
+        "latest_pct": 0.0,
+        "max_gain": 0.0,
+        "max_drawdown": 0.0
+      },
+      "age_minutes": 2.81
     },
     {
       "key": "ai_pool:5347:58:180.0",
