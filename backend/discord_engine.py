@@ -31,12 +31,81 @@ def send_discord_alert(payload: dict[str, Any]) -> dict[str, Any]:
     return _post_discord(content)
 
 
+def _num(v: Any, default: float = 0.0) -> float:
+    try:
+        if v is None:
+            return default
+        return float(v)
+    except Exception:
+        return default
+
+
 def _pct(v: Any) -> str:
     try:
         n = float(v)
         return f"{n:+.2f}%"
     except Exception:
         return "-"
+
+
+def _score(item: dict[str, Any]) -> int:
+    for key in ["fund_score", "score", "big_player_score", "day_trade_risk"]:
+        try:
+            if item.get(key) is not None:
+                return int(float(item.get(key)))
+        except Exception:
+            pass
+    return 0
+
+
+def send_grouped_alerts(
+    items: list[dict[str, Any]],
+    title: str = "STX 分類警報",
+    max_groups: int = 6,
+    max_items_per_group: int = 5,
+) -> dict[str, Any]:
+    if not items:
+        return {"ok": True, "sent": False, "reason": "empty"}
+
+    groups: dict[str, list[dict[str, Any]]] = {}
+    for item in items:
+        sector = str(item.get("sector") or "其他")
+        groups.setdefault(sector, []).append(item)
+
+    ordered_groups = sorted(
+        groups.items(),
+        key=lambda kv: (max(_score(x) for x in kv[1]), len(kv[1])),
+        reverse=True,
+    )[:max_groups]
+
+    lines = [f"📡 **{title}｜產業分類**", f"時間：{datetime.now().strftime('%H:%M:%S')}", f"訊號：{len(items)} 檔", ""]
+
+    for sector, rows in ordered_groups:
+        rows = sorted(rows, key=_score, reverse=True)[:max_items_per_group]
+        avg_score = round(sum(_score(x) for x in rows) / max(len(rows), 1), 1)
+        lines.append(f"🔥 **{sector}｜{len(rows)}檔｜均分 {avg_score}**")
+        for item in rows:
+            code = item.get("code") or "-"
+            name = item.get("name") or ""
+            score = _score(item)
+            fund = item.get("fund_score")
+            big = item.get("big_player_score")
+            risk = item.get("day_trade_risk")
+            chip = item.get("chip_signal") or item.get("mood") or "-"
+            change = _pct(item.get("change_rate"))
+            meta = []
+            if fund is not None:
+                meta.append(f"資金{fund}")
+            if big is not None:
+                meta.append(f"主力{big}")
+            if risk is not None:
+                meta.append(f"隔沖{risk}")
+            meta_text = "｜".join(meta) if meta else chip
+            lines.append(f"- {code} {name}｜{score}分｜{change}｜{meta_text}")
+        lines.append("")
+
+    lines.append("💬 查詢提示：輸入股票代號、股票名稱或族群，例如：2356、英業達、AI、半導體。")
+    return _post_discord("\n".join(lines)[:1900])
 
 
 def send_battle_report(scan: dict[str, Any], stats: dict[str, Any] | None = None) -> dict[str, Any]:
