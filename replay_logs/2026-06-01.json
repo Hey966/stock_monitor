@@ -1,12 +1,12 @@
 {
   "version": "STX Replay Storage v2 GitHub JSON Edition",
-  "updated_at": "2026-06-01T01:23:05.508690+00:00",
+  "updated_at": "2026-06-01T01:23:07.516608+00:00",
   "count": 1,
   "items": [
     {
       "key": "2454:40:blocked:4590.0",
       "created_at": "2026-06-01T01:22:55.586203+00:00",
-      "updated_at": "2026-06-01T01:23:05.200628+00:00",
+      "updated_at": "2026-06-01T01:23:07.191916+00:00",
       "status": "open",
       "code": "2454",
       "name": "聯發科",
@@ -14,10 +14,10 @@
       "level": "blocked",
       "action": "禁止進場，等待回測不破",
       "entry_price": 4590.0,
-      "last_price": 4585.0,
+      "last_price": 4590.0,
       "best_price": 4590.0,
       "worst_price": 4585.0,
-      "age_minutes": 0.16,
+      "age_minutes": 0.19,
       "trap_block": true,
       "traps": [
         "價格離 VWAP 過遠，追價風險過高"
@@ -40,7 +40,7 @@
         "distance_to_vwap_pct": 4.52
       },
       "results": {
-        "latest_pct": -0.109,
+        "latest_pct": 0.0,
         "max_gain": 0.0,
         "max_drawdown": -0.109
       }
