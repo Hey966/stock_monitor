@@ -1,6 +1,6 @@
 {
   "version": "STX Replay Storage v2 GitHub JSON Edition",
-  "updated_at": "2026-06-01T01:26:24.595677+00:00",
+  "updated_at": "2026-06-01T01:26:25.573907+00:00",
   "count": 4,
   "items": [
     {
@@ -132,7 +132,7 @@
     {
       "key": "6770:26:blocked:90.5",
       "created_at": "2026-06-01T01:26:21.355071+00:00",
-      "updated_at": "2026-06-01T01:26:24.291839+00:00",
+      "updated_at": "2026-06-01T01:26:25.265076+00:00",
       "status": "open",
       "code": "6770",
       "name": "力積電",
@@ -140,10 +140,10 @@
       "level": "blocked",
       "action": "禁止進場，等待回測不破",
       "entry_price": 90.5,
-      "last_price": 90.5,
+      "last_price": 90.6,
       "best_price": 90.6,
       "worst_price": 90.5,
-      "age_minutes": 0.05,
+      "age_minutes": 0.07,
       "trap_block": true,
       "traps": [
         "開高走低，疑似誘多陷阱"
@@ -166,7 +166,7 @@
         "distance_to_vwap_pct": 1.19
       },
       "results": {
-        "latest_pct": 0.0,
+        "latest_pct": 0.11,
         "max_gain": 0.11,
         "max_drawdown": 0.0
       }
