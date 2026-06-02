@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-02T12:18:46.120482+00:00",
+  "updated_at": "2026-06-02T12:37:46.925792+00:00",
   "count": 34,
   "items": [
     {
@@ -37,8 +37,8 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-02T05:50:57.363330+00:00",
-      "updated_at": "2026-06-02T05:50:57.363333+00:00",
-      "status": "open",
+      "updated_at": "2026-06-02T12:37:46.590441+00:00",
+      "status": "closed",
       "code": "3231",
       "name": "緯創",
       "sector": "AI伺服器",
@@ -50,7 +50,16 @@
       "change_rate_at_signal": 9.77,
       "volume_ratio_at_signal": 2.98,
       "alert": null,
-      "results": {}
+      "results": {
+        "latest_pct": 0.0,
+        "max_gain": 0.0,
+        "max_drawdown": 0.0,
+        "pct_5m": 0.0,
+        "pct_10m": 0.0,
+        "pct_30m": 0.0,
+        "pct_close_proxy": 0.0
+      },
+      "age_minutes": 406.82
     },
     {
       "key": "ai_pool:2324:100:44.35",
@@ -464,8 +473,8 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-02T05:51:05.283993+00:00",
-      "updated_at": "2026-06-02T05:51:05.283996+00:00",
-      "status": "open",
+      "updated_at": "2026-06-02T12:37:46.590469+00:00",
+      "status": "closed",
       "code": "3231",
       "name": "緯創",
       "sector": "AI伺服器",
@@ -477,7 +486,16 @@
       "change_rate_at_signal": 9.77,
       "volume_ratio_at_signal": 2.98,
       "alert": "隔日沖風險警報",
-      "results": {}
+      "results": {
+        "latest_pct": 0.0,
+        "max_gain": 0.0,
+        "max_drawdown": 0.0,
+        "pct_5m": 0.0,
+        "pct_10m": 0.0,
+        "pct_30m": 0.0,
+        "pct_close_proxy": 0.0
+      },
+      "age_minutes": 406.69
     },
     {
       "key": "fund_flow:2324:100:44.35",
