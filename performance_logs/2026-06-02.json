@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-02T12:42:56.218032+00:00",
+  "updated_at": "2026-06-02T12:42:57.953086+00:00",
   "count": 34,
   "items": [
     {
@@ -258,7 +258,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-02T12:42:25.726620+00:00",
-      "updated_at": "2026-06-02T12:42:25.726623+00:00",
+      "updated_at": "2026-06-02T12:42:57.341681+00:00",
       "status": "open",
       "code": "2376",
       "name": "技嘉",
@@ -271,7 +271,12 @@
       "change_rate_at_signal": 0.9,
       "volume_ratio_at_signal": 0.66,
       "alert": null,
-      "results": {}
+      "results": {
+        "latest_pct": 0.0,
+        "max_gain": 0.0,
+        "max_drawdown": 0.0
+      },
+      "age_minutes": 0.53
     },
     {
       "key": "ai_pool:3324:58:1165.0",
