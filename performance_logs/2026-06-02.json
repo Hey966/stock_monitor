@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-02T12:38:15.139682+00:00",
+  "updated_at": "2026-06-02T12:38:18.013168+00:00",
   "count": 34,
   "items": [
     {
@@ -965,8 +965,8 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-02T05:51:05.284126+00:00",
-      "updated_at": "2026-06-02T05:51:05.284129+00:00",
-      "status": "open",
+      "updated_at": "2026-06-02T12:38:13.513234+00:00",
+      "status": "closed",
       "code": "6215",
       "name": "和椿",
       "sector": "PCB",
@@ -978,7 +978,16 @@
       "change_rate_at_signal": -8.13,
       "volume_ratio_at_signal": 1.31,
       "alert": "資金退潮警報",
-      "results": {}
+      "results": {
+        "latest_pct": 0.0,
+        "max_gain": 0.0,
+        "max_drawdown": 0.0,
+        "pct_5m": 0.0,
+        "pct_10m": 0.0,
+        "pct_30m": 0.0,
+        "pct_close_proxy": 0.0
+      },
+      "age_minutes": 407.14
     }
   ]
 }
