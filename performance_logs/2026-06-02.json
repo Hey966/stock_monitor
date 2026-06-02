@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-02T12:38:04.367917+00:00",
+  "updated_at": "2026-06-02T12:38:06.117486+00:00",
   "count": 34,
   "items": [
     {
@@ -385,8 +385,8 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-02T05:50:57.363436+00:00",
-      "updated_at": "2026-06-02T05:50:57.363440+00:00",
-      "status": "open",
+      "updated_at": "2026-06-02T12:38:02.325984+00:00",
+      "status": "closed",
       "code": "1514",
       "name": "亞力",
       "sector": "重電",
@@ -398,15 +398,24 @@
       "change_rate_at_signal": -1.97,
       "volume_ratio_at_signal": 0.91,
       "alert": null,
-      "results": {}
+      "results": {
+        "latest_pct": 0.0,
+        "max_gain": 0.0,
+        "max_drawdown": 0.0,
+        "pct_5m": 0.0,
+        "pct_10m": 0.0,
+        "pct_30m": 0.0,
+        "pct_close_proxy": 0.0
+      },
+      "age_minutes": 407.08
     },
     {
       "key": "ai_pool:2609:47:53.6",
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-02T05:50:57.363449+00:00",
-      "updated_at": "2026-06-02T05:50:57.363452+00:00",
-      "status": "open",
+      "updated_at": "2026-06-02T12:38:05.499939+00:00",
+      "status": "closed",
       "code": "2609",
       "name": "陽明",
       "sector": "航運",
@@ -418,7 +427,16 @@
       "change_rate_at_signal": -2.36,
       "volume_ratio_at_signal": 1.43,
       "alert": null,
-      "results": {}
+      "results": {
+        "latest_pct": 0.0,
+        "max_gain": 0.0,
+        "max_drawdown": 0.0,
+        "pct_5m": 0.0,
+        "pct_10m": 0.0,
+        "pct_30m": 0.0,
+        "pct_close_proxy": 0.0
+      },
+      "age_minutes": 407.14
     },
     {
       "key": "ai_pool:2330:46:2380.0",
