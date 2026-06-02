@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-02T12:42:40.753247+00:00",
+  "updated_at": "2026-06-02T12:42:42.298048+00:00",
   "count": 34,
   "items": [
     {
@@ -33,7 +33,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-02T12:42:25.726524+00:00",
-      "updated_at": "2026-06-02T12:42:25.726528+00:00",
+      "updated_at": "2026-06-02T12:42:41.950581+00:00",
       "status": "open",
       "code": "3231",
       "name": "緯創",
@@ -46,7 +46,12 @@
       "change_rate_at_signal": 9.77,
       "volume_ratio_at_signal": 2.98,
       "alert": null,
-      "results": {}
+      "results": {
+        "latest_pct": 0.0,
+        "max_gain": 0.0,
+        "max_drawdown": 0.0
+      },
+      "age_minutes": 0.27
     },
     {
       "key": "ai_pool:2324:100:44.35",
@@ -438,7 +443,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-02T12:42:34.227517+00:00",
-      "updated_at": "2026-06-02T12:42:34.227520+00:00",
+      "updated_at": "2026-06-02T12:42:41.950600+00:00",
       "status": "open",
       "code": "3231",
       "name": "緯創",
@@ -451,7 +456,12 @@
       "change_rate_at_signal": 9.77,
       "volume_ratio_at_signal": 2.98,
       "alert": "隔日沖風險警報",
-      "results": {}
+      "results": {
+        "latest_pct": 0.0,
+        "max_gain": 0.0,
+        "max_drawdown": 0.0
+      },
+      "age_minutes": 0.13
     },
     {
       "key": "fund_flow:2324:100:44.35",
