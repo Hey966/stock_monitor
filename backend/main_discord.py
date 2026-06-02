@@ -10,6 +10,7 @@ from fastapi import BackgroundTasks, HTTPException, Query, Request
 from discord_interactions_engine import verify_discord_signature
 from fund_flow_engine import build_fund_flow_report
 from main import app, build_market_scan
+from performance_auto_update import update_performance_from_scan
 from stx_query_engine import build_stx_query_response
 
 load_dotenv()
@@ -77,6 +78,13 @@ async def discord_interactions(request: Request, background_tasks: BackgroundTas
         background_tasks.add_task(_background_stx_reply, application_id, token, q)
 
     return {"type": 5, "data": {"content": f"STX 查詢中：{q}"}}
+
+
+@app.get("/api/performance-auto-update")
+def performance_auto_update(limit: int = Query(30, ge=5, le=30)):
+    scan = build_market_scan(limit=limit)
+    result = update_performance_from_scan(scan)
+    return {"ok": True, "scan": {"scanned": scan.get("scanned"), "errors": scan.get("errors", [])[:5]}, "performance_update": result}
 
 
 @app.get("/api/discord-register-commands")
