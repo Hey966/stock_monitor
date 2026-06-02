@@ -25,6 +25,9 @@ jobs:
             "${API_BASE}/api/cron-run"
           echo ""
 
+          echo "Waiting for GitHub performance log sync"
+          sleep 20
+
           echo "Calling ${API_BASE}/api/performance-auto-update"
           curl --fail --show-error --silent --max-time 540 \
             "${API_BASE}/api/performance-auto-update"
