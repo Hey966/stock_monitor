@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-02T12:43:17.910225+00:00",
+  "updated_at": "2026-06-02T12:43:19.471324+00:00",
   "count": 34,
   "items": [
     {
@@ -758,7 +758,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-02T12:42:34.227610+00:00",
-      "updated_at": "2026-06-02T12:42:34.227613+00:00",
+      "updated_at": "2026-06-02T12:43:19.112420+00:00",
       "status": "open",
       "code": "2454",
       "name": "聯發科",
@@ -771,7 +771,12 @@
       "change_rate_at_signal": -0.65,
       "volume_ratio_at_signal": 0.83,
       "alert": "資金退潮警報",
-      "results": {}
+      "results": {
+        "latest_pct": 0.0,
+        "max_gain": 0.0,
+        "max_drawdown": 0.0
+      },
+      "age_minutes": 0.75
     },
     {
       "key": "fund_flow:3017:25:2700.0",
