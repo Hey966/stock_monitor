@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-02T12:43:10.679074+00:00",
+  "updated_at": "2026-06-02T12:43:12.385464+00:00",
   "count": 34,
   "items": [
     {
@@ -458,7 +458,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-02T12:42:25.726699+00:00",
-      "updated_at": "2026-06-02T12:42:25.726701+00:00",
+      "updated_at": "2026-06-02T12:43:11.766904+00:00",
       "status": "open",
       "code": "1609",
       "name": "大亞",
@@ -471,7 +471,12 @@
       "change_rate_at_signal": -1.66,
       "volume_ratio_at_signal": 0.61,
       "alert": null,
-      "results": {}
+      "results": {
+        "latest_pct": 0.0,
+        "max_gain": 0.0,
+        "max_drawdown": 0.0
+      },
+      "age_minutes": 0.77
     },
     {
       "key": "ai_pool:2615:33:84.2",
