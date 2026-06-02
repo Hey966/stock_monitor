@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-02T10:24:19.635235+00:00",
+  "updated_at": "2026-06-02T12:18:41.627681+00:00",
   "count": 34,
   "items": [
     {
@@ -635,8 +635,8 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-02T05:51:05.284095+00:00",
-      "updated_at": "2026-06-02T05:51:05.284097+00:00",
-      "status": "open",
+      "updated_at": "2026-06-02T12:18:41.246663+00:00",
+      "status": "closed",
       "code": "2454",
       "name": "聯發科",
       "sector": "半導體",
@@ -648,7 +648,16 @@
       "change_rate_at_signal": -0.65,
       "volume_ratio_at_signal": 0.83,
       "alert": "資金退潮警報",
-      "results": {}
+      "results": {
+        "latest_pct": 0.0,
+        "max_gain": 0.0,
+        "max_drawdown": 0.0,
+        "pct_5m": 0.0,
+        "pct_10m": 0.0,
+        "pct_30m": 0.0,
+        "pct_close_proxy": 0.0
+      },
+      "age_minutes": 387.6
     },
     {
       "key": "fund_flow:3017:25:2700.0",
