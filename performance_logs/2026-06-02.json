@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-02T12:43:15.763670+00:00",
+  "updated_at": "2026-06-02T12:43:17.910225+00:00",
   "count": 34,
   "items": [
     {
@@ -733,7 +733,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-02T12:42:34.227600+00:00",
-      "updated_at": "2026-06-02T12:42:34.227603+00:00",
+      "updated_at": "2026-06-02T12:43:16.903792+00:00",
       "status": "open",
       "code": "3661",
       "name": "世芯-KY",
@@ -746,7 +746,12 @@
       "change_rate_at_signal": -5.76,
       "volume_ratio_at_signal": 0.87,
       "alert": "資金退潮警報",
-      "results": {}
+      "results": {
+        "latest_pct": 0.0,
+        "max_gain": 0.0,
+        "max_drawdown": 0.0
+      },
+      "age_minutes": 0.71
     },
     {
       "key": "fund_flow:2454:31:4525.0",
