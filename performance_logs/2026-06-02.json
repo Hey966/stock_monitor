@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-02T12:42:49.214696+00:00",
+  "updated_at": "2026-06-02T12:42:50.991689+00:00",
   "count": 34,
   "items": [
     {
@@ -158,7 +158,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-02T12:42:25.726580+00:00",
-      "updated_at": "2026-06-02T12:42:25.726583+00:00",
+      "updated_at": "2026-06-02T12:42:50.409795+00:00",
       "status": "open",
       "code": "1605",
       "name": "華新",
@@ -171,7 +171,12 @@
       "change_rate_at_signal": 1.88,
       "volume_ratio_at_signal": 0.71,
       "alert": null,
-      "results": {}
+      "results": {
+        "latest_pct": 0.0,
+        "max_gain": 0.0,
+        "max_drawdown": 0.0
+      },
+      "age_minutes": 0.41
     },
     {
       "key": "ai_pool:2356:86:80.6",
