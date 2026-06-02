@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-02T12:37:59.557985+00:00",
+  "updated_at": "2026-06-02T12:38:01.205560+00:00",
   "count": 34,
   "items": [
     {
@@ -327,8 +327,8 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-02T05:50:57.363403+00:00",
-      "updated_at": "2026-06-02T05:50:57.363407+00:00",
-      "status": "open",
+      "updated_at": "2026-06-02T12:38:00.609609+00:00",
+      "status": "closed",
       "code": "3324",
       "name": "雙鴻",
       "sector": "AI散熱",
@@ -340,7 +340,16 @@
       "change_rate_at_signal": 1.74,
       "volume_ratio_at_signal": 1.2,
       "alert": null,
-      "results": {}
+      "results": {
+        "latest_pct": 0.0,
+        "max_gain": 0.0,
+        "max_drawdown": 0.0,
+        "pct_5m": 0.0,
+        "pct_10m": 0.0,
+        "pct_30m": 0.0,
+        "pct_close_proxy": 0.0
+      },
+      "age_minutes": 407.05
     },
     {
       "key": "ai_pool:3711:49:590.0",
