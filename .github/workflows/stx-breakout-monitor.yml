@@ -19,8 +19,15 @@ jobs:
           STX_API_BASE: ${{ secrets.STX_API_BASE }}
         run: |
           API_BASE="${STX_API_BASE:-https://stock-monitor-b6d6.onrender.com}"
+
           echo "Calling ${API_BASE}/api/cron-run"
           curl --fail --show-error --silent --max-time 540 \
             "${API_BASE}/api/cron-run"
           echo ""
-          echo "STX scheduler completed."
+
+          echo "Calling ${API_BASE}/api/performance-auto-update"
+          curl --fail --show-error --silent --max-time 540 \
+            "${API_BASE}/api/performance-auto-update"
+          echo ""
+
+          echo "STX scheduler and performance update completed."
