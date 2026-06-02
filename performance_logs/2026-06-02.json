@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-02T12:43:22.845627+00:00",
+  "updated_at": "2026-06-02T12:43:24.414887+00:00",
   "count": 34,
   "items": [
     {
@@ -833,7 +833,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-02T12:42:34.227639+00:00",
-      "updated_at": "2026-06-02T12:42:34.227642+00:00",
+      "updated_at": "2026-06-02T12:43:24.030292+00:00",
       "status": "open",
       "code": "6215",
       "name": "和椿",
@@ -846,7 +846,12 @@
       "change_rate_at_signal": -8.13,
       "volume_ratio_at_signal": 1.31,
       "alert": "資金退潮警報",
-      "results": {}
+      "results": {
+        "latest_pct": 0.0,
+        "max_gain": 0.0,
+        "max_drawdown": 0.0
+      },
+      "age_minutes": 0.83
     }
   ]
 }
