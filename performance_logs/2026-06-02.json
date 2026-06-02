@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-02T12:37:55.991272+00:00",
+  "updated_at": "2026-06-02T12:37:57.340536+00:00",
   "count": 34,
   "items": [
     {
@@ -240,8 +240,8 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-02T05:50:57.363383+00:00",
-      "updated_at": "2026-06-02T05:50:57.363384+00:00",
-      "status": "open",
+      "updated_at": "2026-06-02T12:37:56.912043+00:00",
+      "status": "closed",
       "code": "2379",
       "name": "瑞昱",
       "sector": "半導體",
@@ -253,15 +253,24 @@
       "change_rate_at_signal": 7.22,
       "volume_ratio_at_signal": 1.99,
       "alert": null,
-      "results": {}
+      "results": {
+        "latest_pct": 0.0,
+        "max_gain": 0.0,
+        "max_drawdown": 0.0,
+        "pct_5m": 0.0,
+        "pct_10m": 0.0,
+        "pct_30m": 0.0,
+        "pct_close_proxy": 0.0
+      },
+      "age_minutes": 406.99
     },
     {
       "key": "ai_pool:3481:77:56.2",
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-02T05:50:57.363389+00:00",
-      "updated_at": "2026-06-02T05:50:57.363390+00:00",
-      "status": "open",
+      "updated_at": "2026-06-02T12:37:56.982283+00:00",
+      "status": "closed",
       "code": "3481",
       "name": "群創",
       "sector": "面板",
@@ -273,7 +282,16 @@
       "change_rate_at_signal": 0.17,
       "volume_ratio_at_signal": 2.43,
       "alert": null,
-      "results": {}
+      "results": {
+        "latest_pct": 0.0,
+        "max_gain": 0.0,
+        "max_drawdown": 0.0,
+        "pct_5m": 0.0,
+        "pct_10m": 0.0,
+        "pct_30m": 0.0,
+        "pct_close_proxy": 0.0
+      },
+      "age_minutes": 406.99
     },
     {
       "key": "ai_pool:2376:73:390.5",
@@ -663,8 +681,8 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-02T05:51:05.284047+00:00",
-      "updated_at": "2026-06-02T05:51:05.284051+00:00",
-      "status": "open",
+      "updated_at": "2026-06-02T12:37:56.982305+00:00",
+      "status": "closed",
       "code": "3481",
       "name": "群創",
       "sector": "面板",
@@ -676,7 +694,16 @@
       "change_rate_at_signal": 0.17,
       "volume_ratio_at_signal": 2.43,
       "alert": "大戶進場警報",
-      "results": {}
+      "results": {
+        "latest_pct": 0.0,
+        "max_gain": 0.0,
+        "max_drawdown": 0.0,
+        "pct_5m": 0.0,
+        "pct_10m": 0.0,
+        "pct_30m": 0.0,
+        "pct_close_proxy": 0.0
+      },
+      "age_minutes": 406.86
     },
     {
       "key": "fund_flow:2615:35:84.2",
