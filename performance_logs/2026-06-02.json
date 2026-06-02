@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-02T12:43:12.385464+00:00",
+  "updated_at": "2026-06-02T12:43:14.040567+00:00",
   "count": 34,
   "items": [
     {
@@ -483,7 +483,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-02T12:42:25.726709+00:00",
-      "updated_at": "2026-06-02T12:42:25.726712+00:00",
+      "updated_at": "2026-06-02T12:43:13.593799+00:00",
       "status": "open",
       "code": "2615",
       "name": "萬海",
@@ -496,7 +496,12 @@
       "change_rate_at_signal": -0.23,
       "volume_ratio_at_signal": 0.63,
       "alert": null,
-      "results": {}
+      "results": {
+        "latest_pct": 0.0,
+        "max_gain": 0.0,
+        "max_drawdown": 0.0
+      },
+      "age_minutes": 0.8
     },
     {
       "key": "fund_flow:2382:86:400.5",
@@ -678,7 +683,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-02T12:42:34.227580+00:00",
-      "updated_at": "2026-06-02T12:42:34.227583+00:00",
+      "updated_at": "2026-06-02T12:43:13.593827+00:00",
       "status": "open",
       "code": "2615",
       "name": "萬海",
@@ -691,7 +696,12 @@
       "change_rate_at_signal": -0.23,
       "volume_ratio_at_signal": 0.63,
       "alert": "資金退潮警報",
-      "results": {}
+      "results": {
+        "latest_pct": 0.0,
+        "max_gain": 0.0,
+        "max_drawdown": 0.0
+      },
+      "age_minutes": 0.66
     },
     {
       "key": "fund_flow:3443:35:4535.0",
