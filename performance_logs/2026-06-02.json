@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-02T12:42:52.747088+00:00",
+  "updated_at": "2026-06-02T12:42:54.521743+00:00",
   "count": 34,
   "items": [
     {
@@ -208,7 +208,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-02T12:42:25.726601+00:00",
-      "updated_at": "2026-06-02T12:42:25.726603+00:00",
+      "updated_at": "2026-06-02T12:42:53.931670+00:00",
       "status": "open",
       "code": "2379",
       "name": "瑞昱",
@@ -221,7 +221,12 @@
       "change_rate_at_signal": 7.22,
       "volume_ratio_at_signal": 1.99,
       "alert": null,
-      "results": {}
+      "results": {
+        "latest_pct": 0.0,
+        "max_gain": 0.0,
+        "max_drawdown": 0.0
+      },
+      "age_minutes": 0.47
     },
     {
       "key": "ai_pool:3481:77:56.2",
