@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-02T12:42:57.953086+00:00",
+  "updated_at": "2026-06-02T12:42:59.657744+00:00",
   "count": 34,
   "items": [
     {
@@ -283,7 +283,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-02T12:42:25.726630+00:00",
-      "updated_at": "2026-06-02T12:42:25.726632+00:00",
+      "updated_at": "2026-06-02T12:42:59.051923+00:00",
       "status": "open",
       "code": "3324",
       "name": "雙鴻",
@@ -296,7 +296,12 @@
       "change_rate_at_signal": 1.74,
       "volume_ratio_at_signal": 1.2,
       "alert": null,
-      "results": {}
+      "results": {
+        "latest_pct": 0.0,
+        "max_gain": 0.0,
+        "max_drawdown": 0.0
+      },
+      "age_minutes": 0.56
     },
     {
       "key": "ai_pool:3711:49:590.0",
