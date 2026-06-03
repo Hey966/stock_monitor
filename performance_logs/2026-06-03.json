@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-03T11:22:18.570215+00:00",
+  "updated_at": "2026-06-03T11:22:20.318211+00:00",
   "count": 30,
   "items": [
     {
@@ -37,8 +37,8 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-03T06:05:54.507777+00:00",
-      "updated_at": "2026-06-03T06:06:29.058664+00:00",
-      "status": "open",
+      "updated_at": "2026-06-03T11:22:19.699947+00:00",
+      "status": "closed",
       "code": "1514",
       "name": "亞力",
       "sector": "重電",
@@ -53,9 +53,13 @@
       "results": {
         "latest_pct": 0.0,
         "max_gain": 0.0,
-        "max_drawdown": 0.0
+        "max_drawdown": 0.0,
+        "pct_5m": 0.0,
+        "pct_10m": 0.0,
+        "pct_30m": 0.0,
+        "pct_close_proxy": 0.0
       },
-      "age_minutes": 0.58
+      "age_minutes": 316.42
     },
     {
       "key": "ai_pool:1609:100:42.15",
@@ -541,8 +545,8 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-03T06:06:02.264614+00:00",
-      "updated_at": "2026-06-03T06:06:29.058680+00:00",
-      "status": "open",
+      "updated_at": "2026-06-03T11:22:19.699965+00:00",
+      "status": "closed",
       "code": "1514",
       "name": "亞力",
       "sector": "重電",
@@ -557,9 +561,13 @@
       "results": {
         "latest_pct": 0.0,
         "max_gain": 0.0,
-        "max_drawdown": 0.0
+        "max_drawdown": 0.0,
+        "pct_5m": 0.0,
+        "pct_10m": 0.0,
+        "pct_30m": 0.0,
+        "pct_close_proxy": 0.0
       },
-      "age_minutes": 0.45
+      "age_minutes": 316.29
     },
     {
       "key": "fund_flow:1609:100:42.15",
