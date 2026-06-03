@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-03T06:06:48.427529+00:00",
+  "updated_at": "2026-06-03T06:06:49.859628+00:00",
   "count": 30,
   "items": [
     {
@@ -333,7 +333,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-03T06:05:54.507913+00:00",
-      "updated_at": "2026-06-03T06:05:54.507915+00:00",
+      "updated_at": "2026-06-03T06:06:49.521840+00:00",
       "status": "open",
       "code": "2454",
       "name": "聯發科",
@@ -346,7 +346,12 @@
       "change_rate_at_signal": 0.44,
       "volume_ratio_at_signal": 0.67,
       "alert": null,
-      "results": {}
+      "results": {
+        "latest_pct": 0.0,
+        "max_gain": 0.0,
+        "max_drawdown": 0.0
+      },
+      "age_minutes": 0.92
     },
     {
       "key": "ai_pool:3443:59:4605.0",
