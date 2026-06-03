@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-03T11:22:25.443471+00:00",
+  "updated_at": "2026-06-03T11:22:27.689988+00:00",
   "count": 30,
   "items": [
     {
@@ -153,8 +153,8 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-03T06:05:54.507840+00:00",
-      "updated_at": "2026-06-03T06:06:35.624705+00:00",
-      "status": "open",
+      "updated_at": "2026-06-03T11:22:26.684866+00:00",
+      "status": "closed",
       "code": "8046",
       "name": "南電",
       "sector": "半導體",
@@ -169,9 +169,13 @@
       "results": {
         "latest_pct": 0.0,
         "max_gain": 0.0,
-        "max_drawdown": 0.0
+        "max_drawdown": 0.0,
+        "pct_5m": 0.0,
+        "pct_10m": 0.0,
+        "pct_30m": 0.0,
+        "pct_close_proxy": 0.0
       },
-      "age_minutes": 0.69
+      "age_minutes": 316.54
     },
     {
       "key": "ai_pool:2409:94:28.75",
@@ -673,8 +677,8 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-03T06:06:02.264644+00:00",
-      "updated_at": "2026-06-03T06:06:35.624727+00:00",
-      "status": "open",
+      "updated_at": "2026-06-03T11:22:26.684889+00:00",
+      "status": "closed",
       "code": "8046",
       "name": "南電",
       "sector": "半導體",
@@ -689,9 +693,13 @@
       "results": {
         "latest_pct": 0.0,
         "max_gain": 0.0,
-        "max_drawdown": 0.0
+        "max_drawdown": 0.0,
+        "pct_5m": 0.0,
+        "pct_10m": 0.0,
+        "pct_30m": 0.0,
+        "pct_close_proxy": 0.0
       },
-      "age_minutes": 0.56
+      "age_minutes": 316.41
     },
     {
       "key": "fund_flow:2409:100:28.75",
