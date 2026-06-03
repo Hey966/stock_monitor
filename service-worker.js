@@ -1,4 +1,4 @@
-const CACHE = 'stx-build-004';
+const CACHE = 'stx-build-012';
 
 self.addEventListener('install', (event) => {
   self.skipWaiting();
