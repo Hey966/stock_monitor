@@ -23,6 +23,7 @@ jobs:
           TW_NOW="$(TZ=Asia/Taipei date '+%Y-%m-%d %H:%M:%S')"
           TW_DAY="$(TZ=Asia/Taipei date '+%u')"
           TW_HHMM="$(TZ=Asia/Taipei date '+%H%M')"
+          TW_MINUTE="$(TZ=Asia/Taipei date '+%M')"
 
           echo "Taiwan time: ${TW_NOW}"
 
@@ -48,5 +49,14 @@ jobs:
           curl --fail --show-error --silent --max-time 540 \
             "${API_BASE}/api/performance-auto-update"
           echo ""
+
+          if [ "$TW_MINUTE" = "02" ] || [ "$TW_MINUTE" = "32" ]; then
+            echo "Calling ${API_BASE}/api/discord-battle-report"
+            curl --fail --show-error --silent --max-time 540 \
+              "${API_BASE}/api/discord-battle-report"
+            echo ""
+          else
+            echo "Skip half-hour radar heartbeat."
+          fi
 
           echo "STX scheduler and performance update completed."
