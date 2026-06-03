@@ -20,6 +20,22 @@ jobs:
         run: |
           API_BASE="${STX_API_BASE:-https://stock-monitor-b6d6.onrender.com}"
 
+          TW_NOW="$(TZ=Asia/Taipei date '+%Y-%m-%d %H:%M:%S')"
+          TW_DAY="$(TZ=Asia/Taipei date '+%u')"
+          TW_HHMM="$(TZ=Asia/Taipei date '+%H%M')"
+
+          echo "Taiwan time: ${TW_NOW}"
+
+          if [ "$TW_DAY" -gt 5 ]; then
+            echo "Not a Taiwan trading day. Scheduler skipped."
+            exit 0
+          fi
+
+          if [ "$TW_HHMM" -lt "0900" ] || [ "$TW_HHMM" -gt "1455" ]; then
+            echo "Outside Taiwan trading time. Scheduler skipped."
+            exit 0
+          fi
+
           echo "Calling ${API_BASE}/api/cron-run"
           curl --fail --show-error --silent --max-time 540 \
             "${API_BASE}/api/cron-run"
