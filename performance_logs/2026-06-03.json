@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-03T06:06:31.267724+00:00",
+  "updated_at": "2026-06-03T06:06:32.942298+00:00",
   "count": 30,
   "items": [
     {
@@ -83,7 +83,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-03T06:05:54.507801+00:00",
-      "updated_at": "2026-06-03T06:05:54.507804+00:00",
+      "updated_at": "2026-06-03T06:06:32.375718+00:00",
       "status": "open",
       "code": "1605",
       "name": "華新",
@@ -96,7 +96,12 @@
       "change_rate_at_signal": 5.56,
       "volume_ratio_at_signal": 1.81,
       "alert": null,
-      "results": {}
+      "results": {
+        "latest_pct": 0.0,
+        "max_gain": 0.0,
+        "max_drawdown": 0.0
+      },
+      "age_minutes": 0.63
     },
     {
       "key": "ai_pool:3324:94:1280.0",
@@ -498,7 +503,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-03T06:06:02.264630+00:00",
-      "updated_at": "2026-06-03T06:06:02.264632+00:00",
+      "updated_at": "2026-06-03T06:06:32.375732+00:00",
       "status": "open",
       "code": "1605",
       "name": "華新",
@@ -511,7 +516,12 @@
       "change_rate_at_signal": 5.56,
       "volume_ratio_at_signal": 1.81,
       "alert": "大戶進場警報",
-      "results": {}
+      "results": {
+        "latest_pct": 0.0,
+        "max_gain": 0.0,
+        "max_drawdown": 0.0
+      },
+      "age_minutes": 0.5
     },
     {
       "key": "fund_flow:3324:100:1280.0",
