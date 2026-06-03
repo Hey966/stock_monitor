@@ -1,5 +1,5 @@
 (() => {
-  const BUILD = 'build-004';
+  const BUILD = 'build-012';
   const KEY = 'stx_active_build';
   const FLAG = 'stx_reloaded_for_' + BUILD;
 
