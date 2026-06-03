@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-03T11:22:47.812031+00:00",
+  "updated_at": "2026-06-03T11:22:49.578461+00:00",
   "count": 30,
   "items": [
     {
@@ -501,8 +501,8 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-03T06:05:54.507953+00:00",
-      "updated_at": "2026-06-03T06:06:55.720532+00:00",
-      "status": "open",
+      "updated_at": "2026-06-03T11:22:48.966255+00:00",
+      "status": "closed",
       "code": "2356",
       "name": "英業達",
       "sector": "電腦週邊",
@@ -517,9 +517,13 @@
       "results": {
         "latest_pct": 0.0,
         "max_gain": 0.0,
-        "max_drawdown": 0.0
+        "max_drawdown": 0.0,
+        "pct_5m": 0.0,
+        "pct_10m": 0.0,
+        "pct_30m": 0.0,
+        "pct_close_proxy": 0.0
       },
-      "age_minutes": 1.02
+      "age_minutes": 316.91
     },
     {
       "key": "ai_pool:2368:48:1385.0",
