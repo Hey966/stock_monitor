@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-03T11:22:21.969715+00:00",
+  "updated_at": "2026-06-03T11:22:23.763068+00:00",
   "count": 30,
   "items": [
     {
@@ -95,8 +95,8 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-03T06:05:54.507801+00:00",
-      "updated_at": "2026-06-03T06:06:32.375718+00:00",
-      "status": "open",
+      "updated_at": "2026-06-03T11:22:23.195173+00:00",
+      "status": "closed",
       "code": "1605",
       "name": "華新",
       "sector": "電線電纜",
@@ -111,9 +111,13 @@
       "results": {
         "latest_pct": 0.0,
         "max_gain": 0.0,
-        "max_drawdown": 0.0
+        "max_drawdown": 0.0,
+        "pct_5m": 0.0,
+        "pct_10m": 0.0,
+        "pct_30m": 0.0,
+        "pct_close_proxy": 0.0
       },
-      "age_minutes": 0.63
+      "age_minutes": 316.48
     },
     {
       "key": "ai_pool:3324:94:1280.0",
@@ -607,8 +611,8 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-03T06:06:02.264630+00:00",
-      "updated_at": "2026-06-03T06:06:32.375732+00:00",
-      "status": "open",
+      "updated_at": "2026-06-03T11:22:23.195196+00:00",
+      "status": "closed",
       "code": "1605",
       "name": "華新",
       "sector": "電線電纜",
@@ -623,9 +627,13 @@
       "results": {
         "latest_pct": 0.0,
         "max_gain": 0.0,
-        "max_drawdown": 0.0
+        "max_drawdown": 0.0,
+        "pct_5m": 0.0,
+        "pct_10m": 0.0,
+        "pct_30m": 0.0,
+        "pct_close_proxy": 0.0
       },
-      "age_minutes": 0.5
+      "age_minutes": 316.35
     },
     {
       "key": "fund_flow:3324:100:1280.0",
