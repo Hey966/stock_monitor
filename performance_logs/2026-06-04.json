@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-04T05:58:54.855112+00:00",
+  "updated_at": "2026-06-04T05:58:56.446908+00:00",
   "count": 35,
   "items": [
     {
@@ -358,7 +358,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-04T05:58:01.223527+00:00",
-      "updated_at": "2026-06-04T05:58:01.223529+00:00",
+      "updated_at": "2026-06-04T05:58:55.881760+00:00",
       "status": "open",
       "code": "2308",
       "name": "台達電",
@@ -371,7 +371,12 @@
       "change_rate_at_signal": -1.22,
       "volume_ratio_at_signal": 0.78,
       "alert": null,
-      "results": {}
+      "results": {
+        "latest_pct": 0.0,
+        "max_gain": 0.0,
+        "max_drawdown": 0.0
+      },
+      "age_minutes": 0.91
     },
     {
       "key": "ai_pool:8046:13:878.0",
