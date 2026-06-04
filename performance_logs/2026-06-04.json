@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-04T05:59:10.758451+00:00",
+  "updated_at": "2026-06-04T05:59:12.382937+00:00",
   "count": 35,
   "items": [
     {
@@ -783,7 +783,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-04T05:58:09.088756+00:00",
-      "updated_at": "2026-06-04T05:58:09.088758+00:00",
+      "updated_at": "2026-06-04T05:59:11.819839+00:00",
       "status": "open",
       "code": "2317",
       "name": "鴻海",
@@ -796,7 +796,12 @@
       "change_rate_at_signal": -5.17,
       "volume_ratio_at_signal": 0.72,
       "alert": "資金退潮警報",
-      "results": {}
+      "results": {
+        "latest_pct": 0.0,
+        "max_gain": 0.0,
+        "max_drawdown": 0.0
+      },
+      "age_minutes": 1.05
     },
     {
       "key": "fund_flow:3017:12:2710.0",
