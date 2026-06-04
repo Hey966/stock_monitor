@@ -1,8 +1,6 @@
 name: STX Scheduler
 
 on:
-  schedule:
-    - cron: '2-57/5 1-6 * * 1-5'
   workflow_dispatch:
 
 concurrency:
@@ -14,49 +12,15 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
-      - name: Call STX scheduler API
+      - name: Call STX external cron tick API
         env:
           STX_API_BASE: ${{ secrets.STX_API_BASE }}
         run: |
           API_BASE="${STX_API_BASE:-https://stock-monitor-b6d6.onrender.com}"
 
-          TW_NOW="$(TZ=Asia/Taipei date '+%Y-%m-%d %H:%M:%S')"
-          TW_DAY="$(TZ=Asia/Taipei date '+%u')"
-          TW_HHMM="$(TZ=Asia/Taipei date '+%H%M')"
-          TW_MINUTE="$(TZ=Asia/Taipei date '+%M')"
-
-          echo "Taiwan time: ${TW_NOW}"
-
-          if [ "$TW_DAY" -gt 5 ]; then
-            echo "Not a Taiwan trading day. Scheduler skipped."
-            exit 0
-          fi
-
-          if [ "$TW_HHMM" -lt "0900" ] || [ "$TW_HHMM" -gt "1455" ]; then
-            echo "Outside Taiwan trading time. Scheduler skipped."
-            exit 0
-          fi
-
-          echo "Calling ${API_BASE}/api/cron-run"
+          echo "Calling ${API_BASE}/api/cron-tick?force=true"
           curl --fail --show-error --silent --max-time 540 \
-            "${API_BASE}/api/cron-run"
+            "${API_BASE}/api/cron-tick?force=true"
           echo ""
 
-          echo "Waiting for GitHub performance log sync"
-          sleep 20
-
-          echo "Calling ${API_BASE}/api/performance-auto-update"
-          curl --fail --show-error --silent --max-time 540 \
-            "${API_BASE}/api/performance-auto-update"
-          echo ""
-
-          if [ "$TW_MINUTE" = "02" ] || [ "$TW_MINUTE" = "32" ]; then
-            echo "Calling ${API_BASE}/api/discord-battle-report"
-            curl --fail --show-error --silent --max-time 540 \
-              "${API_BASE}/api/discord-battle-report"
-            echo ""
-          else
-            echo "Skip half-hour radar heartbeat."
-          fi
-
-          echo "STX scheduler and performance update completed."
+          echo "Manual STX scheduler completed."
