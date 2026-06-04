@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-04T05:58:36.083148+00:00",
+  "updated_at": "2026-06-04T05:58:37.436779+00:00",
   "count": 35,
   "items": [
     {
@@ -58,7 +58,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-04T05:58:01.223438+00:00",
-      "updated_at": "2026-06-04T05:58:01.223440+00:00",
+      "updated_at": "2026-06-04T05:58:37.111820+00:00",
       "status": "open",
       "code": "6215",
       "name": "和椿",
@@ -71,7 +71,12 @@
       "change_rate_at_signal": -0.42,
       "volume_ratio_at_signal": 0.92,
       "alert": null,
-      "results": {}
+      "results": {
+        "latest_pct": 0.0,
+        "max_gain": 0.0,
+        "max_drawdown": 0.0
+      },
+      "age_minutes": 0.6
     },
     {
       "key": "ai_pool:2615:51:83.7",
