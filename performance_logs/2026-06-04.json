@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-04T05:59:02.943307+00:00",
+  "updated_at": "2026-06-04T05:59:04.572909+00:00",
   "count": 35,
   "items": [
     {
@@ -483,7 +483,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-04T05:58:01.223570+00:00",
-      "updated_at": "2026-06-04T05:58:01.223571+00:00",
+      "updated_at": "2026-06-04T05:59:04.016608+00:00",
       "status": "open",
       "code": "3037",
       "name": "欣興",
@@ -496,7 +496,12 @@
       "change_rate_at_signal": -2.9,
       "volume_ratio_at_signal": 0.67,
       "alert": null,
-      "results": {}
+      "results": {
+        "latest_pct": 0.0,
+        "max_gain": 0.0,
+        "max_drawdown": 0.0
+      },
+      "age_minutes": 1.05
     },
     {
       "key": "fund_flow:1514:100:149.5",
