@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-04T05:58:38.764909+00:00",
+  "updated_at": "2026-06-04T05:58:40.126200+00:00",
   "count": 35,
   "items": [
     {
@@ -108,7 +108,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-04T05:58:01.223453+00:00",
-      "updated_at": "2026-06-04T05:58:01.223455+00:00",
+      "updated_at": "2026-06-04T05:58:39.816822+00:00",
       "status": "open",
       "code": "2618",
       "name": "長榮航",
@@ -121,7 +121,12 @@
       "change_rate_at_signal": 0.53,
       "volume_ratio_at_signal": 0.73,
       "alert": null,
-      "results": {}
+      "results": {
+        "latest_pct": 0.0,
+        "max_gain": 0.0,
+        "max_drawdown": 0.0
+      },
+      "age_minutes": 0.64
     },
     {
       "key": "ai_pool:1513:49:187.0",
