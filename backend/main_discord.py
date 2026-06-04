@@ -2,15 +2,20 @@ from __future__ import annotations
 
 import json
 import os
+import time
 import urllib.request
+from datetime import datetime
+from zoneinfo import ZoneInfo
 
 from dotenv import load_dotenv
 from fastapi import BackgroundTasks, HTTPException, Query, Request
 
+from discord_engine import send_battle_report
 from discord_interactions_engine import verify_discord_signature
 from fund_flow_engine import build_fund_flow_report
-from main import app, build_market_scan
+from main import app, build_cron_run, build_market_scan
 from performance_auto_update import update_performance_from_scan
+from replay_engine import get_stats
 from stx_query_engine import build_stx_query_response
 
 load_dotenv()
@@ -18,6 +23,31 @@ DISCORD_PUBLIC_KEY = os.getenv("DISCORD_PUBLIC_KEY", "").strip()
 DISCORD_BOT_TOKEN = os.getenv("DISCORD_BOT_TOKEN", "").strip()
 DISCORD_APPLICATION_ID = os.getenv("DISCORD_APPLICATION_ID", "").strip()
 DISCORD_GUILD_ID = os.getenv("DISCORD_GUILD_ID", "").strip()
+CRON_SECRET = os.getenv("CRON_SECRET", "").strip()
+
+
+def _tw_now() -> datetime:
+    return datetime.now(ZoneInfo("Asia/Taipei"))
+
+
+def _market_status(now: datetime | None = None) -> dict:
+    now = now or _tw_now()
+    hhmm = now.hour * 100 + now.minute
+    is_weekday = now.weekday() < 5
+    in_time = 900 <= hhmm <= 1455
+    return {
+        "tw_time": now.strftime("%Y-%m-%d %H:%M:%S"),
+        "weekday": now.weekday() + 1,
+        "hhmm": hhmm,
+        "is_weekday": is_weekday,
+        "in_trading_time": in_time,
+        "allowed": is_weekday and in_time,
+    }
+
+
+def _should_send_heartbeat(now: datetime | None = None) -> bool:
+    now = now or _tw_now()
+    return now.minute < 5 or 30 <= now.minute < 35
 
 
 def _get_option_q(payload: dict) -> str:
@@ -78,6 +108,49 @@ async def discord_interactions(request: Request, background_tasks: BackgroundTas
         background_tasks.add_task(_background_stx_reply, application_id, token, q)
 
     return {"type": 5, "data": {"content": f"STX 查詢中：{q}"}}
+
+
+@app.get("/api/cron-tick")
+def cron_tick(
+    limit: int = Query(20, ge=5, le=30),
+    send: bool = Query(True),
+    force: bool = Query(False),
+    token: str | None = Query(None),
+):
+    if CRON_SECRET and token != CRON_SECRET:
+        raise HTTPException(status_code=403, detail="Invalid cron token")
+
+    now = _tw_now()
+    status = _market_status(now)
+    if not force and not status["allowed"]:
+        return {
+            "ok": True,
+            "skipped": True,
+            "reason": "outside_taiwan_trading_time",
+            "market_status": status,
+        }
+
+    scheduler = build_cron_run(limit=limit, send=send)
+
+    time.sleep(20)
+
+    scan = build_market_scan(limit=30)
+    performance_update = update_performance_from_scan(scan)
+
+    heartbeat = None
+    if send and _should_send_heartbeat(now):
+        heartbeat = send_battle_report(scan, get_stats())
+
+    return {
+        "ok": True,
+        "skipped": False,
+        "version": "STX External Cron Tick v1",
+        "market_status": status,
+        "scheduler": scheduler,
+        "performance_update": performance_update,
+        "heartbeat_sent": bool(heartbeat),
+        "heartbeat": heartbeat,
+    }
 
 
 @app.get("/api/performance-auto-update")
