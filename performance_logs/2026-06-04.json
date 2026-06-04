@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-04T05:59:14.075011+00:00",
+  "updated_at": "2026-06-04T05:59:15.734609+00:00",
   "count": 35,
   "items": [
     {
@@ -833,7 +833,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-04T05:58:09.088769+00:00",
-      "updated_at": "2026-06-04T05:58:09.088771+00:00",
+      "updated_at": "2026-06-04T05:59:15.160822+00:00",
       "status": "open",
       "code": "3324",
       "name": "雙鴻",
@@ -846,7 +846,12 @@
       "change_rate_at_signal": -7.42,
       "volume_ratio_at_signal": 0.77,
       "alert": "資金退潮警報",
-      "results": {}
+      "results": {
+        "latest_pct": 0.0,
+        "max_gain": 0.0,
+        "max_drawdown": 0.0
+      },
+      "age_minutes": 1.1
     },
     {
       "key": "fund_flow:2324:6:42.35",
