@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-04T05:58:49.426804+00:00",
+  "updated_at": "2026-06-04T05:58:51.192467+00:00",
   "count": 35,
   "items": [
     {
@@ -283,7 +283,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-04T05:58:01.223508+00:00",
-      "updated_at": "2026-06-04T05:58:01.223510+00:00",
+      "updated_at": "2026-06-04T05:58:50.638463+00:00",
       "status": "open",
       "code": "2330",
       "name": "台積電",
@@ -296,7 +296,12 @@
       "change_rate_at_signal": -1.64,
       "volume_ratio_at_signal": 1.11,
       "alert": null,
-      "results": {}
+      "results": {
+        "latest_pct": 0.0,
+        "max_gain": 0.0,
+        "max_drawdown": 0.0
+      },
+      "age_minutes": 0.82
     },
     {
       "key": "ai_pool:5347:24:163.0",
