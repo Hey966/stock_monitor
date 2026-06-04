@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-04T05:58:46.394096+00:00",
+  "updated_at": "2026-06-04T05:58:48.045133+00:00",
   "count": 35,
   "items": [
     {
@@ -233,7 +233,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-04T05:58:01.223494+00:00",
-      "updated_at": "2026-06-04T05:58:01.223496+00:00",
+      "updated_at": "2026-06-04T05:58:47.517945+00:00",
       "status": "open",
       "code": "1609",
       "name": "大亞",
@@ -246,7 +246,12 @@
       "change_rate_at_signal": 2.01,
       "volume_ratio_at_signal": 2.19,
       "alert": null,
-      "results": {}
+      "results": {
+        "latest_pct": 0.0,
+        "max_gain": 0.0,
+        "max_drawdown": 0.0
+      },
+      "age_minutes": 0.77
     },
     {
       "key": "ai_pool:2382:31:404.0",
@@ -503,7 +508,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-04T05:58:09.088681+00:00",
-      "updated_at": "2026-06-04T05:58:09.088683+00:00",
+      "updated_at": "2026-06-04T05:58:47.517964+00:00",
       "status": "open",
       "code": "1609",
       "name": "大亞",
@@ -516,7 +521,12 @@
       "change_rate_at_signal": 2.01,
       "volume_ratio_at_signal": 2.19,
       "alert": "隔日沖風險警報",
-      "results": {}
+      "results": {
+        "latest_pct": 0.0,
+        "max_gain": 0.0,
+        "max_drawdown": 0.0
+      },
+      "age_minutes": 0.64
     },
     {
       "key": "fund_flow:2382:22:404.0",
