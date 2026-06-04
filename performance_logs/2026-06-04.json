@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-04T05:58:41.739090+00:00",
+  "updated_at": "2026-06-04T05:58:43.452163+00:00",
   "count": 35,
   "items": [
     {
@@ -158,7 +158,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-04T05:58:01.223476+00:00",
-      "updated_at": "2026-06-04T05:58:01.223478+00:00",
+      "updated_at": "2026-06-04T05:58:42.889848+00:00",
       "status": "open",
       "code": "2344",
       "name": "華邦電",
@@ -171,7 +171,12 @@
       "change_rate_at_signal": 1.12,
       "volume_ratio_at_signal": 0.69,
       "alert": null,
-      "results": {}
+      "results": {
+        "latest_pct": 0.0,
+        "max_gain": 0.0,
+        "max_drawdown": 0.0
+      },
+      "age_minutes": 0.69
     },
     {
       "key": "ai_pool:2609:46:53.2",
