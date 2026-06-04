@@ -4,7 +4,12 @@ import json
 import os
 import urllib.request
 from datetime import datetime
+from zoneinfo import ZoneInfo
 from typing import Any
+
+
+def _tw_now() -> str:
+    return datetime.now(ZoneInfo("Asia/Taipei")).strftime("%H:%M:%S")
 
 
 def _post_discord(content: str) -> dict[str, Any]:
@@ -27,7 +32,7 @@ def send_discord_alert(payload: dict[str, Any]) -> dict[str, Any]:
     title = str(payload.get("title") or "STX 警報")
     score = str(payload.get("score") or "-")
     message = str(payload.get("message") or "盤中警報觸發")
-    content = f"🔥 **{title}**\n股票：{code}\n分數：{score}\n{message}"
+    content = f"🔥 **{title}**\n時間：{_tw_now()}\n股票：{code}\n分數：{score}\n{message}"
     return _post_discord(content)
 
 
@@ -78,7 +83,7 @@ def send_grouped_alerts(
         reverse=True,
     )[:max_groups]
 
-    lines = [f"📡 **{title}｜產業分類**", f"時間：{datetime.now().strftime('%H:%M:%S')}", f"訊號：{len(items)} 檔", ""]
+    lines = [f"📡 **{title}｜產業分類**", f"時間：{_tw_now()}", f"訊號：{len(items)} 檔", ""]
 
     for sector, rows in ordered_groups:
         rows = sorted(rows, key=_score, reverse=True)[:max_items_per_group]
@@ -111,7 +116,7 @@ def send_grouped_alerts(
 def send_battle_report(scan: dict[str, Any], stats: dict[str, Any] | None = None) -> dict[str, Any]:
     top = scan.get("top5") or []
     strongest = scan.get("strongest_sector") or {}
-    now = datetime.now().strftime("%H:%M:%S")
+    now = _tw_now()
 
     lines = [
         "📡 **STX AI 戰情中心｜盤中雷達速報**",
