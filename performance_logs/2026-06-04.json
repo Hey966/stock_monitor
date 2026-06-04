@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-04T05:59:15.734609+00:00",
+  "updated_at": "2026-06-04T05:59:17.317163+00:00",
   "count": 35,
   "items": [
     {
@@ -858,7 +858,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-04T05:58:09.088776+00:00",
-      "updated_at": "2026-06-04T05:58:09.088777+00:00",
+      "updated_at": "2026-06-04T05:59:16.758417+00:00",
       "status": "open",
       "code": "2324",
       "name": "仁寶",
@@ -871,7 +871,12 @@
       "change_rate_at_signal": -9.98,
       "volume_ratio_at_signal": 0.65,
       "alert": "資金退潮警報",
-      "results": {}
+      "results": {
+        "latest_pct": 0.0,
+        "max_gain": 0.0,
+        "max_drawdown": 0.0
+      },
+      "age_minutes": 1.13
     }
   ]
 }
