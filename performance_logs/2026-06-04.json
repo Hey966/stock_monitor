@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-04T05:58:34.047729+00:00",
+  "updated_at": "2026-06-04T05:58:36.083148+00:00",
   "count": 35,
   "items": [
     {
@@ -33,7 +33,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-04T05:58:01.223427+00:00",
-      "updated_at": "2026-06-04T05:58:01.223430+00:00",
+      "updated_at": "2026-06-04T05:58:35.066386+00:00",
       "status": "open",
       "code": "2409",
       "name": "友達",
@@ -46,7 +46,12 @@
       "change_rate_at_signal": 1.73,
       "volume_ratio_at_signal": 1.24,
       "alert": null,
-      "results": {}
+      "results": {
+        "latest_pct": 0.0,
+        "max_gain": 0.0,
+        "max_drawdown": 0.0
+      },
+      "age_minutes": 0.56
     },
     {
       "key": "ai_pool:6215:73:117.0",
@@ -438,7 +443,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-04T05:58:09.088672+00:00",
-      "updated_at": "2026-06-04T05:58:09.088675+00:00",
+      "updated_at": "2026-06-04T05:58:35.066401+00:00",
       "status": "open",
       "code": "2409",
       "name": "友達",
@@ -451,7 +456,12 @@
       "change_rate_at_signal": 1.73,
       "volume_ratio_at_signal": 1.24,
       "alert": "大戶進場警報",
-      "results": {}
+      "results": {
+        "latest_pct": 0.0,
+        "max_gain": 0.0,
+        "max_drawdown": 0.0
+      },
+      "age_minutes": 0.43
     },
     {
       "key": "fund_flow:1609:61:43.0",
