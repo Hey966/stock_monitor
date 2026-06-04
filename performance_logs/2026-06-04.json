@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-04T05:58:44.837781+00:00",
+  "updated_at": "2026-06-04T05:58:46.394096+00:00",
   "count": 35,
   "items": [
     {
@@ -208,7 +208,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-04T05:58:01.223488+00:00",
-      "updated_at": "2026-06-04T05:58:01.223490+00:00",
+      "updated_at": "2026-06-04T05:58:45.849745+00:00",
       "status": "open",
       "code": "2368",
       "name": "金像電",
@@ -221,7 +221,12 @@
       "change_rate_at_signal": -2.52,
       "volume_ratio_at_signal": 0.58,
       "alert": null,
-      "results": {}
+      "results": {
+        "latest_pct": 0.0,
+        "max_gain": 0.0,
+        "max_drawdown": 0.0
+      },
+      "age_minutes": 0.74
     },
     {
       "key": "ai_pool:1609:42:43.0",
