@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-05T02:27:29.464761+00:00",
+  "updated_at": "2026-06-05T02:27:31.712936+00:00",
   "count": 63,
   "items": [
     {
@@ -1173,25 +1173,25 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:25:15.330146+00:00",
-      "updated_at": "2026-06-05T02:27:22.902404+00:00",
+      "updated_at": "2026-06-05T02:27:28.780365+00:00",
       "status": "open",
       "code": "2344",
       "name": "華邦電",
       "sector": "半導體",
       "entry_price": 162.5,
-      "last_price": 162.5,
-      "best_price": 162.5,
+      "last_price": 163.0,
+      "best_price": 163.0,
       "worst_price": 162.5,
       "score": 33,
       "change_rate_at_signal": -9.47,
       "volume_ratio_at_signal": 0.74,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": 0.0,
-        "max_gain": 0.0,
+        "latest_pct": 0.308,
+        "max_gain": 0.308,
         "max_drawdown": 0.0
       },
-      "age_minutes": 2.13
+      "age_minutes": 2.22
     },
     {
       "key": "fund_flow:2376:27:366.0",
@@ -1368,13 +1368,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:25:16.826614+00:00",
-      "updated_at": "2026-06-05T02:27:22.902425+00:00",
+      "updated_at": "2026-06-05T02:27:28.780380+00:00",
       "status": "open",
       "code": "2344",
       "name": "華邦電",
       "sector": "半導體",
       "entry_price": 163.0,
-      "last_price": 162.5,
+      "last_price": 163.0,
       "best_price": 163.0,
       "worst_price": 162.5,
       "score": 33,
@@ -1382,11 +1382,11 @@
       "volume_ratio_at_signal": 0.74,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": -0.307,
+        "latest_pct": 0.0,
         "max_gain": 0.0,
         "max_drawdown": -0.307
       },
-      "age_minutes": 2.1
+      "age_minutes": 2.2
     },
     {
       "key": "fund_flow:2376:28:366.0",
