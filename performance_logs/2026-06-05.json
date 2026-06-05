@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-05T04:03:50.315603+00:00",
+  "updated_at": "2026-06-05T04:03:53.672746+00:00",
   "count": 572,
   "items": [
     {
@@ -160,13 +160,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:25:05.423047+00:00",
-      "updated_at": "2026-06-05T04:03:29.200421+00:00",
+      "updated_at": "2026-06-05T04:03:46.408147+00:00",
       "status": "open",
       "code": "2356",
       "name": "英業達",
       "sector": "電腦週邊",
       "entry_price": 78.1,
-      "last_price": 77.1,
+      "last_price": 77.0,
       "best_price": 78.4,
       "worst_price": 76.6,
       "score": 70,
@@ -174,14 +174,14 @@
       "volume_ratio_at_signal": 0.59,
       "alert": null,
       "results": {
-        "latest_pct": -1.28,
+        "latest_pct": -1.408,
         "max_gain": 0.384,
         "max_drawdown": -1.921,
         "pct_5m": 0.0,
         "pct_10m": 0.384,
         "pct_30m": 0.384
       },
-      "age_minutes": 98.4
+      "age_minutes": 98.68
     },
     {
       "key": "ai_pool:2618:70:38.0",
@@ -440,13 +440,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:25:05.423192+00:00",
-      "updated_at": "2026-06-05T04:02:29.911786+00:00",
+      "updated_at": "2026-06-05T04:03:49.617745+00:00",
       "status": "open",
       "code": "3037",
       "name": "欣興",
       "sector": "半導體",
       "entry_price": 949.0,
-      "last_price": 937.0,
+      "last_price": 940.0,
       "best_price": 967.0,
       "worst_price": 932.0,
       "score": 46,
@@ -454,14 +454,14 @@
       "volume_ratio_at_signal": 1.07,
       "alert": null,
       "results": {
-        "latest_pct": -1.264,
+        "latest_pct": -0.948,
         "max_gain": 1.897,
         "max_drawdown": -1.791,
         "pct_5m": 0.738,
         "pct_10m": 1.897,
         "pct_30m": 0.211
       },
-      "age_minutes": 97.41
+      "age_minutes": 98.74
     },
     {
       "key": "ai_pool:2324:41:41.15",
@@ -804,13 +804,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:25:12.529293+00:00",
-      "updated_at": "2026-06-05T04:03:29.200448+00:00",
+      "updated_at": "2026-06-05T04:03:46.408171+00:00",
       "status": "open",
       "code": "2356",
       "name": "英業達",
       "sector": "電腦週邊",
       "entry_price": 78.1,
-      "last_price": 77.1,
+      "last_price": 77.0,
       "best_price": 78.4,
       "worst_price": 76.6,
       "score": 60,
@@ -818,14 +818,14 @@
       "volume_ratio_at_signal": 0.59,
       "alert": null,
       "results": {
-        "latest_pct": -1.28,
+        "latest_pct": -1.408,
         "max_gain": 0.384,
         "max_drawdown": -1.921,
         "pct_5m": 0.0,
         "pct_10m": 0.384,
         "pct_30m": 0.384
       },
-      "age_minutes": 98.28
+      "age_minutes": 98.56
     },
     {
       "key": "ai_pool:3711:57:582.0",
@@ -1280,7 +1280,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:25:15.330104+00:00",
-      "updated_at": "2026-06-05T04:03:36.638935+00:00",
+      "updated_at": "2026-06-05T04:03:52.399934+00:00",
       "status": "open",
       "code": "1609",
       "name": "大亞",
@@ -1301,14 +1301,14 @@
         "pct_10m": -0.125,
         "pct_30m": -0.752
       },
-      "age_minutes": 98.36
+      "age_minutes": 98.62
     },
     {
       "key": "fund_flow:2344:33:162.5",
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:25:15.330146+00:00",
-      "updated_at": "2026-06-05T03:57:26.502655+00:00",
+      "updated_at": "2026-06-05T04:03:46.061015+00:00",
       "status": "open",
       "code": "2344",
       "name": "華邦電",
@@ -1329,7 +1329,7 @@
         "pct_10m": 0.615,
         "pct_30m": 0.0
       },
-      "age_minutes": 92.19
+      "age_minutes": 98.51
     },
     {
       "key": "fund_flow:2376:27:366.0",
@@ -1532,7 +1532,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:25:16.826614+00:00",
-      "updated_at": "2026-06-05T03:57:26.502671+00:00",
+      "updated_at": "2026-06-05T04:03:46.061030+00:00",
       "status": "open",
       "code": "2344",
       "name": "華邦電",
@@ -1553,7 +1553,7 @@
         "pct_10m": 0.307,
         "pct_30m": -0.307
       },
-      "age_minutes": 92.16
+      "age_minutes": 98.49
     },
     {
       "key": "fund_flow:2376:28:366.0",
@@ -1812,13 +1812,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:30:19.670184+00:00",
-      "updated_at": "2026-06-05T04:03:29.200463+00:00",
+      "updated_at": "2026-06-05T04:03:46.408184+00:00",
       "status": "open",
       "code": "2356",
       "name": "英業達",
       "sector": "電腦週邊",
       "entry_price": 78.1,
-      "last_price": 77.1,
+      "last_price": 77.0,
       "best_price": 78.4,
       "worst_price": 76.6,
       "score": 78,
@@ -1826,14 +1826,14 @@
       "volume_ratio_at_signal": 0.59,
       "alert": null,
       "results": {
-        "latest_pct": -1.28,
+        "latest_pct": -1.408,
         "max_gain": 0.384,
         "max_drawdown": -1.921,
         "pct_5m": 0.384,
         "pct_10m": -0.256,
         "pct_30m": -0.256
       },
-      "age_minutes": 93.16
+      "age_minutes": 93.45
     },
     {
       "key": "ai_pool:6215:76:120.5",
@@ -1868,13 +1868,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:30:19.670205+00:00",
-      "updated_at": "2026-06-05T04:02:29.911819+00:00",
+      "updated_at": "2026-06-05T04:03:49.617769+00:00",
       "status": "open",
       "code": "3037",
       "name": "欣興",
       "sector": "半導體",
       "entry_price": 958.0,
-      "last_price": 937.0,
+      "last_price": 940.0,
       "best_price": 967.0,
       "worst_price": 932.0,
       "score": 68,
@@ -1882,14 +1882,14 @@
       "volume_ratio_at_signal": 1.13,
       "alert": null,
       "results": {
-        "latest_pct": -2.192,
+        "latest_pct": -1.879,
         "max_gain": 0.939,
         "max_drawdown": -2.714,
         "pct_5m": 0.939,
         "pct_10m": -0.835,
         "pct_30m": -1.148
       },
-      "age_minutes": 92.17
+      "age_minutes": 93.5
     },
     {
       "key": "ai_pool:3231:67:173.5",
@@ -2316,13 +2316,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:30:30.008517+00:00",
-      "updated_at": "2026-06-05T04:02:29.911833+00:00",
+      "updated_at": "2026-06-05T04:03:49.617780+00:00",
       "status": "open",
       "code": "3037",
       "name": "欣興",
       "sector": "半導體",
       "entry_price": 956.0,
-      "last_price": 937.0,
+      "last_price": 940.0,
       "best_price": 967.0,
       "worst_price": 932.0,
       "score": 77,
@@ -2330,14 +2330,14 @@
       "volume_ratio_at_signal": 1.13,
       "alert": "大戶進場警報",
       "results": {
-        "latest_pct": -1.987,
+        "latest_pct": -1.674,
         "max_gain": 1.151,
         "max_drawdown": -2.51,
         "pct_5m": 1.151,
         "pct_10m": -0.628,
         "pct_30m": -0.941
       },
-      "age_minutes": 92.0
+      "age_minutes": 93.33
     },
     {
       "key": "fund_flow:3324:31:1130.0",
@@ -2484,7 +2484,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:30:30.008589+00:00",
-      "updated_at": "2026-06-05T04:03:36.638968+00:00",
+      "updated_at": "2026-06-05T04:03:52.399957+00:00",
       "status": "open",
       "code": "1609",
       "name": "大亞",
@@ -2505,7 +2505,7 @@
         "pct_10m": -0.501,
         "pct_30m": -1.001
       },
-      "age_minutes": 93.11
+      "age_minutes": 93.37
     },
     {
       "key": "fund_flow:2376:29:366.0",
@@ -2540,7 +2540,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:30:30.008620+00:00",
-      "updated_at": "2026-06-05T03:57:26.502681+00:00",
+      "updated_at": "2026-06-05T04:03:46.061041+00:00",
       "status": "open",
       "code": "2344",
       "name": "華邦電",
@@ -2561,7 +2561,7 @@
         "pct_10m": -1.22,
         "pct_30m": -0.915
       },
-      "age_minutes": 86.94
+      "age_minutes": 93.27
     },
     {
       "key": "ai_pool:2615:95:86.8",
@@ -2596,13 +2596,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:35:12.437059+00:00",
-      "updated_at": "2026-06-05T04:03:29.200478+00:00",
+      "updated_at": "2026-06-05T04:03:46.408193+00:00",
       "status": "open",
       "code": "2356",
       "name": "英業達",
       "sector": "電腦週邊",
       "entry_price": 78.4,
-      "last_price": 77.1,
+      "last_price": 77.0,
       "best_price": 78.4,
       "worst_price": 76.6,
       "score": 81,
@@ -2610,14 +2610,14 @@
       "volume_ratio_at_signal": 0.6,
       "alert": null,
       "results": {
-        "latest_pct": -1.658,
+        "latest_pct": -1.786,
         "max_gain": 0.0,
         "max_drawdown": -2.296,
         "pct_5m": -0.638,
         "pct_10m": -0.128,
         "pct_30m": -0.638
       },
-      "age_minutes": 88.28
+      "age_minutes": 88.57
     },
     {
       "key": "ai_pool:3443:75:4450.0",
@@ -2848,13 +2848,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:35:12.437178+00:00",
-      "updated_at": "2026-06-05T04:02:29.911845+00:00",
+      "updated_at": "2026-06-05T04:03:49.617789+00:00",
       "status": "open",
       "code": "3037",
       "name": "欣興",
       "sector": "半導體",
       "entry_price": 962.0,
-      "last_price": 937.0,
+      "last_price": 940.0,
       "best_price": 967.0,
       "worst_price": 932.0,
       "score": 60,
@@ -2862,14 +2862,14 @@
       "volume_ratio_at_signal": 1.15,
       "alert": null,
       "results": {
-        "latest_pct": -2.599,
+        "latest_pct": -2.287,
         "max_gain": 0.52,
         "max_drawdown": -3.119,
         "pct_5m": -1.247,
         "pct_10m": -1.04,
         "pct_30m": -1.143
       },
-      "age_minutes": 87.29
+      "age_minutes": 88.62
     },
     {
       "key": "ai_pool:3231:59:173.5",
@@ -3016,13 +3016,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:35:23.555014+00:00",
-      "updated_at": "2026-06-05T04:03:29.200489+00:00",
+      "updated_at": "2026-06-05T04:03:46.408201+00:00",
       "status": "open",
       "code": "2356",
       "name": "英業達",
       "sector": "電腦週邊",
       "entry_price": 78.4,
-      "last_price": 77.1,
+      "last_price": 77.0,
       "best_price": 78.4,
       "worst_price": 76.6,
       "score": 79,
@@ -3030,27 +3030,27 @@
       "volume_ratio_at_signal": 0.6,
       "alert": "大戶進場警報",
       "results": {
-        "latest_pct": -1.658,
+        "latest_pct": -1.786,
         "max_gain": 0.0,
         "max_drawdown": -2.296,
         "pct_5m": -0.638,
         "pct_10m": -0.128,
         "pct_30m": -0.638
       },
-      "age_minutes": 88.09
+      "age_minutes": 88.38
     },
     {
       "key": "fund_flow:3037:73:963.0",
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:35:23.555053+00:00",
-      "updated_at": "2026-06-05T04:02:29.911855+00:00",
+      "updated_at": "2026-06-05T04:03:49.617797+00:00",
       "status": "open",
       "code": "3037",
       "name": "欣興",
       "sector": "半導體",
       "entry_price": 963.0,
-      "last_price": 937.0,
+      "last_price": 940.0,
       "best_price": 967.0,
       "worst_price": 932.0,
       "score": 73,
@@ -3058,14 +3058,14 @@
       "volume_ratio_at_signal": 1.15,
       "alert": "大戶進場警報",
       "results": {
-        "latest_pct": -2.7,
+        "latest_pct": -2.388,
         "max_gain": 0.415,
         "max_drawdown": -3.219,
         "pct_5m": -1.35,
         "pct_10m": -1.142,
         "pct_30m": -1.246
       },
-      "age_minutes": 87.11
+      "age_minutes": 88.43
     },
     {
       "key": "fund_flow:2454:73:4390.0",
@@ -3184,7 +3184,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:35:23.555162+00:00",
-      "updated_at": "2026-06-05T03:57:26.502688+00:00",
+      "updated_at": "2026-06-05T04:03:46.061048+00:00",
       "status": "open",
       "code": "2344",
       "name": "華邦電",
@@ -3205,7 +3205,7 @@
         "pct_10m": -0.917,
         "pct_30m": -0.306
       },
-      "age_minutes": 82.05
+      "age_minutes": 88.38
     },
     {
       "key": "fund_flow:2376:24:366.5",
@@ -3240,7 +3240,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:35:23.555202+00:00",
-      "updated_at": "2026-06-05T04:03:36.638987+00:00",
+      "updated_at": "2026-06-05T04:03:52.399968+00:00",
       "status": "open",
       "code": "1609",
       "name": "大亞",
@@ -3261,7 +3261,7 @@
         "pct_10m": -0.752,
         "pct_30m": -0.752
       },
-      "age_minutes": 88.22
+      "age_minutes": 88.48
     },
     {
       "key": "ai_pool:2615:95:86.7",
@@ -3408,13 +3408,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:40:15.726437+00:00",
-      "updated_at": "2026-06-05T04:03:29.200501+00:00",
+      "updated_at": "2026-06-05T04:03:46.408208+00:00",
       "status": "open",
       "code": "2356",
       "name": "英業達",
       "sector": "電腦週邊",
       "entry_price": 77.9,
-      "last_price": 77.1,
+      "last_price": 77.0,
       "best_price": 78.4,
       "worst_price": 76.6,
       "score": 69,
@@ -3422,14 +3422,14 @@
       "volume_ratio_at_signal": 0.6,
       "alert": null,
       "results": {
-        "latest_pct": -1.027,
+        "latest_pct": -1.155,
         "max_gain": 0.642,
         "max_drawdown": -1.669,
         "pct_5m": 0.513,
         "pct_10m": 0.128,
         "pct_30m": 0.257
       },
-      "age_minutes": 83.22
+      "age_minutes": 83.51
     },
     {
       "key": "ai_pool:6215:69:119.5",
@@ -3520,13 +3520,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:40:15.726481+00:00",
-      "updated_at": "2026-06-05T04:02:29.911867+00:00",
+      "updated_at": "2026-06-05T04:03:49.617805+00:00",
       "status": "open",
       "code": "3037",
       "name": "欣興",
       "sector": "半導體",
       "entry_price": 950.0,
-      "last_price": 937.0,
+      "last_price": 940.0,
       "best_price": 954.0,
       "worst_price": 932.0,
       "score": 55,
@@ -3534,14 +3534,14 @@
       "volume_ratio_at_signal": 1.2,
       "alert": null,
       "results": {
-        "latest_pct": -1.368,
+        "latest_pct": -1.053,
         "max_gain": 0.421,
         "max_drawdown": -1.895,
         "pct_5m": 0.211,
         "pct_10m": -0.316,
         "pct_30m": 0.421
       },
-      "age_minutes": 82.24
+      "age_minutes": 83.56
     },
     {
       "key": "ai_pool:5347:53:161.0",
@@ -3912,7 +3912,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:40:27.116653+00:00",
-      "updated_at": "2026-06-05T04:03:36.639005+00:00",
+      "updated_at": "2026-06-05T04:03:52.399977+00:00",
       "status": "open",
       "code": "1609",
       "name": "大亞",
@@ -3933,7 +3933,7 @@
         "pct_10m": -0.377,
         "pct_30m": -0.377
       },
-      "age_minutes": 83.16
+      "age_minutes": 83.42
     },
     {
       "key": "fund_flow:1513:8:171.5",
@@ -4052,13 +4052,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:45:15.268607+00:00",
-      "updated_at": "2026-06-05T04:03:29.200513+00:00",
+      "updated_at": "2026-06-05T04:03:46.408215+00:00",
       "status": "open",
       "code": "2356",
       "name": "英業達",
       "sector": "電腦週邊",
       "entry_price": 78.3,
-      "last_price": 77.1,
+      "last_price": 77.0,
       "best_price": 78.4,
       "worst_price": 76.6,
       "score": 72,
@@ -4066,14 +4066,14 @@
       "volume_ratio_at_signal": 0.62,
       "alert": null,
       "results": {
-        "latest_pct": -1.533,
+        "latest_pct": -1.66,
         "max_gain": 0.128,
         "max_drawdown": -2.171,
         "pct_5m": -0.383,
         "pct_10m": 0.128,
         "pct_30m": -0.766
       },
-      "age_minutes": 78.23
+      "age_minutes": 78.52
     },
     {
       "key": "ai_pool:3661:69:4350.0",
@@ -4108,13 +4108,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:45:15.268634+00:00",
-      "updated_at": "2026-06-05T04:02:29.911880+00:00",
+      "updated_at": "2026-06-05T04:03:49.617815+00:00",
       "status": "open",
       "code": "3037",
       "name": "欣興",
       "sector": "半導體",
       "entry_price": 954.0,
-      "last_price": 937.0,
+      "last_price": 940.0,
       "best_price": 954.0,
       "worst_price": 932.0,
       "score": 66,
@@ -4122,14 +4122,14 @@
       "volume_ratio_at_signal": 1.23,
       "alert": null,
       "results": {
-        "latest_pct": -1.782,
+        "latest_pct": -1.468,
         "max_gain": 0.0,
         "max_drawdown": -2.306,
         "pct_5m": -0.734,
         "pct_10m": -0.314,
         "pct_30m": -0.21
       },
-      "age_minutes": 77.24
+      "age_minutes": 78.57
     },
     {
       "key": "ai_pool:2454:59:4365.0",
@@ -4640,7 +4640,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:45:25.851623+00:00",
-      "updated_at": "2026-06-05T04:03:36.639021+00:00",
+      "updated_at": "2026-06-05T04:03:52.399986+00:00",
       "status": "open",
       "code": "1609",
       "name": "大亞",
@@ -4661,7 +4661,7 @@
         "pct_10m": 0.0,
         "pct_30m": 0.0
       },
-      "age_minutes": 78.18
+      "age_minutes": 78.44
     },
     {
       "key": "ai_pool:2615:100:86.2",
@@ -4724,13 +4724,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:50:15.682050+00:00",
-      "updated_at": "2026-06-05T04:03:29.200528+00:00",
+      "updated_at": "2026-06-05T04:03:46.408224+00:00",
       "status": "open",
       "code": "2356",
       "name": "英業達",
       "sector": "電腦週邊",
       "entry_price": 78.0,
-      "last_price": 77.1,
+      "last_price": 77.0,
       "best_price": 78.4,
       "worst_price": 76.6,
       "score": 78,
@@ -4738,14 +4738,14 @@
       "volume_ratio_at_signal": 0.62,
       "alert": null,
       "results": {
-        "latest_pct": -1.154,
+        "latest_pct": -1.282,
         "max_gain": 0.513,
         "max_drawdown": -1.795,
         "pct_5m": 0.513,
         "pct_10m": -0.128,
         "pct_30m": -0.385
       },
-      "age_minutes": 73.23
+      "age_minutes": 73.51
     },
     {
       "key": "ai_pool:3443:71:4420.0",
@@ -5088,13 +5088,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:50:15.682170+00:00",
-      "updated_at": "2026-06-05T04:02:29.911897+00:00",
+      "updated_at": "2026-06-05T04:03:49.617825+00:00",
       "status": "open",
       "code": "3037",
       "name": "欣興",
       "sector": "半導體",
       "entry_price": 947.0,
-      "last_price": 937.0,
+      "last_price": 940.0,
       "best_price": 954.0,
       "worst_price": 932.0,
       "score": 27,
@@ -5102,14 +5102,14 @@
       "volume_ratio_at_signal": 1.25,
       "alert": null,
       "results": {
-        "latest_pct": -1.056,
+        "latest_pct": -0.739,
         "max_gain": 0.739,
         "max_drawdown": -1.584,
         "pct_5m": 0.422,
         "pct_10m": 0.0,
         "pct_30m": 0.422
       },
-      "age_minutes": 72.24
+      "age_minutes": 73.57
     },
     {
       "key": "ai_pool:2382:24:390.0",
@@ -5228,13 +5228,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:50:26.323775+00:00",
-      "updated_at": "2026-06-05T04:02:29.911907+00:00",
+      "updated_at": "2026-06-05T04:03:49.617831+00:00",
       "status": "open",
       "code": "3037",
       "name": "欣興",
       "sector": "半導體",
       "entry_price": 947.0,
-      "last_price": 937.0,
+      "last_price": 940.0,
       "best_price": 954.0,
       "worst_price": 932.0,
       "score": 32,
@@ -5242,14 +5242,14 @@
       "volume_ratio_at_signal": 1.25,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": -1.056,
+        "latest_pct": -0.739,
         "max_gain": 0.739,
         "max_drawdown": -1.584,
         "pct_5m": 0.422,
         "pct_10m": 0.0,
         "pct_30m": 0.422
       },
-      "age_minutes": 72.06
+      "age_minutes": 73.39
     },
     {
       "key": "fund_flow:8046:35:856.0",
@@ -5396,7 +5396,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:50:26.323819+00:00",
-      "updated_at": "2026-06-05T04:03:36.639039+00:00",
+      "updated_at": "2026-06-05T04:03:52.399997+00:00",
       "status": "open",
       "code": "1609",
       "name": "大亞",
@@ -5417,7 +5417,7 @@
         "pct_10m": 0.0,
         "pct_30m": 0.126
       },
-      "age_minutes": 73.17
+      "age_minutes": 73.43
     },
     {
       "key": "fund_flow:1605:11:39.05",
@@ -5732,13 +5732,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:55:13.518267+00:00",
-      "updated_at": "2026-06-05T04:02:29.911921+00:00",
+      "updated_at": "2026-06-05T04:03:49.617840+00:00",
       "status": "open",
       "code": "3037",
       "name": "欣興",
       "sector": "半導體",
       "entry_price": 950.0,
-      "last_price": 937.0,
+      "last_price": 940.0,
       "best_price": 954.0,
       "worst_price": 932.0,
       "score": 45,
@@ -5746,14 +5746,14 @@
       "volume_ratio_at_signal": 1.26,
       "alert": null,
       "results": {
-        "latest_pct": -1.368,
+        "latest_pct": -1.053,
         "max_gain": 0.421,
         "max_drawdown": -1.895,
         "pct_5m": -0.316,
         "pct_10m": 0.105,
         "pct_30m": 0.105
       },
-      "age_minutes": 67.27
+      "age_minutes": 68.6
     },
     {
       "key": "ai_pool:8046:45:856.0",
@@ -6040,7 +6040,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:55:23.828293+00:00",
-      "updated_at": "2026-06-05T04:03:36.639054+00:00",
+      "updated_at": "2026-06-05T04:03:52.400006+00:00",
       "status": "open",
       "code": "1609",
       "name": "大亞",
@@ -6061,7 +6061,7 @@
         "pct_10m": 0.126,
         "pct_30m": 0.126
       },
-      "age_minutes": 68.21
+      "age_minutes": 68.48
     },
     {
       "key": "ai_pool:2615:93:85.9",
@@ -6264,13 +6264,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:00:25.046084+00:00",
-      "updated_at": "2026-06-05T04:03:29.200547+00:00",
+      "updated_at": "2026-06-05T04:03:46.408238+00:00",
       "status": "open",
       "code": "2356",
       "name": "英業達",
       "sector": "電腦週邊",
       "entry_price": 78.0,
-      "last_price": 77.1,
+      "last_price": 77.0,
       "best_price": 78.1,
       "worst_price": 76.6,
       "score": 60,
@@ -6278,14 +6278,14 @@
       "volume_ratio_at_signal": 0.63,
       "alert": null,
       "results": {
-        "latest_pct": -1.154,
+        "latest_pct": -1.282,
         "max_gain": 0.128,
         "max_drawdown": -1.795,
         "pct_5m": -0.128,
         "pct_10m": 0.128,
         "pct_30m": -1.795
       },
-      "age_minutes": 63.07
+      "age_minutes": 63.36
     },
     {
       "key": "ai_pool:2609:59:54.2",
@@ -6404,13 +6404,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:00:25.047682+00:00",
-      "updated_at": "2026-06-05T04:02:29.911935+00:00",
+      "updated_at": "2026-06-05T04:03:49.617851+00:00",
       "status": "open",
       "code": "3037",
       "name": "欣興",
       "sector": "半導體",
       "entry_price": 948.0,
-      "last_price": 937.0,
+      "last_price": 940.0,
       "best_price": 954.0,
       "worst_price": 932.0,
       "score": 28,
@@ -6418,14 +6418,14 @@
       "volume_ratio_at_signal": 1.27,
       "alert": null,
       "results": {
-        "latest_pct": -1.16,
+        "latest_pct": -0.844,
         "max_gain": 0.633,
         "max_drawdown": -1.688,
         "pct_5m": 0.316,
         "pct_10m": 0.633,
         "pct_30m": -0.527
       },
-      "age_minutes": 62.08
+      "age_minutes": 63.41
     },
     {
       "key": "ai_pool:8046:27:856.0",
@@ -6516,13 +6516,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:00:36.494156+00:00",
-      "updated_at": "2026-06-05T04:02:29.911944+00:00",
+      "updated_at": "2026-06-05T04:03:49.617857+00:00",
       "status": "open",
       "code": "3037",
       "name": "欣興",
       "sector": "半導體",
       "entry_price": 948.0,
-      "last_price": 937.0,
+      "last_price": 940.0,
       "best_price": 954.0,
       "worst_price": 932.0,
       "score": 33,
@@ -6530,14 +6530,14 @@
       "volume_ratio_at_signal": 1.27,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": -1.16,
+        "latest_pct": -0.844,
         "max_gain": 0.633,
         "max_drawdown": -1.688,
         "pct_5m": 0.316,
         "pct_10m": 0.633,
         "pct_30m": -0.527
       },
-      "age_minutes": 61.89
+      "age_minutes": 63.22
     },
     {
       "key": "fund_flow:3017:35:2615.0",
@@ -6684,7 +6684,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:00:36.494241+00:00",
-      "updated_at": "2026-06-05T04:03:36.639069+00:00",
+      "updated_at": "2026-06-05T04:03:52.400015+00:00",
       "status": "open",
       "code": "1609",
       "name": "大亞",
@@ -6705,7 +6705,7 @@
         "pct_10m": 0.126,
         "pct_30m": -0.253
       },
-      "age_minutes": 63.0
+      "age_minutes": 63.27
     },
     {
       "key": "ai_pool:2615:100:85.9",
@@ -6908,13 +6908,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:05:11.974211+00:00",
-      "updated_at": "2026-06-05T04:02:29.911956+00:00",
+      "updated_at": "2026-06-05T04:03:49.617864+00:00",
       "status": "open",
       "code": "3037",
       "name": "欣興",
       "sector": "半導體",
       "entry_price": 952.0,
-      "last_price": 937.0,
+      "last_price": 940.0,
       "best_price": 954.0,
       "worst_price": 932.0,
       "score": 54,
@@ -6922,14 +6922,14 @@
       "volume_ratio_at_signal": 1.29,
       "alert": null,
       "results": {
-        "latest_pct": -1.576,
+        "latest_pct": -1.261,
         "max_gain": 0.21,
         "max_drawdown": -2.101,
         "pct_5m": 0.21,
         "pct_10m": 0.0,
         "pct_30m": -1.155
       },
-      "age_minutes": 57.3
+      "age_minutes": 58.63
     },
     {
       "key": "ai_pool:3231:48:172.5",
@@ -7104,7 +7104,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:05:22.049903+00:00",
-      "updated_at": "2026-06-05T04:03:36.639083+00:00",
+      "updated_at": "2026-06-05T04:03:52.400023+00:00",
       "status": "open",
       "code": "1609",
       "name": "大亞",
@@ -7125,7 +7125,7 @@
         "pct_10m": 0.0,
         "pct_30m": -0.631
       },
-      "age_minutes": 58.24
+      "age_minutes": 58.51
     },
     {
       "key": "fund_flow:3324:23:1110.0",
@@ -7300,13 +7300,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:10:15.521879+00:00",
-      "updated_at": "2026-06-05T04:02:29.911966+00:00",
+      "updated_at": "2026-06-05T04:03:49.617872+00:00",
       "status": "open",
       "code": "3037",
       "name": "欣興",
       "sector": "半導體",
       "entry_price": 951.0,
-      "last_price": 937.0,
+      "last_price": 940.0,
       "best_price": 954.0,
       "worst_price": 932.0,
       "score": 63,
@@ -7314,14 +7314,14 @@
       "volume_ratio_at_signal": 1.3,
       "alert": null,
       "results": {
-        "latest_pct": -1.472,
+        "latest_pct": -1.157,
         "max_gain": 0.315,
         "max_drawdown": -1.998,
         "pct_5m": 0.105,
         "pct_10m": 0.0,
         "pct_30m": -1.367
       },
-      "age_minutes": 52.24
+      "age_minutes": 53.57
     },
     {
       "key": "ai_pool:2618:60:38.05",
@@ -7356,13 +7356,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:10:15.521906+00:00",
-      "updated_at": "2026-06-05T04:03:29.200563+00:00",
+      "updated_at": "2026-06-05T04:03:46.408249+00:00",
       "status": "open",
       "code": "2356",
       "name": "英業達",
       "sector": "電腦週邊",
       "entry_price": 77.9,
-      "last_price": 77.1,
+      "last_price": 77.0,
       "best_price": 78.1,
       "worst_price": 76.6,
       "score": 59,
@@ -7370,14 +7370,14 @@
       "volume_ratio_at_signal": 0.64,
       "alert": null,
       "results": {
-        "latest_pct": -1.027,
+        "latest_pct": -1.155,
         "max_gain": 0.257,
         "max_drawdown": -1.669,
         "pct_5m": -0.257,
         "pct_10m": -0.257,
         "pct_30m": -1.284
       },
-      "age_minutes": 53.23
+      "age_minutes": 53.51
     },
     {
       "key": "ai_pool:2324:56:41.5",
@@ -7664,7 +7664,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:10:26.460642+00:00",
-      "updated_at": "2026-06-05T04:03:36.639099+00:00",
+      "updated_at": "2026-06-05T04:03:52.400034+00:00",
       "status": "open",
       "code": "1609",
       "name": "大亞",
@@ -7685,7 +7685,7 @@
         "pct_10m": 0.0,
         "pct_30m": -0.631
       },
-      "age_minutes": 53.17
+      "age_minutes": 53.43
     },
     {
       "key": "ai_pool:2615:78:85.7",
@@ -7720,13 +7720,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:15:14.979966+00:00",
-      "updated_at": "2026-06-05T04:03:29.200573+00:00",
+      "updated_at": "2026-06-05T04:03:46.408255+00:00",
       "status": "open",
       "code": "2356",
       "name": "英業達",
       "sector": "電腦週邊",
       "entry_price": 77.9,
-      "last_price": 77.1,
+      "last_price": 77.0,
       "best_price": 77.9,
       "worst_price": 76.6,
       "score": 77,
@@ -7734,14 +7734,14 @@
       "volume_ratio_at_signal": 0.65,
       "alert": null,
       "results": {
-        "latest_pct": -1.027,
+        "latest_pct": -1.155,
         "max_gain": 0.0,
         "max_drawdown": -1.669,
         "pct_5m": -0.257,
         "pct_10m": -1.155,
         "pct_30m": -1.027
       },
-      "age_minutes": 48.24
+      "age_minutes": 48.52
     },
     {
       "key": "ai_pool:3661:75:4335.0",
@@ -7776,13 +7776,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:15:14.979981+00:00",
-      "updated_at": "2026-06-05T04:02:29.911978+00:00",
+      "updated_at": "2026-06-05T04:03:49.617880+00:00",
       "status": "open",
       "code": "3037",
       "name": "欣興",
       "sector": "半導體",
       "entry_price": 951.0,
-      "last_price": 937.0,
+      "last_price": 940.0,
       "best_price": 952.0,
       "worst_price": 932.0,
       "score": 73,
@@ -7790,14 +7790,14 @@
       "volume_ratio_at_signal": 1.31,
       "alert": null,
       "results": {
-        "latest_pct": -1.472,
+        "latest_pct": -1.157,
         "max_gain": 0.105,
         "max_drawdown": -1.998,
         "pct_5m": 0.0,
         "pct_10m": 0.0,
         "pct_30m": -1.682
       },
-      "age_minutes": 47.25
+      "age_minutes": 48.58
     },
     {
       "key": "ai_pool:3443:59:4405.0",
@@ -8140,7 +8140,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:15:25.729233+00:00",
-      "updated_at": "2026-06-05T04:03:36.639143+00:00",
+      "updated_at": "2026-06-05T04:03:52.400043+00:00",
       "status": "open",
       "code": "1609",
       "name": "大亞",
@@ -8161,7 +8161,7 @@
         "pct_10m": 0.126,
         "pct_30m": -0.759
       },
-      "age_minutes": 48.18
+      "age_minutes": 48.44
     },
     {
       "key": "ai_pool:2615:100:85.8",
@@ -8280,13 +8280,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:20:15.486026+00:00",
-      "updated_at": "2026-06-05T04:02:29.911991+00:00",
+      "updated_at": "2026-06-05T04:03:49.617888+00:00",
       "status": "open",
       "code": "3037",
       "name": "欣興",
       "sector": "半導體",
       "entry_price": 952.0,
-      "last_price": 937.0,
+      "last_price": 940.0,
       "best_price": 952.0,
       "worst_price": 932.0,
       "score": 63,
@@ -8294,14 +8294,14 @@
       "volume_ratio_at_signal": 1.32,
       "alert": null,
       "results": {
-        "latest_pct": -1.576,
+        "latest_pct": -1.261,
         "max_gain": 0.0,
         "max_drawdown": -2.101,
         "pct_5m": -0.105,
         "pct_10m": -0.945,
         "pct_30m": -2.101
       },
-      "age_minutes": 42.24
+      "age_minutes": 43.57
     },
     {
       "key": "ai_pool:8046:60:869.0",
@@ -8336,13 +8336,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:20:15.486067+00:00",
-      "updated_at": "2026-06-05T04:03:29.200585+00:00",
+      "updated_at": "2026-06-05T04:03:46.408263+00:00",
       "status": "open",
       "code": "2356",
       "name": "英業達",
       "sector": "電腦週邊",
       "entry_price": 77.6,
-      "last_price": 77.1,
+      "last_price": 77.0,
       "best_price": 77.7,
       "worst_price": 76.6,
       "score": 58,
@@ -8350,14 +8350,14 @@
       "volume_ratio_at_signal": 0.65,
       "alert": null,
       "results": {
-        "latest_pct": -0.644,
+        "latest_pct": -0.773,
         "max_gain": 0.129,
         "max_drawdown": -1.289,
         "pct_5m": -0.773,
         "pct_10m": -1.289,
         "pct_30m": -1.031
       },
-      "age_minutes": 43.23
+      "age_minutes": 43.52
     },
     {
       "key": "ai_pool:2324:49:41.7",
@@ -8644,7 +8644,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:20:26.563306+00:00",
-      "updated_at": "2026-06-05T04:03:36.639158+00:00",
+      "updated_at": "2026-06-05T04:03:52.400051+00:00",
       "status": "open",
       "code": "1609",
       "name": "大亞",
@@ -8665,7 +8665,7 @@
         "pct_10m": -0.379,
         "pct_30m": -1.01
       },
-      "age_minutes": 43.17
+      "age_minutes": 43.43
     },
     {
       "key": "ai_pool:2379:86:656.0",
@@ -8728,13 +8728,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:25:11.681277+00:00",
-      "updated_at": "2026-06-05T04:02:29.912001+00:00",
+      "updated_at": "2026-06-05T04:03:49.617895+00:00",
       "status": "open",
       "code": "3037",
       "name": "欣興",
       "sector": "半導體",
       "entry_price": 950.0,
-      "last_price": 937.0,
+      "last_price": 940.0,
       "best_price": 951.0,
       "worst_price": 932.0,
       "score": 72,
@@ -8742,14 +8742,14 @@
       "volume_ratio_at_signal": 1.33,
       "alert": null,
       "results": {
-        "latest_pct": -1.368,
+        "latest_pct": -1.053,
         "max_gain": 0.105,
         "max_drawdown": -1.895,
         "pct_5m": -0.737,
         "pct_10m": -0.947,
         "pct_30m": -1.684
       },
-      "age_minutes": 37.3
+      "age_minutes": 38.63
     },
     {
       "key": "ai_pool:8046:71:871.0",
@@ -8896,13 +8896,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:25:11.681354+00:00",
-      "updated_at": "2026-06-05T04:03:29.200597+00:00",
+      "updated_at": "2026-06-05T04:03:46.408269+00:00",
       "status": "open",
       "code": "2356",
       "name": "英業達",
       "sector": "電腦週邊",
       "entry_price": 76.8,
-      "last_price": 77.1,
+      "last_price": 77.0,
       "best_price": 77.2,
       "worst_price": 76.6,
       "score": 42,
@@ -8910,14 +8910,14 @@
       "volume_ratio_at_signal": 0.67,
       "alert": null,
       "results": {
-        "latest_pct": 0.391,
+        "latest_pct": 0.26,
         "max_gain": 0.521,
         "max_drawdown": -0.26,
         "pct_5m": -0.26,
         "pct_10m": 0.0,
         "pct_30m": 0.13
       },
-      "age_minutes": 38.29
+      "age_minutes": 38.58
     },
     {
       "key": "ai_pool:2317:38:286.0",
@@ -9232,7 +9232,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:25:22.049984+00:00",
-      "updated_at": "2026-06-05T04:03:36.639177+00:00",
+      "updated_at": "2026-06-05T04:03:52.400060+00:00",
       "status": "open",
       "code": "1609",
       "name": "大亞",
@@ -9253,14 +9253,14 @@
         "pct_10m": -0.506,
         "pct_30m": -1.138
       },
-      "age_minutes": 38.24
+      "age_minutes": 38.51
     },
     {
       "key": "fund_flow:2344:9:162.0",
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:25:22.049993+00:00",
-      "updated_at": "2026-06-05T03:57:26.502710+00:00",
+      "updated_at": "2026-06-05T04:03:46.061067+00:00",
       "status": "open",
       "code": "2344",
       "name": "華邦電",
@@ -9281,7 +9281,7 @@
         "pct_10m": 0.0,
         "pct_30m": 0.0
       },
-      "age_minutes": 32.07
+      "age_minutes": 38.4
     },
     {
       "key": "ai_pool:2615:90:85.9",
@@ -9428,13 +9428,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:30:18.909592+00:00",
-      "updated_at": "2026-06-05T04:02:29.912013+00:00",
+      "updated_at": "2026-06-05T04:03:49.617902+00:00",
       "status": "open",
       "code": "3037",
       "name": "欣興",
       "sector": "半導體",
       "entry_price": 943.0,
-      "last_price": 937.0,
+      "last_price": 940.0,
       "best_price": 943.0,
       "worst_price": 932.0,
       "score": 52,
@@ -9442,27 +9442,27 @@
       "volume_ratio_at_signal": 1.36,
       "alert": null,
       "results": {
-        "latest_pct": -0.636,
+        "latest_pct": -0.318,
         "max_gain": 0.0,
         "max_drawdown": -1.166,
         "pct_5m": -0.212,
         "pct_10m": -0.53,
         "pct_30m": -0.742
       },
-      "age_minutes": 32.18
+      "age_minutes": 33.51
     },
     {
       "key": "ai_pool:2356:50:76.5",
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:30:18.909603+00:00",
-      "updated_at": "2026-06-05T04:03:29.200609+00:00",
+      "updated_at": "2026-06-05T04:03:46.408276+00:00",
       "status": "open",
       "code": "2356",
       "name": "英業達",
       "sector": "電腦週邊",
       "entry_price": 76.5,
-      "last_price": 77.1,
+      "last_price": 77.0,
       "best_price": 77.2,
       "worst_price": 76.5,
       "score": 50,
@@ -9470,14 +9470,14 @@
       "volume_ratio_at_signal": 0.68,
       "alert": null,
       "results": {
-        "latest_pct": 0.784,
+        "latest_pct": 0.654,
         "max_gain": 0.915,
         "max_drawdown": 0.0,
         "pct_5m": 0.392,
         "pct_10m": 0.523,
         "pct_30m": 0.784
       },
-      "age_minutes": 33.17
+      "age_minutes": 33.46
     },
     {
       "key": "ai_pool:2368:47:1320.0",
@@ -9876,7 +9876,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:30:29.753461+00:00",
-      "updated_at": "2026-06-05T04:03:36.639192+00:00",
+      "updated_at": "2026-06-05T04:03:52.400068+00:00",
       "status": "open",
       "code": "1609",
       "name": "大亞",
@@ -9897,7 +9897,7 @@
         "pct_10m": -0.127,
         "pct_30m": -0.635
       },
-      "age_minutes": 33.11
+      "age_minutes": 33.38
     },
     {
       "key": "ai_pool:2379:68:651.0",
@@ -9985,13 +9985,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:35:12.135084+00:00",
-      "updated_at": "2026-06-05T04:03:29.200621+00:00",
+      "updated_at": "2026-06-05T04:03:46.408283+00:00",
       "status": "open",
       "code": "2356",
       "name": "英業達",
       "sector": "電腦週邊",
       "entry_price": 76.7,
-      "last_price": 77.1,
+      "last_price": 77.0,
       "best_price": 77.2,
       "worst_price": 76.7,
       "score": 52,
@@ -9999,13 +9999,13 @@
       "volume_ratio_at_signal": 0.69,
       "alert": null,
       "results": {
-        "latest_pct": 0.522,
+        "latest_pct": 0.391,
         "max_gain": 0.652,
         "max_drawdown": 0.0,
         "pct_5m": 0.261,
         "pct_10m": 0.522
       },
-      "age_minutes": 28.28
+      "age_minutes": 28.57
     },
     {
       "key": "ai_pool:2368:47:1325.0",
@@ -10066,13 +10066,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:35:12.135142+00:00",
-      "updated_at": "2026-06-05T04:02:29.912025+00:00",
+      "updated_at": "2026-06-05T04:03:49.617910+00:00",
       "status": "open",
       "code": "3037",
       "name": "欣興",
       "sector": "半導體",
       "entry_price": 941.0,
-      "last_price": 937.0,
+      "last_price": 940.0,
       "best_price": 941.0,
       "worst_price": 932.0,
       "score": 33,
@@ -10080,13 +10080,13 @@
       "volume_ratio_at_signal": 1.37,
       "alert": null,
       "results": {
-        "latest_pct": -0.425,
+        "latest_pct": -0.106,
         "max_gain": 0.0,
         "max_drawdown": -0.956,
         "pct_5m": -0.319,
         "pct_10m": -0.638
       },
-      "age_minutes": 27.3
+      "age_minutes": 28.62
     },
     {
       "key": "ai_pool:6215:32:118.5",
@@ -10525,7 +10525,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:35:22.792905+00:00",
-      "updated_at": "2026-06-05T04:03:36.639204+00:00",
+      "updated_at": "2026-06-05T04:03:52.400077+00:00",
       "status": "open",
       "code": "1609",
       "name": "大亞",
@@ -10545,7 +10545,7 @@
         "pct_5m": -0.127,
         "pct_10m": -0.381
       },
-      "age_minutes": 28.23
+      "age_minutes": 28.49
     },
     {
       "key": "ai_pool:3443:72:4370.0",
@@ -10714,13 +10714,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:40:15.555177+00:00",
-      "updated_at": "2026-06-05T04:03:29.200633+00:00",
+      "updated_at": "2026-06-05T04:03:46.408290+00:00",
       "status": "open",
       "code": "2356",
       "name": "英業達",
       "sector": "電腦週邊",
       "entry_price": 76.9,
-      "last_price": 77.1,
+      "last_price": 77.0,
       "best_price": 77.2,
       "worst_price": 76.8,
       "score": 43,
@@ -10728,26 +10728,26 @@
       "volume_ratio_at_signal": 0.69,
       "alert": null,
       "results": {
-        "latest_pct": 0.26,
+        "latest_pct": 0.13,
         "max_gain": 0.39,
         "max_drawdown": -0.13,
         "pct_5m": 0.26,
         "pct_10m": -0.13
       },
-      "age_minutes": 23.23
+      "age_minutes": 23.51
     },
     {
       "key": "ai_pool:3037:42:940.0",
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:40:15.555188+00:00",
-      "updated_at": "2026-06-05T04:02:29.912035+00:00",
+      "updated_at": "2026-06-05T04:03:49.617919+00:00",
       "status": "open",
       "code": "3037",
       "name": "欣興",
       "sector": "半導體",
       "entry_price": 940.0,
-      "last_price": 937.0,
+      "last_price": 940.0,
       "best_price": 940.0,
       "worst_price": 932.0,
       "score": 42,
@@ -10755,13 +10755,13 @@
       "volume_ratio_at_signal": 1.39,
       "alert": null,
       "results": {
-        "latest_pct": -0.319,
+        "latest_pct": 0.0,
         "max_gain": 0.0,
         "max_drawdown": -0.851,
         "pct_5m": -0.532,
         "pct_10m": -0.851
       },
-      "age_minutes": 22.24
+      "age_minutes": 23.57
     },
     {
       "key": "ai_pool:2454:35:4305.0",
@@ -10957,13 +10957,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:40:30.327974+00:00",
-      "updated_at": "2026-06-05T04:03:29.200641+00:00",
+      "updated_at": "2026-06-05T04:03:46.408296+00:00",
       "status": "open",
       "code": "2356",
       "name": "英業達",
       "sector": "電腦週邊",
       "entry_price": 77.0,
-      "last_price": 77.1,
+      "last_price": 77.0,
       "best_price": 77.2,
       "worst_price": 76.8,
       "score": 35,
@@ -10971,13 +10971,13 @@
       "volume_ratio_at_signal": 0.69,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": 0.13,
+        "latest_pct": 0.0,
         "max_gain": 0.26,
         "max_drawdown": -0.26,
         "pct_5m": 0.13,
         "pct_10m": -0.26
       },
-      "age_minutes": 22.98
+      "age_minutes": 23.27
     },
     {
       "key": "fund_flow:2454:35:4305.0",
@@ -11173,7 +11173,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:40:30.328057+00:00",
-      "updated_at": "2026-06-05T04:03:36.639215+00:00",
+      "updated_at": "2026-06-05T04:03:52.400084+00:00",
       "status": "open",
       "code": "1609",
       "name": "大亞",
@@ -11193,7 +11193,7 @@
         "pct_5m": -0.254,
         "pct_10m": -0.381
       },
-      "age_minutes": 23.11
+      "age_minutes": 23.37
     },
     {
       "key": "fund_flow:3017:23:2590.0",
@@ -11362,13 +11362,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:45:14.598088+00:00",
-      "updated_at": "2026-06-05T04:03:29.200652+00:00",
+      "updated_at": "2026-06-05T04:03:46.408302+00:00",
       "status": "open",
       "code": "2356",
       "name": "英業達",
       "sector": "電腦週邊",
       "entry_price": 77.1,
-      "last_price": 77.1,
+      "last_price": 77.0,
       "best_price": 77.2,
       "worst_price": 76.8,
       "score": 55,
@@ -11376,13 +11376,13 @@
       "volume_ratio_at_signal": 0.7,
       "alert": null,
       "results": {
-        "latest_pct": 0.0,
+        "latest_pct": -0.13,
         "max_gain": 0.13,
         "max_drawdown": -0.389,
         "pct_5m": -0.389,
         "pct_10m": -0.259
       },
-      "age_minutes": 18.24
+      "age_minutes": 18.53
     },
     {
       "key": "ai_pool:2368:52:1315.0",
@@ -11443,27 +11443,27 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:45:14.598190+00:00",
-      "updated_at": "2026-06-05T04:02:29.912046+00:00",
+      "updated_at": "2026-06-05T04:03:49.617928+00:00",
       "status": "open",
       "code": "3037",
       "name": "欣興",
       "sector": "半導體",
       "entry_price": 932.0,
-      "last_price": 937.0,
-      "best_price": 937.0,
+      "last_price": 940.0,
+      "best_price": 940.0,
       "worst_price": 932.0,
       "score": 41,
       "change_rate_at_signal": -4.01,
       "volume_ratio_at_signal": 1.42,
       "alert": null,
       "results": {
-        "latest_pct": 0.536,
-        "max_gain": 0.536,
+        "latest_pct": 0.858,
+        "max_gain": 0.858,
         "max_drawdown": 0.0,
         "pct_5m": 0.0,
         "pct_10m": 0.215
       },
-      "age_minutes": 17.26
+      "age_minutes": 18.58
     },
     {
       "key": "ai_pool:3017:40:2595.0",
@@ -11659,27 +11659,27 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:45:24.850208+00:00",
-      "updated_at": "2026-06-05T04:02:29.912055+00:00",
+      "updated_at": "2026-06-05T04:03:49.617935+00:00",
       "status": "open",
       "code": "3037",
       "name": "欣興",
       "sector": "半導體",
       "entry_price": 935.0,
-      "last_price": 937.0,
-      "best_price": 937.0,
+      "last_price": 940.0,
+      "best_price": 940.0,
       "worst_price": 932.0,
       "score": 30,
       "change_rate_at_signal": -3.7,
       "volume_ratio_at_signal": 1.42,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": 0.214,
-        "max_gain": 0.214,
+        "latest_pct": 0.535,
+        "max_gain": 0.535,
         "max_drawdown": -0.321,
         "pct_5m": -0.321,
         "pct_10m": -0.107
       },
-      "age_minutes": 17.08
+      "age_minutes": 18.41
     },
     {
       "key": "fund_flow:5347:26:160.5",
@@ -11902,7 +11902,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:45:24.850269+00:00",
-      "updated_at": "2026-06-05T04:03:36.639225+00:00",
+      "updated_at": "2026-06-05T04:03:52.400091+00:00",
       "status": "open",
       "code": "1609",
       "name": "大亞",
@@ -11922,7 +11922,7 @@
         "pct_5m": -0.254,
         "pct_10m": -0.509
       },
-      "age_minutes": 18.2
+      "age_minutes": 18.46
     },
     {
       "key": "fund_flow:2308:31:2315.0",
@@ -12064,13 +12064,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:50:15.098651+00:00",
-      "updated_at": "2026-06-05T04:03:29.200664+00:00",
+      "updated_at": "2026-06-05T04:03:46.408310+00:00",
       "status": "open",
       "code": "2356",
       "name": "英業達",
       "sector": "電腦週邊",
       "entry_price": 76.9,
-      "last_price": 77.1,
+      "last_price": 77.0,
       "best_price": 77.2,
       "worst_price": 76.8,
       "score": 61,
@@ -12078,13 +12078,13 @@
       "volume_ratio_at_signal": 0.7,
       "alert": null,
       "results": {
-        "latest_pct": 0.26,
+        "latest_pct": 0.13,
         "max_gain": 0.39,
         "max_drawdown": -0.13,
         "pct_5m": 0.0,
         "pct_10m": 0.26
       },
-      "age_minutes": 13.24
+      "age_minutes": 13.52
     },
     {
       "key": "ai_pool:2324:55:41.45",
@@ -12118,27 +12118,27 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:50:15.098690+00:00",
-      "updated_at": "2026-06-05T04:02:29.912065+00:00",
+      "updated_at": "2026-06-05T04:03:49.617943+00:00",
       "status": "open",
       "code": "3037",
       "name": "欣興",
       "sector": "半導體",
       "entry_price": 933.0,
-      "last_price": 937.0,
-      "best_price": 937.0,
+      "last_price": 940.0,
+      "best_price": 940.0,
       "worst_price": 932.0,
       "score": 41,
       "change_rate_at_signal": -3.91,
       "volume_ratio_at_signal": 1.43,
       "alert": null,
       "results": {
-        "latest_pct": 0.429,
-        "max_gain": 0.429,
+        "latest_pct": 0.75,
+        "max_gain": 0.75,
         "max_drawdown": -0.107,
         "pct_5m": 0.107,
         "pct_10m": 0.322
       },
-      "age_minutes": 12.25
+      "age_minutes": 13.58
     },
     {
       "key": "ai_pool:6215:37:118.0",
@@ -12658,7 +12658,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:50:26.956364+00:00",
-      "updated_at": "2026-06-05T04:03:36.639238+00:00",
+      "updated_at": "2026-06-05T04:03:52.400099+00:00",
       "status": "open",
       "code": "1609",
       "name": "大亞",
@@ -12678,7 +12678,7 @@
         "pct_5m": -0.255,
         "pct_10m": -0.128
       },
-      "age_minutes": 13.16
+      "age_minutes": 13.42
     },
     {
       "key": "ai_pool:2615:77:85.5",
@@ -12711,13 +12711,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:55:12.071359+00:00",
-      "updated_at": "2026-06-05T04:03:29.200675+00:00",
+      "updated_at": "2026-06-05T04:03:46.408319+00:00",
       "status": "open",
       "code": "2356",
       "name": "英業達",
       "sector": "電腦週邊",
       "entry_price": 76.7,
-      "last_price": 77.1,
+      "last_price": 77.0,
       "best_price": 77.2,
       "worst_price": 76.7,
       "score": 60,
@@ -12725,12 +12725,12 @@
       "volume_ratio_at_signal": 0.7,
       "alert": null,
       "results": {
-        "latest_pct": 0.522,
+        "latest_pct": 0.391,
         "max_gain": 0.652,
         "max_drawdown": 0.0,
         "pct_5m": 0.522
       },
-      "age_minutes": 8.29
+      "age_minutes": 8.57
     },
     {
       "key": "ai_pool:2618:52:37.9",
@@ -12971,26 +12971,26 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:55:12.071504+00:00",
-      "updated_at": "2026-06-05T04:02:29.912077+00:00",
+      "updated_at": "2026-06-05T04:03:49.617952+00:00",
       "status": "open",
       "code": "3037",
       "name": "欣興",
       "sector": "半導體",
       "entry_price": 930.0,
-      "last_price": 937.0,
-      "best_price": 937.0,
+      "last_price": 940.0,
+      "best_price": 940.0,
       "worst_price": 930.0,
       "score": 11,
       "change_rate_at_signal": -4.22,
       "volume_ratio_at_signal": 1.45,
       "alert": null,
       "results": {
-        "latest_pct": 0.753,
-        "max_gain": 0.753,
+        "latest_pct": 1.075,
+        "max_gain": 1.075,
         "max_drawdown": 0.0,
         "pct_5m": 0.645
       },
-      "age_minutes": 7.3
+      "age_minutes": 8.63
     },
     {
       "key": "ai_pool:2308:4:2295.0",
@@ -13231,7 +13231,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:55:23.123565+00:00",
-      "updated_at": "2026-06-05T04:03:36.639249+00:00",
+      "updated_at": "2026-06-05T04:03:52.400107+00:00",
       "status": "open",
       "code": "1609",
       "name": "大亞",
@@ -13250,7 +13250,7 @@
         "max_drawdown": 0.0,
         "pct_5m": 0.128
       },
-      "age_minutes": 8.23
+      "age_minutes": 8.49
     },
     {
       "key": "fund_flow:2454:29:4285.0",
@@ -13487,13 +13487,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T04:00:24.527414+00:00",
-      "updated_at": "2026-06-05T04:03:29.200687+00:00",
+      "updated_at": "2026-06-05T04:03:46.408326+00:00",
       "status": "open",
       "code": "2356",
       "name": "英業達",
       "sector": "電腦週邊",
       "entry_price": 77.0,
-      "last_price": 77.1,
+      "last_price": 77.0,
       "best_price": 77.2,
       "worst_price": 77.0,
       "score": 44,
@@ -13501,36 +13501,36 @@
       "volume_ratio_at_signal": 0.71,
       "alert": null,
       "results": {
-        "latest_pct": 0.13,
+        "latest_pct": 0.0,
         "max_gain": 0.26,
         "max_drawdown": 0.0
       },
-      "age_minutes": 3.08
+      "age_minutes": 3.36
     },
     {
       "key": "ai_pool:3037:41:937.0",
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T04:00:24.527425+00:00",
-      "updated_at": "2026-06-05T04:02:29.912087+00:00",
+      "updated_at": "2026-06-05T04:03:49.617959+00:00",
       "status": "open",
       "code": "3037",
       "name": "欣興",
       "sector": "半導體",
       "entry_price": 937.0,
-      "last_price": 937.0,
-      "best_price": 937.0,
+      "last_price": 940.0,
+      "best_price": 940.0,
       "worst_price": 936.0,
       "score": 41,
       "change_rate_at_signal": -3.5,
       "volume_ratio_at_signal": 1.47,
       "alert": null,
       "results": {
-        "latest_pct": 0.0,
-        "max_gain": 0.0,
+        "latest_pct": 0.32,
+        "max_gain": 0.32,
         "max_drawdown": -0.107
       },
-      "age_minutes": 2.09
+      "age_minutes": 3.42
     },
     {
       "key": "ai_pool:2382:32:389.0",
@@ -13787,25 +13787,25 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T04:00:36.205776+00:00",
-      "updated_at": "2026-06-05T04:02:29.912096+00:00",
+      "updated_at": "2026-06-05T04:03:49.617965+00:00",
       "status": "open",
       "code": "3037",
       "name": "欣興",
       "sector": "半導體",
       "entry_price": 936.0,
-      "last_price": 937.0,
-      "best_price": 937.0,
+      "last_price": 940.0,
+      "best_price": 940.0,
       "worst_price": 936.0,
       "score": 34,
       "change_rate_at_signal": -3.6,
       "volume_ratio_at_signal": 1.47,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": 0.107,
-        "max_gain": 0.107,
+        "latest_pct": 0.427,
+        "max_gain": 0.427,
         "max_drawdown": 0.0
       },
-      "age_minutes": 1.9
+      "age_minutes": 3.22
     },
     {
       "key": "fund_flow:8046:30:850.0",
@@ -14012,7 +14012,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T04:00:36.205845+00:00",
-      "updated_at": "2026-06-05T04:03:36.639261+00:00",
+      "updated_at": "2026-06-05T04:03:52.400143+00:00",
       "status": "open",
       "code": "1609",
       "name": "大亞",
@@ -14030,14 +14030,14 @@
         "max_gain": 0.0,
         "max_drawdown": 0.0
       },
-      "age_minutes": 3.01
+      "age_minutes": 3.27
     },
     {
       "key": "fund_flow:2344:10:162.0",
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T04:00:36.205852+00:00",
-      "updated_at": "2026-06-05T04:00:36.205853+00:00",
+      "updated_at": "2026-06-05T04:03:46.061083+00:00",
       "status": "open",
       "code": "2344",
       "name": "華邦電",
@@ -14050,7 +14050,12 @@
       "change_rate_at_signal": -9.74,
       "volume_ratio_at_signal": 0.95,
       "alert": "資金退潮警報",
-      "results": {}
+      "results": {
+        "latest_pct": 0.0,
+        "max_gain": 0.0,
+        "max_drawdown": 0.0
+      },
+      "age_minutes": 3.16
     },
     {
       "key": "ai_pool:2379:70:646.0",
@@ -14107,50 +14112,50 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T04:00:54.481821+00:00",
-      "updated_at": "2026-06-05T04:02:29.912106+00:00",
+      "updated_at": "2026-06-05T04:03:49.617971+00:00",
       "status": "open",
       "code": "3037",
       "name": "欣興",
       "sector": "半導體",
       "entry_price": 936.0,
-      "last_price": 937.0,
-      "best_price": 937.0,
+      "last_price": 940.0,
+      "best_price": 940.0,
       "worst_price": 936.0,
       "score": 49,
       "change_rate_at_signal": -3.6,
       "volume_ratio_at_signal": 1.47,
       "alert": null,
       "results": {
-        "latest_pct": 0.107,
-        "max_gain": 0.107,
+        "latest_pct": 0.427,
+        "max_gain": 0.427,
         "max_drawdown": 0.0
       },
-      "age_minutes": 1.59
+      "age_minutes": 2.92
     },
     {
       "key": "ai_pool:2356:45:77.1",
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T04:00:54.481827+00:00",
-      "updated_at": "2026-06-05T04:03:29.200697+00:00",
+      "updated_at": "2026-06-05T04:03:46.408333+00:00",
       "status": "open",
       "code": "2356",
       "name": "英業達",
       "sector": "電腦週邊",
       "entry_price": 77.1,
-      "last_price": 77.1,
+      "last_price": 77.0,
       "best_price": 77.2,
-      "worst_price": 77.1,
+      "worst_price": 77.0,
       "score": 45,
       "change_rate_at_signal": -0.89,
       "volume_ratio_at_signal": 0.71,
       "alert": null,
       "results": {
-        "latest_pct": 0.0,
+        "latest_pct": -0.13,
         "max_gain": 0.13,
-        "max_drawdown": 0.0
+        "max_drawdown": -0.13
       },
-      "age_minutes": 2.58
+      "age_minutes": 2.87
     },
     {
       "key": "ai_pool:3481:32:52.2",
@@ -14632,25 +14637,25 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T04:01:42.928830+00:00",
-      "updated_at": "2026-06-05T04:02:29.912133+00:00",
+      "updated_at": "2026-06-05T04:03:49.617978+00:00",
       "status": "open",
       "code": "3037",
       "name": "欣興",
       "sector": "半導體",
       "entry_price": 938.0,
-      "last_price": 937.0,
-      "best_price": 938.0,
+      "last_price": 940.0,
+      "best_price": 940.0,
       "worst_price": 937.0,
       "score": 49,
       "change_rate_at_signal": -3.39,
       "volume_ratio_at_signal": 1.47,
       "alert": null,
       "results": {
-        "latest_pct": -0.107,
-        "max_gain": 0.0,
+        "latest_pct": 0.213,
+        "max_gain": 0.213,
         "max_drawdown": -0.107
       },
-      "age_minutes": 0.78
+      "age_minutes": 2.11
     },
     {
       "key": "ai_pool:8046:41:850.0",
@@ -14832,25 +14837,25 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T04:01:59.401089+00:00",
-      "updated_at": "2026-06-05T04:03:29.200708+00:00",
+      "updated_at": "2026-06-05T04:03:46.408341+00:00",
       "status": "open",
       "code": "2356",
       "name": "英業達",
       "sector": "電腦週邊",
       "entry_price": 77.1,
-      "last_price": 77.1,
+      "last_price": 77.0,
       "best_price": 77.2,
-      "worst_price": 77.1,
+      "worst_price": 77.0,
       "score": 35,
       "change_rate_at_signal": -0.89,
       "volume_ratio_at_signal": 0.71,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": 0.0,
+        "latest_pct": -0.13,
         "max_gain": 0.13,
-        "max_drawdown": 0.0
+        "max_drawdown": -0.13
       },
-      "age_minutes": 1.5
+      "age_minutes": 1.78
     },
     {
       "key": "fund_flow:2382:32:389.0",
@@ -15182,7 +15187,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T04:01:59.401329+00:00",
-      "updated_at": "2026-06-05T04:03:36.639274+00:00",
+      "updated_at": "2026-06-05T04:03:52.400154+00:00",
       "status": "open",
       "code": "1609",
       "name": "大亞",
@@ -15200,7 +15205,7 @@
         "max_gain": 0.0,
         "max_drawdown": 0.0
       },
-      "age_minutes": 1.62
+      "age_minutes": 1.88
     },
     {
       "key": "fund_flow:2409:22:27.3",
@@ -15232,38 +15237,38 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T04:02:19.489032+00:00",
-      "updated_at": "2026-06-05T04:03:29.200717+00:00",
+      "updated_at": "2026-06-05T04:03:46.408347+00:00",
       "status": "open",
       "code": "2356",
       "name": "英業達",
       "sector": "電腦週邊",
       "entry_price": 77.1,
-      "last_price": 77.1,
+      "last_price": 77.0,
       "best_price": 77.1,
-      "worst_price": 77.1,
+      "worst_price": 77.0,
       "score": 63,
       "change_rate_at_signal": -0.89,
       "volume_ratio_at_signal": 0.71,
       "alert": null,
       "results": {
-        "latest_pct": 0.0,
+        "latest_pct": -0.13,
         "max_gain": 0.0,
-        "max_drawdown": 0.0
+        "max_drawdown": -0.13
       },
-      "age_minutes": 1.16
+      "age_minutes": 1.45
     },
     {
       "key": "ai_pool:3037:50:940.0",
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T04:02:19.489081+00:00",
-      "updated_at": "2026-06-05T04:02:29.912143+00:00",
+      "updated_at": "2026-06-05T04:03:49.617985+00:00",
       "status": "open",
       "code": "3037",
       "name": "欣興",
       "sector": "半導體",
       "entry_price": 940.0,
-      "last_price": 937.0,
+      "last_price": 940.0,
       "best_price": 940.0,
       "worst_price": 937.0,
       "score": 50,
@@ -15271,11 +15276,11 @@
       "volume_ratio_at_signal": 1.48,
       "alert": null,
       "results": {
-        "latest_pct": -0.319,
+        "latest_pct": 0.0,
         "max_gain": 0.0,
         "max_drawdown": -0.319
       },
-      "age_minutes": 0.17
+      "age_minutes": 1.5
     },
     {
       "key": "ai_pool:2324:45:41.45",
