@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-05T02:36:32.257986+00:00",
+  "updated_at": "2026-06-05T02:36:35.158945+00:00",
   "count": 117,
   "items": [
     {
@@ -1045,13 +1045,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:25:15.330035+00:00",
-      "updated_at": "2026-06-05T02:31:39.652234+00:00",
+      "updated_at": "2026-06-05T02:36:34.180151+00:00",
       "status": "open",
       "code": "3017",
       "name": "奇鋐",
       "sector": "AI散熱",
       "entry_price": 2630.0,
-      "last_price": 2650.0,
+      "last_price": 2630.0,
       "best_price": 2650.0,
       "worst_price": 2625.0,
       "score": 31,
@@ -1059,12 +1059,13 @@
       "volume_ratio_at_signal": 0.66,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": 0.76,
+        "latest_pct": 0.0,
         "max_gain": 0.76,
         "max_drawdown": -0.19,
-        "pct_5m": 0.76
+        "pct_5m": 0.76,
+        "pct_10m": 0.0
       },
-      "age_minutes": 6.41
+      "age_minutes": 11.31
     },
     {
       "key": "fund_flow:5347:27:160.5",
@@ -1439,13 +1440,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:25:16.826567+00:00",
-      "updated_at": "2026-06-05T02:31:39.652255+00:00",
+      "updated_at": "2026-06-05T02:36:34.180169+00:00",
       "status": "open",
       "code": "3017",
       "name": "奇鋐",
       "sector": "AI散熱",
       "entry_price": 2630.0,
-      "last_price": 2650.0,
+      "last_price": 2630.0,
       "best_price": 2650.0,
       "worst_price": 2625.0,
       "score": 30,
@@ -1453,12 +1454,13 @@
       "volume_ratio_at_signal": 0.66,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": 0.76,
+        "latest_pct": 0.0,
         "max_gain": 0.76,
         "max_drawdown": -0.19,
-        "pct_5m": 0.76
+        "pct_5m": 0.76,
+        "pct_10m": 0.0
       },
-      "age_minutes": 6.38
+      "age_minutes": 11.29
     },
     {
       "key": "fund_flow:2344:33:163.0",
@@ -1596,13 +1598,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:25:21.622329+00:00",
-      "updated_at": "2026-06-05T02:31:39.652266+00:00",
+      "updated_at": "2026-06-05T02:36:34.180177+00:00",
       "status": "open",
       "code": "3017",
       "name": "奇鋐",
       "sector": "AI散熱",
       "entry_price": 2630.0,
-      "last_price": 2650.0,
+      "last_price": 2630.0,
       "best_price": 2650.0,
       "worst_price": 2625.0,
       "score": 29,
@@ -1610,12 +1612,13 @@
       "volume_ratio_at_signal": 0.66,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": 0.76,
+        "latest_pct": 0.0,
         "max_gain": 0.76,
         "max_drawdown": -0.19,
-        "pct_5m": 0.76
+        "pct_5m": 0.76,
+        "pct_10m": 0.0
       },
-      "age_minutes": 6.3
+      "age_minutes": 11.21
     },
     {
       "key": "fund_flow:2376:32:366.5",
@@ -2064,25 +2067,26 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:30:19.670309+00:00",
-      "updated_at": "2026-06-05T02:31:39.652277+00:00",
+      "updated_at": "2026-06-05T02:36:34.180185+00:00",
       "status": "open",
       "code": "3017",
       "name": "奇鋐",
       "sector": "AI散熱",
       "entry_price": 2650.0,
-      "last_price": 2650.0,
+      "last_price": 2630.0,
       "best_price": 2650.0,
-      "worst_price": 2650.0,
+      "worst_price": 2630.0,
       "score": 39,
       "change_rate_at_signal": -2.21,
       "volume_ratio_at_signal": 0.7,
       "alert": null,
       "results": {
-        "latest_pct": 0.0,
+        "latest_pct": -0.755,
         "max_gain": 0.0,
-        "max_drawdown": 0.0
+        "max_drawdown": -0.755,
+        "pct_5m": -0.755
       },
-      "age_minutes": 1.33
+      "age_minutes": 6.24
     },
     {
       "key": "ai_pool:2330:34:2385.0",
@@ -2914,20 +2918,25 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:35:23.555098+00:00",
-      "updated_at": "2026-06-05T02:35:23.555102+00:00",
+      "updated_at": "2026-06-05T02:36:34.180195+00:00",
       "status": "open",
       "code": "3017",
       "name": "奇鋐",
       "sector": "AI散熱",
       "entry_price": 2635.0,
-      "last_price": 2635.0,
+      "last_price": 2630.0,
       "best_price": 2635.0,
-      "worst_price": 2635.0,
+      "worst_price": 2630.0,
       "score": 30,
       "change_rate_at_signal": -2.76,
       "volume_ratio_at_signal": 0.73,
       "alert": "資金退潮警報",
-      "results": {}
+      "results": {
+        "latest_pct": -0.19,
+        "max_gain": 0.0,
+        "max_drawdown": -0.19
+      },
+      "age_minutes": 1.18
     },
     {
       "key": "fund_flow:1605:25:39.25",
