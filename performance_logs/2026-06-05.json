@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-05T03:21:28.701516+00:00",
+  "updated_at": "2026-06-05T03:21:31.087026+00:00",
   "count": 310,
   "items": [
     {
@@ -384,7 +384,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:25:05.423171+00:00",
-      "updated_at": "2026-06-05T03:16:30.243092+00:00",
+      "updated_at": "2026-06-05T03:21:30.527539+00:00",
       "status": "open",
       "code": "2609",
       "name": "陽明",
@@ -405,7 +405,7 @@
         "pct_10m": 0.37,
         "pct_30m": 0.185
       },
-      "age_minutes": 51.41
+      "age_minutes": 56.42
     },
     {
       "key": "ai_pool:3711:48:581.0",
@@ -972,7 +972,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:25:12.529373+00:00",
-      "updated_at": "2026-06-05T03:16:30.243132+00:00",
+      "updated_at": "2026-06-05T03:21:30.527567+00:00",
       "status": "open",
       "code": "2609",
       "name": "陽明",
@@ -993,7 +993,7 @@
         "pct_10m": 0.185,
         "pct_30m": 0.0
       },
-      "age_minutes": 51.3
+      "age_minutes": 56.3
     },
     {
       "key": "ai_pool:3481:40:53.0",
@@ -2120,7 +2120,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:30:19.670291+00:00",
-      "updated_at": "2026-06-05T03:16:30.243144+00:00",
+      "updated_at": "2026-06-05T03:21:30.527580+00:00",
       "status": "open",
       "code": "2609",
       "name": "陽明",
@@ -2141,7 +2141,7 @@
         "pct_10m": 0.742,
         "pct_30m": 0.371
       },
-      "age_minutes": 46.18
+      "age_minutes": 51.18
     },
     {
       "key": "ai_pool:3481:48:53.3",
@@ -2792,7 +2792,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:35:12.437160+00:00",
-      "updated_at": "2026-06-05T03:16:30.243155+00:00",
+      "updated_at": "2026-06-05T03:21:30.527589+00:00",
       "status": "open",
       "code": "2609",
       "name": "陽明",
@@ -2813,7 +2813,7 @@
         "pct_10m": -0.552,
         "pct_30m": -0.737
       },
-      "age_minutes": 41.3
+      "age_minutes": 46.3
     },
     {
       "key": "ai_pool:8046:61:871.0",
@@ -3604,7 +3604,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:40:15.726533+00:00",
-      "updated_at": "2026-06-05T03:16:30.243165+00:00",
+      "updated_at": "2026-06-05T03:21:30.527599+00:00",
       "status": "open",
       "code": "2609",
       "name": "陽明",
@@ -3625,7 +3625,7 @@
         "pct_10m": -0.185,
         "pct_30m": -0.369
       },
-      "age_minutes": 36.24
+      "age_minutes": 41.25
     },
     {
       "key": "ai_pool:3231:38:172.0",
@@ -4864,7 +4864,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:50:15.682091+00:00",
-      "updated_at": "2026-06-05T03:16:30.243175+00:00",
+      "updated_at": "2026-06-05T03:21:30.527614+00:00",
       "status": "open",
       "code": "2609",
       "name": "陽明",
@@ -4882,9 +4882,10 @@
         "max_gain": 0.185,
         "max_drawdown": -0.185,
         "pct_5m": 0.185,
-        "pct_10m": 0.185
+        "pct_10m": 0.185,
+        "pct_30m": -0.185
       },
-      "age_minutes": 26.24
+      "age_minutes": 31.25
     },
     {
       "key": "ai_pool:2324:54:41.35",
@@ -5547,7 +5548,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:55:13.518209+00:00",
-      "updated_at": "2026-06-05T03:16:30.243183+00:00",
+      "updated_at": "2026-06-05T03:21:30.527630+00:00",
       "status": "open",
       "code": "2609",
       "name": "陽明",
@@ -5567,7 +5568,7 @@
         "pct_5m": 0.0,
         "pct_10m": -0.37
       },
-      "age_minutes": 21.28
+      "age_minutes": 26.28
     },
     {
       "key": "ai_pool:2324:57:41.55",
@@ -6249,7 +6250,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:00:25.046096+00:00",
-      "updated_at": "2026-06-05T03:16:30.243191+00:00",
+      "updated_at": "2026-06-05T03:21:30.527643+00:00",
       "status": "open",
       "code": "2609",
       "name": "陽明",
@@ -6269,7 +6270,7 @@
         "pct_5m": -0.554,
         "pct_10m": -0.369
       },
-      "age_minutes": 16.09
+      "age_minutes": 21.09
     },
     {
       "key": "ai_pool:3711:37:578.0",
@@ -6897,7 +6898,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:05:11.974240+00:00",
-      "updated_at": "2026-06-05T03:16:30.243198+00:00",
+      "updated_at": "2026-06-05T03:21:30.527650+00:00",
       "status": "open",
       "code": "2609",
       "name": "陽明",
@@ -6917,7 +6918,7 @@
         "pct_5m": 0.0,
         "pct_10m": -0.185
       },
-      "age_minutes": 11.3
+      "age_minutes": 16.31
     },
     {
       "key": "ai_pool:3017:32:2615.0",
@@ -7719,7 +7720,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:15:14.980029+00:00",
-      "updated_at": "2026-06-05T03:16:30.243206+00:00",
+      "updated_at": "2026-06-05T03:21:30.527658+00:00",
       "status": "open",
       "code": "2609",
       "name": "陽明",
@@ -7735,9 +7736,10 @@
       "results": {
         "latest_pct": 0.0,
         "max_gain": 0.0,
-        "max_drawdown": 0.0
+        "max_drawdown": 0.0,
+        "pct_5m": 0.0
       },
-      "age_minutes": 1.25
+      "age_minutes": 6.26
     },
     {
       "key": "ai_pool:2618:51:37.95",
@@ -8241,20 +8243,25 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:20:15.486097+00:00",
-      "updated_at": "2026-06-05T03:20:15.486099+00:00",
+      "updated_at": "2026-06-05T03:21:30.527665+00:00",
       "status": "open",
       "code": "2609",
       "name": "陽明",
       "sector": "航運",
       "entry_price": 54.0,
-      "last_price": 54.0,
+      "last_price": 53.9,
       "best_price": 54.0,
-      "worst_price": 54.0,
+      "worst_price": 53.9,
       "score": 47,
       "change_rate_at_signal": 1.5,
       "volume_ratio_at_signal": 0.82,
       "alert": null,
-      "results": {}
+      "results": {
+        "latest_pct": -0.185,
+        "max_gain": 0.0,
+        "max_drawdown": -0.185
+      },
+      "age_minutes": 1.25
     },
     {
       "key": "ai_pool:2454:39:4335.0",
