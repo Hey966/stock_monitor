@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-05T04:26:45.661680+00:00",
+  "updated_at": "2026-06-05T04:26:49.579654+00:00",
   "count": 688,
   "items": [
     {
@@ -272,13 +272,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:25:05.423097+00:00",
-      "updated_at": "2026-06-05T04:21:41.602054+00:00",
+      "updated_at": "2026-06-05T04:26:48.110591+00:00",
       "status": "open",
       "code": "2454",
       "name": "聯發科",
       "sector": "半導體",
       "entry_price": 4390.0,
-      "last_price": 4270.0,
+      "last_price": 4280.0,
       "best_price": 4400.0,
       "worst_price": 4270.0,
       "score": 53,
@@ -286,14 +286,14 @@
       "volume_ratio_at_signal": 0.74,
       "alert": null,
       "results": {
-        "latest_pct": -2.733,
+        "latest_pct": -2.506,
         "max_gain": 0.228,
         "max_drawdown": -2.733,
         "pct_5m": -0.114,
         "pct_10m": 0.0,
         "pct_30m": -0.911
       },
-      "age_minutes": 116.6
+      "age_minutes": 121.71
     },
     {
       "key": "ai_pool:6215:53:120.0",
@@ -1952,13 +1952,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:30:19.670236+00:00",
-      "updated_at": "2026-06-05T04:21:41.602083+00:00",
+      "updated_at": "2026-06-05T04:26:48.110622+00:00",
       "status": "open",
       "code": "2454",
       "name": "聯發科",
       "sector": "半導體",
       "entry_price": 4390.0,
-      "last_price": 4270.0,
+      "last_price": 4280.0,
       "best_price": 4390.0,
       "worst_price": 4270.0,
       "score": 63,
@@ -1966,14 +1966,14 @@
       "volume_ratio_at_signal": 0.75,
       "alert": null,
       "results": {
-        "latest_pct": -2.733,
+        "latest_pct": -2.506,
         "max_gain": 0.0,
         "max_drawdown": -2.733,
         "pct_5m": 0.0,
         "pct_10m": -0.911,
         "pct_30m": -0.114
       },
-      "age_minutes": 111.37
+      "age_minutes": 116.47
     },
     {
       "key": "ai_pool:2324:60:41.25",
@@ -2764,13 +2764,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:35:12.437150+00:00",
-      "updated_at": "2026-06-05T04:21:41.602095+00:00",
+      "updated_at": "2026-06-05T04:26:48.110637+00:00",
       "status": "open",
       "code": "2454",
       "name": "聯發科",
       "sector": "半導體",
       "entry_price": 4395.0,
-      "last_price": 4270.0,
+      "last_price": 4280.0,
       "best_price": 4395.0,
       "worst_price": 4270.0,
       "score": 63,
@@ -2778,14 +2778,14 @@
       "volume_ratio_at_signal": 0.76,
       "alert": null,
       "results": {
-        "latest_pct": -2.844,
+        "latest_pct": -2.617,
         "max_gain": 0.0,
         "max_drawdown": -2.844,
         "pct_5m": -1.024,
         "pct_10m": -0.796,
         "pct_30m": -0.91
       },
-      "age_minutes": 106.49
+      "age_minutes": 111.59
     },
     {
       "key": "ai_pool:2609:62:54.3",
@@ -3072,13 +3072,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:35:23.555069+00:00",
-      "updated_at": "2026-06-05T04:21:41.602103+00:00",
+      "updated_at": "2026-06-05T04:26:48.110649+00:00",
       "status": "open",
       "code": "2454",
       "name": "聯發科",
       "sector": "半導體",
       "entry_price": 4390.0,
-      "last_price": 4270.0,
+      "last_price": 4280.0,
       "best_price": 4390.0,
       "worst_price": 4270.0,
       "score": 73,
@@ -3086,14 +3086,14 @@
       "volume_ratio_at_signal": 0.76,
       "alert": "大戶進場警報",
       "results": {
-        "latest_pct": -2.733,
+        "latest_pct": -2.506,
         "max_gain": 0.0,
         "max_drawdown": -2.733,
         "pct_5m": -0.911,
         "pct_10m": -0.683,
         "pct_30m": -0.797
       },
-      "age_minutes": 106.3
+      "age_minutes": 111.41
     },
     {
       "key": "fund_flow:2409:26:27.9",
@@ -3576,13 +3576,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:40:15.726522+00:00",
-      "updated_at": "2026-06-05T04:21:41.602139+00:00",
+      "updated_at": "2026-06-05T04:26:48.110660+00:00",
       "status": "open",
       "code": "2454",
       "name": "聯發科",
       "sector": "半導體",
       "entry_price": 4360.0,
-      "last_price": 4270.0,
+      "last_price": 4280.0,
       "best_price": 4385.0,
       "worst_price": 4270.0,
       "score": 51,
@@ -3590,14 +3590,14 @@
       "volume_ratio_at_signal": 0.77,
       "alert": null,
       "results": {
-        "latest_pct": -2.064,
+        "latest_pct": -1.835,
         "max_gain": 0.573,
         "max_drawdown": -2.064,
         "pct_5m": 0.0,
         "pct_10m": -0.229,
         "pct_30m": 0.115
       },
-      "age_minutes": 101.43
+      "age_minutes": 106.54
     },
     {
       "key": "ai_pool:2609:41:54.2",
@@ -3772,13 +3772,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:40:27.116601+00:00",
-      "updated_at": "2026-06-05T04:21:41.602152+00:00",
+      "updated_at": "2026-06-05T04:26:48.110668+00:00",
       "status": "open",
       "code": "2454",
       "name": "聯發科",
       "sector": "半導體",
       "entry_price": 4355.0,
-      "last_price": 4270.0,
+      "last_price": 4280.0,
       "best_price": 4385.0,
       "worst_price": 4270.0,
       "score": 31,
@@ -3786,14 +3786,14 @@
       "volume_ratio_at_signal": 0.77,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": -1.952,
+        "latest_pct": -1.722,
         "max_gain": 0.689,
         "max_drawdown": -1.952,
         "pct_5m": 0.115,
         "pct_10m": -0.115,
         "pct_30m": 0.23
       },
-      "age_minutes": 101.24
+      "age_minutes": 106.35
     },
     {
       "key": "fund_flow:3711:26:580.0",
@@ -4136,13 +4136,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:45:15.268643+00:00",
-      "updated_at": "2026-06-05T04:21:41.602164+00:00",
+      "updated_at": "2026-06-05T04:26:48.110678+00:00",
       "status": "open",
       "code": "2454",
       "name": "聯發科",
       "sector": "半導體",
       "entry_price": 4365.0,
-      "last_price": 4270.0,
+      "last_price": 4280.0,
       "best_price": 4385.0,
       "worst_price": 4270.0,
       "score": 59,
@@ -4150,14 +4150,14 @@
       "volume_ratio_at_signal": 0.79,
       "alert": null,
       "results": {
-        "latest_pct": -2.176,
+        "latest_pct": -1.947,
         "max_gain": 0.458,
         "max_drawdown": -2.176,
         "pct_5m": -0.344,
         "pct_10m": -0.344,
         "pct_30m": -0.229
       },
-      "age_minutes": 96.44
+      "age_minutes": 101.55
     },
     {
       "key": "ai_pool:2324:57:41.6",
@@ -4948,13 +4948,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:50:15.682136+00:00",
-      "updated_at": "2026-06-05T04:21:41.602174+00:00",
+      "updated_at": "2026-06-05T04:26:48.110691+00:00",
       "status": "open",
       "code": "2454",
       "name": "聯發科",
       "sector": "半導體",
       "entry_price": 4355.0,
-      "last_price": 4270.0,
+      "last_price": 4280.0,
       "best_price": 4385.0,
       "worst_price": 4270.0,
       "score": 40,
@@ -4962,14 +4962,14 @@
       "volume_ratio_at_signal": 0.8,
       "alert": null,
       "results": {
-        "latest_pct": -1.952,
+        "latest_pct": -1.722,
         "max_gain": 0.689,
         "max_drawdown": -1.952,
         "pct_5m": -0.115,
         "pct_10m": 0.689,
         "pct_30m": -0.344
       },
-      "age_minutes": 91.43
+      "age_minutes": 96.54
     },
     {
       "key": "ai_pool:3481:39:54.0",
@@ -5704,13 +5704,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:55:13.518258+00:00",
-      "updated_at": "2026-06-05T04:21:41.602183+00:00",
+      "updated_at": "2026-06-05T04:26:48.110703+00:00",
       "status": "open",
       "code": "2454",
       "name": "聯發科",
       "sector": "半導體",
       "entry_price": 4350.0,
-      "last_price": 4270.0,
+      "last_price": 4280.0,
       "best_price": 4385.0,
       "worst_price": 4270.0,
       "score": 49,
@@ -5718,14 +5718,14 @@
       "volume_ratio_at_signal": 0.81,
       "alert": null,
       "results": {
-        "latest_pct": -1.839,
+        "latest_pct": -1.609,
         "max_gain": 0.805,
         "max_drawdown": -1.839,
         "pct_5m": 0.805,
         "pct_10m": 0.115,
         "pct_30m": -0.46
       },
-      "age_minutes": 86.47
+      "age_minutes": 91.58
     },
     {
       "key": "ai_pool:3037:45:950.0",
@@ -6208,13 +6208,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:00:25.046052+00:00",
-      "updated_at": "2026-06-05T04:21:41.602191+00:00",
+      "updated_at": "2026-06-05T04:26:48.110714+00:00",
       "status": "open",
       "code": "2454",
       "name": "聯發科",
       "sector": "半導體",
       "entry_price": 4370.0,
-      "last_price": 4270.0,
+      "last_price": 4280.0,
       "best_price": 4385.0,
       "worst_price": 4270.0,
       "score": 68,
@@ -6222,14 +6222,14 @@
       "volume_ratio_at_signal": 0.81,
       "alert": null,
       "results": {
-        "latest_pct": -2.288,
+        "latest_pct": -2.059,
         "max_gain": 0.343,
         "max_drawdown": -2.288,
         "pct_5m": -0.343,
         "pct_10m": -0.114,
         "pct_30m": -1.487
       },
-      "age_minutes": 81.28
+      "age_minutes": 86.38
     },
     {
       "key": "ai_pool:2324:62:41.35",
@@ -6824,13 +6824,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:05:11.974193+00:00",
-      "updated_at": "2026-06-05T04:21:41.602200+00:00",
+      "updated_at": "2026-06-05T04:26:48.110726+00:00",
       "status": "open",
       "code": "2454",
       "name": "聯發科",
       "sector": "半導體",
       "entry_price": 4370.0,
-      "last_price": 4270.0,
+      "last_price": 4280.0,
       "best_price": 4370.0,
       "worst_price": 4270.0,
       "score": 58,
@@ -6838,14 +6838,14 @@
       "volume_ratio_at_signal": 0.82,
       "alert": null,
       "results": {
-        "latest_pct": -2.288,
+        "latest_pct": -2.059,
         "max_gain": 0.0,
         "max_drawdown": -2.288,
         "pct_5m": -0.114,
         "pct_10m": -0.343,
         "pct_30m": -1.259
       },
-      "age_minutes": 76.49
+      "age_minutes": 81.6
     },
     {
       "key": "ai_pool:3443:58:4400.0",
@@ -7216,13 +7216,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:10:15.521860+00:00",
-      "updated_at": "2026-06-05T04:21:41.602207+00:00",
+      "updated_at": "2026-06-05T04:26:48.110738+00:00",
       "status": "open",
       "code": "2454",
       "name": "聯發科",
       "sector": "半導體",
       "entry_price": 4365.0,
-      "last_price": 4270.0,
+      "last_price": 4280.0,
       "best_price": 4365.0,
       "worst_price": 4270.0,
       "score": 67,
@@ -7230,14 +7230,14 @@
       "volume_ratio_at_signal": 0.83,
       "alert": null,
       "results": {
-        "latest_pct": -2.176,
+        "latest_pct": -1.947,
         "max_gain": 0.0,
         "max_drawdown": -2.176,
         "pct_5m": -0.229,
         "pct_10m": -0.573,
         "pct_30m": -1.375
       },
-      "age_minutes": 71.43
+      "age_minutes": 76.54
     },
     {
       "key": "ai_pool:3661:67:4335.0",
@@ -7888,13 +7888,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:15:14.980041+00:00",
-      "updated_at": "2026-06-05T04:21:41.602215+00:00",
+      "updated_at": "2026-06-05T04:26:48.110749+00:00",
       "status": "open",
       "code": "2454",
       "name": "聯發科",
       "sector": "半導體",
       "entry_price": 4355.0,
-      "last_price": 4270.0,
+      "last_price": 4280.0,
       "best_price": 4355.0,
       "worst_price": 4270.0,
       "score": 50,
@@ -7902,14 +7902,14 @@
       "volume_ratio_at_signal": 0.83,
       "alert": null,
       "results": {
-        "latest_pct": -1.952,
+        "latest_pct": -1.722,
         "max_gain": 0.0,
         "max_drawdown": -1.952,
         "pct_5m": -0.344,
         "pct_10m": -0.574,
         "pct_30m": -1.148
       },
-      "age_minutes": 66.44
+      "age_minutes": 71.55
     },
     {
       "key": "ai_pool:8046:49:865.0",
@@ -8448,13 +8448,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:20:15.486103+00:00",
-      "updated_at": "2026-06-05T04:21:41.602224+00:00",
+      "updated_at": "2026-06-05T04:26:48.110759+00:00",
       "status": "open",
       "code": "2454",
       "name": "聯發科",
       "sector": "半導體",
       "entry_price": 4335.0,
-      "last_price": 4270.0,
+      "last_price": 4280.0,
       "best_price": 4340.0,
       "worst_price": 4270.0,
       "score": 39,
@@ -8462,14 +8462,14 @@
       "volume_ratio_at_signal": 0.84,
       "alert": null,
       "results": {
-        "latest_pct": -1.499,
+        "latest_pct": -1.269,
         "max_gain": 0.115,
         "max_drawdown": -1.499,
         "pct_5m": -0.115,
         "pct_10m": -0.692,
         "pct_30m": -1.269
       },
-      "age_minutes": 61.44
+      "age_minutes": 66.54
     },
     {
       "key": "ai_pool:2382:34:392.0",
@@ -8952,13 +8952,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:25:11.681373+00:00",
-      "updated_at": "2026-06-05T04:21:41.602231+00:00",
+      "updated_at": "2026-06-05T04:26:48.110770+00:00",
       "status": "open",
       "code": "2454",
       "name": "聯發科",
       "sector": "半導體",
       "entry_price": 4330.0,
-      "last_price": 4270.0,
+      "last_price": 4280.0,
       "best_price": 4330.0,
       "worst_price": 4270.0,
       "score": 38,
@@ -8966,14 +8966,14 @@
       "volume_ratio_at_signal": 0.84,
       "alert": null,
       "results": {
-        "latest_pct": -1.386,
+        "latest_pct": -1.155,
         "max_gain": 0.0,
         "max_drawdown": -1.386,
         "pct_5m": -0.577,
         "pct_10m": -0.346,
         "pct_30m": -0.924
       },
-      "age_minutes": 56.5
+      "age_minutes": 61.61
     },
     {
       "key": "ai_pool:3481:38:53.5",
@@ -9512,13 +9512,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:30:18.909623+00:00",
-      "updated_at": "2026-06-05T04:21:41.602239+00:00",
+      "updated_at": "2026-06-05T04:26:48.110780+00:00",
       "status": "open",
       "code": "2454",
       "name": "聯發科",
       "sector": "半導體",
       "entry_price": 4305.0,
-      "last_price": 4270.0,
+      "last_price": 4280.0,
       "best_price": 4315.0,
       "worst_price": 4270.0,
       "score": 43,
@@ -9526,14 +9526,14 @@
       "volume_ratio_at_signal": 0.86,
       "alert": null,
       "results": {
-        "latest_pct": -0.813,
+        "latest_pct": -0.581,
         "max_gain": 0.232,
         "max_drawdown": -0.813,
         "pct_5m": 0.232,
         "pct_10m": 0.0,
         "pct_30m": -0.581
       },
-      "age_minutes": 51.38
+      "age_minutes": 56.49
     },
     {
       "key": "ai_pool:6215:40:118.5",
@@ -10044,13 +10044,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:35:12.135132+00:00",
-      "updated_at": "2026-06-05T04:21:41.602247+00:00",
+      "updated_at": "2026-06-05T04:26:48.110791+00:00",
       "status": "open",
       "code": "2454",
       "name": "聯發科",
       "sector": "半導體",
       "entry_price": 4320.0,
-      "last_price": 4270.0,
+      "last_price": 4280.0,
       "best_price": 4320.0,
       "worst_price": 4270.0,
       "score": 37,
@@ -10058,14 +10058,14 @@
       "volume_ratio_at_signal": 0.86,
       "alert": null,
       "results": {
-        "latest_pct": -1.157,
+        "latest_pct": -0.926,
         "max_gain": 0.0,
         "max_drawdown": -1.157,
         "pct_5m": -0.347,
         "pct_10m": -0.347,
         "pct_30m": -1.042
       },
-      "age_minutes": 46.49
+      "age_minutes": 51.6
     },
     {
       "key": "ai_pool:3037:33:941.0",
@@ -10800,13 +10800,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:40:15.555211+00:00",
-      "updated_at": "2026-06-05T04:21:41.602254+00:00",
+      "updated_at": "2026-06-05T04:26:48.110803+00:00",
       "status": "open",
       "code": "2454",
       "name": "聯發科",
       "sector": "半導體",
       "entry_price": 4305.0,
-      "last_price": 4270.0,
+      "last_price": 4280.0,
       "best_price": 4305.0,
       "worst_price": 4270.0,
       "score": 35,
@@ -10814,14 +10814,14 @@
       "volume_ratio_at_signal": 0.87,
       "alert": null,
       "results": {
-        "latest_pct": -0.813,
+        "latest_pct": -0.581,
         "max_gain": 0.0,
         "max_drawdown": -0.813,
         "pct_5m": 0.0,
         "pct_10m": -0.581,
         "pct_30m": -0.813
       },
-      "age_minutes": 41.43
+      "age_minutes": 46.54
     },
     {
       "key": "ai_pool:2317:27:284.5",
@@ -11024,13 +11024,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:40:30.327986+00:00",
-      "updated_at": "2026-06-05T04:21:41.602260+00:00",
+      "updated_at": "2026-06-05T04:26:48.110811+00:00",
       "status": "open",
       "code": "2454",
       "name": "聯發科",
       "sector": "半導體",
       "entry_price": 4305.0,
-      "last_price": 4270.0,
+      "last_price": 4280.0,
       "best_price": 4305.0,
       "worst_price": 4270.0,
       "score": 35,
@@ -11038,14 +11038,14 @@
       "volume_ratio_at_signal": 0.87,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": -0.813,
+        "latest_pct": -0.581,
         "max_gain": 0.0,
         "max_drawdown": -0.813,
         "pct_5m": 0.0,
         "pct_10m": -0.581,
         "pct_30m": -0.813
       },
-      "age_minutes": 41.19
+      "age_minutes": 46.3
     },
     {
       "key": "fund_flow:2317:33:285.0",
@@ -12480,13 +12480,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:50:15.098804+00:00",
-      "updated_at": "2026-06-05T04:21:41.602276+00:00",
+      "updated_at": "2026-06-05T04:26:48.110827+00:00",
       "status": "open",
       "code": "2454",
       "name": "聯發科",
       "sector": "半導體",
       "entry_price": 4280.0,
-      "last_price": 4270.0,
+      "last_price": 4280.0,
       "best_price": 4290.0,
       "worst_price": 4270.0,
       "score": 12,
@@ -12494,14 +12494,14 @@
       "volume_ratio_at_signal": 0.89,
       "alert": null,
       "results": {
-        "latest_pct": -0.234,
+        "latest_pct": 0.0,
         "max_gain": 0.234,
         "max_drawdown": -0.234,
         "pct_5m": 0.234,
         "pct_10m": 0.0,
         "pct_30m": -0.234
       },
-      "age_minutes": 31.44
+      "age_minutes": 36.55
     },
     {
       "key": "fund_flow:2615:90:85.6",
@@ -12676,13 +12676,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:50:26.956322+00:00",
-      "updated_at": "2026-06-05T04:21:41.602289+00:00",
+      "updated_at": "2026-06-05T04:26:48.110836+00:00",
       "status": "open",
       "code": "2454",
       "name": "聯發科",
       "sector": "半導體",
       "entry_price": 4280.0,
-      "last_price": 4270.0,
+      "last_price": 4280.0,
       "best_price": 4290.0,
       "worst_price": 4270.0,
       "score": 30,
@@ -12690,14 +12690,14 @@
       "volume_ratio_at_signal": 0.89,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": -0.234,
+        "latest_pct": 0.0,
         "max_gain": 0.234,
         "max_drawdown": -0.234,
         "pct_5m": 0.234,
         "pct_10m": 0.0,
         "pct_30m": -0.234
       },
-      "age_minutes": 31.24
+      "age_minutes": 36.35
     },
     {
       "key": "fund_flow:3324:17:1090.0",
@@ -13393,13 +13393,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:55:23.123574+00:00",
-      "updated_at": "2026-06-05T04:21:41.602303+00:00",
+      "updated_at": "2026-06-05T04:26:48.110850+00:00",
       "status": "open",
       "code": "2454",
       "name": "聯發科",
       "sector": "半導體",
       "entry_price": 4285.0,
-      "last_price": 4270.0,
+      "last_price": 4280.0,
       "best_price": 4290.0,
       "worst_price": 4270.0,
       "score": 29,
@@ -13407,13 +13407,14 @@
       "volume_ratio_at_signal": 0.9,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": -0.35,
+        "latest_pct": -0.117,
         "max_gain": 0.117,
         "max_drawdown": -0.35,
         "pct_5m": -0.117,
-        "pct_10m": -0.233
+        "pct_10m": -0.233,
+        "pct_30m": -0.117
       },
-      "age_minutes": 26.31
+      "age_minutes": 31.42
     },
     {
       "key": "fund_flow:8046:33:845.0",
@@ -15202,13 +15203,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T04:01:59.401193+00:00",
-      "updated_at": "2026-06-05T04:21:41.602326+00:00",
+      "updated_at": "2026-06-05T04:26:48.110867+00:00",
       "status": "open",
       "code": "2454",
       "name": "聯發科",
       "sector": "半導體",
       "entry_price": 4275.0,
-      "last_price": 4270.0,
+      "last_price": 4280.0,
       "best_price": 4285.0,
       "worst_price": 4270.0,
       "score": 33,
@@ -15216,13 +15217,13 @@
       "volume_ratio_at_signal": 0.92,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": -0.117,
+        "latest_pct": 0.117,
         "max_gain": 0.234,
         "max_drawdown": -0.117,
         "pct_5m": 0.0,
         "pct_10m": 0.0
       },
-      "age_minutes": 19.7
+      "age_minutes": 24.81
     },
     {
       "key": "fund_flow:2308:34:2300.0",
@@ -16120,27 +16121,27 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T04:05:12.435683+00:00",
-      "updated_at": "2026-06-05T04:21:41.602335+00:00",
+      "updated_at": "2026-06-05T04:26:48.110878+00:00",
       "status": "open",
       "code": "2454",
       "name": "聯發科",
       "sector": "半導體",
       "entry_price": 4275.0,
-      "last_price": 4270.0,
-      "best_price": 4275.0,
+      "last_price": 4280.0,
+      "best_price": 4280.0,
       "worst_price": 4270.0,
       "score": 20,
       "change_rate_at_signal": -3.49,
       "volume_ratio_at_signal": 0.92,
       "alert": null,
       "results": {
-        "latest_pct": -0.117,
-        "max_gain": 0.0,
+        "latest_pct": 0.117,
+        "max_gain": 0.117,
         "max_drawdown": -0.117,
         "pct_5m": -0.117,
         "pct_10m": 0.0
       },
-      "age_minutes": 16.49
+      "age_minutes": 21.59
     },
     {
       "key": "ai_pool:2308:12:2300.0",
@@ -17173,27 +17174,27 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T04:10:15.470340+00:00",
-      "updated_at": "2026-06-05T04:21:41.602346+00:00",
+      "updated_at": "2026-06-05T04:26:48.110889+00:00",
       "status": "open",
       "code": "2454",
       "name": "聯發科",
       "sector": "半導體",
       "entry_price": 4270.0,
-      "last_price": 4270.0,
-      "best_price": 4275.0,
+      "last_price": 4280.0,
+      "best_price": 4280.0,
       "worst_price": 4270.0,
       "score": 12,
       "change_rate_at_signal": -3.61,
       "volume_ratio_at_signal": 0.93,
       "alert": null,
       "results": {
-        "latest_pct": 0.0,
-        "max_gain": 0.117,
+        "latest_pct": 0.234,
+        "max_gain": 0.234,
         "max_drawdown": 0.0,
         "pct_5m": 0.117,
         "pct_10m": 0.0
       },
-      "age_minutes": 11.44
+      "age_minutes": 16.54
     },
     {
       "key": "fund_flow:2615:92:86.0",
@@ -17684,26 +17685,27 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T04:15:13.989756+00:00",
-      "updated_at": "2026-06-05T04:21:41.602352+00:00",
+      "updated_at": "2026-06-05T04:26:48.110899+00:00",
       "status": "open",
       "code": "2454",
       "name": "聯發科",
       "sector": "半導體",
       "entry_price": 4275.0,
-      "last_price": 4270.0,
-      "best_price": 4275.0,
+      "last_price": 4280.0,
+      "best_price": 4280.0,
       "worst_price": 4270.0,
       "score": 2,
       "change_rate_at_signal": -3.49,
       "volume_ratio_at_signal": 0.94,
       "alert": null,
       "results": {
-        "latest_pct": -0.117,
-        "max_gain": 0.0,
+        "latest_pct": 0.117,
+        "max_gain": 0.117,
         "max_drawdown": -0.117,
-        "pct_5m": -0.117
+        "pct_5m": -0.117,
+        "pct_10m": 0.117
       },
-      "age_minutes": 6.46
+      "age_minutes": 11.57
     },
     {
       "key": "fund_flow:2615:88:86.1",
@@ -17869,26 +17871,27 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T04:15:24.916505+00:00",
-      "updated_at": "2026-06-05T04:21:41.602359+00:00",
+      "updated_at": "2026-06-05T04:26:48.110908+00:00",
       "status": "open",
       "code": "2454",
       "name": "聯發科",
       "sector": "半導體",
       "entry_price": 4275.0,
-      "last_price": 4270.0,
-      "best_price": 4275.0,
+      "last_price": 4280.0,
+      "best_price": 4280.0,
       "worst_price": 4270.0,
       "score": 27,
       "change_rate_at_signal": -3.49,
       "volume_ratio_at_signal": 0.94,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": -0.117,
-        "max_gain": 0.0,
+        "latest_pct": 0.117,
+        "max_gain": 0.117,
         "max_drawdown": -0.117,
-        "pct_5m": -0.117
+        "pct_5m": -0.117,
+        "pct_10m": 0.117
       },
-      "age_minutes": 6.28
+      "age_minutes": 11.39
     },
     {
       "key": "fund_flow:3017:22:2580.0",
@@ -18693,20 +18696,25 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T04:25:24.727145+00:00",
-      "updated_at": "2026-06-05T04:25:24.727148+00:00",
+      "updated_at": "2026-06-05T04:26:48.110918+00:00",
       "status": "open",
       "code": "2454",
       "name": "聯發科",
       "sector": "半導體",
       "entry_price": 4285.0,
-      "last_price": 4285.0,
+      "last_price": 4280.0,
       "best_price": 4285.0,
-      "worst_price": 4285.0,
+      "worst_price": 4280.0,
       "score": 35,
       "change_rate_at_signal": -3.27,
       "volume_ratio_at_signal": 0.95,
       "alert": "資金退潮警報",
-      "results": {}
+      "results": {
+        "latest_pct": -0.117,
+        "max_gain": 0.0,
+        "max_drawdown": -0.117
+      },
+      "age_minutes": 1.39
     },
     {
       "key": "fund_flow:3017:32:2575.0",
