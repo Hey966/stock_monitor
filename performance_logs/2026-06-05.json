@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-05T02:30:58.345442+00:00",
+  "updated_at": "2026-06-05T02:31:00.166187+00:00",
   "count": 92,
   "items": [
     {
@@ -125,25 +125,26 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:25:05.423037+00:00",
-      "updated_at": "2026-06-05T02:26:02.819980+00:00",
+      "updated_at": "2026-06-05T02:30:59.628011+00:00",
       "status": "open",
       "code": "3443",
       "name": "創意",
       "sector": "半導體",
       "entry_price": 4480.0,
-      "last_price": 4485.0,
+      "last_price": 4460.0,
       "best_price": 4485.0,
-      "worst_price": 4480.0,
+      "worst_price": 4460.0,
       "score": 77,
       "change_rate_at_signal": 1.81,
       "volume_ratio_at_signal": 1.08,
       "alert": null,
       "results": {
-        "latest_pct": 0.112,
+        "latest_pct": -0.446,
         "max_gain": 0.112,
-        "max_drawdown": 0.0
+        "max_drawdown": -0.446,
+        "pct_5m": -0.446
       },
-      "age_minutes": 0.96
+      "age_minutes": 5.9
     },
     {
       "key": "ai_pool:2356:70:78.1",
@@ -601,25 +602,26 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:25:12.529239+00:00",
-      "updated_at": "2026-06-05T02:26:02.819995+00:00",
+      "updated_at": "2026-06-05T02:30:59.628028+00:00",
       "status": "open",
       "code": "3443",
       "name": "創意",
       "sector": "半導體",
       "entry_price": 4485.0,
-      "last_price": 4485.0,
+      "last_price": 4460.0,
       "best_price": 4485.0,
-      "worst_price": 4485.0,
+      "worst_price": 4460.0,
       "score": 78,
       "change_rate_at_signal": 1.93,
       "volume_ratio_at_signal": 1.08,
       "alert": null,
       "results": {
-        "latest_pct": 0.0,
+        "latest_pct": -0.557,
         "max_gain": 0.0,
-        "max_drawdown": 0.0
+        "max_drawdown": -0.557,
+        "pct_5m": -0.557
       },
-      "age_minutes": 0.84
+      "age_minutes": 5.78
     },
     {
       "key": "ai_pool:3661:77:4405.0",
