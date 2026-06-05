@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-05T02:51:56.828685+00:00",
+  "updated_at": "2026-06-05T02:51:59.387019+00:00",
   "count": 195,
   "items": [
     {
@@ -1236,7 +1236,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:25:15.330104+00:00",
-      "updated_at": "2026-06-05T02:47:03.805605+00:00",
+      "updated_at": "2026-06-05T02:51:58.346291+00:00",
       "status": "open",
       "code": "1609",
       "name": "大亞",
@@ -1256,7 +1256,7 @@
         "pct_5m": 0.0,
         "pct_10m": -0.125
       },
-      "age_minutes": 21.81
+      "age_minutes": 26.72
     },
     {
       "key": "fund_flow:2344:33:162.5",
@@ -2397,7 +2397,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:30:30.008589+00:00",
-      "updated_at": "2026-06-05T02:47:03.805630+00:00",
+      "updated_at": "2026-06-05T02:51:58.346316+00:00",
       "status": "open",
       "code": "1609",
       "name": "大亞",
@@ -2417,7 +2417,7 @@
         "pct_5m": -0.25,
         "pct_10m": -0.501
       },
-      "age_minutes": 16.56
+      "age_minutes": 21.47
     },
     {
       "key": "fund_flow:2376:29:366.0",
@@ -3126,7 +3126,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:35:23.555202+00:00",
-      "updated_at": "2026-06-05T02:47:03.805645+00:00",
+      "updated_at": "2026-06-05T02:51:58.346327+00:00",
       "status": "open",
       "code": "1609",
       "name": "大亞",
@@ -3146,7 +3146,7 @@
         "pct_5m": -0.376,
         "pct_10m": -0.752
       },
-      "age_minutes": 11.67
+      "age_minutes": 16.58
     },
     {
       "key": "ai_pool:2615:95:86.7",
@@ -3773,7 +3773,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:40:27.116653+00:00",
-      "updated_at": "2026-06-05T02:47:03.805658+00:00",
+      "updated_at": "2026-06-05T02:51:58.346336+00:00",
       "status": "open",
       "code": "1609",
       "name": "大亞",
@@ -3790,9 +3790,10 @@
         "latest_pct": -0.377,
         "max_gain": 0.0,
         "max_drawdown": -0.377,
-        "pct_5m": -0.377
+        "pct_5m": -0.377,
+        "pct_10m": -0.377
       },
-      "age_minutes": 6.61
+      "age_minutes": 11.52
     },
     {
       "key": "fund_flow:1513:8:171.5",
@@ -4448,7 +4449,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:45:25.851623+00:00",
-      "updated_at": "2026-06-05T02:47:03.805669+00:00",
+      "updated_at": "2026-06-05T02:51:58.346346+00:00",
       "status": "open",
       "code": "1609",
       "name": "大亞",
@@ -4464,9 +4465,10 @@
       "results": {
         "latest_pct": 0.0,
         "max_gain": 0.0,
-        "max_drawdown": 0.0
+        "max_drawdown": 0.0,
+        "pct_5m": 0.0
       },
-      "age_minutes": 1.63
+      "age_minutes": 6.54
     },
     {
       "key": "ai_pool:2615:100:86.2",
@@ -5123,20 +5125,25 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:50:26.323819+00:00",
-      "updated_at": "2026-06-05T02:50:26.323821+00:00",
+      "updated_at": "2026-06-05T02:51:58.346355+00:00",
       "status": "open",
       "code": "1609",
       "name": "大亞",
       "sector": "電線電纜",
       "entry_price": 39.55,
-      "last_price": 39.55,
-      "best_price": 39.55,
+      "last_price": 39.6,
+      "best_price": 39.6,
       "worst_price": 39.55,
       "score": 30,
       "change_rate_at_signal": -8.02,
       "volume_ratio_at_signal": 0.24,
       "alert": "資金退潮警報",
-      "results": {}
+      "results": {
+        "latest_pct": 0.126,
+        "max_gain": 0.126,
+        "max_drawdown": 0.0
+      },
+      "age_minutes": 1.53
     },
     {
       "key": "fund_flow:1605:11:39.05",
