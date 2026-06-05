@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-05T06:51:51.827648+00:00",
+  "updated_at": "2026-06-05T06:51:56.057358+00:00",
   "count": 930,
   "items": [
     {
@@ -4938,8 +4938,8 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:50:15.682072+00:00",
-      "updated_at": "2026-06-05T06:46:58.892809+00:00",
-      "status": "open",
+      "updated_at": "2026-06-05T06:51:54.706810+00:00",
+      "status": "closed",
       "code": "2618",
       "name": "長榮航",
       "sector": "航運",
@@ -4957,9 +4957,10 @@
         "max_drawdown": -0.659,
         "pct_5m": 0.132,
         "pct_10m": 0.0,
-        "pct_30m": 0.264
+        "pct_30m": 0.264,
+        "pct_close_proxy": -0.659
       },
-      "age_minutes": 236.72
+      "age_minutes": 241.65
     },
     {
       "key": "ai_pool:2368:67:1330.0",
@@ -5707,7 +5708,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:55:13.518191+00:00",
-      "updated_at": "2026-06-05T06:46:58.892837+00:00",
+      "updated_at": "2026-06-05T06:51:54.706832+00:00",
       "status": "open",
       "code": "2618",
       "name": "長榮航",
@@ -5728,7 +5729,7 @@
         "pct_10m": 0.0,
         "pct_30m": 0.132
       },
-      "age_minutes": 231.76
+      "age_minutes": 236.69
     },
     {
       "key": "ai_pool:2609:58:54.1",
@@ -7499,7 +7500,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:10:15.521900+00:00",
-      "updated_at": "2026-06-05T06:46:58.892861+00:00",
+      "updated_at": "2026-06-05T06:51:54.706845+00:00",
       "status": "open",
       "code": "2618",
       "name": "長榮航",
@@ -7520,7 +7521,7 @@
         "pct_10m": 0.0,
         "pct_30m": -0.263
       },
-      "age_minutes": 216.72
+      "age_minutes": 221.65
     },
     {
       "key": "ai_pool:2356:59:77.9",
@@ -8031,7 +8032,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:15:14.980036+00:00",
-      "updated_at": "2026-06-05T06:46:58.892873+00:00",
+      "updated_at": "2026-06-05T06:51:54.706854+00:00",
       "status": "open",
       "code": "2618",
       "name": "長榮航",
@@ -8052,7 +8053,7 @@
         "pct_10m": 0.264,
         "pct_30m": 0.132
       },
-      "age_minutes": 211.73
+      "age_minutes": 216.66
     },
     {
       "key": "ai_pool:2454:50:4355.0",
@@ -9487,7 +9488,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:30:18.909526+00:00",
-      "updated_at": "2026-06-05T06:46:58.892892+00:00",
+      "updated_at": "2026-06-05T06:51:54.706865+00:00",
       "status": "open",
       "code": "2618",
       "name": "長榮航",
@@ -9508,7 +9509,7 @@
         "pct_10m": -0.132,
         "pct_30m": -0.132
       },
-      "age_minutes": 196.67
+      "age_minutes": 201.6
     },
     {
       "key": "ai_pool:3443:63:4365.0",
@@ -11867,7 +11868,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:45:24.850200+00:00",
-      "updated_at": "2026-06-05T06:46:58.892924+00:00",
+      "updated_at": "2026-06-05T06:51:54.706879+00:00",
       "status": "open",
       "code": "2618",
       "name": "長榮航",
@@ -11888,7 +11889,7 @@
         "pct_10m": -0.263,
         "pct_30m": -0.132
       },
-      "age_minutes": 181.57
+      "age_minutes": 186.5
     },
     {
       "key": "fund_flow:3037:30:935.0",
@@ -13015,7 +13016,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:55:12.071380+00:00",
-      "updated_at": "2026-06-05T06:46:58.892940+00:00",
+      "updated_at": "2026-06-05T06:51:54.706889+00:00",
       "status": "open",
       "code": "2618",
       "name": "長榮航",
@@ -13036,7 +13037,7 @@
         "pct_10m": 0.264,
         "pct_30m": -0.132
       },
-      "age_minutes": 171.78
+      "age_minutes": 176.71
     },
     {
       "key": "ai_pool:2368:36:1305.0",
@@ -16823,7 +16824,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T04:06:00.357244+00:00",
-      "updated_at": "2026-06-05T06:46:58.892975+00:00",
+      "updated_at": "2026-06-05T06:51:54.706907+00:00",
       "status": "open",
       "code": "2618",
       "name": "長榮航",
@@ -16844,7 +16845,7 @@
         "pct_10m": 0.264,
         "pct_30m": 0.132
       },
-      "age_minutes": 160.98
+      "age_minutes": 165.91
     },
     {
       "key": "ai_pool:2382:24:388.5",
@@ -17299,7 +17300,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T04:10:15.470226+00:00",
-      "updated_at": "2026-06-05T06:46:58.892987+00:00",
+      "updated_at": "2026-06-05T06:51:54.706913+00:00",
       "status": "open",
       "code": "2618",
       "name": "長榮航",
@@ -17320,7 +17321,7 @@
         "pct_10m": 0.132,
         "pct_30m": 0.132
       },
-      "age_minutes": 156.72
+      "age_minutes": 161.65
     },
     {
       "key": "ai_pool:2324:42:41.2",
@@ -23039,7 +23040,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T05:05:12.264689+00:00",
-      "updated_at": "2026-06-05T06:46:58.893030+00:00",
+      "updated_at": "2026-06-05T06:51:54.706936+00:00",
       "status": "open",
       "code": "2618",
       "name": "長榮航",
@@ -23060,7 +23061,7 @@
         "pct_10m": 0.132,
         "pct_30m": -0.396
       },
-      "age_minutes": 101.78
+      "age_minutes": 106.71
     },
     {
       "key": "ai_pool:3481:32:51.9",
@@ -23571,7 +23572,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T05:10:15.761865+00:00",
-      "updated_at": "2026-06-05T06:46:58.893036+00:00",
+      "updated_at": "2026-06-05T06:51:54.706943+00:00",
       "status": "open",
       "code": "2618",
       "name": "長榮航",
@@ -23592,7 +23593,7 @@
         "pct_10m": -0.132,
         "pct_30m": -0.528
       },
-      "age_minutes": 96.72
+      "age_minutes": 101.65
     },
     {
       "key": "ai_pool:3711:25:576.0",
@@ -25895,7 +25896,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T05:30:21.697410+00:00",
-      "updated_at": "2026-06-05T06:46:58.893045+00:00",
+      "updated_at": "2026-06-05T06:51:54.706957+00:00",
       "status": "open",
       "code": "2618",
       "name": "長榮航",
@@ -25916,7 +25917,7 @@
         "pct_10m": 0.0,
         "pct_30m": 0.0
       },
-      "age_minutes": 76.62
+      "age_minutes": 81.55
     },
     {
       "key": "ai_pool:2330:28:2365.0",
