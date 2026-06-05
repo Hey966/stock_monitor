@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-05T02:26:19.289052+00:00",
+  "updated_at": "2026-06-05T02:26:20.721776+00:00",
   "count": 63,
   "items": [
     {
@@ -223,7 +223,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:25:05.423087+00:00",
-      "updated_at": "2026-06-05T02:26:10.727331+00:00",
+      "updated_at": "2026-06-05T02:26:20.407625+00:00",
       "status": "open",
       "code": "3231",
       "name": "緯創",
@@ -241,7 +241,7 @@
         "max_gain": 0.0,
         "max_drawdown": 0.0
       },
-      "age_minutes": 1.09
+      "age_minutes": 1.25
     },
     {
       "key": "ai_pool:2454:53:4390.0",
@@ -393,13 +393,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:25:05.423192+00:00",
-      "updated_at": "2026-06-05T02:26:02.467385+00:00",
+      "updated_at": "2026-06-05T02:26:18.359437+00:00",
       "status": "open",
       "code": "3037",
       "name": "欣興",
       "sector": "半導體",
       "entry_price": 949.0,
-      "last_price": 952.0,
+      "last_price": 951.0,
       "best_price": 952.0,
       "worst_price": 949.0,
       "score": 46,
@@ -407,11 +407,11 @@
       "volume_ratio_at_signal": 1.07,
       "alert": null,
       "results": {
-        "latest_pct": 0.316,
+        "latest_pct": 0.211,
         "max_gain": 0.316,
         "max_drawdown": 0.0
       },
-      "age_minutes": 0.95
+      "age_minutes": 1.22
     },
     {
       "key": "ai_pool:2324:41:41.15",
@@ -648,7 +648,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:25:12.529268+00:00",
-      "updated_at": "2026-06-05T02:26:10.727350+00:00",
+      "updated_at": "2026-06-05T02:26:20.407650+00:00",
       "status": "open",
       "code": "3231",
       "name": "緯創",
@@ -666,7 +666,7 @@
         "max_gain": 0.0,
         "max_drawdown": 0.0
       },
-      "age_minutes": 0.97
+      "age_minutes": 1.13
     },
     {
       "key": "ai_pool:2618:61:37.95",
@@ -773,7 +773,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:25:12.529335+00:00",
-      "updated_at": "2026-06-05T02:25:12.529337+00:00",
+      "updated_at": "2026-06-05T02:26:20.295274+00:00",
       "status": "open",
       "code": "2330",
       "name": "台積電",
@@ -786,7 +786,12 @@
       "change_rate_at_signal": -0.2,
       "volume_ratio_at_signal": 0.59,
       "alert": null,
-      "results": {}
+      "results": {
+        "latest_pct": 0.0,
+        "max_gain": 0.0,
+        "max_drawdown": 0.0
+      },
+      "age_minutes": 1.13
     },
     {
       "key": "ai_pool:2368:51:1335.0",
