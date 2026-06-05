@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-05T06:26:26.678673+00:00",
+  "updated_at": "2026-06-05T06:26:30.670200+00:00",
   "count": 930,
   "items": [
     {
@@ -1376,8 +1376,8 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:25:15.330154+00:00",
-      "updated_at": "2026-06-05T06:21:32.375818+00:00",
-      "status": "open",
+      "updated_at": "2026-06-05T06:26:29.382531+00:00",
+      "status": "closed",
       "code": "2376",
       "name": "技嘉",
       "sector": "電腦週邊",
@@ -1395,9 +1395,10 @@
         "max_drawdown": -0.546,
         "pct_5m": -0.273,
         "pct_10m": 0.137,
-        "pct_30m": 0.137
+        "pct_30m": 0.137,
+        "pct_close_proxy": 0.82
       },
-      "age_minutes": 236.28
+      "age_minutes": 241.23
     },
     {
       "key": "fund_flow:1514:7:135.0",
@@ -1461,8 +1462,8 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:25:15.375940+00:00",
-      "updated_at": "2026-06-05T06:21:32.375834+00:00",
-      "status": "open",
+      "updated_at": "2026-06-05T06:26:29.382549+00:00",
+      "status": "closed",
       "code": "2376",
       "name": "技嘉",
       "sector": "電腦週邊",
@@ -1480,9 +1481,10 @@
         "max_drawdown": -0.546,
         "pct_5m": -0.273,
         "pct_10m": 0.137,
-        "pct_30m": 0.137
+        "pct_30m": 0.137,
+        "pct_close_proxy": 0.82
       },
-      "age_minutes": 236.28
+      "age_minutes": 241.23
     },
     {
       "key": "fund_flow:2324:35:41.25",
@@ -1602,8 +1604,8 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:25:16.826622+00:00",
-      "updated_at": "2026-06-05T06:21:32.375842+00:00",
-      "status": "open",
+      "updated_at": "2026-06-05T06:26:29.382558+00:00",
+      "status": "closed",
       "code": "2376",
       "name": "技嘉",
       "sector": "電腦週邊",
@@ -1621,9 +1623,10 @@
         "max_drawdown": -0.546,
         "pct_5m": -0.273,
         "pct_10m": 0.137,
-        "pct_30m": 0.137
+        "pct_30m": 0.137,
+        "pct_close_proxy": 0.82
       },
-      "age_minutes": 236.26
+      "age_minutes": 241.21
     },
     {
       "key": "fund_flow:2308:24:2355.0",
@@ -1743,8 +1746,8 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:25:21.622336+00:00",
-      "updated_at": "2026-06-05T06:21:32.375849+00:00",
-      "status": "open",
+      "updated_at": "2026-06-05T06:26:29.382567+00:00",
+      "status": "closed",
       "code": "2376",
       "name": "技嘉",
       "sector": "電腦週邊",
@@ -1762,9 +1765,10 @@
         "max_drawdown": -0.682,
         "pct_5m": -0.409,
         "pct_10m": 0.0,
-        "pct_30m": 0.0
+        "pct_30m": 0.0,
+        "pct_close_proxy": 0.682
       },
-      "age_minutes": 236.18
+      "age_minutes": 241.13
     },
     {
       "key": "fund_flow:1605:30:39.35",
@@ -2555,7 +2559,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:30:30.008599+00:00",
-      "updated_at": "2026-06-05T06:21:32.375858+00:00",
+      "updated_at": "2026-06-05T06:26:29.382577+00:00",
       "status": "open",
       "code": "2376",
       "name": "技嘉",
@@ -2576,7 +2580,7 @@
         "pct_10m": -0.273,
         "pct_30m": 0.137
       },
-      "age_minutes": 231.04
+      "age_minutes": 235.99
     },
     {
       "key": "fund_flow:2344:15:164.0",
@@ -3255,7 +3259,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:35:23.555176+00:00",
-      "updated_at": "2026-06-05T06:21:32.375866+00:00",
+      "updated_at": "2026-06-05T06:26:29.382587+00:00",
       "status": "open",
       "code": "2376",
       "name": "技嘉",
@@ -3276,7 +3280,7 @@
         "pct_10m": -0.409,
         "pct_30m": 0.0
       },
-      "age_minutes": 226.15
+      "age_minutes": 231.1
     },
     {
       "key": "fund_flow:1609:6:39.9",
@@ -4655,7 +4659,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:45:25.851611+00:00",
-      "updated_at": "2026-06-05T06:21:32.375879+00:00",
+      "updated_at": "2026-06-05T06:26:29.382599+00:00",
       "status": "open",
       "code": "2376",
       "name": "技嘉",
@@ -4676,7 +4680,7 @@
         "pct_10m": 0.411,
         "pct_30m": 0.274
       },
-      "age_minutes": 216.11
+      "age_minutes": 221.06
     },
     {
       "key": "fund_flow:1609:18:39.6",
@@ -9219,7 +9223,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:25:22.049950+00:00",
-      "updated_at": "2026-06-05T06:21:32.375904+00:00",
+      "updated_at": "2026-06-05T06:26:29.382654+00:00",
       "status": "open",
       "code": "2376",
       "name": "技嘉",
@@ -9240,7 +9244,7 @@
         "pct_10m": 0.274,
         "pct_30m": -0.274
       },
-      "age_minutes": 176.17
+      "age_minutes": 181.12
     },
     {
       "key": "fund_flow:1513:19:170.5",
@@ -9807,7 +9811,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:30:29.753387+00:00",
-      "updated_at": "2026-06-05T06:21:32.375912+00:00",
+      "updated_at": "2026-06-05T06:26:29.382670+00:00",
       "status": "open",
       "code": "2376",
       "name": "技嘉",
@@ -9828,7 +9832,7 @@
         "pct_10m": 0.275,
         "pct_30m": 0.275
       },
-      "age_minutes": 171.04
+      "age_minutes": 175.99
     },
     {
       "key": "fund_flow:1513:24:169.0",
@@ -10451,7 +10455,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:35:22.792847+00:00",
-      "updated_at": "2026-06-05T06:21:32.375920+00:00",
+      "updated_at": "2026-06-05T06:26:29.382680+00:00",
       "status": "open",
       "code": "2376",
       "name": "技嘉",
@@ -10472,7 +10476,7 @@
         "pct_10m": 0.0,
         "pct_30m": -0.137
       },
-      "age_minutes": 166.16
+      "age_minutes": 171.11
     },
     {
       "key": "fund_flow:3324:34:1095.0",
@@ -11319,7 +11323,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:40:30.328075+00:00",
-      "updated_at": "2026-06-05T06:21:32.375929+00:00",
+      "updated_at": "2026-06-05T06:26:29.382691+00:00",
       "status": "open",
       "code": "2376",
       "name": "技嘉",
@@ -11340,7 +11344,7 @@
         "pct_10m": -0.274,
         "pct_30m": -0.137
       },
-      "age_minutes": 161.03
+      "age_minutes": 165.98
     },
     {
       "key": "fund_flow:1605:19:39.25",
@@ -12075,7 +12079,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:45:24.850281+00:00",
-      "updated_at": "2026-06-05T06:21:32.375937+00:00",
+      "updated_at": "2026-06-05T06:26:29.382700+00:00",
       "status": "open",
       "code": "2376",
       "name": "技嘉",
@@ -12096,7 +12100,7 @@
         "pct_10m": -0.274,
         "pct_30m": 0.137
       },
-      "age_minutes": 156.13
+      "age_minutes": 161.08
     },
     {
       "key": "ai_pool:2615:86:85.7",
@@ -12775,7 +12779,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:50:26.956343+00:00",
-      "updated_at": "2026-06-05T06:21:32.375946+00:00",
+      "updated_at": "2026-06-05T06:26:29.382709+00:00",
       "status": "open",
       "code": "2376",
       "name": "技嘉",
@@ -12796,7 +12800,7 @@
         "pct_10m": 0.275,
         "pct_30m": 0.275
       },
-      "age_minutes": 151.09
+      "age_minutes": 156.04
     },
     {
       "key": "fund_flow:1609:15:39.2",
@@ -13531,7 +13535,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:55:23.123603+00:00",
-      "updated_at": "2026-06-05T06:21:32.375955+00:00",
+      "updated_at": "2026-06-05T06:26:29.382719+00:00",
       "status": "open",
       "code": "2376",
       "name": "技嘉",
@@ -13552,7 +13556,7 @@
         "pct_10m": 0.0,
         "pct_30m": 0.137
       },
-      "age_minutes": 146.15
+      "age_minutes": 151.1
     },
     {
       "key": "fund_flow:1605:22:39.05",
@@ -14595,7 +14599,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T04:00:54.481904+00:00",
-      "updated_at": "2026-06-05T06:21:32.375966+00:00",
+      "updated_at": "2026-06-05T06:26:29.382729+00:00",
       "status": "open",
       "code": "2376",
       "name": "技嘉",
@@ -14616,7 +14620,7 @@
         "pct_10m": -0.137,
         "pct_30m": 0.0
       },
-      "age_minutes": 140.63
+      "age_minutes": 145.58
     },
     {
       "key": "fund_flow:2317:35:284.5",
@@ -15407,7 +15411,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T04:01:59.401229+00:00",
-      "updated_at": "2026-06-05T06:21:32.375974+00:00",
+      "updated_at": "2026-06-05T06:26:29.382738+00:00",
       "status": "open",
       "code": "2376",
       "name": "技嘉",
@@ -15428,7 +15432,7 @@
         "pct_10m": 0.0,
         "pct_30m": 0.137
       },
-      "age_minutes": 139.55
+      "age_minutes": 144.5
     },
     {
       "key": "fund_flow:2317:35:284.0",
@@ -16947,7 +16951,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T04:06:16.935171+00:00",
-      "updated_at": "2026-06-05T06:21:32.375986+00:00",
+      "updated_at": "2026-06-05T06:26:29.382751+00:00",
       "status": "open",
       "code": "2376",
       "name": "技嘉",
@@ -16968,7 +16972,7 @@
         "pct_10m": 0.274,
         "pct_30m": 0.137
       },
-      "age_minutes": 135.26
+      "age_minutes": 140.21
     },
     {
       "key": "fund_flow:3324:25:1095.0",
@@ -17647,7 +17651,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T04:10:27.039940+00:00",
-      "updated_at": "2026-06-05T06:21:32.375994+00:00",
+      "updated_at": "2026-06-05T06:26:29.382760+00:00",
       "status": "open",
       "code": "2376",
       "name": "技嘉",
@@ -17668,7 +17672,7 @@
         "pct_10m": 0.137,
         "pct_30m": 0.412
       },
-      "age_minutes": 131.09
+      "age_minutes": 136.04
     },
     {
       "key": "fund_flow:5347:23:159.0",
@@ -17871,7 +17875,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T04:15:13.989745+00:00",
-      "updated_at": "2026-06-05T06:21:32.376000+00:00",
+      "updated_at": "2026-06-05T06:26:29.382766+00:00",
       "status": "open",
       "code": "2376",
       "name": "技嘉",
@@ -17892,7 +17896,7 @@
         "pct_10m": -0.273,
         "pct_30m": -0.273
       },
-      "age_minutes": 126.31
+      "age_minutes": 131.26
     },
     {
       "key": "ai_pool:2454:2:4275.0",
@@ -18039,7 +18043,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T04:15:24.916469+00:00",
-      "updated_at": "2026-06-05T06:21:32.376006+00:00",
+      "updated_at": "2026-06-05T06:26:29.382773+00:00",
       "status": "open",
       "code": "2376",
       "name": "技嘉",
@@ -18060,7 +18064,7 @@
         "pct_10m": -0.137,
         "pct_30m": -0.137
       },
-      "age_minutes": 126.12
+      "age_minutes": 131.07
     },
     {
       "key": "fund_flow:5347:32:159.0",
@@ -18907,7 +18911,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T04:25:13.285995+00:00",
-      "updated_at": "2026-06-05T06:21:32.376014+00:00",
+      "updated_at": "2026-06-05T06:26:29.382782+00:00",
       "status": "open",
       "code": "2376",
       "name": "技嘉",
@@ -18928,7 +18932,7 @@
         "pct_10m": -0.137,
         "pct_30m": 0.547
       },
-      "age_minutes": 116.32
+      "age_minutes": 121.27
     },
     {
       "key": "ai_pool:2382:14:388.5",
@@ -20083,7 +20087,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T04:35:12.204871+00:00",
-      "updated_at": "2026-06-05T06:21:32.376023+00:00",
+      "updated_at": "2026-06-05T06:26:29.382791+00:00",
       "status": "open",
       "code": "2376",
       "name": "技嘉",
@@ -20104,7 +20108,7 @@
         "pct_10m": 0.137,
         "pct_30m": 0.274
       },
-      "age_minutes": 106.34
+      "age_minutes": 111.29
     },
     {
       "key": "fund_flow:2615:98:86.0",
@@ -20699,7 +20703,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T04:40:26.770230+00:00",
-      "updated_at": "2026-06-05T06:21:32.376030+00:00",
+      "updated_at": "2026-06-05T06:26:29.382798+00:00",
       "status": "open",
       "code": "2376",
       "name": "技嘉",
@@ -20720,7 +20724,7 @@
         "pct_10m": -0.137,
         "pct_30m": 0.274
       },
-      "age_minutes": 101.09
+      "age_minutes": 106.04
     },
     {
       "key": "fund_flow:1513:23:169.5",
@@ -21231,7 +21235,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T04:45:24.827091+00:00",
-      "updated_at": "2026-06-05T06:21:32.376037+00:00",
+      "updated_at": "2026-06-05T06:26:29.382808+00:00",
       "status": "open",
       "code": "2376",
       "name": "技嘉",
@@ -21252,7 +21256,7 @@
         "pct_10m": 0.547,
         "pct_30m": 0.137
       },
-      "age_minutes": 96.13
+      "age_minutes": 101.08
     },
     {
       "key": "fund_flow:2356:31:76.4",
@@ -21763,7 +21767,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T04:50:26.162538+00:00",
-      "updated_at": "2026-06-05T06:21:32.376045+00:00",
+      "updated_at": "2026-06-05T06:26:29.382820+00:00",
       "status": "open",
       "code": "2376",
       "name": "技嘉",
@@ -21784,7 +21788,7 @@
         "pct_10m": 0.411,
         "pct_30m": 0.822
       },
-      "age_minutes": 91.1
+      "age_minutes": 96.05
     },
     {
       "key": "fund_flow:2308:27:2305.0",
@@ -21931,7 +21935,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T04:55:11.829397+00:00",
-      "updated_at": "2026-06-05T06:21:32.376050+00:00",
+      "updated_at": "2026-06-05T06:26:29.382831+00:00",
       "status": "open",
       "code": "2376",
       "name": "技嘉",
@@ -21952,7 +21956,7 @@
         "pct_10m": -0.409,
         "pct_30m": 0.545
       },
-      "age_minutes": 86.34
+      "age_minutes": 91.29
     },
     {
       "key": "ai_pool:3231:28:172.0",
@@ -24255,7 +24259,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T05:15:26.380430+00:00",
-      "updated_at": "2026-06-05T06:21:32.376064+00:00",
+      "updated_at": "2026-06-05T06:26:29.382846+00:00",
       "status": "open",
       "code": "2376",
       "name": "技嘉",
@@ -24276,7 +24280,7 @@
         "pct_10m": 0.82,
         "pct_30m": 0.82
       },
-      "age_minutes": 66.1
+      "age_minutes": 71.05
     },
     {
       "key": "fund_flow:1513:25:169.5",
@@ -24535,7 +24539,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T05:20:15.178269+00:00",
-      "updated_at": "2026-06-05T06:21:32.376069+00:00",
+      "updated_at": "2026-06-05T06:26:29.382856+00:00",
       "status": "open",
       "code": "2376",
       "name": "技嘉",
@@ -24556,7 +24560,7 @@
         "pct_10m": 0.272,
         "pct_30m": 0.272
       },
-      "age_minutes": 61.29
+      "age_minutes": 66.24
     },
     {
       "key": "ai_pool:2382:22:387.0",
@@ -25179,7 +25183,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T05:25:12.305629+00:00",
-      "updated_at": "2026-06-05T06:21:32.376076+00:00",
+      "updated_at": "2026-06-05T06:26:29.382867+00:00",
       "status": "open",
       "code": "2376",
       "name": "技嘉",
@@ -25200,7 +25204,7 @@
         "pct_10m": 0.0,
         "pct_30m": 0.0
       },
-      "age_minutes": 56.33
+      "age_minutes": 61.28
     },
     {
       "key": "ai_pool:1605:24:39.55",
@@ -25291,7 +25295,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T05:25:23.891513+00:00",
-      "updated_at": "2026-06-05T06:21:32.376081+00:00",
+      "updated_at": "2026-06-05T06:26:29.382875+00:00",
       "status": "open",
       "code": "2376",
       "name": "技嘉",
@@ -25312,7 +25316,7 @@
         "pct_10m": 0.0,
         "pct_30m": 0.0
       },
-      "age_minutes": 56.14
+      "age_minutes": 61.09
     },
     {
       "key": "fund_flow:3481:22:53.0",
@@ -25683,7 +25687,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T05:30:21.697356+00:00",
-      "updated_at": "2026-06-05T06:21:32.376087+00:00",
+      "updated_at": "2026-06-05T06:26:29.382885+00:00",
       "status": "open",
       "code": "2376",
       "name": "技嘉",
@@ -25704,7 +25708,7 @@
         "pct_10m": 0.0,
         "pct_30m": 0.0
       },
-      "age_minutes": 51.18
+      "age_minutes": 56.13
     },
     {
       "key": "ai_pool:2454:42:4300.0",
