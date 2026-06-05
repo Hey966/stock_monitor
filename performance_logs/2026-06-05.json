@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-05T02:31:29.012910+00:00",
+  "updated_at": "2026-06-05T02:31:31.020601+00:00",
   "count": 92,
   "items": [
     {
@@ -824,13 +824,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:25:12.529335+00:00",
-      "updated_at": "2026-06-05T02:27:14.664493+00:00",
+      "updated_at": "2026-06-05T02:31:30.249492+00:00",
       "status": "open",
       "code": "2330",
       "name": "台積電",
       "sector": "半導體",
       "entry_price": 2380.0,
-      "last_price": 2375.0,
+      "last_price": 2380.0,
       "best_price": 2380.0,
       "worst_price": 2375.0,
       "score": 51,
@@ -838,11 +838,12 @@
       "volume_ratio_at_signal": 0.59,
       "alert": null,
       "results": {
-        "latest_pct": -0.21,
+        "latest_pct": 0.0,
         "max_gain": 0.0,
-        "max_drawdown": -0.21
+        "max_drawdown": -0.21,
+        "pct_5m": 0.0
       },
-      "age_minutes": 2.04
+      "age_minutes": 6.3
     },
     {
       "key": "ai_pool:2368:51:1335.0",
@@ -2000,20 +2001,25 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:30:19.670321+00:00",
-      "updated_at": "2026-06-05T02:30:19.670324+00:00",
+      "updated_at": "2026-06-05T02:31:30.249511+00:00",
       "status": "open",
       "code": "2330",
       "name": "台積電",
       "sector": "半導體",
       "entry_price": 2385.0,
-      "last_price": 2385.0,
+      "last_price": 2380.0,
       "best_price": 2385.0,
-      "worst_price": 2385.0,
+      "worst_price": 2380.0,
       "score": 34,
       "change_rate_at_signal": 0.0,
       "volume_ratio_at_signal": 0.6,
       "alert": null,
-      "results": {}
+      "results": {
+        "latest_pct": -0.21,
+        "max_gain": 0.0,
+        "max_drawdown": -0.21
+      },
+      "age_minutes": 1.18
     },
     {
       "key": "ai_pool:2317:33:287.5",
