@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-05T03:01:41.783824+00:00",
+  "updated_at": "2026-06-05T03:01:44.929277+00:00",
   "count": 240,
   "items": [
     {
@@ -524,7 +524,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:25:05.423233+00:00",
-      "updated_at": "2026-06-05T02:56:42.861702+00:00",
+      "updated_at": "2026-06-05T03:01:43.916219+00:00",
       "status": "open",
       "code": "2317",
       "name": "鴻海",
@@ -545,7 +545,7 @@
         "pct_10m": 0.349,
         "pct_30m": -0.349
       },
-      "age_minutes": 31.62
+      "age_minutes": 36.64
     },
     {
       "key": "ai_pool:2382:32:387.5",
@@ -2227,7 +2227,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:30:19.670331+00:00",
-      "updated_at": "2026-06-05T02:56:42.861731+00:00",
+      "updated_at": "2026-06-05T03:01:43.916420+00:00",
       "status": "open",
       "code": "2317",
       "name": "鴻海",
@@ -2245,9 +2245,10 @@
         "max_gain": 0.0,
         "max_drawdown": -0.87,
         "pct_5m": 0.0,
-        "pct_10m": -0.348
+        "pct_10m": -0.348,
+        "pct_30m": -0.696
       },
-      "age_minutes": 26.39
+      "age_minutes": 31.4
     },
     {
       "key": "fund_flow:2379:85:639.0",
@@ -2391,7 +2392,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:30:30.008555+00:00",
-      "updated_at": "2026-06-05T02:56:42.861741+00:00",
+      "updated_at": "2026-06-05T03:01:43.916479+00:00",
       "status": "open",
       "code": "2317",
       "name": "鴻海",
@@ -2409,9 +2410,10 @@
         "max_gain": 0.174,
         "max_drawdown": -0.697,
         "pct_5m": 0.174,
-        "pct_10m": -0.174
+        "pct_10m": -0.174,
+        "pct_30m": -0.523
       },
-      "age_minutes": 26.21
+      "age_minutes": 31.23
     },
     {
       "key": "fund_flow:1513:31:172.5",
@@ -2958,7 +2960,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:35:12.437253+00:00",
-      "updated_at": "2026-06-05T02:56:42.861752+00:00",
+      "updated_at": "2026-06-05T03:01:43.916496+00:00",
       "status": "open",
       "code": "2317",
       "name": "鴻海",
@@ -2978,7 +2980,7 @@
         "pct_5m": -0.521,
         "pct_10m": -0.868
       },
-      "age_minutes": 21.51
+      "age_minutes": 26.52
     },
     {
       "key": "fund_flow:2356:79:78.4",
@@ -4389,7 +4391,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:45:25.851576+00:00",
-      "updated_at": "2026-06-05T02:56:42.861767+00:00",
+      "updated_at": "2026-06-05T03:01:43.916519+00:00",
       "status": "open",
       "code": "2317",
       "name": "鴻海",
@@ -4409,7 +4411,7 @@
         "pct_5m": -0.35,
         "pct_10m": -0.175
       },
-      "age_minutes": 11.28
+      "age_minutes": 16.3
     },
     {
       "key": "fund_flow:2382:27:389.5",
@@ -4902,7 +4904,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:50:15.682151+00:00",
-      "updated_at": "2026-06-05T02:56:42.861777+00:00",
+      "updated_at": "2026-06-05T03:01:43.916533+00:00",
       "status": "open",
       "code": "2317",
       "name": "鴻海",
@@ -4919,9 +4921,10 @@
         "latest_pct": 0.0,
         "max_gain": 0.0,
         "max_drawdown": -0.175,
-        "pct_5m": 0.0
+        "pct_5m": 0.0,
+        "pct_10m": 0.0
       },
-      "age_minutes": 6.45
+      "age_minutes": 11.47
     },
     {
       "key": "ai_pool:3231:37:171.5",
@@ -5730,7 +5733,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:55:23.828239+00:00",
-      "updated_at": "2026-06-05T02:56:42.861788+00:00",
+      "updated_at": "2026-06-05T03:01:43.916551+00:00",
       "status": "open",
       "code": "2317",
       "name": "鴻海",
@@ -5746,9 +5749,10 @@
       "results": {
         "latest_pct": 0.0,
         "max_gain": 0.0,
-        "max_drawdown": 0.0
+        "max_drawdown": 0.0,
+        "pct_5m": 0.0
       },
-      "age_minutes": 1.32
+      "age_minutes": 6.33
     },
     {
       "key": "fund_flow:1605:33:39.45",
