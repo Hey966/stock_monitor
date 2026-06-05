@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-05T02:26:14.432369+00:00",
+  "updated_at": "2026-06-05T02:26:16.922275+00:00",
   "count": 63,
   "items": [
     {
@@ -248,7 +248,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:25:05.423097+00:00",
-      "updated_at": "2026-06-05T02:26:00.475338+00:00",
+      "updated_at": "2026-06-05T02:26:15.683211+00:00",
       "status": "open",
       "code": "2454",
       "name": "聯發科",
@@ -266,7 +266,7 @@
         "max_gain": 0.228,
         "max_drawdown": 0.0
       },
-      "age_minutes": 0.92
+      "age_minutes": 1.17
     },
     {
       "key": "ai_pool:6215:53:120.0",
@@ -293,13 +293,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:25:05.423149+00:00",
-      "updated_at": "2026-06-05T02:26:10.301506+00:00",
+      "updated_at": "2026-06-05T02:26:14.795903+00:00",
       "status": "open",
       "code": "5347",
       "name": "世界",
       "sector": "半導體",
       "entry_price": 161.5,
-      "last_price": 161.0,
+      "last_price": 161.5,
       "best_price": 161.5,
       "worst_price": 161.0,
       "score": 52,
@@ -307,11 +307,11 @@
       "volume_ratio_at_signal": 0.36,
       "alert": null,
       "results": {
-        "latest_pct": -0.31,
+        "latest_pct": 0.0,
         "max_gain": 0.0,
         "max_drawdown": -0.31
       },
-      "age_minutes": 1.08
+      "age_minutes": 1.16
     },
     {
       "key": "ai_pool:8046:49:862.0",
@@ -873,13 +873,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:25:12.529403+00:00",
-      "updated_at": "2026-06-05T02:26:10.301528+00:00",
+      "updated_at": "2026-06-05T02:26:14.795931+00:00",
       "status": "open",
       "code": "5347",
       "name": "世界",
       "sector": "半導體",
       "entry_price": 161.0,
-      "last_price": 161.0,
+      "last_price": 161.5,
       "best_price": 161.5,
       "worst_price": 161.0,
       "score": 35,
@@ -887,11 +887,11 @@
       "volume_ratio_at_signal": 0.36,
       "alert": null,
       "results": {
-        "latest_pct": 0.0,
+        "latest_pct": 0.311,
         "max_gain": 0.311,
         "max_drawdown": 0.0
       },
-      "age_minutes": 0.96
+      "age_minutes": 1.04
     },
     {
       "key": "fund_flow:2379:91:643.0",
@@ -943,13 +943,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:25:15.330052+00:00",
-      "updated_at": "2026-06-05T02:26:10.301537+00:00",
+      "updated_at": "2026-06-05T02:26:14.795944+00:00",
       "status": "open",
       "code": "5347",
       "name": "世界",
       "sector": "半導體",
       "entry_price": 160.5,
-      "last_price": 161.0,
+      "last_price": 161.5,
       "best_price": 161.5,
       "worst_price": 160.5,
       "score": 27,
@@ -957,11 +957,11 @@
       "volume_ratio_at_signal": 0.36,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": 0.312,
+        "latest_pct": 0.623,
         "max_gain": 0.623,
         "max_drawdown": 0.0
       },
-      "age_minutes": 0.92
+      "age_minutes": 0.99
     },
     {
       "key": "fund_flow:2382:33:387.5",
@@ -1148,13 +1148,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:25:15.375822+00:00",
-      "updated_at": "2026-06-05T02:26:10.301546+00:00",
+      "updated_at": "2026-06-05T02:26:14.795956+00:00",
       "status": "open",
       "code": "5347",
       "name": "世界",
       "sector": "半導體",
       "entry_price": 161.0,
-      "last_price": 161.0,
+      "last_price": 161.5,
       "best_price": 161.5,
       "worst_price": 161.0,
       "score": 30,
@@ -1162,11 +1162,11 @@
       "volume_ratio_at_signal": 0.36,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": 0.0,
+        "latest_pct": 0.311,
         "max_gain": 0.311,
         "max_drawdown": 0.0
       },
-      "age_minutes": 0.92
+      "age_minutes": 0.99
     },
     {
       "key": "fund_flow:2376:26:366.0",
@@ -1318,13 +1318,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:25:21.622306+00:00",
-      "updated_at": "2026-06-05T02:26:10.301554+00:00",
+      "updated_at": "2026-06-05T02:26:14.795968+00:00",
       "status": "open",
       "code": "5347",
       "name": "世界",
       "sector": "半導體",
       "entry_price": 160.5,
-      "last_price": 161.0,
+      "last_price": 161.5,
       "best_price": 161.5,
       "worst_price": 160.5,
       "score": 24,
@@ -1332,11 +1332,11 @@
       "volume_ratio_at_signal": 0.36,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": 0.312,
+        "latest_pct": 0.623,
         "max_gain": 0.623,
         "max_drawdown": 0.0
       },
-      "age_minutes": 0.81
+      "age_minutes": 0.89
     },
     {
       "key": "fund_flow:2409:33:27.8",
