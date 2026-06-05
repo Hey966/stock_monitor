@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-05T03:12:21.715416+00:00",
+  "updated_at": "2026-06-05T03:12:24.328180+00:00",
   "count": 275,
   "items": [
     {
@@ -580,7 +580,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:25:05.423260+00:00",
-      "updated_at": "2026-06-05T03:06:58.347576+00:00",
+      "updated_at": "2026-06-05T03:12:23.541897+00:00",
       "status": "open",
       "code": "3324",
       "name": "雙鴻",
@@ -601,7 +601,7 @@
         "pct_10m": 0.0,
         "pct_30m": -1.333
       },
-      "age_minutes": 41.88
+      "age_minutes": 47.3
     },
     {
       "key": "ai_pool:2379:94:643.0",
@@ -2344,7 +2344,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:30:30.008530+00:00",
-      "updated_at": "2026-06-05T03:06:58.347606+00:00",
+      "updated_at": "2026-06-05T03:12:23.541919+00:00",
       "status": "open",
       "code": "3324",
       "name": "雙鴻",
@@ -2365,7 +2365,7 @@
         "pct_10m": -1.327,
         "pct_30m": -1.77
       },
-      "age_minutes": 36.47
+      "age_minutes": 41.89
     },
     {
       "key": "fund_flow:2409:32:27.8",
@@ -4508,7 +4508,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:45:25.851591+00:00",
-      "updated_at": "2026-06-05T03:06:58.347626+00:00",
+      "updated_at": "2026-06-05T03:12:23.541933+00:00",
       "status": "open",
       "code": "3324",
       "name": "雙鴻",
@@ -4528,7 +4528,7 @@
         "pct_5m": 0.0,
         "pct_10m": 0.0
       },
-      "age_minutes": 21.54
+      "age_minutes": 26.96
     },
     {
       "key": "fund_flow:1513:32:171.5",
@@ -6506,7 +6506,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:00:36.494194+00:00",
-      "updated_at": "2026-06-05T03:06:58.347640+00:00",
+      "updated_at": "2026-06-05T03:12:23.541944+00:00",
       "status": "open",
       "code": "3324",
       "name": "雙鴻",
@@ -6523,9 +6523,10 @@
         "latest_pct": 0.0,
         "max_gain": 0.0,
         "max_drawdown": 0.0,
-        "pct_5m": 0.0
+        "pct_5m": 0.0,
+        "pct_10m": 0.0
       },
-      "age_minutes": 6.36
+      "age_minutes": 11.78
     },
     {
       "key": "fund_flow:1513:28:171.0",
@@ -7003,7 +7004,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:05:22.049914+00:00",
-      "updated_at": "2026-06-05T03:06:58.347649+00:00",
+      "updated_at": "2026-06-05T03:12:23.541951+00:00",
       "status": "open",
       "code": "3324",
       "name": "雙鴻",
@@ -7019,9 +7020,10 @@
       "results": {
         "latest_pct": 0.0,
         "max_gain": 0.0,
-        "max_drawdown": 0.0
+        "max_drawdown": 0.0,
+        "pct_5m": 0.0
       },
-      "age_minutes": 1.6
+      "age_minutes": 7.02
     },
     {
       "key": "fund_flow:1605:19:39.4",
@@ -7454,7 +7456,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:10:26.460620+00:00",
-      "updated_at": "2026-06-05T03:10:26.460623+00:00",
+      "updated_at": "2026-06-05T03:12:23.541957+00:00",
       "status": "open",
       "code": "3324",
       "name": "雙鴻",
@@ -7467,7 +7469,12 @@
       "change_rate_at_signal": -6.32,
       "volume_ratio_at_signal": 0.44,
       "alert": "資金退潮警報",
-      "results": {}
+      "results": {
+        "latest_pct": 0.0,
+        "max_gain": 0.0,
+        "max_drawdown": 0.0
+      },
+      "age_minutes": 1.95
     },
     {
       "key": "fund_flow:1609:20:39.6",
