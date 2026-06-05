@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-05T02:25:47.681296+00:00",
+  "updated_at": "2026-06-05T02:25:49.657463+00:00",
   "count": 63,
   "items": [
     {
@@ -48,20 +48,25 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:25:05.422985+00:00",
-      "updated_at": "2026-06-05T02:25:05.422995+00:00",
+      "updated_at": "2026-06-05T02:25:47.152068+00:00",
       "status": "open",
       "code": "2379",
       "name": "瑞昱",
       "sector": "半導體",
       "entry_price": 641.0,
-      "last_price": 641.0,
-      "best_price": 641.0,
+      "last_price": 643.0,
+      "best_price": 643.0,
       "worst_price": 641.0,
       "score": 92,
       "change_rate_at_signal": 2.72,
       "volume_ratio_at_signal": 0.39,
       "alert": null,
-      "results": {}
+      "results": {
+        "latest_pct": 0.312,
+        "max_gain": 0.312,
+        "max_drawdown": 0.0
+      },
+      "age_minutes": 0.7
     },
     {
       "key": "ai_pool:2615:92:86.1",
@@ -93,7 +98,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:25:05.423025+00:00",
-      "updated_at": "2026-06-05T02:25:44.904335+00:00",
+      "updated_at": "2026-06-05T02:25:48.908546+00:00",
       "status": "open",
       "code": "3661",
       "name": "世芯-KY",
@@ -111,7 +116,7 @@
         "max_gain": 0.114,
         "max_drawdown": 0.0
       },
-      "age_minutes": 0.66
+      "age_minutes": 0.72
     },
     {
       "key": "ai_pool:3443:77:4480.0",
@@ -468,7 +473,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:25:12.529197+00:00",
-      "updated_at": "2026-06-05T02:25:12.529212+00:00",
+      "updated_at": "2026-06-05T02:25:47.152091+00:00",
       "status": "open",
       "code": "2379",
       "name": "瑞昱",
@@ -481,7 +486,12 @@
       "change_rate_at_signal": 3.04,
       "volume_ratio_at_signal": 0.39,
       "alert": null,
-      "results": {}
+      "results": {
+        "latest_pct": 0.0,
+        "max_gain": 0.0,
+        "max_drawdown": 0.0
+      },
+      "age_minutes": 0.58
     },
     {
       "key": "ai_pool:2615:94:86.4",
@@ -538,7 +548,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:25:12.529249+00:00",
-      "updated_at": "2026-06-05T02:25:44.904357+00:00",
+      "updated_at": "2026-06-05T02:25:48.908562+00:00",
       "status": "open",
       "code": "3661",
       "name": "世芯-KY",
@@ -556,7 +566,7 @@
         "max_gain": 0.0,
         "max_drawdown": 0.0
       },
-      "age_minutes": 0.54
+      "age_minutes": 0.61
     },
     {
       "key": "ai_pool:6215:71:120.0",
@@ -808,7 +818,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:25:15.330007+00:00",
-      "updated_at": "2026-06-05T02:25:15.330020+00:00",
+      "updated_at": "2026-06-05T02:25:47.152105+00:00",
       "status": "open",
       "code": "2379",
       "name": "瑞昱",
@@ -821,7 +831,12 @@
       "change_rate_at_signal": 3.04,
       "volume_ratio_at_signal": 0.39,
       "alert": "大戶進場警報",
-      "results": {}
+      "results": {
+        "latest_pct": 0.0,
+        "max_gain": 0.0,
+        "max_drawdown": 0.0
+      },
+      "age_minutes": 0.53
     },
     {
       "key": "fund_flow:3017:31:2630.0",
