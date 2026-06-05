@@ -16,6 +16,12 @@
     return `${n > 0 ? '+' : ''}${n}%`;
   }
 
+  function win(v) {
+    const n = Number(v);
+    if (!Number.isFinite(n)) return '-';
+    return `${n}%`;
+  }
+
   function setText(id, value) {
     const el = $(id);
     if (el) el.textContent = value ?? '-';
@@ -44,10 +50,10 @@
 
   function metricText(row) {
     if (!row) return '-';
-    const win = bestWinRate(row);
+    const rate = bestWinRate(row);
     const samples = row.tracked ?? row.signals ?? 0;
-    if (win === null || win === undefined) return `樣本 ${samples}筆`;
-    return `勝率 ${win}%｜樣本 ${samples}筆`;
+    if (rate === null || rate === undefined) return `樣本 ${samples}筆`;
+    return `勝率 ${rate}%｜樣本 ${samples}筆`;
   }
 
   function statusText(row) {
@@ -85,9 +91,12 @@
     const fund = moduleByName(perf, 'fund_flow');
     const total = perf?.total_signals ?? 0;
     const tracked = perf?.tracked_results ?? 0;
+    const aiWin = win(bestWinRate(ai));
+    const fundWin = win(bestWinRate(fund));
+    const breakoutWin = win(bestWinRate(breakout));
 
     setText('#validationTitle', '訊號驗證中心');
-    setText('#validationSummary', `正式績效紀錄 ${total} 筆，已追蹤 ${tracked} 筆。Replay 勝率 ${replay?.win_rate ?? '-'}%。`);
+    setText('#validationSummary', `正式績效 ${total} 筆，已追蹤 ${tracked} 筆。AI ${aiWin}｜資金流 ${fundWin}｜突破 ${breakoutWin}。`);
 
     renderModule(1, ai, MODULE_LABELS.ai_pool);
     renderModule(2, breakout, MODULE_LABELS.breakout);
