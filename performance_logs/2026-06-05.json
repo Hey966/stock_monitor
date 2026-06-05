@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-05T02:51:46.675350+00:00",
+  "updated_at": "2026-06-05T02:51:48.754912+00:00",
   "count": 195,
   "items": [
     {
@@ -1047,7 +1047,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:25:15.330035+00:00",
-      "updated_at": "2026-06-05T02:46:38.487011+00:00",
+      "updated_at": "2026-06-05T02:51:47.759975+00:00",
       "status": "open",
       "code": "3017",
       "name": "奇鋐",
@@ -1067,7 +1067,7 @@
         "pct_5m": 0.76,
         "pct_10m": 0.0
       },
-      "age_minutes": 21.39
+      "age_minutes": 26.54
     },
     {
       "key": "fund_flow:5347:27:160.5",
@@ -1452,7 +1452,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:25:16.826567+00:00",
-      "updated_at": "2026-06-05T02:46:38.487033+00:00",
+      "updated_at": "2026-06-05T02:51:47.759991+00:00",
       "status": "open",
       "code": "3017",
       "name": "奇鋐",
@@ -1472,7 +1472,7 @@
         "pct_5m": 0.76,
         "pct_10m": 0.0
       },
-      "age_minutes": 21.36
+      "age_minutes": 26.52
     },
     {
       "key": "fund_flow:2344:33:163.0",
@@ -1614,7 +1614,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:25:21.622329+00:00",
-      "updated_at": "2026-06-05T02:46:38.487043+00:00",
+      "updated_at": "2026-06-05T02:51:47.759998+00:00",
       "status": "open",
       "code": "3017",
       "name": "奇鋐",
@@ -1634,7 +1634,7 @@
         "pct_5m": 0.76,
         "pct_10m": 0.0
       },
-      "age_minutes": 21.28
+      "age_minutes": 26.44
     },
     {
       "key": "fund_flow:2376:32:366.5",
@@ -2100,7 +2100,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:30:19.670309+00:00",
-      "updated_at": "2026-06-05T02:46:38.487055+00:00",
+      "updated_at": "2026-06-05T02:51:47.760006+00:00",
       "status": "open",
       "code": "3017",
       "name": "奇鋐",
@@ -2120,7 +2120,7 @@
         "pct_5m": -0.755,
         "pct_10m": -1.321
       },
-      "age_minutes": 16.31
+      "age_minutes": 21.47
     },
     {
       "key": "ai_pool:2330:34:2385.0",
@@ -3018,7 +3018,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:35:23.555098+00:00",
-      "updated_at": "2026-06-05T02:46:38.487071+00:00",
+      "updated_at": "2026-06-05T02:51:47.760014+00:00",
       "status": "open",
       "code": "3017",
       "name": "奇鋐",
@@ -3038,7 +3038,7 @@
         "pct_5m": -0.759,
         "pct_10m": -0.759
       },
-      "age_minutes": 11.25
+      "age_minutes": 16.4
     },
     {
       "key": "fund_flow:1605:25:39.25",
@@ -3558,7 +3558,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:40:15.726569+00:00",
-      "updated_at": "2026-06-05T02:46:38.487084+00:00",
+      "updated_at": "2026-06-05T02:51:47.760020+00:00",
       "status": "open",
       "code": "3017",
       "name": "奇鋐",
@@ -3575,9 +3575,10 @@
         "latest_pct": -0.381,
         "max_gain": 0.0,
         "max_drawdown": -0.381,
-        "pct_5m": -0.381
+        "pct_5m": -0.381,
+        "pct_10m": -0.381
       },
-      "age_minutes": 6.38
+      "age_minutes": 11.53
     },
     {
       "key": "ai_pool:2382:32:389.5",
@@ -4266,7 +4267,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:45:25.851569+00:00",
-      "updated_at": "2026-06-05T02:46:38.487094+00:00",
+      "updated_at": "2026-06-05T02:51:47.760027+00:00",
       "status": "open",
       "code": "3017",
       "name": "奇鋐",
@@ -4282,9 +4283,10 @@
       "results": {
         "latest_pct": 0.0,
         "max_gain": 0.0,
-        "max_drawdown": 0.0
+        "max_drawdown": 0.0,
+        "pct_5m": 0.0
       },
-      "age_minutes": 1.21
+      "age_minutes": 6.37
     },
     {
       "key": "fund_flow:2317:30:286.0",
@@ -4893,20 +4895,25 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:50:15.682182+00:00",
-      "updated_at": "2026-06-05T02:50:15.682184+00:00",
+      "updated_at": "2026-06-05T02:51:47.760034+00:00",
       "status": "open",
       "code": "3017",
       "name": "奇鋐",
       "sector": "AI散熱",
       "entry_price": 2620.0,
-      "last_price": 2620.0,
+      "last_price": 2615.0,
       "best_price": 2620.0,
-      "worst_price": 2620.0,
+      "worst_price": 2615.0,
       "score": 24,
       "change_rate_at_signal": -3.32,
       "volume_ratio_at_signal": 0.75,
       "alert": null,
-      "results": {}
+      "results": {
+        "latest_pct": -0.191,
+        "max_gain": 0.0,
+        "max_drawdown": -0.191
+      },
+      "age_minutes": 1.53
     },
     {
       "key": "ai_pool:2330:22:2375.0",
