@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-05T02:31:53.356339+00:00",
+  "updated_at": "2026-06-05T02:31:54.970786+00:00",
   "count": 92,
   "items": [
     {
@@ -1218,25 +1218,26 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:25:15.330146+00:00",
-      "updated_at": "2026-06-05T02:27:38.090155+00:00",
+      "updated_at": "2026-06-05T02:31:54.635501+00:00",
       "status": "open",
       "code": "2344",
       "name": "華邦電",
       "sector": "半導體",
       "entry_price": 162.5,
-      "last_price": 162.5,
-      "best_price": 163.0,
+      "last_price": 164.0,
+      "best_price": 164.0,
       "worst_price": 162.5,
       "score": 33,
       "change_rate_at_signal": -9.47,
       "volume_ratio_at_signal": 0.74,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": 0.0,
-        "max_gain": 0.308,
-        "max_drawdown": 0.0
+        "latest_pct": 0.923,
+        "max_gain": 0.923,
+        "max_drawdown": 0.0,
+        "pct_5m": 0.923
       },
-      "age_minutes": 2.38
+      "age_minutes": 6.66
     },
     {
       "key": "fund_flow:2376:27:366.0",
@@ -1424,25 +1425,26 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:25:16.826614+00:00",
-      "updated_at": "2026-06-05T02:27:38.090171+00:00",
+      "updated_at": "2026-06-05T02:31:54.635517+00:00",
       "status": "open",
       "code": "2344",
       "name": "華邦電",
       "sector": "半導體",
       "entry_price": 163.0,
-      "last_price": 162.5,
-      "best_price": 163.0,
+      "last_price": 164.0,
+      "best_price": 164.0,
       "worst_price": 162.5,
       "score": 33,
       "change_rate_at_signal": -9.19,
       "volume_ratio_at_signal": 0.74,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": -0.307,
-        "max_gain": 0.0,
-        "max_drawdown": -0.307
+        "latest_pct": 0.613,
+        "max_gain": 0.613,
+        "max_drawdown": -0.307,
+        "pct_5m": 0.613
       },
-      "age_minutes": 2.35
+      "age_minutes": 6.63
     },
     {
       "key": "fund_flow:2376:28:366.0",
@@ -2331,7 +2333,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:30:30.008620+00:00",
-      "updated_at": "2026-06-05T02:30:30.008623+00:00",
+      "updated_at": "2026-06-05T02:31:54.635525+00:00",
       "status": "open",
       "code": "2344",
       "name": "華邦電",
@@ -2344,7 +2346,12 @@
       "change_rate_at_signal": -8.63,
       "volume_ratio_at_signal": 0.75,
       "alert": "資金退潮警報",
-      "results": {}
+      "results": {
+        "latest_pct": 0.0,
+        "max_gain": 0.0,
+        "max_drawdown": 0.0
+      },
+      "age_minutes": 1.41
     }
   ]
 }
