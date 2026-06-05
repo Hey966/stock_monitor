@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-05T03:12:15.460724+00:00",
+  "updated_at": "2026-06-05T03:12:18.678293+00:00",
   "count": 275,
   "items": [
     {
@@ -1224,13 +1224,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:25:15.330086+00:00",
-      "updated_at": "2026-06-05T03:07:07.125508+00:00",
+      "updated_at": "2026-06-05T03:12:17.442693+00:00",
       "status": "open",
       "code": "1513",
       "name": "中興電",
       "sector": "重電",
       "entry_price": 172.5,
-      "last_price": 171.0,
+      "last_price": 170.5,
       "best_price": 172.5,
       "worst_price": 170.5,
       "score": 29,
@@ -1238,14 +1238,14 @@
       "volume_ratio_at_signal": 0.34,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": -0.87,
+        "latest_pct": -1.159,
         "max_gain": 0.0,
         "max_drawdown": -1.159,
         "pct_5m": 0.0,
         "pct_10m": 0.0,
         "pct_30m": -1.159
       },
-      "age_minutes": 41.86
+      "age_minutes": 47.04
     },
     {
       "key": "fund_flow:1605:29:39.35",
@@ -2428,13 +2428,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:30:30.008566+00:00",
-      "updated_at": "2026-06-05T03:07:07.125530+00:00",
+      "updated_at": "2026-06-05T03:12:17.442714+00:00",
       "status": "open",
       "code": "1513",
       "name": "中興電",
       "sector": "重電",
       "entry_price": 172.5,
-      "last_price": 171.0,
+      "last_price": 170.5,
       "best_price": 172.5,
       "worst_price": 170.5,
       "score": 31,
@@ -2442,14 +2442,14 @@
       "volume_ratio_at_signal": 0.34,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": -0.87,
+        "latest_pct": -1.159,
         "max_gain": 0.0,
         "max_drawdown": -1.159,
         "pct_5m": 0.0,
         "pct_10m": -0.58,
         "pct_30m": -0.87
       },
-      "age_minutes": 36.62
+      "age_minutes": 41.79
     },
     {
       "key": "fund_flow:1605:34:39.25",
@@ -3939,13 +3939,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:40:27.116663+00:00",
-      "updated_at": "2026-06-05T03:07:07.125556+00:00",
+      "updated_at": "2026-06-05T03:12:17.442727+00:00",
       "status": "open",
       "code": "1513",
       "name": "中興電",
       "sector": "重電",
       "entry_price": 171.5,
-      "last_price": 171.0,
+      "last_price": 170.5,
       "best_price": 171.5,
       "worst_price": 170.5,
       "score": 8,
@@ -3953,13 +3953,14 @@
       "volume_ratio_at_signal": 0.36,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": -0.292,
+        "latest_pct": -0.583,
         "max_gain": 0.0,
         "max_drawdown": -0.583,
         "pct_5m": 0.0,
-        "pct_10m": -0.583
+        "pct_10m": -0.583,
+        "pct_30m": -0.583
       },
-      "age_minutes": 26.67
+      "age_minutes": 31.84
     },
     {
       "key": "ai_pool:2379:88:646.0",
@@ -4533,13 +4534,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:45:25.851598+00:00",
-      "updated_at": "2026-06-05T03:07:07.125564+00:00",
+      "updated_at": "2026-06-05T03:12:17.442734+00:00",
       "status": "open",
       "code": "1513",
       "name": "中興電",
       "sector": "重電",
       "entry_price": 171.5,
-      "last_price": 171.0,
+      "last_price": 170.5,
       "best_price": 171.5,
       "worst_price": 170.5,
       "score": 32,
@@ -4547,13 +4548,13 @@
       "volume_ratio_at_signal": 0.36,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": -0.292,
+        "latest_pct": -0.583,
         "max_gain": 0.0,
         "max_drawdown": -0.583,
         "pct_5m": -0.583,
         "pct_10m": -0.583
       },
-      "age_minutes": 21.69
+      "age_minutes": 26.86
     },
     {
       "key": "fund_flow:1605:24:39.05",
@@ -5316,13 +5317,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:50:26.323812+00:00",
-      "updated_at": "2026-06-05T03:07:07.125574+00:00",
+      "updated_at": "2026-06-05T03:12:17.442743+00:00",
       "status": "open",
       "code": "1513",
       "name": "中興電",
       "sector": "重電",
       "entry_price": 170.5,
-      "last_price": 171.0,
+      "last_price": 170.5,
       "best_price": 171.0,
       "worst_price": 170.5,
       "score": 32,
@@ -5330,13 +5331,13 @@
       "volume_ratio_at_signal": 0.38,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": 0.293,
+        "latest_pct": 0.0,
         "max_gain": 0.293,
         "max_drawdown": 0.0,
         "pct_5m": 0.0,
         "pct_10m": 0.293
       },
-      "age_minutes": 16.68
+      "age_minutes": 21.85
     },
     {
       "key": "fund_flow:1609:30:39.55",
@@ -5937,13 +5938,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:55:23.828280+00:00",
-      "updated_at": "2026-06-05T03:07:07.125583+00:00",
+      "updated_at": "2026-06-05T03:12:17.442752+00:00",
       "status": "open",
       "code": "1513",
       "name": "中興電",
       "sector": "重電",
       "entry_price": 170.5,
-      "last_price": 171.0,
+      "last_price": 170.5,
       "best_price": 171.0,
       "worst_price": 170.5,
       "score": 21,
@@ -5951,13 +5952,13 @@
       "volume_ratio_at_signal": 0.38,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": 0.293,
+        "latest_pct": 0.0,
         "max_gain": 0.293,
         "max_drawdown": 0.0,
         "pct_5m": 0.293,
         "pct_10m": 0.293
       },
-      "age_minutes": 11.72
+      "age_minutes": 16.89
     },
     {
       "key": "fund_flow:1609:11:39.55",
@@ -6530,26 +6531,27 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:00:36.494207+00:00",
-      "updated_at": "2026-06-05T03:07:07.125590+00:00",
+      "updated_at": "2026-06-05T03:12:17.442760+00:00",
       "status": "open",
       "code": "1513",
       "name": "中興電",
       "sector": "重電",
       "entry_price": 171.0,
-      "last_price": 171.0,
+      "last_price": 170.5,
       "best_price": 171.0,
-      "worst_price": 171.0,
+      "worst_price": 170.5,
       "score": 28,
       "change_rate_at_signal": -8.55,
       "volume_ratio_at_signal": 0.38,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": 0.0,
+        "latest_pct": -0.292,
         "max_gain": 0.0,
-        "max_drawdown": 0.0,
-        "pct_5m": 0.0
+        "max_drawdown": -0.292,
+        "pct_5m": 0.0,
+        "pct_10m": -0.292
       },
-      "age_minutes": 6.51
+      "age_minutes": 11.68
     },
     {
       "key": "fund_flow:1605:23:39.35",
@@ -6947,13 +6949,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:05:22.049893+00:00",
-      "updated_at": "2026-06-05T03:07:07.125597+00:00",
+      "updated_at": "2026-06-05T03:12:17.442767+00:00",
       "status": "open",
       "code": "1513",
       "name": "中興電",
       "sector": "重電",
       "entry_price": 170.5,
-      "last_price": 171.0,
+      "last_price": 170.5,
       "best_price": 171.0,
       "worst_price": 170.5,
       "score": 24,
@@ -6961,11 +6963,12 @@
       "volume_ratio_at_signal": 0.39,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": 0.293,
+        "latest_pct": 0.0,
         "max_gain": 0.293,
-        "max_drawdown": 0.0
+        "max_drawdown": 0.0,
+        "pct_5m": 0.0
       },
-      "age_minutes": 1.75
+      "age_minutes": 6.92
     },
     {
       "key": "fund_flow:1609:30:39.6",
@@ -7423,20 +7426,25 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:10:26.460597+00:00",
-      "updated_at": "2026-06-05T03:10:26.460601+00:00",
+      "updated_at": "2026-06-05T03:12:17.442773+00:00",
       "status": "open",
       "code": "1513",
       "name": "中興電",
       "sector": "重電",
       "entry_price": 171.0,
-      "last_price": 171.0,
+      "last_price": 170.5,
       "best_price": 171.0,
-      "worst_price": 171.0,
+      "worst_price": 170.5,
       "score": 27,
       "change_rate_at_signal": -8.55,
       "volume_ratio_at_signal": 0.39,
       "alert": "資金退潮警報",
-      "results": {}
+      "results": {
+        "latest_pct": -0.292,
+        "max_gain": 0.0,
+        "max_drawdown": -0.292
+      },
+      "age_minutes": 1.85
     },
     {
       "key": "fund_flow:3324:25:1110.0",
