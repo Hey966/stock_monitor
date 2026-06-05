@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-05T04:08:02.558460+00:00",
+  "updated_at": "2026-06-05T04:08:06.134990+00:00",
   "count": 609,
   "items": [
     {
@@ -244,7 +244,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:25:05.423087+00:00",
-      "updated_at": "2026-06-05T04:06:50.362432+00:00",
+      "updated_at": "2026-06-05T04:08:01.141380+00:00",
       "status": "open",
       "code": "3231",
       "name": "緯創",
@@ -265,7 +265,7 @@
         "pct_10m": 0.289,
         "pct_30m": -0.289
       },
-      "age_minutes": 101.75
+      "age_minutes": 102.93
     },
     {
       "key": "ai_pool:2454:53:4390.0",
@@ -748,7 +748,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:25:12.529268+00:00",
-      "updated_at": "2026-06-05T04:06:50.362458+00:00",
+      "updated_at": "2026-06-05T04:08:01.141398+00:00",
       "status": "open",
       "code": "3231",
       "name": "緯創",
@@ -769,7 +769,7 @@
         "pct_10m": 0.289,
         "pct_30m": -0.289
       },
-      "age_minutes": 101.63
+      "age_minutes": 102.81
     },
     {
       "key": "ai_pool:2618:61:37.95",
@@ -1168,13 +1168,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:25:15.330072+00:00",
-      "updated_at": "2026-06-05T04:05:40.703104+00:00",
+      "updated_at": "2026-06-05T04:08:04.889588+00:00",
       "status": "open",
       "code": "2409",
       "name": "友達",
       "sector": "面板",
       "entry_price": 27.75,
-      "last_price": 27.25,
+      "last_price": 27.2,
       "best_price": 27.85,
       "worst_price": 27.1,
       "score": 35,
@@ -1182,14 +1182,14 @@
       "volume_ratio_at_signal": 0.47,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": -1.802,
+        "latest_pct": -1.982,
         "max_gain": 0.36,
         "max_drawdown": -2.342,
         "pct_5m": 0.18,
         "pct_10m": 0.36,
         "pct_30m": -0.36
       },
-      "age_minutes": 100.42
+      "age_minutes": 102.83
     },
     {
       "key": "fund_flow:2308:24:2350.0",
@@ -1476,13 +1476,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:25:16.826557+00:00",
-      "updated_at": "2026-06-05T04:05:40.703152+00:00",
+      "updated_at": "2026-06-05T04:08:04.889614+00:00",
       "status": "open",
       "code": "2409",
       "name": "友達",
       "sector": "面板",
       "entry_price": 27.8,
-      "last_price": 27.25,
+      "last_price": 27.2,
       "best_price": 27.85,
       "worst_price": 27.1,
       "score": 34,
@@ -1490,14 +1490,14 @@
       "volume_ratio_at_signal": 0.47,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": -1.978,
+        "latest_pct": -2.158,
         "max_gain": 0.18,
         "max_drawdown": -2.518,
         "pct_5m": 0.0,
         "pct_10m": 0.18,
         "pct_30m": -0.54
       },
-      "age_minutes": 100.4
+      "age_minutes": 102.8
     },
     {
       "key": "fund_flow:3017:30:2630.0",
@@ -1644,13 +1644,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:25:21.622321+00:00",
-      "updated_at": "2026-06-05T04:05:40.703165+00:00",
+      "updated_at": "2026-06-05T04:08:04.889627+00:00",
       "status": "open",
       "code": "2409",
       "name": "友達",
       "sector": "面板",
       "entry_price": 27.8,
-      "last_price": 27.25,
+      "last_price": 27.2,
       "best_price": 27.85,
       "worst_price": 27.1,
       "score": 33,
@@ -1658,14 +1658,14 @@
       "volume_ratio_at_signal": 0.47,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": -1.978,
+        "latest_pct": -2.158,
         "max_gain": 0.18,
         "max_drawdown": -2.518,
         "pct_5m": 0.0,
         "pct_10m": 0.18,
         "pct_30m": -0.54
       },
-      "age_minutes": 100.32
+      "age_minutes": 102.72
     },
     {
       "key": "fund_flow:3017:29:2630.0",
@@ -1896,7 +1896,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:30:19.670214+00:00",
-      "updated_at": "2026-06-05T04:06:50.362479+00:00",
+      "updated_at": "2026-06-05T04:08:01.141410+00:00",
       "status": "open",
       "code": "3231",
       "name": "緯創",
@@ -1917,7 +1917,7 @@
         "pct_10m": -1.153,
         "pct_30m": -0.576
       },
-      "age_minutes": 96.51
+      "age_minutes": 97.69
     },
     {
       "key": "ai_pool:2368:66:1345.0",
@@ -2372,13 +2372,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:30:30.008543+00:00",
-      "updated_at": "2026-06-05T04:05:40.703180+00:00",
+      "updated_at": "2026-06-05T04:08:04.889641+00:00",
       "status": "open",
       "code": "2409",
       "name": "友達",
       "sector": "面板",
       "entry_price": 27.8,
-      "last_price": 27.25,
+      "last_price": 27.2,
       "best_price": 27.85,
       "worst_price": 27.1,
       "score": 32,
@@ -2386,14 +2386,14 @@
       "volume_ratio_at_signal": 0.47,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": -1.978,
+        "latest_pct": -2.158,
         "max_gain": 0.18,
         "max_drawdown": -2.518,
         "pct_5m": 0.18,
         "pct_10m": -0.719,
         "pct_30m": -0.54
       },
-      "age_minutes": 95.18
+      "age_minutes": 97.58
     },
     {
       "key": "fund_flow:2317:23:287.0",
@@ -2876,7 +2876,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:35:12.437187+00:00",
-      "updated_at": "2026-06-05T04:06:50.362494+00:00",
+      "updated_at": "2026-06-05T04:08:01.141425+00:00",
       "status": "open",
       "code": "3231",
       "name": "緯創",
@@ -2897,7 +2897,7 @@
         "pct_10m": -0.865,
         "pct_30m": -0.576
       },
-      "age_minutes": 91.63
+      "age_minutes": 92.81
     },
     {
       "key": "ai_pool:3481:56:53.6",
@@ -3100,13 +3100,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:35:23.555085+00:00",
-      "updated_at": "2026-06-05T04:05:40.703193+00:00",
+      "updated_at": "2026-06-05T04:08:04.889657+00:00",
       "status": "open",
       "code": "2409",
       "name": "友達",
       "sector": "面板",
       "entry_price": 27.9,
-      "last_price": 27.25,
+      "last_price": 27.2,
       "best_price": 27.9,
       "worst_price": 27.1,
       "score": 26,
@@ -3114,14 +3114,14 @@
       "volume_ratio_at_signal": 0.48,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": -2.33,
+        "latest_pct": -2.509,
         "max_gain": 0.0,
         "max_drawdown": -2.867,
         "pct_5m": -1.075,
         "pct_10m": -1.254,
         "pct_30m": -1.254
       },
-      "age_minutes": 90.29
+      "age_minutes": 92.69
     },
     {
       "key": "fund_flow:3017:30:2635.0",
@@ -3632,7 +3632,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:40:15.726546+00:00",
-      "updated_at": "2026-06-05T04:06:50.362507+00:00",
+      "updated_at": "2026-06-05T04:08:01.141438+00:00",
       "status": "open",
       "code": "3231",
       "name": "緯創",
@@ -3653,7 +3653,7 @@
         "pct_10m": -0.291,
         "pct_30m": 0.872
       },
-      "age_minutes": 86.58
+      "age_minutes": 87.76
     },
     {
       "key": "ai_pool:3481:38:53.9",
@@ -3856,13 +3856,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:40:27.116631+00:00",
-      "updated_at": "2026-06-05T04:05:40.703205+00:00",
+      "updated_at": "2026-06-05T04:08:04.889670+00:00",
       "status": "open",
       "code": "2409",
       "name": "友達",
       "sector": "面板",
       "entry_price": 27.65,
-      "last_price": 27.25,
+      "last_price": 27.2,
       "best_price": 27.7,
       "worst_price": 27.1,
       "score": 20,
@@ -3870,14 +3870,14 @@
       "volume_ratio_at_signal": 0.49,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": -1.447,
+        "latest_pct": -1.627,
         "max_gain": 0.181,
         "max_drawdown": -1.989,
         "pct_5m": -0.362,
         "pct_10m": 0.0,
         "pct_30m": 0.181
       },
-      "age_minutes": 85.23
+      "age_minutes": 87.63
     },
     {
       "key": "fund_flow:1605:26:39.15",
@@ -4220,7 +4220,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:45:15.268695+00:00",
-      "updated_at": "2026-06-05T04:06:50.362520+00:00",
+      "updated_at": "2026-06-05T04:08:01.141451+00:00",
       "status": "open",
       "code": "3231",
       "name": "緯創",
@@ -4241,7 +4241,7 @@
         "pct_10m": 0.291,
         "pct_30m": 0.581
       },
-      "age_minutes": 81.58
+      "age_minutes": 82.76
     },
     {
       "key": "ai_pool:2330:43:2380.0",
@@ -4304,13 +4304,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:45:15.268732+00:00",
-      "updated_at": "2026-06-05T04:05:40.703216+00:00",
+      "updated_at": "2026-06-05T04:08:04.889683+00:00",
       "status": "open",
       "code": "2409",
       "name": "友達",
       "sector": "面板",
       "entry_price": 27.6,
-      "last_price": 27.25,
+      "last_price": 27.2,
       "best_price": 27.7,
       "worst_price": 27.1,
       "score": 32,
@@ -4318,14 +4318,14 @@
       "volume_ratio_at_signal": 0.49,
       "alert": null,
       "results": {
-        "latest_pct": -1.268,
+        "latest_pct": -1.449,
         "max_gain": 0.362,
         "max_drawdown": -1.812,
         "pct_5m": 0.181,
         "pct_10m": 0.181,
         "pct_30m": -0.181
       },
-      "age_minutes": 80.42
+      "age_minutes": 82.83
     },
     {
       "key": "ai_pool:3711:29:578.0",
@@ -5032,7 +5032,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:50:15.682158+00:00",
-      "updated_at": "2026-06-05T04:06:50.362535+00:00",
+      "updated_at": "2026-06-05T04:08:01.141465+00:00",
       "status": "open",
       "code": "3231",
       "name": "緯創",
@@ -5053,7 +5053,7 @@
         "pct_10m": 0.583,
         "pct_30m": 0.875
       },
-      "age_minutes": 76.58
+      "age_minutes": 77.76
     },
     {
       "key": "ai_pool:8046:37:856.0",
@@ -5340,13 +5340,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:50:26.323805+00:00",
-      "updated_at": "2026-06-05T04:05:40.703228+00:00",
+      "updated_at": "2026-06-05T04:08:04.889698+00:00",
       "status": "open",
       "code": "2409",
       "name": "友達",
       "sector": "面板",
       "entry_price": 27.65,
-      "last_price": 27.25,
+      "last_price": 27.2,
       "best_price": 27.7,
       "worst_price": 27.1,
       "score": 17,
@@ -5354,14 +5354,14 @@
       "volume_ratio_at_signal": 0.5,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": -1.447,
+        "latest_pct": -1.627,
         "max_gain": 0.181,
         "max_drawdown": -1.989,
         "pct_5m": 0.0,
         "pct_10m": 0.0,
         "pct_30m": 0.0
       },
-      "age_minutes": 75.24
+      "age_minutes": 77.64
     },
     {
       "key": "fund_flow:1513:32:170.5",
@@ -5620,7 +5620,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:55:13.518228+00:00",
-      "updated_at": "2026-06-05T04:06:50.362549+00:00",
+      "updated_at": "2026-06-05T04:08:01.141477+00:00",
       "status": "open",
       "code": "3231",
       "name": "緯創",
@@ -5641,7 +5641,7 @@
         "pct_10m": 0.0,
         "pct_30m": -0.29
       },
-      "age_minutes": 71.61
+      "age_minutes": 72.79
     },
     {
       "key": "ai_pool:2382:51:392.5",
@@ -5788,13 +5788,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:55:13.518294+00:00",
-      "updated_at": "2026-06-05T04:05:40.703238+00:00",
+      "updated_at": "2026-06-05T04:08:04.889709+00:00",
       "status": "open",
       "code": "2409",
       "name": "友達",
       "sector": "面板",
       "entry_price": 27.65,
-      "last_price": 27.25,
+      "last_price": 27.2,
       "best_price": 27.7,
       "worst_price": 27.1,
       "score": 32,
@@ -5802,14 +5802,14 @@
       "volume_ratio_at_signal": 0.5,
       "alert": null,
       "results": {
-        "latest_pct": -1.447,
+        "latest_pct": -1.627,
         "max_gain": 0.181,
         "max_drawdown": -1.989,
         "pct_5m": 0.0,
         "pct_10m": -0.362,
         "pct_30m": -0.181
       },
-      "age_minutes": 70.45
+      "age_minutes": 72.86
     },
     {
       "key": "ai_pool:2308:22:2345.0",
@@ -6572,13 +6572,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:00:36.494182+00:00",
-      "updated_at": "2026-06-05T04:05:40.703251+00:00",
+      "updated_at": "2026-06-05T04:08:04.889721+00:00",
       "status": "open",
       "code": "2409",
       "name": "友達",
       "sector": "面板",
       "entry_price": 27.7,
-      "last_price": 27.25,
+      "last_price": 27.2,
       "best_price": 27.7,
       "worst_price": 27.1,
       "score": 30,
@@ -6586,14 +6586,14 @@
       "volume_ratio_at_signal": 0.5,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": -1.625,
+        "latest_pct": -1.805,
         "max_gain": 0.0,
         "max_drawdown": -2.166,
         "pct_5m": -0.542,
         "pct_10m": 0.0,
         "pct_30m": -1.264
       },
-      "age_minutes": 65.07
+      "age_minutes": 67.47
     },
     {
       "key": "fund_flow:3324:32:1110.0",
@@ -6936,7 +6936,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:05:11.974234+00:00",
-      "updated_at": "2026-06-05T04:06:50.362566+00:00",
+      "updated_at": "2026-06-05T04:08:01.141490+00:00",
       "status": "open",
       "code": "3231",
       "name": "緯創",
@@ -6957,7 +6957,7 @@
         "pct_10m": 0.29,
         "pct_30m": -0.29
       },
-      "age_minutes": 61.64
+      "age_minutes": 62.82
     },
     {
       "key": "ai_pool:2609:39:54.0",
@@ -9736,13 +9736,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:30:29.753373+00:00",
-      "updated_at": "2026-06-05T04:05:40.703273+00:00",
+      "updated_at": "2026-06-05T04:08:04.889745+00:00",
       "status": "open",
       "code": "2409",
       "name": "友達",
       "sector": "面板",
       "entry_price": 27.4,
-      "last_price": 27.25,
+      "last_price": 27.2,
       "best_price": 27.4,
       "worst_price": 27.1,
       "score": 33,
@@ -9750,14 +9750,14 @@
       "volume_ratio_at_signal": 0.53,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": -0.547,
+        "latest_pct": -0.73,
         "max_gain": 0.0,
         "max_drawdown": -1.095,
         "pct_5m": -0.365,
         "pct_10m": -0.73,
         "pct_30m": -0.547
       },
-      "age_minutes": 35.18
+      "age_minutes": 37.59
     },
     {
       "key": "fund_flow:2376:31:364.0",
@@ -10324,7 +10324,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:35:22.792804+00:00",
-      "updated_at": "2026-06-05T04:06:50.362593+00:00",
+      "updated_at": "2026-06-05T04:08:01.141505+00:00",
       "status": "open",
       "code": "3231",
       "name": "緯創",
@@ -10345,7 +10345,7 @@
         "pct_10m": 0.0,
         "pct_30m": -0.292
       },
-      "age_minutes": 31.46
+      "age_minutes": 32.64
     },
     {
       "key": "fund_flow:3711:31:576.0",
@@ -10492,13 +10492,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:35:22.792876+00:00",
-      "updated_at": "2026-06-05T04:05:40.703286+00:00",
+      "updated_at": "2026-06-05T04:08:04.889756+00:00",
       "status": "open",
       "code": "2409",
       "name": "友達",
       "sector": "面板",
       "entry_price": 27.35,
-      "last_price": 27.25,
+      "last_price": 27.2,
       "best_price": 27.35,
       "worst_price": 27.1,
       "score": 33,
@@ -10506,14 +10506,14 @@
       "volume_ratio_at_signal": 0.53,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": -0.366,
+        "latest_pct": -0.548,
         "max_gain": 0.0,
         "max_drawdown": -0.914,
         "pct_5m": -0.548,
         "pct_10m": -0.183,
         "pct_30m": -0.366
       },
-      "age_minutes": 30.3
+      "age_minutes": 32.7
     },
     {
       "key": "fund_flow:1513:22:169.0",
@@ -11305,13 +11305,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:40:30.328104+00:00",
-      "updated_at": "2026-06-05T04:05:40.703299+00:00",
+      "updated_at": "2026-06-05T04:08:04.889768+00:00",
       "status": "open",
       "code": "2409",
       "name": "友達",
       "sector": "面板",
       "entry_price": 27.2,
-      "last_price": 27.25,
+      "last_price": 27.2,
       "best_price": 27.3,
       "worst_price": 27.1,
       "score": 19,
@@ -11319,13 +11319,13 @@
       "volume_ratio_at_signal": 0.55,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": 0.184,
+        "latest_pct": 0.0,
         "max_gain": 0.368,
         "max_drawdown": -0.368,
         "pct_5m": 0.368,
         "pct_10m": -0.368
       },
-      "age_minutes": 25.17
+      "age_minutes": 27.58
     },
     {
       "key": "ai_pool:2615:90:86.0",
@@ -12223,7 +12223,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:50:15.098719+00:00",
-      "updated_at": "2026-06-05T04:06:50.362610+00:00",
+      "updated_at": "2026-06-05T04:08:01.141522+00:00",
       "status": "open",
       "code": "3231",
       "name": "緯創",
@@ -12243,7 +12243,7 @@
         "pct_5m": 0.0,
         "pct_10m": 0.0
       },
-      "age_minutes": 16.59
+      "age_minutes": 17.77
     },
     {
       "key": "ai_pool:3661:24:4280.0",
@@ -13141,7 +13141,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:55:23.123518+00:00",
-      "updated_at": "2026-06-05T04:06:50.362623+00:00",
+      "updated_at": "2026-06-05T04:08:01.141534+00:00",
       "status": "open",
       "code": "3231",
       "name": "緯創",
@@ -13161,7 +13161,7 @@
         "pct_5m": 0.0,
         "pct_10m": 0.0
       },
-      "age_minutes": 11.45
+      "age_minutes": 12.63
     },
     {
       "key": "fund_flow:5347:34:160.0",
@@ -13724,7 +13724,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T04:00:24.527509+00:00",
-      "updated_at": "2026-06-05T04:06:50.362634+00:00",
+      "updated_at": "2026-06-05T04:08:01.141540+00:00",
       "status": "open",
       "code": "3231",
       "name": "緯創",
@@ -13743,7 +13743,7 @@
         "max_drawdown": -0.292,
         "pct_5m": -0.292
       },
-      "age_minutes": 6.43
+      "age_minutes": 7.61
     },
     {
       "key": "ai_pool:2317:14:284.0",
@@ -13802,26 +13802,26 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T04:00:24.527541+00:00",
-      "updated_at": "2026-06-05T04:05:40.703320+00:00",
+      "updated_at": "2026-06-05T04:08:04.889788+00:00",
       "status": "open",
       "code": "2409",
       "name": "友達",
       "sector": "面板",
       "entry_price": 27.25,
-      "last_price": 27.25,
+      "last_price": 27.2,
       "best_price": 27.3,
-      "worst_price": 27.25,
+      "worst_price": 27.2,
       "score": 12,
       "change_rate_at_signal": -6.83,
       "volume_ratio_at_signal": 0.57,
       "alert": null,
       "results": {
-        "latest_pct": 0.0,
+        "latest_pct": -0.183,
         "max_gain": 0.183,
-        "max_drawdown": 0.0,
+        "max_drawdown": -0.183,
         "pct_5m": 0.0
       },
-      "age_minutes": 5.27
+      "age_minutes": 7.67
     },
     {
       "key": "fund_flow:2379:85:647.0",
@@ -13906,7 +13906,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T04:00:36.205793+00:00",
-      "updated_at": "2026-06-05T04:06:50.362644+00:00",
+      "updated_at": "2026-06-05T04:08:01.141546+00:00",
       "status": "open",
       "code": "3231",
       "name": "緯創",
@@ -13925,7 +13925,7 @@
         "max_drawdown": -0.292,
         "pct_5m": -0.292
       },
-      "age_minutes": 6.24
+      "age_minutes": 7.42
     },
     {
       "key": "fund_flow:3481:29:52.2",
@@ -14347,7 +14347,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T04:00:54.481887+00:00",
-      "updated_at": "2026-06-05T04:06:50.362655+00:00",
+      "updated_at": "2026-06-05T04:08:01.141551+00:00",
       "status": "open",
       "code": "3231",
       "name": "緯創",
@@ -14366,7 +14366,7 @@
         "max_drawdown": 0.0,
         "pct_5m": 0.0
       },
-      "age_minutes": 5.93
+      "age_minutes": 7.11
     },
     {
       "key": "ai_pool:2376:10:365.0",
@@ -14425,7 +14425,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T04:01:03.697245+00:00",
-      "updated_at": "2026-06-05T04:06:50.362665+00:00",
+      "updated_at": "2026-06-05T04:08:01.141556+00:00",
       "status": "open",
       "code": "3231",
       "name": "緯創",
@@ -14444,7 +14444,7 @@
         "max_drawdown": -0.292,
         "pct_5m": -0.292
       },
-      "age_minutes": 5.78
+      "age_minutes": 6.96
     },
     {
       "key": "fund_flow:1513:27:169.0",
@@ -14605,7 +14605,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T04:01:05.011205+00:00",
-      "updated_at": "2026-06-05T04:06:50.362674+00:00",
+      "updated_at": "2026-06-05T04:08:01.141561+00:00",
       "status": "open",
       "code": "3231",
       "name": "緯創",
@@ -14624,7 +14624,7 @@
         "max_drawdown": 0.0,
         "pct_5m": 0.0
       },
-      "age_minutes": 5.76
+      "age_minutes": 6.94
     },
     {
       "key": "fund_flow:2317:33:284.0",
@@ -14786,7 +14786,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T04:01:42.928884+00:00",
-      "updated_at": "2026-06-05T04:06:50.362684+00:00",
+      "updated_at": "2026-06-05T04:08:01.141566+00:00",
       "status": "open",
       "code": "3231",
       "name": "緯創",
@@ -14805,7 +14805,7 @@
         "max_drawdown": -0.292,
         "pct_5m": -0.292
       },
-      "age_minutes": 5.12
+      "age_minutes": 6.3
     },
     {
       "key": "ai_pool:3661:20:4255.0",
@@ -14993,7 +14993,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T04:01:59.401154+00:00",
-      "updated_at": "2026-06-05T04:06:50.362692+00:00",
+      "updated_at": "2026-06-05T04:08:01.141571+00:00",
       "status": "open",
       "code": "3231",
       "name": "緯創",
@@ -15009,9 +15009,10 @@
       "results": {
         "latest_pct": 0.0,
         "max_gain": 0.0,
-        "max_drawdown": 0.0
+        "max_drawdown": 0.0,
+        "pct_5m": 0.0
       },
-      "age_minutes": 4.85
+      "age_minutes": 6.03
     },
     {
       "key": "fund_flow:3481:30:52.2",
@@ -15326,25 +15327,26 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T04:01:59.401341+00:00",
-      "updated_at": "2026-06-05T04:05:40.703335+00:00",
+      "updated_at": "2026-06-05T04:08:04.889804+00:00",
       "status": "open",
       "code": "2409",
       "name": "友達",
       "sector": "面板",
       "entry_price": 27.3,
-      "last_price": 27.25,
+      "last_price": 27.2,
       "best_price": 27.3,
-      "worst_price": 27.25,
+      "worst_price": 27.2,
       "score": 22,
       "change_rate_at_signal": -6.66,
       "volume_ratio_at_signal": 0.57,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": -0.183,
+        "latest_pct": -0.366,
         "max_gain": 0.0,
-        "max_drawdown": -0.183
+        "max_drawdown": -0.366,
+        "pct_5m": -0.366
       },
-      "age_minutes": 3.69
+      "age_minutes": 6.09
     },
     {
       "key": "ai_pool:2356:63:77.1",
@@ -15531,7 +15533,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T04:02:30.913913+00:00",
-      "updated_at": "2026-06-05T04:06:50.362703+00:00",
+      "updated_at": "2026-06-05T04:08:01.141578+00:00",
       "status": "open",
       "code": "3231",
       "name": "緯創",
@@ -15547,9 +15549,10 @@
       "results": {
         "latest_pct": 0.0,
         "max_gain": 0.0,
-        "max_drawdown": 0.0
+        "max_drawdown": 0.0,
+        "pct_5m": 0.0
       },
-      "age_minutes": 4.32
+      "age_minutes": 5.5
     },
     {
       "key": "fund_flow:2382:26:389.0",
@@ -15685,25 +15688,26 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T04:02:30.914002+00:00",
-      "updated_at": "2026-06-05T04:05:40.703344+00:00",
+      "updated_at": "2026-06-05T04:08:04.889816+00:00",
       "status": "open",
       "code": "2409",
       "name": "友達",
       "sector": "面板",
       "entry_price": 27.25,
-      "last_price": 27.25,
+      "last_price": 27.2,
       "best_price": 27.3,
-      "worst_price": 27.25,
+      "worst_price": 27.2,
       "score": 16,
       "change_rate_at_signal": -6.83,
       "volume_ratio_at_signal": 0.57,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": 0.0,
+        "latest_pct": -0.183,
         "max_gain": 0.183,
-        "max_drawdown": 0.0
+        "max_drawdown": -0.183,
+        "pct_5m": -0.183
       },
-      "age_minutes": 3.16
+      "age_minutes": 5.57
     },
     {
       "key": "ai_pool:2379:96:647.0",
@@ -15835,7 +15839,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T04:05:12.435640+00:00",
-      "updated_at": "2026-06-05T04:06:50.362714+00:00",
+      "updated_at": "2026-06-05T04:08:01.141584+00:00",
       "status": "open",
       "code": "3231",
       "name": "緯創",
@@ -15853,7 +15857,7 @@
         "max_gain": 0.293,
         "max_drawdown": 0.0
       },
-      "age_minutes": 1.63
+      "age_minutes": 2.81
     },
     {
       "key": "ai_pool:3481:32:52.0",
@@ -16460,7 +16464,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T04:06:16.935156+00:00",
-      "updated_at": "2026-06-05T04:06:50.362726+00:00",
+      "updated_at": "2026-06-05T04:08:01.141593+00:00",
       "status": "open",
       "code": "3231",
       "name": "緯創",
@@ -16478,7 +16482,7 @@
         "max_gain": 0.0,
         "max_drawdown": -0.292
       },
-      "age_minutes": 0.56
+      "age_minutes": 1.74
     },
     {
       "key": "fund_flow:2308:31:2300.0",
