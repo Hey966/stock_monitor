@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-05T04:31:48.637644+00:00",
+  "updated_at": "2026-06-05T04:31:52.472374+00:00",
   "count": 709,
   "items": [
     {
@@ -1196,13 +1196,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:25:15.330080+00:00",
-      "updated_at": "2026-06-05T04:27:14.960741+00:00",
+      "updated_at": "2026-06-05T04:31:50.962374+00:00",
       "status": "open",
       "code": "2308",
       "name": "台達電",
       "sector": "重電",
       "entry_price": 2350.0,
-      "last_price": 2300.0,
+      "last_price": 2295.0,
       "best_price": 2360.0,
       "worst_price": 2295.0,
       "score": 24,
@@ -1210,14 +1210,14 @@
       "volume_ratio_at_signal": 0.68,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": -2.128,
+        "latest_pct": -2.34,
         "max_gain": 0.426,
         "max_drawdown": -2.34,
         "pct_5m": 0.213,
         "pct_10m": 0.426,
         "pct_30m": -0.213
       },
-      "age_minutes": 121.99
+      "age_minutes": 126.59
     },
     {
       "key": "fund_flow:1513:29:172.5",
@@ -1588,13 +1588,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:25:21.622276+00:00",
-      "updated_at": "2026-06-05T04:27:14.960760+00:00",
+      "updated_at": "2026-06-05T04:31:50.962397+00:00",
       "status": "open",
       "code": "2308",
       "name": "台達電",
       "sector": "重電",
       "entry_price": 2355.0,
-      "last_price": 2300.0,
+      "last_price": 2295.0,
       "best_price": 2360.0,
       "worst_price": 2295.0,
       "score": 24,
@@ -1602,14 +1602,14 @@
       "volume_ratio_at_signal": 0.68,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": -2.335,
+        "latest_pct": -2.548,
         "max_gain": 0.212,
         "max_drawdown": -2.548,
         "pct_5m": 0.0,
         "pct_10m": 0.212,
         "pct_30m": -0.425
       },
-      "age_minutes": 121.89
+      "age_minutes": 126.49
     },
     {
       "key": "fund_flow:5347:24:160.5",
@@ -3828,13 +3828,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:40:27.116620+00:00",
-      "updated_at": "2026-06-05T04:27:14.960782+00:00",
+      "updated_at": "2026-06-05T04:31:50.962423+00:00",
       "status": "open",
       "code": "2308",
       "name": "台達電",
       "sector": "重電",
       "entry_price": 2345.0,
-      "last_price": 2300.0,
+      "last_price": 2295.0,
       "best_price": 2350.0,
       "worst_price": 2295.0,
       "score": 35,
@@ -3842,14 +3842,14 @@
       "volume_ratio_at_signal": 0.75,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": -1.919,
+        "latest_pct": -2.132,
         "max_gain": 0.213,
         "max_drawdown": -2.132,
         "pct_5m": 0.213,
         "pct_10m": 0.0,
         "pct_30m": 0.0
       },
-      "age_minutes": 106.8
+      "age_minutes": 111.4
     },
     {
       "key": "fund_flow:2409:20:27.65",
@@ -4360,13 +4360,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:45:15.268750+00:00",
-      "updated_at": "2026-06-05T04:27:14.960794+00:00",
+      "updated_at": "2026-06-05T04:31:50.962435+00:00",
       "status": "open",
       "code": "2308",
       "name": "台達電",
       "sector": "重電",
       "entry_price": 2350.0,
-      "last_price": 2300.0,
+      "last_price": 2295.0,
       "best_price": 2350.0,
       "worst_price": 2295.0,
       "score": 25,
@@ -4374,14 +4374,14 @@
       "volume_ratio_at_signal": 0.77,
       "alert": null,
       "results": {
-        "latest_pct": -2.128,
+        "latest_pct": -2.34,
         "max_gain": 0.0,
         "max_drawdown": -2.34,
         "pct_5m": -0.213,
         "pct_10m": -0.213,
         "pct_30m": -0.638
       },
-      "age_minutes": 101.99
+      "age_minutes": 106.59
     },
     {
       "key": "fund_flow:3711:35:579.0",
@@ -4416,13 +4416,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:45:25.851561+00:00",
-      "updated_at": "2026-06-05T04:27:14.960802+00:00",
+      "updated_at": "2026-06-05T04:31:50.962443+00:00",
       "status": "open",
       "code": "2308",
       "name": "台達電",
       "sector": "重電",
       "entry_price": 2350.0,
-      "last_price": 2300.0,
+      "last_price": 2295.0,
       "best_price": 2350.0,
       "worst_price": 2295.0,
       "score": 32,
@@ -4430,14 +4430,14 @@
       "volume_ratio_at_signal": 0.77,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": -2.128,
+        "latest_pct": -2.34,
         "max_gain": 0.0,
         "max_drawdown": -2.34,
         "pct_5m": -0.213,
         "pct_10m": -0.213,
         "pct_30m": -0.638
       },
-      "age_minutes": 101.82
+      "age_minutes": 106.42
     },
     {
       "key": "fund_flow:3017:32:2615.0",
@@ -5312,13 +5312,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:50:26.323798+00:00",
-      "updated_at": "2026-06-05T04:27:14.960817+00:00",
+      "updated_at": "2026-06-05T04:31:50.962459+00:00",
       "status": "open",
       "code": "2308",
       "name": "台達電",
       "sector": "重電",
       "entry_price": 2345.0,
-      "last_price": 2300.0,
+      "last_price": 2295.0,
       "best_price": 2345.0,
       "worst_price": 2295.0,
       "score": 22,
@@ -5326,14 +5326,14 @@
       "volume_ratio_at_signal": 0.78,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": -1.919,
+        "latest_pct": -2.132,
         "max_gain": 0.0,
         "max_drawdown": -2.132,
         "pct_5m": 0.0,
         "pct_10m": -0.213,
         "pct_30m": -0.426
       },
-      "age_minutes": 96.81
+      "age_minutes": 101.41
     },
     {
       "key": "fund_flow:2409:17:27.65",
@@ -5816,13 +5816,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:55:13.518311+00:00",
-      "updated_at": "2026-06-05T04:27:14.960828+00:00",
+      "updated_at": "2026-06-05T04:31:50.962469+00:00",
       "status": "open",
       "code": "2308",
       "name": "台達電",
       "sector": "重電",
       "entry_price": 2345.0,
-      "last_price": 2300.0,
+      "last_price": 2295.0,
       "best_price": 2345.0,
       "worst_price": 2295.0,
       "score": 22,
@@ -5830,14 +5830,14 @@
       "volume_ratio_at_signal": 0.8,
       "alert": null,
       "results": {
-        "latest_pct": -1.919,
+        "latest_pct": -2.132,
         "max_gain": 0.0,
         "max_drawdown": -2.132,
         "pct_5m": -0.213,
         "pct_10m": -0.426,
         "pct_30m": -0.853
       },
-      "age_minutes": 92.02
+      "age_minutes": 96.62
     },
     {
       "key": "fund_flow:2615:94:86.1",
@@ -6376,13 +6376,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:00:25.047675+00:00",
-      "updated_at": "2026-06-05T04:27:14.960838+00:00",
+      "updated_at": "2026-06-05T04:31:50.962482+00:00",
       "status": "open",
       "code": "2308",
       "name": "台達電",
       "sector": "重電",
       "entry_price": 2340.0,
-      "last_price": 2300.0,
+      "last_price": 2295.0,
       "best_price": 2345.0,
       "worst_price": 2295.0,
       "score": 32,
@@ -6390,14 +6390,14 @@
       "volume_ratio_at_signal": 0.81,
       "alert": null,
       "results": {
-        "latest_pct": -1.709,
+        "latest_pct": -1.923,
         "max_gain": 0.214,
         "max_drawdown": -1.923,
         "pct_5m": -0.214,
         "pct_10m": 0.214,
         "pct_30m": -0.641
       },
-      "age_minutes": 86.83
+      "age_minutes": 91.43
     },
     {
       "key": "ai_pool:3037:28:948.0",
@@ -8084,13 +8084,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:15:25.729197+00:00",
-      "updated_at": "2026-06-05T04:27:14.960852+00:00",
+      "updated_at": "2026-06-05T04:31:50.962498+00:00",
       "status": "open",
       "code": "2308",
       "name": "台達電",
       "sector": "重電",
       "entry_price": 2335.0,
-      "last_price": 2300.0,
+      "last_price": 2295.0,
       "best_price": 2335.0,
       "worst_price": 2295.0,
       "score": 24,
@@ -8098,14 +8098,14 @@
       "volume_ratio_at_signal": 0.84,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": -1.499,
+        "latest_pct": -1.713,
         "max_gain": 0.0,
         "max_drawdown": -1.713,
         "pct_5m": 0.0,
         "pct_10m": -0.428,
         "pct_30m": -1.071
       },
-      "age_minutes": 71.82
+      "age_minutes": 76.42
     },
     {
       "key": "fund_flow:3324:23:1105.0",
@@ -9120,13 +9120,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:25:22.049938+00:00",
-      "updated_at": "2026-06-05T04:27:14.960865+00:00",
+      "updated_at": "2026-06-05T04:31:50.962510+00:00",
       "status": "open",
       "code": "2308",
       "name": "台達電",
       "sector": "重電",
       "entry_price": 2330.0,
-      "last_price": 2300.0,
+      "last_price": 2295.0,
       "best_price": 2330.0,
       "worst_price": 2295.0,
       "score": 31,
@@ -9134,14 +9134,14 @@
       "volume_ratio_at_signal": 0.86,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": -1.288,
+        "latest_pct": -1.502,
         "max_gain": 0.0,
         "max_drawdown": -1.502,
         "pct_5m": -0.215,
         "pct_10m": -0.644,
         "pct_30m": -1.288
       },
-      "age_minutes": 61.88
+      "age_minutes": 66.48
     },
     {
       "key": "fund_flow:3324:26:1100.0",
@@ -11136,13 +11136,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:40:30.328028+00:00",
-      "updated_at": "2026-06-05T04:27:14.960881+00:00",
+      "updated_at": "2026-06-05T04:31:50.962530+00:00",
       "status": "open",
       "code": "2308",
       "name": "台達電",
       "sector": "重電",
       "entry_price": 2310.0,
-      "last_price": 2300.0,
+      "last_price": 2295.0,
       "best_price": 2310.0,
       "worst_price": 2295.0,
       "score": 24,
@@ -11150,14 +11150,14 @@
       "volume_ratio_at_signal": 0.92,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": -0.433,
+        "latest_pct": -0.649,
         "max_gain": 0.0,
         "max_drawdown": -0.649,
         "pct_5m": 0.0,
         "pct_10m": -0.433,
         "pct_30m": -0.649
       },
-      "age_minutes": 46.74
+      "age_minutes": 51.34
     },
     {
       "key": "fund_flow:3324:28:1095.0",
@@ -12004,13 +12004,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:45:24.850275+00:00",
-      "updated_at": "2026-06-05T04:27:14.960893+00:00",
+      "updated_at": "2026-06-05T04:31:50.962543+00:00",
       "status": "open",
       "code": "2308",
       "name": "台達電",
       "sector": "重電",
       "entry_price": 2315.0,
-      "last_price": 2300.0,
+      "last_price": 2295.0,
       "best_price": 2315.0,
       "worst_price": 2295.0,
       "score": 31,
@@ -12018,14 +12018,14 @@
       "volume_ratio_at_signal": 0.94,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": -0.648,
+        "latest_pct": -0.864,
         "max_gain": 0.0,
         "max_drawdown": -0.864,
         "pct_5m": -0.648,
         "pct_10m": -0.648,
         "pct_30m": -0.864
       },
-      "age_minutes": 41.84
+      "age_minutes": 46.44
     },
     {
       "key": "fund_flow:2376:21:365.0",
@@ -13124,13 +13124,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:55:12.071513+00:00",
-      "updated_at": "2026-06-05T04:27:14.960906+00:00",
+      "updated_at": "2026-06-05T04:31:50.962559+00:00",
       "status": "open",
       "code": "2308",
       "name": "台達電",
       "sector": "重電",
       "entry_price": 2295.0,
-      "last_price": 2300.0,
+      "last_price": 2295.0,
       "best_price": 2305.0,
       "worst_price": 2295.0,
       "score": 4,
@@ -13138,14 +13138,14 @@
       "volume_ratio_at_signal": 0.99,
       "alert": null,
       "results": {
-        "latest_pct": 0.218,
+        "latest_pct": 0.0,
         "max_gain": 0.436,
         "max_drawdown": 0.0,
         "pct_5m": 0.218,
         "pct_10m": 0.436,
         "pct_30m": 0.218
       },
-      "age_minutes": 32.05
+      "age_minutes": 36.65
     },
     {
       "key": "ai_pool:3324:4:1085.0",
@@ -13460,13 +13460,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:55:23.123592+00:00",
-      "updated_at": "2026-06-05T04:27:14.960916+00:00",
+      "updated_at": "2026-06-05T04:31:50.962568+00:00",
       "status": "open",
       "code": "2308",
       "name": "台達電",
       "sector": "重電",
       "entry_price": 2305.0,
-      "last_price": 2300.0,
+      "last_price": 2295.0,
       "best_price": 2305.0,
       "worst_price": 2295.0,
       "score": 19,
@@ -13474,14 +13474,14 @@
       "volume_ratio_at_signal": 0.99,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": -0.217,
+        "latest_pct": -0.434,
         "max_gain": 0.0,
         "max_drawdown": -0.434,
         "pct_5m": -0.217,
         "pct_10m": 0.0,
         "pct_30m": -0.217
       },
-      "age_minutes": 31.86
+      "age_minutes": 36.46
     },
     {
       "key": "fund_flow:2376:22:364.5",
@@ -14152,13 +14152,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T04:00:36.205820+00:00",
-      "updated_at": "2026-06-05T04:27:14.960926+00:00",
+      "updated_at": "2026-06-05T04:31:50.962581+00:00",
       "status": "open",
       "code": "2308",
       "name": "台達電",
       "sector": "重電",
       "entry_price": 2300.0,
-      "last_price": 2300.0,
+      "last_price": 2295.0,
       "best_price": 2305.0,
       "worst_price": 2295.0,
       "score": 13,
@@ -14166,13 +14166,14 @@
       "volume_ratio_at_signal": 1.03,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": 0.0,
+        "latest_pct": -0.217,
         "max_gain": 0.217,
         "max_drawdown": -0.217,
         "pct_5m": 0.217,
-        "pct_10m": -0.217
+        "pct_10m": -0.217,
+        "pct_30m": -0.217
       },
-      "age_minutes": 26.65
+      "age_minutes": 31.25
     },
     {
       "key": "fund_flow:3324:23:1090.0",
@@ -14700,13 +14701,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T04:01:03.697273+00:00",
-      "updated_at": "2026-06-05T04:27:14.960936+00:00",
+      "updated_at": "2026-06-05T04:31:50.962593+00:00",
       "status": "open",
       "code": "2308",
       "name": "台達電",
       "sector": "重電",
       "entry_price": 2300.0,
-      "last_price": 2300.0,
+      "last_price": 2295.0,
       "best_price": 2305.0,
       "worst_price": 2295.0,
       "score": 18,
@@ -14714,13 +14715,14 @@
       "volume_ratio_at_signal": 1.03,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": 0.0,
+        "latest_pct": -0.217,
         "max_gain": 0.217,
         "max_drawdown": -0.217,
         "pct_5m": 0.0,
-        "pct_10m": -0.217
+        "pct_10m": -0.217,
+        "pct_30m": -0.217
       },
-      "age_minutes": 26.19
+      "age_minutes": 30.79
     },
     {
       "key": "fund_flow:3324:21:1090.0",
@@ -15270,13 +15272,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T04:01:59.401205+00:00",
-      "updated_at": "2026-06-05T04:27:14.960946+00:00",
+      "updated_at": "2026-06-05T04:31:50.962604+00:00",
       "status": "open",
       "code": "2308",
       "name": "台達電",
       "sector": "重電",
       "entry_price": 2300.0,
-      "last_price": 2300.0,
+      "last_price": 2295.0,
       "best_price": 2305.0,
       "worst_price": 2295.0,
       "score": 34,
@@ -15284,13 +15286,13 @@
       "volume_ratio_at_signal": 1.03,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": 0.0,
+        "latest_pct": -0.217,
         "max_gain": 0.217,
         "max_drawdown": -0.217,
         "pct_5m": 0.0,
         "pct_10m": -0.217
       },
-      "age_minutes": 25.26
+      "age_minutes": 29.86
     },
     {
       "key": "fund_flow:2330:33:2370.0",
@@ -15837,13 +15839,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T04:02:30.913947+00:00",
-      "updated_at": "2026-06-05T04:27:14.960965+00:00",
+      "updated_at": "2026-06-05T04:31:50.962615+00:00",
       "status": "open",
       "code": "2308",
       "name": "台達電",
       "sector": "重電",
       "entry_price": 2300.0,
-      "last_price": 2300.0,
+      "last_price": 2295.0,
       "best_price": 2305.0,
       "worst_price": 2295.0,
       "score": 27,
@@ -15851,13 +15853,13 @@
       "volume_ratio_at_signal": 1.03,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": 0.0,
+        "latest_pct": -0.217,
         "max_gain": 0.217,
         "max_drawdown": -0.217,
         "pct_5m": 0.0,
         "pct_10m": -0.217
       },
-      "age_minutes": 24.73
+      "age_minutes": 29.33
     },
     {
       "key": "fund_flow:3017:24:2580.0",
@@ -16188,13 +16190,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T04:05:12.435703+00:00",
-      "updated_at": "2026-06-05T04:27:14.960975+00:00",
+      "updated_at": "2026-06-05T04:31:50.962624+00:00",
       "status": "open",
       "code": "2308",
       "name": "台達電",
       "sector": "重電",
       "entry_price": 2300.0,
-      "last_price": 2300.0,
+      "last_price": 2295.0,
       "best_price": 2305.0,
       "worst_price": 2295.0,
       "score": 12,
@@ -16202,13 +16204,13 @@
       "volume_ratio_at_signal": 1.04,
       "alert": null,
       "results": {
-        "latest_pct": 0.0,
+        "latest_pct": -0.217,
         "max_gain": 0.217,
         "max_drawdown": -0.217,
         "pct_5m": -0.217,
         "pct_10m": -0.217
       },
-      "age_minutes": 22.04
+      "age_minutes": 26.64
     },
     {
       "key": "ai_pool:3017:12:2575.0",
@@ -16404,13 +16406,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T04:05:29.743280+00:00",
-      "updated_at": "2026-06-05T04:27:14.960984+00:00",
+      "updated_at": "2026-06-05T04:31:50.962633+00:00",
       "status": "open",
       "code": "2308",
       "name": "台達電",
       "sector": "重電",
       "entry_price": 2305.0,
-      "last_price": 2300.0,
+      "last_price": 2295.0,
       "best_price": 2305.0,
       "worst_price": 2295.0,
       "score": 34,
@@ -16418,13 +16420,13 @@
       "volume_ratio_at_signal": 1.04,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": -0.217,
+        "latest_pct": -0.434,
         "max_gain": 0.0,
         "max_drawdown": -0.434,
         "pct_5m": -0.434,
         "pct_10m": -0.434
       },
-      "age_minutes": 21.75
+      "age_minutes": 26.35
     },
     {
       "key": "fund_flow:3661:32:4240.0",
@@ -16782,13 +16784,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T04:06:16.935164+00:00",
-      "updated_at": "2026-06-05T04:27:14.960994+00:00",
+      "updated_at": "2026-06-05T04:31:50.962642+00:00",
       "status": "open",
       "code": "2308",
       "name": "台達電",
       "sector": "重電",
       "entry_price": 2300.0,
-      "last_price": 2300.0,
+      "last_price": 2295.0,
       "best_price": 2300.0,
       "worst_price": 2295.0,
       "score": 31,
@@ -16796,13 +16798,13 @@
       "volume_ratio_at_signal": 1.04,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": 0.0,
+        "latest_pct": -0.217,
         "max_gain": 0.0,
         "max_drawdown": -0.217,
         "pct_5m": -0.217,
         "pct_10m": -0.217
       },
-      "age_minutes": 20.97
+      "age_minutes": 25.57
     },
     {
       "key": "fund_flow:2376:31:364.5",
@@ -17403,13 +17405,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T04:10:27.039919+00:00",
-      "updated_at": "2026-06-05T04:27:14.961004+00:00",
+      "updated_at": "2026-06-05T04:31:50.962653+00:00",
       "status": "open",
       "code": "2308",
       "name": "台達電",
       "sector": "重電",
       "entry_price": 2300.0,
-      "last_price": 2300.0,
+      "last_price": 2295.0,
       "best_price": 2300.0,
       "worst_price": 2295.0,
       "score": 25,
@@ -17417,13 +17419,13 @@
       "volume_ratio_at_signal": 1.05,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": 0.0,
+        "latest_pct": -0.217,
         "max_gain": 0.0,
         "max_drawdown": -0.217,
         "pct_5m": -0.217,
         "pct_10m": -0.217
       },
-      "age_minutes": 16.8
+      "age_minutes": 21.4
     },
     {
       "key": "fund_flow:2317:24:284.0",
@@ -17970,13 +17972,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T04:15:24.916528+00:00",
-      "updated_at": "2026-06-05T04:27:14.961014+00:00",
+      "updated_at": "2026-06-05T04:31:50.962663+00:00",
       "status": "open",
       "code": "2308",
       "name": "台達電",
       "sector": "重電",
       "entry_price": 2295.0,
-      "last_price": 2300.0,
+      "last_price": 2295.0,
       "best_price": 2300.0,
       "worst_price": 2295.0,
       "score": 20,
@@ -17984,13 +17986,13 @@
       "volume_ratio_at_signal": 1.06,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": 0.218,
+        "latest_pct": 0.0,
         "max_gain": 0.218,
         "max_drawdown": 0.0,
         "pct_5m": 0.0,
         "pct_10m": 0.218
       },
-      "age_minutes": 11.83
+      "age_minutes": 16.43
     },
     {
       "key": "fund_flow:1605:20:39.2",
@@ -18453,13 +18455,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T04:20:26.594656+00:00",
-      "updated_at": "2026-06-05T04:27:14.961024+00:00",
+      "updated_at": "2026-06-05T04:31:50.962673+00:00",
       "status": "open",
       "code": "2308",
       "name": "台達電",
       "sector": "重電",
       "entry_price": 2300.0,
-      "last_price": 2300.0,
+      "last_price": 2295.0,
       "best_price": 2300.0,
       "worst_price": 2295.0,
       "score": 21,
@@ -18467,12 +18469,13 @@
       "volume_ratio_at_signal": 1.07,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": 0.0,
+        "latest_pct": -0.217,
         "max_gain": 0.0,
         "max_drawdown": -0.217,
-        "pct_5m": 0.0
+        "pct_5m": 0.0,
+        "pct_10m": -0.217
       },
-      "age_minutes": 6.81
+      "age_minutes": 11.41
     },
     {
       "key": "fund_flow:3324:14:1090.0",
@@ -18915,25 +18918,26 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T04:25:24.727196+00:00",
-      "updated_at": "2026-06-05T04:27:14.961032+00:00",
+      "updated_at": "2026-06-05T04:31:50.962684+00:00",
       "status": "open",
       "code": "2308",
       "name": "台達電",
       "sector": "重電",
       "entry_price": 2300.0,
-      "last_price": 2300.0,
+      "last_price": 2295.0,
       "best_price": 2300.0,
-      "worst_price": 2300.0,
+      "worst_price": 2295.0,
       "score": 24,
       "change_rate_at_signal": -5.15,
       "volume_ratio_at_signal": 1.09,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": 0.0,
+        "latest_pct": -0.217,
         "max_gain": 0.0,
-        "max_drawdown": 0.0
+        "max_drawdown": -0.217,
+        "pct_5m": -0.217
       },
-      "age_minutes": 1.84
+      "age_minutes": 6.44
     },
     {
       "key": "fund_flow:3324:20:1090.0",
@@ -19205,7 +19209,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T04:30:19.748899+00:00",
-      "updated_at": "2026-06-05T04:30:19.748900+00:00",
+      "updated_at": "2026-06-05T04:31:50.962692+00:00",
       "status": "open",
       "code": "2308",
       "name": "台達電",
@@ -19218,7 +19222,12 @@
       "change_rate_at_signal": -5.36,
       "volume_ratio_at_signal": 1.1,
       "alert": null,
-      "results": {}
+      "results": {
+        "latest_pct": 0.0,
+        "max_gain": 0.0,
+        "max_drawdown": 0.0
+      },
+      "age_minutes": 1.52
     },
     {
       "key": "ai_pool:3017:12:2560.0",
