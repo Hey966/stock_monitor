@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-05T06:41:04.177108+00:00",
+  "updated_at": "2026-06-05T06:41:08.684165+00:00",
   "count": 930,
   "items": [
     {
@@ -3515,8 +3515,8 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:40:15.726437+00:00",
-      "updated_at": "2026-06-05T06:36:13.054480+00:00",
-      "status": "open",
+      "updated_at": "2026-06-05T06:41:06.862366+00:00",
+      "status": "closed",
       "code": "2356",
       "name": "英業達",
       "sector": "電腦週邊",
@@ -3534,9 +3534,10 @@
         "max_drawdown": -1.926,
         "pct_5m": 0.513,
         "pct_10m": 0.128,
-        "pct_30m": 0.257
+        "pct_30m": 0.257,
+        "pct_close_proxy": -1.412
       },
-      "age_minutes": 235.96
+      "age_minutes": 240.85
     },
     {
       "key": "ai_pool:6215:69:119.5",
@@ -4161,7 +4162,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:45:15.268607+00:00",
-      "updated_at": "2026-06-05T06:36:13.054492+00:00",
+      "updated_at": "2026-06-05T06:41:06.862389+00:00",
       "status": "open",
       "code": "2356",
       "name": "英業達",
@@ -4182,7 +4183,7 @@
         "pct_10m": 0.128,
         "pct_30m": -0.766
       },
-      "age_minutes": 230.96
+      "age_minutes": 235.86
     },
     {
       "key": "ai_pool:3661:69:4350.0",
@@ -4833,7 +4834,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:50:15.682050+00:00",
-      "updated_at": "2026-06-05T06:36:13.054505+00:00",
+      "updated_at": "2026-06-05T06:41:06.862403+00:00",
       "status": "open",
       "code": "2356",
       "name": "英業達",
@@ -4854,7 +4855,7 @@
         "pct_10m": -0.128,
         "pct_30m": -0.385
       },
-      "age_minutes": 225.96
+      "age_minutes": 230.85
     },
     {
       "key": "ai_pool:3443:71:4420.0",
@@ -6373,7 +6374,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:00:25.046084+00:00",
-      "updated_at": "2026-06-05T06:36:13.054525+00:00",
+      "updated_at": "2026-06-05T06:41:06.862423+00:00",
       "status": "open",
       "code": "2356",
       "name": "英業達",
@@ -6394,7 +6395,7 @@
         "pct_10m": 0.128,
         "pct_30m": -1.795
       },
-      "age_minutes": 215.8
+      "age_minutes": 220.7
     },
     {
       "key": "ai_pool:2609:59:54.2",
@@ -7465,7 +7466,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:10:15.521906+00:00",
-      "updated_at": "2026-06-05T06:36:13.054542+00:00",
+      "updated_at": "2026-06-05T06:41:06.862441+00:00",
       "status": "open",
       "code": "2356",
       "name": "英業達",
@@ -7486,7 +7487,7 @@
         "pct_10m": -0.257,
         "pct_30m": -1.284
       },
-      "age_minutes": 205.96
+      "age_minutes": 210.86
     },
     {
       "key": "ai_pool:2324:56:41.5",
@@ -7829,7 +7830,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:15:14.979966+00:00",
-      "updated_at": "2026-06-05T06:36:13.054553+00:00",
+      "updated_at": "2026-06-05T06:41:06.862453+00:00",
       "status": "open",
       "code": "2356",
       "name": "英業達",
@@ -7850,7 +7851,7 @@
         "pct_10m": -1.155,
         "pct_30m": -1.027
       },
-      "age_minutes": 200.97
+      "age_minutes": 205.86
     },
     {
       "key": "ai_pool:3661:75:4335.0",
@@ -8445,7 +8446,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:20:15.486067+00:00",
-      "updated_at": "2026-06-05T06:36:13.054565+00:00",
+      "updated_at": "2026-06-05T06:41:06.862465+00:00",
       "status": "open",
       "code": "2356",
       "name": "英業達",
@@ -8466,7 +8467,7 @@
         "pct_10m": -1.289,
         "pct_30m": -1.031
       },
-      "age_minutes": 195.96
+      "age_minutes": 200.86
     },
     {
       "key": "ai_pool:2324:49:41.7",
@@ -9005,7 +9006,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:25:11.681354+00:00",
-      "updated_at": "2026-06-05T06:36:13.054579+00:00",
+      "updated_at": "2026-06-05T06:41:06.862478+00:00",
       "status": "open",
       "code": "2356",
       "name": "英業達",
@@ -9026,7 +9027,7 @@
         "pct_10m": 0.0,
         "pct_30m": 0.13
       },
-      "age_minutes": 191.02
+      "age_minutes": 195.92
     },
     {
       "key": "ai_pool:2317:38:286.0",
@@ -9565,7 +9566,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:30:18.909603+00:00",
-      "updated_at": "2026-06-05T06:36:13.054592+00:00",
+      "updated_at": "2026-06-05T06:41:06.862490+00:00",
       "status": "open",
       "code": "2356",
       "name": "英業達",
@@ -9586,7 +9587,7 @@
         "pct_10m": 0.523,
         "pct_30m": 0.784
       },
-      "age_minutes": 185.9
+      "age_minutes": 190.8
     },
     {
       "key": "ai_pool:2368:47:1320.0",
@@ -10097,7 +10098,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:35:12.135084+00:00",
-      "updated_at": "2026-06-05T06:36:13.054604+00:00",
+      "updated_at": "2026-06-05T06:41:06.862502+00:00",
       "status": "open",
       "code": "2356",
       "name": "英業達",
@@ -10118,7 +10119,7 @@
         "pct_10m": 0.522,
         "pct_30m": 0.0
       },
-      "age_minutes": 181.02
+      "age_minutes": 185.91
     },
     {
       "key": "ai_pool:2368:47:1325.0",
@@ -10853,7 +10854,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:40:15.555177+00:00",
-      "updated_at": "2026-06-05T06:36:13.054635+00:00",
+      "updated_at": "2026-06-05T06:41:06.862516+00:00",
       "status": "open",
       "code": "2356",
       "name": "英業達",
@@ -10874,7 +10875,7 @@
         "pct_10m": -0.13,
         "pct_30m": -0.13
       },
-      "age_minutes": 175.96
+      "age_minutes": 180.86
     },
     {
       "key": "ai_pool:3037:42:940.0",
@@ -11105,7 +11106,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:40:30.327974+00:00",
-      "updated_at": "2026-06-05T06:36:13.054646+00:00",
+      "updated_at": "2026-06-05T06:41:06.862527+00:00",
       "status": "open",
       "code": "2356",
       "name": "英業達",
@@ -11126,7 +11127,7 @@
         "pct_10m": -0.26,
         "pct_30m": -0.26
       },
-      "age_minutes": 175.71
+      "age_minutes": 180.61
     },
     {
       "key": "fund_flow:2454:35:4305.0",
@@ -11525,7 +11526,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:45:14.598088+00:00",
-      "updated_at": "2026-06-05T06:36:13.054657+00:00",
+      "updated_at": "2026-06-05T06:41:06.862538+00:00",
       "status": "open",
       "code": "2356",
       "name": "英業達",
@@ -11546,7 +11547,7 @@
         "pct_10m": -0.259,
         "pct_30m": -0.13
       },
-      "age_minutes": 170.97
+      "age_minutes": 175.87
     },
     {
       "key": "ai_pool:2368:52:1315.0",
@@ -12253,7 +12254,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:50:15.098651+00:00",
-      "updated_at": "2026-06-05T06:36:13.054671+00:00",
+      "updated_at": "2026-06-05T06:41:06.862550+00:00",
       "status": "open",
       "code": "2356",
       "name": "英業達",
@@ -12274,7 +12275,7 @@
         "pct_10m": 0.26,
         "pct_30m": -0.26
       },
-      "age_minutes": 165.97
+      "age_minutes": 170.86
     },
     {
       "key": "ai_pool:2324:55:41.45",
@@ -12925,7 +12926,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:55:12.071359+00:00",
-      "updated_at": "2026-06-05T06:36:13.054683+00:00",
+      "updated_at": "2026-06-05T06:41:06.862564+00:00",
       "status": "open",
       "code": "2356",
       "name": "英業達",
@@ -12946,7 +12947,7 @@
         "pct_10m": 0.0,
         "pct_30m": -0.13
       },
-      "age_minutes": 161.02
+      "age_minutes": 165.91
     },
     {
       "key": "ai_pool:2618:52:37.9",
@@ -13765,7 +13766,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T04:00:24.527414+00:00",
-      "updated_at": "2026-06-05T06:36:13.054698+00:00",
+      "updated_at": "2026-06-05T06:41:06.862578+00:00",
       "status": "open",
       "code": "2356",
       "name": "英業達",
@@ -13786,7 +13787,7 @@
         "pct_10m": -0.26,
         "pct_30m": -0.779
       },
-      "age_minutes": 155.81
+      "age_minutes": 160.71
     },
     {
       "key": "ai_pool:3037:41:937.0",
@@ -14493,7 +14494,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T04:00:54.481827+00:00",
-      "updated_at": "2026-06-05T06:36:13.054711+00:00",
+      "updated_at": "2026-06-05T06:41:06.862591+00:00",
       "status": "open",
       "code": "2356",
       "name": "英業達",
@@ -14514,7 +14515,7 @@
         "pct_10m": -0.389,
         "pct_30m": -0.908
       },
-      "age_minutes": 155.31
+      "age_minutes": 160.21
     },
     {
       "key": "ai_pool:3481:32:52.2",
@@ -15277,7 +15278,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T04:01:59.401089+00:00",
-      "updated_at": "2026-06-05T06:36:13.054722+00:00",
+      "updated_at": "2026-06-05T06:41:06.862604+00:00",
       "status": "open",
       "code": "2356",
       "name": "英業達",
@@ -15298,7 +15299,7 @@
         "pct_10m": -0.13,
         "pct_30m": -0.908
       },
-      "age_minutes": 154.23
+      "age_minutes": 159.12
     },
     {
       "key": "fund_flow:2382:32:389.0",
@@ -15725,7 +15726,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T04:02:19.489032+00:00",
-      "updated_at": "2026-06-05T06:36:13.054733+00:00",
+      "updated_at": "2026-06-05T06:41:06.891476+00:00",
       "status": "open",
       "code": "2356",
       "name": "英業達",
@@ -15746,7 +15747,7 @@
         "pct_10m": -0.13,
         "pct_30m": -0.908
       },
-      "age_minutes": 153.89
+      "age_minutes": 158.79
     },
     {
       "key": "ai_pool:3037:50:940.0",
@@ -16229,7 +16230,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T04:05:12.435617+00:00",
-      "updated_at": "2026-06-05T06:36:13.054744+00:00",
+      "updated_at": "2026-06-05T06:41:06.891532+00:00",
       "status": "open",
       "code": "2356",
       "name": "英業達",
@@ -16250,7 +16251,7 @@
         "pct_10m": 0.391,
         "pct_30m": -0.391
       },
-      "age_minutes": 151.01
+      "age_minutes": 155.91
     },
     {
       "key": "ai_pool:3231:33:170.5",
@@ -17181,7 +17182,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T04:10:15.470197+00:00",
-      "updated_at": "2026-06-05T06:36:13.054758+00:00",
+      "updated_at": "2026-06-05T06:41:06.891554+00:00",
       "status": "open",
       "code": "2356",
       "name": "英業達",
@@ -17202,7 +17203,7 @@
         "pct_10m": -0.13,
         "pct_30m": 0.0
       },
-      "age_minutes": 145.96
+      "age_minutes": 150.86
     },
     {
       "key": "ai_pool:3443:49:4340.0",
@@ -18021,7 +18022,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T04:15:24.916432+00:00",
-      "updated_at": "2026-06-05T06:36:13.054771+00:00",
+      "updated_at": "2026-06-05T06:41:06.891572+00:00",
       "status": "open",
       "code": "2356",
       "name": "英業達",
@@ -18042,7 +18043,7 @@
         "pct_10m": -0.39,
         "pct_30m": -0.65
       },
-      "age_minutes": 140.8
+      "age_minutes": 145.7
     },
     {
       "key": "fund_flow:3481:29:51.9",
@@ -19477,7 +19478,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T04:30:19.748879+00:00",
-      "updated_at": "2026-06-05T06:36:13.054788+00:00",
+      "updated_at": "2026-06-05T06:41:06.891594+00:00",
       "status": "open",
       "code": "2356",
       "name": "英業達",
@@ -19498,7 +19499,7 @@
         "pct_10m": 0.524,
         "pct_30m": 0.262
       },
-      "age_minutes": 125.89
+      "age_minutes": 130.79
     },
     {
       "key": "ai_pool:3481:20:51.7",
@@ -20289,7 +20290,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T04:35:23.553274+00:00",
-      "updated_at": "2026-06-05T06:36:13.054801+00:00",
+      "updated_at": "2026-06-05T06:41:06.891611+00:00",
       "status": "open",
       "code": "2356",
       "name": "英業達",
@@ -20310,7 +20311,7 @@
         "pct_10m": 0.131,
         "pct_30m": 0.524
       },
-      "age_minutes": 120.83
+      "age_minutes": 125.72
     },
     {
       "key": "fund_flow:3711:25:573.0",
@@ -21325,7 +21326,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T04:45:24.827134+00:00",
-      "updated_at": "2026-06-05T06:36:13.054814+00:00",
+      "updated_at": "2026-06-05T06:41:06.891670+00:00",
       "status": "open",
       "code": "2356",
       "name": "英業達",
@@ -21346,7 +21347,7 @@
         "pct_10m": 0.393,
         "pct_30m": 0.393
       },
-      "age_minutes": 110.8
+      "age_minutes": 115.7
     },
     {
       "key": "fund_flow:3324:10:1090.0",
@@ -21521,7 +21522,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T04:50:15.300195+00:00",
-      "updated_at": "2026-06-05T06:36:13.054824+00:00",
+      "updated_at": "2026-06-05T06:41:06.891681+00:00",
       "status": "open",
       "code": "2356",
       "name": "英業達",
@@ -21542,7 +21543,7 @@
         "pct_10m": 0.0,
         "pct_30m": 0.392
       },
-      "age_minutes": 105.96
+      "age_minutes": 110.86
     },
     {
       "key": "ai_pool:2409:32:27.4",
@@ -22949,7 +22950,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T05:05:12.264682+00:00",
-      "updated_at": "2026-06-05T06:36:13.054840+00:00",
+      "updated_at": "2026-06-05T06:41:06.891703+00:00",
       "status": "open",
       "code": "2356",
       "name": "英業達",
@@ -22970,7 +22971,7 @@
         "pct_10m": 0.131,
         "pct_30m": 0.261
       },
-      "age_minutes": 91.01
+      "age_minutes": 95.91
     },
     {
       "key": "ai_pool:2618:43:37.85",
@@ -23117,7 +23118,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T05:05:23.451716+00:00",
-      "updated_at": "2026-06-05T06:36:13.054848+00:00",
+      "updated_at": "2026-06-05T06:41:06.891713+00:00",
       "status": "open",
       "code": "2356",
       "name": "英業達",
@@ -23138,7 +23139,7 @@
         "pct_10m": 0.131,
         "pct_30m": 0.261
       },
-      "age_minutes": 90.83
+      "age_minutes": 95.72
     },
     {
       "key": "fund_flow:3037:35:934.0",
@@ -25077,7 +25078,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T05:25:12.305562+00:00",
-      "updated_at": "2026-06-05T06:36:13.054865+00:00",
+      "updated_at": "2026-06-05T06:41:06.891740+00:00",
       "status": "open",
       "code": "2356",
       "name": "英業達",
@@ -25098,7 +25099,7 @@
         "pct_10m": 0.261,
         "pct_30m": 0.261
       },
-      "age_minutes": 71.01
+      "age_minutes": 75.91
     },
     {
       "key": "ai_pool:2368:63:1320.0",
@@ -25637,7 +25638,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T05:30:21.697299+00:00",
-      "updated_at": "2026-06-05T06:36:13.054875+00:00",
+      "updated_at": "2026-06-05T06:41:06.891753+00:00",
       "status": "open",
       "code": "2356",
       "name": "英業達",
@@ -25658,7 +25659,7 @@
         "pct_10m": 0.0,
         "pct_30m": 0.0
       },
-      "age_minutes": 65.86
+      "age_minutes": 70.75
     },
     {
       "key": "ai_pool:3481:64:53.7",
