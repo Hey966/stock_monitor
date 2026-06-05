@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-05T02:55:53.871870+00:00",
+  "updated_at": "2026-06-05T02:55:55.568556+00:00",
   "count": 217,
   "items": [
     {
@@ -104,13 +104,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:25:05.423025+00:00",
-      "updated_at": "2026-06-05T02:51:01.002353+00:00",
+      "updated_at": "2026-06-05T02:55:55.241018+00:00",
       "status": "open",
       "code": "3661",
       "name": "世芯-KY",
       "sector": "半導體",
       "entry_price": 4400.0,
-      "last_price": 4360.0,
+      "last_price": 4365.0,
       "best_price": 4405.0,
       "worst_price": 4350.0,
       "score": 84,
@@ -118,13 +118,14 @@
       "volume_ratio_at_signal": 0.72,
       "alert": null,
       "results": {
-        "latest_pct": -0.909,
+        "latest_pct": -0.795,
         "max_gain": 0.114,
         "max_drawdown": -1.136,
         "pct_5m": 0.0,
-        "pct_10m": -0.227
+        "pct_10m": -0.227,
+        "pct_30m": -0.795
       },
-      "age_minutes": 25.93
+      "age_minutes": 30.83
     },
     {
       "key": "ai_pool:3443:77:4480.0",
@@ -673,13 +674,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:25:12.529249+00:00",
-      "updated_at": "2026-06-05T02:51:01.002380+00:00",
+      "updated_at": "2026-06-05T02:55:55.241041+00:00",
       "status": "open",
       "code": "3661",
       "name": "世芯-KY",
       "sector": "半導體",
       "entry_price": 4405.0,
-      "last_price": 4360.0,
+      "last_price": 4365.0,
       "best_price": 4405.0,
       "worst_price": 4350.0,
       "score": 77,
@@ -687,13 +688,14 @@
       "volume_ratio_at_signal": 0.72,
       "alert": null,
       "results": {
-        "latest_pct": -1.022,
+        "latest_pct": -0.908,
         "max_gain": 0.0,
         "max_drawdown": -1.249,
         "pct_5m": -0.114,
-        "pct_10m": -0.341
+        "pct_10m": -0.341,
+        "pct_30m": -0.908
       },
-      "age_minutes": 25.81
+      "age_minutes": 30.71
     },
     {
       "key": "ai_pool:6215:71:120.0",
@@ -1700,13 +1702,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:30:19.670106+00:00",
-      "updated_at": "2026-06-05T02:51:01.002401+00:00",
+      "updated_at": "2026-06-05T02:55:55.241054+00:00",
       "status": "open",
       "code": "3661",
       "name": "世芯-KY",
       "sector": "半導體",
       "entry_price": 4415.0,
-      "last_price": 4360.0,
+      "last_price": 4365.0,
       "best_price": 4415.0,
       "worst_price": 4350.0,
       "score": 86,
@@ -1714,13 +1716,13 @@
       "volume_ratio_at_signal": 0.73,
       "alert": null,
       "results": {
-        "latest_pct": -1.246,
+        "latest_pct": -1.133,
         "max_gain": 0.0,
         "max_drawdown": -1.472,
         "pct_5m": -0.566,
         "pct_10m": -1.246
       },
-      "age_minutes": 20.69
+      "age_minutes": 25.59
     },
     {
       "key": "ai_pool:2379:82:639.0",
@@ -2213,13 +2215,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:30:30.008505+00:00",
-      "updated_at": "2026-06-05T02:51:01.002416+00:00",
+      "updated_at": "2026-06-05T02:55:55.241062+00:00",
       "status": "open",
       "code": "3661",
       "name": "世芯-KY",
       "sector": "半導體",
       "entry_price": 4415.0,
-      "last_price": 4360.0,
+      "last_price": 4365.0,
       "best_price": 4415.0,
       "worst_price": 4350.0,
       "score": 84,
@@ -2227,13 +2229,13 @@
       "volume_ratio_at_signal": 0.73,
       "alert": "大戶進場警報",
       "results": {
-        "latest_pct": -1.246,
+        "latest_pct": -1.133,
         "max_gain": 0.0,
         "max_drawdown": -1.472,
         "pct_5m": -0.566,
         "pct_10m": -1.246
       },
-      "age_minutes": 20.52
+      "age_minutes": 25.42
     },
     {
       "key": "fund_flow:3037:77:956.0",
@@ -2645,13 +2647,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:35:12.437140+00:00",
-      "updated_at": "2026-06-05T02:51:01.002431+00:00",
+      "updated_at": "2026-06-05T02:55:55.241069+00:00",
       "status": "open",
       "code": "3661",
       "name": "世芯-KY",
       "sector": "半導體",
       "entry_price": 4390.0,
-      "last_price": 4360.0,
+      "last_price": 4365.0,
       "best_price": 4390.0,
       "worst_price": 4350.0,
       "score": 65,
@@ -2659,13 +2661,13 @@
       "volume_ratio_at_signal": 0.77,
       "alert": null,
       "results": {
-        "latest_pct": -0.683,
+        "latest_pct": -0.569,
         "max_gain": 0.0,
         "max_drawdown": -0.911,
         "pct_5m": -0.683,
         "pct_10m": -0.911
       },
-      "age_minutes": 15.81
+      "age_minutes": 20.71
     },
     {
       "key": "ai_pool:2454:63:4395.0",
@@ -3347,13 +3349,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:40:15.726463+00:00",
-      "updated_at": "2026-06-05T02:51:01.002447+00:00",
+      "updated_at": "2026-06-05T02:55:55.241078+00:00",
       "status": "open",
       "code": "3661",
       "name": "世芯-KY",
       "sector": "半導體",
       "entry_price": 4365.0,
-      "last_price": 4360.0,
+      "last_price": 4365.0,
       "best_price": 4365.0,
       "worst_price": 4350.0,
       "score": 61,
@@ -3361,13 +3363,13 @@
       "volume_ratio_at_signal": 0.78,
       "alert": null,
       "results": {
-        "latest_pct": -0.115,
+        "latest_pct": 0.0,
         "max_gain": 0.0,
         "max_drawdown": -0.344,
         "pct_5m": -0.344,
         "pct_10m": -0.115
       },
-      "age_minutes": 10.75
+      "age_minutes": 15.66
     },
     {
       "key": "ai_pool:8046:56:860.0",
@@ -3939,26 +3941,27 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:45:15.268625+00:00",
-      "updated_at": "2026-06-05T02:51:01.002464+00:00",
+      "updated_at": "2026-06-05T02:55:55.241086+00:00",
       "status": "open",
       "code": "3661",
       "name": "世芯-KY",
       "sector": "半導體",
       "entry_price": 4350.0,
-      "last_price": 4360.0,
-      "best_price": 4360.0,
+      "last_price": 4365.0,
+      "best_price": 4365.0,
       "worst_price": 4350.0,
       "score": 69,
       "change_rate_at_signal": 0.23,
       "volume_ratio_at_signal": 0.79,
       "alert": null,
       "results": {
-        "latest_pct": 0.23,
-        "max_gain": 0.23,
+        "latest_pct": 0.345,
+        "max_gain": 0.345,
         "max_drawdown": 0.0,
-        "pct_5m": 0.23
+        "pct_5m": 0.23,
+        "pct_10m": 0.345
       },
-      "age_minutes": 5.76
+      "age_minutes": 10.67
     },
     {
       "key": "ai_pool:3037:66:954.0",
@@ -4637,25 +4640,26 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:50:15.682084+00:00",
-      "updated_at": "2026-06-05T02:51:01.002475+00:00",
+      "updated_at": "2026-06-05T02:55:55.241096+00:00",
       "status": "open",
       "code": "3661",
       "name": "世芯-KY",
       "sector": "半導體",
       "entry_price": 4360.0,
-      "last_price": 4360.0,
-      "best_price": 4360.0,
+      "last_price": 4365.0,
+      "best_price": 4365.0,
       "worst_price": 4360.0,
       "score": 63,
       "change_rate_at_signal": 0.46,
       "volume_ratio_at_signal": 0.79,
       "alert": null,
       "results": {
-        "latest_pct": 0.0,
-        "max_gain": 0.0,
-        "max_drawdown": 0.0
+        "latest_pct": 0.115,
+        "max_gain": 0.115,
+        "max_drawdown": 0.0,
+        "pct_5m": 0.115
       },
-      "age_minutes": 0.76
+      "age_minutes": 5.66
     },
     {
       "key": "ai_pool:2609:57:54.0",
@@ -5213,7 +5217,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:55:13.518149+00:00",
-      "updated_at": "2026-06-05T02:55:13.518154+00:00",
+      "updated_at": "2026-06-05T02:55:55.241126+00:00",
       "status": "open",
       "code": "3661",
       "name": "世芯-KY",
@@ -5226,7 +5230,12 @@
       "change_rate_at_signal": 0.57,
       "volume_ratio_at_signal": 0.79,
       "alert": null,
-      "results": {}
+      "results": {
+        "latest_pct": 0.0,
+        "max_gain": 0.0,
+        "max_drawdown": 0.0
+      },
+      "age_minutes": 0.7
     },
     {
       "key": "ai_pool:5347:62:161.5",
