@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-05T02:46:36.900055+00:00",
+  "updated_at": "2026-06-05T02:46:39.468211+00:00",
   "count": 167,
   "items": [
     {
@@ -1047,7 +1047,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:25:15.330035+00:00",
-      "updated_at": "2026-06-05T02:41:36.628819+00:00",
+      "updated_at": "2026-06-05T02:46:38.487011+00:00",
       "status": "open",
       "code": "3017",
       "name": "奇鋐",
@@ -1067,7 +1067,7 @@
         "pct_5m": 0.76,
         "pct_10m": 0.0
       },
-      "age_minutes": 16.35
+      "age_minutes": 21.39
     },
     {
       "key": "fund_flow:5347:27:160.5",
@@ -1452,7 +1452,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:25:16.826567+00:00",
-      "updated_at": "2026-06-05T02:41:36.628837+00:00",
+      "updated_at": "2026-06-05T02:46:38.487033+00:00",
       "status": "open",
       "code": "3017",
       "name": "奇鋐",
@@ -1472,7 +1472,7 @@
         "pct_5m": 0.76,
         "pct_10m": 0.0
       },
-      "age_minutes": 16.33
+      "age_minutes": 21.36
     },
     {
       "key": "fund_flow:2344:33:163.0",
@@ -1614,7 +1614,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:25:21.622329+00:00",
-      "updated_at": "2026-06-05T02:41:36.628844+00:00",
+      "updated_at": "2026-06-05T02:46:38.487043+00:00",
       "status": "open",
       "code": "3017",
       "name": "奇鋐",
@@ -1634,7 +1634,7 @@
         "pct_5m": 0.76,
         "pct_10m": 0.0
       },
-      "age_minutes": 16.25
+      "age_minutes": 21.28
     },
     {
       "key": "fund_flow:2376:32:366.5",
@@ -2100,7 +2100,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:30:19.670309+00:00",
-      "updated_at": "2026-06-05T02:41:36.628851+00:00",
+      "updated_at": "2026-06-05T02:46:38.487055+00:00",
       "status": "open",
       "code": "3017",
       "name": "奇鋐",
@@ -2120,7 +2120,7 @@
         "pct_5m": -0.755,
         "pct_10m": -1.321
       },
-      "age_minutes": 11.28
+      "age_minutes": 16.31
     },
     {
       "key": "ai_pool:2330:34:2385.0",
@@ -3015,7 +3015,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:35:23.555098+00:00",
-      "updated_at": "2026-06-05T02:41:36.628859+00:00",
+      "updated_at": "2026-06-05T02:46:38.487071+00:00",
       "status": "open",
       "code": "3017",
       "name": "奇鋐",
@@ -3032,9 +3032,10 @@
         "latest_pct": -0.759,
         "max_gain": 0.0,
         "max_drawdown": -0.759,
-        "pct_5m": -0.759
+        "pct_5m": -0.759,
+        "pct_10m": -0.759
       },
-      "age_minutes": 6.22
+      "age_minutes": 11.25
     },
     {
       "key": "fund_flow:1605:25:39.25",
@@ -3535,7 +3536,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:40:15.726569+00:00",
-      "updated_at": "2026-06-05T02:41:36.628866+00:00",
+      "updated_at": "2026-06-05T02:46:38.487084+00:00",
       "status": "open",
       "code": "3017",
       "name": "奇鋐",
@@ -3551,9 +3552,10 @@
       "results": {
         "latest_pct": -0.381,
         "max_gain": 0.0,
-        "max_drawdown": -0.381
+        "max_drawdown": -0.381,
+        "pct_5m": -0.381
       },
-      "age_minutes": 1.35
+      "age_minutes": 6.38
     },
     {
       "key": "ai_pool:2382:32:389.5",
@@ -4209,7 +4211,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:45:25.851569+00:00",
-      "updated_at": "2026-06-05T02:45:25.851571+00:00",
+      "updated_at": "2026-06-05T02:46:38.487094+00:00",
       "status": "open",
       "code": "3017",
       "name": "奇鋐",
@@ -4222,7 +4224,12 @@
       "change_rate_at_signal": -3.5,
       "volume_ratio_at_signal": 0.75,
       "alert": "資金退潮警報",
-      "results": {}
+      "results": {
+        "latest_pct": 0.0,
+        "max_gain": 0.0,
+        "max_drawdown": 0.0
+      },
+      "age_minutes": 1.21
     },
     {
       "key": "fund_flow:2317:30:286.0",
