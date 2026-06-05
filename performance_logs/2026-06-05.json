@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-05T02:50:27.743052+00:00",
+  "updated_at": "2026-06-05T02:50:54.162790+00:00",
   "count": 195,
   "items": [
     {
@@ -75,7 +75,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:25:05.423012+00:00",
-      "updated_at": "2026-06-05T02:45:51.698961+00:00",
+      "updated_at": "2026-06-05T02:50:53.172065+00:00",
       "status": "open",
       "code": "2615",
       "name": "萬海",
@@ -95,7 +95,7 @@
         "pct_5m": 0.929,
         "pct_10m": 0.929
       },
-      "age_minutes": 20.77
+      "age_minutes": 25.8
     },
     {
       "key": "ai_pool:3661:84:4400.0",
@@ -615,7 +615,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:25:12.529228+00:00",
-      "updated_at": "2026-06-05T02:45:51.698979+00:00",
+      "updated_at": "2026-06-05T02:50:53.172081+00:00",
       "status": "open",
       "code": "2615",
       "name": "萬海",
@@ -635,7 +635,7 @@
         "pct_5m": 0.579,
         "pct_10m": 0.579
       },
-      "age_minutes": 20.65
+      "age_minutes": 25.68
     },
     {
       "key": "ai_pool:3443:78:4485.0",
@@ -2478,7 +2478,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:35:12.437030+00:00",
-      "updated_at": "2026-06-05T02:45:51.698995+00:00",
+      "updated_at": "2026-06-05T02:50:53.172092+00:00",
       "status": "open",
       "code": "2615",
       "name": "萬海",
@@ -2498,7 +2498,7 @@
         "pct_5m": 0.0,
         "pct_10m": -0.691
       },
-      "age_minutes": 10.65
+      "age_minutes": 15.68
     },
     {
       "key": "ai_pool:2356:81:78.4",
@@ -3153,7 +3153,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:40:15.726360+00:00",
-      "updated_at": "2026-06-05T02:45:51.699004+00:00",
+      "updated_at": "2026-06-05T02:50:53.172099+00:00",
       "status": "open",
       "code": "2615",
       "name": "萬海",
@@ -3170,9 +3170,10 @@
         "latest_pct": -0.577,
         "max_gain": 0.115,
         "max_drawdown": -0.577,
-        "pct_5m": -0.577
+        "pct_5m": -0.577,
+        "pct_10m": -0.577
       },
-      "age_minutes": 5.6
+      "age_minutes": 10.62
     },
     {
       "key": "ai_pool:2379:93:642.0",
@@ -3828,7 +3829,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:45:15.268587+00:00",
-      "updated_at": "2026-06-05T02:45:51.699013+00:00",
+      "updated_at": "2026-06-05T02:50:53.172107+00:00",
       "status": "open",
       "code": "2615",
       "name": "萬海",
@@ -3844,9 +3845,10 @@
       "results": {
         "latest_pct": -0.116,
         "max_gain": 0.0,
-        "max_drawdown": -0.116
+        "max_drawdown": -0.116,
+        "pct_5m": -0.116
       },
-      "age_minutes": 0.61
+      "age_minutes": 5.63
     },
     {
       "key": "ai_pool:3443:79:4420.0",
@@ -4428,7 +4430,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:50:15.682010+00:00",
-      "updated_at": "2026-06-05T02:50:15.682028+00:00",
+      "updated_at": "2026-06-05T02:50:53.172137+00:00",
       "status": "open",
       "code": "2615",
       "name": "萬海",
@@ -4441,7 +4443,12 @@
       "change_rate_at_signal": 2.98,
       "volume_ratio_at_signal": 1.91,
       "alert": null,
-      "results": {}
+      "results": {
+        "latest_pct": 0.0,
+        "max_gain": 0.0,
+        "max_drawdown": 0.0
+      },
+      "age_minutes": 0.62
     },
     {
       "key": "ai_pool:2379:88:647.0",
@@ -4808,7 +4815,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:50:26.323748+00:00",
-      "updated_at": "2026-06-05T02:50:26.323762+00:00",
+      "updated_at": "2026-06-05T02:50:53.172144+00:00",
       "status": "open",
       "code": "2615",
       "name": "萬海",
@@ -4821,7 +4828,12 @@
       "change_rate_at_signal": 2.98,
       "volume_ratio_at_signal": 1.91,
       "alert": "大戶進場警報",
-      "results": {}
+      "results": {
+        "latest_pct": 0.0,
+        "max_gain": 0.0,
+        "max_drawdown": 0.0
+      },
+      "age_minutes": 0.45
     },
     {
       "key": "fund_flow:3037:32:947.0",
