@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-05T06:26:04.497221+00:00",
+  "updated_at": "2026-06-05T06:26:08.852389+00:00",
   "count": 930,
   "items": [
     {
@@ -519,8 +519,8 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:25:05.423221+00:00",
-      "updated_at": "2026-06-05T06:21:09.803136+00:00",
-      "status": "open",
+      "updated_at": "2026-06-05T06:26:07.338350+00:00",
+      "status": "closed",
       "code": "3481",
       "name": "群創",
       "sector": "面板",
@@ -538,9 +538,10 @@
         "max_drawdown": -2.268,
         "pct_5m": 0.756,
         "pct_10m": 1.323,
-        "pct_30m": 2.079
+        "pct_30m": 2.079,
+        "pct_close_proxy": 1.512
       },
-      "age_minutes": 236.07
+      "age_minutes": 241.03
     },
     {
       "key": "ai_pool:2317:39:286.5",
@@ -1028,8 +1029,8 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:25:12.529381+00:00",
-      "updated_at": "2026-06-05T06:21:09.803155+00:00",
-      "status": "open",
+      "updated_at": "2026-06-05T06:26:07.338369+00:00",
+      "status": "closed",
       "code": "3481",
       "name": "群創",
       "sector": "面板",
@@ -1047,9 +1048,10 @@
         "max_drawdown": -2.453,
         "pct_5m": 0.566,
         "pct_10m": 1.132,
-        "pct_30m": 1.887
+        "pct_30m": 1.887,
+        "pct_close_proxy": 1.321
       },
-      "age_minutes": 235.95
+      "age_minutes": 240.91
     },
     {
       "key": "ai_pool:5347:35:161.0",
@@ -2181,7 +2183,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:30:19.670300+00:00",
-      "updated_at": "2026-06-05T06:21:09.803166+00:00",
+      "updated_at": "2026-06-05T06:26:07.338379+00:00",
       "status": "open",
       "code": "3481",
       "name": "群創",
@@ -2202,7 +2204,7 @@
         "pct_10m": 1.126,
         "pct_30m": 1.126
       },
-      "age_minutes": 230.84
+      "age_minutes": 235.79
     },
     {
       "key": "ai_pool:3017:39:2650.0",
@@ -2937,7 +2939,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:35:12.437197+00:00",
-      "updated_at": "2026-06-05T06:21:09.803175+00:00",
+      "updated_at": "2026-06-05T06:26:07.338387+00:00",
       "status": "open",
       "code": "3481",
       "name": "群創",
@@ -2958,7 +2960,7 @@
         "pct_10m": 0.56,
         "pct_30m": 0.56
       },
-      "age_minutes": 225.96
+      "age_minutes": 230.92
     },
     {
       "key": "ai_pool:2324:43:41.3",
@@ -3693,7 +3695,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:40:15.726558+00:00",
-      "updated_at": "2026-06-05T06:21:09.803183+00:00",
+      "updated_at": "2026-06-05T06:26:07.338396+00:00",
       "status": "open",
       "code": "3481",
       "name": "群創",
@@ -3714,7 +3716,7 @@
         "pct_10m": 0.186,
         "pct_30m": -0.186
       },
-      "age_minutes": 220.9
+      "age_minutes": 225.86
     },
     {
       "key": "ai_pool:3017:33:2625.0",
@@ -5009,7 +5011,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:50:15.682144+00:00",
-      "updated_at": "2026-06-05T06:21:09.803191+00:00",
+      "updated_at": "2026-06-05T06:26:07.338406+00:00",
       "status": "open",
       "code": "3481",
       "name": "群創",
@@ -5030,7 +5032,7 @@
         "pct_10m": -0.185,
         "pct_30m": -0.741
       },
-      "age_minutes": 210.9
+      "age_minutes": 215.86
     },
     {
       "key": "ai_pool:2317:37:285.5",
@@ -6521,7 +6523,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:00:36.494141+00:00",
-      "updated_at": "2026-06-05T06:21:09.803202+00:00",
+      "updated_at": "2026-06-05T06:26:07.338415+00:00",
       "status": "open",
       "code": "3481",
       "name": "群創",
@@ -6542,7 +6544,7 @@
         "pct_10m": -0.186,
         "pct_30m": -1.113
       },
-      "age_minutes": 200.56
+      "age_minutes": 205.51
     },
     {
       "key": "fund_flow:3037:33:948.0",
@@ -6913,7 +6915,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:05:11.974205+00:00",
-      "updated_at": "2026-06-05T06:21:09.803209+00:00",
+      "updated_at": "2026-06-05T06:26:07.338423+00:00",
       "status": "open",
       "code": "3481",
       "name": "群創",
@@ -6934,7 +6936,7 @@
         "pct_10m": -0.371,
         "pct_30m": -1.67
       },
-      "age_minutes": 195.96
+      "age_minutes": 200.92
     },
     {
       "key": "ai_pool:3037:54:952.0",
@@ -7445,7 +7447,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:10:15.521941+00:00",
-      "updated_at": "2026-06-05T06:21:09.803217+00:00",
+      "updated_at": "2026-06-05T06:26:07.338430+00:00",
       "status": "open",
       "code": "3481",
       "name": "群創",
@@ -7466,7 +7468,7 @@
         "pct_10m": -0.372,
         "pct_30m": -1.487
       },
-      "age_minutes": 190.9
+      "age_minutes": 195.86
     },
     {
       "key": "ai_pool:2317:31:286.5",
@@ -7977,7 +7979,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:15:14.980061+00:00",
-      "updated_at": "2026-06-05T06:21:09.803224+00:00",
+      "updated_at": "2026-06-05T06:26:07.338437+00:00",
       "status": "open",
       "code": "3481",
       "name": "群創",
@@ -7998,7 +8000,7 @@
         "pct_10m": -0.372,
         "pct_30m": -1.676
       },
-      "age_minutes": 185.91
+      "age_minutes": 190.87
     },
     {
       "key": "ai_pool:1605:32:39.55",
@@ -8425,7 +8427,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:20:15.486092+00:00",
-      "updated_at": "2026-06-05T06:21:09.803231+00:00",
+      "updated_at": "2026-06-05T06:26:07.338445+00:00",
       "status": "open",
       "code": "3481",
       "name": "群創",
@@ -8446,7 +8448,7 @@
         "pct_10m": -0.56,
         "pct_30m": -1.866
       },
-      "age_minutes": 180.91
+      "age_minutes": 185.86
     },
     {
       "key": "ai_pool:2609:47:54.0",
@@ -9013,7 +9015,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:25:11.681379+00:00",
-      "updated_at": "2026-06-05T06:21:09.803238+00:00",
+      "updated_at": "2026-06-05T06:26:07.338451+00:00",
       "status": "open",
       "code": "3481",
       "name": "群創",
@@ -9034,7 +9036,7 @@
         "pct_10m": -0.935,
         "pct_30m": -1.869
       },
-      "age_minutes": 175.97
+      "age_minutes": 180.93
     },
     {
       "key": "ai_pool:3017:32:2605.0",
@@ -9657,7 +9659,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:30:18.909659+00:00",
-      "updated_at": "2026-06-05T06:21:09.803246+00:00",
+      "updated_at": "2026-06-05T06:26:07.338458+00:00",
       "status": "open",
       "code": "3481",
       "name": "群創",
@@ -9678,7 +9680,7 @@
         "pct_10m": -0.563,
         "pct_30m": -2.064
       },
-      "age_minutes": 170.85
+      "age_minutes": 175.81
     },
     {
       "key": "ai_pool:2330:28:2370.0",
@@ -10161,7 +10163,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:35:12.135172+00:00",
-      "updated_at": "2026-06-05T06:21:09.803252+00:00",
+      "updated_at": "2026-06-05T06:26:07.338465+00:00",
       "status": "open",
       "code": "3481",
       "name": "群創",
@@ -10182,7 +10184,7 @@
         "pct_10m": -0.377,
         "pct_30m": -1.887
       },
-      "age_minutes": 165.96
+      "age_minutes": 170.92
     },
     {
       "key": "ai_pool:2330:30:2375.0",
@@ -10973,7 +10975,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:40:15.555290+00:00",
-      "updated_at": "2026-06-05T06:21:09.803261+00:00",
+      "updated_at": "2026-06-05T06:26:07.338472+00:00",
       "status": "open",
       "code": "3481",
       "name": "群創",
@@ -10994,7 +10996,7 @@
         "pct_10m": -0.755,
         "pct_30m": -1.887
       },
-      "age_minutes": 160.9
+      "age_minutes": 165.86
     },
     {
       "key": "fund_flow:2615:98:85.8",
@@ -11141,7 +11143,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:40:30.328019+00:00",
-      "updated_at": "2026-06-05T06:21:09.803267+00:00",
+      "updated_at": "2026-06-05T06:26:07.338478+00:00",
       "status": "open",
       "code": "3481",
       "name": "群創",
@@ -11162,7 +11164,7 @@
         "pct_10m": -0.755,
         "pct_30m": -1.887
       },
-      "age_minutes": 160.66
+      "age_minutes": 165.62
     },
     {
       "key": "fund_flow:2308:24:2310.0",
@@ -11897,7 +11899,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:45:24.850244+00:00",
-      "updated_at": "2026-06-05T06:21:09.803275+00:00",
+      "updated_at": "2026-06-05T06:26:07.338486+00:00",
       "status": "open",
       "code": "3481",
       "name": "群創",
@@ -11918,7 +11920,7 @@
         "pct_10m": -0.568,
         "pct_30m": -1.705
       },
-      "age_minutes": 155.75
+      "age_minutes": 160.71
     },
     {
       "key": "fund_flow:3324:24:1095.0",
@@ -12373,7 +12375,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:50:15.098740+00:00",
-      "updated_at": "2026-06-05T06:21:09.803282+00:00",
+      "updated_at": "2026-06-05T06:26:07.338492+00:00",
       "status": "open",
       "code": "3481",
       "name": "群創",
@@ -12394,7 +12396,7 @@
         "pct_10m": -0.76,
         "pct_30m": -1.521
       },
-      "age_minutes": 150.91
+      "age_minutes": 155.87
     },
     {
       "key": "ai_pool:2330:20:2370.0",
@@ -12569,7 +12571,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:50:26.956265+00:00",
-      "updated_at": "2026-06-05T06:21:09.803287+00:00",
+      "updated_at": "2026-06-05T06:26:07.338497+00:00",
       "status": "open",
       "code": "3481",
       "name": "群創",
@@ -12590,7 +12592,7 @@
         "pct_10m": -0.76,
         "pct_30m": -1.521
       },
-      "age_minutes": 150.71
+      "age_minutes": 155.67
     },
     {
       "key": "fund_flow:3661:34:4275.0",
@@ -12933,7 +12935,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:55:12.071429+00:00",
-      "updated_at": "2026-06-05T06:21:09.803293+00:00",
+      "updated_at": "2026-06-05T06:26:07.338504+00:00",
       "status": "open",
       "code": "3481",
       "name": "群創",
@@ -12954,7 +12956,7 @@
         "pct_10m": -0.952,
         "pct_30m": -1.524
       },
-      "age_minutes": 145.96
+      "age_minutes": 150.92
     },
     {
       "key": "ai_pool:3661:20:4250.0",
@@ -13241,7 +13243,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:55:23.123508+00:00",
-      "updated_at": "2026-06-05T06:21:09.803299+00:00",
+      "updated_at": "2026-06-05T06:26:07.338509+00:00",
       "status": "open",
       "code": "3481",
       "name": "群創",
@@ -13262,7 +13264,7 @@
         "pct_10m": -0.952,
         "pct_30m": -1.524
       },
-      "age_minutes": 145.78
+      "age_minutes": 150.74
     },
     {
       "key": "fund_flow:3231:27:171.0",
@@ -13801,7 +13803,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T04:00:24.527468+00:00",
-      "updated_at": "2026-06-05T06:21:09.803305+00:00",
+      "updated_at": "2026-06-05T06:26:07.338515+00:00",
       "status": "open",
       "code": "3481",
       "name": "群創",
@@ -13822,7 +13824,7 @@
         "pct_10m": -0.383,
         "pct_30m": -0.958
       },
-      "age_minutes": 140.75
+      "age_minutes": 145.71
     },
     {
       "key": "ai_pool:8046:23:850.0",
@@ -14109,7 +14111,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T04:00:36.205800+00:00",
-      "updated_at": "2026-06-05T06:21:09.803312+00:00",
+      "updated_at": "2026-06-05T06:26:07.338521+00:00",
       "status": "open",
       "code": "3481",
       "name": "群創",
@@ -14130,7 +14132,7 @@
         "pct_10m": -0.383,
         "pct_30m": -0.958
       },
-      "age_minutes": 140.56
+      "age_minutes": 145.52
     },
     {
       "key": "fund_flow:1513:28:169.5",
@@ -14445,7 +14447,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T04:00:54.481852+00:00",
-      "updated_at": "2026-06-05T06:21:09.803318+00:00",
+      "updated_at": "2026-06-05T06:26:07.338527+00:00",
       "status": "open",
       "code": "3481",
       "name": "群創",
@@ -14466,7 +14468,7 @@
         "pct_10m": -0.383,
         "pct_30m": -0.958
       },
-      "age_minutes": 140.26
+      "age_minutes": 145.21
     },
     {
       "key": "ai_pool:2368:28:1305.0",
@@ -15285,7 +15287,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T04:01:59.401181+00:00",
-      "updated_at": "2026-06-05T06:21:09.803326+00:00",
+      "updated_at": "2026-06-05T06:26:07.338534+00:00",
       "status": "open",
       "code": "3481",
       "name": "群創",
@@ -15306,7 +15308,7 @@
         "pct_10m": -0.575,
         "pct_30m": -0.766
       },
-      "age_minutes": 139.17
+      "age_minutes": 144.13
     },
     {
       "key": "fund_flow:2454:33:4275.0",
@@ -16209,7 +16211,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T04:05:12.435663+00:00",
-      "updated_at": "2026-06-05T06:21:09.803332+00:00",
+      "updated_at": "2026-06-05T06:26:07.338542+00:00",
       "status": "open",
       "code": "3481",
       "name": "群創",
@@ -16230,7 +16232,7 @@
         "pct_10m": -0.192,
         "pct_30m": -0.385
       },
-      "age_minutes": 135.96
+      "age_minutes": 140.92
     },
     {
       "key": "ai_pool:3037:31:933.0",
@@ -17329,7 +17331,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T04:10:15.470303+00:00",
-      "updated_at": "2026-06-05T06:21:09.803340+00:00",
+      "updated_at": "2026-06-05T06:26:07.338550+00:00",
       "status": "open",
       "code": "3481",
       "name": "群創",
@@ -17350,7 +17352,7 @@
         "pct_10m": -0.385,
         "pct_30m": -0.192
       },
-      "age_minutes": 130.91
+      "age_minutes": 135.86
     },
     {
       "key": "ai_pool:2454:12:4270.0",
@@ -17469,7 +17471,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T04:10:27.039899+00:00",
-      "updated_at": "2026-06-05T06:21:09.803352+00:00",
+      "updated_at": "2026-06-05T06:26:07.338555+00:00",
       "status": "open",
       "code": "3481",
       "name": "群創",
@@ -17490,7 +17492,7 @@
         "pct_10m": -0.385,
         "pct_30m": -0.192
       },
-      "age_minutes": 130.71
+      "age_minutes": 135.67
     },
     {
       "key": "fund_flow:2382:21:390.0",
@@ -17833,7 +17835,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T04:15:13.989720+00:00",
-      "updated_at": "2026-06-05T06:21:09.803358+00:00",
+      "updated_at": "2026-06-05T06:26:07.338561+00:00",
       "status": "open",
       "code": "3481",
       "name": "群創",
@@ -17854,7 +17856,7 @@
         "pct_10m": -0.385,
         "pct_30m": 0.193
       },
-      "age_minutes": 125.93
+      "age_minutes": 130.89
     },
     {
       "key": "ai_pool:2376:11:366.0",
@@ -17973,7 +17975,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T04:15:24.916446+00:00",
-      "updated_at": "2026-06-05T06:21:09.803363+00:00",
+      "updated_at": "2026-06-05T06:26:07.338566+00:00",
       "status": "open",
       "code": "3481",
       "name": "群創",
@@ -17994,7 +17996,7 @@
         "pct_10m": -0.385,
         "pct_30m": 0.193
       },
-      "age_minutes": 125.75
+      "age_minutes": 130.71
     },
     {
       "key": "fund_flow:2382:29:389.5",
@@ -18421,7 +18423,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T04:20:15.505220+00:00",
-      "updated_at": "2026-06-05T06:21:09.803369+00:00",
+      "updated_at": "2026-06-05T06:26:07.338572+00:00",
       "status": "open",
       "code": "3481",
       "name": "群創",
@@ -18442,7 +18444,7 @@
         "pct_10m": -0.193,
         "pct_30m": 0.579
       },
-      "age_minutes": 120.9
+      "age_minutes": 125.86
     },
     {
       "key": "fund_flow:3231:33:171.5",
@@ -18561,7 +18563,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T04:20:26.594611+00:00",
-      "updated_at": "2026-06-05T06:21:09.803374+00:00",
+      "updated_at": "2026-06-05T06:26:07.338577+00:00",
       "status": "open",
       "code": "3481",
       "name": "群創",
@@ -18582,7 +18584,7 @@
         "pct_10m": -0.193,
         "pct_30m": 0.579
       },
-      "age_minutes": 120.72
+      "age_minutes": 125.68
     },
     {
       "key": "fund_flow:5347:33:159.0",
@@ -18953,7 +18955,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T04:25:13.286027+00:00",
-      "updated_at": "2026-06-05T06:21:09.803379+00:00",
+      "updated_at": "2026-06-05T06:26:07.338582+00:00",
       "status": "open",
       "code": "3481",
       "name": "群創",
@@ -18974,7 +18976,7 @@
         "pct_10m": 0.193,
         "pct_30m": 0.58
       },
-      "age_minutes": 115.94
+      "age_minutes": 120.9
     },
     {
       "key": "ai_pool:8046:11:847.0",
@@ -19065,7 +19067,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T04:25:24.727166+00:00",
-      "updated_at": "2026-06-05T06:21:09.803384+00:00",
+      "updated_at": "2026-06-05T06:26:07.338587+00:00",
       "status": "open",
       "code": "3481",
       "name": "群創",
@@ -19086,7 +19088,7 @@
         "pct_10m": 0.193,
         "pct_30m": 0.58
       },
-      "age_minutes": 115.75
+      "age_minutes": 120.71
     },
     {
       "key": "fund_flow:8046:35:846.0",
@@ -19429,7 +19431,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T04:30:19.748885+00:00",
-      "updated_at": "2026-06-05T06:21:09.803390+00:00",
+      "updated_at": "2026-06-05T06:26:07.338593+00:00",
       "status": "open",
       "code": "3481",
       "name": "群創",
@@ -19450,7 +19452,7 @@
         "pct_10m": 0.387,
         "pct_30m": 0.387
       },
-      "age_minutes": 110.83
+      "age_minutes": 115.79
     },
     {
       "key": "ai_pool:5347:17:159.0",
@@ -20045,7 +20047,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T04:35:12.204866+00:00",
-      "updated_at": "2026-06-05T06:21:09.803395+00:00",
+      "updated_at": "2026-06-05T06:26:07.338599+00:00",
       "status": "open",
       "code": "3481",
       "name": "群創",
@@ -20066,7 +20068,7 @@
         "pct_10m": 0.386,
         "pct_30m": 0.193
       },
-      "age_minutes": 105.96
+      "age_minutes": 110.92
     },
     {
       "key": "ai_pool:2376:17:364.5",
@@ -20549,7 +20551,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T04:40:26.770192+00:00",
-      "updated_at": "2026-06-05T06:21:09.803401+00:00",
+      "updated_at": "2026-06-05T06:26:07.338605+00:00",
       "status": "open",
       "code": "3481",
       "name": "群創",
@@ -20570,7 +20572,7 @@
         "pct_10m": 0.385,
         "pct_30m": 0.193
       },
-      "age_minutes": 100.72
+      "age_minutes": 105.68
     },
     {
       "key": "fund_flow:2454:27:4290.0",
@@ -20941,7 +20943,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T04:45:14.480577+00:00",
-      "updated_at": "2026-06-05T06:21:09.803407+00:00",
+      "updated_at": "2026-06-05T06:26:07.338610+00:00",
       "status": "open",
       "code": "3481",
       "name": "群創",
@@ -20962,7 +20964,7 @@
         "pct_10m": 0.0,
         "pct_30m": 0.962
       },
-      "age_minutes": 95.92
+      "age_minutes": 100.88
     },
     {
       "key": "ai_pool:2382:32:387.0",
@@ -21501,7 +21503,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T04:50:15.300239+00:00",
-      "updated_at": "2026-06-05T06:21:09.803413+00:00",
+      "updated_at": "2026-06-05T06:26:07.338644+00:00",
       "status": "open",
       "code": "3481",
       "name": "群創",
@@ -21522,7 +21524,7 @@
         "pct_10m": -0.384,
         "pct_30m": 1.727
       },
-      "age_minutes": 90.91
+      "age_minutes": 95.87
     },
     {
       "key": "ai_pool:3037:31:936.0",
@@ -22929,7 +22931,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T05:05:12.264701+00:00",
-      "updated_at": "2026-06-05T06:21:09.803421+00:00",
+      "updated_at": "2026-06-05T06:26:07.338660+00:00",
       "status": "open",
       "code": "3481",
       "name": "群創",
@@ -22950,7 +22952,7 @@
         "pct_10m": 1.156,
         "pct_30m": 3.468
       },
-      "age_minutes": 75.96
+      "age_minutes": 80.92
     },
     {
       "key": "ai_pool:3037:31:934.0",
@@ -23909,7 +23911,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T05:15:14.723457+00:00",
-      "updated_at": "2026-06-05T06:21:09.803427+00:00",
+      "updated_at": "2026-06-05T06:26:07.338668+00:00",
       "status": "open",
       "code": "3481",
       "name": "群創",
@@ -23930,7 +23932,7 @@
         "pct_10m": 0.952,
         "pct_30m": 2.286
       },
-      "age_minutes": 65.92
+      "age_minutes": 70.88
     },
     {
       "key": "ai_pool:2330:23:2350.0",
@@ -25225,7 +25227,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T05:25:12.305640+00:00",
-      "updated_at": "2026-06-05T06:21:09.803434+00:00",
+      "updated_at": "2026-06-05T06:26:07.338675+00:00",
       "status": "open",
       "code": "3481",
       "name": "群創",
@@ -25246,7 +25248,7 @@
         "pct_10m": 1.321,
         "pct_30m": 1.321
       },
-      "age_minutes": 55.96
+      "age_minutes": 60.92
     },
     {
       "key": "fund_flow:3711:31:578.0",
@@ -25309,7 +25311,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T05:25:23.891526+00:00",
-      "updated_at": "2026-06-05T06:21:09.803439+00:00",
+      "updated_at": "2026-06-05T06:26:07.338680+00:00",
       "status": "open",
       "code": "3481",
       "name": "群創",
@@ -25330,7 +25332,7 @@
         "pct_10m": 1.321,
         "pct_30m": 1.321
       },
-      "age_minutes": 55.77
+      "age_minutes": 60.72
     },
     {
       "key": "fund_flow:3231:29:171.5",
@@ -25589,7 +25591,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T05:30:21.697309+00:00",
-      "updated_at": "2026-06-05T06:21:09.803444+00:00",
+      "updated_at": "2026-06-05T06:26:07.338685+00:00",
       "status": "open",
       "code": "3481",
       "name": "群創",
@@ -25610,7 +25612,7 @@
         "pct_10m": 0.0,
         "pct_30m": 0.0
       },
-      "age_minutes": 50.8
+      "age_minutes": 55.76
     },
     {
       "key": "ai_pool:2324:63:41.4",
