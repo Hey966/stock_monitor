@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-05T02:56:27.139476+00:00",
+  "updated_at": "2026-06-05T02:56:29.625932+00:00",
   "count": 217,
   "items": [
     {
@@ -881,7 +881,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:25:12.529335+00:00",
-      "updated_at": "2026-06-05T02:51:24.520673+00:00",
+      "updated_at": "2026-06-05T02:56:28.866570+00:00",
       "status": "open",
       "code": "2330",
       "name": "台積電",
@@ -899,9 +899,10 @@
         "max_gain": 0.0,
         "max_drawdown": -0.21,
         "pct_5m": 0.0,
-        "pct_10m": 0.0
+        "pct_10m": 0.0,
+        "pct_30m": 0.0
       },
-      "age_minutes": 26.2
+      "age_minutes": 31.27
     },
     {
       "key": "ai_pool:2368:51:1335.0",
@@ -2159,7 +2160,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:30:19.670321+00:00",
-      "updated_at": "2026-06-05T02:51:24.520702+00:00",
+      "updated_at": "2026-06-05T02:56:28.866595+00:00",
       "status": "open",
       "code": "2330",
       "name": "台積電",
@@ -2179,7 +2180,7 @@
         "pct_5m": -0.21,
         "pct_10m": -0.21
       },
-      "age_minutes": 21.08
+      "age_minutes": 26.15
     },
     {
       "key": "ai_pool:2317:33:287.5",
@@ -4129,7 +4130,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:45:15.268705+00:00",
-      "updated_at": "2026-06-05T02:51:24.520724+00:00",
+      "updated_at": "2026-06-05T02:56:28.866615+00:00",
       "status": "open",
       "code": "2330",
       "name": "台積電",
@@ -4146,9 +4147,10 @@
         "latest_pct": 0.0,
         "max_gain": 0.0,
         "max_drawdown": 0.0,
-        "pct_5m": 0.0
+        "pct_5m": 0.0,
+        "pct_10m": 0.0
       },
-      "age_minutes": 6.15
+      "age_minutes": 11.23
     },
     {
       "key": "ai_pool:8046:37:859.0",
@@ -4983,7 +4985,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:50:15.682189+00:00",
-      "updated_at": "2026-06-05T02:51:24.520738+00:00",
+      "updated_at": "2026-06-05T02:56:28.866630+00:00",
       "status": "open",
       "code": "2330",
       "name": "台積電",
@@ -4999,9 +5001,10 @@
       "results": {
         "latest_pct": 0.211,
         "max_gain": 0.211,
-        "max_drawdown": 0.0
+        "max_drawdown": 0.0,
+        "pct_5m": 0.211
       },
-      "age_minutes": 1.15
+      "age_minutes": 6.22
     },
     {
       "key": "fund_flow:2615:88:86.2",
