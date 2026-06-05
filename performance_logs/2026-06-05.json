@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-05T06:46:17.396438+00:00",
+  "updated_at": "2026-06-05T06:46:22.794841+00:00",
   "count": 930,
   "items": [
     {
@@ -4297,8 +4297,8 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:45:15.268652+00:00",
-      "updated_at": "2026-06-05T06:41:15.387136+00:00",
-      "status": "open",
+      "updated_at": "2026-06-05T06:46:20.916340+00:00",
+      "status": "closed",
       "code": "2324",
       "name": "仁寶",
       "sector": "電腦週邊",
@@ -4316,9 +4316,10 @@
         "max_drawdown": -1.082,
         "pct_5m": -0.721,
         "pct_10m": -0.24,
-        "pct_30m": -0.361
+        "pct_30m": -0.361,
+        "pct_close_proxy": -0.481
       },
-      "age_minutes": 236.0
+      "age_minutes": 241.09
     },
     {
       "key": "ai_pool:6215:50:119.0",
@@ -5025,7 +5026,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:50:15.682100+00:00",
-      "updated_at": "2026-06-05T06:41:15.387158+00:00",
+      "updated_at": "2026-06-05T06:46:20.916362+00:00",
       "status": "open",
       "code": "2324",
       "name": "仁寶",
@@ -5046,7 +5047,7 @@
         "pct_10m": 0.0,
         "pct_30m": 0.726
       },
-      "age_minutes": 231.0
+      "age_minutes": 236.09
     },
     {
       "key": "ai_pool:5347:43:160.5",
@@ -5725,7 +5726,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:55:13.518219+00:00",
-      "updated_at": "2026-06-05T06:41:15.387172+00:00",
+      "updated_at": "2026-06-05T06:46:20.916372+00:00",
       "status": "open",
       "code": "2324",
       "name": "仁寶",
@@ -5746,7 +5747,7 @@
         "pct_10m": -0.481,
         "pct_30m": -0.12
       },
-      "age_minutes": 226.03
+      "age_minutes": 231.12
     },
     {
       "key": "ai_pool:3231:56:172.5",
@@ -6369,7 +6370,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:00:25.046063+00:00",
-      "updated_at": "2026-06-05T06:41:15.387182+00:00",
+      "updated_at": "2026-06-05T06:46:20.916382+00:00",
       "status": "open",
       "code": "2324",
       "name": "仁寶",
@@ -6390,7 +6391,7 @@
         "pct_10m": 0.605,
         "pct_30m": 0.0
       },
-      "age_minutes": 220.84
+      "age_minutes": 225.93
     },
     {
       "key": "ai_pool:2356:60:78.0",
@@ -7517,7 +7518,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:10:15.521918+00:00",
-      "updated_at": "2026-06-05T06:41:15.387196+00:00",
+      "updated_at": "2026-06-05T06:46:20.916393+00:00",
       "status": "open",
       "code": "2324",
       "name": "仁寶",
@@ -7538,7 +7539,7 @@
         "pct_10m": 0.361,
         "pct_30m": -0.602
       },
-      "age_minutes": 211.0
+      "age_minutes": 216.09
     },
     {
       "key": "ai_pool:3481:38:53.8",
@@ -8497,7 +8498,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:20:15.486086+00:00",
-      "updated_at": "2026-06-05T06:41:15.387207+00:00",
+      "updated_at": "2026-06-05T06:46:20.916403+00:00",
       "status": "open",
       "code": "2324",
       "name": "仁寶",
@@ -8518,7 +8519,7 @@
         "pct_10m": -0.839,
         "pct_30m": -0.719
       },
-      "age_minutes": 201.0
+      "age_minutes": 206.09
     },
     {
       "key": "ai_pool:3481:48:53.6",
@@ -8917,7 +8918,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:25:11.681303+00:00",
-      "updated_at": "2026-06-05T06:41:15.387217+00:00",
+      "updated_at": "2026-06-05T06:46:20.916411+00:00",
       "status": "open",
       "code": "2324",
       "name": "仁寶",
@@ -8938,7 +8939,7 @@
         "pct_10m": -0.603,
         "pct_30m": -0.241
       },
-      "age_minutes": 196.06
+      "age_minutes": 201.15
     },
     {
       "key": "ai_pool:2368:49:1325.0",
@@ -9533,7 +9534,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:30:18.909569+00:00",
-      "updated_at": "2026-06-05T06:41:15.387227+00:00",
+      "updated_at": "2026-06-05T06:46:20.916419+00:00",
       "status": "open",
       "code": "2324",
       "name": "仁寶",
@@ -9554,7 +9555,7 @@
         "pct_10m": -0.121,
         "pct_30m": 0.242
       },
-      "age_minutes": 190.94
+      "age_minutes": 196.03
     },
     {
       "key": "ai_pool:3037:52:943.0",
@@ -10765,7 +10766,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:40:15.555107+00:00",
-      "updated_at": "2026-06-05T06:41:15.387242+00:00",
+      "updated_at": "2026-06-05T06:46:20.916428+00:00",
       "status": "open",
       "code": "2324",
       "name": "仁寶",
@@ -10786,7 +10787,7 @@
         "pct_10m": 0.364,
         "pct_30m": -0.121
       },
-      "age_minutes": 181.0
+      "age_minutes": 186.09
     },
     {
       "key": "ai_pool:2609:49:54.2",
@@ -12305,7 +12306,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:50:15.098661+00:00",
-      "updated_at": "2026-06-05T06:41:15.387259+00:00",
+      "updated_at": "2026-06-05T06:46:20.916438+00:00",
       "status": "open",
       "code": "2324",
       "name": "仁寶",
@@ -12326,7 +12327,7 @@
         "pct_10m": -0.121,
         "pct_30m": -0.121
       },
-      "age_minutes": 171.0
+      "age_minutes": 176.1
     },
     {
       "key": "ai_pool:3037:41:933.0",
@@ -13761,7 +13762,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T04:00:24.527403+00:00",
-      "updated_at": "2026-06-05T06:41:15.387274+00:00",
+      "updated_at": "2026-06-05T06:46:20.916449+00:00",
       "status": "open",
       "code": "2324",
       "name": "仁寶",
@@ -13782,7 +13783,7 @@
         "pct_10m": -0.483,
         "pct_30m": 0.242
       },
-      "age_minutes": 160.85
+      "age_minutes": 165.94
     },
     {
       "key": "ai_pool:2356:44:77.0",
@@ -15805,7 +15806,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T04:02:19.489092+00:00",
-      "updated_at": "2026-06-05T06:41:15.387291+00:00",
+      "updated_at": "2026-06-05T06:46:20.916461+00:00",
       "status": "open",
       "code": "2324",
       "name": "仁寶",
@@ -15826,7 +15827,7 @@
         "pct_10m": 0.121,
         "pct_30m": 0.241
       },
-      "age_minutes": 158.93
+      "age_minutes": 164.02
     },
     {
       "key": "ai_pool:8046:24:852.0",
@@ -16225,7 +16226,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T04:05:12.435582+00:00",
-      "updated_at": "2026-06-05T06:41:15.387298+00:00",
+      "updated_at": "2026-06-05T06:46:20.916468+00:00",
       "status": "open",
       "code": "2324",
       "name": "仁寶",
@@ -16246,7 +16247,7 @@
         "pct_10m": 0.973,
         "pct_30m": 1.095
       },
-      "age_minutes": 156.05
+      "age_minutes": 161.14
     },
     {
       "key": "ai_pool:2356:42:76.7",
@@ -16533,7 +16534,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T04:05:29.743246+00:00",
-      "updated_at": "2026-06-05T06:41:15.387306+00:00",
+      "updated_at": "2026-06-05T06:46:20.916474+00:00",
       "status": "open",
       "code": "2324",
       "name": "仁寶",
@@ -16554,7 +16555,7 @@
         "pct_10m": 0.973,
         "pct_30m": 1.095
       },
-      "age_minutes": 155.76
+      "age_minutes": 160.85
     },
     {
       "key": "fund_flow:2382:34:388.5",
@@ -17289,7 +17290,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T04:10:15.470237+00:00",
-      "updated_at": "2026-06-05T06:41:15.387314+00:00",
+      "updated_at": "2026-06-05T06:46:20.916481+00:00",
       "status": "open",
       "code": "2324",
       "name": "仁寶",
@@ -17310,7 +17311,7 @@
         "pct_10m": 0.485,
         "pct_30m": 1.456
       },
-      "age_minutes": 151.0
+      "age_minutes": 156.09
     },
     {
       "key": "ai_pool:2368:40:1310.0",
@@ -17513,7 +17514,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T04:10:27.039863+00:00",
-      "updated_at": "2026-06-05T06:41:15.387320+00:00",
+      "updated_at": "2026-06-05T06:46:20.916486+00:00",
       "status": "open",
       "code": "2324",
       "name": "仁寶",
@@ -17534,7 +17535,7 @@
         "pct_10m": 0.485,
         "pct_30m": 1.456
       },
-      "age_minutes": 150.81
+      "age_minutes": 155.9
     },
     {
       "key": "fund_flow:2368:28:1310.0",
@@ -20985,7 +20986,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T04:45:14.480534+00:00",
-      "updated_at": "2026-06-05T06:41:15.387337+00:00",
+      "updated_at": "2026-06-05T06:46:20.916499+00:00",
       "status": "open",
       "code": "2324",
       "name": "仁寶",
@@ -21006,7 +21007,7 @@
         "pct_10m": 0.0,
         "pct_30m": 0.241
       },
-      "age_minutes": 116.02
+      "age_minutes": 121.11
     },
     {
       "key": "ai_pool:3037:49:934.0",
@@ -22945,7 +22946,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T05:05:12.264669+00:00",
-      "updated_at": "2026-06-05T06:41:15.387348+00:00",
+      "updated_at": "2026-06-05T06:46:20.916510+00:00",
       "status": "open",
       "code": "2324",
       "name": "仁寶",
@@ -22966,7 +22967,7 @@
         "pct_10m": 0.12,
         "pct_30m": -0.481
       },
-      "age_minutes": 96.05
+      "age_minutes": 101.14
     },
     {
       "key": "ai_pool:2356:51:76.6",
@@ -23449,7 +23450,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T05:10:15.761805+00:00",
-      "updated_at": "2026-06-05T06:41:15.387354+00:00",
+      "updated_at": "2026-06-05T06:46:20.916517+00:00",
       "status": "open",
       "code": "2324",
       "name": "仁寶",
@@ -23470,7 +23471,7 @@
         "pct_10m": 0.0,
         "pct_30m": -0.6
       },
-      "age_minutes": 90.99
+      "age_minutes": 96.09
     },
     {
       "key": "ai_pool:2379:50:637.0",
@@ -23925,7 +23926,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T05:15:14.723412+00:00",
-      "updated_at": "2026-06-05T06:41:15.387361+00:00",
+      "updated_at": "2026-06-05T06:46:20.916523+00:00",
       "status": "open",
       "code": "2324",
       "name": "仁寶",
@@ -23946,7 +23947,7 @@
         "pct_10m": 0.0,
         "pct_30m": -0.481
       },
-      "age_minutes": 86.01
+      "age_minutes": 91.1
     },
     {
       "key": "ai_pool:6215:41:119.0",
@@ -25717,7 +25718,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T05:30:21.697319+00:00",
-      "updated_at": "2026-06-05T06:41:15.387373+00:00",
+      "updated_at": "2026-06-05T06:46:20.916533+00:00",
       "status": "open",
       "code": "2324",
       "name": "仁寶",
@@ -25738,7 +25739,7 @@
         "pct_10m": 0.0,
         "pct_30m": 0.0
       },
-      "age_minutes": 70.89
+      "age_minutes": 75.99
     },
     {
       "key": "ai_pool:3037:49:933.0",
