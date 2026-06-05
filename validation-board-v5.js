@@ -37,10 +37,17 @@
     return (perf?.modules || []).find(x => x.module === name) || null;
   }
 
+  function bestWinRate(row) {
+    if (!row) return null;
+    return row.win_rate_30m ?? row.win_rate_10m ?? row.win_rate_5m ?? row.win_rate_latest;
+  }
+
   function metricText(row) {
     if (!row) return '-';
-    const win = row.win_rate_30m ?? row.win_rate_10m ?? row.win_rate_5m ?? row.win_rate_latest;
-    return win === null || win === undefined ? `${row.signals || 0}筆` : `${win}%`;
+    const win = bestWinRate(row);
+    const samples = row.tracked ?? row.signals ?? 0;
+    if (win === null || win === undefined) return `樣本 ${samples}筆`;
+    return `勝率 ${win}%｜樣本 ${samples}筆`;
   }
 
   function statusText(row) {
@@ -87,7 +94,7 @@
     renderModule(3, fund, MODULE_LABELS.fund_flow);
 
     setText('#test4Status', replay?.ok ? ((replay.total_signals || 0) > 0 ? '已追蹤' : '尚無Replay樣本') : 'API錯誤');
-    setText('#test4Metric', replay?.win_rate === null || replay?.win_rate === undefined ? `${replay?.total_signals || 0}筆` : `${replay.win_rate}%`);
+    setText('#test4Metric', replay?.win_rate === null || replay?.win_rate === undefined ? `樣本 ${replay?.total_signals || 0}筆` : `勝率 ${replay.win_rate}%｜樣本 ${replay?.total_signals || 0}筆`);
     renderList('#test4List', replay?.latest?.slice(-5).reverse() || [], (x, i) => `<span>${i + 1}. ${x.code}｜${x.score}分｜${x.level || '-'}｜最新 ${pct((x.results || {}).latest_pct)}</span>`, '尚無Replay紀錄');
 
     const perfOk = Boolean(perf?.ok);
