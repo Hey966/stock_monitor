@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-05T03:10:59.203078+00:00",
+  "updated_at": "2026-06-05T03:11:07.640518+00:00",
   "count": 275,
   "items": [
     {
@@ -188,7 +188,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:25:05.423065+00:00",
-      "updated_at": "2026-06-05T03:06:11.583837+00:00",
+      "updated_at": "2026-06-05T03:11:06.379736+00:00",
       "status": "open",
       "code": "2618",
       "name": "長榮航",
@@ -209,7 +209,7 @@
         "pct_10m": -0.132,
         "pct_30m": 0.0
       },
-      "age_minutes": 41.1
+      "age_minutes": 46.02
     },
     {
       "key": "ai_pool:2368:59:1330.0",
@@ -776,7 +776,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:25:12.529284+00:00",
-      "updated_at": "2026-06-05T03:06:11.583859+00:00",
+      "updated_at": "2026-06-05T03:11:06.379758+00:00",
       "status": "open",
       "code": "2618",
       "name": "長榮航",
@@ -797,7 +797,7 @@
         "pct_10m": 0.0,
         "pct_30m": 0.132
       },
-      "age_minutes": 40.98
+      "age_minutes": 45.9
     },
     {
       "key": "ai_pool:2356:60:78.1",
@@ -2092,7 +2092,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:30:19.670282+00:00",
-      "updated_at": "2026-06-05T03:06:11.583875+00:00",
+      "updated_at": "2026-06-05T03:11:06.379774+00:00",
       "status": "open",
       "code": "2618",
       "name": "長榮航",
@@ -2113,7 +2113,7 @@
         "pct_10m": 0.529,
         "pct_30m": 0.397
       },
-      "age_minutes": 35.87
+      "age_minutes": 40.78
     },
     {
       "key": "ai_pool:2609:48:53.9",
@@ -3378,7 +3378,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:40:15.726426+00:00",
-      "updated_at": "2026-06-05T03:06:11.583889+00:00",
+      "updated_at": "2026-06-05T03:11:06.379787+00:00",
       "status": "open",
       "code": "2618",
       "name": "長榮航",
@@ -3396,9 +3396,10 @@
         "max_gain": 0.0,
         "max_drawdown": -0.263,
         "pct_5m": 0.0,
-        "pct_10m": -0.263
+        "pct_10m": -0.263,
+        "pct_30m": -0.131
       },
-      "age_minutes": 25.93
+      "age_minutes": 30.84
     },
     {
       "key": "ai_pool:2356:69:77.9",
@@ -4729,7 +4730,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:50:15.682072+00:00",
-      "updated_at": "2026-06-05T03:06:11.583903+00:00",
+      "updated_at": "2026-06-05T03:11:06.379799+00:00",
       "status": "open",
       "code": "2618",
       "name": "長榮航",
@@ -4749,7 +4750,7 @@
         "pct_5m": 0.132,
         "pct_10m": 0.0
       },
-      "age_minutes": 15.93
+      "age_minutes": 20.84
     },
     {
       "key": "ai_pool:2368:67:1330.0",
@@ -5458,7 +5459,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:55:13.518191+00:00",
-      "updated_at": "2026-06-05T03:06:11.583915+00:00",
+      "updated_at": "2026-06-05T03:11:06.379809+00:00",
       "status": "open",
       "code": "2618",
       "name": "長榮航",
@@ -5478,7 +5479,7 @@
         "pct_5m": -0.132,
         "pct_10m": 0.0
       },
-      "age_minutes": 10.97
+      "age_minutes": 15.88
     },
     {
       "key": "ai_pool:2609:58:54.1",
@@ -7106,20 +7107,25 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:10:15.521900+00:00",
-      "updated_at": "2026-06-05T03:10:15.521901+00:00",
+      "updated_at": "2026-06-05T03:11:06.379822+00:00",
       "status": "open",
       "code": "2618",
       "name": "長榮航",
       "sector": "航運",
       "entry_price": 38.05,
-      "last_price": 38.05,
+      "last_price": 38.0,
       "best_price": 38.05,
-      "worst_price": 38.05,
+      "worst_price": 38.0,
       "score": 60,
       "change_rate_at_signal": 0.39,
       "volume_ratio_at_signal": 0.35,
       "alert": null,
-      "results": {}
+      "results": {
+        "latest_pct": -0.131,
+        "max_gain": 0.0,
+        "max_drawdown": -0.131
+      },
+      "age_minutes": 0.85
     },
     {
       "key": "ai_pool:2356:59:77.9",
