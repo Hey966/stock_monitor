@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-05T02:30:30.765831+00:00",
+  "updated_at": "2026-06-05T02:30:56.282016+00:00",
   "count": 92,
   "items": [
     {
@@ -73,25 +73,26 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:25:05.423012+00:00",
-      "updated_at": "2026-06-05T02:25:46.904008+00:00",
+      "updated_at": "2026-06-05T02:30:55.514294+00:00",
       "status": "open",
       "code": "2615",
       "name": "萬海",
       "sector": "航運",
       "entry_price": 86.1,
-      "last_price": 86.4,
-      "best_price": 86.4,
+      "last_price": 86.9,
+      "best_price": 86.9,
       "worst_price": 86.1,
       "score": 92,
       "change_rate_at_signal": 2.86,
       "volume_ratio_at_signal": 1.4,
       "alert": null,
       "results": {
-        "latest_pct": 0.348,
-        "max_gain": 0.348,
-        "max_drawdown": 0.0
+        "latest_pct": 0.929,
+        "max_gain": 0.929,
+        "max_drawdown": 0.0,
+        "pct_5m": 0.929
       },
-      "age_minutes": 0.69
+      "age_minutes": 5.83
     },
     {
       "key": "ai_pool:3661:84:4400.0",
@@ -573,25 +574,26 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:25:12.529228+00:00",
-      "updated_at": "2026-06-05T02:25:46.904024+00:00",
+      "updated_at": "2026-06-05T02:30:55.514322+00:00",
       "status": "open",
       "code": "2615",
       "name": "萬海",
       "sector": "航運",
       "entry_price": 86.4,
-      "last_price": 86.4,
-      "best_price": 86.4,
+      "last_price": 86.9,
+      "best_price": 86.9,
       "worst_price": 86.3,
       "score": 94,
       "change_rate_at_signal": 3.22,
       "volume_ratio_at_signal": 1.44,
       "alert": null,
       "results": {
-        "latest_pct": 0.0,
-        "max_gain": 0.0,
-        "max_drawdown": -0.116
+        "latest_pct": 0.579,
+        "max_gain": 0.579,
+        "max_drawdown": -0.116,
+        "pct_5m": 0.579
       },
-      "age_minutes": 0.57
+      "age_minutes": 5.72
     },
     {
       "key": "ai_pool:3443:78:4485.0",
