@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-05T06:32:58.641240+00:00",
+  "updated_at": "2026-06-05T06:33:03.395819+00:00",
   "count": 930,
   "items": [
     {
@@ -2618,8 +2618,8 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:30:30.008620+00:00",
-      "updated_at": "2026-06-05T06:27:45.840221+00:00",
-      "status": "open",
+      "updated_at": "2026-06-05T06:33:01.499495+00:00",
+      "status": "closed",
       "code": "2344",
       "name": "華邦電",
       "sector": "半導體",
@@ -2637,9 +2637,10 @@
         "max_drawdown": -1.22,
         "pct_5m": -0.305,
         "pct_10m": -1.22,
-        "pct_30m": -0.915
+        "pct_30m": -0.915,
+        "pct_close_proxy": -1.22
       },
-      "age_minutes": 237.26
+      "age_minutes": 242.52
     },
     {
       "key": "ai_pool:2615:95:86.8",
@@ -3262,7 +3263,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:35:23.555162+00:00",
-      "updated_at": "2026-06-05T06:27:45.840233+00:00",
+      "updated_at": "2026-06-05T06:33:01.499520+00:00",
       "status": "open",
       "code": "2344",
       "name": "華邦電",
@@ -3283,7 +3284,7 @@
         "pct_10m": -0.917,
         "pct_30m": -0.306
       },
-      "age_minutes": 232.37
+      "age_minutes": 237.63
     },
     {
       "key": "fund_flow:2376:24:366.5",
@@ -9338,7 +9339,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:25:22.049993+00:00",
-      "updated_at": "2026-06-05T06:27:45.840274+00:00",
+      "updated_at": "2026-06-05T06:33:01.499556+00:00",
       "status": "open",
       "code": "2344",
       "name": "華邦電",
@@ -9359,7 +9360,7 @@
         "pct_10m": 0.0,
         "pct_30m": 0.0
       },
-      "age_minutes": 182.4
+      "age_minutes": 187.66
     },
     {
       "key": "ai_pool:2615:90:85.9",
@@ -14350,7 +14351,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T04:00:36.205852+00:00",
-      "updated_at": "2026-06-05T06:27:45.840299+00:00",
+      "updated_at": "2026-06-05T06:33:01.499575+00:00",
       "status": "open",
       "code": "2344",
       "name": "華邦電",
@@ -14371,7 +14372,7 @@
         "pct_10m": 0.0,
         "pct_30m": 0.0
       },
-      "age_minutes": 147.16
+      "age_minutes": 152.42
     },
     {
       "key": "ai_pool:2379:70:646.0",
