@@ -1,7 +1,7 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-05T04:05:29.959877+00:00",
-  "count": 585,
+  "updated_at": "2026-06-05T04:05:33.738884+00:00",
+  "count": 594,
   "items": [
     {
       "key": "ai_pool:3443:95:4480.0",
@@ -1168,13 +1168,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:25:15.330072+00:00",
-      "updated_at": "2026-06-05T04:05:09.119166+00:00",
+      "updated_at": "2026-06-05T04:05:32.179056+00:00",
       "status": "open",
       "code": "2409",
       "name": "友達",
       "sector": "面板",
       "entry_price": 27.75,
-      "last_price": 27.3,
+      "last_price": 27.25,
       "best_price": 27.85,
       "worst_price": 27.1,
       "score": 35,
@@ -1182,14 +1182,14 @@
       "volume_ratio_at_signal": 0.47,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": -1.622,
+        "latest_pct": -1.802,
         "max_gain": 0.36,
         "max_drawdown": -2.342,
         "pct_5m": 0.18,
         "pct_10m": 0.36,
         "pct_30m": -0.36
       },
-      "age_minutes": 99.9
+      "age_minutes": 100.28
     },
     {
       "key": "fund_flow:2308:24:2350.0",
@@ -1280,7 +1280,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:25:15.330104+00:00",
-      "updated_at": "2026-06-05T04:05:05.773216+00:00",
+      "updated_at": "2026-06-05T04:05:29.682819+00:00",
       "status": "open",
       "code": "1609",
       "name": "大亞",
@@ -1301,7 +1301,7 @@
         "pct_10m": -0.125,
         "pct_30m": -0.752
       },
-      "age_minutes": 99.84
+      "age_minutes": 100.24
     },
     {
       "key": "fund_flow:2344:33:162.5",
@@ -1476,13 +1476,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:25:16.826557+00:00",
-      "updated_at": "2026-06-05T04:05:09.119182+00:00",
+      "updated_at": "2026-06-05T04:05:32.179071+00:00",
       "status": "open",
       "code": "2409",
       "name": "友達",
       "sector": "面板",
       "entry_price": 27.8,
-      "last_price": 27.3,
+      "last_price": 27.25,
       "best_price": 27.85,
       "worst_price": 27.1,
       "score": 34,
@@ -1490,14 +1490,14 @@
       "volume_ratio_at_signal": 0.47,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": -1.799,
+        "latest_pct": -1.978,
         "max_gain": 0.18,
         "max_drawdown": -2.518,
         "pct_5m": 0.0,
         "pct_10m": 0.18,
         "pct_30m": -0.54
       },
-      "age_minutes": 99.87
+      "age_minutes": 100.26
     },
     {
       "key": "fund_flow:3017:30:2630.0",
@@ -1644,13 +1644,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:25:21.622321+00:00",
-      "updated_at": "2026-06-05T04:05:09.119191+00:00",
+      "updated_at": "2026-06-05T04:05:32.179078+00:00",
       "status": "open",
       "code": "2409",
       "name": "友達",
       "sector": "面板",
       "entry_price": 27.8,
-      "last_price": 27.3,
+      "last_price": 27.25,
       "best_price": 27.85,
       "worst_price": 27.1,
       "score": 33,
@@ -1658,14 +1658,14 @@
       "volume_ratio_at_signal": 0.47,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": -1.799,
+        "latest_pct": -1.978,
         "max_gain": 0.18,
         "max_drawdown": -2.518,
         "pct_5m": 0.0,
         "pct_10m": 0.18,
         "pct_30m": -0.54
       },
-      "age_minutes": 99.79
+      "age_minutes": 100.18
     },
     {
       "key": "fund_flow:3017:29:2630.0",
@@ -2372,13 +2372,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:30:30.008543+00:00",
-      "updated_at": "2026-06-05T04:05:09.119202+00:00",
+      "updated_at": "2026-06-05T04:05:32.179086+00:00",
       "status": "open",
       "code": "2409",
       "name": "友達",
       "sector": "面板",
       "entry_price": 27.8,
-      "last_price": 27.3,
+      "last_price": 27.25,
       "best_price": 27.85,
       "worst_price": 27.1,
       "score": 32,
@@ -2386,14 +2386,14 @@
       "volume_ratio_at_signal": 0.47,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": -1.799,
+        "latest_pct": -1.978,
         "max_gain": 0.18,
         "max_drawdown": -2.518,
         "pct_5m": 0.18,
         "pct_10m": -0.719,
         "pct_30m": -0.54
       },
-      "age_minutes": 94.65
+      "age_minutes": 95.04
     },
     {
       "key": "fund_flow:2317:23:287.0",
@@ -2484,7 +2484,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:30:30.008589+00:00",
-      "updated_at": "2026-06-05T04:05:05.773245+00:00",
+      "updated_at": "2026-06-05T04:05:29.682838+00:00",
       "status": "open",
       "code": "1609",
       "name": "大亞",
@@ -2505,7 +2505,7 @@
         "pct_10m": -0.501,
         "pct_30m": -1.001
       },
-      "age_minutes": 94.6
+      "age_minutes": 94.99
     },
     {
       "key": "fund_flow:2376:29:366.0",
@@ -3100,13 +3100,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:35:23.555085+00:00",
-      "updated_at": "2026-06-05T04:05:09.119210+00:00",
+      "updated_at": "2026-06-05T04:05:32.179098+00:00",
       "status": "open",
       "code": "2409",
       "name": "友達",
       "sector": "面板",
       "entry_price": 27.9,
-      "last_price": 27.3,
+      "last_price": 27.25,
       "best_price": 27.9,
       "worst_price": 27.1,
       "score": 26,
@@ -3114,14 +3114,14 @@
       "volume_ratio_at_signal": 0.48,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": -2.151,
+        "latest_pct": -2.33,
         "max_gain": 0.0,
         "max_drawdown": -2.867,
         "pct_5m": -1.075,
         "pct_10m": -1.254,
         "pct_30m": -1.254
       },
-      "age_minutes": 89.76
+      "age_minutes": 90.14
     },
     {
       "key": "fund_flow:3017:30:2635.0",
@@ -3240,7 +3240,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:35:23.555202+00:00",
-      "updated_at": "2026-06-05T04:05:05.773261+00:00",
+      "updated_at": "2026-06-05T04:05:29.682848+00:00",
       "status": "open",
       "code": "1609",
       "name": "大亞",
@@ -3261,7 +3261,7 @@
         "pct_10m": -0.752,
         "pct_30m": -0.752
       },
-      "age_minutes": 89.7
+      "age_minutes": 90.1
     },
     {
       "key": "ai_pool:2615:95:86.7",
@@ -3856,13 +3856,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:40:27.116631+00:00",
-      "updated_at": "2026-06-05T04:05:09.119219+00:00",
+      "updated_at": "2026-06-05T04:05:32.179131+00:00",
       "status": "open",
       "code": "2409",
       "name": "友達",
       "sector": "面板",
       "entry_price": 27.65,
-      "last_price": 27.3,
+      "last_price": 27.25,
       "best_price": 27.7,
       "worst_price": 27.1,
       "score": 20,
@@ -3870,14 +3870,14 @@
       "volume_ratio_at_signal": 0.49,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": -1.266,
+        "latest_pct": -1.447,
         "max_gain": 0.181,
         "max_drawdown": -1.989,
         "pct_5m": -0.362,
         "pct_10m": 0.0,
         "pct_30m": 0.181
       },
-      "age_minutes": 84.7
+      "age_minutes": 85.08
     },
     {
       "key": "fund_flow:1605:26:39.15",
@@ -3912,7 +3912,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:40:27.116653+00:00",
-      "updated_at": "2026-06-05T04:05:05.773275+00:00",
+      "updated_at": "2026-06-05T04:05:29.682857+00:00",
       "status": "open",
       "code": "1609",
       "name": "大亞",
@@ -3933,7 +3933,7 @@
         "pct_10m": -0.377,
         "pct_30m": -0.377
       },
-      "age_minutes": 84.64
+      "age_minutes": 85.04
     },
     {
       "key": "fund_flow:1513:8:171.5",
@@ -4304,13 +4304,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:45:15.268732+00:00",
-      "updated_at": "2026-06-05T04:05:09.119225+00:00",
+      "updated_at": "2026-06-05T04:05:32.179146+00:00",
       "status": "open",
       "code": "2409",
       "name": "友達",
       "sector": "面板",
       "entry_price": 27.6,
-      "last_price": 27.3,
+      "last_price": 27.25,
       "best_price": 27.7,
       "worst_price": 27.1,
       "score": 32,
@@ -4318,14 +4318,14 @@
       "volume_ratio_at_signal": 0.49,
       "alert": null,
       "results": {
-        "latest_pct": -1.087,
+        "latest_pct": -1.268,
         "max_gain": 0.362,
         "max_drawdown": -1.812,
         "pct_5m": 0.181,
         "pct_10m": 0.181,
         "pct_30m": -0.181
       },
-      "age_minutes": 79.9
+      "age_minutes": 80.28
     },
     {
       "key": "ai_pool:3711:29:578.0",
@@ -4640,7 +4640,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:45:25.851623+00:00",
-      "updated_at": "2026-06-05T04:05:05.773288+00:00",
+      "updated_at": "2026-06-05T04:05:29.682866+00:00",
       "status": "open",
       "code": "1609",
       "name": "大亞",
@@ -4661,7 +4661,7 @@
         "pct_10m": 0.0,
         "pct_30m": 0.0
       },
-      "age_minutes": 79.67
+      "age_minutes": 80.06
     },
     {
       "key": "ai_pool:2615:100:86.2",
@@ -5340,13 +5340,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:50:26.323805+00:00",
-      "updated_at": "2026-06-05T04:05:09.119236+00:00",
+      "updated_at": "2026-06-05T04:05:32.179156+00:00",
       "status": "open",
       "code": "2409",
       "name": "友達",
       "sector": "面板",
       "entry_price": 27.65,
-      "last_price": 27.3,
+      "last_price": 27.25,
       "best_price": 27.7,
       "worst_price": 27.1,
       "score": 17,
@@ -5354,14 +5354,14 @@
       "volume_ratio_at_signal": 0.5,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": -1.266,
+        "latest_pct": -1.447,
         "max_gain": 0.181,
         "max_drawdown": -1.989,
         "pct_5m": 0.0,
         "pct_10m": 0.0,
         "pct_30m": 0.0
       },
-      "age_minutes": 74.71
+      "age_minutes": 75.1
     },
     {
       "key": "fund_flow:1513:32:170.5",
@@ -5396,7 +5396,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:50:26.323819+00:00",
-      "updated_at": "2026-06-05T04:05:05.773300+00:00",
+      "updated_at": "2026-06-05T04:05:29.682874+00:00",
       "status": "open",
       "code": "1609",
       "name": "大亞",
@@ -5417,7 +5417,7 @@
         "pct_10m": 0.0,
         "pct_30m": 0.126
       },
-      "age_minutes": 74.66
+      "age_minutes": 75.06
     },
     {
       "key": "fund_flow:1605:11:39.05",
@@ -5788,13 +5788,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:55:13.518294+00:00",
-      "updated_at": "2026-06-05T04:05:09.119243+00:00",
+      "updated_at": "2026-06-05T04:05:32.179161+00:00",
       "status": "open",
       "code": "2409",
       "name": "友達",
       "sector": "面板",
       "entry_price": 27.65,
-      "last_price": 27.3,
+      "last_price": 27.25,
       "best_price": 27.7,
       "worst_price": 27.1,
       "score": 32,
@@ -5802,14 +5802,14 @@
       "volume_ratio_at_signal": 0.5,
       "alert": null,
       "results": {
-        "latest_pct": -1.266,
+        "latest_pct": -1.447,
         "max_gain": 0.181,
         "max_drawdown": -1.989,
         "pct_5m": 0.0,
         "pct_10m": -0.362,
         "pct_30m": -0.181
       },
-      "age_minutes": 69.93
+      "age_minutes": 70.31
     },
     {
       "key": "ai_pool:2308:22:2345.0",
@@ -6040,7 +6040,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:55:23.828293+00:00",
-      "updated_at": "2026-06-05T04:05:05.773312+00:00",
+      "updated_at": "2026-06-05T04:05:29.682882+00:00",
       "status": "open",
       "code": "1609",
       "name": "大亞",
@@ -6061,7 +6061,7 @@
         "pct_10m": 0.126,
         "pct_30m": 0.126
       },
-      "age_minutes": 69.7
+      "age_minutes": 70.1
     },
     {
       "key": "ai_pool:2615:93:85.9",
@@ -6572,13 +6572,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:00:36.494182+00:00",
-      "updated_at": "2026-06-05T04:05:09.119251+00:00",
+      "updated_at": "2026-06-05T04:05:32.179168+00:00",
       "status": "open",
       "code": "2409",
       "name": "友達",
       "sector": "面板",
       "entry_price": 27.7,
-      "last_price": 27.3,
+      "last_price": 27.25,
       "best_price": 27.7,
       "worst_price": 27.1,
       "score": 30,
@@ -6586,14 +6586,14 @@
       "volume_ratio_at_signal": 0.5,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": -1.444,
+        "latest_pct": -1.625,
         "max_gain": 0.0,
         "max_drawdown": -2.166,
         "pct_5m": -0.542,
         "pct_10m": 0.0,
         "pct_30m": -1.264
       },
-      "age_minutes": 64.54
+      "age_minutes": 64.93
     },
     {
       "key": "fund_flow:3324:32:1110.0",
@@ -6684,7 +6684,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:00:36.494241+00:00",
-      "updated_at": "2026-06-05T04:05:05.773324+00:00",
+      "updated_at": "2026-06-05T04:05:29.682890+00:00",
       "status": "open",
       "code": "1609",
       "name": "大亞",
@@ -6705,7 +6705,7 @@
         "pct_10m": 0.126,
         "pct_30m": -0.253
       },
-      "age_minutes": 64.49
+      "age_minutes": 64.89
     },
     {
       "key": "ai_pool:2615:100:85.9",
@@ -7104,7 +7104,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:05:22.049903+00:00",
-      "updated_at": "2026-06-05T04:05:05.773334+00:00",
+      "updated_at": "2026-06-05T04:05:29.682897+00:00",
       "status": "open",
       "code": "1609",
       "name": "大亞",
@@ -7125,7 +7125,7 @@
         "pct_10m": 0.0,
         "pct_30m": -0.631
       },
-      "age_minutes": 59.73
+      "age_minutes": 60.13
     },
     {
       "key": "fund_flow:3324:23:1110.0",
@@ -7664,7 +7664,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:10:26.460642+00:00",
-      "updated_at": "2026-06-05T04:05:05.773344+00:00",
+      "updated_at": "2026-06-05T04:05:29.682905+00:00",
       "status": "open",
       "code": "1609",
       "name": "大亞",
@@ -7685,7 +7685,7 @@
         "pct_10m": 0.0,
         "pct_30m": -0.631
       },
-      "age_minutes": 54.66
+      "age_minutes": 55.05
     },
     {
       "key": "ai_pool:2615:78:85.7",
@@ -8140,7 +8140,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:15:25.729233+00:00",
-      "updated_at": "2026-06-05T04:05:05.773356+00:00",
+      "updated_at": "2026-06-05T04:05:29.682912+00:00",
       "status": "open",
       "code": "1609",
       "name": "大亞",
@@ -8161,7 +8161,7 @@
         "pct_10m": 0.126,
         "pct_30m": -0.759
       },
-      "age_minutes": 49.67
+      "age_minutes": 50.07
     },
     {
       "key": "ai_pool:2615:100:85.8",
@@ -8644,7 +8644,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:20:26.563306+00:00",
-      "updated_at": "2026-06-05T04:05:05.773366+00:00",
+      "updated_at": "2026-06-05T04:05:29.682919+00:00",
       "status": "open",
       "code": "1609",
       "name": "大亞",
@@ -8665,7 +8665,7 @@
         "pct_10m": -0.379,
         "pct_30m": -1.01
       },
-      "age_minutes": 44.65
+      "age_minutes": 45.05
     },
     {
       "key": "ai_pool:2379:86:656.0",
@@ -9232,7 +9232,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:25:22.049984+00:00",
-      "updated_at": "2026-06-05T04:05:05.773378+00:00",
+      "updated_at": "2026-06-05T04:05:29.682927+00:00",
       "status": "open",
       "code": "1609",
       "name": "大亞",
@@ -9253,7 +9253,7 @@
         "pct_10m": -0.506,
         "pct_30m": -1.138
       },
-      "age_minutes": 39.73
+      "age_minutes": 40.13
     },
     {
       "key": "fund_flow:2344:9:162.0",
@@ -9736,13 +9736,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:30:29.753373+00:00",
-      "updated_at": "2026-06-05T04:05:09.119268+00:00",
+      "updated_at": "2026-06-05T04:05:32.179179+00:00",
       "status": "open",
       "code": "2409",
       "name": "友達",
       "sector": "面板",
       "entry_price": 27.4,
-      "last_price": 27.3,
+      "last_price": 27.25,
       "best_price": 27.4,
       "worst_price": 27.1,
       "score": 33,
@@ -9750,14 +9750,14 @@
       "volume_ratio_at_signal": 0.53,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": -0.365,
+        "latest_pct": -0.547,
         "max_gain": 0.0,
         "max_drawdown": -1.095,
         "pct_5m": -0.365,
         "pct_10m": -0.73,
         "pct_30m": -0.547
       },
-      "age_minutes": 34.66
+      "age_minutes": 35.04
     },
     {
       "key": "fund_flow:2376:31:364.0",
@@ -9876,7 +9876,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:30:29.753461+00:00",
-      "updated_at": "2026-06-05T04:05:05.773390+00:00",
+      "updated_at": "2026-06-05T04:05:29.682934+00:00",
       "status": "open",
       "code": "1609",
       "name": "大亞",
@@ -9897,7 +9897,7 @@
         "pct_10m": -0.127,
         "pct_30m": -0.635
       },
-      "age_minutes": 34.6
+      "age_minutes": 35.0
     },
     {
       "key": "ai_pool:2379:68:651.0",
@@ -10476,13 +10476,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:35:22.792876+00:00",
-      "updated_at": "2026-06-05T04:05:09.119275+00:00",
+      "updated_at": "2026-06-05T04:05:32.179186+00:00",
       "status": "open",
       "code": "2409",
       "name": "友達",
       "sector": "面板",
       "entry_price": 27.35,
-      "last_price": 27.3,
+      "last_price": 27.25,
       "best_price": 27.35,
       "worst_price": 27.1,
       "score": 33,
@@ -10490,13 +10490,14 @@
       "volume_ratio_at_signal": 0.53,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": -0.183,
+        "latest_pct": -0.366,
         "max_gain": 0.0,
         "max_drawdown": -0.914,
         "pct_5m": -0.548,
-        "pct_10m": -0.183
+        "pct_10m": -0.183,
+        "pct_30m": -0.366
       },
-      "age_minutes": 29.77
+      "age_minutes": 30.16
     },
     {
       "key": "fund_flow:1513:22:169.0",
@@ -10530,7 +10531,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:35:22.792905+00:00",
-      "updated_at": "2026-06-05T04:05:05.773401+00:00",
+      "updated_at": "2026-06-05T04:05:29.682942+00:00",
       "status": "open",
       "code": "1609",
       "name": "大亞",
@@ -10548,9 +10549,10 @@
         "max_gain": 0.0,
         "max_drawdown": -0.761,
         "pct_5m": -0.127,
-        "pct_10m": -0.381
+        "pct_10m": -0.381,
+        "pct_30m": -0.635
       },
-      "age_minutes": 29.72
+      "age_minutes": 30.11
     },
     {
       "key": "ai_pool:3443:72:4370.0",
@@ -11178,7 +11180,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:40:30.328057+00:00",
-      "updated_at": "2026-06-05T04:05:05.773413+00:00",
+      "updated_at": "2026-06-05T04:05:29.682951+00:00",
       "status": "open",
       "code": "1609",
       "name": "大亞",
@@ -11198,7 +11200,7 @@
         "pct_5m": -0.254,
         "pct_10m": -0.381
       },
-      "age_minutes": 24.59
+      "age_minutes": 24.99
     },
     {
       "key": "fund_flow:3017:23:2590.0",
@@ -11286,13 +11288,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:40:30.328104+00:00",
-      "updated_at": "2026-06-05T04:05:09.119282+00:00",
+      "updated_at": "2026-06-05T04:05:32.179193+00:00",
       "status": "open",
       "code": "2409",
       "name": "友達",
       "sector": "面板",
       "entry_price": 27.2,
-      "last_price": 27.3,
+      "last_price": 27.25,
       "best_price": 27.3,
       "worst_price": 27.1,
       "score": 19,
@@ -11300,13 +11302,13 @@
       "volume_ratio_at_signal": 0.55,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": 0.368,
+        "latest_pct": 0.184,
         "max_gain": 0.368,
         "max_drawdown": -0.368,
         "pct_5m": 0.368,
         "pct_10m": -0.368
       },
-      "age_minutes": 24.65
+      "age_minutes": 25.03
     },
     {
       "key": "ai_pool:2615:90:86.0",
@@ -11907,7 +11909,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:45:24.850269+00:00",
-      "updated_at": "2026-06-05T04:05:05.773423+00:00",
+      "updated_at": "2026-06-05T04:05:29.682958+00:00",
       "status": "open",
       "code": "1609",
       "name": "大亞",
@@ -11927,7 +11929,7 @@
         "pct_5m": -0.254,
         "pct_10m": -0.509
       },
-      "age_minutes": 19.68
+      "age_minutes": 20.08
     },
     {
       "key": "fund_flow:2308:31:2315.0",
@@ -12663,7 +12665,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:50:26.956364+00:00",
-      "updated_at": "2026-06-05T04:05:05.773435+00:00",
+      "updated_at": "2026-06-05T04:05:29.682966+00:00",
       "status": "open",
       "code": "1609",
       "name": "大亞",
@@ -12683,7 +12685,7 @@
         "pct_5m": -0.255,
         "pct_10m": -0.128
       },
-      "age_minutes": 14.65
+      "age_minutes": 15.05
     },
     {
       "key": "ai_pool:2615:77:85.5",
@@ -13238,7 +13240,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:55:23.123565+00:00",
-      "updated_at": "2026-06-05T04:05:05.773445+00:00",
+      "updated_at": "2026-06-05T04:05:29.682973+00:00",
       "status": "open",
       "code": "1609",
       "name": "大亞",
@@ -13255,9 +13257,10 @@
         "latest_pct": 0.128,
         "max_gain": 0.128,
         "max_drawdown": 0.0,
-        "pct_5m": 0.128
+        "pct_5m": 0.128,
+        "pct_10m": 0.128
       },
-      "age_minutes": 9.71
+      "age_minutes": 10.11
     },
     {
       "key": "fund_flow:2454:29:4285.0",
@@ -13747,13 +13750,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T04:00:24.527541+00:00",
-      "updated_at": "2026-06-05T04:05:09.119294+00:00",
+      "updated_at": "2026-06-05T04:05:32.179204+00:00",
       "status": "open",
       "code": "2409",
       "name": "友達",
       "sector": "面板",
       "entry_price": 27.25,
-      "last_price": 27.3,
+      "last_price": 27.25,
       "best_price": 27.3,
       "worst_price": 27.25,
       "score": 12,
@@ -13761,11 +13764,12 @@
       "volume_ratio_at_signal": 0.57,
       "alert": null,
       "results": {
-        "latest_pct": 0.183,
+        "latest_pct": 0.0,
         "max_gain": 0.183,
-        "max_drawdown": 0.0
+        "max_drawdown": 0.0,
+        "pct_5m": 0.0
       },
-      "age_minutes": 4.74
+      "age_minutes": 5.13
     },
     {
       "key": "fund_flow:2379:85:647.0",
@@ -14022,7 +14026,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T04:00:36.205845+00:00",
-      "updated_at": "2026-06-05T04:05:05.773457+00:00",
+      "updated_at": "2026-06-05T04:05:29.682981+00:00",
       "status": "open",
       "code": "1609",
       "name": "大亞",
@@ -14040,7 +14044,7 @@
         "max_gain": 0.0,
         "max_drawdown": 0.0
       },
-      "age_minutes": 4.49
+      "age_minutes": 4.89
     },
     {
       "key": "fund_flow:2344:10:162.0",
@@ -15197,7 +15201,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T04:01:59.401329+00:00",
-      "updated_at": "2026-06-05T04:05:05.773470+00:00",
+      "updated_at": "2026-06-05T04:05:29.682989+00:00",
       "status": "open",
       "code": "1609",
       "name": "大亞",
@@ -15215,20 +15219,20 @@
         "max_gain": 0.0,
         "max_drawdown": 0.0
       },
-      "age_minutes": 3.11
+      "age_minutes": 3.5
     },
     {
       "key": "fund_flow:2409:22:27.3",
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T04:01:59.401341+00:00",
-      "updated_at": "2026-06-05T04:05:09.119305+00:00",
+      "updated_at": "2026-06-05T04:05:32.179212+00:00",
       "status": "open",
       "code": "2409",
       "name": "友達",
       "sector": "面板",
       "entry_price": 27.3,
-      "last_price": 27.3,
+      "last_price": 27.25,
       "best_price": 27.3,
       "worst_price": 27.25,
       "score": 22,
@@ -15236,11 +15240,11 @@
       "volume_ratio_at_signal": 0.57,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": 0.0,
+        "latest_pct": -0.183,
         "max_gain": 0.0,
         "max_drawdown": -0.183
       },
-      "age_minutes": 3.16
+      "age_minutes": 3.55
     },
     {
       "key": "ai_pool:2356:63:77.1",
@@ -15572,13 +15576,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T04:02:30.914002+00:00",
-      "updated_at": "2026-06-05T04:05:09.119312+00:00",
+      "updated_at": "2026-06-05T04:05:32.179217+00:00",
       "status": "open",
       "code": "2409",
       "name": "友達",
       "sector": "面板",
       "entry_price": 27.25,
-      "last_price": 27.3,
+      "last_price": 27.25,
       "best_price": 27.3,
       "worst_price": 27.25,
       "score": 16,
@@ -15586,11 +15590,11 @@
       "volume_ratio_at_signal": 0.57,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": 0.183,
+        "latest_pct": 0.0,
         "max_gain": 0.183,
         "max_drawdown": 0.0
       },
-      "age_minutes": 2.64
+      "age_minutes": 3.02
     },
     {
       "key": "ai_pool:2379:96:647.0",
@@ -15865,6 +15869,186 @@
       "change_rate_at_signal": -2.3,
       "volume_ratio_at_signal": 0.96,
       "alert": null,
+      "results": {}
+    },
+    {
+      "key": "fund_flow:2615:95:86.0",
+      "module": "fund_flow",
+      "reason": "api_fund_flow",
+      "created_at": "2026-06-05T04:05:29.743208+00:00",
+      "updated_at": "2026-06-05T04:05:29.743226+00:00",
+      "status": "open",
+      "code": "2615",
+      "name": "萬海",
+      "sector": "航運",
+      "entry_price": 86.0,
+      "last_price": 86.0,
+      "best_price": 86.0,
+      "worst_price": 86.0,
+      "score": 95,
+      "change_rate_at_signal": 2.74,
+      "volume_ratio_at_signal": 2.27,
+      "alert": "大戶進場警報",
+      "results": {}
+    },
+    {
+      "key": "fund_flow:2324:31:41.1",
+      "module": "fund_flow",
+      "reason": "api_fund_flow",
+      "created_at": "2026-06-05T04:05:29.743246+00:00",
+      "updated_at": "2026-06-05T04:05:29.743249+00:00",
+      "status": "open",
+      "code": "2324",
+      "name": "仁寶",
+      "sector": "電腦週邊",
+      "entry_price": 41.1,
+      "last_price": 41.1,
+      "best_price": 41.1,
+      "worst_price": 41.1,
+      "score": 31,
+      "change_rate_at_signal": -2.95,
+      "volume_ratio_at_signal": 0.61,
+      "alert": "資金退潮警報",
+      "results": {}
+    },
+    {
+      "key": "fund_flow:2382:34:388.5",
+      "module": "fund_flow",
+      "reason": "api_fund_flow",
+      "created_at": "2026-06-05T04:05:29.743260+00:00",
+      "updated_at": "2026-06-05T04:05:29.743263+00:00",
+      "status": "open",
+      "code": "2382",
+      "name": "廣達",
+      "sector": "AI伺服器",
+      "entry_price": 388.5,
+      "last_price": 388.5,
+      "best_price": 388.5,
+      "worst_price": 388.5,
+      "score": 34,
+      "change_rate_at_signal": -3.83,
+      "volume_ratio_at_signal": 0.67,
+      "alert": "資金退潮警報",
+      "results": {}
+    },
+    {
+      "key": "fund_flow:2317:25:284.5",
+      "module": "fund_flow",
+      "reason": "api_fund_flow",
+      "created_at": "2026-06-05T04:05:29.743272+00:00",
+      "updated_at": "2026-06-05T04:05:29.743274+00:00",
+      "status": "open",
+      "code": "2317",
+      "name": "鴻海",
+      "sector": "AI伺服器",
+      "entry_price": 284.5,
+      "last_price": 284.5,
+      "best_price": 284.5,
+      "worst_price": 284.5,
+      "score": 25,
+      "change_rate_at_signal": -2.9,
+      "volume_ratio_at_signal": 0.66,
+      "alert": "資金退潮警報",
+      "results": {}
+    },
+    {
+      "key": "fund_flow:2308:34:2305.0",
+      "module": "fund_flow",
+      "reason": "api_fund_flow",
+      "created_at": "2026-06-05T04:05:29.743280+00:00",
+      "updated_at": "2026-06-05T04:05:29.743282+00:00",
+      "status": "open",
+      "code": "2308",
+      "name": "台達電",
+      "sector": "重電",
+      "entry_price": 2305.0,
+      "last_price": 2305.0,
+      "best_price": 2305.0,
+      "worst_price": 2305.0,
+      "score": 34,
+      "change_rate_at_signal": -4.94,
+      "volume_ratio_at_signal": 1.04,
+      "alert": "資金退潮警報",
+      "results": {}
+    },
+    {
+      "key": "fund_flow:3661:32:4240.0",
+      "module": "fund_flow",
+      "reason": "api_fund_flow",
+      "created_at": "2026-06-05T04:05:29.743287+00:00",
+      "updated_at": "2026-06-05T04:05:29.743289+00:00",
+      "status": "open",
+      "code": "3661",
+      "name": "世芯-KY",
+      "sector": "半導體",
+      "entry_price": 4240.0,
+      "last_price": 4240.0,
+      "best_price": 4240.0,
+      "worst_price": 4240.0,
+      "score": 32,
+      "change_rate_at_signal": -2.3,
+      "volume_ratio_at_signal": 0.96,
+      "alert": "資金退潮警報",
+      "results": {}
+    },
+    {
+      "key": "fund_flow:3324:20:1095.0",
+      "module": "fund_flow",
+      "reason": "api_fund_flow",
+      "created_at": "2026-06-05T04:05:29.743301+00:00",
+      "updated_at": "2026-06-05T04:05:29.743303+00:00",
+      "status": "open",
+      "code": "3324",
+      "name": "雙鴻",
+      "sector": "AI散熱",
+      "entry_price": 1095.0,
+      "last_price": 1095.0,
+      "best_price": 1095.0,
+      "worst_price": 1095.0,
+      "score": 20,
+      "change_rate_at_signal": -7.59,
+      "volume_ratio_at_signal": 0.53,
+      "alert": "資金退潮警報",
+      "results": {}
+    },
+    {
+      "key": "fund_flow:1513:20:169.5",
+      "module": "fund_flow",
+      "reason": "api_fund_flow",
+      "created_at": "2026-06-05T04:05:29.743309+00:00",
+      "updated_at": "2026-06-05T04:05:29.743311+00:00",
+      "status": "open",
+      "code": "1513",
+      "name": "中興電",
+      "sector": "重電",
+      "entry_price": 169.5,
+      "last_price": 169.5,
+      "best_price": 169.5,
+      "worst_price": 169.5,
+      "score": 20,
+      "change_rate_at_signal": -9.35,
+      "volume_ratio_at_signal": 0.44,
+      "alert": "資金退潮警報",
+      "results": {}
+    },
+    {
+      "key": "fund_flow:1605:20:39.15",
+      "module": "fund_flow",
+      "reason": "api_fund_flow",
+      "created_at": "2026-06-05T04:05:29.743322+00:00",
+      "updated_at": "2026-06-05T04:05:29.743324+00:00",
+      "status": "open",
+      "code": "1605",
+      "name": "華新",
+      "sector": "電線電纜",
+      "entry_price": 39.15,
+      "last_price": 39.15,
+      "best_price": 39.15,
+      "worst_price": 39.15,
+      "score": 20,
+      "change_rate_at_signal": -5.88,
+      "volume_ratio_at_signal": 0.51,
+      "alert": "資金退潮警報",
       "results": {}
     }
   ]
