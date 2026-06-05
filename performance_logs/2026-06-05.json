@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-05T03:12:06.050031+00:00",
+  "updated_at": "2026-06-05T03:12:09.172904+00:00",
   "count": 275,
   "items": [
     {
@@ -412,7 +412,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:25:05.423181+00:00",
-      "updated_at": "2026-06-05T03:06:49.921457+00:00",
+      "updated_at": "2026-06-05T03:12:07.967806+00:00",
       "status": "open",
       "code": "3711",
       "name": "日月光投控",
@@ -433,7 +433,7 @@
         "pct_10m": 0.172,
         "pct_30m": -0.344
       },
-      "age_minutes": 41.74
+      "age_minutes": 47.04
     },
     {
       "key": "ai_pool:3037:46:949.0",
@@ -832,7 +832,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:25:12.529302+00:00",
-      "updated_at": "2026-06-05T03:06:49.921475+00:00",
+      "updated_at": "2026-06-05T03:12:07.967821+00:00",
       "status": "open",
       "code": "3711",
       "name": "日月光投控",
@@ -853,7 +853,7 @@
         "pct_10m": 0.0,
         "pct_30m": -0.515
       },
-      "age_minutes": 41.62
+      "age_minutes": 46.92
     },
     {
       "key": "ai_pool:2324:52:41.2",
@@ -2036,7 +2036,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:30:19.670264+00:00",
-      "updated_at": "2026-06-05T03:06:49.921490+00:00",
+      "updated_at": "2026-06-05T03:12:07.967831+00:00",
       "status": "open",
       "code": "3711",
       "name": "日月光投控",
@@ -2057,7 +2057,7 @@
         "pct_10m": -0.686,
         "pct_30m": -1.029
       },
-      "age_minutes": 36.5
+      "age_minutes": 41.8
     },
     {
       "key": "ai_pool:5347:54:162.0",
@@ -2708,7 +2708,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:35:12.437129+00:00",
-      "updated_at": "2026-06-05T03:06:49.921500+00:00",
+      "updated_at": "2026-06-05T03:12:07.967838+00:00",
       "status": "open",
       "code": "3711",
       "name": "日月光投控",
@@ -2729,7 +2729,7 @@
         "pct_10m": -0.858,
         "pct_30m": -1.029
       },
-      "age_minutes": 31.62
+      "age_minutes": 36.93
     },
     {
       "key": "ai_pool:3661:65:4390.0",
@@ -3800,7 +3800,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:40:27.116611+00:00",
-      "updated_at": "2026-06-05T03:06:49.921509+00:00",
+      "updated_at": "2026-06-05T03:12:07.967847+00:00",
       "status": "open",
       "code": "3711",
       "name": "日月光投控",
@@ -3818,9 +3818,10 @@
         "max_gain": 0.0,
         "max_drawdown": -0.517,
         "pct_5m": -0.345,
-        "pct_10m": -0.345
+        "pct_10m": -0.345,
+        "pct_30m": -0.517
       },
-      "age_minutes": 26.38
+      "age_minutes": 31.68
     },
     {
       "key": "fund_flow:2308:35:2345.0",
@@ -4315,7 +4316,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:45:15.268741+00:00",
-      "updated_at": "2026-06-05T03:06:49.921516+00:00",
+      "updated_at": "2026-06-05T03:12:07.967853+00:00",
       "status": "open",
       "code": "3711",
       "name": "日月光投控",
@@ -4335,7 +4336,7 @@
         "pct_5m": 0.0,
         "pct_10m": 0.173
       },
-      "age_minutes": 21.58
+      "age_minutes": 26.88
     },
     {
       "key": "ai_pool:2308:25:2350.0",
@@ -4369,7 +4370,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:45:25.851534+00:00",
-      "updated_at": "2026-06-05T03:06:49.921522+00:00",
+      "updated_at": "2026-06-05T03:12:07.967858+00:00",
       "status": "open",
       "code": "3711",
       "name": "日月光投控",
@@ -4389,7 +4390,7 @@
         "pct_5m": -0.173,
         "pct_10m": 0.0
       },
-      "age_minutes": 21.4
+      "age_minutes": 26.7
     },
     {
       "key": "fund_flow:2308:32:2350.0",
@@ -5233,7 +5234,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:50:26.323790+00:00",
-      "updated_at": "2026-06-05T03:06:49.921531+00:00",
+      "updated_at": "2026-06-05T03:12:07.967865+00:00",
       "status": "open",
       "code": "3711",
       "name": "日月光投控",
@@ -5253,7 +5254,7 @@
         "pct_5m": 0.173,
         "pct_10m": -0.173
       },
-      "age_minutes": 16.39
+      "age_minutes": 21.69
     },
     {
       "key": "fund_flow:2308:22:2345.0",
@@ -5881,7 +5882,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:55:23.828254+00:00",
-      "updated_at": "2026-06-05T03:06:49.921550+00:00",
+      "updated_at": "2026-06-05T03:12:07.967871+00:00",
       "status": "open",
       "code": "3711",
       "name": "日月光投控",
@@ -5901,7 +5902,7 @@
         "pct_5m": -0.345,
         "pct_10m": -0.345
       },
-      "age_minutes": 11.43
+      "age_minutes": 16.74
     },
     {
       "key": "fund_flow:3017:29:2620.0",
@@ -6232,7 +6233,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:00:25.047663+00:00",
-      "updated_at": "2026-06-05T03:06:49.921558+00:00",
+      "updated_at": "2026-06-05T03:12:07.967878+00:00",
       "status": "open",
       "code": "3711",
       "name": "日月光投控",
@@ -6249,9 +6250,10 @@
         "latest_pct": -0.173,
         "max_gain": 0.0,
         "max_drawdown": -0.173,
-        "pct_5m": -0.173
+        "pct_5m": -0.173,
+        "pct_10m": -0.173
       },
-      "age_minutes": 6.41
+      "age_minutes": 11.72
     },
     {
       "key": "ai_pool:2382:33:391.0",
@@ -7368,7 +7370,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:10:26.460575+00:00",
-      "updated_at": "2026-06-05T03:10:26.460578+00:00",
+      "updated_at": "2026-06-05T03:12:07.967885+00:00",
       "status": "open",
       "code": "3711",
       "name": "日月光投控",
@@ -7381,7 +7383,12 @@
       "change_rate_at_signal": -2.69,
       "volume_ratio_at_signal": 0.63,
       "alert": "資金退潮警報",
-      "results": {}
+      "results": {
+        "latest_pct": 0.0,
+        "max_gain": 0.0,
+        "max_drawdown": 0.0
+      },
+      "age_minutes": 1.69
     },
     {
       "key": "fund_flow:2382:35:392.0",
