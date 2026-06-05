@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-05T06:31:45.040418+00:00",
+  "updated_at": "2026-06-05T06:31:48.738821+00:00",
   "count": 930,
   "items": [
     {
@@ -2007,8 +2007,8 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:30:19.670236+00:00",
-      "updated_at": "2026-06-05T06:26:33.375596+00:00",
-      "status": "open",
+      "updated_at": "2026-06-05T06:31:47.664945+00:00",
+      "status": "closed",
       "code": "2454",
       "name": "聯發科",
       "sector": "半導體",
@@ -2026,9 +2026,10 @@
         "max_drawdown": -2.847,
         "pct_5m": 0.0,
         "pct_10m": -0.911,
-        "pct_30m": -0.114
+        "pct_30m": -0.114,
+        "pct_close_proxy": -2.05
       },
-      "age_minutes": 236.23
+      "age_minutes": 241.47
     },
     {
       "key": "ai_pool:2324:60:41.25",
@@ -2826,7 +2827,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:35:12.437150+00:00",
-      "updated_at": "2026-06-05T06:26:33.375607+00:00",
+      "updated_at": "2026-06-05T06:31:47.664968+00:00",
       "status": "open",
       "code": "2454",
       "name": "聯發科",
@@ -2847,7 +2848,7 @@
         "pct_10m": -0.796,
         "pct_30m": -0.91
       },
-      "age_minutes": 231.35
+      "age_minutes": 236.59
     },
     {
       "key": "ai_pool:2609:62:54.3",
@@ -3134,7 +3135,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:35:23.555069+00:00",
-      "updated_at": "2026-06-05T06:26:33.375640+00:00",
+      "updated_at": "2026-06-05T06:31:47.664976+00:00",
       "status": "open",
       "code": "2454",
       "name": "聯發科",
@@ -3155,7 +3156,7 @@
         "pct_10m": -0.683,
         "pct_30m": -0.797
       },
-      "age_minutes": 231.16
+      "age_minutes": 236.4
     },
     {
       "key": "fund_flow:2409:26:27.9",
@@ -3638,7 +3639,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:40:15.726522+00:00",
-      "updated_at": "2026-06-05T06:26:33.375656+00:00",
+      "updated_at": "2026-06-05T06:31:47.664986+00:00",
       "status": "open",
       "code": "2454",
       "name": "聯發科",
@@ -3659,7 +3660,7 @@
         "pct_10m": -0.229,
         "pct_30m": 0.115
       },
-      "age_minutes": 226.29
+      "age_minutes": 231.53
     },
     {
       "key": "ai_pool:2609:41:54.2",
@@ -3834,7 +3835,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:40:27.116601+00:00",
-      "updated_at": "2026-06-05T06:26:33.375667+00:00",
+      "updated_at": "2026-06-05T06:31:47.664993+00:00",
       "status": "open",
       "code": "2454",
       "name": "聯發科",
@@ -3855,7 +3856,7 @@
         "pct_10m": -0.115,
         "pct_30m": 0.23
       },
-      "age_minutes": 226.1
+      "age_minutes": 231.34
     },
     {
       "key": "fund_flow:3711:26:580.0",
@@ -4198,7 +4199,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:45:15.268643+00:00",
-      "updated_at": "2026-06-05T06:26:33.375677+00:00",
+      "updated_at": "2026-06-05T06:31:47.665000+00:00",
       "status": "open",
       "code": "2454",
       "name": "聯發科",
@@ -4219,7 +4220,7 @@
         "pct_10m": -0.344,
         "pct_30m": -0.229
       },
-      "age_minutes": 221.3
+      "age_minutes": 226.54
     },
     {
       "key": "ai_pool:2324:57:41.6",
@@ -5010,7 +5011,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:50:15.682136+00:00",
-      "updated_at": "2026-06-05T06:26:33.375687+00:00",
+      "updated_at": "2026-06-05T06:31:47.665009+00:00",
       "status": "open",
       "code": "2454",
       "name": "聯發科",
@@ -5031,7 +5032,7 @@
         "pct_10m": 0.689,
         "pct_30m": -0.344
       },
-      "age_minutes": 216.29
+      "age_minutes": 221.53
     },
     {
       "key": "ai_pool:3481:39:54.0",
@@ -5766,7 +5767,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:55:13.518258+00:00",
-      "updated_at": "2026-06-05T06:26:33.375696+00:00",
+      "updated_at": "2026-06-05T06:31:47.665017+00:00",
       "status": "open",
       "code": "2454",
       "name": "聯發科",
@@ -5787,7 +5788,7 @@
         "pct_10m": 0.115,
         "pct_30m": -0.46
       },
-      "age_minutes": 211.33
+      "age_minutes": 216.57
     },
     {
       "key": "ai_pool:3037:45:950.0",
@@ -6270,7 +6271,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:00:25.046052+00:00",
-      "updated_at": "2026-06-05T06:26:33.375704+00:00",
+      "updated_at": "2026-06-05T06:31:47.665025+00:00",
       "status": "open",
       "code": "2454",
       "name": "聯發科",
@@ -6291,7 +6292,7 @@
         "pct_10m": -0.114,
         "pct_30m": -1.487
       },
-      "age_minutes": 206.14
+      "age_minutes": 211.38
     },
     {
       "key": "ai_pool:2324:62:41.35",
@@ -6886,7 +6887,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:05:11.974193+00:00",
-      "updated_at": "2026-06-05T06:26:33.375713+00:00",
+      "updated_at": "2026-06-05T06:31:47.665039+00:00",
       "status": "open",
       "code": "2454",
       "name": "聯發科",
@@ -6907,7 +6908,7 @@
         "pct_10m": -0.343,
         "pct_30m": -1.259
       },
-      "age_minutes": 201.36
+      "age_minutes": 206.59
     },
     {
       "key": "ai_pool:3443:58:4400.0",
@@ -7278,7 +7279,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:10:15.521860+00:00",
-      "updated_at": "2026-06-05T06:26:33.375719+00:00",
+      "updated_at": "2026-06-05T06:31:47.665052+00:00",
       "status": "open",
       "code": "2454",
       "name": "聯發科",
@@ -7299,7 +7300,7 @@
         "pct_10m": -0.573,
         "pct_30m": -1.375
       },
-      "age_minutes": 196.3
+      "age_minutes": 201.54
     },
     {
       "key": "ai_pool:3661:67:4335.0",
@@ -7950,7 +7951,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:15:14.980041+00:00",
-      "updated_at": "2026-06-05T06:26:33.375727+00:00",
+      "updated_at": "2026-06-05T06:31:47.665064+00:00",
       "status": "open",
       "code": "2454",
       "name": "聯發科",
@@ -7971,7 +7972,7 @@
         "pct_10m": -0.574,
         "pct_30m": -1.148
       },
-      "age_minutes": 191.31
+      "age_minutes": 196.54
     },
     {
       "key": "ai_pool:8046:49:865.0",
@@ -8510,7 +8511,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:20:15.486103+00:00",
-      "updated_at": "2026-06-05T06:26:33.375736+00:00",
+      "updated_at": "2026-06-05T06:31:47.665072+00:00",
       "status": "open",
       "code": "2454",
       "name": "聯發科",
@@ -8531,7 +8532,7 @@
         "pct_10m": -0.692,
         "pct_30m": -1.269
       },
-      "age_minutes": 186.3
+      "age_minutes": 191.54
     },
     {
       "key": "ai_pool:2382:34:392.0",
@@ -9014,7 +9015,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:25:11.681373+00:00",
-      "updated_at": "2026-06-05T06:26:33.375743+00:00",
+      "updated_at": "2026-06-05T06:31:47.665080+00:00",
       "status": "open",
       "code": "2454",
       "name": "聯發科",
@@ -9035,7 +9036,7 @@
         "pct_10m": -0.346,
         "pct_30m": -0.924
       },
-      "age_minutes": 181.36
+      "age_minutes": 186.6
     },
     {
       "key": "ai_pool:3481:38:53.5",
@@ -9574,7 +9575,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:30:18.909623+00:00",
-      "updated_at": "2026-06-05T06:26:33.375751+00:00",
+      "updated_at": "2026-06-05T06:31:47.665089+00:00",
       "status": "open",
       "code": "2454",
       "name": "聯發科",
@@ -9595,7 +9596,7 @@
         "pct_10m": 0.0,
         "pct_30m": -0.581
       },
-      "age_minutes": 176.24
+      "age_minutes": 181.48
     },
     {
       "key": "ai_pool:6215:40:118.5",
@@ -10106,7 +10107,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:35:12.135132+00:00",
-      "updated_at": "2026-06-05T06:26:33.375759+00:00",
+      "updated_at": "2026-06-05T06:31:47.665097+00:00",
       "status": "open",
       "code": "2454",
       "name": "聯發科",
@@ -10127,7 +10128,7 @@
         "pct_10m": -0.347,
         "pct_30m": -1.042
       },
-      "age_minutes": 171.35
+      "age_minutes": 176.59
     },
     {
       "key": "ai_pool:3037:33:941.0",
@@ -10862,7 +10863,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:40:15.555211+00:00",
-      "updated_at": "2026-06-05T06:26:33.375767+00:00",
+      "updated_at": "2026-06-05T06:31:47.665105+00:00",
       "status": "open",
       "code": "2454",
       "name": "聯發科",
@@ -10883,7 +10884,7 @@
         "pct_10m": -0.581,
         "pct_30m": -0.813
       },
-      "age_minutes": 166.3
+      "age_minutes": 171.54
     },
     {
       "key": "ai_pool:2317:27:284.5",
@@ -11086,7 +11087,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:40:30.327986+00:00",
-      "updated_at": "2026-06-05T06:26:33.375774+00:00",
+      "updated_at": "2026-06-05T06:31:47.665113+00:00",
       "status": "open",
       "code": "2454",
       "name": "聯發科",
@@ -11107,7 +11108,7 @@
         "pct_10m": -0.581,
         "pct_30m": -0.813
       },
-      "age_minutes": 166.05
+      "age_minutes": 171.29
     },
     {
       "key": "fund_flow:2317:33:285.0",
@@ -12542,7 +12543,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:50:15.098804+00:00",
-      "updated_at": "2026-06-05T06:26:33.375786+00:00",
+      "updated_at": "2026-06-05T06:31:47.665134+00:00",
       "status": "open",
       "code": "2454",
       "name": "聯發科",
@@ -12563,7 +12564,7 @@
         "pct_10m": 0.0,
         "pct_30m": -0.234
       },
-      "age_minutes": 156.3
+      "age_minutes": 161.54
     },
     {
       "key": "fund_flow:2615:90:85.6",
@@ -12738,7 +12739,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:50:26.956322+00:00",
-      "updated_at": "2026-06-05T06:26:33.375792+00:00",
+      "updated_at": "2026-06-05T06:31:47.665145+00:00",
       "status": "open",
       "code": "2454",
       "name": "聯發科",
@@ -12759,7 +12760,7 @@
         "pct_10m": 0.0,
         "pct_30m": -0.234
       },
-      "age_minutes": 156.11
+      "age_minutes": 161.35
     },
     {
       "key": "fund_flow:3324:17:1090.0",
@@ -13466,7 +13467,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:55:23.123574+00:00",
-      "updated_at": "2026-06-05T06:26:33.375805+00:00",
+      "updated_at": "2026-06-05T06:31:47.665160+00:00",
       "status": "open",
       "code": "2454",
       "name": "聯發科",
@@ -13487,7 +13488,7 @@
         "pct_10m": -0.233,
         "pct_30m": -0.117
       },
-      "age_minutes": 151.17
+      "age_minutes": 156.41
     },
     {
       "key": "fund_flow:8046:33:845.0",
@@ -15342,7 +15343,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T04:01:59.401193+00:00",
-      "updated_at": "2026-06-05T06:26:33.375826+00:00",
+      "updated_at": "2026-06-05T06:31:47.665173+00:00",
       "status": "open",
       "code": "2454",
       "name": "聯發科",
@@ -15363,7 +15364,7 @@
         "pct_10m": 0.0,
         "pct_30m": -0.117
       },
-      "age_minutes": 144.57
+      "age_minutes": 149.8
     },
     {
       "key": "fund_flow:2308:34:2300.0",
@@ -16294,7 +16295,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T04:05:12.435683+00:00",
-      "updated_at": "2026-06-05T06:26:33.375842+00:00",
+      "updated_at": "2026-06-05T06:31:47.665181+00:00",
       "status": "open",
       "code": "2454",
       "name": "聯發科",
@@ -16315,7 +16316,7 @@
         "pct_10m": 0.0,
         "pct_30m": -0.234
       },
-      "age_minutes": 141.35
+      "age_minutes": 146.59
     },
     {
       "key": "ai_pool:2308:12:2300.0",
@@ -17386,7 +17387,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T04:10:15.470340+00:00",
-      "updated_at": "2026-06-05T06:26:33.375856+00:00",
+      "updated_at": "2026-06-05T06:31:47.665188+00:00",
       "status": "open",
       "code": "2454",
       "name": "聯發科",
@@ -17407,7 +17408,7 @@
         "pct_10m": 0.0,
         "pct_30m": 0.585
       },
-      "age_minutes": 136.3
+      "age_minutes": 141.54
     },
     {
       "key": "fund_flow:2615:92:86.0",
@@ -17918,7 +17919,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T04:15:13.989756+00:00",
-      "updated_at": "2026-06-05T06:26:33.375863+00:00",
+      "updated_at": "2026-06-05T06:31:47.665195+00:00",
       "status": "open",
       "code": "2454",
       "name": "聯發科",
@@ -17939,7 +17940,7 @@
         "pct_10m": 0.117,
         "pct_30m": 0.0
       },
-      "age_minutes": 131.32
+      "age_minutes": 136.56
     },
     {
       "key": "fund_flow:2615:88:86.1",
@@ -18114,7 +18115,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T04:15:24.916505+00:00",
-      "updated_at": "2026-06-05T06:26:33.375870+00:00",
+      "updated_at": "2026-06-05T06:31:47.665200+00:00",
       "status": "open",
       "code": "2454",
       "name": "聯發科",
@@ -18135,7 +18136,7 @@
         "pct_10m": 0.117,
         "pct_30m": 0.0
       },
-      "age_minutes": 131.14
+      "age_minutes": 136.38
     },
     {
       "key": "fund_flow:3017:22:2580.0",
@@ -19038,7 +19039,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T04:25:24.727145+00:00",
-      "updated_at": "2026-06-05T06:26:33.375879+00:00",
+      "updated_at": "2026-06-05T06:31:47.665208+00:00",
       "status": "open",
       "code": "2454",
       "name": "聯發科",
@@ -19059,7 +19060,7 @@
         "pct_10m": -0.467,
         "pct_30m": 0.0
       },
-      "age_minutes": 121.14
+      "age_minutes": 126.38
     },
     {
       "key": "fund_flow:3017:32:2575.0",
@@ -19794,7 +19795,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T04:30:30.698256+00:00",
-      "updated_at": "2026-06-05T06:26:33.375887+00:00",
+      "updated_at": "2026-06-05T06:31:47.665215+00:00",
       "status": "open",
       "code": "2454",
       "name": "聯發科",
@@ -19815,7 +19816,7 @@
         "pct_10m": 0.468,
         "pct_30m": 0.351
       },
-      "age_minutes": 116.04
+      "age_minutes": 121.28
     },
     {
       "key": "fund_flow:3324:22:1095.0",
@@ -20046,7 +20047,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T04:35:12.204859+00:00",
-      "updated_at": "2026-06-05T06:26:33.375895+00:00",
+      "updated_at": "2026-06-05T06:31:47.665220+00:00",
       "status": "open",
       "code": "2454",
       "name": "聯發科",
@@ -20067,7 +20068,7 @@
         "pct_10m": 0.234,
         "pct_30m": 0.352
       },
-      "age_minutes": 111.35
+      "age_minutes": 116.59
     },
     {
       "key": "ai_pool:3481:20:51.8",
@@ -20438,7 +20439,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T04:40:15.888106+00:00",
-      "updated_at": "2026-06-05T06:26:33.375902+00:00",
+      "updated_at": "2026-06-05T06:31:47.665226+00:00",
       "status": "open",
       "code": "2454",
       "name": "聯發科",
@@ -20459,7 +20460,7 @@
         "pct_10m": 0.117,
         "pct_30m": -0.234
       },
-      "age_minutes": 106.29
+      "age_minutes": 111.53
     },
     {
       "key": "ai_pool:2317:18:285.0",
@@ -20606,7 +20607,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T04:40:26.770198+00:00",
-      "updated_at": "2026-06-05T06:26:33.375908+00:00",
+      "updated_at": "2026-06-05T06:31:47.665237+00:00",
       "status": "open",
       "code": "2454",
       "name": "聯發科",
@@ -20627,7 +20628,7 @@
         "pct_10m": -0.117,
         "pct_30m": -0.466
       },
-      "age_minutes": 106.11
+      "age_minutes": 111.35
     },
     {
       "key": "fund_flow:3017:24:2570.0",
@@ -22006,7 +22007,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T04:55:11.829442+00:00",
-      "updated_at": "2026-06-05T06:26:33.375919+00:00",
+      "updated_at": "2026-06-05T06:31:47.665253+00:00",
       "status": "open",
       "code": "2454",
       "name": "聯發科",
@@ -22027,7 +22028,7 @@
         "pct_10m": -0.233,
         "pct_30m": 0.0
       },
-      "age_minutes": 91.36
+      "age_minutes": 96.6
     },
     {
       "key": "ai_pool:3661:21:4260.0",
@@ -22174,7 +22175,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T04:55:22.342752+00:00",
-      "updated_at": "2026-06-05T06:26:33.375925+00:00",
+      "updated_at": "2026-06-05T06:31:47.665259+00:00",
       "status": "open",
       "code": "2454",
       "name": "聯發科",
@@ -22195,7 +22196,7 @@
         "pct_10m": -0.233,
         "pct_30m": 0.0
       },
-      "age_minutes": 91.18
+      "age_minutes": 96.42
     },
     {
       "key": "fund_flow:3017:31:2585.0",
@@ -22454,7 +22455,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T05:00:25.664031+00:00",
-      "updated_at": "2026-06-05T06:26:33.375931+00:00",
+      "updated_at": "2026-06-05T06:31:47.665265+00:00",
       "status": "open",
       "code": "2454",
       "name": "聯發科",
@@ -22475,7 +22476,7 @@
         "pct_10m": -0.466,
         "pct_30m": 0.233
       },
-      "age_minutes": 86.13
+      "age_minutes": 91.37
     },
     {
       "key": "fund_flow:2615:96:86.1",
@@ -22566,7 +22567,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T05:00:36.402561+00:00",
-      "updated_at": "2026-06-05T06:26:33.375937+00:00",
+      "updated_at": "2026-06-05T06:31:47.665270+00:00",
       "status": "open",
       "code": "2454",
       "name": "聯發科",
@@ -22587,7 +22588,7 @@
         "pct_10m": -0.582,
         "pct_30m": 0.116
       },
-      "age_minutes": 85.95
+      "age_minutes": 91.19
     },
     {
       "key": "fund_flow:3711:34:574.0",
@@ -23014,7 +23015,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T05:05:12.264731+00:00",
-      "updated_at": "2026-06-05T06:26:33.375943+00:00",
+      "updated_at": "2026-06-05T06:31:47.665276+00:00",
       "status": "open",
       "code": "2454",
       "name": "聯發科",
@@ -23035,7 +23036,7 @@
         "pct_10m": 0.234,
         "pct_30m": 0.703
       },
-      "age_minutes": 81.35
+      "age_minutes": 86.59
     },
     {
       "key": "ai_pool:3017:12:2580.0",
@@ -23238,7 +23239,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T05:05:23.451802+00:00",
-      "updated_at": "2026-06-05T06:26:33.375949+00:00",
+      "updated_at": "2026-06-05T06:31:47.665282+00:00",
       "status": "open",
       "code": "2454",
       "name": "聯發科",
@@ -23259,7 +23260,7 @@
         "pct_10m": 0.0,
         "pct_30m": 0.467
       },
-      "age_minutes": 81.17
+      "age_minutes": 86.4
     },
     {
       "key": "fund_flow:1605:10:39.3",
@@ -24106,7 +24107,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T05:15:14.723529+00:00",
-      "updated_at": "2026-06-05T06:26:33.375957+00:00",
+      "updated_at": "2026-06-05T06:31:47.665288+00:00",
       "status": "open",
       "code": "2454",
       "name": "聯發科",
@@ -24127,7 +24128,7 @@
         "pct_10m": 0.234,
         "pct_30m": 0.467
       },
-      "age_minutes": 71.31
+      "age_minutes": 76.55
     },
     {
       "key": "fund_flow:3711:35:575.0",
@@ -25450,7 +25451,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T05:25:23.891589+00:00",
-      "updated_at": "2026-06-05T06:26:33.375972+00:00",
+      "updated_at": "2026-06-05T06:31:47.665303+00:00",
       "status": "open",
       "code": "2454",
       "name": "聯發科",
@@ -25471,7 +25472,7 @@
         "pct_10m": 0.233,
         "pct_30m": 0.233
       },
-      "age_minutes": 61.16
+      "age_minutes": 66.4
     },
     {
       "key": "fund_flow:3324:26:1110.0",
@@ -25730,7 +25731,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T05:30:21.697366+00:00",
-      "updated_at": "2026-06-05T06:26:33.375983+00:00",
+      "updated_at": "2026-06-05T06:31:47.665314+00:00",
       "status": "open",
       "code": "2454",
       "name": "聯發科",
@@ -25751,7 +25752,7 @@
         "pct_10m": 0.0,
         "pct_30m": 0.0
       },
-      "age_minutes": 56.19
+      "age_minutes": 61.43
     },
     {
       "key": "ai_pool:2382:30:390.5",
