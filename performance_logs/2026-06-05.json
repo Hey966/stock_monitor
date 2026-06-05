@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-05T02:56:35.108342+00:00",
+  "updated_at": "2026-06-05T02:56:38.116943+00:00",
   "count": 217,
   "items": [
     {
@@ -495,7 +495,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:25:05.423221+00:00",
-      "updated_at": "2026-06-05T02:51:27.545609+00:00",
+      "updated_at": "2026-06-05T02:56:36.920808+00:00",
       "status": "open",
       "code": "3481",
       "name": "群創",
@@ -513,9 +513,10 @@
         "max_gain": 2.079,
         "max_drawdown": 0.0,
         "pct_5m": 0.756,
-        "pct_10m": 1.323
+        "pct_10m": 1.323,
+        "pct_30m": 2.079
       },
-      "age_minutes": 26.37
+      "age_minutes": 31.52
     },
     {
       "key": "ai_pool:2317:39:286.5",
@@ -995,7 +996,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:25:12.529381+00:00",
-      "updated_at": "2026-06-05T02:51:27.545629+00:00",
+      "updated_at": "2026-06-05T02:56:36.920828+00:00",
       "status": "open",
       "code": "3481",
       "name": "群創",
@@ -1013,9 +1014,10 @@
         "max_gain": 1.887,
         "max_drawdown": 0.0,
         "pct_5m": 0.566,
-        "pct_10m": 1.132
+        "pct_10m": 1.132,
+        "pct_30m": 1.887
       },
-      "age_minutes": 26.25
+      "age_minutes": 31.41
     },
     {
       "key": "ai_pool:5347:35:161.0",
@@ -2109,7 +2111,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:30:19.670300+00:00",
-      "updated_at": "2026-06-05T02:51:27.545642+00:00",
+      "updated_at": "2026-06-05T02:56:36.920842+00:00",
       "status": "open",
       "code": "3481",
       "name": "群創",
@@ -2129,7 +2131,7 @@
         "pct_5m": 0.563,
         "pct_10m": 1.126
       },
-      "age_minutes": 21.13
+      "age_minutes": 26.29
     },
     {
       "key": "ai_pool:3017:39:2650.0",
@@ -2838,7 +2840,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:35:12.437197+00:00",
-      "updated_at": "2026-06-05T02:51:27.545653+00:00",
+      "updated_at": "2026-06-05T02:56:36.920853+00:00",
       "status": "open",
       "code": "3481",
       "name": "群創",
@@ -2858,7 +2860,7 @@
         "pct_5m": 0.56,
         "pct_10m": 0.56
       },
-      "age_minutes": 16.25
+      "age_minutes": 21.41
     },
     {
       "key": "ai_pool:2324:43:41.3",
@@ -3567,7 +3569,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:40:15.726558+00:00",
-      "updated_at": "2026-06-05T02:51:27.545664+00:00",
+      "updated_at": "2026-06-05T02:56:36.920864+00:00",
       "status": "open",
       "code": "3481",
       "name": "群創",
@@ -3587,7 +3589,7 @@
         "pct_5m": 0.0,
         "pct_10m": 0.186
       },
-      "age_minutes": 11.2
+      "age_minutes": 16.35
     },
     {
       "key": "ai_pool:3017:33:2625.0",
@@ -4813,7 +4815,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:50:15.682144+00:00",
-      "updated_at": "2026-06-05T02:51:27.545677+00:00",
+      "updated_at": "2026-06-05T02:56:36.920877+00:00",
       "status": "open",
       "code": "3481",
       "name": "群創",
@@ -4829,9 +4831,10 @@
       "results": {
         "latest_pct": 0.0,
         "max_gain": 0.0,
-        "max_drawdown": 0.0
+        "max_drawdown": 0.0,
+        "pct_5m": 0.0
       },
-      "age_minutes": 1.2
+      "age_minutes": 6.35
     },
     {
       "key": "ai_pool:2317:37:285.5",
