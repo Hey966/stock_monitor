@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-05T04:35:24.938903+00:00",
+  "updated_at": "2026-06-05T04:35:52.038742+00:00",
   "count": 724,
   "items": [
     {
@@ -76,13 +76,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:25:05.423012+00:00",
-      "updated_at": "2026-06-05T04:30:57.368465+00:00",
+      "updated_at": "2026-06-05T04:35:50.786291+00:00",
       "status": "open",
       "code": "2615",
       "name": "萬海",
       "sector": "航運",
       "entry_price": 86.1,
-      "last_price": 86.1,
+      "last_price": 86.0,
       "best_price": 86.9,
       "worst_price": 85.6,
       "score": 92,
@@ -90,14 +90,14 @@
       "volume_ratio_at_signal": 1.4,
       "alert": null,
       "results": {
-        "latest_pct": 0.0,
+        "latest_pct": -0.116,
         "max_gain": 0.929,
         "max_drawdown": -0.581,
         "pct_5m": 0.929,
         "pct_10m": 0.929,
         "pct_30m": -0.116
       },
-      "age_minutes": 125.87
+      "age_minutes": 130.76
     },
     {
       "key": "ai_pool:3661:84:4400.0",
@@ -636,13 +636,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:25:12.529228+00:00",
-      "updated_at": "2026-06-05T04:30:57.368486+00:00",
+      "updated_at": "2026-06-05T04:35:50.786313+00:00",
       "status": "open",
       "code": "2615",
       "name": "萬海",
       "sector": "航運",
       "entry_price": 86.4,
-      "last_price": 86.1,
+      "last_price": 86.0,
       "best_price": 86.9,
       "worst_price": 85.6,
       "score": 94,
@@ -650,14 +650,14 @@
       "volume_ratio_at_signal": 1.44,
       "alert": null,
       "results": {
-        "latest_pct": -0.347,
+        "latest_pct": -0.463,
         "max_gain": 0.579,
         "max_drawdown": -0.926,
         "pct_5m": 0.579,
         "pct_10m": 0.579,
         "pct_30m": -0.463
       },
-      "age_minutes": 125.75
+      "age_minutes": 130.64
     },
     {
       "key": "ai_pool:3443:78:4485.0",
@@ -2568,13 +2568,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:35:12.437030+00:00",
-      "updated_at": "2026-06-05T04:30:57.368502+00:00",
+      "updated_at": "2026-06-05T04:35:50.786328+00:00",
       "status": "open",
       "code": "2615",
       "name": "萬海",
       "sector": "航運",
       "entry_price": 86.8,
-      "last_price": 86.1,
+      "last_price": 86.0,
       "best_price": 86.9,
       "worst_price": 85.6,
       "score": 95,
@@ -2582,14 +2582,14 @@
       "volume_ratio_at_signal": 1.79,
       "alert": null,
       "results": {
-        "latest_pct": -0.806,
+        "latest_pct": -0.922,
         "max_gain": 0.115,
         "max_drawdown": -1.382,
         "pct_5m": 0.0,
         "pct_10m": -0.691,
         "pct_30m": -1.152
       },
-      "age_minutes": 115.75
+      "age_minutes": 120.64
     },
     {
       "key": "ai_pool:2356:81:78.4",
@@ -3268,13 +3268,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:40:15.726360+00:00",
-      "updated_at": "2026-06-05T04:30:57.368513+00:00",
+      "updated_at": "2026-06-05T04:35:50.786340+00:00",
       "status": "open",
       "code": "2615",
       "name": "萬海",
       "sector": "航運",
       "entry_price": 86.7,
-      "last_price": 86.1,
+      "last_price": 86.0,
       "best_price": 86.8,
       "worst_price": 85.6,
       "score": 95,
@@ -3282,14 +3282,14 @@
       "volume_ratio_at_signal": 1.84,
       "alert": null,
       "results": {
-        "latest_pct": -0.692,
+        "latest_pct": -0.807,
         "max_gain": 0.115,
         "max_drawdown": -1.269,
         "pct_5m": -0.577,
         "pct_10m": -0.577,
         "pct_30m": -0.923
       },
-      "age_minutes": 110.69
+      "age_minutes": 115.58
     },
     {
       "key": "ai_pool:2379:93:642.0",
@@ -3996,13 +3996,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:45:15.268587+00:00",
-      "updated_at": "2026-06-05T04:30:57.368524+00:00",
+      "updated_at": "2026-06-05T04:35:50.786349+00:00",
       "status": "open",
       "code": "2615",
       "name": "萬海",
       "sector": "航運",
       "entry_price": 86.3,
-      "last_price": 86.1,
+      "last_price": 86.0,
       "best_price": 86.3,
       "worst_price": 85.6,
       "score": 86,
@@ -4010,14 +4010,14 @@
       "volume_ratio_at_signal": 1.89,
       "alert": null,
       "results": {
-        "latest_pct": -0.232,
+        "latest_pct": -0.348,
         "max_gain": 0.0,
         "max_drawdown": -0.811,
         "pct_5m": -0.116,
         "pct_10m": -0.348,
         "pct_30m": -0.695
       },
-      "age_minutes": 105.7
+      "age_minutes": 110.59
     },
     {
       "key": "ai_pool:3443:79:4420.0",
@@ -4668,13 +4668,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:50:15.682010+00:00",
-      "updated_at": "2026-06-05T04:30:57.368533+00:00",
+      "updated_at": "2026-06-05T04:35:50.786356+00:00",
       "status": "open",
       "code": "2615",
       "name": "萬海",
       "sector": "航運",
       "entry_price": 86.2,
-      "last_price": 86.1,
+      "last_price": 86.0,
       "best_price": 86.2,
       "worst_price": 85.6,
       "score": 100,
@@ -4682,14 +4682,14 @@
       "volume_ratio_at_signal": 1.91,
       "alert": null,
       "results": {
-        "latest_pct": -0.116,
+        "latest_pct": -0.232,
         "max_gain": 0.0,
         "max_drawdown": -0.696,
         "pct_5m": -0.232,
         "pct_10m": -0.464,
         "pct_30m": -0.464
       },
-      "age_minutes": 100.69
+      "age_minutes": 105.59
     },
     {
       "key": "ai_pool:2379:88:647.0",
@@ -5200,13 +5200,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:50:26.323748+00:00",
-      "updated_at": "2026-06-05T04:30:57.368541+00:00",
+      "updated_at": "2026-06-05T04:35:50.786363+00:00",
       "status": "open",
       "code": "2615",
       "name": "萬海",
       "sector": "航運",
       "entry_price": 86.2,
-      "last_price": 86.1,
+      "last_price": 86.0,
       "best_price": 86.2,
       "worst_price": 85.6,
       "score": 88,
@@ -5214,14 +5214,14 @@
       "volume_ratio_at_signal": 1.91,
       "alert": "大戶進場警報",
       "results": {
-        "latest_pct": -0.116,
+        "latest_pct": -0.232,
         "max_gain": 0.0,
         "max_drawdown": -0.696,
         "pct_5m": -0.232,
         "pct_10m": -0.464,
         "pct_30m": -0.464
       },
-      "age_minutes": 100.52
+      "age_minutes": 105.41
     },
     {
       "key": "fund_flow:3037:32:947.0",
@@ -5452,13 +5452,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:55:13.518070+00:00",
-      "updated_at": "2026-06-05T04:30:57.368547+00:00",
+      "updated_at": "2026-06-05T04:35:50.786370+00:00",
       "status": "open",
       "code": "2615",
       "name": "萬海",
       "sector": "航運",
       "entry_price": 86.1,
-      "last_price": 86.1,
+      "last_price": 86.0,
       "best_price": 86.1,
       "worst_price": 85.6,
       "score": 100,
@@ -5466,14 +5466,14 @@
       "volume_ratio_at_signal": 1.93,
       "alert": null,
       "results": {
-        "latest_pct": 0.0,
+        "latest_pct": -0.116,
         "max_gain": 0.0,
         "max_drawdown": -0.581,
         "pct_5m": -0.348,
         "pct_10m": -0.348,
         "pct_30m": -0.232
       },
-      "age_minutes": 95.73
+      "age_minutes": 100.62
     },
     {
       "key": "ai_pool:3661:79:4365.0",
@@ -5844,13 +5844,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:55:23.828193+00:00",
-      "updated_at": "2026-06-05T04:30:57.368554+00:00",
+      "updated_at": "2026-06-05T04:35:50.786377+00:00",
       "status": "open",
       "code": "2615",
       "name": "萬海",
       "sector": "航運",
       "entry_price": 86.1,
-      "last_price": 86.1,
+      "last_price": 86.0,
       "best_price": 86.1,
       "worst_price": 85.6,
       "score": 94,
@@ -5858,14 +5858,14 @@
       "volume_ratio_at_signal": 1.93,
       "alert": "大戶進場警報",
       "results": {
-        "latest_pct": 0.0,
+        "latest_pct": -0.116,
         "max_gain": 0.0,
         "max_drawdown": -0.581,
         "pct_5m": -0.348,
         "pct_10m": -0.348,
         "pct_30m": -0.232
       },
-      "age_minutes": 95.56
+      "age_minutes": 100.45
     },
     {
       "key": "fund_flow:2382:33:392.5",
@@ -6068,13 +6068,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:00:25.045971+00:00",
-      "updated_at": "2026-06-05T04:30:57.368560+00:00",
+      "updated_at": "2026-06-05T04:35:50.786383+00:00",
       "status": "open",
       "code": "2615",
       "name": "萬海",
       "sector": "航運",
       "entry_price": 85.9,
-      "last_price": 86.1,
+      "last_price": 86.0,
       "best_price": 86.1,
       "worst_price": 85.6,
       "score": 93,
@@ -6082,14 +6082,14 @@
       "volume_ratio_at_signal": 1.97,
       "alert": null,
       "results": {
-        "latest_pct": 0.233,
+        "latest_pct": 0.116,
         "max_gain": 0.233,
         "max_drawdown": -0.349,
         "pct_5m": -0.116,
         "pct_10m": 0.0,
         "pct_30m": 0.116
       },
-      "age_minutes": 90.54
+      "age_minutes": 95.43
     },
     {
       "key": "ai_pool:2379:86:643.0",
@@ -6460,13 +6460,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:00:36.494076+00:00",
-      "updated_at": "2026-06-05T04:30:57.368567+00:00",
+      "updated_at": "2026-06-05T04:35:50.786389+00:00",
       "status": "open",
       "code": "2615",
       "name": "萬海",
       "sector": "航運",
       "entry_price": 85.8,
-      "last_price": 86.1,
+      "last_price": 86.0,
       "best_price": 86.1,
       "worst_price": 85.6,
       "score": 85,
@@ -6474,14 +6474,14 @@
       "volume_ratio_at_signal": 1.97,
       "alert": "大戶進場警報",
       "results": {
-        "latest_pct": 0.35,
+        "latest_pct": 0.233,
         "max_gain": 0.35,
         "max_drawdown": -0.233,
         "pct_5m": 0.0,
         "pct_10m": 0.117,
         "pct_30m": 0.233
       },
-      "age_minutes": 90.35
+      "age_minutes": 95.24
     },
     {
       "key": "fund_flow:3481:34:53.9",
@@ -6712,13 +6712,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:05:11.974095+00:00",
-      "updated_at": "2026-06-05T04:30:57.368573+00:00",
+      "updated_at": "2026-06-05T04:35:50.786395+00:00",
       "status": "open",
       "code": "2615",
       "name": "萬海",
       "sector": "航運",
       "entry_price": 85.9,
-      "last_price": 86.1,
+      "last_price": 86.0,
       "best_price": 86.1,
       "worst_price": 85.6,
       "score": 100,
@@ -6726,14 +6726,14 @@
       "volume_ratio_at_signal": 1.99,
       "alert": null,
       "results": {
-        "latest_pct": 0.233,
+        "latest_pct": 0.116,
         "max_gain": 0.233,
         "max_drawdown": -0.349,
         "pct_5m": 0.0,
         "pct_10m": -0.233,
         "pct_30m": 0.0
       },
-      "age_minutes": 85.76
+      "age_minutes": 90.65
     },
     {
       "key": "ai_pool:2379:78:647.0",
@@ -7020,13 +7020,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:05:22.049838+00:00",
-      "updated_at": "2026-06-05T04:30:57.368579+00:00",
+      "updated_at": "2026-06-05T04:35:50.786401+00:00",
       "status": "open",
       "code": "2615",
       "name": "萬海",
       "sector": "航運",
       "entry_price": 85.9,
-      "last_price": 86.1,
+      "last_price": 86.0,
       "best_price": 86.1,
       "worst_price": 85.6,
       "score": 91,
@@ -7034,14 +7034,14 @@
       "volume_ratio_at_signal": 1.99,
       "alert": "大戶進場警報",
       "results": {
-        "latest_pct": 0.233,
+        "latest_pct": 0.116,
         "max_gain": 0.233,
         "max_drawdown": -0.349,
         "pct_5m": 0.0,
         "pct_10m": -0.233,
         "pct_30m": 0.0
       },
-      "age_minutes": 85.59
+      "age_minutes": 90.48
     },
     {
       "key": "fund_flow:2317:26:285.5",
@@ -7496,13 +7496,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:10:26.460526+00:00",
-      "updated_at": "2026-06-05T04:30:57.368587+00:00",
+      "updated_at": "2026-06-05T04:35:50.786407+00:00",
       "status": "open",
       "code": "2615",
       "name": "萬海",
       "sector": "航運",
       "entry_price": 85.9,
-      "last_price": 86.1,
+      "last_price": 86.0,
       "best_price": 86.1,
       "worst_price": 85.6,
       "score": 90,
@@ -7510,14 +7510,14 @@
       "volume_ratio_at_signal": 2.0,
       "alert": "大戶進場警報",
       "results": {
-        "latest_pct": 0.233,
+        "latest_pct": 0.116,
         "max_gain": 0.233,
         "max_drawdown": -0.349,
         "pct_5m": -0.233,
         "pct_10m": -0.116,
         "pct_30m": -0.233
       },
-      "age_minutes": 80.52
+      "age_minutes": 85.41
     },
     {
       "key": "fund_flow:2317:35:286.5",
@@ -7692,13 +7692,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:15:14.979956+00:00",
-      "updated_at": "2026-06-05T04:30:57.368593+00:00",
+      "updated_at": "2026-06-05T04:35:50.786413+00:00",
       "status": "open",
       "code": "2615",
       "name": "萬海",
       "sector": "航運",
       "entry_price": 85.7,
-      "last_price": 86.1,
+      "last_price": 86.0,
       "best_price": 86.1,
       "worst_price": 85.6,
       "score": 78,
@@ -7706,14 +7706,14 @@
       "volume_ratio_at_signal": 2.05,
       "alert": null,
       "results": {
-        "latest_pct": 0.467,
+        "latest_pct": 0.35,
         "max_gain": 0.467,
         "max_drawdown": -0.117,
         "pct_5m": 0.117,
         "pct_10m": 0.233,
         "pct_30m": 0.35
       },
-      "age_minutes": 75.71
+      "age_minutes": 80.6
     },
     {
       "key": "ai_pool:2356:77:77.9",
@@ -8168,13 +8168,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:20:15.485970+00:00",
-      "updated_at": "2026-06-05T04:30:57.368600+00:00",
+      "updated_at": "2026-06-05T04:35:50.786421+00:00",
       "status": "open",
       "code": "2615",
       "name": "萬海",
       "sector": "航運",
       "entry_price": 85.8,
-      "last_price": 86.1,
+      "last_price": 86.0,
       "best_price": 86.1,
       "worst_price": 85.6,
       "score": 100,
@@ -8182,14 +8182,14 @@
       "volume_ratio_at_signal": 2.07,
       "alert": null,
       "results": {
-        "latest_pct": 0.35,
+        "latest_pct": 0.233,
         "max_gain": 0.35,
         "max_drawdown": -0.233,
         "pct_5m": 0.117,
         "pct_10m": 0.233,
         "pct_30m": -0.233
       },
-      "age_minutes": 70.7
+      "age_minutes": 75.59
     },
     {
       "key": "ai_pool:3661:68:4340.0",
@@ -9036,13 +9036,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:25:22.049895+00:00",
-      "updated_at": "2026-06-05T04:30:57.368609+00:00",
+      "updated_at": "2026-06-05T04:35:50.786428+00:00",
       "status": "open",
       "code": "2615",
       "name": "萬海",
       "sector": "航運",
       "entry_price": 85.8,
-      "last_price": 86.1,
+      "last_price": 86.0,
       "best_price": 86.1,
       "worst_price": 85.6,
       "score": 86,
@@ -9050,14 +9050,14 @@
       "volume_ratio_at_signal": 2.08,
       "alert": "大戶進場警報",
       "results": {
-        "latest_pct": 0.35,
+        "latest_pct": 0.233,
         "max_gain": 0.35,
         "max_drawdown": -0.233,
         "pct_5m": 0.233,
         "pct_10m": 0.117,
         "pct_30m": -0.233
       },
-      "age_minutes": 65.59
+      "age_minutes": 70.48
     },
     {
       "key": "fund_flow:2379:90:656.0",
@@ -9288,13 +9288,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:30:18.909481+00:00",
-      "updated_at": "2026-06-05T04:30:57.368614+00:00",
+      "updated_at": "2026-06-05T04:35:50.786433+00:00",
       "status": "open",
       "code": "2615",
       "name": "萬海",
       "sector": "航運",
       "entry_price": 85.9,
-      "last_price": 86.1,
+      "last_price": 86.0,
       "best_price": 86.1,
       "worst_price": 85.6,
       "score": 90,
@@ -9302,14 +9302,14 @@
       "volume_ratio_at_signal": 2.1,
       "alert": null,
       "results": {
-        "latest_pct": 0.233,
+        "latest_pct": 0.116,
         "max_gain": 0.233,
         "max_drawdown": -0.349,
         "pct_5m": 0.0,
         "pct_10m": -0.233,
         "pct_30m": 0.116
       },
-      "age_minutes": 60.64
+      "age_minutes": 65.53
     },
     {
       "key": "ai_pool:2618:78:38.0",
@@ -10296,13 +10296,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:35:22.792763+00:00",
-      "updated_at": "2026-06-05T04:30:57.368623+00:00",
+      "updated_at": "2026-06-05T04:35:50.786440+00:00",
       "status": "open",
       "code": "2615",
       "name": "萬海",
       "sector": "航運",
       "entry_price": 85.9,
-      "last_price": 86.1,
+      "last_price": 86.0,
       "best_price": 86.1,
       "worst_price": 85.6,
       "score": 95,
@@ -10310,14 +10310,14 @@
       "volume_ratio_at_signal": 2.11,
       "alert": "大戶進場警報",
       "results": {
-        "latest_pct": 0.233,
+        "latest_pct": 0.116,
         "max_gain": 0.233,
         "max_drawdown": -0.349,
         "pct_5m": -0.233,
         "pct_10m": 0.116,
         "pct_30m": 0.233
       },
-      "age_minutes": 55.58
+      "age_minutes": 60.47
     },
     {
       "key": "fund_flow:3231:35:171.5",
@@ -10968,13 +10968,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:40:30.327942+00:00",
-      "updated_at": "2026-06-05T04:30:57.368631+00:00",
+      "updated_at": "2026-06-05T04:35:50.786447+00:00",
       "status": "open",
       "code": "2615",
       "name": "萬海",
       "sector": "航運",
       "entry_price": 85.8,
-      "last_price": 86.1,
+      "last_price": 86.0,
       "best_price": 86.1,
       "worst_price": 85.6,
       "score": 98,
@@ -10982,14 +10982,14 @@
       "volume_ratio_at_signal": 2.13,
       "alert": "大戶進場警報",
       "results": {
-        "latest_pct": 0.35,
+        "latest_pct": 0.233,
         "max_gain": 0.35,
         "max_drawdown": -0.233,
         "pct_5m": 0.233,
         "pct_10m": -0.233,
         "pct_30m": 0.35
       },
-      "age_minutes": 50.45
+      "age_minutes": 55.34
     },
     {
       "key": "fund_flow:2356:35:77.0",
@@ -11360,13 +11360,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:45:14.597985+00:00",
-      "updated_at": "2026-06-05T04:30:57.368637+00:00",
+      "updated_at": "2026-06-05T04:35:50.786453+00:00",
       "status": "open",
       "code": "2615",
       "name": "萬海",
       "sector": "航運",
       "entry_price": 86.0,
-      "last_price": 86.1,
+      "last_price": 86.0,
       "best_price": 86.1,
       "worst_price": 85.6,
       "score": 90,
@@ -11374,14 +11374,14 @@
       "volume_ratio_at_signal": 2.15,
       "alert": null,
       "results": {
-        "latest_pct": 0.116,
+        "latest_pct": 0.0,
         "max_gain": 0.116,
         "max_drawdown": -0.465,
         "pct_5m": -0.465,
         "pct_10m": -0.465,
         "pct_30m": 0.116
       },
-      "age_minutes": 45.71
+      "age_minutes": 50.6
     },
     {
       "key": "ai_pool:3443:64:4370.0",
@@ -12060,13 +12060,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:50:15.098588+00:00",
-      "updated_at": "2026-06-05T04:30:57.368644+00:00",
+      "updated_at": "2026-06-05T04:35:50.786459+00:00",
       "status": "open",
       "code": "2615",
       "name": "萬海",
       "sector": "航運",
       "entry_price": 85.7,
-      "last_price": 86.1,
+      "last_price": 86.0,
       "best_price": 86.1,
       "worst_price": 85.6,
       "score": 86,
@@ -12074,14 +12074,14 @@
       "volume_ratio_at_signal": 2.17,
       "alert": null,
       "results": {
-        "latest_pct": 0.467,
+        "latest_pct": 0.35,
         "max_gain": 0.467,
         "max_drawdown": -0.117,
         "pct_5m": -0.117,
         "pct_10m": 0.35,
         "pct_30m": 0.35
       },
-      "age_minutes": 40.7
+      "age_minutes": 45.59
     },
     {
       "key": "ai_pool:2379:80:646.0",
@@ -12508,13 +12508,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:50:26.956228+00:00",
-      "updated_at": "2026-06-05T04:30:57.368651+00:00",
+      "updated_at": "2026-06-05T04:35:50.786464+00:00",
       "status": "open",
       "code": "2615",
       "name": "萬海",
       "sector": "航運",
       "entry_price": 85.6,
-      "last_price": 86.1,
+      "last_price": 86.0,
       "best_price": 86.1,
       "worst_price": 85.6,
       "score": 90,
@@ -12522,14 +12522,14 @@
       "volume_ratio_at_signal": 2.17,
       "alert": "大戶進場警報",
       "results": {
-        "latest_pct": 0.584,
+        "latest_pct": 0.467,
         "max_gain": 0.584,
         "max_drawdown": 0.0,
         "pct_5m": 0.0,
         "pct_10m": 0.467,
         "pct_30m": 0.467
       },
-      "age_minutes": 40.51
+      "age_minutes": 45.4
     },
     {
       "key": "fund_flow:3481:31:52.6",
@@ -12788,13 +12788,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:55:12.071345+00:00",
-      "updated_at": "2026-06-05T04:30:57.368657+00:00",
+      "updated_at": "2026-06-05T04:35:50.786470+00:00",
       "status": "open",
       "code": "2615",
       "name": "萬海",
       "sector": "航運",
       "entry_price": 85.5,
-      "last_price": 86.1,
+      "last_price": 86.0,
       "best_price": 86.1,
       "worst_price": 85.5,
       "score": 77,
@@ -12802,14 +12802,14 @@
       "volume_ratio_at_signal": 2.19,
       "alert": null,
       "results": {
-        "latest_pct": 0.702,
+        "latest_pct": 0.585,
         "max_gain": 0.702,
         "max_drawdown": 0.0,
         "pct_5m": 0.585,
         "pct_10m": 0.702,
         "pct_30m": 0.351
       },
-      "age_minutes": 35.75
+      "age_minutes": 40.65
     },
     {
       "key": "ai_pool:2356:60:76.7",
@@ -15135,13 +15135,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T04:01:59.401054+00:00",
-      "updated_at": "2026-06-05T04:30:57.368670+00:00",
+      "updated_at": "2026-06-05T04:35:50.786479+00:00",
       "status": "open",
       "code": "2615",
       "name": "萬海",
       "sector": "航運",
       "entry_price": 85.9,
-      "last_price": 86.1,
+      "last_price": 86.0,
       "best_price": 86.1,
       "worst_price": 85.6,
       "score": 89,
@@ -15149,13 +15149,14 @@
       "volume_ratio_at_signal": 2.22,
       "alert": "大戶進場警報",
       "results": {
-        "latest_pct": 0.233,
+        "latest_pct": 0.116,
         "max_gain": 0.233,
         "max_drawdown": -0.349,
         "pct_5m": 0.233,
-        "pct_10m": 0.233
+        "pct_10m": 0.233,
+        "pct_30m": 0.116
       },
-      "age_minutes": 28.97
+      "age_minutes": 33.86
     },
     {
       "key": "fund_flow:2356:35:77.1",
@@ -15766,13 +15767,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T04:02:30.913887+00:00",
-      "updated_at": "2026-06-05T04:30:57.368676+00:00",
+      "updated_at": "2026-06-05T04:35:50.786486+00:00",
       "status": "open",
       "code": "2615",
       "name": "萬海",
       "sector": "航運",
       "entry_price": 85.9,
-      "last_price": 86.1,
+      "last_price": 86.0,
       "best_price": 86.1,
       "worst_price": 85.6,
       "score": 94,
@@ -15780,13 +15781,14 @@
       "volume_ratio_at_signal": 2.22,
       "alert": "大戶進場警報",
       "results": {
-        "latest_pct": 0.233,
+        "latest_pct": 0.116,
         "max_gain": 0.233,
         "max_drawdown": -0.349,
         "pct_5m": 0.233,
-        "pct_10m": 0.233
+        "pct_10m": 0.233,
+        "pct_30m": 0.116
       },
-      "age_minutes": 28.44
+      "age_minutes": 33.33
     },
     {
       "key": "fund_flow:3231:30:171.0",
@@ -16010,13 +16012,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T04:05:12.435545+00:00",
-      "updated_at": "2026-06-05T04:30:57.368681+00:00",
+      "updated_at": "2026-06-05T04:35:50.786493+00:00",
       "status": "open",
       "code": "2615",
       "name": "萬海",
       "sector": "航運",
       "entry_price": 85.8,
-      "last_price": 86.1,
+      "last_price": 86.0,
       "best_price": 86.1,
       "worst_price": 85.8,
       "score": 89,
@@ -16024,13 +16026,14 @@
       "volume_ratio_at_signal": 2.23,
       "alert": null,
       "results": {
-        "latest_pct": 0.35,
+        "latest_pct": 0.233,
         "max_gain": 0.35,
         "max_drawdown": 0.0,
         "pct_5m": 0.35,
-        "pct_10m": 0.35
+        "pct_10m": 0.35,
+        "pct_30m": 0.233
       },
-      "age_minutes": 25.75
+      "age_minutes": 30.64
     },
     {
       "key": "ai_pool:3443:79:4355.0",
@@ -16334,13 +16337,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T04:05:29.743208+00:00",
-      "updated_at": "2026-06-05T04:30:57.368688+00:00",
+      "updated_at": "2026-06-05T04:35:50.786499+00:00",
       "status": "open",
       "code": "2615",
       "name": "萬海",
       "sector": "航運",
       "entry_price": 86.0,
-      "last_price": 86.1,
+      "last_price": 86.0,
       "best_price": 86.1,
       "worst_price": 85.8,
       "score": 95,
@@ -16348,13 +16351,14 @@
       "volume_ratio_at_signal": 2.27,
       "alert": "大戶進場警報",
       "results": {
-        "latest_pct": 0.116,
+        "latest_pct": 0.0,
         "max_gain": 0.116,
         "max_drawdown": -0.233,
         "pct_5m": 0.116,
-        "pct_10m": 0.116
+        "pct_10m": 0.116,
+        "pct_30m": 0.0
       },
-      "age_minutes": 25.46
+      "age_minutes": 30.35
     },
     {
       "key": "fund_flow:2324:31:41.1",
@@ -16577,13 +16581,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T04:06:00.357178+00:00",
-      "updated_at": "2026-06-05T04:30:57.368694+00:00",
+      "updated_at": "2026-06-05T04:35:50.786505+00:00",
       "status": "open",
       "code": "2615",
       "name": "萬海",
       "sector": "航運",
       "entry_price": 86.0,
-      "last_price": 86.1,
+      "last_price": 86.0,
       "best_price": 86.1,
       "worst_price": 85.8,
       "score": 100,
@@ -16591,13 +16595,13 @@
       "volume_ratio_at_signal": 2.28,
       "alert": null,
       "results": {
-        "latest_pct": 0.116,
+        "latest_pct": 0.0,
         "max_gain": 0.116,
         "max_drawdown": -0.233,
         "pct_5m": 0.116,
         "pct_10m": 0.0
       },
-      "age_minutes": 24.95
+      "age_minutes": 29.84
     },
     {
       "key": "ai_pool:2618:51:37.85",
@@ -17279,13 +17283,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T04:10:27.039831+00:00",
-      "updated_at": "2026-06-05T04:30:57.368701+00:00",
+      "updated_at": "2026-06-05T04:35:50.786511+00:00",
       "status": "open",
       "code": "2615",
       "name": "萬海",
       "sector": "航運",
       "entry_price": 86.0,
-      "last_price": 86.1,
+      "last_price": 86.0,
       "best_price": 86.1,
       "worst_price": 85.8,
       "score": 92,
@@ -17293,13 +17297,13 @@
       "volume_ratio_at_signal": 2.3,
       "alert": "大戶進場警報",
       "results": {
-        "latest_pct": 0.116,
+        "latest_pct": 0.0,
         "max_gain": 0.116,
         "max_drawdown": -0.233,
         "pct_5m": 0.116,
         "pct_10m": 0.0
       },
-      "age_minutes": 20.51
+      "age_minutes": 25.4
     },
     {
       "key": "fund_flow:2324:28:41.2",
@@ -17792,13 +17796,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T04:15:24.916392+00:00",
-      "updated_at": "2026-06-05T04:30:57.368707+00:00",
+      "updated_at": "2026-06-05T04:35:50.786517+00:00",
       "status": "open",
       "code": "2615",
       "name": "萬海",
       "sector": "航運",
       "entry_price": 86.1,
-      "last_price": 86.1,
+      "last_price": 86.0,
       "best_price": 86.1,
       "worst_price": 85.8,
       "score": 88,
@@ -17806,13 +17810,13 @@
       "volume_ratio_at_signal": 2.32,
       "alert": "大戶進場警報",
       "results": {
-        "latest_pct": 0.0,
+        "latest_pct": -0.116,
         "max_gain": 0.0,
         "max_drawdown": -0.348,
         "pct_5m": -0.116,
         "pct_10m": -0.348
       },
-      "age_minutes": 15.54
+      "age_minutes": 20.43
     },
     {
       "key": "fund_flow:2356:34:76.9",
@@ -19347,13 +19351,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T04:30:30.698106+00:00",
-      "updated_at": "2026-06-05T04:30:57.368719+00:00",
+      "updated_at": "2026-06-05T04:35:50.786524+00:00",
       "status": "open",
       "code": "2615",
       "name": "萬海",
       "sector": "航運",
       "entry_price": 86.0,
-      "last_price": 86.1,
+      "last_price": 86.0,
       "best_price": 86.1,
       "worst_price": 86.0,
       "score": 91,
@@ -19361,11 +19365,12 @@
       "volume_ratio_at_signal": 2.39,
       "alert": "大戶進場警報",
       "results": {
-        "latest_pct": 0.116,
+        "latest_pct": 0.0,
         "max_gain": 0.116,
-        "max_drawdown": 0.0
+        "max_drawdown": 0.0,
+        "pct_5m": 0.0
       },
-      "age_minutes": 0.44
+      "age_minutes": 5.33
     },
     {
       "key": "fund_flow:3017:31:2560.0",
@@ -19782,7 +19787,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T04:35:23.553222+00:00",
-      "updated_at": "2026-06-05T04:35:23.553237+00:00",
+      "updated_at": "2026-06-05T04:35:50.786530+00:00",
       "status": "open",
       "code": "2615",
       "name": "萬海",
@@ -19795,7 +19800,12 @@
       "change_rate_at_signal": 2.74,
       "volume_ratio_at_signal": 2.42,
       "alert": "大戶進場警報",
-      "results": {}
+      "results": {
+        "latest_pct": 0.0,
+        "max_gain": 0.0,
+        "max_drawdown": 0.0
+      },
+      "age_minutes": 0.45
     },
     {
       "key": "fund_flow:3017:24:2555.0",
