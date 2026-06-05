@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-05T02:41:27.218386+00:00",
+  "updated_at": "2026-06-05T02:41:29.838830+00:00",
   "count": 142,
   "items": [
     {
@@ -480,27 +480,27 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:25:05.423221+00:00",
-      "updated_at": "2026-06-05T02:36:20.366467+00:00",
+      "updated_at": "2026-06-05T02:41:28.834474+00:00",
       "status": "open",
       "code": "3481",
       "name": "群創",
       "sector": "面板",
       "entry_price": 52.9,
-      "last_price": 53.6,
-      "best_price": 53.6,
+      "last_price": 53.9,
+      "best_price": 53.9,
       "worst_price": 52.9,
       "score": 40,
       "change_rate_at_signal": -5.19,
       "volume_ratio_at_signal": 0.6,
       "alert": null,
       "results": {
-        "latest_pct": 1.323,
-        "max_gain": 1.323,
+        "latest_pct": 1.89,
+        "max_gain": 1.89,
         "max_drawdown": 0.0,
         "pct_5m": 0.756,
         "pct_10m": 1.323
       },
-      "age_minutes": 11.25
+      "age_minutes": 16.39
     },
     {
       "key": "ai_pool:2317:39:286.5",
@@ -966,27 +966,27 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:25:12.529381+00:00",
-      "updated_at": "2026-06-05T02:36:20.366487+00:00",
+      "updated_at": "2026-06-05T02:41:28.834495+00:00",
       "status": "open",
       "code": "3481",
       "name": "群創",
       "sector": "面板",
       "entry_price": 53.0,
-      "last_price": 53.6,
-      "best_price": 53.6,
+      "last_price": 53.9,
+      "best_price": 53.9,
       "worst_price": 53.0,
       "score": 40,
       "change_rate_at_signal": -5.01,
       "volume_ratio_at_signal": 0.61,
       "alert": null,
       "results": {
-        "latest_pct": 1.132,
-        "max_gain": 1.132,
+        "latest_pct": 1.698,
+        "max_gain": 1.698,
         "max_drawdown": 0.0,
         "pct_5m": 0.566,
         "pct_10m": 1.132
       },
-      "age_minutes": 11.13
+      "age_minutes": 16.27
     },
     {
       "key": "ai_pool:5347:35:161.0",
@@ -2070,26 +2070,27 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:30:19.670300+00:00",
-      "updated_at": "2026-06-05T02:36:20.366501+00:00",
+      "updated_at": "2026-06-05T02:41:28.834509+00:00",
       "status": "open",
       "code": "3481",
       "name": "群創",
       "sector": "面板",
       "entry_price": 53.3,
-      "last_price": 53.6,
-      "best_price": 53.6,
+      "last_price": 53.9,
+      "best_price": 53.9,
       "worst_price": 53.3,
       "score": 48,
       "change_rate_at_signal": -4.48,
       "volume_ratio_at_signal": 0.62,
       "alert": null,
       "results": {
-        "latest_pct": 0.563,
-        "max_gain": 0.563,
+        "latest_pct": 1.126,
+        "max_gain": 1.126,
         "max_drawdown": 0.0,
-        "pct_5m": 0.563
+        "pct_5m": 0.563,
+        "pct_10m": 1.126
       },
-      "age_minutes": 6.01
+      "age_minutes": 11.15
     },
     {
       "key": "ai_pool:3017:39:2650.0",
@@ -2775,25 +2776,26 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:35:12.437197+00:00",
-      "updated_at": "2026-06-05T02:36:20.366512+00:00",
+      "updated_at": "2026-06-05T02:41:28.834523+00:00",
       "status": "open",
       "code": "3481",
       "name": "群創",
       "sector": "面板",
       "entry_price": 53.6,
-      "last_price": 53.6,
-      "best_price": 53.6,
+      "last_price": 53.9,
+      "best_price": 53.9,
       "worst_price": 53.6,
       "score": 56,
       "change_rate_at_signal": -3.94,
       "volume_ratio_at_signal": 0.62,
       "alert": null,
       "results": {
-        "latest_pct": 0.0,
-        "max_gain": 0.0,
-        "max_drawdown": 0.0
+        "latest_pct": 0.56,
+        "max_gain": 0.56,
+        "max_drawdown": 0.0,
+        "pct_5m": 0.56
       },
-      "age_minutes": 1.13
+      "age_minutes": 6.27
     },
     {
       "key": "ai_pool:2324:43:41.3",
@@ -3445,7 +3447,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:40:15.726558+00:00",
-      "updated_at": "2026-06-05T02:40:15.726562+00:00",
+      "updated_at": "2026-06-05T02:41:28.834536+00:00",
       "status": "open",
       "code": "3481",
       "name": "群創",
@@ -3458,7 +3460,12 @@
       "change_rate_at_signal": -3.4,
       "volume_ratio_at_signal": 0.63,
       "alert": null,
-      "results": {}
+      "results": {
+        "latest_pct": 0.0,
+        "max_gain": 0.0,
+        "max_drawdown": 0.0
+      },
+      "age_minutes": 1.22
     },
     {
       "key": "ai_pool:3017:33:2625.0",
