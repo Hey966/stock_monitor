@@ -1,7 +1,7 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-05T05:33:11.441821+00:00",
-  "count": 927,
+  "updated_at": "2026-06-05T05:33:28.937949+00:00",
+  "count": 930,
   "items": [
     {
       "key": "ai_pool:3443:95:4480.0",
@@ -25772,6 +25772,66 @@
         "max_drawdown": 0.0
       },
       "age_minutes": 2.45
+    },
+    {
+      "key": "ai_pool:3443:78:4410.0",
+      "module": "ai_pool",
+      "reason": "api_ai_pool",
+      "created_at": "2026-06-05T05:33:26.757280+00:00",
+      "updated_at": "2026-06-05T05:33:26.757283+00:00",
+      "status": "open",
+      "code": "3443",
+      "name": "創意",
+      "sector": "半導體",
+      "entry_price": 4410.0,
+      "last_price": 4410.0,
+      "best_price": 4410.0,
+      "worst_price": 4410.0,
+      "score": 78,
+      "change_rate_at_signal": 0.22,
+      "volume_ratio_at_signal": 1.78,
+      "alert": null,
+      "results": {}
+    },
+    {
+      "key": "ai_pool:2379:76:643.0",
+      "module": "ai_pool",
+      "reason": "api_ai_pool",
+      "created_at": "2026-06-05T05:33:26.757305+00:00",
+      "updated_at": "2026-06-05T05:33:26.757309+00:00",
+      "status": "open",
+      "code": "2379",
+      "name": "瑞昱",
+      "sector": "半導體",
+      "entry_price": 643.0,
+      "last_price": 643.0,
+      "best_price": 643.0,
+      "worst_price": 643.0,
+      "score": 76,
+      "change_rate_at_signal": 3.04,
+      "volume_ratio_at_signal": 1.22,
+      "alert": null,
+      "results": {}
+    },
+    {
+      "key": "ai_pool:3661:24:4285.0",
+      "module": "ai_pool",
+      "reason": "api_ai_pool",
+      "created_at": "2026-06-05T05:33:26.757419+00:00",
+      "updated_at": "2026-06-05T05:33:26.757420+00:00",
+      "status": "open",
+      "code": "3661",
+      "name": "世芯-KY",
+      "sector": "半導體",
+      "entry_price": 4285.0,
+      "last_price": 4285.0,
+      "best_price": 4285.0,
+      "worst_price": 4285.0,
+      "score": 24,
+      "change_rate_at_signal": -1.26,
+      "volume_ratio_at_signal": 1.18,
+      "alert": null,
+      "results": {}
     }
   ]
 }
