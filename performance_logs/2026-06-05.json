@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-05T02:26:59.534798+00:00",
+  "updated_at": "2026-06-05T02:27:01.405381+00:00",
   "count": 63,
   "items": [
     {
@@ -498,13 +498,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:25:05.423244+00:00",
-      "updated_at": "2026-06-05T02:26:57.442272+00:00",
+      "updated_at": "2026-06-05T02:26:59.802400+00:00",
       "status": "open",
       "code": "2382",
       "name": "廣達",
       "sector": "AI伺服器",
       "entry_price": 387.5,
-      "last_price": 387.0,
+      "last_price": 387.5,
       "best_price": 387.5,
       "worst_price": 387.0,
       "score": 32,
@@ -512,11 +512,11 @@
       "volume_ratio_at_signal": 0.47,
       "alert": null,
       "results": {
-        "latest_pct": -0.129,
+        "latest_pct": 0.0,
         "max_gain": 0.0,
         "max_drawdown": -0.129
       },
-      "age_minutes": 1.87
+      "age_minutes": 1.91
     },
     {
       "key": "ai_pool:3324:32:1125.0",
@@ -1018,13 +1018,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:25:15.330065+00:00",
-      "updated_at": "2026-06-05T02:26:57.442292+00:00",
+      "updated_at": "2026-06-05T02:26:59.802420+00:00",
       "status": "open",
       "code": "2382",
       "name": "廣達",
       "sector": "AI伺服器",
       "entry_price": 387.5,
-      "last_price": 387.0,
+      "last_price": 387.5,
       "best_price": 387.5,
       "worst_price": 387.0,
       "score": 33,
@@ -1032,18 +1032,18 @@
       "volume_ratio_at_signal": 0.47,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": -0.129,
+        "latest_pct": 0.0,
         "max_gain": 0.0,
         "max_drawdown": -0.129
       },
-      "age_minutes": 1.7
+      "age_minutes": 1.74
     },
     {
       "key": "fund_flow:2409:35:27.75",
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:25:15.330072+00:00",
-      "updated_at": "2026-06-05T02:25:15.330074+00:00",
+      "updated_at": "2026-06-05T02:27:00.858976+00:00",
       "status": "open",
       "code": "2409",
       "name": "友達",
@@ -1056,7 +1056,12 @@
       "change_rate_at_signal": -5.12,
       "volume_ratio_at_signal": 0.47,
       "alert": "資金退潮警報",
-      "results": {}
+      "results": {
+        "latest_pct": 0.0,
+        "max_gain": 0.0,
+        "max_drawdown": 0.0
+      },
+      "age_minutes": 1.76
     },
     {
       "key": "fund_flow:2308:24:2350.0",
@@ -1273,20 +1278,25 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:25:16.826557+00:00",
-      "updated_at": "2026-06-05T02:25:16.826560+00:00",
+      "updated_at": "2026-06-05T02:27:00.858995+00:00",
       "status": "open",
       "code": "2409",
       "name": "友達",
       "sector": "面板",
       "entry_price": 27.8,
-      "last_price": 27.8,
+      "last_price": 27.75,
       "best_price": 27.8,
-      "worst_price": 27.8,
+      "worst_price": 27.75,
       "score": 34,
       "change_rate_at_signal": -4.95,
       "volume_ratio_at_signal": 0.47,
       "alert": "資金退潮警報",
-      "results": {}
+      "results": {
+        "latest_pct": -0.18,
+        "max_gain": 0.0,
+        "max_drawdown": -0.18
+      },
+      "age_minutes": 1.73
     },
     {
       "key": "fund_flow:3017:30:2630.0",
@@ -1398,20 +1408,25 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:25:21.622321+00:00",
-      "updated_at": "2026-06-05T02:25:21.622324+00:00",
+      "updated_at": "2026-06-05T02:27:00.859003+00:00",
       "status": "open",
       "code": "2409",
       "name": "友達",
       "sector": "面板",
       "entry_price": 27.8,
-      "last_price": 27.8,
+      "last_price": 27.75,
       "best_price": 27.8,
-      "worst_price": 27.8,
+      "worst_price": 27.75,
       "score": 33,
       "change_rate_at_signal": -4.95,
       "volume_ratio_at_signal": 0.47,
       "alert": "資金退潮警報",
-      "results": {}
+      "results": {
+        "latest_pct": -0.18,
+        "max_gain": 0.0,
+        "max_drawdown": -0.18
+      },
+      "age_minutes": 1.65
     },
     {
       "key": "fund_flow:3017:29:2630.0",
