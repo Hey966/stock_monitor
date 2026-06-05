@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-05T06:47:36.099893+00:00",
+  "updated_at": "2026-06-05T06:47:40.794605+00:00",
   "count": 930,
   "items": [
     {
@@ -4445,8 +4445,8 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:45:15.268732+00:00",
-      "updated_at": "2026-06-05T06:42:46.491481+00:00",
-      "status": "open",
+      "updated_at": "2026-06-05T06:47:39.077037+00:00",
+      "status": "closed",
       "code": "2409",
       "name": "友達",
       "sector": "面板",
@@ -4464,9 +4464,10 @@
         "max_drawdown": -1.812,
         "pct_5m": 0.181,
         "pct_10m": 0.181,
-        "pct_30m": -0.181
+        "pct_30m": -0.181,
+        "pct_close_proxy": -1.812
       },
-      "age_minutes": 237.52
+      "age_minutes": 242.4
     },
     {
       "key": "ai_pool:3711:29:578.0",
@@ -5491,7 +5492,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:50:26.323805+00:00",
-      "updated_at": "2026-06-05T06:42:46.491549+00:00",
+      "updated_at": "2026-06-05T06:47:39.077060+00:00",
       "status": "open",
       "code": "2409",
       "name": "友達",
@@ -5512,7 +5513,7 @@
         "pct_10m": 0.0,
         "pct_30m": 0.0
       },
-      "age_minutes": 232.34
+      "age_minutes": 237.21
     },
     {
       "key": "fund_flow:1513:32:170.5",
@@ -5939,7 +5940,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:55:13.518294+00:00",
-      "updated_at": "2026-06-05T06:42:46.491566+00:00",
+      "updated_at": "2026-06-05T06:47:39.077070+00:00",
       "status": "open",
       "code": "2409",
       "name": "友達",
@@ -5960,7 +5961,7 @@
         "pct_10m": -0.362,
         "pct_30m": -0.181
       },
-      "age_minutes": 227.55
+      "age_minutes": 232.43
     },
     {
       "key": "ai_pool:2308:22:2345.0",
@@ -6723,7 +6724,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:00:36.494182+00:00",
-      "updated_at": "2026-06-05T06:42:46.491585+00:00",
+      "updated_at": "2026-06-05T06:47:39.077081+00:00",
       "status": "open",
       "code": "2409",
       "name": "友達",
@@ -6744,7 +6745,7 @@
         "pct_10m": 0.0,
         "pct_30m": -1.264
       },
-      "age_minutes": 222.17
+      "age_minutes": 227.04
     },
     {
       "key": "fund_flow:3324:32:1110.0",
@@ -9887,7 +9888,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:30:29.753373+00:00",
-      "updated_at": "2026-06-05T06:42:46.491679+00:00",
+      "updated_at": "2026-06-05T06:47:39.077100+00:00",
       "status": "open",
       "code": "2409",
       "name": "友達",
@@ -9908,7 +9909,7 @@
         "pct_10m": -0.73,
         "pct_30m": -0.547
       },
-      "age_minutes": 192.28
+      "age_minutes": 197.16
     },
     {
       "key": "fund_flow:2376:31:364.0",
@@ -10643,7 +10644,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:35:22.792876+00:00",
-      "updated_at": "2026-06-05T06:42:46.491699+00:00",
+      "updated_at": "2026-06-05T06:47:39.077109+00:00",
       "status": "open",
       "code": "2409",
       "name": "友達",
@@ -10664,7 +10665,7 @@
         "pct_10m": -0.183,
         "pct_30m": -0.366
       },
-      "age_minutes": 187.39
+      "age_minutes": 192.27
     },
     {
       "key": "fund_flow:1513:22:169.0",
@@ -11483,7 +11484,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:40:30.328104+00:00",
-      "updated_at": "2026-06-05T06:42:46.491719+00:00",
+      "updated_at": "2026-06-05T06:47:39.077117+00:00",
       "status": "open",
       "code": "2409",
       "name": "友達",
@@ -11504,7 +11505,7 @@
         "pct_10m": -0.368,
         "pct_30m": 0.0
       },
-      "age_minutes": 182.27
+      "age_minutes": 187.15
     },
     {
       "key": "ai_pool:2615:90:86.0",
@@ -14087,7 +14088,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T04:00:24.527541+00:00",
-      "updated_at": "2026-06-05T06:42:46.491757+00:00",
+      "updated_at": "2026-06-05T06:47:39.077129+00:00",
       "status": "open",
       "code": "2409",
       "name": "友達",
@@ -14108,7 +14109,7 @@
         "pct_10m": -0.183,
         "pct_30m": -0.183
       },
-      "age_minutes": 162.37
+      "age_minutes": 167.24
     },
     {
       "key": "fund_flow:2379:85:647.0",
@@ -15739,7 +15740,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T04:01:59.401341+00:00",
-      "updated_at": "2026-06-05T06:42:46.491784+00:00",
+      "updated_at": "2026-06-05T06:47:39.077141+00:00",
       "status": "open",
       "code": "2409",
       "name": "友達",
@@ -15760,7 +15761,7 @@
         "pct_10m": -0.183,
         "pct_30m": -0.366
       },
-      "age_minutes": 160.78
+      "age_minutes": 165.66
     },
     {
       "key": "ai_pool:2356:63:77.1",
@@ -16131,7 +16132,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T04:02:30.914002+00:00",
-      "updated_at": "2026-06-05T06:42:46.491798+00:00",
+      "updated_at": "2026-06-05T06:47:39.077148+00:00",
       "status": "open",
       "code": "2409",
       "name": "友達",
@@ -16152,7 +16153,7 @@
         "pct_10m": 0.0,
         "pct_30m": -0.183
       },
-      "age_minutes": 160.26
+      "age_minutes": 165.14
     },
     {
       "key": "ai_pool:2379:96:647.0",
@@ -18343,7 +18344,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T04:15:24.916590+00:00",
-      "updated_at": "2026-06-05T06:42:46.491830+00:00",
+      "updated_at": "2026-06-05T06:47:39.077160+00:00",
       "status": "open",
       "code": "2409",
       "name": "友達",
@@ -18364,7 +18365,7 @@
         "pct_10m": 0.0,
         "pct_30m": 0.183
       },
-      "age_minutes": 147.36
+      "age_minutes": 152.24
     },
     {
       "key": "ai_pool:3443:73:4370.0",
@@ -18875,7 +18876,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T04:20:26.594705+00:00",
-      "updated_at": "2026-06-05T06:42:46.491844+00:00",
+      "updated_at": "2026-06-05T06:47:39.077167+00:00",
       "status": "open",
       "code": "2409",
       "name": "友達",
@@ -18896,7 +18897,7 @@
         "pct_10m": 0.0,
         "pct_30m": 0.735
       },
-      "age_minutes": 142.33
+      "age_minutes": 147.21
     },
     {
       "key": "ai_pool:2379:89:638.0",
@@ -19659,7 +19660,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T04:30:19.748910+00:00",
-      "updated_at": "2026-06-05T06:42:46.491860+00:00",
+      "updated_at": "2026-06-05T06:47:39.077174+00:00",
       "status": "open",
       "code": "2409",
       "name": "友達",
@@ -19680,7 +19681,7 @@
         "pct_10m": 0.183,
         "pct_30m": -0.366
       },
-      "age_minutes": 132.45
+      "age_minutes": 137.32
     },
     {
       "key": "fund_flow:2615:91:86.0",
@@ -19855,7 +19856,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T04:30:30.698243+00:00",
-      "updated_at": "2026-06-05T06:42:46.491870+00:00",
+      "updated_at": "2026-06-05T06:47:39.077180+00:00",
       "status": "open",
       "code": "2409",
       "name": "友達",
@@ -19876,7 +19877,7 @@
         "pct_10m": 0.366,
         "pct_30m": -0.183
       },
-      "age_minutes": 132.26
+      "age_minutes": 137.14
     },
     {
       "key": "fund_flow:2454:28:4275.0",
@@ -20583,7 +20584,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T04:40:15.888163+00:00",
-      "updated_at": "2026-06-05T06:42:46.491886+00:00",
+      "updated_at": "2026-06-05T06:47:39.077186+00:00",
       "status": "open",
       "code": "2409",
       "name": "友達",
@@ -20604,7 +20605,7 @@
         "pct_10m": 0.183,
         "pct_30m": -0.731
       },
-      "age_minutes": 122.51
+      "age_minutes": 127.39
     },
     {
       "key": "fund_flow:2368:30:1315.0",
@@ -21479,7 +21480,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T04:45:24.827194+00:00",
-      "updated_at": "2026-06-05T06:42:46.491905+00:00",
+      "updated_at": "2026-06-05T06:47:39.077194+00:00",
       "status": "open",
       "code": "2409",
       "name": "友達",
@@ -21500,7 +21501,7 @@
         "pct_10m": 0.0,
         "pct_30m": 0.183
       },
-      "age_minutes": 117.36
+      "age_minutes": 122.24
     },
     {
       "key": "ai_pool:2609:72:54.4",
@@ -21591,7 +21592,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T04:50:15.300229+00:00",
-      "updated_at": "2026-06-05T06:42:46.491914+00:00",
+      "updated_at": "2026-06-05T06:47:39.077200+00:00",
       "status": "open",
       "code": "2409",
       "name": "友達",
@@ -21612,7 +21613,7 @@
         "pct_10m": -0.547,
         "pct_30m": -0.365
       },
-      "age_minutes": 112.52
+      "age_minutes": 117.4
     },
     {
       "key": "ai_pool:3481:32:52.1",
@@ -22767,7 +22768,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T05:00:36.402590+00:00",
-      "updated_at": "2026-06-05T06:42:46.491934+00:00",
+      "updated_at": "2026-06-05T06:47:39.077208+00:00",
       "status": "open",
       "code": "2409",
       "name": "友達",
@@ -22788,7 +22789,7 @@
         "pct_10m": -0.367,
         "pct_30m": -0.55
       },
-      "age_minutes": 102.17
+      "age_minutes": 107.04
     },
     {
       "key": "fund_flow:3017:27:2580.0",
@@ -23411,7 +23412,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T05:05:23.451828+00:00",
-      "updated_at": "2026-06-05T06:42:46.491947+00:00",
+      "updated_at": "2026-06-05T06:47:39.077214+00:00",
       "status": "open",
       "code": "2409",
       "name": "友達",
@@ -23432,7 +23433,7 @@
         "pct_10m": 0.0,
         "pct_30m": -0.733
       },
-      "age_minutes": 97.38
+      "age_minutes": 102.26
     },
     {
       "key": "ai_pool:3443:76:4395.0",
@@ -24895,7 +24896,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T05:20:26.778470+00:00",
-      "updated_at": "2026-06-05T06:42:46.491971+00:00",
+      "updated_at": "2026-06-05T06:47:39.077222+00:00",
       "status": "open",
       "code": "2409",
       "name": "友達",
@@ -24916,7 +24917,7 @@
         "pct_10m": -0.55,
         "pct_30m": -0.55
       },
-      "age_minutes": 82.33
+      "age_minutes": 87.2
     },
     {
       "key": "fund_flow:2308:22:2305.0",
@@ -25595,7 +25596,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T05:25:23.891621+00:00",
-      "updated_at": "2026-06-05T06:42:46.491986+00:00",
+      "updated_at": "2026-06-05T06:47:39.077229+00:00",
       "status": "open",
       "code": "2409",
       "name": "友達",
@@ -25616,7 +25617,7 @@
         "pct_10m": -0.733,
         "pct_30m": -0.733
       },
-      "age_minutes": 77.38
+      "age_minutes": 82.25
     },
     {
       "key": "ai_pool:2615:92:86.2",
