@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-05T02:46:30.005809+00:00",
+  "updated_at": "2026-06-05T02:46:32.352493+00:00",
   "count": 167,
   "items": [
     {
@@ -480,7 +480,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:25:05.423221+00:00",
-      "updated_at": "2026-06-05T02:41:28.834474+00:00",
+      "updated_at": "2026-06-05T02:46:31.565384+00:00",
       "status": "open",
       "code": "3481",
       "name": "群創",
@@ -500,7 +500,7 @@
         "pct_5m": 0.756,
         "pct_10m": 1.323
       },
-      "age_minutes": 16.39
+      "age_minutes": 21.44
     },
     {
       "key": "ai_pool:2317:39:286.5",
@@ -966,7 +966,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:25:12.529381+00:00",
-      "updated_at": "2026-06-05T02:41:28.834495+00:00",
+      "updated_at": "2026-06-05T02:46:31.565399+00:00",
       "status": "open",
       "code": "3481",
       "name": "群創",
@@ -986,7 +986,7 @@
         "pct_5m": 0.566,
         "pct_10m": 1.132
       },
-      "age_minutes": 16.27
+      "age_minutes": 21.32
     },
     {
       "key": "ai_pool:5347:35:161.0",
@@ -2073,7 +2073,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:30:19.670300+00:00",
-      "updated_at": "2026-06-05T02:41:28.834509+00:00",
+      "updated_at": "2026-06-05T02:46:31.565409+00:00",
       "status": "open",
       "code": "3481",
       "name": "群創",
@@ -2093,7 +2093,7 @@
         "pct_5m": 0.563,
         "pct_10m": 1.126
       },
-      "age_minutes": 11.15
+      "age_minutes": 16.2
     },
     {
       "key": "ai_pool:3017:39:2650.0",
@@ -2801,7 +2801,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:35:12.437197+00:00",
-      "updated_at": "2026-06-05T02:41:28.834523+00:00",
+      "updated_at": "2026-06-05T02:46:31.565417+00:00",
       "status": "open",
       "code": "3481",
       "name": "群創",
@@ -2818,9 +2818,10 @@
         "latest_pct": 0.56,
         "max_gain": 0.56,
         "max_drawdown": 0.0,
-        "pct_5m": 0.56
+        "pct_5m": 0.56,
+        "pct_10m": 0.56
       },
-      "age_minutes": 6.27
+      "age_minutes": 11.32
     },
     {
       "key": "ai_pool:2324:43:41.3",
@@ -3507,7 +3508,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:40:15.726558+00:00",
-      "updated_at": "2026-06-05T02:41:28.834536+00:00",
+      "updated_at": "2026-06-05T02:46:31.565424+00:00",
       "status": "open",
       "code": "3481",
       "name": "群創",
@@ -3523,9 +3524,10 @@
       "results": {
         "latest_pct": 0.0,
         "max_gain": 0.0,
-        "max_drawdown": 0.0
+        "max_drawdown": 0.0,
+        "pct_5m": 0.0
       },
-      "age_minutes": 1.22
+      "age_minutes": 6.26
     },
     {
       "key": "ai_pool:3017:33:2625.0",
