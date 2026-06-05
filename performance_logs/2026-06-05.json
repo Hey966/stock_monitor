@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-05T06:42:47.699217+00:00",
+  "updated_at": "2026-06-05T06:42:52.195065+00:00",
   "count": 930,
   "items": [
     {
@@ -4039,8 +4039,8 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:40:27.116653+00:00",
-      "updated_at": "2026-06-05T06:37:44.379955+00:00",
-      "status": "open",
+      "updated_at": "2026-06-05T06:42:50.578081+00:00",
+      "status": "closed",
       "code": "1609",
       "name": "大亞",
       "sector": "電線電纜",
@@ -4058,9 +4058,10 @@
         "max_drawdown": -1.761,
         "pct_5m": -0.377,
         "pct_10m": -0.377,
-        "pct_30m": -0.377
+        "pct_30m": -0.377,
+        "pct_close_proxy": -1.635
       },
-      "age_minutes": 237.29
+      "age_minutes": 242.39
     },
     {
       "key": "fund_flow:1513:8:171.5",
@@ -4767,7 +4768,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:45:25.851623+00:00",
-      "updated_at": "2026-06-05T06:37:44.379971+00:00",
+      "updated_at": "2026-06-05T06:42:50.578109+00:00",
       "status": "open",
       "code": "1609",
       "name": "大亞",
@@ -4788,7 +4789,7 @@
         "pct_10m": 0.0,
         "pct_30m": 0.0
       },
-      "age_minutes": 232.31
+      "age_minutes": 237.41
     },
     {
       "key": "ai_pool:2615:100:86.2",
@@ -5523,7 +5524,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:50:26.323819+00:00",
-      "updated_at": "2026-06-05T06:37:44.379984+00:00",
+      "updated_at": "2026-06-05T06:42:50.578128+00:00",
       "status": "open",
       "code": "1609",
       "name": "大亞",
@@ -5544,7 +5545,7 @@
         "pct_10m": 0.0,
         "pct_30m": 0.126
       },
-      "age_minutes": 227.3
+      "age_minutes": 232.4
     },
     {
       "key": "fund_flow:1605:11:39.05",
@@ -6167,7 +6168,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:55:23.828293+00:00",
-      "updated_at": "2026-06-05T06:37:44.379996+00:00",
+      "updated_at": "2026-06-05T06:42:50.578143+00:00",
       "status": "open",
       "code": "1609",
       "name": "大亞",
@@ -6188,7 +6189,7 @@
         "pct_10m": 0.126,
         "pct_30m": 0.126
       },
-      "age_minutes": 222.34
+      "age_minutes": 227.45
     },
     {
       "key": "ai_pool:2615:93:85.9",
@@ -6811,7 +6812,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:00:36.494241+00:00",
-      "updated_at": "2026-06-05T06:37:44.380008+00:00",
+      "updated_at": "2026-06-05T06:42:50.578158+00:00",
       "status": "open",
       "code": "1609",
       "name": "大亞",
@@ -6832,7 +6833,7 @@
         "pct_10m": 0.126,
         "pct_30m": -0.253
       },
-      "age_minutes": 217.13
+      "age_minutes": 222.23
     },
     {
       "key": "ai_pool:2615:100:85.9",
@@ -7231,7 +7232,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:05:22.049903+00:00",
-      "updated_at": "2026-06-05T06:37:44.380018+00:00",
+      "updated_at": "2026-06-05T06:42:50.578171+00:00",
       "status": "open",
       "code": "1609",
       "name": "大亞",
@@ -7252,7 +7253,7 @@
         "pct_10m": 0.0,
         "pct_30m": -0.631
       },
-      "age_minutes": 212.37
+      "age_minutes": 217.48
     },
     {
       "key": "fund_flow:3324:23:1110.0",
@@ -7791,7 +7792,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:10:26.460642+00:00",
-      "updated_at": "2026-06-05T06:37:44.380027+00:00",
+      "updated_at": "2026-06-05T06:42:50.578185+00:00",
       "status": "open",
       "code": "1609",
       "name": "大亞",
@@ -7812,7 +7813,7 @@
         "pct_10m": 0.0,
         "pct_30m": -0.631
       },
-      "age_minutes": 207.3
+      "age_minutes": 212.4
     },
     {
       "key": "ai_pool:2615:78:85.7",
@@ -8267,7 +8268,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:15:25.729233+00:00",
-      "updated_at": "2026-06-05T06:37:44.380038+00:00",
+      "updated_at": "2026-06-05T06:42:50.578197+00:00",
       "status": "open",
       "code": "1609",
       "name": "大亞",
@@ -8288,7 +8289,7 @@
         "pct_10m": 0.126,
         "pct_30m": -0.759
       },
-      "age_minutes": 202.31
+      "age_minutes": 207.41
     },
     {
       "key": "ai_pool:2615:100:85.8",
@@ -8771,7 +8772,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:20:26.563306+00:00",
-      "updated_at": "2026-06-05T06:37:44.380048+00:00",
+      "updated_at": "2026-06-05T06:42:50.578211+00:00",
       "status": "open",
       "code": "1609",
       "name": "大亞",
@@ -8792,7 +8793,7 @@
         "pct_10m": -0.379,
         "pct_30m": -1.01
       },
-      "age_minutes": 197.3
+      "age_minutes": 202.4
     },
     {
       "key": "ai_pool:2379:86:656.0",
@@ -9359,7 +9360,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:25:22.049984+00:00",
-      "updated_at": "2026-06-05T06:37:44.380060+00:00",
+      "updated_at": "2026-06-05T06:42:50.578225+00:00",
       "status": "open",
       "code": "1609",
       "name": "大亞",
@@ -9380,7 +9381,7 @@
         "pct_10m": -0.506,
         "pct_30m": -1.138
       },
-      "age_minutes": 192.37
+      "age_minutes": 197.48
     },
     {
       "key": "fund_flow:2344:9:162.0",
@@ -10003,7 +10004,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:30:29.753461+00:00",
-      "updated_at": "2026-06-05T06:37:44.380070+00:00",
+      "updated_at": "2026-06-05T06:42:50.578256+00:00",
       "status": "open",
       "code": "1609",
       "name": "大亞",
@@ -10024,7 +10025,7 @@
         "pct_10m": -0.127,
         "pct_30m": -0.635
       },
-      "age_minutes": 187.24
+      "age_minutes": 192.35
     },
     {
       "key": "ai_pool:2379:68:651.0",
@@ -10675,7 +10676,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:35:22.792905+00:00",
-      "updated_at": "2026-06-05T06:37:44.380080+00:00",
+      "updated_at": "2026-06-05T06:42:50.578271+00:00",
       "status": "open",
       "code": "1609",
       "name": "大亞",
@@ -10696,7 +10697,7 @@
         "pct_10m": -0.381,
         "pct_30m": -0.635
       },
-      "age_minutes": 182.36
+      "age_minutes": 187.46
     },
     {
       "key": "ai_pool:3443:72:4370.0",
@@ -11347,7 +11348,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:40:30.328057+00:00",
-      "updated_at": "2026-06-05T06:37:44.380090+00:00",
+      "updated_at": "2026-06-05T06:42:50.578286+00:00",
       "status": "open",
       "code": "1609",
       "name": "大亞",
@@ -11368,7 +11369,7 @@
         "pct_10m": -0.381,
         "pct_30m": -0.762
       },
-      "age_minutes": 177.23
+      "age_minutes": 182.34
     },
     {
       "key": "fund_flow:3017:23:2590.0",
@@ -12103,7 +12104,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:45:24.850269+00:00",
-      "updated_at": "2026-06-05T06:37:44.380102+00:00",
+      "updated_at": "2026-06-05T06:42:50.578300+00:00",
       "status": "open",
       "code": "1609",
       "name": "大亞",
@@ -12124,7 +12125,7 @@
         "pct_10m": -0.509,
         "pct_30m": -0.382
       },
-      "age_minutes": 172.33
+      "age_minutes": 177.43
     },
     {
       "key": "fund_flow:2308:31:2315.0",
@@ -12887,7 +12888,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:50:26.956364+00:00",
-      "updated_at": "2026-06-05T06:37:44.380115+00:00",
+      "updated_at": "2026-06-05T06:42:50.578316+00:00",
       "status": "open",
       "code": "1609",
       "name": "大亞",
@@ -12908,7 +12909,7 @@
         "pct_10m": -0.128,
         "pct_30m": 0.128
       },
-      "age_minutes": 167.29
+      "age_minutes": 172.39
     },
     {
       "key": "ai_pool:2615:77:85.5",
@@ -13503,7 +13504,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:55:23.123565+00:00",
-      "updated_at": "2026-06-05T06:37:44.380125+00:00",
+      "updated_at": "2026-06-05T06:42:50.578329+00:00",
       "status": "open",
       "code": "1609",
       "name": "大亞",
@@ -13524,7 +13525,7 @@
         "pct_10m": 0.128,
         "pct_30m": 0.512
       },
-      "age_minutes": 162.35
+      "age_minutes": 167.46
     },
     {
       "key": "fund_flow:2454:29:4285.0",
@@ -14371,7 +14372,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T04:00:36.205845+00:00",
-      "updated_at": "2026-06-05T06:37:44.380138+00:00",
+      "updated_at": "2026-06-05T06:42:50.578343+00:00",
       "status": "open",
       "code": "1609",
       "name": "大亞",
@@ -14392,7 +14393,7 @@
         "pct_10m": -0.255,
         "pct_30m": 0.255
       },
-      "age_minutes": 157.14
+      "age_minutes": 162.24
     },
     {
       "key": "fund_flow:2344:10:162.0",
@@ -15687,7 +15688,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T04:01:59.401329+00:00",
-      "updated_at": "2026-06-05T06:37:44.380154+00:00",
+      "updated_at": "2026-06-05T06:42:50.578360+00:00",
       "status": "open",
       "code": "1609",
       "name": "大亞",
@@ -15708,7 +15709,7 @@
         "pct_10m": -0.255,
         "pct_30m": 0.255
       },
-      "age_minutes": 155.75
+      "age_minutes": 160.85
     },
     {
       "key": "fund_flow:2409:22:27.3",
@@ -17115,7 +17116,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T04:06:16.935192+00:00",
-      "updated_at": "2026-06-05T06:37:44.380171+00:00",
+      "updated_at": "2026-06-05T06:42:50.578378+00:00",
       "status": "open",
       "code": "1609",
       "name": "大亞",
@@ -17136,7 +17137,7 @@
         "pct_10m": 0.0,
         "pct_30m": 0.0
       },
-      "age_minutes": 151.46
+      "age_minutes": 156.56
     },
     {
       "key": "fund_flow:8046:26:847.0",
@@ -17843,7 +17844,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T04:10:27.039972+00:00",
-      "updated_at": "2026-06-05T06:37:44.380181+00:00",
+      "updated_at": "2026-06-05T06:42:50.578393+00:00",
       "status": "open",
       "code": "1609",
       "name": "大亞",
@@ -17864,7 +17865,7 @@
         "pct_10m": 0.384,
         "pct_30m": 0.384
       },
-      "age_minutes": 147.29
+      "age_minutes": 152.39
     },
     {
       "key": "ai_pool:3443:82:4375.0",
@@ -18291,7 +18292,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T04:15:24.916580+00:00",
-      "updated_at": "2026-06-05T06:37:44.380188+00:00",
+      "updated_at": "2026-06-05T06:42:50.578405+00:00",
       "status": "open",
       "code": "1609",
       "name": "大亞",
@@ -18312,7 +18313,7 @@
         "pct_10m": 0.383,
         "pct_30m": 0.0
       },
-      "age_minutes": 142.32
+      "age_minutes": 147.43
     },
     {
       "key": "fund_flow:2409:17:27.25",
@@ -18823,7 +18824,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T04:20:26.594695+00:00",
-      "updated_at": "2026-06-05T06:37:44.380197+00:00",
+      "updated_at": "2026-06-05T06:42:50.578417+00:00",
       "status": "open",
       "code": "1609",
       "name": "大亞",
@@ -18844,7 +18845,7 @@
         "pct_10m": 0.0,
         "pct_30m": -0.382
       },
-      "age_minutes": 137.3
+      "age_minutes": 142.4
     },
     {
       "key": "fund_flow:2409:26:27.2",
@@ -19355,7 +19356,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T04:25:24.727243+00:00",
-      "updated_at": "2026-06-05T06:37:44.380205+00:00",
+      "updated_at": "2026-06-05T06:42:50.578431+00:00",
       "status": "open",
       "code": "1609",
       "name": "大亞",
@@ -19376,7 +19377,7 @@
         "pct_10m": -0.255,
         "pct_30m": -0.127
       },
-      "age_minutes": 132.33
+      "age_minutes": 137.43
     },
     {
       "key": "ai_pool:2379:90:639.0",
@@ -19803,7 +19804,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T04:30:30.698230+00:00",
-      "updated_at": "2026-06-05T06:37:44.380227+00:00",
+      "updated_at": "2026-06-05T06:42:50.578441+00:00",
       "status": "open",
       "code": "1609",
       "name": "大亞",
@@ -19824,7 +19825,7 @@
         "pct_10m": 0.0,
         "pct_30m": -0.127
       },
-      "age_minutes": 127.23
+      "age_minutes": 132.33
     },
     {
       "key": "fund_flow:2409:29:27.3",
@@ -20363,7 +20364,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T04:35:23.553302+00:00",
-      "updated_at": "2026-06-05T06:37:44.380236+00:00",
+      "updated_at": "2026-06-05T06:42:50.578454+00:00",
       "status": "open",
       "code": "1609",
       "name": "大亞",
@@ -20384,7 +20385,7 @@
         "pct_10m": -0.128,
         "pct_30m": -0.128
       },
-      "age_minutes": 122.35
+      "age_minutes": 127.45
     },
     {
       "key": "ai_pool:3443:85:4400.0",
@@ -20867,7 +20868,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T04:40:26.770256+00:00",
-      "updated_at": "2026-06-05T06:37:44.380246+00:00",
+      "updated_at": "2026-06-05T06:42:50.578465+00:00",
       "status": "open",
       "code": "1609",
       "name": "大亞",
@@ -20888,7 +20889,7 @@
         "pct_10m": -0.382,
         "pct_30m": -0.255
       },
-      "age_minutes": 117.29
+      "age_minutes": 122.4
     },
     {
       "key": "ai_pool:2379:84:641.0",
@@ -21427,7 +21428,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T04:45:24.827184+00:00",
-      "updated_at": "2026-06-05T06:37:44.380256+00:00",
+      "updated_at": "2026-06-05T06:42:50.578477+00:00",
       "status": "open",
       "code": "1609",
       "name": "大亞",
@@ -21448,7 +21449,7 @@
         "pct_10m": 0.128,
         "pct_30m": 0.0
       },
-      "age_minutes": 112.33
+      "age_minutes": 117.43
     },
     {
       "key": "fund_flow:2409:25:27.25",
@@ -21959,7 +21960,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T04:50:26.162599+00:00",
-      "updated_at": "2026-06-05T06:37:44.380265+00:00",
+      "updated_at": "2026-06-05T06:42:50.578488+00:00",
       "status": "open",
       "code": "1609",
       "name": "大亞",
@@ -21980,7 +21981,7 @@
         "pct_10m": 0.0,
         "pct_30m": 0.0
       },
-      "age_minutes": 107.3
+      "age_minutes": 112.41
     },
     {
       "key": "ai_pool:3443:75:4385.0",
@@ -22351,7 +22352,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T04:55:22.342783+00:00",
-      "updated_at": "2026-06-05T06:37:44.380272+00:00",
+      "updated_at": "2026-06-05T06:42:50.578498+00:00",
       "status": "open",
       "code": "1609",
       "name": "大亞",
@@ -22372,7 +22373,7 @@
         "pct_10m": 0.0,
         "pct_30m": 0.0
       },
-      "age_minutes": 102.37
+      "age_minutes": 107.47
     },
     {
       "key": "ai_pool:2615:91:86.1",
@@ -22855,7 +22856,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T05:00:36.402624+00:00",
-      "updated_at": "2026-06-05T06:37:44.380281+00:00",
+      "updated_at": "2026-06-05T06:42:50.578510+00:00",
       "status": "open",
       "code": "1609",
       "name": "大亞",
@@ -22876,7 +22877,7 @@
         "pct_10m": -0.128,
         "pct_30m": -0.255
       },
-      "age_minutes": 97.13
+      "age_minutes": 102.24
     },
     {
       "key": "ai_pool:2379:91:640.0",
@@ -23359,7 +23360,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T05:05:23.451821+00:00",
-      "updated_at": "2026-06-05T06:37:44.380290+00:00",
+      "updated_at": "2026-06-05T06:42:50.578521+00:00",
       "status": "open",
       "code": "1609",
       "name": "大亞",
@@ -23380,7 +23381,7 @@
         "pct_10m": 0.128,
         "pct_30m": 0.0
       },
-      "age_minutes": 92.35
+      "age_minutes": 97.45
     },
     {
       "key": "fund_flow:2409:25:27.3",
@@ -24955,7 +24956,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T05:20:26.778524+00:00",
-      "updated_at": "2026-06-05T06:37:44.380305+00:00",
+      "updated_at": "2026-06-05T06:42:50.578542+00:00",
       "status": "open",
       "code": "1609",
       "name": "大亞",
@@ -24976,7 +24977,7 @@
         "pct_10m": -0.255,
         "pct_30m": -0.255
       },
-      "age_minutes": 77.29
+      "age_minutes": 82.4
     },
     {
       "key": "ai_pool:2609:82:54.5",
@@ -26019,7 +26020,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T05:30:33.405592+00:00",
-      "updated_at": "2026-06-05T06:37:44.380315+00:00",
+      "updated_at": "2026-06-05T06:42:50.578558+00:00",
       "status": "open",
       "code": "1609",
       "name": "大亞",
@@ -26040,7 +26041,7 @@
         "pct_10m": 0.0,
         "pct_30m": 0.0
       },
-      "age_minutes": 67.18
+      "age_minutes": 72.29
     },
     {
       "key": "fund_flow:1513:17:170.5",
