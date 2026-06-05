@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-05T06:35:42.394194+00:00",
+  "updated_at": "2026-06-05T06:35:46.394986+00:00",
   "count": 930,
   "items": [
     {
@@ -2872,8 +2872,8 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:35:12.437160+00:00",
-      "updated_at": "2026-06-05T06:31:00.058947+00:00",
-      "status": "open",
+      "updated_at": "2026-06-05T06:35:44.951411+00:00",
+      "status": "closed",
       "code": "2609",
       "name": "陽明",
       "sector": "航運",
@@ -2891,9 +2891,10 @@
         "max_drawdown": -0.737,
         "pct_5m": 0.0,
         "pct_10m": -0.552,
-        "pct_30m": -0.737
+        "pct_30m": -0.737,
+        "pct_close_proxy": 0.368
       },
-      "age_minutes": 235.79
+      "age_minutes": 240.54
     },
     {
       "key": "ai_pool:8046:61:871.0",
@@ -3684,7 +3685,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:40:15.726533+00:00",
-      "updated_at": "2026-06-05T06:31:00.058965+00:00",
+      "updated_at": "2026-06-05T06:35:44.951445+00:00",
       "status": "open",
       "code": "2609",
       "name": "陽明",
@@ -3705,7 +3706,7 @@
         "pct_10m": -0.185,
         "pct_30m": -0.369
       },
-      "age_minutes": 230.74
+      "age_minutes": 235.49
     },
     {
       "key": "ai_pool:3231:38:172.0",
@@ -4944,7 +4945,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:50:15.682091+00:00",
-      "updated_at": "2026-06-05T06:31:00.058983+00:00",
+      "updated_at": "2026-06-05T06:35:44.951470+00:00",
       "status": "open",
       "code": "2609",
       "name": "陽明",
@@ -4965,7 +4966,7 @@
         "pct_10m": 0.185,
         "pct_30m": -0.185
       },
-      "age_minutes": 220.74
+      "age_minutes": 225.49
     },
     {
       "key": "ai_pool:2324:54:41.35",
@@ -5644,7 +5645,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:55:13.518209+00:00",
-      "updated_at": "2026-06-05T06:31:00.058999+00:00",
+      "updated_at": "2026-06-05T06:35:44.951487+00:00",
       "status": "open",
       "code": "2609",
       "name": "陽明",
@@ -5665,7 +5666,7 @@
         "pct_10m": -0.37,
         "pct_30m": -0.185
       },
-      "age_minutes": 215.78
+      "age_minutes": 220.52
     },
     {
       "key": "ai_pool:2324:57:41.55",
@@ -6372,7 +6373,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:00:25.046096+00:00",
-      "updated_at": "2026-06-05T06:31:00.059014+00:00",
+      "updated_at": "2026-06-05T06:35:44.951503+00:00",
       "status": "open",
       "code": "2609",
       "name": "陽明",
@@ -6393,7 +6394,7 @@
         "pct_10m": -0.369,
         "pct_30m": 0.369
       },
-      "age_minutes": 210.58
+      "age_minutes": 215.33
     },
     {
       "key": "ai_pool:3711:37:578.0",
@@ -7044,7 +7045,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:05:11.974240+00:00",
-      "updated_at": "2026-06-05T06:31:00.059028+00:00",
+      "updated_at": "2026-06-05T06:35:44.951519+00:00",
       "status": "open",
       "code": "2609",
       "name": "陽明",
@@ -7065,7 +7066,7 @@
         "pct_10m": -0.185,
         "pct_30m": 0.556
       },
-      "age_minutes": 205.8
+      "age_minutes": 210.55
     },
     {
       "key": "ai_pool:3017:32:2615.0",
@@ -7912,7 +7913,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:15:14.980029+00:00",
-      "updated_at": "2026-06-05T06:31:00.059044+00:00",
+      "updated_at": "2026-06-05T06:35:44.951537+00:00",
       "status": "open",
       "code": "2609",
       "name": "陽明",
@@ -7933,7 +7934,7 @@
         "pct_10m": 0.186,
         "pct_30m": 0.371
       },
-      "age_minutes": 195.75
+      "age_minutes": 200.5
     },
     {
       "key": "ai_pool:2618:51:37.95",
@@ -8500,7 +8501,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:20:15.486097+00:00",
-      "updated_at": "2026-06-05T06:31:00.059059+00:00",
+      "updated_at": "2026-06-05T06:35:44.951551+00:00",
       "status": "open",
       "code": "2609",
       "name": "陽明",
@@ -8521,7 +8522,7 @@
         "pct_10m": 0.741,
         "pct_30m": 0.37
       },
-      "age_minutes": 190.74
+      "age_minutes": 195.49
     },
     {
       "key": "ai_pool:2454:39:4335.0",
@@ -8948,7 +8949,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:25:11.681347+00:00",
-      "updated_at": "2026-06-05T06:31:00.059073+00:00",
+      "updated_at": "2026-06-05T06:35:44.951565+00:00",
       "status": "open",
       "code": "2609",
       "name": "陽明",
@@ -8969,7 +8970,7 @@
         "pct_10m": 0.37,
         "pct_30m": 0.185
       },
-      "age_minutes": 185.81
+      "age_minutes": 190.55
     },
     {
       "key": "ai_pool:2356:42:76.8",
@@ -10012,7 +10013,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:35:12.135054+00:00",
-      "updated_at": "2026-06-05T06:31:00.059091+00:00",
+      "updated_at": "2026-06-05T06:35:44.951586+00:00",
       "status": "open",
       "code": "2609",
       "name": "陽明",
@@ -10033,7 +10034,7 @@
         "pct_10m": 0.0,
         "pct_30m": 0.185
       },
-      "age_minutes": 175.8
+      "age_minutes": 180.55
     },
     {
       "key": "ai_pool:8046:56:861.0",
@@ -10740,7 +10741,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:40:15.555141+00:00",
-      "updated_at": "2026-06-05T06:31:00.059104+00:00",
+      "updated_at": "2026-06-05T06:35:44.951601+00:00",
       "status": "open",
       "code": "2609",
       "name": "陽明",
@@ -10761,7 +10762,7 @@
         "pct_10m": 0.0,
         "pct_30m": -0.185
       },
-      "age_minutes": 170.74
+      "age_minutes": 175.49
     },
     {
       "key": "ai_pool:3661:46:4300.0",
@@ -18328,7 +18329,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T04:20:15.505065+00:00",
-      "updated_at": "2026-06-05T06:31:00.059150+00:00",
+      "updated_at": "2026-06-05T06:35:44.991685+00:00",
       "status": "open",
       "code": "2609",
       "name": "陽明",
@@ -18349,7 +18350,7 @@
         "pct_10m": 0.185,
         "pct_30m": 0.741
       },
-      "age_minutes": 130.74
+      "age_minutes": 135.49
     },
     {
       "key": "ai_pool:8046:29:845.0",
@@ -20876,7 +20877,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T04:45:14.480511+00:00",
-      "updated_at": "2026-06-05T06:31:00.059173+00:00",
+      "updated_at": "2026-06-05T06:35:44.991744+00:00",
       "status": "open",
       "code": "2609",
       "name": "陽明",
@@ -20897,7 +20898,7 @@
         "pct_10m": 0.184,
         "pct_30m": 0.0
       },
-      "age_minutes": 105.76
+      "age_minutes": 110.51
     },
     {
       "key": "ai_pool:3443:74:4375.0",
@@ -21436,7 +21437,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T04:50:15.300073+00:00",
-      "updated_at": "2026-06-05T06:31:00.059186+00:00",
+      "updated_at": "2026-06-05T06:35:44.991760+00:00",
       "status": "open",
       "code": "2609",
       "name": "陽明",
@@ -21457,7 +21458,7 @@
         "pct_10m": 0.0,
         "pct_30m": 0.184
       },
-      "age_minutes": 100.75
+      "age_minutes": 105.49
     },
     {
       "key": "ai_pool:2368:55:1320.0",
@@ -22528,7 +22529,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T05:00:36.402530+00:00",
-      "updated_at": "2026-06-05T06:31:00.059196+00:00",
+      "updated_at": "2026-06-05T06:35:44.991780+00:00",
       "status": "open",
       "code": "2609",
       "name": "陽明",
@@ -22549,7 +22550,7 @@
         "pct_10m": 0.0,
         "pct_30m": 0.368
       },
-      "age_minutes": 90.39
+      "age_minutes": 95.14
     },
     {
       "key": "fund_flow:2317:33:286.0",
@@ -22864,7 +22865,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T05:05:12.264662+00:00",
-      "updated_at": "2026-06-05T06:31:00.059202+00:00",
+      "updated_at": "2026-06-05T06:35:44.991792+00:00",
       "status": "open",
       "code": "2609",
       "name": "陽明",
@@ -22885,7 +22886,7 @@
         "pct_10m": 0.0,
         "pct_30m": 0.368
       },
-      "age_minutes": 85.8
+      "age_minutes": 90.55
     },
     {
       "key": "ai_pool:2324:65:41.6",
@@ -24460,7 +24461,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T05:20:15.178137+00:00",
-      "updated_at": "2026-06-05T06:31:00.059211+00:00",
+      "updated_at": "2026-06-05T06:35:44.991814+00:00",
       "status": "open",
       "code": "2609",
       "name": "陽明",
@@ -24481,7 +24482,7 @@
         "pct_10m": 0.0,
         "pct_30m": 0.0
       },
-      "age_minutes": 70.75
+      "age_minutes": 75.5
     },
     {
       "key": "ai_pool:3443:68:4410.0",
@@ -24936,7 +24937,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T05:25:12.305101+00:00",
-      "updated_at": "2026-06-05T06:31:00.059217+00:00",
+      "updated_at": "2026-06-05T06:35:44.991828+00:00",
       "status": "open",
       "code": "2609",
       "name": "陽明",
@@ -24957,7 +24958,7 @@
         "pct_10m": 0.0,
         "pct_30m": 0.0
       },
-      "age_minutes": 65.8
+      "age_minutes": 70.54
     },
     {
       "key": "ai_pool:5347:78:161.5",
