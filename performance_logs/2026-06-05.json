@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-05T06:56:56.396818+00:00",
+  "updated_at": "2026-06-05T06:57:00.695216+00:00",
   "count": 930,
   "items": [
     {
@@ -6151,8 +6151,8 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:55:23.828254+00:00",
-      "updated_at": "2026-06-05T06:52:03.150144+00:00",
-      "status": "open",
+      "updated_at": "2026-06-05T06:56:59.116153+00:00",
+      "status": "closed",
       "code": "3711",
       "name": "日月光投控",
       "sector": "半導體",
@@ -6170,9 +6170,10 @@
         "max_drawdown": -1.036,
         "pct_5m": -0.345,
         "pct_10m": -0.345,
-        "pct_30m": -0.345
+        "pct_30m": -0.345,
+        "pct_close_proxy": -0.345
       },
-      "age_minutes": 236.66
+      "age_minutes": 241.59
     },
     {
       "key": "fund_flow:3017:29:2620.0",
@@ -6515,7 +6516,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:00:25.047663+00:00",
-      "updated_at": "2026-06-05T06:52:03.150154+00:00",
+      "updated_at": "2026-06-05T06:56:59.116180+00:00",
       "status": "open",
       "code": "3711",
       "name": "日月光投控",
@@ -6536,7 +6537,7 @@
         "pct_10m": -0.173,
         "pct_30m": -0.346
       },
-      "age_minutes": 231.64
+      "age_minutes": 236.57
     },
     {
       "key": "ai_pool:2382:33:391.0",
@@ -7747,7 +7748,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:10:26.460575+00:00",
-      "updated_at": "2026-06-05T06:52:03.150167+00:00",
+      "updated_at": "2026-06-05T06:56:59.116201+00:00",
       "status": "open",
       "code": "3711",
       "name": "日月光投控",
@@ -7768,7 +7769,7 @@
         "pct_10m": 0.0,
         "pct_30m": -0.347
       },
-      "age_minutes": 221.61
+      "age_minutes": 226.54
     },
     {
       "key": "fund_flow:2382:35:392.0",
@@ -8223,7 +8224,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:15:25.729150+00:00",
-      "updated_at": "2026-06-05T06:52:03.150177+00:00",
+      "updated_at": "2026-06-05T06:56:59.116215+00:00",
       "status": "open",
       "code": "3711",
       "name": "日月光投控",
@@ -8244,7 +8245,7 @@
         "pct_10m": 0.0,
         "pct_30m": -0.347
       },
-      "age_minutes": 216.62
+      "age_minutes": 221.56
     },
     {
       "key": "fund_flow:1513:24:171.0",
@@ -8755,7 +8756,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:20:26.563269+00:00",
-      "updated_at": "2026-06-05T06:52:03.150185+00:00",
+      "updated_at": "2026-06-05T06:56:59.116227+00:00",
       "status": "open",
       "code": "3711",
       "name": "日月光投控",
@@ -8776,7 +8777,7 @@
         "pct_10m": -0.173,
         "pct_30m": -0.347
       },
-      "age_minutes": 211.61
+      "age_minutes": 216.54
     },
     {
       "key": "fund_flow:3324:19:1105.0",
@@ -10463,7 +10464,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:35:12.135219+00:00",
-      "updated_at": "2026-06-05T06:52:03.150200+00:00",
+      "updated_at": "2026-06-05T06:56:59.116246+00:00",
       "status": "open",
       "code": "3711",
       "name": "日月光投控",
@@ -10484,7 +10485,7 @@
         "pct_10m": -0.347,
         "pct_30m": -0.347
       },
-      "age_minutes": 196.85
+      "age_minutes": 201.78
     },
     {
       "key": "fund_flow:2615:95:85.9",
@@ -10547,7 +10548,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:35:22.792816+00:00",
-      "updated_at": "2026-06-05T06:52:03.150206+00:00",
+      "updated_at": "2026-06-05T06:56:59.116257+00:00",
       "status": "open",
       "code": "3711",
       "name": "日月光投控",
@@ -10568,7 +10569,7 @@
         "pct_10m": -0.174,
         "pct_30m": -0.174
       },
-      "age_minutes": 196.67
+      "age_minutes": 201.61
     },
     {
       "key": "fund_flow:2382:25:389.0",
@@ -11107,7 +11108,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:40:15.555279+00:00",
-      "updated_at": "2026-06-05T06:52:03.150214+00:00",
+      "updated_at": "2026-06-05T06:56:59.116281+00:00",
       "status": "open",
       "code": "3711",
       "name": "日月光投控",
@@ -11128,7 +11129,7 @@
         "pct_10m": 0.0,
         "pct_30m": -0.174
       },
-      "age_minutes": 191.79
+      "age_minutes": 196.73
     },
     {
       "key": "ai_pool:3481:14:53.0",
@@ -11751,7 +11752,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:45:14.598213+00:00",
-      "updated_at": "2026-06-05T06:52:03.150222+00:00",
+      "updated_at": "2026-06-05T06:56:59.116296+00:00",
       "status": "open",
       "code": "3711",
       "name": "日月光投控",
@@ -11772,7 +11773,7 @@
         "pct_10m": -0.347,
         "pct_30m": -0.521
       },
-      "age_minutes": 186.81
+      "age_minutes": 191.74
     },
     {
       "key": "ai_pool:2382:32:390.0",
@@ -13263,7 +13264,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:55:12.071495+00:00",
-      "updated_at": "2026-06-05T06:52:03.150232+00:00",
+      "updated_at": "2026-06-05T06:56:59.116315+00:00",
       "status": "open",
       "code": "3711",
       "name": "日月光投控",
@@ -13284,7 +13285,7 @@
         "pct_10m": 0.349,
         "pct_30m": 0.349
       },
-      "age_minutes": 176.85
+      "age_minutes": 181.78
     },
     {
       "key": "ai_pool:3037:11:930.0",
@@ -14103,7 +14104,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T04:00:24.527530+00:00",
-      "updated_at": "2026-06-05T06:52:03.150240+00:00",
+      "updated_at": "2026-06-05T06:56:59.116334+00:00",
       "status": "open",
       "code": "3711",
       "name": "日月光投控",
@@ -14124,7 +14125,7 @@
         "pct_10m": 0.0,
         "pct_30m": -0.174
       },
-      "age_minutes": 171.64
+      "age_minutes": 176.58
     },
     {
       "key": "ai_pool:2409:12:27.25",
@@ -15307,7 +15308,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T04:01:42.928946+00:00",
-      "updated_at": "2026-06-05T06:52:03.150249+00:00",
+      "updated_at": "2026-06-05T06:56:59.116354+00:00",
       "status": "open",
       "code": "3711",
       "name": "日月光投控",
@@ -15328,7 +15329,7 @@
         "pct_10m": -0.174,
         "pct_30m": -0.348
       },
-      "age_minutes": 170.34
+      "age_minutes": 175.27
     },
     {
       "key": "fund_flow:2615:89:85.9",
@@ -19815,7 +19816,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T04:30:30.698197+00:00",
-      "updated_at": "2026-06-05T06:52:03.150275+00:00",
+      "updated_at": "2026-06-05T06:56:59.116395+00:00",
       "status": "open",
       "code": "3711",
       "name": "日月光投控",
@@ -19836,7 +19837,7 @@
         "pct_10m": 0.698,
         "pct_30m": 0.349
       },
-      "age_minutes": 141.54
+      "age_minutes": 146.47
     },
     {
       "key": "fund_flow:1513:26:169.5",
@@ -20403,7 +20404,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T04:35:23.553287+00:00",
-      "updated_at": "2026-06-05T06:52:03.150284+00:00",
+      "updated_at": "2026-06-05T06:56:59.116410+00:00",
       "status": "open",
       "code": "3711",
       "name": "日月光投控",
@@ -20424,7 +20425,7 @@
         "pct_10m": 0.349,
         "pct_30m": 0.0
       },
-      "age_minutes": 136.66
+      "age_minutes": 141.59
     },
     {
       "key": "fund_flow:1609:18:39.2",
@@ -20515,7 +20516,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T04:40:15.888079+00:00",
-      "updated_at": "2026-06-05T06:52:03.150289+00:00",
+      "updated_at": "2026-06-05T06:56:59.116421+00:00",
       "status": "open",
       "code": "3711",
       "name": "日月光投控",
@@ -20536,7 +20537,7 @@
         "pct_10m": 0.348,
         "pct_30m": 0.0
       },
-      "age_minutes": 131.79
+      "age_minutes": 136.72
     },
     {
       "key": "ai_pool:8046:21:849.0",
@@ -21271,7 +21272,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T04:45:14.480673+00:00",
-      "updated_at": "2026-06-05T06:52:03.150296+00:00",
+      "updated_at": "2026-06-05T06:56:59.116436+00:00",
       "status": "open",
       "code": "3711",
       "name": "日月光投控",
@@ -21292,7 +21293,7 @@
         "pct_10m": 0.697,
         "pct_30m": 0.0
       },
-      "age_minutes": 126.81
+      "age_minutes": 131.74
     },
     {
       "key": "ai_pool:3017:4:2565.0",
@@ -21747,7 +21748,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T04:50:15.300286+00:00",
-      "updated_at": "2026-06-05T06:52:03.150302+00:00",
+      "updated_at": "2026-06-05T06:56:59.116450+00:00",
       "status": "open",
       "code": "3711",
       "name": "日月光投控",
@@ -21768,7 +21769,7 @@
         "pct_10m": -0.174,
         "pct_30m": 0.0
       },
-      "age_minutes": 121.8
+      "age_minutes": 126.73
     },
     {
       "key": "ai_pool:3661:22:4265.0",
@@ -22251,7 +22252,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T04:55:22.342730+00:00",
-      "updated_at": "2026-06-05T06:52:03.150309+00:00",
+      "updated_at": "2026-06-05T06:56:59.116463+00:00",
       "status": "open",
       "code": "3711",
       "name": "日月光投控",
@@ -22272,7 +22273,7 @@
         "pct_10m": -0.521,
         "pct_30m": 0.347
       },
-      "age_minutes": 116.68
+      "age_minutes": 121.61
     },
     {
       "key": "fund_flow:1605:24:39.4",
@@ -22727,7 +22728,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T05:00:36.402569+00:00",
-      "updated_at": "2026-06-05T06:52:03.150315+00:00",
+      "updated_at": "2026-06-05T06:56:59.116475+00:00",
       "status": "open",
       "code": "3711",
       "name": "日月光投控",
@@ -22748,7 +22749,7 @@
         "pct_10m": 0.174,
         "pct_30m": 0.523
       },
-      "age_minutes": 111.45
+      "age_minutes": 116.38
     },
     {
       "key": "fund_flow:1513:27:169.5",
@@ -23287,7 +23288,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T05:05:23.451765+00:00",
-      "updated_at": "2026-06-05T06:52:03.150321+00:00",
+      "updated_at": "2026-06-05T06:56:59.116487+00:00",
       "status": "open",
       "code": "3711",
       "name": "日月光投控",
@@ -23308,7 +23309,7 @@
         "pct_10m": -0.174,
         "pct_30m": 0.348
       },
-      "age_minutes": 106.66
+      "age_minutes": 111.59
     },
     {
       "key": "fund_flow:3661:33:4250.0",
@@ -23623,7 +23624,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T05:10:15.761902+00:00",
-      "updated_at": "2026-06-05T06:52:03.150327+00:00",
+      "updated_at": "2026-06-05T06:56:59.116498+00:00",
       "status": "open",
       "code": "3711",
       "name": "日月光投控",
@@ -23644,7 +23645,7 @@
         "pct_10m": 0.0,
         "pct_30m": 0.174
       },
-      "age_minutes": 101.79
+      "age_minutes": 106.72
     },
     {
       "key": "ai_pool:5347:25:160.5",
@@ -24043,7 +24044,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T05:15:14.723448+00:00",
-      "updated_at": "2026-06-05T06:52:03.150333+00:00",
+      "updated_at": "2026-06-05T06:56:59.116510+00:00",
       "status": "open",
       "code": "3711",
       "name": "日月光投控",
@@ -24064,7 +24065,7 @@
         "pct_10m": 0.522,
         "pct_30m": 0.348
       },
-      "age_minutes": 96.81
+      "age_minutes": 101.74
     },
     {
       "key": "ai_pool:3481:32:52.5",
@@ -24267,7 +24268,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T05:15:26.380370+00:00",
-      "updated_at": "2026-06-05T06:52:03.150339+00:00",
+      "updated_at": "2026-06-05T06:56:59.116520+00:00",
       "status": "open",
       "code": "3711",
       "name": "日月光投控",
@@ -24288,7 +24289,7 @@
         "pct_10m": 0.522,
         "pct_30m": 0.348
       },
-      "age_minutes": 96.61
+      "age_minutes": 101.55
     },
     {
       "key": "fund_flow:3037:35:935.0",
@@ -25247,7 +25248,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T05:25:12.305594+00:00",
-      "updated_at": "2026-06-05T06:52:03.150345+00:00",
+      "updated_at": "2026-06-05T06:56:59.116535+00:00",
       "status": "open",
       "code": "3711",
       "name": "日月光投控",
@@ -25268,7 +25269,7 @@
         "pct_10m": -0.173,
         "pct_30m": -0.173
       },
-      "age_minutes": 86.85
+      "age_minutes": 91.78
     },
     {
       "key": "ai_pool:2382:40:386.5",
@@ -25415,7 +25416,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T05:25:23.891500+00:00",
-      "updated_at": "2026-06-05T06:52:03.150351+00:00",
+      "updated_at": "2026-06-05T06:56:59.116547+00:00",
       "status": "open",
       "code": "3711",
       "name": "日月光投控",
@@ -25436,7 +25437,7 @@
         "pct_10m": -0.173,
         "pct_30m": -0.173
       },
-      "age_minutes": 86.65
+      "age_minutes": 91.59
     },
     {
       "key": "fund_flow:2376:30:369.0",
@@ -25975,7 +25976,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T05:30:21.697428+00:00",
-      "updated_at": "2026-06-05T06:52:03.150357+00:00",
+      "updated_at": "2026-06-05T06:56:59.116558+00:00",
       "status": "open",
       "code": "3711",
       "name": "日月光投控",
@@ -25996,7 +25997,7 @@
         "pct_10m": 0.0,
         "pct_30m": 0.0
       },
-      "age_minutes": 81.69
+      "age_minutes": 86.62
     },
     {
       "key": "fund_flow:2382:26:390.5",
@@ -26031,7 +26032,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T05:30:33.405565+00:00",
-      "updated_at": "2026-06-05T06:52:03.150362+00:00",
+      "updated_at": "2026-06-05T06:56:59.116569+00:00",
       "status": "open",
       "code": "3711",
       "name": "日月光投控",
@@ -26052,7 +26053,7 @@
         "pct_10m": 0.0,
         "pct_30m": 0.0
       },
-      "age_minutes": 81.5
+      "age_minutes": 86.43
     },
     {
       "key": "fund_flow:3017:33:2600.0",
