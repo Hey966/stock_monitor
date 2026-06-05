@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-05T02:31:40.911739+00:00",
+  "updated_at": "2026-06-05T02:31:42.892301+00:00",
   "count": 92,
   "items": [
     {
@@ -516,25 +516,26 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:25:05.423244+00:00",
-      "updated_at": "2026-06-05T02:26:59.802400+00:00",
+      "updated_at": "2026-06-05T02:31:42.119502+00:00",
       "status": "open",
       "code": "2382",
       "name": "廣達",
       "sector": "AI伺服器",
       "entry_price": 387.5,
-      "last_price": 387.5,
-      "best_price": 387.5,
+      "last_price": 389.0,
+      "best_price": 389.0,
       "worst_price": 387.0,
       "score": 32,
       "change_rate_at_signal": -4.08,
       "volume_ratio_at_signal": 0.47,
       "alert": null,
       "results": {
-        "latest_pct": 0.0,
-        "max_gain": 0.0,
-        "max_drawdown": -0.129
+        "latest_pct": 0.387,
+        "max_gain": 0.387,
+        "max_drawdown": -0.129,
+        "pct_5m": 0.387
       },
-      "age_minutes": 1.91
+      "age_minutes": 6.61
     },
     {
       "key": "ai_pool:3324:32:1125.0",
@@ -1060,25 +1061,26 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:25:15.330065+00:00",
-      "updated_at": "2026-06-05T02:26:59.802420+00:00",
+      "updated_at": "2026-06-05T02:31:42.119519+00:00",
       "status": "open",
       "code": "2382",
       "name": "廣達",
       "sector": "AI伺服器",
       "entry_price": 387.5,
-      "last_price": 387.5,
-      "best_price": 387.5,
+      "last_price": 389.0,
+      "best_price": 389.0,
       "worst_price": 387.0,
       "score": 33,
       "change_rate_at_signal": -4.08,
       "volume_ratio_at_signal": 0.47,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": 0.0,
-        "max_gain": 0.0,
-        "max_drawdown": -0.129
+        "latest_pct": 0.387,
+        "max_gain": 0.387,
+        "max_drawdown": -0.129,
+        "pct_5m": 0.387
       },
-      "age_minutes": 1.74
+      "age_minutes": 6.45
     },
     {
       "key": "fund_flow:2409:35:27.75",
