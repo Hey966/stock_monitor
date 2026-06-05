@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-05T02:26:16.922275+00:00",
+  "updated_at": "2026-06-05T02:26:19.289052+00:00",
   "count": 63,
   "items": [
     {
@@ -173,25 +173,25 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:25:05.423065+00:00",
-      "updated_at": "2026-06-05T02:26:08.192778+00:00",
+      "updated_at": "2026-06-05T02:26:16.410749+00:00",
       "status": "open",
       "code": "2618",
       "name": "長榮航",
       "sector": "航運",
       "entry_price": 38.0,
-      "last_price": 38.0,
+      "last_price": 37.95,
       "best_price": 38.0,
-      "worst_price": 38.0,
+      "worst_price": 37.95,
       "score": 70,
       "change_rate_at_signal": 0.26,
       "volume_ratio_at_signal": 0.26,
       "alert": null,
       "results": {
-        "latest_pct": 0.0,
+        "latest_pct": -0.132,
         "max_gain": 0.0,
-        "max_drawdown": 0.0
+        "max_drawdown": -0.132
       },
-      "age_minutes": 1.05
+      "age_minutes": 1.18
     },
     {
       "key": "ai_pool:2368:59:1330.0",
@@ -273,7 +273,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:25:05.423133+00:00",
-      "updated_at": "2026-06-05T02:25:05.423138+00:00",
+      "updated_at": "2026-06-05T02:26:16.638464+00:00",
       "status": "open",
       "code": "6215",
       "name": "和椿",
@@ -286,7 +286,12 @@
       "change_rate_at_signal": 2.56,
       "volume_ratio_at_signal": 1.07,
       "alert": null,
-      "results": {}
+      "results": {
+        "latest_pct": 0.0,
+        "max_gain": 0.0,
+        "max_drawdown": 0.0
+      },
+      "age_minutes": 1.19
     },
     {
       "key": "ai_pool:5347:52:161.5",
@@ -618,7 +623,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:25:12.529259+00:00",
-      "updated_at": "2026-06-05T02:25:12.529261+00:00",
+      "updated_at": "2026-06-05T02:26:16.638484+00:00",
       "status": "open",
       "code": "6215",
       "name": "和椿",
@@ -631,7 +636,12 @@
       "change_rate_at_signal": 2.56,
       "volume_ratio_at_signal": 1.07,
       "alert": null,
-      "results": {}
+      "results": {
+        "latest_pct": 0.0,
+        "max_gain": 0.0,
+        "max_drawdown": 0.0
+      },
+      "age_minutes": 1.07
     },
     {
       "key": "ai_pool:3231:66:173.0",
@@ -663,13 +673,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:25:12.529284+00:00",
-      "updated_at": "2026-06-05T02:26:08.192791+00:00",
+      "updated_at": "2026-06-05T02:26:16.410764+00:00",
       "status": "open",
       "code": "2618",
       "name": "長榮航",
       "sector": "航運",
       "entry_price": 37.95,
-      "last_price": 38.0,
+      "last_price": 37.95,
       "best_price": 38.0,
       "worst_price": 37.95,
       "score": 61,
@@ -677,11 +687,11 @@
       "volume_ratio_at_signal": 0.26,
       "alert": null,
       "results": {
-        "latest_pct": 0.132,
+        "latest_pct": 0.0,
         "max_gain": 0.132,
         "max_drawdown": 0.0
       },
-      "age_minutes": 0.93
+      "age_minutes": 1.06
     },
     {
       "key": "ai_pool:2356:60:78.1",
