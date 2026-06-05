@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-05T02:36:56.455779+00:00",
+  "updated_at": "2026-06-05T02:36:58.489102+00:00",
   "count": 117,
   "items": [
     {
@@ -1236,13 +1236,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:25:15.330104+00:00",
-      "updated_at": "2026-06-05T02:31:52.118540+00:00",
+      "updated_at": "2026-06-05T02:36:57.958804+00:00",
       "status": "open",
       "code": "1609",
       "name": "大亞",
       "sector": "電線電纜",
       "entry_price": 39.9,
-      "last_price": 39.9,
+      "last_price": 39.85,
       "best_price": 39.9,
       "worst_price": 39.85,
       "score": 31,
@@ -1250,12 +1250,13 @@
       "volume_ratio_at_signal": 0.22,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": 0.0,
+        "latest_pct": -0.125,
         "max_gain": 0.0,
         "max_drawdown": -0.125,
-        "pct_5m": 0.0
+        "pct_5m": 0.0,
+        "pct_10m": -0.125
       },
-      "age_minutes": 6.61
+      "age_minutes": 11.71
     },
     {
       "key": "fund_flow:2344:33:162.5",
@@ -2370,25 +2371,26 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:30:30.008589+00:00",
-      "updated_at": "2026-06-05T02:31:52.118556+00:00",
+      "updated_at": "2026-06-05T02:36:57.958828+00:00",
       "status": "open",
       "code": "1609",
       "name": "大亞",
       "sector": "電線電纜",
       "entry_price": 39.95,
-      "last_price": 39.9,
+      "last_price": 39.85,
       "best_price": 39.95,
-      "worst_price": 39.9,
+      "worst_price": 39.85,
       "score": 24,
       "change_rate_at_signal": -7.09,
       "volume_ratio_at_signal": 0.22,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": -0.125,
+        "latest_pct": -0.25,
         "max_gain": 0.0,
-        "max_drawdown": -0.125
+        "max_drawdown": -0.25,
+        "pct_5m": -0.25
       },
-      "age_minutes": 1.37
+      "age_minutes": 6.47
     },
     {
       "key": "fund_flow:2376:29:366.0",
@@ -3047,20 +3049,25 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:35:23.555202+00:00",
-      "updated_at": "2026-06-05T02:35:23.555205+00:00",
+      "updated_at": "2026-06-05T02:36:57.958840+00:00",
       "status": "open",
       "code": "1609",
       "name": "大亞",
       "sector": "電線電纜",
       "entry_price": 39.9,
-      "last_price": 39.9,
+      "last_price": 39.85,
       "best_price": 39.9,
-      "worst_price": 39.9,
+      "worst_price": 39.85,
       "score": 6,
       "change_rate_at_signal": -7.2,
       "volume_ratio_at_signal": 0.22,
       "alert": "資金退潮警報",
-      "results": {}
+      "results": {
+        "latest_pct": -0.125,
+        "max_gain": 0.0,
+        "max_drawdown": -0.125
+      },
+      "age_minutes": 1.57
     }
   ]
 }
