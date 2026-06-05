@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-05T02:41:24.607663+00:00",
+  "updated_at": "2026-06-05T02:41:27.218386+00:00",
   "count": 142,
   "items": [
     {
@@ -507,13 +507,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:25:05.423233+00:00",
-      "updated_at": "2026-06-05T02:36:26.740757+00:00",
+      "updated_at": "2026-06-05T02:41:26.205011+00:00",
       "status": "open",
       "code": "2317",
       "name": "鴻海",
       "sector": "AI伺服器",
       "entry_price": 286.5,
-      "last_price": 287.5,
+      "last_price": 286.5,
       "best_price": 287.5,
       "worst_price": 286.0,
       "score": 39,
@@ -521,13 +521,13 @@
       "volume_ratio_at_signal": 0.54,
       "alert": null,
       "results": {
-        "latest_pct": 0.349,
+        "latest_pct": 0.0,
         "max_gain": 0.349,
         "max_drawdown": -0.175,
         "pct_5m": 0.175,
         "pct_10m": 0.349
       },
-      "age_minutes": 11.36
+      "age_minutes": 16.35
     },
     {
       "key": "ai_pool:2382:32:387.5",
@@ -2149,26 +2149,27 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:30:19.670331+00:00",
-      "updated_at": "2026-06-05T02:36:26.740795+00:00",
+      "updated_at": "2026-06-05T02:41:26.205030+00:00",
       "status": "open",
       "code": "2317",
       "name": "鴻海",
       "sector": "AI伺服器",
       "entry_price": 287.5,
-      "last_price": 287.5,
+      "last_price": 286.5,
       "best_price": 287.5,
-      "worst_price": 287.0,
+      "worst_price": 286.5,
       "score": 33,
       "change_rate_at_signal": -1.87,
       "volume_ratio_at_signal": 0.55,
       "alert": null,
       "results": {
-        "latest_pct": 0.0,
+        "latest_pct": -0.348,
         "max_gain": 0.0,
-        "max_drawdown": -0.174,
-        "pct_5m": 0.0
+        "max_drawdown": -0.348,
+        "pct_5m": 0.0,
+        "pct_10m": -0.348
       },
-      "age_minutes": 6.12
+      "age_minutes": 11.11
     },
     {
       "key": "fund_flow:2379:85:639.0",
@@ -2308,26 +2309,27 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:30:30.008555+00:00",
-      "updated_at": "2026-06-05T02:36:26.740807+00:00",
+      "updated_at": "2026-06-05T02:41:26.205037+00:00",
       "status": "open",
       "code": "2317",
       "name": "鴻海",
       "sector": "AI伺服器",
       "entry_price": 287.0,
-      "last_price": 287.5,
+      "last_price": 286.5,
       "best_price": 287.5,
-      "worst_price": 287.0,
+      "worst_price": 286.5,
       "score": 23,
       "change_rate_at_signal": -2.04,
       "volume_ratio_at_signal": 0.55,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": 0.174,
+        "latest_pct": -0.174,
         "max_gain": 0.174,
-        "max_drawdown": 0.0,
-        "pct_5m": 0.174
+        "max_drawdown": -0.174,
+        "pct_5m": 0.174,
+        "pct_10m": -0.174
       },
-      "age_minutes": 5.95
+      "age_minutes": 10.94
     },
     {
       "key": "fund_flow:1513:31:172.5",
@@ -2849,25 +2851,26 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:35:12.437253+00:00",
-      "updated_at": "2026-06-05T02:36:26.740820+00:00",
+      "updated_at": "2026-06-05T02:41:26.205044+00:00",
       "status": "open",
       "code": "2317",
       "name": "鴻海",
       "sector": "AI伺服器",
       "entry_price": 288.0,
-      "last_price": 287.5,
+      "last_price": 286.5,
       "best_price": 288.0,
-      "worst_price": 287.5,
+      "worst_price": 286.5,
       "score": 34,
       "change_rate_at_signal": -1.7,
       "volume_ratio_at_signal": 0.56,
       "alert": null,
       "results": {
-        "latest_pct": -0.174,
+        "latest_pct": -0.521,
         "max_gain": 0.0,
-        "max_drawdown": -0.174
+        "max_drawdown": -0.521,
+        "pct_5m": -0.521
       },
-      "age_minutes": 1.24
+      "age_minutes": 6.23
     },
     {
       "key": "fund_flow:2356:79:78.4",
