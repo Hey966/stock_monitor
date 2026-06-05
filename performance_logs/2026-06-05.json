@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-05T06:47:10.917350+00:00",
+  "updated_at": "2026-06-05T06:47:15.096349+00:00",
   "count": 930,
   "items": [
     {
@@ -4213,8 +4213,8 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:45:15.268625+00:00",
-      "updated_at": "2026-06-05T06:42:19.226133+00:00",
-      "status": "open",
+      "updated_at": "2026-06-05T06:47:13.772428+00:00",
+      "status": "closed",
       "code": "3661",
       "name": "世芯-KY",
       "sector": "半導體",
@@ -4232,9 +4232,10 @@
         "max_drawdown": -2.529,
         "pct_5m": 0.23,
         "pct_10m": 0.345,
-        "pct_30m": -0.345
+        "pct_30m": -0.345,
+        "pct_close_proxy": -1.494
       },
-      "age_minutes": 237.07
+      "age_minutes": 241.98
     },
     {
       "key": "ai_pool:3037:66:954.0",
@@ -4980,7 +4981,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:50:15.682084+00:00",
-      "updated_at": "2026-06-05T06:42:19.226143+00:00",
+      "updated_at": "2026-06-05T06:47:13.772453+00:00",
       "status": "open",
       "code": "3661",
       "name": "世芯-KY",
@@ -5001,7 +5002,7 @@
         "pct_10m": -0.229,
         "pct_30m": -0.459
       },
-      "age_minutes": 232.06
+      "age_minutes": 236.97
     },
     {
       "key": "ai_pool:2609:57:54.0",
@@ -5624,7 +5625,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:55:13.518149+00:00",
-      "updated_at": "2026-06-05T06:42:19.226152+00:00",
+      "updated_at": "2026-06-05T06:47:13.772469+00:00",
       "status": "open",
       "code": "3661",
       "name": "世芯-KY",
@@ -5645,7 +5646,7 @@
         "pct_10m": -0.344,
         "pct_30m": -1.145
       },
-      "age_minutes": 227.1
+      "age_minutes": 232.0
     },
     {
       "key": "ai_pool:5347:62:161.5",
@@ -6296,7 +6297,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:00:25.046030+00:00",
-      "updated_at": "2026-06-05T06:42:19.226161+00:00",
+      "updated_at": "2026-06-05T06:47:13.772481+00:00",
       "status": "open",
       "code": "3661",
       "name": "世芯-KY",
@@ -6317,7 +6318,7 @@
         "pct_10m": -0.345,
         "pct_30m": -1.149
       },
-      "age_minutes": 221.9
+      "age_minutes": 226.81
     },
     {
       "key": "ai_pool:2368:69:1335.0",
@@ -7388,7 +7389,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:10:15.521866+00:00",
-      "updated_at": "2026-06-05T06:42:19.226172+00:00",
+      "updated_at": "2026-06-05T06:47:13.772499+00:00",
       "status": "open",
       "code": "3661",
       "name": "世芯-KY",
@@ -7409,7 +7410,7 @@
         "pct_10m": 0.115,
         "pct_30m": -0.807
       },
-      "age_minutes": 212.06
+      "age_minutes": 216.97
     },
     {
       "key": "ai_pool:8046:67:865.0",
@@ -7892,7 +7893,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:15:14.979974+00:00",
-      "updated_at": "2026-06-05T06:42:19.226180+00:00",
+      "updated_at": "2026-06-05T06:47:13.772512+00:00",
       "status": "open",
       "code": "3661",
       "name": "世芯-KY",
@@ -7913,7 +7914,7 @@
         "pct_10m": -0.461,
         "pct_30m": -0.807
       },
-      "age_minutes": 207.07
+      "age_minutes": 211.98
     },
     {
       "key": "ai_pool:3037:73:951.0",
@@ -8340,7 +8341,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:20:15.485997+00:00",
-      "updated_at": "2026-06-05T06:42:19.226187+00:00",
+      "updated_at": "2026-06-05T06:47:13.772522+00:00",
       "status": "open",
       "code": "3661",
       "name": "世芯-KY",
@@ -8361,7 +8362,7 @@
         "pct_10m": -0.922,
         "pct_30m": -1.959
       },
-      "age_minutes": 202.06
+      "age_minutes": 206.97
     },
     {
       "key": "ai_pool:2379:68:659.0",
@@ -8984,7 +8985,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:25:11.681341+00:00",
-      "updated_at": "2026-06-05T06:42:19.226196+00:00",
+      "updated_at": "2026-06-05T06:47:13.772535+00:00",
       "status": "open",
       "code": "3661",
       "name": "世芯-KY",
@@ -9005,7 +9006,7 @@
         "pct_10m": -0.348,
         "pct_30m": -1.392
       },
-      "age_minutes": 197.13
+      "age_minutes": 202.03
     },
     {
       "key": "ai_pool:2609:48:54.1",
@@ -9712,7 +9713,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:30:18.909648+00:00",
-      "updated_at": "2026-06-05T06:42:19.226204+00:00",
+      "updated_at": "2026-06-05T06:47:13.772548+00:00",
       "status": "open",
       "code": "3661",
       "name": "世芯-KY",
@@ -9733,7 +9734,7 @@
         "pct_10m": 0.0,
         "pct_30m": -1.163
       },
-      "age_minutes": 192.01
+      "age_minutes": 196.91
     },
     {
       "key": "ai_pool:2382:32:388.5",
@@ -10832,7 +10833,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:40:15.555153+00:00",
-      "updated_at": "2026-06-05T06:42:19.226216+00:00",
+      "updated_at": "2026-06-05T06:47:13.772564+00:00",
       "status": "open",
       "code": "3661",
       "name": "世芯-KY",
@@ -10853,7 +10854,7 @@
         "pct_10m": -1.047,
         "pct_30m": -1.395
       },
-      "age_minutes": 182.06
+      "age_minutes": 186.97
     },
     {
       "key": "ai_pool:2368:45:1320.0",
@@ -12456,7 +12457,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:50:15.098729+00:00",
-      "updated_at": "2026-06-05T06:42:19.226228+00:00",
+      "updated_at": "2026-06-05T06:47:13.772584+00:00",
       "status": "open",
       "code": "3661",
       "name": "世芯-KY",
@@ -12477,7 +12478,7 @@
         "pct_10m": -0.701,
         "pct_30m": -0.584
       },
-      "age_minutes": 172.07
+      "age_minutes": 176.98
     },
     {
       "key": "ai_pool:3481:24:52.6",
@@ -12708,7 +12709,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:50:26.956277+00:00",
-      "updated_at": "2026-06-05T06:42:19.226234+00:00",
+      "updated_at": "2026-06-05T06:47:13.772593+00:00",
       "status": "open",
       "code": "3661",
       "name": "世芯-KY",
@@ -12729,7 +12730,7 @@
         "pct_10m": -0.585,
         "pct_30m": -0.468
       },
-      "age_minutes": 171.87
+      "age_minutes": 176.78
     },
     {
       "key": "fund_flow:1513:30:169.0",
@@ -13072,7 +13073,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:55:12.071439+00:00",
-      "updated_at": "2026-06-05T06:42:19.226241+00:00",
+      "updated_at": "2026-06-05T06:47:13.772602+00:00",
       "status": "open",
       "code": "3661",
       "name": "世芯-KY",
@@ -13093,7 +13094,7 @@
         "pct_10m": -0.235,
         "pct_30m": 0.0
       },
-      "age_minutes": 167.12
+      "age_minutes": 172.03
     },
     {
       "key": "ai_pool:3443:20:4320.0",
@@ -13884,7 +13885,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T04:00:24.527457+00:00",
-      "updated_at": "2026-06-05T06:42:19.226250+00:00",
+      "updated_at": "2026-06-05T06:47:13.772636+00:00",
       "status": "open",
       "code": "3661",
       "name": "世芯-KY",
@@ -13905,7 +13906,7 @@
         "pct_10m": -0.235,
         "pct_30m": 0.118
       },
-      "age_minutes": 161.91
+      "age_minutes": 166.82
     },
     {
       "key": "ai_pool:3481:24:52.2",
@@ -15172,7 +15173,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T04:01:42.928901+00:00",
-      "updated_at": "2026-06-05T06:42:19.226261+00:00",
+      "updated_at": "2026-06-05T06:47:13.772660+00:00",
       "status": "open",
       "code": "3661",
       "name": "世芯-KY",
@@ -15193,7 +15194,7 @@
         "pct_10m": 0.235,
         "pct_30m": -0.118
       },
-      "age_minutes": 160.6
+      "age_minutes": 165.51
     },
     {
       "key": "ai_pool:2330:10:2370.0",
@@ -15900,7 +15901,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T04:02:19.489271+00:00",
-      "updated_at": "2026-06-05T06:42:19.226269+00:00",
+      "updated_at": "2026-06-05T06:47:13.772677+00:00",
       "status": "open",
       "code": "3661",
       "name": "世芯-KY",
@@ -15921,7 +15922,7 @@
         "pct_10m": 0.117,
         "pct_30m": -0.235
       },
-      "age_minutes": 160.0
+      "age_minutes": 164.9
     },
     {
       "key": "fund_flow:2615:94:85.9",
@@ -16488,7 +16489,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T04:05:12.435744+00:00",
-      "updated_at": "2026-06-05T06:42:19.226276+00:00",
+      "updated_at": "2026-06-05T06:47:13.772689+00:00",
       "status": "open",
       "code": "3661",
       "name": "世芯-KY",
@@ -16509,7 +16510,7 @@
         "pct_10m": 0.59,
         "pct_30m": 0.236
       },
-      "age_minutes": 157.11
+      "age_minutes": 162.02
     },
     {
       "key": "fund_flow:2615:95:86.0",
@@ -16656,7 +16657,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T04:05:29.743287+00:00",
-      "updated_at": "2026-06-05T06:42:19.226281+00:00",
+      "updated_at": "2026-06-05T06:47:13.772695+00:00",
       "status": "open",
       "code": "3661",
       "name": "世芯-KY",
@@ -16677,7 +16678,7 @@
         "pct_10m": 0.59,
         "pct_30m": 0.236
       },
-      "age_minutes": 156.82
+      "age_minutes": 161.73
     },
     {
       "key": "fund_flow:3324:20:1095.0",
@@ -16880,7 +16881,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T04:06:00.357301+00:00",
-      "updated_at": "2026-06-05T06:42:19.226287+00:00",
+      "updated_at": "2026-06-05T06:47:13.772704+00:00",
       "status": "open",
       "code": "3661",
       "name": "世芯-KY",
@@ -16901,7 +16902,7 @@
         "pct_10m": 0.59,
         "pct_30m": 0.236
       },
-      "age_minutes": 156.31
+      "age_minutes": 161.22
     },
     {
       "key": "ai_pool:5347:9:159.0",
@@ -17636,7 +17637,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T04:10:27.039913+00:00",
-      "updated_at": "2026-06-05T06:42:19.226295+00:00",
+      "updated_at": "2026-06-05T06:47:13.772715+00:00",
       "status": "open",
       "code": "3661",
       "name": "世芯-KY",
@@ -17657,7 +17658,7 @@
         "pct_10m": 0.354,
         "pct_30m": 0.59
       },
-      "age_minutes": 151.87
+      "age_minutes": 156.78
     },
     {
       "key": "fund_flow:2308:25:2300.0",
@@ -18980,7 +18981,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T04:25:13.285989+00:00",
-      "updated_at": "2026-06-05T06:42:19.226305+00:00",
+      "updated_at": "2026-06-05T06:47:13.772731+00:00",
       "status": "open",
       "code": "3661",
       "name": "世芯-KY",
@@ -19001,7 +19002,7 @@
         "pct_10m": 0.118,
         "pct_30m": 0.353
       },
-      "age_minutes": 137.1
+      "age_minutes": 142.01
     },
     {
       "key": "ai_pool:2376:18:365.5",
@@ -21164,7 +21165,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T04:45:14.480625+00:00",
-      "updated_at": "2026-06-05T06:42:19.226318+00:00",
+      "updated_at": "2026-06-05T06:47:13.772760+00:00",
       "status": "open",
       "code": "3661",
       "name": "世芯-KY",
@@ -21185,7 +21186,7 @@
         "pct_10m": 0.118,
         "pct_30m": 0.0
       },
-      "age_minutes": 117.08
+      "age_minutes": 121.99
     },
     {
       "key": "ai_pool:5347:11:159.5",
@@ -21724,7 +21725,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T04:50:15.300305+00:00",
-      "updated_at": "2026-06-05T06:42:19.226325+00:00",
+      "updated_at": "2026-06-05T06:47:13.772775+00:00",
       "status": "open",
       "code": "3661",
       "name": "世芯-KY",
@@ -21745,7 +21746,7 @@
         "pct_10m": -0.234,
         "pct_30m": 0.117
       },
-      "age_minutes": 112.07
+      "age_minutes": 116.97
     },
     {
       "key": "fund_flow:8046:32:851.0",
@@ -22116,7 +22117,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T04:55:11.829448+00:00",
-      "updated_at": "2026-06-05T06:42:19.226332+00:00",
+      "updated_at": "2026-06-05T06:47:13.772784+00:00",
       "status": "open",
       "code": "3661",
       "name": "世芯-KY",
@@ -22137,7 +22138,7 @@
         "pct_10m": -0.117,
         "pct_30m": 0.469
       },
-      "age_minutes": 107.12
+      "age_minutes": 112.03
     },
     {
       "key": "fund_flow:3037:33:937.0",
@@ -23264,7 +23265,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T05:05:23.451772+00:00",
-      "updated_at": "2026-06-05T06:42:19.226341+00:00",
+      "updated_at": "2026-06-05T06:47:13.772796+00:00",
       "status": "open",
       "code": "3661",
       "name": "世芯-KY",
@@ -23285,7 +23286,7 @@
         "pct_10m": 0.118,
         "pct_30m": 0.824
       },
-      "age_minutes": 96.93
+      "age_minutes": 101.84
     },
     {
       "key": "fund_flow:1513:31:169.5",
@@ -24832,7 +24833,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T05:20:26.778448+00:00",
-      "updated_at": "2026-06-05T06:42:19.226351+00:00",
+      "updated_at": "2026-06-05T06:47:13.772812+00:00",
       "status": "open",
       "code": "3661",
       "name": "世芯-KY",
@@ -24853,7 +24854,7 @@
         "pct_10m": 0.587,
         "pct_30m": 0.587
       },
-      "age_minutes": 81.87
+      "age_minutes": 86.78
     },
     {
       "key": "fund_flow:8046:34:848.0",
@@ -25252,7 +25253,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T05:25:12.305606+00:00",
-      "updated_at": "2026-06-05T06:42:19.226357+00:00",
+      "updated_at": "2026-06-05T06:47:13.772820+00:00",
       "status": "open",
       "code": "3661",
       "name": "世芯-KY",
@@ -25273,7 +25274,7 @@
         "pct_10m": 0.117,
         "pct_30m": 0.117
       },
-      "age_minutes": 77.12
+      "age_minutes": 82.02
     },
     {
       "key": "ai_pool:2376:26:369.0",
@@ -26148,7 +26149,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T05:33:26.757419+00:00",
-      "updated_at": "2026-06-05T06:42:19.226364+00:00",
+      "updated_at": "2026-06-05T06:47:13.772831+00:00",
       "status": "open",
       "code": "3661",
       "name": "世芯-KY",
@@ -26169,7 +26170,7 @@
         "pct_10m": 0.0,
         "pct_30m": 0.0
       },
-      "age_minutes": 68.87
+      "age_minutes": 73.78
     },
     {
       "key": "fund_flow:1514:7:135.0",
