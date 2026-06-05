@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-05T02:26:26.089634+00:00",
+  "updated_at": "2026-06-05T02:26:28.113883+00:00",
   "count": 63,
   "items": [
     {
@@ -173,7 +173,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:25:05.423065+00:00",
-      "updated_at": "2026-06-05T02:26:16.410749+00:00",
+      "updated_at": "2026-06-05T02:26:21.978966+00:00",
       "status": "open",
       "code": "2618",
       "name": "長榮航",
@@ -191,14 +191,14 @@
         "max_gain": 0.0,
         "max_drawdown": -0.132
       },
-      "age_minutes": 1.18
+      "age_minutes": 1.28
     },
     {
       "key": "ai_pool:2368:59:1330.0",
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:25:05.423077+00:00",
-      "updated_at": "2026-06-05T02:26:04.517354+00:00",
+      "updated_at": "2026-06-05T02:26:24.456647+00:00",
       "status": "open",
       "code": "2368",
       "name": "金像電",
@@ -216,14 +216,14 @@
         "max_gain": 0.752,
         "max_drawdown": 0.0
       },
-      "age_minutes": 0.98
+      "age_minutes": 1.32
     },
     {
       "key": "ai_pool:3231:58:173.0",
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:25:05.423087+00:00",
-      "updated_at": "2026-06-05T02:26:10.727331+00:00",
+      "updated_at": "2026-06-05T02:26:20.407625+00:00",
       "status": "open",
       "code": "3231",
       "name": "緯創",
@@ -241,7 +241,7 @@
         "max_gain": 0.0,
         "max_drawdown": 0.0
       },
-      "age_minutes": 1.09
+      "age_minutes": 1.25
     },
     {
       "key": "ai_pool:2454:53:4390.0",
@@ -323,7 +323,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:25:05.423161+00:00",
-      "updated_at": "2026-06-05T02:26:14.118544+00:00",
+      "updated_at": "2026-06-05T02:26:27.574929+00:00",
       "status": "open",
       "code": "8046",
       "name": "南電",
@@ -341,7 +341,7 @@
         "max_gain": 0.0,
         "max_drawdown": 0.0
       },
-      "age_minutes": 1.14
+      "age_minutes": 1.37
     },
     {
       "key": "ai_pool:2609:49:54.0",
@@ -368,7 +368,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:25:05.423181+00:00",
-      "updated_at": "2026-06-05T02:26:12.230819+00:00",
+      "updated_at": "2026-06-05T02:26:25.542343+00:00",
       "status": "open",
       "code": "3711",
       "name": "日月光投控",
@@ -386,7 +386,7 @@
         "max_gain": 0.172,
         "max_drawdown": 0.0
       },
-      "age_minutes": 1.11
+      "age_minutes": 1.34
     },
     {
       "key": "ai_pool:3037:46:949.0",
@@ -418,13 +418,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:25:05.423209+00:00",
-      "updated_at": "2026-06-05T02:25:56.589822+00:00",
+      "updated_at": "2026-06-05T02:26:23.731158+00:00",
       "status": "open",
       "code": "2324",
       "name": "仁寶",
       "sector": "電腦週邊",
       "entry_price": 41.15,
-      "last_price": 41.25,
+      "last_price": 41.2,
       "best_price": 41.25,
       "worst_price": 41.15,
       "score": 41,
@@ -432,11 +432,11 @@
       "volume_ratio_at_signal": 0.47,
       "alert": null,
       "results": {
-        "latest_pct": 0.243,
+        "latest_pct": 0.122,
         "max_gain": 0.243,
         "max_drawdown": 0.0
       },
-      "age_minutes": 0.85
+      "age_minutes": 1.31
     },
     {
       "key": "ai_pool:3481:40:52.9",
@@ -648,7 +648,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:25:12.529268+00:00",
-      "updated_at": "2026-06-05T02:26:10.727350+00:00",
+      "updated_at": "2026-06-05T02:26:20.407650+00:00",
       "status": "open",
       "code": "3231",
       "name": "緯創",
@@ -666,14 +666,14 @@
         "max_gain": 0.0,
         "max_drawdown": 0.0
       },
-      "age_minutes": 0.97
+      "age_minutes": 1.13
     },
     {
       "key": "ai_pool:2618:61:37.95",
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:25:12.529284+00:00",
-      "updated_at": "2026-06-05T02:26:16.410764+00:00",
+      "updated_at": "2026-06-05T02:26:21.978991+00:00",
       "status": "open",
       "code": "2618",
       "name": "長榮航",
@@ -691,7 +691,7 @@
         "max_gain": 0.132,
         "max_drawdown": 0.0
       },
-      "age_minutes": 1.06
+      "age_minutes": 1.16
     },
     {
       "key": "ai_pool:2356:60:78.1",
@@ -723,7 +723,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:25:12.529302+00:00",
-      "updated_at": "2026-06-05T02:26:12.230835+00:00",
+      "updated_at": "2026-06-05T02:26:25.542359+00:00",
       "status": "open",
       "code": "3711",
       "name": "日月光投控",
@@ -741,20 +741,20 @@
         "max_gain": 0.0,
         "max_drawdown": 0.0
       },
-      "age_minutes": 1.0
+      "age_minutes": 1.22
     },
     {
       "key": "ai_pool:2324:52:41.2",
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:25:12.529325+00:00",
-      "updated_at": "2026-06-05T02:25:56.589839+00:00",
+      "updated_at": "2026-06-05T02:26:23.731174+00:00",
       "status": "open",
       "code": "2324",
       "name": "仁寶",
       "sector": "電腦週邊",
       "entry_price": 41.2,
-      "last_price": 41.25,
+      "last_price": 41.2,
       "best_price": 41.25,
       "worst_price": 41.2,
       "score": 52,
@@ -762,11 +762,11 @@
       "volume_ratio_at_signal": 0.47,
       "alert": null,
       "results": {
-        "latest_pct": 0.121,
+        "latest_pct": 0.0,
         "max_gain": 0.121,
         "max_drawdown": 0.0
       },
-      "age_minutes": 0.73
+      "age_minutes": 1.19
     },
     {
       "key": "ai_pool:2330:51:2380.0",
@@ -798,7 +798,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:25:12.529344+00:00",
-      "updated_at": "2026-06-05T02:26:04.517371+00:00",
+      "updated_at": "2026-06-05T02:26:24.456667+00:00",
       "status": "open",
       "code": "2368",
       "name": "金像電",
@@ -816,14 +816,14 @@
         "max_gain": 0.375,
         "max_drawdown": 0.0
       },
-      "age_minutes": 0.87
+      "age_minutes": 1.2
     },
     {
       "key": "ai_pool:8046:48:861.0",
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:25:12.529353+00:00",
-      "updated_at": "2026-06-05T02:26:14.118565+00:00",
+      "updated_at": "2026-06-05T02:26:27.574964+00:00",
       "status": "open",
       "code": "8046",
       "name": "南電",
@@ -841,7 +841,7 @@
         "max_gain": 0.116,
         "max_drawdown": 0.0
       },
-      "age_minutes": 1.03
+      "age_minutes": 1.25
     },
     {
       "key": "ai_pool:2609:40:54.1",
@@ -1208,25 +1208,25 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:25:16.826520+00:00",
-      "updated_at": "2026-06-05T02:25:56.589847+00:00",
+      "updated_at": "2026-06-05T02:26:23.731183+00:00",
       "status": "open",
       "code": "2324",
       "name": "仁寶",
       "sector": "電腦週邊",
       "entry_price": 41.25,
-      "last_price": 41.25,
+      "last_price": 41.2,
       "best_price": 41.25,
-      "worst_price": 41.25,
+      "worst_price": 41.2,
       "score": 35,
       "change_rate_at_signal": -2.59,
       "volume_ratio_at_signal": 0.47,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": 0.0,
+        "latest_pct": -0.121,
         "max_gain": 0.0,
-        "max_drawdown": 0.0
+        "max_drawdown": -0.121
       },
-      "age_minutes": 0.66
+      "age_minutes": 1.12
     },
     {
       "key": "fund_flow:2409:34:27.8",
