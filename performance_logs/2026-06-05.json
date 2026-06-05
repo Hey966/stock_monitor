@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-05T02:46:32.352493+00:00",
+  "updated_at": "2026-06-05T02:46:34.829676+00:00",
   "count": 167,
   "items": [
     {
@@ -1155,13 +1155,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:25:15.330080+00:00",
-      "updated_at": "2026-06-05T02:41:46.195892+00:00",
+      "updated_at": "2026-06-05T02:46:33.854488+00:00",
       "status": "open",
       "code": "2308",
       "name": "台達電",
       "sector": "重電",
       "entry_price": 2350.0,
-      "last_price": 2345.0,
+      "last_price": 2350.0,
       "best_price": 2360.0,
       "worst_price": 2345.0,
       "score": 24,
@@ -1169,13 +1169,13 @@
       "volume_ratio_at_signal": 0.68,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": -0.213,
+        "latest_pct": 0.0,
         "max_gain": 0.426,
         "max_drawdown": -0.213,
         "pct_5m": 0.213,
         "pct_10m": 0.426
       },
-      "age_minutes": 16.51
+      "age_minutes": 21.31
     },
     {
       "key": "fund_flow:1513:29:172.5",
@@ -1533,13 +1533,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:25:21.622276+00:00",
-      "updated_at": "2026-06-05T02:41:46.195912+00:00",
+      "updated_at": "2026-06-05T02:46:33.854512+00:00",
       "status": "open",
       "code": "2308",
       "name": "台達電",
       "sector": "重電",
       "entry_price": 2355.0,
-      "last_price": 2345.0,
+      "last_price": 2350.0,
       "best_price": 2360.0,
       "worst_price": 2345.0,
       "score": 24,
@@ -1547,13 +1547,13 @@
       "volume_ratio_at_signal": 0.68,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": -0.425,
+        "latest_pct": -0.212,
         "max_gain": 0.212,
         "max_drawdown": -0.425,
         "pct_5m": 0.0,
         "pct_10m": 0.212
       },
-      "age_minutes": 16.41
+      "age_minutes": 21.2
     },
     {
       "key": "fund_flow:5347:24:160.5",
@@ -3661,25 +3661,26 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:40:27.116620+00:00",
-      "updated_at": "2026-06-05T02:41:46.195929+00:00",
+      "updated_at": "2026-06-05T02:46:33.854533+00:00",
       "status": "open",
       "code": "2308",
       "name": "台達電",
       "sector": "重電",
       "entry_price": 2345.0,
-      "last_price": 2345.0,
-      "best_price": 2345.0,
+      "last_price": 2350.0,
+      "best_price": 2350.0,
       "worst_price": 2345.0,
       "score": 35,
       "change_rate_at_signal": -3.29,
       "volume_ratio_at_signal": 0.75,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": 0.0,
-        "max_gain": 0.0,
-        "max_drawdown": 0.0
+        "latest_pct": 0.213,
+        "max_gain": 0.213,
+        "max_drawdown": 0.0,
+        "pct_5m": 0.213
       },
-      "age_minutes": 1.32
+      "age_minutes": 6.11
     },
     {
       "key": "fund_flow:2409:20:27.65",
@@ -4126,7 +4127,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:45:15.268750+00:00",
-      "updated_at": "2026-06-05T02:45:15.268752+00:00",
+      "updated_at": "2026-06-05T02:46:33.854540+00:00",
       "status": "open",
       "code": "2308",
       "name": "台達電",
@@ -4139,7 +4140,12 @@
       "change_rate_at_signal": -3.09,
       "volume_ratio_at_signal": 0.77,
       "alert": null,
-      "results": {}
+      "results": {
+        "latest_pct": 0.0,
+        "max_gain": 0.0,
+        "max_drawdown": 0.0
+      },
+      "age_minutes": 1.31
     },
     {
       "key": "fund_flow:3711:35:579.0",
@@ -4166,7 +4172,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:45:25.851561+00:00",
-      "updated_at": "2026-06-05T02:45:25.851563+00:00",
+      "updated_at": "2026-06-05T02:46:33.854545+00:00",
       "status": "open",
       "code": "2308",
       "name": "台達電",
@@ -4179,7 +4185,12 @@
       "change_rate_at_signal": -3.09,
       "volume_ratio_at_signal": 0.77,
       "alert": "資金退潮警報",
-      "results": {}
+      "results": {
+        "latest_pct": 0.0,
+        "max_gain": 0.0,
+        "max_drawdown": 0.0
+      },
+      "age_minutes": 1.13
     },
     {
       "key": "fund_flow:3017:32:2615.0",
