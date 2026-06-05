@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-05T02:27:08.356053+00:00",
+  "updated_at": "2026-06-05T02:27:11.037917+00:00",
   "count": 63,
   "items": [
     {
@@ -1048,7 +1048,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:25:15.330072+00:00",
-      "updated_at": "2026-06-05T02:27:00.858976+00:00",
+      "updated_at": "2026-06-05T02:27:10.273615+00:00",
       "status": "open",
       "code": "2409",
       "name": "友達",
@@ -1056,7 +1056,7 @@
       "entry_price": 27.75,
       "last_price": 27.75,
       "best_price": 27.75,
-      "worst_price": 27.75,
+      "worst_price": 27.7,
       "score": 35,
       "change_rate_at_signal": -5.12,
       "volume_ratio_at_signal": 0.47,
@@ -1064,9 +1064,9 @@
       "results": {
         "latest_pct": 0.0,
         "max_gain": 0.0,
-        "max_drawdown": 0.0
+        "max_drawdown": -0.18
       },
-      "age_minutes": 1.76
+      "age_minutes": 1.92
     },
     {
       "key": "fund_flow:2308:24:2350.0",
@@ -1123,20 +1123,25 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:25:15.330097+00:00",
-      "updated_at": "2026-06-05T02:25:15.330099+00:00",
+      "updated_at": "2026-06-05T02:27:09.607100+00:00",
       "status": "open",
       "code": "1605",
       "name": "華新",
       "sector": "電線電纜",
       "entry_price": 39.35,
-      "last_price": 39.35,
+      "last_price": 39.25,
       "best_price": 39.35,
-      "worst_price": 39.35,
+      "worst_price": 39.25,
       "score": 29,
       "change_rate_at_signal": -5.4,
       "volume_ratio_at_signal": 0.41,
       "alert": "資金退潮警報",
-      "results": {}
+      "results": {
+        "latest_pct": -0.254,
+        "max_gain": 0.0,
+        "max_drawdown": -0.254
+      },
+      "age_minutes": 1.9
     },
     {
       "key": "fund_flow:1609:31:39.9",
@@ -1303,7 +1308,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:25:16.826557+00:00",
-      "updated_at": "2026-06-05T02:27:00.858995+00:00",
+      "updated_at": "2026-06-05T02:27:10.273634+00:00",
       "status": "open",
       "code": "2409",
       "name": "友達",
@@ -1311,7 +1316,7 @@
       "entry_price": 27.8,
       "last_price": 27.75,
       "best_price": 27.8,
-      "worst_price": 27.75,
+      "worst_price": 27.7,
       "score": 34,
       "change_rate_at_signal": -4.95,
       "volume_ratio_at_signal": 0.47,
@@ -1319,9 +1324,9 @@
       "results": {
         "latest_pct": -0.18,
         "max_gain": 0.0,
-        "max_drawdown": -0.18
+        "max_drawdown": -0.36
       },
-      "age_minutes": 1.73
+      "age_minutes": 1.89
     },
     {
       "key": "fund_flow:3017:30:2630.0",
@@ -1448,7 +1453,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:25:21.622321+00:00",
-      "updated_at": "2026-06-05T02:27:00.859003+00:00",
+      "updated_at": "2026-06-05T02:27:10.273640+00:00",
       "status": "open",
       "code": "2409",
       "name": "友達",
@@ -1456,7 +1461,7 @@
       "entry_price": 27.8,
       "last_price": 27.75,
       "best_price": 27.8,
-      "worst_price": 27.75,
+      "worst_price": 27.7,
       "score": 33,
       "change_rate_at_signal": -4.95,
       "volume_ratio_at_signal": 0.47,
@@ -1464,9 +1469,9 @@
       "results": {
         "latest_pct": -0.18,
         "max_gain": 0.0,
-        "max_drawdown": -0.18
+        "max_drawdown": -0.36
       },
-      "age_minutes": 1.65
+      "age_minutes": 1.81
     },
     {
       "key": "fund_flow:3017:29:2630.0",
@@ -1523,20 +1528,25 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:25:21.622349+00:00",
-      "updated_at": "2026-06-05T02:25:21.622351+00:00",
+      "updated_at": "2026-06-05T02:27:09.607146+00:00",
       "status": "open",
       "code": "1605",
       "name": "華新",
       "sector": "電線電纜",
       "entry_price": 39.35,
-      "last_price": 39.35,
+      "last_price": 39.25,
       "best_price": 39.35,
-      "worst_price": 39.35,
+      "worst_price": 39.25,
       "score": 30,
       "change_rate_at_signal": -5.4,
       "volume_ratio_at_signal": 0.41,
       "alert": "資金退潮警報",
-      "results": {}
+      "results": {
+        "latest_pct": -0.254,
+        "max_gain": 0.0,
+        "max_drawdown": -0.254
+      },
+      "age_minutes": 1.8
     }
   ]
 }
