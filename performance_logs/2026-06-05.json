@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-05T02:46:52.264571+00:00",
+  "updated_at": "2026-06-05T02:46:54.732088+00:00",
   "count": 167,
   "items": [
     {
@@ -1182,7 +1182,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:25:15.330086+00:00",
-      "updated_at": "2026-06-05T02:41:51.087081+00:00",
+      "updated_at": "2026-06-05T02:46:53.745227+00:00",
       "status": "open",
       "code": "1513",
       "name": "中興電",
@@ -1202,7 +1202,7 @@
         "pct_5m": 0.0,
         "pct_10m": 0.0
       },
-      "age_minutes": 16.6
+      "age_minutes": 21.64
     },
     {
       "key": "fund_flow:1605:29:39.35",
@@ -2343,7 +2343,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:30:30.008566+00:00",
-      "updated_at": "2026-06-05T02:41:51.087107+00:00",
+      "updated_at": "2026-06-05T02:46:53.745247+00:00",
       "status": "open",
       "code": "1513",
       "name": "中興電",
@@ -2363,7 +2363,7 @@
         "pct_5m": 0.0,
         "pct_10m": -0.58
       },
-      "age_minutes": 11.35
+      "age_minutes": 16.4
     },
     {
       "key": "fund_flow:1605:34:39.25",
@@ -3772,7 +3772,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:40:27.116663+00:00",
-      "updated_at": "2026-06-05T02:41:51.087295+00:00",
+      "updated_at": "2026-06-05T02:46:53.745258+00:00",
       "status": "open",
       "code": "1513",
       "name": "中興電",
@@ -3788,9 +3788,10 @@
       "results": {
         "latest_pct": 0.0,
         "max_gain": 0.0,
-        "max_drawdown": 0.0
+        "max_drawdown": 0.0,
+        "pct_5m": 0.0
       },
-      "age_minutes": 1.4
+      "age_minutes": 6.44
     },
     {
       "key": "ai_pool:2379:88:646.0",
@@ -4322,7 +4323,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:45:25.851598+00:00",
-      "updated_at": "2026-06-05T02:45:25.851599+00:00",
+      "updated_at": "2026-06-05T02:46:53.745265+00:00",
       "status": "open",
       "code": "1513",
       "name": "中興電",
@@ -4335,7 +4336,12 @@
       "change_rate_at_signal": -8.28,
       "volume_ratio_at_signal": 0.36,
       "alert": "資金退潮警報",
-      "results": {}
+      "results": {
+        "latest_pct": 0.0,
+        "max_gain": 0.0,
+        "max_drawdown": 0.0
+      },
+      "age_minutes": 1.46
     },
     {
       "key": "fund_flow:1605:24:39.05",
