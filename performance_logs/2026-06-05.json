@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-05T06:06:45.907464+00:00",
+  "updated_at": "2026-06-05T06:06:50.441154+00:00",
   "count": 930,
   "items": [
     {
@@ -36,20 +36,28 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:25:05.046772+00:00",
-      "updated_at": "2026-06-05T02:25:05.046775+00:00",
+      "updated_at": "2026-06-05T06:06:48.692797+00:00",
       "status": "open",
       "code": "8046",
       "name": "南電",
       "sector": "半導體",
       "entry_price": 862.0,
-      "last_price": 862.0,
+      "last_price": 845.0,
       "best_price": 862.0,
-      "worst_price": 862.0,
+      "worst_price": 845.0,
       "score": 39,
       "change_rate_at_signal": -1.82,
       "volume_ratio_at_signal": 0.84,
       "alert": null,
-      "results": {}
+      "results": {
+        "latest_pct": -1.972,
+        "max_gain": 0.0,
+        "max_drawdown": -1.972,
+        "pct_5m": -1.972,
+        "pct_10m": -1.972,
+        "pct_30m": -1.972
+      },
+      "age_minutes": 221.73
     },
     {
       "key": "ai_pool:2379:92:641.0",
@@ -364,7 +372,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:25:05.423161+00:00",
-      "updated_at": "2026-06-05T06:02:00.789880+00:00",
+      "updated_at": "2026-06-05T06:06:48.692832+00:00",
       "status": "open",
       "code": "8046",
       "name": "南電",
@@ -385,7 +393,7 @@
         "pct_10m": 1.044,
         "pct_30m": -0.464
       },
-      "age_minutes": 216.92
+      "age_minutes": 221.72
     },
     {
       "key": "ai_pool:2609:49:54.0",
@@ -952,7 +960,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:25:12.529353+00:00",
-      "updated_at": "2026-06-05T06:02:00.789902+00:00",
+      "updated_at": "2026-06-05T06:06:48.692847+00:00",
       "status": "open",
       "code": "8046",
       "name": "南電",
@@ -973,7 +981,7 @@
         "pct_10m": 1.161,
         "pct_30m": -0.348
       },
-      "age_minutes": 216.8
+      "age_minutes": 221.6
     },
     {
       "key": "ai_pool:2609:40:54.1",
@@ -2016,7 +2024,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:30:19.670255+00:00",
-      "updated_at": "2026-06-05T06:02:00.789915+00:00",
+      "updated_at": "2026-06-05T06:06:48.692863+00:00",
       "status": "open",
       "code": "8046",
       "name": "南電",
@@ -2037,7 +2045,7 @@
         "pct_10m": -1.037,
         "pct_30m": -1.152
       },
-      "age_minutes": 211.69
+      "age_minutes": 216.48
     },
     {
       "key": "ai_pool:3711:58:583.0",
@@ -2828,7 +2836,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:35:12.437169+00:00",
-      "updated_at": "2026-06-05T06:02:00.789926+00:00",
+      "updated_at": "2026-06-05T06:06:48.692874+00:00",
       "status": "open",
       "code": "8046",
       "name": "南電",
@@ -2849,7 +2857,7 @@
         "pct_10m": -1.493,
         "pct_30m": -0.804
       },
-      "age_minutes": 206.81
+      "age_minutes": 211.6
     },
     {
       "key": "ai_pool:3037:60:962.0",
@@ -3500,7 +3508,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:40:15.726475+00:00",
-      "updated_at": "2026-06-05T06:02:00.789937+00:00",
+      "updated_at": "2026-06-05T06:06:48.692887+00:00",
       "status": "open",
       "code": "8046",
       "name": "南電",
@@ -3521,7 +3529,7 @@
         "pct_10m": -0.465,
         "pct_30m": 1.279
       },
-      "age_minutes": 201.75
+      "age_minutes": 206.55
     },
     {
       "key": "ai_pool:3037:55:950.0",
@@ -4284,7 +4292,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:45:15.268723+00:00",
-      "updated_at": "2026-06-05T06:02:00.789947+00:00",
+      "updated_at": "2026-06-05T06:06:48.692898+00:00",
       "status": "open",
       "code": "8046",
       "name": "南電",
@@ -4305,7 +4313,7 @@
         "pct_10m": -0.116,
         "pct_30m": 0.931
       },
-      "age_minutes": 196.76
+      "age_minutes": 201.56
     },
     {
       "key": "ai_pool:2409:32:27.6",
@@ -5068,7 +5076,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:50:15.682164+00:00",
-      "updated_at": "2026-06-05T06:02:00.789957+00:00",
+      "updated_at": "2026-06-05T06:06:48.692909+00:00",
       "status": "open",
       "code": "8046",
       "name": "南電",
@@ -5089,7 +5097,7 @@
         "pct_10m": 0.234,
         "pct_30m": 1.869
       },
-      "age_minutes": 191.75
+      "age_minutes": 196.55
     },
     {
       "key": "ai_pool:3037:27:947.0",
@@ -5264,7 +5272,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:50:26.323784+00:00",
-      "updated_at": "2026-06-05T06:02:00.789963+00:00",
+      "updated_at": "2026-06-05T06:06:48.692918+00:00",
       "status": "open",
       "code": "8046",
       "name": "南電",
@@ -5285,7 +5293,7 @@
         "pct_10m": 0.234,
         "pct_30m": 1.869
       },
-      "age_minutes": 191.57
+      "age_minutes": 196.37
     },
     {
       "key": "fund_flow:3711:27:578.0",
@@ -5768,7 +5776,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:55:13.518276+00:00",
-      "updated_at": "2026-06-05T06:02:00.789972+00:00",
+      "updated_at": "2026-06-05T06:06:48.692928+00:00",
       "status": "open",
       "code": "8046",
       "name": "南電",
@@ -5789,7 +5797,7 @@
         "pct_10m": 0.935,
         "pct_30m": 1.636
       },
-      "age_minutes": 186.79
+      "age_minutes": 191.59
     },
     {
       "key": "ai_pool:2409:32:27.65",
@@ -6440,7 +6448,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:00:25.047688+00:00",
-      "updated_at": "2026-06-05T06:02:00.789980+00:00",
+      "updated_at": "2026-06-05T06:06:48.692940+00:00",
       "status": "open",
       "code": "8046",
       "name": "南電",
@@ -6461,7 +6469,7 @@
         "pct_10m": 1.752,
         "pct_30m": 0.701
       },
-      "age_minutes": 181.6
+      "age_minutes": 186.39
     },
     {
       "key": "fund_flow:2615:85:85.8",
@@ -6804,7 +6812,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:05:11.974186+00:00",
-      "updated_at": "2026-06-05T06:02:00.789987+00:00",
+      "updated_at": "2026-06-05T06:06:48.692950+00:00",
       "status": "open",
       "code": "8046",
       "name": "南電",
@@ -6825,7 +6833,7 @@
         "pct_10m": 0.231,
         "pct_30m": -0.462
       },
-      "age_minutes": 176.81
+      "age_minutes": 181.61
     },
     {
       "key": "ai_pool:2454:58:4370.0",
@@ -7280,7 +7288,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:10:15.521873+00:00",
-      "updated_at": "2026-06-05T06:02:00.789995+00:00",
+      "updated_at": "2026-06-05T06:06:48.692960+00:00",
       "status": "open",
       "code": "8046",
       "name": "南電",
@@ -7301,7 +7309,7 @@
         "pct_10m": 0.809,
         "pct_30m": -1.387
       },
-      "age_minutes": 171.75
+      "age_minutes": 176.55
     },
     {
       "key": "ai_pool:3037:63:951.0",
@@ -7924,7 +7932,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:15:14.980048+00:00",
-      "updated_at": "2026-06-05T06:02:00.790004+00:00",
+      "updated_at": "2026-06-05T06:06:48.692971+00:00",
       "status": "open",
       "code": "8046",
       "name": "南電",
@@ -7945,7 +7953,7 @@
         "pct_10m": 0.578,
         "pct_30m": -1.734
       },
-      "age_minutes": 166.76
+      "age_minutes": 171.56
     },
     {
       "key": "ai_pool:3481:38:53.7",
@@ -8316,7 +8324,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:20:15.486045+00:00",
-      "updated_at": "2026-06-05T06:02:00.790011+00:00",
+      "updated_at": "2026-06-05T06:06:48.692980+00:00",
       "status": "open",
       "code": "8046",
       "name": "南電",
@@ -8337,7 +8345,7 @@
         "pct_10m": -0.806,
         "pct_30m": -2.647
       },
-      "age_minutes": 161.76
+      "age_minutes": 166.55
     },
     {
       "key": "ai_pool:2356:58:77.6",
@@ -8764,7 +8772,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:25:11.681283+00:00",
-      "updated_at": "2026-06-05T06:02:00.790020+00:00",
+      "updated_at": "2026-06-05T06:06:48.692991+00:00",
       "status": "open",
       "code": "8046",
       "name": "南電",
@@ -8785,7 +8793,7 @@
         "pct_10m": -1.148,
         "pct_30m": -2.641
       },
-      "age_minutes": 156.82
+      "age_minutes": 161.62
     },
     {
       "key": "ai_pool:2324:63:41.45",
@@ -9380,7 +9388,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:30:18.909556+00:00",
-      "updated_at": "2026-06-05T06:02:00.790029+00:00",
+      "updated_at": "2026-06-05T06:06:48.693003+00:00",
       "status": "open",
       "code": "8046",
       "name": "南電",
@@ -9401,7 +9409,7 @@
         "pct_10m": -1.044,
         "pct_30m": -1.392
       },
-      "age_minutes": 151.7
+      "age_minutes": 156.5
     },
     {
       "key": "ai_pool:2324:53:41.3",
@@ -9968,7 +9976,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:35:12.135064+00:00",
-      "updated_at": "2026-06-05T06:02:00.790038+00:00",
+      "updated_at": "2026-06-05T06:06:48.693013+00:00",
       "status": "open",
       "code": "8046",
       "name": "南電",
@@ -9989,7 +9997,7 @@
         "pct_10m": -1.278,
         "pct_30m": -1.394
       },
-      "age_minutes": 146.81
+      "age_minutes": 151.61
     },
     {
       "key": "ai_pool:2356:52:76.7",
@@ -10864,7 +10872,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:40:15.555257+00:00",
-      "updated_at": "2026-06-05T06:02:00.790047+00:00",
+      "updated_at": "2026-06-05T06:06:48.693025+00:00",
       "status": "open",
       "code": "8046",
       "name": "南電",
@@ -10885,7 +10893,7 @@
         "pct_10m": -1.053,
         "pct_30m": -1.404
       },
-      "age_minutes": 141.75
+      "age_minutes": 146.55
     },
     {
       "key": "ai_pool:2382:14:389.0",
@@ -11620,7 +11628,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:45:14.598263+00:00",
-      "updated_at": "2026-06-05T06:02:00.790056+00:00",
+      "updated_at": "2026-06-05T06:06:48.693036+00:00",
       "status": "open",
       "code": "8046",
       "name": "南電",
@@ -11641,7 +11649,7 @@
         "pct_10m": -0.353,
         "pct_30m": -0.588
       },
-      "age_minutes": 136.77
+      "age_minutes": 141.57
     },
     {
       "key": "ai_pool:2317:17:284.5",
@@ -11788,7 +11796,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:45:24.850224+00:00",
-      "updated_at": "2026-06-05T06:02:00.790062+00:00",
+      "updated_at": "2026-06-05T06:06:48.693044+00:00",
       "status": "open",
       "code": "8046",
       "name": "南電",
@@ -11809,7 +11817,7 @@
         "pct_10m": -0.235,
         "pct_30m": -0.471
       },
-      "age_minutes": 136.6
+      "age_minutes": 141.4
     },
     {
       "key": "fund_flow:2317:21:284.5",
@@ -12432,7 +12440,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:50:15.098772+00:00",
-      "updated_at": "2026-06-05T06:02:00.790071+00:00",
+      "updated_at": "2026-06-05T06:06:48.693055+00:00",
       "status": "open",
       "code": "8046",
       "name": "南電",
@@ -12453,7 +12461,7 @@
         "pct_10m": 0.473,
         "pct_30m": -0.236
       },
-      "age_minutes": 131.76
+      "age_minutes": 136.56
     },
     {
       "key": "ai_pool:2382:14:388.0",
@@ -13440,7 +13448,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:55:23.123583+00:00",
-      "updated_at": "2026-06-05T06:02:00.790082+00:00",
+      "updated_at": "2026-06-05T06:06:48.693069+00:00",
       "status": "open",
       "code": "8046",
       "name": "南電",
@@ -13461,7 +13469,7 @@
         "pct_10m": 0.473,
         "pct_30m": 0.0
       },
-      "age_minutes": 126.63
+      "age_minutes": 131.43
     },
     {
       "key": "fund_flow:2308:19:2305.0",
@@ -13804,7 +13812,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T04:00:24.527478+00:00",
-      "updated_at": "2026-06-05T06:02:00.790089+00:00",
+      "updated_at": "2026-06-05T06:06:48.693078+00:00",
       "status": "open",
       "code": "8046",
       "name": "南電",
@@ -13825,7 +13833,7 @@
         "pct_10m": -0.824,
         "pct_30m": -0.588
       },
-      "age_minutes": 121.6
+      "age_minutes": 126.4
     },
     {
       "key": "ai_pool:3017:20:2575.0",
@@ -14028,7 +14036,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T04:00:36.205784+00:00",
-      "updated_at": "2026-06-05T06:02:00.790095+00:00",
+      "updated_at": "2026-06-05T06:06:48.693086+00:00",
       "status": "open",
       "code": "8046",
       "name": "南電",
@@ -14049,7 +14057,7 @@
         "pct_10m": -0.824,
         "pct_30m": -0.588
       },
-      "age_minutes": 121.41
+      "age_minutes": 126.21
     },
     {
       "key": "fund_flow:3231:22:171.5",
@@ -14504,7 +14512,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T04:00:54.481881+00:00",
-      "updated_at": "2026-06-05T06:02:00.790102+00:00",
+      "updated_at": "2026-06-05T06:06:48.693096+00:00",
       "status": "open",
       "code": "8046",
       "name": "南電",
@@ -14525,7 +14533,7 @@
         "pct_10m": -0.707,
         "pct_30m": -0.471
       },
-      "age_minutes": 121.11
+      "age_minutes": 125.9
     },
     {
       "key": "ai_pool:3231:17:171.0",
@@ -14700,7 +14708,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T04:01:03.697267+00:00",
-      "updated_at": "2026-06-05T06:02:00.790107+00:00",
+      "updated_at": "2026-06-05T06:06:48.693105+00:00",
       "status": "open",
       "code": "8046",
       "name": "南電",
@@ -14721,7 +14729,7 @@
         "pct_10m": -0.707,
         "pct_30m": -0.471
       },
-      "age_minutes": 120.95
+      "age_minutes": 125.75
     },
     {
       "key": "fund_flow:2308:18:2300.0",
@@ -14868,7 +14876,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T04:01:05.011258+00:00",
-      "updated_at": "2026-06-05T06:02:00.790138+00:00",
+      "updated_at": "2026-06-05T06:06:48.693113+00:00",
       "status": "open",
       "code": "8046",
       "name": "南電",
@@ -14889,7 +14897,7 @@
         "pct_10m": -0.59,
         "pct_30m": -0.354
       },
-      "age_minutes": 120.93
+      "age_minutes": 125.73
     },
     {
       "key": "fund_flow:3324:21:1085.0",
@@ -14980,7 +14988,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T04:01:42.928857+00:00",
-      "updated_at": "2026-06-05T06:02:00.790143+00:00",
+      "updated_at": "2026-06-05T06:06:48.693121+00:00",
       "status": "open",
       "code": "8046",
       "name": "南電",
@@ -15001,7 +15009,7 @@
         "pct_10m": -0.824,
         "pct_30m": -0.588
       },
-      "age_minutes": 120.3
+      "age_minutes": 125.1
     },
     {
       "key": "ai_pool:3231:29:171.5",
@@ -15708,7 +15716,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T04:02:19.489195+00:00",
-      "updated_at": "2026-06-05T06:02:00.790151+00:00",
+      "updated_at": "2026-06-05T06:06:48.693133+00:00",
       "status": "open",
       "code": "8046",
       "name": "南電",
@@ -15729,7 +15737,7 @@
         "pct_10m": -0.704,
         "pct_30m": -0.939
       },
-      "age_minutes": 119.69
+      "age_minutes": 124.49
     },
     {
       "key": "ai_pool:5347:19:159.5",
@@ -16324,7 +16332,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T04:05:12.435723+00:00",
-      "updated_at": "2026-06-05T06:02:00.790158+00:00",
+      "updated_at": "2026-06-05T06:06:48.693145+00:00",
       "status": "open",
       "code": "8046",
       "name": "南電",
@@ -16345,7 +16353,7 @@
         "pct_10m": 0.0,
         "pct_30m": -0.236
       },
-      "age_minutes": 116.81
+      "age_minutes": 121.6
     },
     {
       "key": "ai_pool:3661:10:4240.0",
@@ -16716,7 +16724,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T04:06:00.357290+00:00",
-      "updated_at": "2026-06-05T06:02:00.790163+00:00",
+      "updated_at": "2026-06-05T06:06:48.693157+00:00",
       "status": "open",
       "code": "8046",
       "name": "南電",
@@ -16737,7 +16745,7 @@
         "pct_10m": 0.118,
         "pct_30m": -0.118
       },
-      "age_minutes": 116.01
+      "age_minutes": 120.81
     },
     {
       "key": "ai_pool:3661:18:4240.0",
@@ -17024,7 +17032,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T04:06:16.935199+00:00",
-      "updated_at": "2026-06-05T06:02:00.790169+00:00",
+      "updated_at": "2026-06-05T06:06:48.693168+00:00",
       "status": "open",
       "code": "8046",
       "name": "南電",
@@ -17045,7 +17053,7 @@
         "pct_10m": -0.118,
         "pct_30m": -0.354
       },
-      "age_minutes": 115.73
+      "age_minutes": 120.53
     },
     {
       "key": "ai_pool:2379:86:649.0",
@@ -18284,7 +18292,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T04:20:15.505147+00:00",
-      "updated_at": "2026-06-05T06:02:00.790176+00:00",
+      "updated_at": "2026-06-05T06:06:48.693183+00:00",
       "status": "open",
       "code": "8046",
       "name": "南電",
@@ -18305,7 +18313,7 @@
         "pct_10m": 0.0,
         "pct_30m": 0.71
       },
-      "age_minutes": 101.75
+      "age_minutes": 106.55
     },
     {
       "key": "ai_pool:2317:28:285.0",
@@ -18956,7 +18964,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T04:25:13.286033+00:00",
-      "updated_at": "2026-06-05T06:02:00.790183+00:00",
+      "updated_at": "2026-06-05T06:06:48.693195+00:00",
       "status": "open",
       "code": "8046",
       "name": "南電",
@@ -18977,7 +18985,7 @@
         "pct_10m": -0.354,
         "pct_30m": 0.354
       },
-      "age_minutes": 96.79
+      "age_minutes": 101.59
     },
     {
       "key": "fund_flow:2454:35:4285.0",
@@ -19068,7 +19076,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T04:25:24.727176+00:00",
-      "updated_at": "2026-06-05T06:02:00.790188+00:00",
+      "updated_at": "2026-06-05T06:06:48.693204+00:00",
       "status": "open",
       "code": "8046",
       "name": "南電",
@@ -19089,7 +19097,7 @@
         "pct_10m": -0.236,
         "pct_30m": 0.473
       },
-      "age_minutes": 96.6
+      "age_minutes": 101.4
     },
     {
       "key": "fund_flow:5347:35:159.5",
@@ -19964,7 +19972,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T04:35:12.204829+00:00",
-      "updated_at": "2026-06-05T06:02:00.790195+00:00",
+      "updated_at": "2026-06-05T06:06:48.693215+00:00",
       "status": "open",
       "code": "8046",
       "name": "南電",
@@ -19985,7 +19993,7 @@
         "pct_10m": 0.474,
         "pct_30m": 0.474
       },
-      "age_minutes": 86.81
+      "age_minutes": 91.61
     },
     {
       "key": "ai_pool:2454:20:4265.0",
@@ -20356,7 +20364,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T04:40:15.888096+00:00",
-      "updated_at": "2026-06-05T06:02:00.790200+00:00",
+      "updated_at": "2026-06-05T06:06:48.693224+00:00",
       "status": "open",
       "code": "8046",
       "name": "南電",
@@ -20377,7 +20385,7 @@
         "pct_10m": 0.236,
         "pct_30m": -0.236
       },
-      "age_minutes": 81.75
+      "age_minutes": 86.55
     },
     {
       "key": "ai_pool:2454:20:4280.0",
@@ -21000,7 +21008,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T04:45:14.480619+00:00",
-      "updated_at": "2026-06-05T06:02:00.790206+00:00",
+      "updated_at": "2026-06-05T06:06:48.693235+00:00",
       "status": "open",
       "code": "8046",
       "name": "南電",
@@ -21021,7 +21029,7 @@
         "pct_10m": 0.118,
         "pct_30m": -0.236
       },
-      "age_minutes": 76.77
+      "age_minutes": 81.57
     },
     {
       "key": "ai_pool:3661:28:4255.0",
@@ -21616,7 +21624,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T04:50:26.162470+00:00",
-      "updated_at": "2026-06-05T06:02:00.790212+00:00",
+      "updated_at": "2026-06-05T06:06:48.693245+00:00",
       "status": "open",
       "code": "8046",
       "name": "南電",
@@ -21637,7 +21645,7 @@
         "pct_10m": -0.353,
         "pct_30m": -0.118
       },
-      "age_minutes": 71.58
+      "age_minutes": 76.38
     },
     {
       "key": "fund_flow:3037:33:938.0",
@@ -23632,7 +23640,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T05:10:26.743325+00:00",
-      "updated_at": "2026-06-05T06:02:00.790223+00:00",
+      "updated_at": "2026-06-05T06:06:48.693263+00:00",
       "status": "open",
       "code": "8046",
       "name": "南電",
@@ -23653,7 +23661,7 @@
         "pct_10m": 0.354,
         "pct_30m": -0.236
       },
-      "age_minutes": 51.57
+      "age_minutes": 56.37
     },
     {
       "key": "fund_flow:2308:29:2305.0",
@@ -23940,7 +23948,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T05:15:14.723484+00:00",
-      "updated_at": "2026-06-05T06:02:00.790228+00:00",
+      "updated_at": "2026-06-05T06:06:48.693273+00:00",
       "status": "open",
       "code": "8046",
       "name": "南電",
@@ -23961,7 +23969,7 @@
         "pct_10m": 0.0,
         "pct_30m": -0.118
       },
-      "age_minutes": 46.77
+      "age_minutes": 51.57
     },
     {
       "key": "ai_pool:2368:20:1310.0",
@@ -24724,7 +24732,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T05:20:26.778459+00:00",
-      "updated_at": "2026-06-05T06:02:00.790234+00:00",
+      "updated_at": "2026-06-05T06:06:48.693284+00:00",
       "status": "open",
       "code": "8046",
       "name": "南電",
@@ -24745,7 +24753,7 @@
         "pct_10m": -0.354,
         "pct_30m": -0.354
       },
-      "age_minutes": 41.57
+      "age_minutes": 46.37
     },
     {
       "key": "fund_flow:2409:32:27.25",
