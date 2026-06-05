@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-05T02:26:03.227103+00:00",
+  "updated_at": "2026-06-05T02:26:04.869994+00:00",
   "count": 63,
   "items": [
     {
@@ -48,7 +48,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:25:05.422985+00:00",
-      "updated_at": "2026-06-05T02:25:58.838371+00:00",
+      "updated_at": "2026-06-05T02:26:04.567368+00:00",
       "status": "open",
       "code": "2379",
       "name": "瑞昱",
@@ -66,7 +66,7 @@
         "max_gain": 0.312,
         "max_drawdown": 0.0
       },
-      "age_minutes": 0.89
+      "age_minutes": 0.99
     },
     {
       "key": "ai_pool:2615:92:86.1",
@@ -123,7 +123,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:25:05.423037+00:00",
-      "updated_at": "2026-06-05T02:25:58.933752+00:00",
+      "updated_at": "2026-06-05T02:26:02.819980+00:00",
       "status": "open",
       "code": "3443",
       "name": "創意",
@@ -141,7 +141,7 @@
         "max_gain": 0.112,
         "max_drawdown": 0.0
       },
-      "age_minutes": 0.89
+      "age_minutes": 0.96
     },
     {
       "key": "ai_pool:2356:70:78.1",
@@ -198,20 +198,25 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:25:05.423077+00:00",
-      "updated_at": "2026-06-05T02:25:05.423080+00:00",
+      "updated_at": "2026-06-05T02:26:04.517354+00:00",
       "status": "open",
       "code": "2368",
       "name": "金像電",
       "sector": "PCB",
       "entry_price": 1330.0,
-      "last_price": 1330.0,
-      "best_price": 1330.0,
+      "last_price": 1340.0,
+      "best_price": 1340.0,
       "worst_price": 1330.0,
       "score": 59,
       "change_rate_at_signal": -1.48,
       "volume_ratio_at_signal": 0.59,
       "alert": null,
-      "results": {}
+      "results": {
+        "latest_pct": 0.752,
+        "max_gain": 0.752,
+        "max_drawdown": 0.0
+      },
+      "age_minutes": 0.98
     },
     {
       "key": "ai_pool:3231:58:173.0",
@@ -503,7 +508,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:25:12.529197+00:00",
-      "updated_at": "2026-06-05T02:25:58.838387+00:00",
+      "updated_at": "2026-06-05T02:26:04.567382+00:00",
       "status": "open",
       "code": "2379",
       "name": "瑞昱",
@@ -521,7 +526,7 @@
         "max_gain": 0.0,
         "max_drawdown": 0.0
       },
-      "age_minutes": 0.77
+      "age_minutes": 0.87
     },
     {
       "key": "ai_pool:2615:94:86.4",
@@ -553,7 +558,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:25:12.529239+00:00",
-      "updated_at": "2026-06-05T02:25:58.933766+00:00",
+      "updated_at": "2026-06-05T02:26:02.819995+00:00",
       "status": "open",
       "code": "3443",
       "name": "創意",
@@ -571,7 +576,7 @@
         "max_gain": 0.0,
         "max_drawdown": 0.0
       },
-      "age_minutes": 0.77
+      "age_minutes": 0.84
     },
     {
       "key": "ai_pool:3661:77:4405.0",
@@ -768,20 +773,25 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:25:12.529344+00:00",
-      "updated_at": "2026-06-05T02:25:12.529347+00:00",
+      "updated_at": "2026-06-05T02:26:04.517371+00:00",
       "status": "open",
       "code": "2368",
       "name": "金像電",
       "sector": "PCB",
       "entry_price": 1335.0,
-      "last_price": 1335.0,
-      "best_price": 1335.0,
+      "last_price": 1340.0,
+      "best_price": 1340.0,
       "worst_price": 1335.0,
       "score": 51,
       "change_rate_at_signal": -1.11,
       "volume_ratio_at_signal": 0.6,
       "alert": null,
-      "results": {}
+      "results": {
+        "latest_pct": 0.375,
+        "max_gain": 0.375,
+        "max_drawdown": 0.0
+      },
+      "age_minutes": 0.87
     },
     {
       "key": "ai_pool:8046:48:861.0",
@@ -868,7 +878,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:25:15.330007+00:00",
-      "updated_at": "2026-06-05T02:25:58.838394+00:00",
+      "updated_at": "2026-06-05T02:26:04.567390+00:00",
       "status": "open",
       "code": "2379",
       "name": "瑞昱",
@@ -886,7 +896,7 @@
         "max_gain": 0.0,
         "max_drawdown": 0.0
       },
-      "age_minutes": 0.73
+      "age_minutes": 0.82
     },
     {
       "key": "fund_flow:3017:31:2630.0",
