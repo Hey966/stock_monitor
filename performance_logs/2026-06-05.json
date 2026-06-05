@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-05T03:11:47.163946+00:00",
+  "updated_at": "2026-06-05T03:11:49.930232+00:00",
   "count": 275,
   "items": [
     {
@@ -496,13 +496,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:25:05.423221+00:00",
-      "updated_at": "2026-06-05T03:06:19.862333+00:00",
+      "updated_at": "2026-06-05T03:11:49.124276+00:00",
       "status": "open",
       "code": "3481",
       "name": "群創",
       "sector": "面板",
       "entry_price": 52.9,
-      "last_price": 53.9,
+      "last_price": 53.8,
       "best_price": 54.0,
       "worst_price": 52.9,
       "score": 40,
@@ -510,14 +510,14 @@
       "volume_ratio_at_signal": 0.6,
       "alert": null,
       "results": {
-        "latest_pct": 1.89,
+        "latest_pct": 1.701,
         "max_gain": 2.079,
         "max_drawdown": 0.0,
         "pct_5m": 0.756,
         "pct_10m": 1.323,
         "pct_30m": 2.079
       },
-      "age_minutes": 41.24
+      "age_minutes": 46.73
     },
     {
       "key": "ai_pool:2317:39:286.5",
@@ -1000,13 +1000,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:25:12.529381+00:00",
-      "updated_at": "2026-06-05T03:06:19.862351+00:00",
+      "updated_at": "2026-06-05T03:11:49.124293+00:00",
       "status": "open",
       "code": "3481",
       "name": "群創",
       "sector": "面板",
       "entry_price": 53.0,
-      "last_price": 53.9,
+      "last_price": 53.8,
       "best_price": 54.0,
       "worst_price": 53.0,
       "score": 40,
@@ -1014,14 +1014,14 @@
       "volume_ratio_at_signal": 0.61,
       "alert": null,
       "results": {
-        "latest_pct": 1.698,
+        "latest_pct": 1.509,
         "max_gain": 1.887,
         "max_drawdown": 0.0,
         "pct_5m": 0.566,
         "pct_10m": 1.132,
         "pct_30m": 1.887
       },
-      "age_minutes": 41.12
+      "age_minutes": 46.61
     },
     {
       "key": "ai_pool:5347:35:161.0",
@@ -2148,13 +2148,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:30:19.670300+00:00",
-      "updated_at": "2026-06-05T03:06:19.862362+00:00",
+      "updated_at": "2026-06-05T03:11:49.124304+00:00",
       "status": "open",
       "code": "3481",
       "name": "群創",
       "sector": "面板",
       "entry_price": 53.3,
-      "last_price": 53.9,
+      "last_price": 53.8,
       "best_price": 54.0,
       "worst_price": 53.3,
       "score": 48,
@@ -2162,14 +2162,14 @@
       "volume_ratio_at_signal": 0.62,
       "alert": null,
       "results": {
-        "latest_pct": 1.126,
+        "latest_pct": 0.938,
         "max_gain": 1.313,
         "max_drawdown": 0.0,
         "pct_5m": 0.563,
         "pct_10m": 1.126,
         "pct_30m": 1.126
       },
-      "age_minutes": 36.0
+      "age_minutes": 41.49
     },
     {
       "key": "ai_pool:3017:39:2650.0",
@@ -2904,13 +2904,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:35:12.437197+00:00",
-      "updated_at": "2026-06-05T03:06:19.862371+00:00",
+      "updated_at": "2026-06-05T03:11:49.124312+00:00",
       "status": "open",
       "code": "3481",
       "name": "群創",
       "sector": "面板",
       "entry_price": 53.6,
-      "last_price": 53.9,
+      "last_price": 53.8,
       "best_price": 54.0,
       "worst_price": 53.6,
       "score": 56,
@@ -2918,14 +2918,14 @@
       "volume_ratio_at_signal": 0.62,
       "alert": null,
       "results": {
-        "latest_pct": 0.56,
+        "latest_pct": 0.373,
         "max_gain": 0.746,
         "max_drawdown": 0.0,
         "pct_5m": 0.56,
         "pct_10m": 0.56,
         "pct_30m": 0.56
       },
-      "age_minutes": 31.12
+      "age_minutes": 36.61
     },
     {
       "key": "ai_pool:2324:43:41.3",
@@ -3660,27 +3660,28 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:40:15.726558+00:00",
-      "updated_at": "2026-06-05T03:06:19.862379+00:00",
+      "updated_at": "2026-06-05T03:11:49.124320+00:00",
       "status": "open",
       "code": "3481",
       "name": "群創",
       "sector": "面板",
       "entry_price": 53.9,
-      "last_price": 53.9,
+      "last_price": 53.8,
       "best_price": 54.0,
-      "worst_price": 53.9,
+      "worst_price": 53.8,
       "score": 38,
       "change_rate_at_signal": -3.4,
       "volume_ratio_at_signal": 0.63,
       "alert": null,
       "results": {
-        "latest_pct": 0.0,
+        "latest_pct": -0.186,
         "max_gain": 0.186,
-        "max_drawdown": 0.0,
+        "max_drawdown": -0.186,
         "pct_5m": 0.0,
-        "pct_10m": 0.186
+        "pct_10m": 0.186,
+        "pct_30m": -0.186
       },
-      "age_minutes": 26.07
+      "age_minutes": 31.56
     },
     {
       "key": "ai_pool:3017:33:2625.0",
@@ -4931,27 +4932,27 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:50:15.682144+00:00",
-      "updated_at": "2026-06-05T03:06:19.862388+00:00",
+      "updated_at": "2026-06-05T03:11:49.124328+00:00",
       "status": "open",
       "code": "3481",
       "name": "群創",
       "sector": "面板",
       "entry_price": 54.0,
-      "last_price": 53.9,
+      "last_price": 53.8,
       "best_price": 54.0,
-      "worst_price": 53.9,
+      "worst_price": 53.8,
       "score": 39,
       "change_rate_at_signal": -3.22,
       "volume_ratio_at_signal": 0.65,
       "alert": null,
       "results": {
-        "latest_pct": -0.185,
+        "latest_pct": -0.37,
         "max_gain": 0.0,
-        "max_drawdown": -0.185,
+        "max_drawdown": -0.37,
         "pct_5m": 0.0,
         "pct_10m": -0.185
       },
-      "age_minutes": 16.07
+      "age_minutes": 21.56
     },
     {
       "key": "ai_pool:2317:37:285.5",
@@ -6386,26 +6387,27 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:00:36.494141+00:00",
-      "updated_at": "2026-06-05T03:06:19.862397+00:00",
+      "updated_at": "2026-06-05T03:11:49.124337+00:00",
       "status": "open",
       "code": "3481",
       "name": "群創",
       "sector": "面板",
       "entry_price": 53.9,
-      "last_price": 53.9,
+      "last_price": 53.8,
       "best_price": 53.9,
-      "worst_price": 53.9,
+      "worst_price": 53.8,
       "score": 34,
       "change_rate_at_signal": -3.4,
       "volume_ratio_at_signal": 0.67,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": 0.0,
+        "latest_pct": -0.186,
         "max_gain": 0.0,
-        "max_drawdown": 0.0,
-        "pct_5m": 0.0
+        "max_drawdown": -0.186,
+        "pct_5m": 0.0,
+        "pct_10m": -0.186
       },
-      "age_minutes": 5.72
+      "age_minutes": 11.21
     },
     {
       "key": "fund_flow:3037:33:948.0",
@@ -6751,25 +6753,26 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:05:11.974205+00:00",
-      "updated_at": "2026-06-05T03:06:19.862404+00:00",
+      "updated_at": "2026-06-05T03:11:49.124343+00:00",
       "status": "open",
       "code": "3481",
       "name": "群創",
       "sector": "面板",
       "entry_price": 53.9,
-      "last_price": 53.9,
+      "last_price": 53.8,
       "best_price": 53.9,
-      "worst_price": 53.9,
+      "worst_price": 53.8,
       "score": 56,
       "change_rate_at_signal": -3.4,
       "volume_ratio_at_signal": 0.67,
       "alert": null,
       "results": {
-        "latest_pct": 0.0,
+        "latest_pct": -0.186,
         "max_gain": 0.0,
-        "max_drawdown": 0.0
+        "max_drawdown": -0.186,
+        "pct_5m": -0.186
       },
-      "age_minutes": 1.13
+      "age_minutes": 6.62
     },
     {
       "key": "ai_pool:3037:54:952.0",
@@ -7231,7 +7234,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:10:15.521941+00:00",
-      "updated_at": "2026-06-05T03:10:15.521943+00:00",
+      "updated_at": "2026-06-05T03:11:49.124349+00:00",
       "status": "open",
       "code": "3481",
       "name": "群創",
@@ -7244,7 +7247,12 @@
       "change_rate_at_signal": -3.58,
       "volume_ratio_at_signal": 0.68,
       "alert": null,
-      "results": {}
+      "results": {
+        "latest_pct": 0.0,
+        "max_gain": 0.0,
+        "max_drawdown": 0.0
+      },
+      "age_minutes": 1.56
     },
     {
       "key": "ai_pool:2317:31:286.5",
