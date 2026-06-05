@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-05T02:31:07.914956+00:00",
+  "updated_at": "2026-06-05T02:31:09.666531+00:00",
   "count": 92,
   "items": [
     {
@@ -253,25 +253,26 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:25:05.423097+00:00",
-      "updated_at": "2026-06-05T02:26:37.909963+00:00",
+      "updated_at": "2026-06-05T02:31:09.120776+00:00",
       "status": "open",
       "code": "2454",
       "name": "聯發科",
       "sector": "半導體",
       "entry_price": 4390.0,
-      "last_price": 4400.0,
+      "last_price": 4385.0,
       "best_price": 4400.0,
-      "worst_price": 4390.0,
+      "worst_price": 4385.0,
       "score": 53,
       "change_rate_at_signal": -0.9,
       "volume_ratio_at_signal": 0.74,
       "alert": null,
       "results": {
-        "latest_pct": 0.228,
+        "latest_pct": -0.114,
         "max_gain": 0.228,
-        "max_drawdown": 0.0
+        "max_drawdown": -0.114,
+        "pct_5m": -0.114
       },
-      "age_minutes": 1.54
+      "age_minutes": 6.06
     },
     {
       "key": "ai_pool:6215:53:120.0",
@@ -1752,20 +1753,25 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:30:19.670236+00:00",
-      "updated_at": "2026-06-05T02:30:19.670239+00:00",
+      "updated_at": "2026-06-05T02:31:09.120796+00:00",
       "status": "open",
       "code": "2454",
       "name": "聯發科",
       "sector": "半導體",
       "entry_price": 4390.0,
-      "last_price": 4390.0,
+      "last_price": 4385.0,
       "best_price": 4390.0,
-      "worst_price": 4390.0,
+      "worst_price": 4385.0,
       "score": 63,
       "change_rate_at_signal": -0.9,
       "volume_ratio_at_signal": 0.75,
       "alert": null,
-      "results": {}
+      "results": {
+        "latest_pct": -0.114,
+        "max_gain": 0.0,
+        "max_drawdown": -0.114
+      },
+      "age_minutes": 0.82
     },
     {
       "key": "ai_pool:2324:60:41.25",
