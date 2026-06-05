@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-05T02:26:41.241477+00:00",
+  "updated_at": "2026-06-05T02:26:43.253702+00:00",
   "count": 63,
   "items": [
     {
@@ -348,7 +348,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:25:05.423171+00:00",
-      "updated_at": "2026-06-05T02:26:39.404544+00:00",
+      "updated_at": "2026-06-05T02:26:33.568242+00:00",
       "status": "open",
       "code": "2609",
       "name": "陽明",
@@ -366,7 +366,7 @@
         "max_gain": 0.185,
         "max_drawdown": 0.0
       },
-      "age_minutes": 1.57
+      "age_minutes": 1.47
     },
     {
       "key": "ai_pool:3711:48:581.0",
@@ -423,7 +423,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:25:05.423209+00:00",
-      "updated_at": "2026-06-05T02:26:40.928134+00:00",
+      "updated_at": "2026-06-05T02:26:35.448442+00:00",
       "status": "open",
       "code": "2324",
       "name": "仁寶",
@@ -441,32 +441,27 @@
         "max_gain": 0.243,
         "max_drawdown": 0.0
       },
-      "age_minutes": 1.59
+      "age_minutes": 1.5
     },
     {
       "key": "ai_pool:3481:40:52.9",
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:25:05.423221+00:00",
-      "updated_at": "2026-06-05T02:26:39.727596+00:00",
+      "updated_at": "2026-06-05T02:25:05.423224+00:00",
       "status": "open",
       "code": "3481",
       "name": "群創",
       "sector": "面板",
       "entry_price": 52.9,
-      "last_price": 53.0,
-      "best_price": 53.0,
+      "last_price": 52.9,
+      "best_price": 52.9,
       "worst_price": 52.9,
       "score": 40,
       "change_rate_at_signal": -5.19,
       "volume_ratio_at_signal": 0.6,
       "alert": null,
-      "results": {
-        "latest_pct": 0.189,
-        "max_gain": 0.189,
-        "max_drawdown": 0.0
-      },
-      "age_minutes": 1.57
+      "results": {}
     },
     {
       "key": "ai_pool:2317:39:286.5",
@@ -758,7 +753,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:25:12.529325+00:00",
-      "updated_at": "2026-06-05T02:26:40.928157+00:00",
+      "updated_at": "2026-06-05T02:26:35.448459+00:00",
       "status": "open",
       "code": "2324",
       "name": "仁寶",
@@ -776,7 +771,7 @@
         "max_gain": 0.121,
         "max_drawdown": 0.0
       },
-      "age_minutes": 1.47
+      "age_minutes": 1.38
     },
     {
       "key": "ai_pool:2330:51:2380.0",
@@ -858,7 +853,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:25:12.529373+00:00",
-      "updated_at": "2026-06-05T02:26:39.404564+00:00",
+      "updated_at": "2026-06-05T02:26:33.568266+00:00",
       "status": "open",
       "code": "2609",
       "name": "陽明",
@@ -876,14 +871,14 @@
         "max_gain": 0.0,
         "max_drawdown": 0.0
       },
-      "age_minutes": 1.45
+      "age_minutes": 1.35
     },
     {
       "key": "ai_pool:3481:40:53.0",
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:25:12.529381+00:00",
-      "updated_at": "2026-06-05T02:26:39.727611+00:00",
+      "updated_at": "2026-06-05T02:25:12.529384+00:00",
       "status": "open",
       "code": "3481",
       "name": "群創",
@@ -896,12 +891,7 @@
       "change_rate_at_signal": -5.01,
       "volume_ratio_at_signal": 0.61,
       "alert": null,
-      "results": {
-        "latest_pct": 0.0,
-        "max_gain": 0.0,
-        "max_drawdown": 0.0
-      },
-      "age_minutes": 1.45
+      "results": {}
     },
     {
       "key": "ai_pool:5347:35:161.0",
@@ -1228,7 +1218,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:25:16.826520+00:00",
-      "updated_at": "2026-06-05T02:26:40.928171+00:00",
+      "updated_at": "2026-06-05T02:26:35.448467+00:00",
       "status": "open",
       "code": "2324",
       "name": "仁寶",
@@ -1246,7 +1236,7 @@
         "max_gain": 0.0,
         "max_drawdown": -0.121
       },
-      "age_minutes": 1.4
+      "age_minutes": 1.31
     },
     {
       "key": "fund_flow:2409:34:27.8",
