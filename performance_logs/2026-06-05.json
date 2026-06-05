@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-05T03:01:50.667203+00:00",
+  "updated_at": "2026-06-05T03:01:53.701225+00:00",
   "count": 240,
   "items": [
     {
@@ -356,7 +356,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:25:05.423161+00:00",
-      "updated_at": "2026-06-05T02:56:22.784283+00:00",
+      "updated_at": "2026-06-05T03:01:52.487550+00:00",
       "status": "open",
       "code": "8046",
       "name": "南電",
@@ -377,7 +377,7 @@
         "pct_10m": 1.044,
         "pct_30m": -0.464
       },
-      "age_minutes": 31.29
+      "age_minutes": 36.78
     },
     {
       "key": "ai_pool:2609:49:54.0",
@@ -944,7 +944,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:25:12.529353+00:00",
-      "updated_at": "2026-06-05T02:56:22.784306+00:00",
+      "updated_at": "2026-06-05T03:01:52.487567+00:00",
       "status": "open",
       "code": "8046",
       "name": "南電",
@@ -965,7 +965,7 @@
         "pct_10m": 1.161,
         "pct_30m": -0.348
       },
-      "age_minutes": 31.17
+      "age_minutes": 36.67
     },
     {
       "key": "ai_pool:2609:40:54.1",
@@ -2008,7 +2008,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:30:19.670255+00:00",
-      "updated_at": "2026-06-05T02:56:22.784320+00:00",
+      "updated_at": "2026-06-05T03:01:52.487579+00:00",
       "status": "open",
       "code": "8046",
       "name": "南電",
@@ -2026,9 +2026,10 @@
         "max_gain": 0.346,
         "max_drawdown": -1.382,
         "pct_5m": 0.346,
-        "pct_10m": -1.037
+        "pct_10m": -1.037,
+        "pct_30m": -1.152
       },
-      "age_minutes": 26.05
+      "age_minutes": 31.55
     },
     {
       "key": "ai_pool:3711:58:583.0",
@@ -2801,7 +2802,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:35:12.437169+00:00",
-      "updated_at": "2026-06-05T02:56:22.784333+00:00",
+      "updated_at": "2026-06-05T03:01:52.487587+00:00",
       "status": "open",
       "code": "8046",
       "name": "南電",
@@ -2821,7 +2822,7 @@
         "pct_5m": -1.378,
         "pct_10m": -1.493
       },
-      "age_minutes": 21.17
+      "age_minutes": 26.67
     },
     {
       "key": "ai_pool:3037:60:962.0",
@@ -3449,7 +3450,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:40:15.726475+00:00",
-      "updated_at": "2026-06-05T02:56:22.784345+00:00",
+      "updated_at": "2026-06-05T03:01:52.487594+00:00",
       "status": "open",
       "code": "8046",
       "name": "南電",
@@ -3469,7 +3470,7 @@
         "pct_5m": -0.233,
         "pct_10m": -0.465
       },
-      "age_minutes": 16.12
+      "age_minutes": 21.61
     },
     {
       "key": "ai_pool:3037:55:950.0",
@@ -4205,7 +4206,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:45:15.268723+00:00",
-      "updated_at": "2026-06-05T02:56:22.784357+00:00",
+      "updated_at": "2026-06-05T03:01:52.487602+00:00",
       "status": "open",
       "code": "8046",
       "name": "南電",
@@ -4225,7 +4226,7 @@
         "pct_5m": -0.349,
         "pct_10m": -0.116
       },
-      "age_minutes": 11.13
+      "age_minutes": 16.62
     },
     {
       "key": "ai_pool:2409:32:27.6",
@@ -4961,7 +4962,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:50:15.682164+00:00",
-      "updated_at": "2026-06-05T02:56:22.784368+00:00",
+      "updated_at": "2026-06-05T03:01:52.487610+00:00",
       "status": "open",
       "code": "8046",
       "name": "南電",
@@ -4978,9 +4979,10 @@
         "latest_pct": 0.234,
         "max_gain": 0.234,
         "max_drawdown": 0.0,
-        "pct_5m": 0.234
+        "pct_5m": 0.234,
+        "pct_10m": 0.234
       },
-      "age_minutes": 6.12
+      "age_minutes": 11.61
     },
     {
       "key": "ai_pool:3037:27:947.0",
@@ -5146,7 +5148,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:50:26.323784+00:00",
-      "updated_at": "2026-06-05T02:56:22.784378+00:00",
+      "updated_at": "2026-06-05T03:01:52.487616+00:00",
       "status": "open",
       "code": "8046",
       "name": "南電",
@@ -5163,9 +5165,10 @@
         "latest_pct": 0.234,
         "max_gain": 0.234,
         "max_drawdown": 0.0,
-        "pct_5m": 0.234
+        "pct_5m": 0.234,
+        "pct_10m": 0.234
       },
-      "age_minutes": 5.94
+      "age_minutes": 11.44
     },
     {
       "key": "fund_flow:3711:27:578.0",
@@ -5614,7 +5617,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:55:13.518276+00:00",
-      "updated_at": "2026-06-05T02:56:22.784388+00:00",
+      "updated_at": "2026-06-05T03:01:52.487622+00:00",
       "status": "open",
       "code": "8046",
       "name": "南電",
@@ -5630,9 +5633,10 @@
       "results": {
         "latest_pct": 0.234,
         "max_gain": 0.234,
-        "max_drawdown": 0.0
+        "max_drawdown": 0.0,
+        "pct_5m": 0.234
       },
-      "age_minutes": 1.15
+      "age_minutes": 6.65
     },
     {
       "key": "ai_pool:2409:32:27.65",
@@ -6207,20 +6211,25 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:00:25.047688+00:00",
-      "updated_at": "2026-06-05T03:00:25.047690+00:00",
+      "updated_at": "2026-06-05T03:01:52.487630+00:00",
       "status": "open",
       "code": "8046",
       "name": "南電",
       "sector": "半導體",
       "entry_price": 856.0,
-      "last_price": 856.0,
-      "best_price": 856.0,
+      "last_price": 858.0,
+      "best_price": 858.0,
       "worst_price": 856.0,
       "score": 27,
       "change_rate_at_signal": -2.5,
       "volume_ratio_at_signal": 1.0,
       "alert": null,
-      "results": {}
+      "results": {
+        "latest_pct": 0.234,
+        "max_gain": 0.234,
+        "max_drawdown": 0.0
+      },
+      "age_minutes": 1.46
     },
     {
       "key": "fund_flow:2615:85:85.8",
