@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-05T03:01:29.642446+00:00",
+  "updated_at": "2026-06-05T03:01:32.616493+00:00",
   "count": 240,
   "items": [
     {
@@ -300,13 +300,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:25:05.423133+00:00",
-      "updated_at": "2026-06-05T02:56:19.838708+00:00",
+      "updated_at": "2026-06-05T03:01:31.391388+00:00",
       "status": "open",
       "code": "6215",
       "name": "和椿",
       "sector": "PCB",
       "entry_price": 120.0,
-      "last_price": 119.5,
+      "last_price": 119.0,
       "best_price": 120.5,
       "worst_price": 119.0,
       "score": 53,
@@ -314,14 +314,14 @@
       "volume_ratio_at_signal": 1.07,
       "alert": null,
       "results": {
-        "latest_pct": -0.417,
+        "latest_pct": -0.833,
         "max_gain": 0.417,
         "max_drawdown": -0.833,
         "pct_5m": 0.417,
         "pct_10m": 0.0,
         "pct_30m": -0.417
       },
-      "age_minutes": 31.24
+      "age_minutes": 36.43
     },
     {
       "key": "ai_pool:5347:52:161.5",
@@ -720,13 +720,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:25:12.529259+00:00",
-      "updated_at": "2026-06-05T02:56:19.838730+00:00",
+      "updated_at": "2026-06-05T03:01:31.391407+00:00",
       "status": "open",
       "code": "6215",
       "name": "和椿",
       "sector": "PCB",
       "entry_price": 120.0,
-      "last_price": 119.5,
+      "last_price": 119.0,
       "best_price": 120.5,
       "worst_price": 119.0,
       "score": 71,
@@ -734,14 +734,14 @@
       "volume_ratio_at_signal": 1.07,
       "alert": null,
       "results": {
-        "latest_pct": -0.417,
+        "latest_pct": -0.833,
         "max_gain": 0.417,
         "max_drawdown": -0.833,
         "pct_5m": 0.417,
         "pct_10m": 0.0,
         "pct_30m": -0.417
       },
-      "age_minutes": 31.12
+      "age_minutes": 36.31
     },
     {
       "key": "ai_pool:3231:66:173.0",
@@ -1840,13 +1840,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:30:19.670194+00:00",
-      "updated_at": "2026-06-05T02:56:19.838745+00:00",
+      "updated_at": "2026-06-05T03:01:31.391419+00:00",
       "status": "open",
       "code": "6215",
       "name": "和椿",
       "sector": "PCB",
       "entry_price": 120.5,
-      "last_price": 119.5,
+      "last_price": 119.0,
       "best_price": 120.5,
       "worst_price": 119.0,
       "score": 76,
@@ -1854,13 +1854,14 @@
       "volume_ratio_at_signal": 1.08,
       "alert": null,
       "results": {
-        "latest_pct": -0.83,
+        "latest_pct": -1.245,
         "max_gain": 0.0,
         "max_drawdown": -1.245,
         "pct_5m": -0.415,
-        "pct_10m": -0.83
+        "pct_10m": -0.83,
+        "pct_30m": -1.245
       },
-      "age_minutes": 26.0
+      "age_minutes": 31.2
     },
     {
       "key": "ai_pool:3037:68:958.0",
@@ -3386,13 +3387,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:40:15.726450+00:00",
-      "updated_at": "2026-06-05T02:56:19.838760+00:00",
+      "updated_at": "2026-06-05T03:01:31.391431+00:00",
       "status": "open",
       "code": "6215",
       "name": "和椿",
       "sector": "PCB",
       "entry_price": 119.5,
-      "last_price": 119.5,
+      "last_price": 119.0,
       "best_price": 119.5,
       "worst_price": 119.0,
       "score": 69,
@@ -3400,13 +3401,13 @@
       "volume_ratio_at_signal": 1.11,
       "alert": null,
       "results": {
-        "latest_pct": 0.0,
+        "latest_pct": -0.418,
         "max_gain": 0.0,
         "max_drawdown": -0.418,
         "pct_5m": -0.418,
         "pct_10m": 0.0
       },
-      "age_minutes": 16.07
+      "age_minutes": 21.26
     },
     {
       "key": "ai_pool:3661:61:4365.0",
@@ -4115,13 +4116,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:45:15.268678+00:00",
-      "updated_at": "2026-06-05T02:56:19.838773+00:00",
+      "updated_at": "2026-06-05T03:01:31.391439+00:00",
       "status": "open",
       "code": "6215",
       "name": "和椿",
       "sector": "PCB",
       "entry_price": 119.0,
-      "last_price": 119.5,
+      "last_price": 119.0,
       "best_price": 119.5,
       "worst_price": 119.0,
       "score": 50,
@@ -4129,13 +4130,13 @@
       "volume_ratio_at_signal": 1.12,
       "alert": null,
       "results": {
-        "latest_pct": 0.42,
+        "latest_pct": 0.0,
         "max_gain": 0.42,
         "max_drawdown": 0.0,
         "pct_5m": 0.42,
         "pct_10m": 0.42
       },
-      "age_minutes": 11.08
+      "age_minutes": 16.27
     },
     {
       "key": "ai_pool:3231:46:172.0",
@@ -5518,25 +5519,26 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:55:13.518248+00:00",
-      "updated_at": "2026-06-05T02:56:19.838786+00:00",
+      "updated_at": "2026-06-05T03:01:31.391450+00:00",
       "status": "open",
       "code": "6215",
       "name": "和椿",
       "sector": "PCB",
       "entry_price": 119.5,
-      "last_price": 119.5,
+      "last_price": 119.0,
       "best_price": 119.5,
-      "worst_price": 119.5,
+      "worst_price": 119.0,
       "score": 51,
       "change_rate_at_signal": 2.13,
       "volume_ratio_at_signal": 1.14,
       "alert": null,
       "results": {
-        "latest_pct": 0.0,
+        "latest_pct": -0.418,
         "max_gain": 0.0,
-        "max_drawdown": 0.0
+        "max_drawdown": -0.418,
+        "pct_5m": -0.418
       },
-      "age_minutes": 1.11
+      "age_minutes": 6.3
     },
     {
       "key": "ai_pool:2454:49:4350.0",
