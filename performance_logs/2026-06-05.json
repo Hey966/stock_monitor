@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-05T02:26:56.154739+00:00",
+  "updated_at": "2026-06-05T02:26:58.180564+00:00",
   "count": 63,
   "items": [
     {
@@ -498,32 +498,32 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:25:05.423244+00:00",
-      "updated_at": "2026-06-05T02:26:55.030539+00:00",
+      "updated_at": "2026-06-05T02:26:57.442272+00:00",
       "status": "open",
       "code": "2382",
       "name": "廣達",
       "sector": "AI伺服器",
       "entry_price": 387.5,
-      "last_price": 387.5,
+      "last_price": 387.0,
       "best_price": 387.5,
-      "worst_price": 387.5,
+      "worst_price": 387.0,
       "score": 32,
       "change_rate_at_signal": -4.08,
       "volume_ratio_at_signal": 0.47,
       "alert": null,
       "results": {
-        "latest_pct": 0.0,
+        "latest_pct": -0.129,
         "max_gain": 0.0,
-        "max_drawdown": 0.0
+        "max_drawdown": -0.129
       },
-      "age_minutes": 1.83
+      "age_minutes": 1.87
     },
     {
       "key": "ai_pool:3324:32:1125.0",
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:25:05.423260+00:00",
-      "updated_at": "2026-06-05T02:25:05.423263+00:00",
+      "updated_at": "2026-06-05T02:26:56.405796+00:00",
       "status": "open",
       "code": "3324",
       "name": "雙鴻",
@@ -536,7 +536,12 @@
       "change_rate_at_signal": -5.06,
       "volume_ratio_at_signal": 0.39,
       "alert": null,
-      "results": {}
+      "results": {
+        "latest_pct": 0.0,
+        "max_gain": 0.0,
+        "max_drawdown": 0.0
+      },
+      "age_minutes": 1.85
     },
     {
       "key": "ai_pool:2379:94:643.0",
@@ -1013,25 +1018,25 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:25:15.330065+00:00",
-      "updated_at": "2026-06-05T02:26:55.030557+00:00",
+      "updated_at": "2026-06-05T02:26:57.442292+00:00",
       "status": "open",
       "code": "2382",
       "name": "廣達",
       "sector": "AI伺服器",
       "entry_price": 387.5,
-      "last_price": 387.5,
+      "last_price": 387.0,
       "best_price": 387.5,
-      "worst_price": 387.5,
+      "worst_price": 387.0,
       "score": 33,
       "change_rate_at_signal": -4.08,
       "volume_ratio_at_signal": 0.47,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": 0.0,
+        "latest_pct": -0.129,
         "max_gain": 0.0,
-        "max_drawdown": 0.0
+        "max_drawdown": -0.129
       },
-      "age_minutes": 1.66
+      "age_minutes": 1.7
     },
     {
       "key": "fund_flow:2409:35:27.75",
