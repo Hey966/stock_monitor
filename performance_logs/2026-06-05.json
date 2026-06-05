@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-05T02:35:55.044881+00:00",
+  "updated_at": "2026-06-05T02:35:57.490581+00:00",
   "count": 117,
   "items": [
     {
@@ -128,26 +128,27 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:25:05.423037+00:00",
-      "updated_at": "2026-06-05T02:30:59.628011+00:00",
+      "updated_at": "2026-06-05T02:35:56.514147+00:00",
       "status": "open",
       "code": "3443",
       "name": "創意",
       "sector": "半導體",
       "entry_price": 4480.0,
-      "last_price": 4460.0,
+      "last_price": 4450.0,
       "best_price": 4485.0,
-      "worst_price": 4460.0,
+      "worst_price": 4450.0,
       "score": 77,
       "change_rate_at_signal": 1.81,
       "volume_ratio_at_signal": 1.08,
       "alert": null,
       "results": {
-        "latest_pct": -0.446,
+        "latest_pct": -0.67,
         "max_gain": 0.112,
-        "max_drawdown": -0.446,
-        "pct_5m": -0.446
+        "max_drawdown": -0.67,
+        "pct_5m": -0.446,
+        "pct_10m": -0.67
       },
-      "age_minutes": 5.9
+      "age_minutes": 10.85
     },
     {
       "key": "ai_pool:2356:70:78.1",
@@ -625,26 +626,27 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:25:12.529239+00:00",
-      "updated_at": "2026-06-05T02:30:59.628028+00:00",
+      "updated_at": "2026-06-05T02:35:56.514165+00:00",
       "status": "open",
       "code": "3443",
       "name": "創意",
       "sector": "半導體",
       "entry_price": 4485.0,
-      "last_price": 4460.0,
+      "last_price": 4450.0,
       "best_price": 4485.0,
-      "worst_price": 4460.0,
+      "worst_price": 4450.0,
       "score": 78,
       "change_rate_at_signal": 1.93,
       "volume_ratio_at_signal": 1.08,
       "alert": null,
       "results": {
-        "latest_pct": -0.557,
+        "latest_pct": -0.78,
         "max_gain": 0.0,
-        "max_drawdown": -0.557,
-        "pct_5m": -0.557
+        "max_drawdown": -0.78,
+        "pct_5m": -0.557,
+        "pct_10m": -0.78
       },
-      "age_minutes": 5.78
+      "age_minutes": 10.73
     },
     {
       "key": "ai_pool:3661:77:4405.0",
@@ -2419,7 +2421,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:35:12.437071+00:00",
-      "updated_at": "2026-06-05T02:35:12.437073+00:00",
+      "updated_at": "2026-06-05T02:35:56.514177+00:00",
       "status": "open",
       "code": "3443",
       "name": "創意",
@@ -2432,7 +2434,12 @@
       "change_rate_at_signal": 1.13,
       "volume_ratio_at_signal": 1.11,
       "alert": null,
-      "results": {}
+      "results": {
+        "latest_pct": 0.0,
+        "max_gain": 0.0,
+        "max_drawdown": 0.0
+      },
+      "age_minutes": 0.73
     },
     {
       "key": "ai_pool:2379:75:642.0",
