@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-05T02:35:24.096283+00:00",
+  "updated_at": "2026-06-05T02:35:49.722998+00:00",
   "count": 117,
   "items": [
     {
@@ -74,7 +74,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:25:05.423012+00:00",
-      "updated_at": "2026-06-05T02:30:55.514294+00:00",
+      "updated_at": "2026-06-05T02:35:48.733510+00:00",
       "status": "open",
       "code": "2615",
       "name": "萬海",
@@ -91,9 +91,10 @@
         "latest_pct": 0.929,
         "max_gain": 0.929,
         "max_drawdown": 0.0,
-        "pct_5m": 0.929
+        "pct_5m": 0.929,
+        "pct_10m": 0.929
       },
-      "age_minutes": 5.83
+      "age_minutes": 10.72
     },
     {
       "key": "ai_pool:3661:84:4400.0",
@@ -594,7 +595,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:25:12.529228+00:00",
-      "updated_at": "2026-06-05T02:30:55.514322+00:00",
+      "updated_at": "2026-06-05T02:35:48.733529+00:00",
       "status": "open",
       "code": "2615",
       "name": "萬海",
@@ -611,9 +612,10 @@
         "latest_pct": 0.579,
         "max_gain": 0.579,
         "max_drawdown": -0.116,
-        "pct_5m": 0.579
+        "pct_5m": 0.579,
+        "pct_10m": 0.579
       },
-      "age_minutes": 5.72
+      "age_minutes": 10.6
     },
     {
       "key": "ai_pool:3443:78:4485.0",
@@ -2359,20 +2361,25 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:35:12.437030+00:00",
-      "updated_at": "2026-06-05T02:35:12.437045+00:00",
+      "updated_at": "2026-06-05T02:35:48.733541+00:00",
       "status": "open",
       "code": "2615",
       "name": "萬海",
       "sector": "航運",
       "entry_price": 86.8,
-      "last_price": 86.8,
-      "best_price": 86.8,
+      "last_price": 86.9,
+      "best_price": 86.9,
       "worst_price": 86.8,
       "score": 95,
       "change_rate_at_signal": 3.7,
       "volume_ratio_at_signal": 1.79,
       "alert": null,
-      "results": {}
+      "results": {
+        "latest_pct": 0.115,
+        "max_gain": 0.115,
+        "max_drawdown": 0.0
+      },
+      "age_minutes": 0.6
     },
     {
       "key": "ai_pool:2356:81:78.4",
