@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-05T02:25:57.355549+00:00",
+  "updated_at": "2026-06-05T02:25:59.002047+00:00",
   "count": 63,
   "items": [
     {
@@ -148,7 +148,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:25:05.423047+00:00",
-      "updated_at": "2026-06-05T02:25:53.206158+00:00",
+      "updated_at": "2026-06-05T02:25:56.820729+00:00",
       "status": "open",
       "code": "2356",
       "name": "英業達",
@@ -166,7 +166,7 @@
         "max_gain": 0.128,
         "max_drawdown": 0.0
       },
-      "age_minutes": 0.8
+      "age_minutes": 0.86
     },
     {
       "key": "ai_pool:2618:70:38.0",
@@ -343,20 +343,25 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:25:05.423181+00:00",
-      "updated_at": "2026-06-05T02:25:05.423184+00:00",
+      "updated_at": "2026-06-05T02:25:58.678560+00:00",
       "status": "open",
       "code": "3711",
       "name": "日月光投控",
       "sector": "半導體",
       "entry_price": 581.0,
-      "last_price": 581.0,
-      "best_price": 581.0,
+      "last_price": 582.0,
+      "best_price": 582.0,
       "worst_price": 581.0,
       "score": 48,
       "change_rate_at_signal": -2.02,
       "volume_ratio_at_signal": 0.56,
       "alert": null,
-      "results": {}
+      "results": {
+        "latest_pct": 0.172,
+        "max_gain": 0.172,
+        "max_drawdown": 0.0
+      },
+      "age_minutes": 0.89
     },
     {
       "key": "ai_pool:3037:46:949.0",
@@ -658,7 +663,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:25:12.529293+00:00",
-      "updated_at": "2026-06-05T02:25:53.206176+00:00",
+      "updated_at": "2026-06-05T02:25:56.820749+00:00",
       "status": "open",
       "code": "2356",
       "name": "英業達",
@@ -676,14 +681,14 @@
         "max_gain": 0.128,
         "max_drawdown": 0.0
       },
-      "age_minutes": 0.68
+      "age_minutes": 0.74
     },
     {
       "key": "ai_pool:3711:57:582.0",
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:25:12.529302+00:00",
-      "updated_at": "2026-06-05T02:25:12.529305+00:00",
+      "updated_at": "2026-06-05T02:25:58.678575+00:00",
       "status": "open",
       "code": "3711",
       "name": "日月光投控",
@@ -696,7 +701,12 @@
       "change_rate_at_signal": -1.85,
       "volume_ratio_at_signal": 0.56,
       "alert": null,
-      "results": {}
+      "results": {
+        "latest_pct": 0.0,
+        "max_gain": 0.0,
+        "max_drawdown": 0.0
+      },
+      "age_minutes": 0.77
     },
     {
       "key": "ai_pool:2324:52:41.2",
