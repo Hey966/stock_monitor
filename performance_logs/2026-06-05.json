@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-05T02:36:42.363691+00:00",
+  "updated_at": "2026-06-05T02:36:44.931218+00:00",
   "count": 117,
   "items": [
     {
@@ -1128,26 +1128,27 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:25:15.330072+00:00",
-      "updated_at": "2026-06-05T02:31:34.725642+00:00",
+      "updated_at": "2026-06-05T02:36:43.904433+00:00",
       "status": "open",
       "code": "2409",
       "name": "友達",
       "sector": "面板",
       "entry_price": 27.75,
-      "last_price": 27.8,
-      "best_price": 27.8,
+      "last_price": 27.85,
+      "best_price": 27.85,
       "worst_price": 27.7,
       "score": 35,
       "change_rate_at_signal": -5.12,
       "volume_ratio_at_signal": 0.47,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": 0.18,
-        "max_gain": 0.18,
+        "latest_pct": 0.36,
+        "max_gain": 0.36,
         "max_drawdown": -0.18,
-        "pct_5m": 0.18
+        "pct_5m": 0.18,
+        "pct_10m": 0.36
       },
-      "age_minutes": 6.32
+      "age_minutes": 11.48
     },
     {
       "key": "fund_flow:2308:24:2350.0",
@@ -1417,26 +1418,27 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:25:16.826557+00:00",
-      "updated_at": "2026-06-05T02:31:34.725657+00:00",
+      "updated_at": "2026-06-05T02:36:43.904454+00:00",
       "status": "open",
       "code": "2409",
       "name": "友達",
       "sector": "面板",
       "entry_price": 27.8,
-      "last_price": 27.8,
-      "best_price": 27.8,
+      "last_price": 27.85,
+      "best_price": 27.85,
       "worst_price": 27.7,
       "score": 34,
       "change_rate_at_signal": -4.95,
       "volume_ratio_at_signal": 0.47,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": 0.0,
-        "max_gain": 0.0,
+        "latest_pct": 0.18,
+        "max_gain": 0.18,
         "max_drawdown": -0.36,
-        "pct_5m": 0.0
+        "pct_5m": 0.0,
+        "pct_10m": 0.18
       },
-      "age_minutes": 6.3
+      "age_minutes": 11.45
     },
     {
       "key": "fund_flow:3017:30:2630.0",
@@ -1576,26 +1578,27 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:25:21.622321+00:00",
-      "updated_at": "2026-06-05T02:31:34.725664+00:00",
+      "updated_at": "2026-06-05T02:36:43.904465+00:00",
       "status": "open",
       "code": "2409",
       "name": "友達",
       "sector": "面板",
       "entry_price": 27.8,
-      "last_price": 27.8,
-      "best_price": 27.8,
+      "last_price": 27.85,
+      "best_price": 27.85,
       "worst_price": 27.7,
       "score": 33,
       "change_rate_at_signal": -4.95,
       "volume_ratio_at_signal": 0.47,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": 0.0,
-        "max_gain": 0.0,
+        "latest_pct": 0.18,
+        "max_gain": 0.18,
         "max_drawdown": -0.36,
-        "pct_5m": 0.0
+        "pct_5m": 0.0,
+        "pct_10m": 0.18
       },
-      "age_minutes": 6.22
+      "age_minutes": 11.37
     },
     {
       "key": "fund_flow:3017:29:2630.0",
@@ -2253,25 +2256,26 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:30:30.008543+00:00",
-      "updated_at": "2026-06-05T02:31:34.725671+00:00",
+      "updated_at": "2026-06-05T02:36:43.904476+00:00",
       "status": "open",
       "code": "2409",
       "name": "友達",
       "sector": "面板",
       "entry_price": 27.8,
-      "last_price": 27.8,
-      "best_price": 27.8,
+      "last_price": 27.85,
+      "best_price": 27.85,
       "worst_price": 27.8,
       "score": 32,
       "change_rate_at_signal": -4.95,
       "volume_ratio_at_signal": 0.47,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": 0.0,
-        "max_gain": 0.0,
-        "max_drawdown": 0.0
+        "latest_pct": 0.18,
+        "max_gain": 0.18,
+        "max_drawdown": 0.0,
+        "pct_5m": 0.18
       },
-      "age_minutes": 1.08
+      "age_minutes": 6.23
     },
     {
       "key": "fund_flow:2317:23:287.0",
@@ -2904,20 +2908,25 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:35:23.555085+00:00",
-      "updated_at": "2026-06-05T02:35:23.555088+00:00",
+      "updated_at": "2026-06-05T02:36:43.904487+00:00",
       "status": "open",
       "code": "2409",
       "name": "友達",
       "sector": "面板",
       "entry_price": 27.9,
-      "last_price": 27.9,
+      "last_price": 27.85,
       "best_price": 27.9,
-      "worst_price": 27.9,
+      "worst_price": 27.85,
       "score": 26,
       "change_rate_at_signal": -4.61,
       "volume_ratio_at_signal": 0.48,
       "alert": "資金退潮警報",
-      "results": {}
+      "results": {
+        "latest_pct": -0.179,
+        "max_gain": 0.0,
+        "max_drawdown": -0.179
+      },
+      "age_minutes": 1.34
     },
     {
       "key": "fund_flow:3017:30:2635.0",
