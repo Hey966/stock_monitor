@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-05T02:26:43.253702+00:00",
+  "updated_at": "2026-06-05T02:26:45.309555+00:00",
   "count": 63,
   "items": [
     {
@@ -348,7 +348,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:25:05.423171+00:00",
-      "updated_at": "2026-06-05T02:26:33.568242+00:00",
+      "updated_at": "2026-06-05T02:26:43.547861+00:00",
       "status": "open",
       "code": "2609",
       "name": "陽明",
@@ -366,7 +366,7 @@
         "max_gain": 0.185,
         "max_drawdown": 0.0
       },
-      "age_minutes": 1.47
+      "age_minutes": 1.64
     },
     {
       "key": "ai_pool:3711:48:581.0",
@@ -398,7 +398,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:25:05.423192+00:00",
-      "updated_at": "2026-06-05T02:26:31.135195+00:00",
+      "updated_at": "2026-06-05T02:26:44.537978+00:00",
       "status": "open",
       "code": "3037",
       "name": "欣興",
@@ -416,14 +416,14 @@
         "max_gain": 0.316,
         "max_drawdown": 0.0
       },
-      "age_minutes": 1.43
+      "age_minutes": 1.65
     },
     {
       "key": "ai_pool:2324:41:41.15",
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:25:05.423209+00:00",
-      "updated_at": "2026-06-05T02:26:35.448442+00:00",
+      "updated_at": "2026-06-05T02:26:40.928134+00:00",
       "status": "open",
       "code": "2324",
       "name": "仁寶",
@@ -441,27 +441,32 @@
         "max_gain": 0.243,
         "max_drawdown": 0.0
       },
-      "age_minutes": 1.5
+      "age_minutes": 1.59
     },
     {
       "key": "ai_pool:3481:40:52.9",
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:25:05.423221+00:00",
-      "updated_at": "2026-06-05T02:25:05.423224+00:00",
+      "updated_at": "2026-06-05T02:26:42.673561+00:00",
       "status": "open",
       "code": "3481",
       "name": "群創",
       "sector": "面板",
       "entry_price": 52.9,
-      "last_price": 52.9,
-      "best_price": 52.9,
+      "last_price": 53.0,
+      "best_price": 53.0,
       "worst_price": 52.9,
       "score": 40,
       "change_rate_at_signal": -5.19,
       "volume_ratio_at_signal": 0.6,
       "alert": null,
-      "results": {}
+      "results": {
+        "latest_pct": 0.189,
+        "max_gain": 0.189,
+        "max_drawdown": 0.0
+      },
+      "age_minutes": 1.62
     },
     {
       "key": "ai_pool:2317:39:286.5",
@@ -753,7 +758,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:25:12.529325+00:00",
-      "updated_at": "2026-06-05T02:26:35.448459+00:00",
+      "updated_at": "2026-06-05T02:26:40.928157+00:00",
       "status": "open",
       "code": "2324",
       "name": "仁寶",
@@ -771,7 +776,7 @@
         "max_gain": 0.121,
         "max_drawdown": 0.0
       },
-      "age_minutes": 1.38
+      "age_minutes": 1.47
     },
     {
       "key": "ai_pool:2330:51:2380.0",
@@ -853,7 +858,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:25:12.529373+00:00",
-      "updated_at": "2026-06-05T02:26:33.568266+00:00",
+      "updated_at": "2026-06-05T02:26:43.547876+00:00",
       "status": "open",
       "code": "2609",
       "name": "陽明",
@@ -871,14 +876,14 @@
         "max_gain": 0.0,
         "max_drawdown": 0.0
       },
-      "age_minutes": 1.35
+      "age_minutes": 1.52
     },
     {
       "key": "ai_pool:3481:40:53.0",
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:25:12.529381+00:00",
-      "updated_at": "2026-06-05T02:25:12.529384+00:00",
+      "updated_at": "2026-06-05T02:26:42.673576+00:00",
       "status": "open",
       "code": "3481",
       "name": "群創",
@@ -891,7 +896,12 @@
       "change_rate_at_signal": -5.01,
       "volume_ratio_at_signal": 0.61,
       "alert": null,
-      "results": {}
+      "results": {
+        "latest_pct": 0.0,
+        "max_gain": 0.0,
+        "max_drawdown": 0.0
+      },
+      "age_minutes": 1.5
     },
     {
       "key": "ai_pool:5347:35:161.0",
@@ -1218,7 +1228,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:25:16.826520+00:00",
-      "updated_at": "2026-06-05T02:26:35.448467+00:00",
+      "updated_at": "2026-06-05T02:26:40.928171+00:00",
       "status": "open",
       "code": "2324",
       "name": "仁寶",
@@ -1236,7 +1246,7 @@
         "max_gain": 0.0,
         "max_drawdown": -0.121
       },
-      "age_minutes": 1.31
+      "age_minutes": 1.4
     },
     {
       "key": "fund_flow:2409:34:27.8",
