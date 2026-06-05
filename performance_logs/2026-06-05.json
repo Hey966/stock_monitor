@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-05T02:46:54.732088+00:00",
+  "updated_at": "2026-06-05T02:46:57.242795+00:00",
   "count": 167,
   "items": [
     {
@@ -1209,7 +1209,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:25:15.330097+00:00",
-      "updated_at": "2026-06-05T02:41:54.105442+00:00",
+      "updated_at": "2026-06-05T02:46:56.256589+00:00",
       "status": "open",
       "code": "1605",
       "name": "華新",
@@ -1229,7 +1229,7 @@
         "pct_5m": -0.254,
         "pct_10m": -0.254
       },
-      "age_minutes": 16.65
+      "age_minutes": 21.68
     },
     {
       "key": "fund_flow:1609:31:39.9",
@@ -1668,7 +1668,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:25:21.622349+00:00",
-      "updated_at": "2026-06-05T02:41:54.105458+00:00",
+      "updated_at": "2026-06-05T02:46:56.256615+00:00",
       "status": "open",
       "code": "1605",
       "name": "華新",
@@ -1688,7 +1688,7 @@
         "pct_5m": -0.254,
         "pct_10m": -0.254
       },
-      "age_minutes": 16.54
+      "age_minutes": 21.58
     },
     {
       "key": "ai_pool:3661:86:4415.0",
@@ -2370,7 +2370,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:30:30.008578+00:00",
-      "updated_at": "2026-06-05T02:41:54.105467+00:00",
+      "updated_at": "2026-06-05T02:46:56.256635+00:00",
       "status": "open",
       "code": "1605",
       "name": "華新",
@@ -2390,7 +2390,7 @@
         "pct_5m": 0.0,
         "pct_10m": -0.382
       },
-      "age_minutes": 11.4
+      "age_minutes": 16.44
     },
     {
       "key": "fund_flow:1609:24:39.95",
@@ -3045,7 +3045,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:35:23.555149+00:00",
-      "updated_at": "2026-06-05T02:41:54.105475+00:00",
+      "updated_at": "2026-06-05T02:46:56.256653+00:00",
       "status": "open",
       "code": "1605",
       "name": "華新",
@@ -3062,9 +3062,10 @@
         "latest_pct": -0.382,
         "max_gain": 0.0,
         "max_drawdown": -0.382,
-        "pct_5m": -0.382
+        "pct_5m": -0.382,
+        "pct_10m": -0.382
       },
-      "age_minutes": 6.51
+      "age_minutes": 11.55
     },
     {
       "key": "fund_flow:2344:34:163.5",
@@ -3722,7 +3723,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:40:27.116643+00:00",
-      "updated_at": "2026-06-05T02:41:54.105483+00:00",
+      "updated_at": "2026-06-05T02:46:56.256669+00:00",
       "status": "open",
       "code": "1605",
       "name": "華新",
@@ -3738,9 +3739,10 @@
       "results": {
         "latest_pct": -0.128,
         "max_gain": 0.0,
-        "max_drawdown": -0.128
+        "max_drawdown": -0.128,
+        "pct_5m": -0.128
       },
-      "age_minutes": 1.45
+      "age_minutes": 6.49
     },
     {
       "key": "fund_flow:1609:30:39.75",
@@ -4348,20 +4350,25 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:45:25.851604+00:00",
-      "updated_at": "2026-06-05T02:45:25.851606+00:00",
+      "updated_at": "2026-06-05T02:46:56.256683+00:00",
       "status": "open",
       "code": "1605",
       "name": "華新",
       "sector": "電線電纜",
       "entry_price": 39.05,
-      "last_price": 39.05,
-      "best_price": 39.05,
+      "last_price": 39.1,
+      "best_price": 39.1,
       "worst_price": 39.05,
       "score": 24,
       "change_rate_at_signal": -6.12,
       "volume_ratio_at_signal": 0.44,
       "alert": "資金退潮警報",
-      "results": {}
+      "results": {
+        "latest_pct": 0.128,
+        "max_gain": 0.128,
+        "max_drawdown": 0.0
+      },
+      "age_minutes": 1.51
     },
     {
       "key": "fund_flow:2376:19:365.0",
