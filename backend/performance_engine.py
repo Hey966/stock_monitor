@@ -84,6 +84,11 @@ def _set_github_error(message: str) -> None:
     LAST_GITHUB_ERROR = message[:300]
 
 
+def _clear_github_error() -> None:
+    global LAST_GITHUB_ERROR
+    LAST_GITHUB_ERROR = ""
+
+
 def _github_api(path: str, method: str = "GET", payload: dict[str, Any] | None = None) -> dict[str, Any] | None:
     if not GITHUB_TOKEN:
         return None
@@ -126,7 +131,7 @@ def _github_write_day(path: str, rows: list[dict[str, Any]]) -> bool:
     if not GITHUB_TOKEN:
         return False
 
-    for attempt in range(3):
+    for attempt in range(5):
         old_rows, sha = _github_read_day(path)
         merged: dict[str, dict[str, Any]] = {}
         for row in old_rows + rows:
@@ -148,10 +153,14 @@ def _github_write_day(path: str, rows: list[dict[str, Any]]) -> bool:
         if sha:
             payload["sha"] = sha
         try:
-            return _github_api(path, "PUT", payload) is not None
+            result = _github_api(path, "PUT", payload)
+            if result is not None:
+                _clear_github_error()
+                return True
+            return False
         except urllib.error.HTTPError as exc:
-            if exc.code == 409 and attempt < 2:
-                time.sleep(0.35 * (attempt + 1))
+            if exc.code == 409 and attempt < 4:
+                time.sleep(0.75 * (attempt + 1))
                 continue
             _set_github_error(f"GitHub write skipped after HTTP {exc.code}")
             return False
