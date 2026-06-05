@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-05T04:03:05.566044+00:00",
+  "updated_at": "2026-06-05T04:03:09.447995+00:00",
   "count": 572,
   "items": [
     {
@@ -48,13 +48,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:25:05.422985+00:00",
-      "updated_at": "2026-06-05T04:02:41.513340+00:00",
+      "updated_at": "2026-06-05T04:03:05.380513+00:00",
       "status": "open",
       "code": "2379",
       "name": "瑞昱",
       "sector": "半導體",
       "entry_price": 641.0,
-      "last_price": 647.0,
+      "last_price": 646.0,
       "best_price": 659.0,
       "worst_price": 638.0,
       "score": 92,
@@ -62,14 +62,14 @@
       "volume_ratio_at_signal": 0.39,
       "alert": null,
       "results": {
-        "latest_pct": 0.936,
+        "latest_pct": 0.78,
         "max_gain": 2.808,
         "max_drawdown": -0.468,
         "pct_5m": -0.468,
         "pct_10m": 0.312,
         "pct_30m": 0.468
       },
-      "age_minutes": 97.6
+      "age_minutes": 98.0
     },
     {
       "key": "ai_pool:2615:92:86.1",
@@ -608,13 +608,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:25:12.529197+00:00",
-      "updated_at": "2026-06-05T04:02:41.513368+00:00",
+      "updated_at": "2026-06-05T04:03:05.380542+00:00",
       "status": "open",
       "code": "2379",
       "name": "瑞昱",
       "sector": "半導體",
       "entry_price": 643.0,
-      "last_price": 647.0,
+      "last_price": 646.0,
       "best_price": 659.0,
       "worst_price": 638.0,
       "score": 94,
@@ -622,14 +622,14 @@
       "volume_ratio_at_signal": 0.39,
       "alert": null,
       "results": {
-        "latest_pct": 0.622,
+        "latest_pct": 0.467,
         "max_gain": 2.488,
         "max_drawdown": -0.778,
         "pct_5m": -0.778,
         "pct_10m": 0.0,
         "pct_30m": 0.156
       },
-      "age_minutes": 97.48
+      "age_minutes": 97.88
     },
     {
       "key": "ai_pool:2615:94:86.4",
@@ -1056,13 +1056,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:25:15.330007+00:00",
-      "updated_at": "2026-06-05T04:02:41.636469+00:00",
+      "updated_at": "2026-06-05T04:03:05.380559+00:00",
       "status": "open",
       "code": "2379",
       "name": "瑞昱",
       "sector": "半導體",
       "entry_price": 643.0,
-      "last_price": 647.0,
+      "last_price": 646.0,
       "best_price": 659.0,
       "worst_price": 638.0,
       "score": 91,
@@ -1070,14 +1070,14 @@
       "volume_ratio_at_signal": 0.39,
       "alert": "大戶進場警報",
       "results": {
-        "latest_pct": 0.622,
+        "latest_pct": 0.467,
         "max_gain": 2.488,
         "max_drawdown": -0.778,
         "pct_5m": -0.778,
         "pct_10m": 0.0,
         "pct_30m": 0.156
       },
-      "age_minutes": 97.44
+      "age_minutes": 97.83
     },
     {
       "key": "fund_flow:3017:31:2630.0",
@@ -1224,13 +1224,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:25:15.330086+00:00",
-      "updated_at": "2026-06-05T04:02:37.225250+00:00",
+      "updated_at": "2026-06-05T04:03:07.932174+00:00",
       "status": "open",
       "code": "1513",
       "name": "中興電",
       "sector": "重電",
       "entry_price": 172.5,
-      "last_price": 169.0,
+      "last_price": 169.5,
       "best_price": 172.5,
       "worst_price": 169.0,
       "score": 29,
@@ -1238,14 +1238,14 @@
       "volume_ratio_at_signal": 0.34,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": -2.029,
+        "latest_pct": -1.739,
         "max_gain": 0.0,
         "max_drawdown": -2.029,
         "pct_5m": 0.0,
         "pct_10m": 0.0,
         "pct_30m": -1.159
       },
-      "age_minutes": 97.36
+      "age_minutes": 97.88
     },
     {
       "key": "fund_flow:1605:29:39.35",
@@ -1784,13 +1784,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:30:19.670164+00:00",
-      "updated_at": "2026-06-05T04:02:41.636527+00:00",
+      "updated_at": "2026-06-05T04:03:05.380576+00:00",
       "status": "open",
       "code": "2379",
       "name": "瑞昱",
       "sector": "半導體",
       "entry_price": 639.0,
-      "last_price": 647.0,
+      "last_price": 646.0,
       "best_price": 659.0,
       "worst_price": 638.0,
       "score": 82,
@@ -1798,14 +1798,14 @@
       "volume_ratio_at_signal": 0.41,
       "alert": null,
       "results": {
-        "latest_pct": 1.252,
+        "latest_pct": 1.095,
         "max_gain": 3.13,
         "max_drawdown": -0.156,
         "pct_5m": 0.626,
         "pct_10m": 0.939,
         "pct_30m": 0.782
       },
-      "age_minutes": 92.37
+      "age_minutes": 92.76
     },
     {
       "key": "ai_pool:2356:78:78.1",
@@ -2260,13 +2260,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:30:30.008470+00:00",
-      "updated_at": "2026-06-05T04:02:41.636544+00:00",
+      "updated_at": "2026-06-05T04:03:05.380590+00:00",
       "status": "open",
       "code": "2379",
       "name": "瑞昱",
       "sector": "半導體",
       "entry_price": 639.0,
-      "last_price": 647.0,
+      "last_price": 646.0,
       "best_price": 659.0,
       "worst_price": 638.0,
       "score": 85,
@@ -2274,14 +2274,14 @@
       "volume_ratio_at_signal": 0.41,
       "alert": "大戶進場警報",
       "results": {
-        "latest_pct": 1.252,
+        "latest_pct": 1.095,
         "max_gain": 3.13,
         "max_drawdown": -0.156,
         "pct_5m": 0.626,
         "pct_10m": 0.939,
         "pct_30m": 0.782
       },
-      "age_minutes": 92.19
+      "age_minutes": 92.59
     },
     {
       "key": "fund_flow:3661:84:4415.0",
@@ -2428,13 +2428,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:30:30.008566+00:00",
-      "updated_at": "2026-06-05T04:02:37.225273+00:00",
+      "updated_at": "2026-06-05T04:03:07.932202+00:00",
       "status": "open",
       "code": "1513",
       "name": "中興電",
       "sector": "重電",
       "entry_price": 172.5,
-      "last_price": 169.0,
+      "last_price": 169.5,
       "best_price": 172.5,
       "worst_price": 169.0,
       "score": 31,
@@ -2442,14 +2442,14 @@
       "volume_ratio_at_signal": 0.34,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": -2.029,
+        "latest_pct": -1.739,
         "max_gain": 0.0,
         "max_drawdown": -2.029,
         "pct_5m": 0.0,
         "pct_10m": -0.58,
         "pct_30m": -0.87
       },
-      "age_minutes": 92.12
+      "age_minutes": 92.63
     },
     {
       "key": "fund_flow:1605:34:39.25",
@@ -2652,13 +2652,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:35:12.437080+00:00",
-      "updated_at": "2026-06-05T04:02:41.636556+00:00",
+      "updated_at": "2026-06-05T04:03:05.380603+00:00",
       "status": "open",
       "code": "2379",
       "name": "瑞昱",
       "sector": "半導體",
       "entry_price": 642.0,
-      "last_price": 647.0,
+      "last_price": 646.0,
       "best_price": 659.0,
       "worst_price": 642.0,
       "score": 75,
@@ -2666,14 +2666,14 @@
       "volume_ratio_at_signal": 0.42,
       "alert": null,
       "results": {
-        "latest_pct": 0.779,
+        "latest_pct": 0.623,
         "max_gain": 2.648,
         "max_drawdown": 0.0,
         "pct_5m": 0.467,
         "pct_10m": 0.623,
         "pct_30m": 0.935
       },
-      "age_minutes": 87.49
+      "age_minutes": 87.88
     },
     {
       "key": "ai_pool:2368:68:1350.0",
@@ -3296,13 +3296,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:40:15.726387+00:00",
-      "updated_at": "2026-06-05T04:02:41.636568+00:00",
+      "updated_at": "2026-06-05T04:03:05.380617+00:00",
       "status": "open",
       "code": "2379",
       "name": "瑞昱",
       "sector": "半導體",
       "entry_price": 642.0,
-      "last_price": 647.0,
+      "last_price": 646.0,
       "best_price": 659.0,
       "worst_price": 642.0,
       "score": 93,
@@ -3310,14 +3310,14 @@
       "volume_ratio_at_signal": 0.43,
       "alert": null,
       "results": {
-        "latest_pct": 0.779,
+        "latest_pct": 0.623,
         "max_gain": 2.648,
         "max_drawdown": 0.0,
         "pct_5m": 0.623,
         "pct_10m": 0.779,
         "pct_30m": 1.713
       },
-      "age_minutes": 82.43
+      "age_minutes": 82.83
     },
     {
       "key": "ai_pool:2368:72:1340.0",
@@ -3940,13 +3940,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:40:27.116663+00:00",
-      "updated_at": "2026-06-05T04:02:37.225288+00:00",
+      "updated_at": "2026-06-05T04:03:07.932222+00:00",
       "status": "open",
       "code": "1513",
       "name": "中興電",
       "sector": "重電",
       "entry_price": 171.5,
-      "last_price": 169.0,
+      "last_price": 169.5,
       "best_price": 171.5,
       "worst_price": 169.0,
       "score": 8,
@@ -3954,27 +3954,27 @@
       "volume_ratio_at_signal": 0.36,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": -1.458,
+        "latest_pct": -1.166,
         "max_gain": 0.0,
         "max_drawdown": -1.458,
         "pct_5m": 0.0,
         "pct_10m": -0.583,
         "pct_30m": -0.583
       },
-      "age_minutes": 82.17
+      "age_minutes": 82.68
     },
     {
       "key": "ai_pool:2379:88:646.0",
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:45:15.268556+00:00",
-      "updated_at": "2026-06-05T04:02:41.636581+00:00",
+      "updated_at": "2026-06-05T04:03:05.380632+00:00",
       "status": "open",
       "code": "2379",
       "name": "瑞昱",
       "sector": "半導體",
       "entry_price": 646.0,
-      "last_price": 647.0,
+      "last_price": 646.0,
       "best_price": 659.0,
       "worst_price": 644.0,
       "score": 88,
@@ -3982,14 +3982,14 @@
       "volume_ratio_at_signal": 0.46,
       "alert": null,
       "results": {
-        "latest_pct": 0.155,
+        "latest_pct": 0.0,
         "max_gain": 2.012,
         "max_drawdown": -0.31,
         "pct_5m": 0.155,
         "pct_10m": -0.31,
         "pct_30m": 1.238
       },
-      "age_minutes": 77.44
+      "age_minutes": 77.84
     },
     {
       "key": "ai_pool:2615:86:86.3",
@@ -4556,13 +4556,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:45:25.851598+00:00",
-      "updated_at": "2026-06-05T04:02:37.225296+00:00",
+      "updated_at": "2026-06-05T04:03:07.932234+00:00",
       "status": "open",
       "code": "1513",
       "name": "中興電",
       "sector": "重電",
       "entry_price": 171.5,
-      "last_price": 169.0,
+      "last_price": 169.5,
       "best_price": 171.5,
       "worst_price": 169.0,
       "score": 32,
@@ -4570,14 +4570,14 @@
       "volume_ratio_at_signal": 0.36,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": -1.458,
+        "latest_pct": -1.166,
         "max_gain": 0.0,
         "max_drawdown": -1.458,
         "pct_5m": -0.583,
         "pct_10m": -0.583,
         "pct_30m": -0.583
       },
-      "age_minutes": 77.19
+      "age_minutes": 77.7
     },
     {
       "key": "fund_flow:1605:24:39.05",
@@ -4696,13 +4696,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:50:15.682042+00:00",
-      "updated_at": "2026-06-05T04:02:41.636595+00:00",
+      "updated_at": "2026-06-05T04:03:05.380646+00:00",
       "status": "open",
       "code": "2379",
       "name": "瑞昱",
       "sector": "半導體",
       "entry_price": 647.0,
-      "last_price": 647.0,
+      "last_price": 646.0,
       "best_price": 659.0,
       "worst_price": 644.0,
       "score": 88,
@@ -4710,14 +4710,14 @@
       "volume_ratio_at_signal": 0.48,
       "alert": null,
       "results": {
-        "latest_pct": 0.0,
+        "latest_pct": -0.155,
         "max_gain": 1.855,
         "max_drawdown": -0.464,
         "pct_5m": -0.464,
         "pct_10m": -0.464,
         "pct_30m": 1.855
       },
-      "age_minutes": 72.43
+      "age_minutes": 72.83
     },
     {
       "key": "ai_pool:2356:78:78.0",
@@ -5368,13 +5368,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:50:26.323812+00:00",
-      "updated_at": "2026-06-05T04:02:37.225305+00:00",
+      "updated_at": "2026-06-05T04:03:07.932248+00:00",
       "status": "open",
       "code": "1513",
       "name": "中興電",
       "sector": "重電",
       "entry_price": 170.5,
-      "last_price": 169.0,
+      "last_price": 169.5,
       "best_price": 171.0,
       "worst_price": 169.0,
       "score": 32,
@@ -5382,14 +5382,14 @@
       "volume_ratio_at_signal": 0.38,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": -0.88,
+        "latest_pct": -0.587,
         "max_gain": 0.293,
         "max_drawdown": -0.88,
         "pct_5m": 0.0,
         "pct_10m": 0.293,
         "pct_30m": 0.0
       },
-      "age_minutes": 72.18
+      "age_minutes": 72.69
     },
     {
       "key": "fund_flow:1609:30:39.55",
@@ -6012,13 +6012,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:55:23.828280+00:00",
-      "updated_at": "2026-06-05T04:02:37.225313+00:00",
+      "updated_at": "2026-06-05T04:03:07.932262+00:00",
       "status": "open",
       "code": "1513",
       "name": "中興電",
       "sector": "重電",
       "entry_price": 170.5,
-      "last_price": 169.0,
+      "last_price": 169.5,
       "best_price": 171.0,
       "worst_price": 169.0,
       "score": 21,
@@ -6026,14 +6026,14 @@
       "volume_ratio_at_signal": 0.38,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": -0.88,
+        "latest_pct": -0.587,
         "max_gain": 0.293,
         "max_drawdown": -0.88,
         "pct_5m": 0.293,
         "pct_10m": 0.293,
         "pct_30m": 0.0
       },
-      "age_minutes": 67.22
+      "age_minutes": 67.74
     },
     {
       "key": "fund_flow:1609:11:39.55",
@@ -6096,13 +6096,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:00:25.046006+00:00",
-      "updated_at": "2026-06-05T04:02:41.636613+00:00",
+      "updated_at": "2026-06-05T04:03:05.380666+00:00",
       "status": "open",
       "code": "2379",
       "name": "瑞昱",
       "sector": "半導體",
       "entry_price": 643.0,
-      "last_price": 647.0,
+      "last_price": 646.0,
       "best_price": 659.0,
       "worst_price": 643.0,
       "score": 86,
@@ -6110,14 +6110,14 @@
       "volume_ratio_at_signal": 0.5,
       "alert": null,
       "results": {
-        "latest_pct": 0.622,
+        "latest_pct": 0.467,
         "max_gain": 2.488,
         "max_drawdown": 0.0,
         "pct_5m": 0.778,
         "pct_10m": 1.555,
         "pct_30m": 2.022
       },
-      "age_minutes": 62.28
+      "age_minutes": 62.67
     },
     {
       "key": "ai_pool:3443:78:4415.0",
@@ -6628,13 +6628,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:00:36.494207+00:00",
-      "updated_at": "2026-06-05T04:02:37.225320+00:00",
+      "updated_at": "2026-06-05T04:03:07.932274+00:00",
       "status": "open",
       "code": "1513",
       "name": "中興電",
       "sector": "重電",
       "entry_price": 171.0,
-      "last_price": 169.0,
+      "last_price": 169.5,
       "best_price": 171.0,
       "worst_price": 169.0,
       "score": 28,
@@ -6642,14 +6642,14 @@
       "volume_ratio_at_signal": 0.38,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": -1.17,
+        "latest_pct": -0.877,
         "max_gain": 0.0,
         "max_drawdown": -1.17,
         "pct_5m": 0.0,
         "pct_10m": -0.292,
         "pct_30m": -1.17
       },
-      "age_minutes": 62.01
+      "age_minutes": 62.52
     },
     {
       "key": "fund_flow:1605:23:39.35",
@@ -6740,13 +6740,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:05:11.974142+00:00",
-      "updated_at": "2026-06-05T04:02:41.636625+00:00",
+      "updated_at": "2026-06-05T04:03:05.380680+00:00",
       "status": "open",
       "code": "2379",
       "name": "瑞昱",
       "sector": "半導體",
       "entry_price": 647.0,
-      "last_price": 647.0,
+      "last_price": 646.0,
       "best_price": 659.0,
       "worst_price": 646.0,
       "score": 78,
@@ -6754,14 +6754,14 @@
       "volume_ratio_at_signal": 0.52,
       "alert": null,
       "results": {
-        "latest_pct": 0.0,
+        "latest_pct": -0.155,
         "max_gain": 1.855,
         "max_drawdown": -0.155,
         "pct_5m": 0.927,
         "pct_10m": 1.082,
         "pct_30m": 0.309
       },
-      "age_minutes": 57.49
+      "age_minutes": 57.89
     },
     {
       "key": "ai_pool:2368:61:1335.0",
@@ -7076,13 +7076,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:05:22.049893+00:00",
-      "updated_at": "2026-06-05T04:02:37.225327+00:00",
+      "updated_at": "2026-06-05T04:03:07.932286+00:00",
       "status": "open",
       "code": "1513",
       "name": "中興電",
       "sector": "重電",
       "entry_price": 170.5,
-      "last_price": 169.0,
+      "last_price": 169.5,
       "best_price": 171.0,
       "worst_price": 169.0,
       "score": 24,
@@ -7090,14 +7090,14 @@
       "volume_ratio_at_signal": 0.39,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": -0.88,
+        "latest_pct": -0.587,
         "max_gain": 0.293,
         "max_drawdown": -0.88,
         "pct_5m": 0.0,
         "pct_10m": 0.0,
         "pct_30m": -0.88
       },
-      "age_minutes": 57.25
+      "age_minutes": 57.76
     },
     {
       "key": "fund_flow:1609:30:39.6",
@@ -7188,13 +7188,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:10:15.521845+00:00",
-      "updated_at": "2026-06-05T04:02:41.636635+00:00",
+      "updated_at": "2026-06-05T04:03:05.380693+00:00",
       "status": "open",
       "code": "2379",
       "name": "瑞昱",
       "sector": "半導體",
       "entry_price": 653.0,
-      "last_price": 647.0,
+      "last_price": 646.0,
       "best_price": 659.0,
       "worst_price": 646.0,
       "score": 86,
@@ -7202,14 +7202,14 @@
       "volume_ratio_at_signal": 0.55,
       "alert": null,
       "results": {
-        "latest_pct": -0.919,
+        "latest_pct": -1.072,
         "max_gain": 0.919,
         "max_drawdown": -1.072,
         "pct_5m": 0.153,
         "pct_10m": 0.919,
         "pct_30m": -0.613
       },
-      "age_minutes": 52.44
+      "age_minutes": 52.83
     },
     {
       "key": "ai_pool:2454:67:4365.0",
@@ -7608,13 +7608,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:10:26.460597+00:00",
-      "updated_at": "2026-06-05T04:02:37.225335+00:00",
+      "updated_at": "2026-06-05T04:03:07.932297+00:00",
       "status": "open",
       "code": "1513",
       "name": "中興電",
       "sector": "重電",
       "entry_price": 171.0,
-      "last_price": 169.0,
+      "last_price": 169.5,
       "best_price": 171.0,
       "worst_price": 169.0,
       "score": 27,
@@ -7622,14 +7622,14 @@
       "volume_ratio_at_signal": 0.39,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": -1.17,
+        "latest_pct": -0.877,
         "max_gain": 0.0,
         "max_drawdown": -1.17,
         "pct_5m": -0.292,
         "pct_10m": -0.292,
         "pct_30m": -0.877
       },
-      "age_minutes": 52.18
+      "age_minutes": 52.69
     },
     {
       "key": "fund_flow:3324:25:1110.0",
@@ -8056,13 +8056,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:15:25.729184+00:00",
-      "updated_at": "2026-06-05T04:02:37.225341+00:00",
+      "updated_at": "2026-06-05T04:03:07.932308+00:00",
       "status": "open",
       "code": "1513",
       "name": "中興電",
       "sector": "重電",
       "entry_price": 171.0,
-      "last_price": 169.0,
+      "last_price": 169.5,
       "best_price": 171.0,
       "worst_price": 169.0,
       "score": 24,
@@ -8070,14 +8070,14 @@
       "volume_ratio_at_signal": 0.39,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": -1.17,
+        "latest_pct": -0.877,
         "max_gain": 0.0,
         "max_drawdown": -1.17,
         "pct_5m": -0.292,
         "pct_10m": -0.292,
         "pct_30m": -0.877
       },
-      "age_minutes": 47.19
+      "age_minutes": 47.7
     },
     {
       "key": "fund_flow:2308:24:2335.0",
@@ -8224,13 +8224,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:20:15.486006+00:00",
-      "updated_at": "2026-06-05T04:02:41.636649+00:00",
+      "updated_at": "2026-06-05T04:03:05.380711+00:00",
       "status": "open",
       "code": "2379",
       "name": "瑞昱",
       "sector": "半導體",
       "entry_price": 659.0,
-      "last_price": 647.0,
+      "last_price": 646.0,
       "best_price": 659.0,
       "worst_price": 646.0,
       "score": 68,
@@ -8238,14 +8238,14 @@
       "volume_ratio_at_signal": 0.6,
       "alert": null,
       "results": {
-        "latest_pct": -1.821,
+        "latest_pct": -1.973,
         "max_gain": 0.0,
         "max_drawdown": -1.973,
         "pct_5m": -0.303,
         "pct_10m": -0.455,
         "pct_30m": -1.669
       },
-      "age_minutes": 42.44
+      "age_minutes": 42.83
     },
     {
       "key": "ai_pool:3443:67:4395.0",
@@ -8616,13 +8616,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:20:26.563285+00:00",
-      "updated_at": "2026-06-05T04:02:37.225348+00:00",
+      "updated_at": "2026-06-05T04:03:07.932319+00:00",
       "status": "open",
       "code": "1513",
       "name": "中興電",
       "sector": "重電",
       "entry_price": 171.0,
-      "last_price": 169.0,
+      "last_price": 169.5,
       "best_price": 171.0,
       "worst_price": 169.0,
       "score": 16,
@@ -8630,14 +8630,14 @@
       "volume_ratio_at_signal": 0.39,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": -1.17,
+        "latest_pct": -0.877,
         "max_gain": 0.0,
         "max_drawdown": -1.17,
         "pct_5m": -0.292,
         "pct_10m": -1.17,
         "pct_30m": -1.17
       },
-      "age_minutes": 42.18
+      "age_minutes": 42.69
     },
     {
       "key": "fund_flow:1609:19:39.6",
@@ -8672,13 +8672,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:25:11.681260+00:00",
-      "updated_at": "2026-06-05T04:02:41.636660+00:00",
+      "updated_at": "2026-06-05T04:03:05.380724+00:00",
       "status": "open",
       "code": "2379",
       "name": "瑞昱",
       "sector": "半導體",
       "entry_price": 656.0,
-      "last_price": 647.0,
+      "last_price": 646.0,
       "best_price": 657.0,
       "worst_price": 646.0,
       "score": 86,
@@ -8686,14 +8686,14 @@
       "volume_ratio_at_signal": 0.62,
       "alert": null,
       "results": {
-        "latest_pct": -1.372,
+        "latest_pct": -1.524,
         "max_gain": 0.152,
         "max_drawdown": -1.524,
         "pct_5m": 0.0,
         "pct_10m": -1.067,
         "pct_30m": -1.067
       },
-      "age_minutes": 37.5
+      "age_minutes": 37.89
     },
     {
       "key": "ai_pool:3443:73:4380.0",
@@ -9064,13 +9064,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:25:22.049923+00:00",
-      "updated_at": "2026-06-05T04:02:41.636671+00:00",
+      "updated_at": "2026-06-05T04:03:05.380736+00:00",
       "status": "open",
       "code": "2379",
       "name": "瑞昱",
       "sector": "半導體",
       "entry_price": 656.0,
-      "last_price": 647.0,
+      "last_price": 646.0,
       "best_price": 657.0,
       "worst_price": 646.0,
       "score": 90,
@@ -9078,14 +9078,14 @@
       "volume_ratio_at_signal": 0.62,
       "alert": "大戶進場警報",
       "results": {
-        "latest_pct": -1.372,
+        "latest_pct": -1.524,
         "max_gain": 0.152,
         "max_drawdown": -1.524,
         "pct_5m": 0.0,
         "pct_10m": -1.067,
         "pct_30m": -1.067
       },
-      "age_minutes": 37.33
+      "age_minutes": 37.72
     },
     {
       "key": "fund_flow:1605:26:39.55",
@@ -9204,13 +9204,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:25:22.049961+00:00",
-      "updated_at": "2026-06-05T04:02:37.225356+00:00",
+      "updated_at": "2026-06-05T04:03:07.932331+00:00",
       "status": "open",
       "code": "1513",
       "name": "中興電",
       "sector": "重電",
       "entry_price": 170.5,
-      "last_price": 169.0,
+      "last_price": 169.5,
       "best_price": 170.5,
       "worst_price": 169.0,
       "score": 19,
@@ -9218,14 +9218,14 @@
       "volume_ratio_at_signal": 0.39,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": -0.88,
+        "latest_pct": -0.587,
         "max_gain": 0.0,
         "max_drawdown": -0.88,
         "pct_5m": -0.88,
         "pct_10m": -0.88,
         "pct_30m": -0.88
       },
-      "age_minutes": 37.25
+      "age_minutes": 37.76
     },
     {
       "key": "fund_flow:1609:12:39.55",
@@ -9708,13 +9708,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:30:29.753337+00:00",
-      "updated_at": "2026-06-05T04:02:41.636684+00:00",
+      "updated_at": "2026-06-05T04:03:05.380750+00:00",
       "status": "open",
       "code": "2379",
       "name": "瑞昱",
       "sector": "半導體",
       "entry_price": 655.0,
-      "last_price": 647.0,
+      "last_price": 646.0,
       "best_price": 656.0,
       "worst_price": 646.0,
       "score": 98,
@@ -9722,14 +9722,14 @@
       "volume_ratio_at_signal": 0.64,
       "alert": "大戶進場警報",
       "results": {
-        "latest_pct": -1.221,
+        "latest_pct": -1.374,
         "max_gain": 0.153,
         "max_drawdown": -1.374,
         "pct_5m": -0.916,
         "pct_10m": -0.916,
         "pct_30m": -1.374
       },
-      "age_minutes": 32.2
+      "age_minutes": 32.59
     },
     {
       "key": "fund_flow:2409:33:27.4",
@@ -9792,13 +9792,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:30:29.753399+00:00",
-      "updated_at": "2026-06-05T04:02:37.225367+00:00",
+      "updated_at": "2026-06-05T04:03:07.932343+00:00",
       "status": "open",
       "code": "1513",
       "name": "中興電",
       "sector": "重電",
       "entry_price": 169.0,
-      "last_price": 169.0,
+      "last_price": 169.5,
       "best_price": 169.5,
       "worst_price": 169.0,
       "score": 24,
@@ -9806,14 +9806,14 @@
       "volume_ratio_at_signal": 0.42,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": 0.0,
+        "latest_pct": 0.296,
         "max_gain": 0.296,
         "max_drawdown": 0.0,
         "pct_5m": 0.0,
         "pct_10m": 0.296,
         "pct_30m": 0.0
       },
-      "age_minutes": 32.12
+      "age_minutes": 32.64
     },
     {
       "key": "fund_flow:3324:8:1095.0",
@@ -9901,13 +9901,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:35:12.135042+00:00",
-      "updated_at": "2026-06-05T04:02:41.636693+00:00",
+      "updated_at": "2026-06-05T04:03:05.380761+00:00",
       "status": "open",
       "code": "2379",
       "name": "瑞昱",
       "sector": "半導體",
       "entry_price": 651.0,
-      "last_price": 647.0,
+      "last_price": 646.0,
       "best_price": 653.0,
       "worst_price": 646.0,
       "score": 68,
@@ -9915,13 +9915,13 @@
       "volume_ratio_at_signal": 0.66,
       "alert": null,
       "results": {
-        "latest_pct": -0.614,
+        "latest_pct": -0.768,
         "max_gain": 0.307,
         "max_drawdown": -0.768,
         "pct_5m": -0.307,
         "pct_10m": 0.307
       },
-      "age_minutes": 27.49
+      "age_minutes": 27.89
     },
     {
       "key": "ai_pool:2609:66:54.1",
@@ -10495,13 +10495,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:35:22.792886+00:00",
-      "updated_at": "2026-06-05T04:02:37.225383+00:00",
+      "updated_at": "2026-06-05T04:03:07.932355+00:00",
       "status": "open",
       "code": "1513",
       "name": "中興電",
       "sector": "重電",
       "entry_price": 169.0,
-      "last_price": 169.0,
+      "last_price": 169.5,
       "best_price": 169.5,
       "worst_price": 169.0,
       "score": 22,
@@ -10509,13 +10509,13 @@
       "volume_ratio_at_signal": 0.42,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": 0.0,
+        "latest_pct": 0.296,
         "max_gain": 0.296,
         "max_drawdown": 0.0,
         "pct_5m": 0.296,
         "pct_10m": 0.296
       },
-      "age_minutes": 27.24
+      "age_minutes": 27.75
     },
     {
       "key": "fund_flow:1609:7:39.4",
@@ -10576,13 +10576,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:40:15.555069+00:00",
-      "updated_at": "2026-06-05T04:02:41.636714+00:00",
+      "updated_at": "2026-06-05T04:03:05.380776+00:00",
       "status": "open",
       "code": "2379",
       "name": "瑞昱",
       "sector": "半導體",
       "entry_price": 650.0,
-      "last_price": 647.0,
+      "last_price": 646.0,
       "best_price": 653.0,
       "worst_price": 646.0,
       "score": 68,
@@ -10590,13 +10590,13 @@
       "volume_ratio_at_signal": 0.68,
       "alert": null,
       "results": {
-        "latest_pct": -0.462,
+        "latest_pct": -0.615,
         "max_gain": 0.462,
         "max_drawdown": -0.615,
         "pct_5m": 0.462,
         "pct_10m": -0.308
       },
-      "age_minutes": 22.43
+      "age_minutes": 22.83
     },
     {
       "key": "ai_pool:2324:52:41.25",
@@ -11143,13 +11143,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:40:30.328047+00:00",
-      "updated_at": "2026-06-05T04:02:37.225396+00:00",
+      "updated_at": "2026-06-05T04:03:07.932368+00:00",
       "status": "open",
       "code": "1513",
       "name": "中興電",
       "sector": "重電",
       "entry_price": 170.0,
-      "last_price": 169.0,
+      "last_price": 169.5,
       "best_price": 170.0,
       "worst_price": 169.0,
       "score": 25,
@@ -11157,13 +11157,13 @@
       "volume_ratio_at_signal": 0.43,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": -0.588,
+        "latest_pct": -0.294,
         "max_gain": 0.0,
         "max_drawdown": -0.588,
         "pct_5m": -0.294,
         "pct_10m": -0.588
       },
-      "age_minutes": 22.11
+      "age_minutes": 22.63
     },
     {
       "key": "fund_flow:1609:23:39.35",
@@ -11602,13 +11602,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:45:24.850175+00:00",
-      "updated_at": "2026-06-05T04:02:41.636736+00:00",
+      "updated_at": "2026-06-05T04:03:05.380796+00:00",
       "status": "open",
       "code": "2379",
       "name": "瑞昱",
       "sector": "半導體",
       "entry_price": 652.0,
-      "last_price": 647.0,
+      "last_price": 646.0,
       "best_price": 653.0,
       "worst_price": 646.0,
       "score": 97,
@@ -11616,13 +11616,13 @@
       "volume_ratio_at_signal": 0.69,
       "alert": "大戶進場警報",
       "results": {
-        "latest_pct": -0.767,
+        "latest_pct": -0.92,
         "max_gain": 0.153,
         "max_drawdown": -0.92,
         "pct_5m": -0.613,
         "pct_10m": -0.46
       },
-      "age_minutes": 17.28
+      "age_minutes": 17.68
     },
     {
       "key": "fund_flow:2618:77:38.0",
@@ -11845,13 +11845,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:45:24.850257+00:00",
-      "updated_at": "2026-06-05T04:02:37.225431+00:00",
+      "updated_at": "2026-06-05T04:03:07.932382+00:00",
       "status": "open",
       "code": "1513",
       "name": "中興電",
       "sector": "重電",
       "entry_price": 169.5,
-      "last_price": 169.0,
+      "last_price": 169.5,
       "best_price": 169.5,
       "worst_price": 169.0,
       "score": 24,
@@ -11859,13 +11859,13 @@
       "volume_ratio_at_signal": 0.43,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": -0.295,
+        "latest_pct": 0.0,
         "max_gain": 0.0,
         "max_drawdown": -0.295,
         "pct_5m": -0.295,
         "pct_10m": -0.295
       },
-      "age_minutes": 17.21
+      "age_minutes": 17.72
     },
     {
       "key": "fund_flow:1605:35:39.2",
@@ -12007,13 +12007,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:50:15.098620+00:00",
-      "updated_at": "2026-06-05T04:02:41.636746+00:00",
+      "updated_at": "2026-06-05T04:03:05.380810+00:00",
       "status": "open",
       "code": "2379",
       "name": "瑞昱",
       "sector": "半導體",
       "entry_price": 646.0,
-      "last_price": 647.0,
+      "last_price": 646.0,
       "best_price": 649.0,
       "worst_price": 646.0,
       "score": 80,
@@ -12021,13 +12021,13 @@
       "volume_ratio_at_signal": 0.71,
       "alert": null,
       "results": {
-        "latest_pct": 0.155,
+        "latest_pct": 0.0,
         "max_gain": 0.464,
         "max_drawdown": 0.0,
         "pct_5m": 0.464,
         "pct_10m": 0.0
       },
-      "age_minutes": 12.44
+      "age_minutes": 12.84
     },
     {
       "key": "ai_pool:3443:70:4350.0",
@@ -12493,27 +12493,27 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:50:26.956288+00:00",
-      "updated_at": "2026-06-05T04:02:37.225447+00:00",
+      "updated_at": "2026-06-05T04:03:07.932396+00:00",
       "status": "open",
       "code": "1513",
       "name": "中興電",
       "sector": "重電",
       "entry_price": 169.0,
-      "last_price": 169.0,
-      "best_price": 169.0,
+      "last_price": 169.5,
+      "best_price": 169.5,
       "worst_price": 169.0,
       "score": 30,
       "change_rate_at_signal": -9.62,
       "volume_ratio_at_signal": 0.44,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": 0.0,
-        "max_gain": 0.0,
+        "latest_pct": 0.296,
+        "max_gain": 0.296,
         "max_drawdown": 0.0,
         "pct_5m": 0.0,
         "pct_10m": 0.0
       },
-      "age_minutes": 12.17
+      "age_minutes": 12.68
     },
     {
       "key": "fund_flow:1605:27:39.1",
@@ -13197,26 +13197,26 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:55:23.123556+00:00",
-      "updated_at": "2026-06-05T04:02:37.225465+00:00",
+      "updated_at": "2026-06-05T04:03:07.932410+00:00",
       "status": "open",
       "code": "1513",
       "name": "中興電",
       "sector": "重電",
       "entry_price": 169.0,
-      "last_price": 169.0,
-      "best_price": 169.0,
+      "last_price": 169.5,
+      "best_price": 169.5,
       "worst_price": 169.0,
       "score": 29,
       "change_rate_at_signal": -9.62,
       "volume_ratio_at_signal": 0.44,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": 0.0,
-        "max_gain": 0.0,
+        "latest_pct": 0.296,
+        "max_gain": 0.296,
         "max_drawdown": 0.0,
         "pct_5m": 0.0
       },
-      "age_minutes": 7.24
+      "age_minutes": 7.75
     },
     {
       "key": "fund_flow:1609:24:39.1",
@@ -13377,13 +13377,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T04:00:24.527301+00:00",
-      "updated_at": "2026-06-05T04:02:41.636769+00:00",
+      "updated_at": "2026-06-05T04:03:05.380831+00:00",
       "status": "open",
       "code": "2379",
       "name": "瑞昱",
       "sector": "半導體",
       "entry_price": 648.0,
-      "last_price": 647.0,
+      "last_price": 646.0,
       "best_price": 648.0,
       "worst_price": 646.0,
       "score": 96,
@@ -13391,11 +13391,11 @@
       "volume_ratio_at_signal": 0.74,
       "alert": null,
       "results": {
-        "latest_pct": -0.154,
+        "latest_pct": -0.309,
         "max_gain": 0.0,
         "max_drawdown": -0.309
       },
-      "age_minutes": 2.29
+      "age_minutes": 2.68
     },
     {
       "key": "ai_pool:3443:78:4350.0",
@@ -13752,13 +13752,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T04:00:36.205748+00:00",
-      "updated_at": "2026-06-05T04:02:41.636784+00:00",
+      "updated_at": "2026-06-05T04:03:05.380844+00:00",
       "status": "open",
       "code": "2379",
       "name": "瑞昱",
       "sector": "半導體",
       "entry_price": 647.0,
-      "last_price": 647.0,
+      "last_price": 646.0,
       "best_price": 647.0,
       "worst_price": 646.0,
       "score": 85,
@@ -13766,11 +13766,11 @@
       "volume_ratio_at_signal": 0.74,
       "alert": "大戶進場警報",
       "results": {
-        "latest_pct": 0.0,
+        "latest_pct": -0.155,
         "max_gain": 0.0,
         "max_drawdown": -0.155
       },
-      "age_minutes": 2.09
+      "age_minutes": 2.49
     },
     {
       "key": "fund_flow:3037:34:936.0",
@@ -13877,13 +13877,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T04:00:36.205807+00:00",
-      "updated_at": "2026-06-05T04:02:37.225482+00:00",
+      "updated_at": "2026-06-05T04:03:07.932423+00:00",
       "status": "open",
       "code": "1513",
       "name": "中興電",
       "sector": "重電",
       "entry_price": 169.5,
-      "last_price": 169.0,
+      "last_price": 169.5,
       "best_price": 169.5,
       "worst_price": 169.0,
       "score": 28,
@@ -13891,11 +13891,11 @@
       "volume_ratio_at_signal": 0.44,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": -0.295,
+        "latest_pct": 0.0,
         "max_gain": 0.0,
         "max_drawdown": -0.295
       },
-      "age_minutes": 2.02
+      "age_minutes": 2.53
     },
     {
       "key": "fund_flow:5347:28:159.5",
@@ -14032,13 +14032,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T04:00:54.481791+00:00",
-      "updated_at": "2026-06-05T04:02:41.636798+00:00",
+      "updated_at": "2026-06-05T04:03:05.380856+00:00",
       "status": "open",
       "code": "2379",
       "name": "瑞昱",
       "sector": "半導體",
       "entry_price": 646.0,
-      "last_price": 647.0,
+      "last_price": 646.0,
       "best_price": 647.0,
       "worst_price": 646.0,
       "score": 70,
@@ -14046,11 +14046,11 @@
       "volume_ratio_at_signal": 0.74,
       "alert": null,
       "results": {
-        "latest_pct": 0.155,
+        "latest_pct": 0.0,
         "max_gain": 0.155,
         "max_drawdown": 0.0
       },
-      "age_minutes": 1.79
+      "age_minutes": 2.18
     },
     {
       "key": "ai_pool:3443:60:4350.0",
@@ -14332,25 +14332,25 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T04:01:03.697253+00:00",
-      "updated_at": "2026-06-05T04:02:37.225494+00:00",
+      "updated_at": "2026-06-05T04:03:07.932434+00:00",
       "status": "open",
       "code": "1513",
       "name": "中興電",
       "sector": "重電",
       "entry_price": 169.0,
-      "last_price": 169.0,
-      "best_price": 169.0,
+      "last_price": 169.5,
+      "best_price": 169.5,
       "worst_price": 169.0,
       "score": 27,
       "change_rate_at_signal": -9.62,
       "volume_ratio_at_signal": 0.44,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": 0.0,
-        "max_gain": 0.0,
+        "latest_pct": 0.296,
+        "max_gain": 0.296,
         "max_drawdown": 0.0
       },
-      "age_minutes": 1.56
+      "age_minutes": 2.07
     },
     {
       "key": "fund_flow:5347:32:160.0",
@@ -14567,25 +14567,25 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T04:01:42.928772+00:00",
-      "updated_at": "2026-06-05T04:02:41.636817+00:00",
+      "updated_at": "2026-06-05T04:03:05.380869+00:00",
       "status": "open",
       "code": "2379",
       "name": "瑞昱",
       "sector": "半導體",
       "entry_price": 648.0,
-      "last_price": 647.0,
+      "last_price": 646.0,
       "best_price": 648.0,
-      "worst_price": 647.0,
+      "worst_price": 646.0,
       "score": 88,
       "change_rate_at_signal": 3.84,
       "volume_ratio_at_signal": 0.75,
       "alert": null,
       "results": {
-        "latest_pct": -0.154,
+        "latest_pct": -0.309,
         "max_gain": 0.0,
-        "max_drawdown": -0.154
+        "max_drawdown": -0.309
       },
-      "age_minutes": 0.98
+      "age_minutes": 1.37
     },
     {
       "key": "ai_pool:3037:49:938.0",
@@ -15012,25 +15012,25 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T04:01:59.401254+00:00",
-      "updated_at": "2026-06-05T04:02:37.225504+00:00",
+      "updated_at": "2026-06-05T04:03:07.932445+00:00",
       "status": "open",
       "code": "1513",
       "name": "中興電",
       "sector": "重電",
       "entry_price": 169.0,
-      "last_price": 169.0,
-      "best_price": 169.0,
+      "last_price": 169.5,
+      "best_price": 169.5,
       "worst_price": 169.0,
       "score": 28,
       "change_rate_at_signal": -9.62,
       "volume_ratio_at_signal": 0.44,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": 0.0,
-        "max_gain": 0.0,
+        "latest_pct": 0.296,
+        "max_gain": 0.296,
         "max_drawdown": 0.0
       },
-      "age_minutes": 0.63
+      "age_minutes": 1.14
     },
     {
       "key": "fund_flow:5347:24:160.0",
