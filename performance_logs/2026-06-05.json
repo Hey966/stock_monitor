@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-05T05:12:37.617976+00:00",
+  "updated_at": "2026-06-05T05:12:42.541961+00:00",
   "count": 848,
   "items": [
     {
@@ -580,13 +580,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:25:05.423260+00:00",
-      "updated_at": "2026-06-05T05:07:33.227217+00:00",
+      "updated_at": "2026-06-05T05:12:40.391781+00:00",
       "status": "open",
       "code": "3324",
       "name": "雙鴻",
       "sector": "AI散熱",
       "entry_price": 1125.0,
-      "last_price": 1095.0,
+      "last_price": 1100.0,
       "best_price": 1125.0,
       "worst_price": 1085.0,
       "score": 32,
@@ -594,14 +594,14 @@
       "volume_ratio_at_signal": 0.39,
       "alert": null,
       "results": {
-        "latest_pct": -2.667,
+        "latest_pct": -2.222,
         "max_gain": 0.0,
         "max_drawdown": -3.556,
         "pct_5m": 0.0,
         "pct_10m": 0.0,
         "pct_30m": -1.333
       },
-      "age_minutes": 162.46
+      "age_minutes": 167.58
     },
     {
       "key": "ai_pool:2379:94:643.0",
@@ -2344,13 +2344,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:30:30.008530+00:00",
-      "updated_at": "2026-06-05T05:07:33.227242+00:00",
+      "updated_at": "2026-06-05T05:12:40.391800+00:00",
       "status": "open",
       "code": "3324",
       "name": "雙鴻",
       "sector": "AI散熱",
       "entry_price": 1130.0,
-      "last_price": 1095.0,
+      "last_price": 1100.0,
       "best_price": 1130.0,
       "worst_price": 1085.0,
       "score": 31,
@@ -2358,14 +2358,14 @@
       "volume_ratio_at_signal": 0.39,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": -3.097,
+        "latest_pct": -2.655,
         "max_gain": 0.0,
         "max_drawdown": -3.982,
         "pct_5m": -0.442,
         "pct_10m": -1.327,
         "pct_30m": -1.77
       },
-      "age_minutes": 157.05
+      "age_minutes": 162.17
     },
     {
       "key": "fund_flow:2409:32:27.8",
@@ -4528,13 +4528,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:45:25.851591+00:00",
-      "updated_at": "2026-06-05T05:07:33.227260+00:00",
+      "updated_at": "2026-06-05T05:12:40.391812+00:00",
       "status": "open",
       "code": "3324",
       "name": "雙鴻",
       "sector": "AI散熱",
       "entry_price": 1110.0,
-      "last_price": 1095.0,
+      "last_price": 1100.0,
       "best_price": 1115.0,
       "worst_price": 1085.0,
       "score": 33,
@@ -4542,14 +4542,14 @@
       "volume_ratio_at_signal": 0.42,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": -1.351,
+        "latest_pct": -0.901,
         "max_gain": 0.45,
         "max_drawdown": -2.252,
         "pct_5m": 0.0,
         "pct_10m": 0.0,
         "pct_30m": -0.45
       },
-      "age_minutes": 142.12
+      "age_minutes": 147.24
     },
     {
       "key": "fund_flow:1513:32:171.5",
@@ -6600,13 +6600,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:00:36.494194+00:00",
-      "updated_at": "2026-06-05T05:07:33.227273+00:00",
+      "updated_at": "2026-06-05T05:12:40.391821+00:00",
       "status": "open",
       "code": "3324",
       "name": "雙鴻",
       "sector": "AI散熱",
       "entry_price": 1110.0,
-      "last_price": 1095.0,
+      "last_price": 1100.0,
       "best_price": 1110.0,
       "worst_price": 1085.0,
       "score": 32,
@@ -6614,14 +6614,14 @@
       "volume_ratio_at_signal": 0.43,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": -1.351,
+        "latest_pct": -0.901,
         "max_gain": 0.0,
         "max_drawdown": -2.252,
         "pct_5m": 0.0,
         "pct_10m": 0.0,
         "pct_30m": -0.901
       },
-      "age_minutes": 126.95
+      "age_minutes": 132.06
     },
     {
       "key": "fund_flow:1513:28:171.0",
@@ -7132,13 +7132,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:05:22.049914+00:00",
-      "updated_at": "2026-06-05T05:07:33.227281+00:00",
+      "updated_at": "2026-06-05T05:12:40.391828+00:00",
       "status": "open",
       "code": "3324",
       "name": "雙鴻",
       "sector": "AI散熱",
       "entry_price": 1110.0,
-      "last_price": 1095.0,
+      "last_price": 1100.0,
       "best_price": 1110.0,
       "worst_price": 1085.0,
       "score": 23,
@@ -7146,14 +7146,14 @@
       "volume_ratio_at_signal": 0.43,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": -1.351,
+        "latest_pct": -0.901,
         "max_gain": 0.0,
         "max_drawdown": -2.252,
         "pct_5m": 0.0,
         "pct_10m": -0.45,
         "pct_30m": -1.351
       },
-      "age_minutes": 122.19
+      "age_minutes": 127.31
     },
     {
       "key": "fund_flow:1605:19:39.4",
@@ -7636,13 +7636,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:10:26.460620+00:00",
-      "updated_at": "2026-06-05T05:07:33.227288+00:00",
+      "updated_at": "2026-06-05T05:12:40.391834+00:00",
       "status": "open",
       "code": "3324",
       "name": "雙鴻",
       "sector": "AI散熱",
       "entry_price": 1110.0,
-      "last_price": 1095.0,
+      "last_price": 1100.0,
       "best_price": 1110.0,
       "worst_price": 1085.0,
       "score": 25,
@@ -7650,14 +7650,14 @@
       "volume_ratio_at_signal": 0.44,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": -1.351,
+        "latest_pct": -0.901,
         "max_gain": 0.0,
         "max_drawdown": -2.252,
         "pct_5m": -0.45,
         "pct_10m": -0.45,
         "pct_30m": -1.351
       },
-      "age_minutes": 117.11
+      "age_minutes": 122.23
     },
     {
       "key": "fund_flow:1609:20:39.6",
@@ -8112,13 +8112,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:15:25.729208+00:00",
-      "updated_at": "2026-06-05T05:07:33.227295+00:00",
+      "updated_at": "2026-06-05T05:12:40.391840+00:00",
       "status": "open",
       "code": "3324",
       "name": "雙鴻",
       "sector": "AI散熱",
       "entry_price": 1105.0,
-      "last_price": 1095.0,
+      "last_price": 1100.0,
       "best_price": 1105.0,
       "worst_price": 1085.0,
       "score": 23,
@@ -8126,14 +8126,14 @@
       "volume_ratio_at_signal": 0.45,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": -0.905,
+        "latest_pct": -0.452,
         "max_gain": 0.0,
         "max_drawdown": -1.81,
         "pct_5m": 0.0,
         "pct_10m": -0.452,
         "pct_30m": -0.905
       },
-      "age_minutes": 112.12
+      "age_minutes": 117.24
     },
     {
       "key": "fund_flow:1609:8:39.55",
@@ -8588,13 +8588,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:20:26.563277+00:00",
-      "updated_at": "2026-06-05T05:07:33.227301+00:00",
+      "updated_at": "2026-06-05T05:12:40.391846+00:00",
       "status": "open",
       "code": "3324",
       "name": "雙鴻",
       "sector": "AI散熱",
       "entry_price": 1105.0,
-      "last_price": 1095.0,
+      "last_price": 1100.0,
       "best_price": 1105.0,
       "worst_price": 1085.0,
       "score": 19,
@@ -8602,14 +8602,14 @@
       "volume_ratio_at_signal": 0.45,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": -0.905,
+        "latest_pct": -0.452,
         "max_gain": 0.0,
         "max_drawdown": -1.81,
         "pct_5m": -0.452,
         "pct_10m": -0.452,
         "pct_30m": -0.905
       },
-      "age_minutes": 107.11
+      "age_minutes": 112.23
     },
     {
       "key": "fund_flow:1513:16:171.0",
@@ -9148,13 +9148,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:25:22.049944+00:00",
-      "updated_at": "2026-06-05T05:07:33.227308+00:00",
+      "updated_at": "2026-06-05T05:12:40.391852+00:00",
       "status": "open",
       "code": "3324",
       "name": "雙鴻",
       "sector": "AI散熱",
       "entry_price": 1100.0,
-      "last_price": 1095.0,
+      "last_price": 1100.0,
       "best_price": 1100.0,
       "worst_price": 1085.0,
       "score": 26,
@@ -9162,14 +9162,14 @@
       "volume_ratio_at_signal": 0.46,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": -0.455,
+        "latest_pct": 0.0,
         "max_gain": 0.0,
         "max_drawdown": -1.364,
         "pct_5m": 0.0,
         "pct_10m": -0.455,
         "pct_30m": -1.364
       },
-      "age_minutes": 102.19
+      "age_minutes": 107.31
     },
     {
       "key": "fund_flow:2376:27:365.0",
@@ -9820,13 +9820,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:30:29.753412+00:00",
-      "updated_at": "2026-06-05T05:07:33.227316+00:00",
+      "updated_at": "2026-06-05T05:12:40.391859+00:00",
       "status": "open",
       "code": "3324",
       "name": "雙鴻",
       "sector": "AI散熱",
       "entry_price": 1095.0,
-      "last_price": 1095.0,
+      "last_price": 1100.0,
       "best_price": 1100.0,
       "worst_price": 1085.0,
       "score": 8,
@@ -9834,14 +9834,14 @@
       "volume_ratio_at_signal": 0.48,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": 0.0,
+        "latest_pct": 0.457,
         "max_gain": 0.457,
         "max_drawdown": -0.913,
         "pct_5m": 0.0,
         "pct_10m": 0.0,
         "pct_30m": -0.457
       },
-      "age_minutes": 97.06
+      "age_minutes": 102.18
     },
     {
       "key": "fund_flow:1605:22:39.4",
@@ -10436,13 +10436,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:35:22.792856+00:00",
-      "updated_at": "2026-06-05T05:07:33.227322+00:00",
+      "updated_at": "2026-06-05T05:12:40.391867+00:00",
       "status": "open",
       "code": "3324",
       "name": "雙鴻",
       "sector": "AI散熱",
       "entry_price": 1095.0,
-      "last_price": 1095.0,
+      "last_price": 1100.0,
       "best_price": 1100.0,
       "worst_price": 1085.0,
       "score": 34,
@@ -10450,14 +10450,14 @@
       "volume_ratio_at_signal": 0.49,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": 0.0,
+        "latest_pct": 0.457,
         "max_gain": 0.457,
         "max_drawdown": -0.913,
         "pct_5m": 0.0,
         "pct_10m": 0.0,
         "pct_30m": 0.0
       },
-      "age_minutes": 92.17
+      "age_minutes": 97.29
     },
     {
       "key": "fund_flow:1605:32:39.3",
@@ -11164,13 +11164,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:40:30.328038+00:00",
-      "updated_at": "2026-06-05T05:07:33.227329+00:00",
+      "updated_at": "2026-06-05T05:12:40.391873+00:00",
       "status": "open",
       "code": "3324",
       "name": "雙鴻",
       "sector": "AI散熱",
       "entry_price": 1095.0,
-      "last_price": 1095.0,
+      "last_price": 1100.0,
       "best_price": 1100.0,
       "worst_price": 1085.0,
       "score": 28,
@@ -11178,14 +11178,14 @@
       "volume_ratio_at_signal": 0.5,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": 0.0,
+        "latest_pct": 0.457,
         "max_gain": 0.457,
         "max_drawdown": -0.913,
         "pct_5m": 0.0,
         "pct_10m": 0.0,
         "pct_30m": -0.457
       },
-      "age_minutes": 87.05
+      "age_minutes": 92.17
     },
     {
       "key": "fund_flow:1513:25:170.0",
@@ -11892,13 +11892,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:45:24.850250+00:00",
-      "updated_at": "2026-06-05T05:07:33.227336+00:00",
+      "updated_at": "2026-06-05T05:12:40.391880+00:00",
       "status": "open",
       "code": "3324",
       "name": "雙鴻",
       "sector": "AI散熱",
       "entry_price": 1095.0,
-      "last_price": 1095.0,
+      "last_price": 1100.0,
       "best_price": 1100.0,
       "worst_price": 1085.0,
       "score": 24,
@@ -11906,14 +11906,14 @@
       "volume_ratio_at_signal": 0.5,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": 0.0,
+        "latest_pct": 0.457,
         "max_gain": 0.457,
         "max_drawdown": -0.913,
         "pct_5m": 0.0,
         "pct_10m": -0.913,
         "pct_30m": -0.457
       },
-      "age_minutes": 82.14
+      "age_minutes": 87.26
     },
     {
       "key": "fund_flow:1513:24:169.5",
@@ -12704,13 +12704,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:50:26.956333+00:00",
-      "updated_at": "2026-06-05T05:07:33.227343+00:00",
+      "updated_at": "2026-06-05T05:12:40.391886+00:00",
       "status": "open",
       "code": "3324",
       "name": "雙鴻",
       "sector": "AI散熱",
       "entry_price": 1090.0,
-      "last_price": 1095.0,
+      "last_price": 1100.0,
       "best_price": 1100.0,
       "worst_price": 1085.0,
       "score": 17,
@@ -12718,14 +12718,14 @@
       "volume_ratio_at_signal": 0.5,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": 0.459,
+        "latest_pct": 0.917,
         "max_gain": 0.917,
         "max_drawdown": -0.459,
         "pct_5m": -0.459,
         "pct_10m": 0.0,
         "pct_30m": 0.0
       },
-      "age_minutes": 77.1
+      "age_minutes": 82.22
     },
     {
       "key": "fund_flow:2376:22:364.0",
@@ -13152,13 +13152,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:55:12.071522+00:00",
-      "updated_at": "2026-06-05T05:07:33.227349+00:00",
+      "updated_at": "2026-06-05T05:12:40.391892+00:00",
       "status": "open",
       "code": "3324",
       "name": "雙鴻",
       "sector": "AI散熱",
       "entry_price": 1085.0,
-      "last_price": 1095.0,
+      "last_price": 1100.0,
       "best_price": 1100.0,
       "worst_price": 1085.0,
       "score": 4,
@@ -13166,14 +13166,14 @@
       "volume_ratio_at_signal": 0.51,
       "alert": null,
       "results": {
-        "latest_pct": 0.922,
+        "latest_pct": 1.382,
         "max_gain": 1.382,
         "max_drawdown": 0.0,
         "pct_5m": 0.461,
         "pct_10m": 0.922,
         "pct_30m": 0.922
       },
-      "age_minutes": 72.35
+      "age_minutes": 77.47
     },
     {
       "key": "fund_flow:2368:34:1305.0",
@@ -13320,13 +13320,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:55:23.123546+00:00",
-      "updated_at": "2026-06-05T05:07:33.227354+00:00",
+      "updated_at": "2026-06-05T05:12:40.391897+00:00",
       "status": "open",
       "code": "3324",
       "name": "雙鴻",
       "sector": "AI散熱",
       "entry_price": 1085.0,
-      "last_price": 1095.0,
+      "last_price": 1100.0,
       "best_price": 1100.0,
       "worst_price": 1085.0,
       "score": 28,
@@ -13334,14 +13334,14 @@
       "volume_ratio_at_signal": 0.51,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": 0.922,
+        "latest_pct": 1.382,
         "max_gain": 1.382,
         "max_drawdown": 0.0,
         "pct_5m": 0.461,
         "pct_10m": 0.922,
         "pct_30m": 0.922
       },
-      "age_minutes": 72.17
+      "age_minutes": 77.29
     },
     {
       "key": "fund_flow:1513:29:169.0",
@@ -14188,13 +14188,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T04:00:36.205826+00:00",
-      "updated_at": "2026-06-05T05:07:33.227361+00:00",
+      "updated_at": "2026-06-05T05:12:40.391904+00:00",
       "status": "open",
       "code": "3324",
       "name": "雙鴻",
       "sector": "AI散熱",
       "entry_price": 1090.0,
-      "last_price": 1095.0,
+      "last_price": 1100.0,
       "best_price": 1100.0,
       "worst_price": 1085.0,
       "score": 23,
@@ -14202,14 +14202,14 @@
       "volume_ratio_at_signal": 0.52,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": 0.459,
+        "latest_pct": 0.917,
         "max_gain": 0.917,
         "max_drawdown": -0.459,
         "pct_5m": 0.459,
         "pct_10m": 0.0,
         "pct_30m": 0.459
       },
-      "age_minutes": 66.95
+      "age_minutes": 72.07
     },
     {
       "key": "fund_flow:1605:10:39.15",
@@ -14748,13 +14748,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T04:01:03.697279+00:00",
-      "updated_at": "2026-06-05T05:07:33.227368+00:00",
+      "updated_at": "2026-06-05T05:12:40.391910+00:00",
       "status": "open",
       "code": "3324",
       "name": "雙鴻",
       "sector": "AI散熱",
       "entry_price": 1090.0,
-      "last_price": 1095.0,
+      "last_price": 1100.0,
       "best_price": 1100.0,
       "worst_price": 1085.0,
       "score": 21,
@@ -14762,14 +14762,14 @@
       "volume_ratio_at_signal": 0.52,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": 0.459,
+        "latest_pct": 0.917,
         "max_gain": 0.917,
         "max_drawdown": -0.459,
         "pct_5m": 0.459,
         "pct_10m": 0.0,
         "pct_30m": 0.459
       },
-      "age_minutes": 66.49
+      "age_minutes": 71.61
     },
     {
       "key": "fund_flow:1605:8:39.1",
@@ -14888,13 +14888,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T04:01:05.011277+00:00",
-      "updated_at": "2026-06-05T05:07:33.227374+00:00",
+      "updated_at": "2026-06-05T05:12:40.391915+00:00",
       "status": "open",
       "code": "3324",
       "name": "雙鴻",
       "sector": "AI散熱",
       "entry_price": 1085.0,
-      "last_price": 1095.0,
+      "last_price": 1100.0,
       "best_price": 1100.0,
       "worst_price": 1085.0,
       "score": 21,
@@ -14902,14 +14902,14 @@
       "volume_ratio_at_signal": 0.52,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": 0.922,
+        "latest_pct": 1.382,
         "max_gain": 1.382,
         "max_drawdown": 0.0,
         "pct_5m": 0.922,
         "pct_10m": 0.461,
         "pct_30m": 0.922
       },
-      "age_minutes": 66.47
+      "age_minutes": 71.59
     },
     {
       "key": "ai_pool:2379:88:648.0",
@@ -15504,13 +15504,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T04:01:59.401290+00:00",
-      "updated_at": "2026-06-05T05:07:33.227380+00:00",
+      "updated_at": "2026-06-05T05:12:40.391921+00:00",
       "status": "open",
       "code": "3324",
       "name": "雙鴻",
       "sector": "AI散熱",
       "entry_price": 1090.0,
-      "last_price": 1095.0,
+      "last_price": 1100.0,
       "best_price": 1100.0,
       "worst_price": 1085.0,
       "score": 12,
@@ -15518,14 +15518,14 @@
       "volume_ratio_at_signal": 0.52,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": 0.459,
+        "latest_pct": 0.917,
         "max_gain": 0.917,
         "max_drawdown": -0.459,
         "pct_5m": 0.459,
         "pct_10m": 0.0,
         "pct_30m": 0.459
       },
-      "age_minutes": 65.56
+      "age_minutes": 70.68
     },
     {
       "key": "fund_flow:1605:6:39.1",
@@ -16540,13 +16540,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T04:05:29.743301+00:00",
-      "updated_at": "2026-06-05T05:07:33.227388+00:00",
+      "updated_at": "2026-06-05T05:12:40.391928+00:00",
       "status": "open",
       "code": "3324",
       "name": "雙鴻",
       "sector": "AI散熱",
       "entry_price": 1095.0,
-      "last_price": 1095.0,
+      "last_price": 1100.0,
       "best_price": 1100.0,
       "worst_price": 1090.0,
       "score": 20,
@@ -16554,14 +16554,14 @@
       "volume_ratio_at_signal": 0.53,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": 0.0,
+        "latest_pct": 0.457,
         "max_gain": 0.457,
         "max_drawdown": -0.457,
         "pct_5m": -0.457,
         "pct_10m": -0.457,
         "pct_30m": 0.0
       },
-      "age_minutes": 62.06
+      "age_minutes": 67.18
     },
     {
       "key": "fund_flow:1513:20:169.5",
@@ -16932,13 +16932,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T04:06:16.935177+00:00",
-      "updated_at": "2026-06-05T05:07:33.227394+00:00",
+      "updated_at": "2026-06-05T05:12:40.391933+00:00",
       "status": "open",
       "code": "3324",
       "name": "雙鴻",
       "sector": "AI散熱",
       "entry_price": 1095.0,
-      "last_price": 1095.0,
+      "last_price": 1100.0,
       "best_price": 1100.0,
       "worst_price": 1090.0,
       "score": 25,
@@ -16946,14 +16946,14 @@
       "volume_ratio_at_signal": 0.53,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": 0.0,
+        "latest_pct": 0.457,
         "max_gain": 0.457,
         "max_drawdown": -0.457,
         "pct_5m": -0.457,
         "pct_10m": -0.457,
         "pct_30m": 0.0
       },
-      "age_minutes": 61.27
+      "age_minutes": 66.39
     },
     {
       "key": "fund_flow:1605:27:39.2",
@@ -17576,13 +17576,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T04:10:27.039933+00:00",
-      "updated_at": "2026-06-05T05:07:33.227400+00:00",
+      "updated_at": "2026-06-05T05:12:40.391939+00:00",
       "status": "open",
       "code": "3324",
       "name": "雙鴻",
       "sector": "AI散熱",
       "entry_price": 1090.0,
-      "last_price": 1095.0,
+      "last_price": 1100.0,
       "best_price": 1100.0,
       "worst_price": 1090.0,
       "score": 19,
@@ -17590,14 +17590,14 @@
       "volume_ratio_at_signal": 0.53,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": 0.459,
+        "latest_pct": 0.917,
         "max_gain": 0.917,
         "max_drawdown": 0.0,
         "pct_5m": 0.0,
         "pct_10m": 0.0,
         "pct_30m": 0.0
       },
-      "age_minutes": 57.1
+      "age_minutes": 62.22
     },
     {
       "key": "fund_flow:2376:20:364.5",
@@ -18640,13 +18640,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T04:20:26.594666+00:00",
-      "updated_at": "2026-06-05T05:07:33.227407+00:00",
+      "updated_at": "2026-06-05T05:12:40.391946+00:00",
       "status": "open",
       "code": "3324",
       "name": "雙鴻",
       "sector": "AI散熱",
       "entry_price": 1090.0,
-      "last_price": 1095.0,
+      "last_price": 1100.0,
       "best_price": 1100.0,
       "worst_price": 1090.0,
       "score": 14,
@@ -18654,14 +18654,14 @@
       "volume_ratio_at_signal": 0.53,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": 0.459,
+        "latest_pct": 0.917,
         "max_gain": 0.917,
         "max_drawdown": 0.0,
         "pct_5m": 0.459,
         "pct_10m": 0.459,
         "pct_30m": 0.459
       },
-      "age_minutes": 47.11
+      "age_minutes": 52.23
     },
     {
       "key": "fund_flow:1513:15:170.0",
@@ -19144,13 +19144,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T04:25:24.727205+00:00",
-      "updated_at": "2026-06-05T05:07:33.227414+00:00",
+      "updated_at": "2026-06-05T05:12:40.391952+00:00",
       "status": "open",
       "code": "3324",
       "name": "雙鴻",
       "sector": "AI散熱",
       "entry_price": 1090.0,
-      "last_price": 1095.0,
+      "last_price": 1100.0,
       "best_price": 1100.0,
       "worst_price": 1090.0,
       "score": 20,
@@ -19158,14 +19158,14 @@
       "volume_ratio_at_signal": 0.53,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": 0.459,
+        "latest_pct": 0.917,
         "max_gain": 0.917,
         "max_drawdown": 0.0,
         "pct_5m": 0.459,
         "pct_10m": 0.459,
         "pct_30m": 0.459
       },
-      "age_minutes": 42.14
+      "age_minutes": 47.26
     },
     {
       "key": "fund_flow:1513:22:170.0",
@@ -19760,13 +19760,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T04:30:30.698269+00:00",
-      "updated_at": "2026-06-05T05:07:33.227420+00:00",
+      "updated_at": "2026-06-05T05:12:40.391957+00:00",
       "status": "open",
       "code": "3324",
       "name": "雙鴻",
       "sector": "AI散熱",
       "entry_price": 1095.0,
-      "last_price": 1095.0,
+      "last_price": 1100.0,
       "best_price": 1100.0,
       "worst_price": 1090.0,
       "score": 22,
@@ -19774,14 +19774,14 @@
       "volume_ratio_at_signal": 0.54,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": 0.0,
+        "latest_pct": 0.457,
         "max_gain": 0.457,
         "max_drawdown": -0.457,
         "pct_5m": 0.0,
         "pct_10m": -0.457,
         "pct_30m": 0.457
       },
-      "age_minutes": 37.04
+      "age_minutes": 42.16
     },
     {
       "key": "fund_flow:5347:20:159.0",
@@ -21225,13 +21225,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T04:45:24.827148+00:00",
-      "updated_at": "2026-06-05T05:07:33.227429+00:00",
+      "updated_at": "2026-06-05T05:12:40.391965+00:00",
       "status": "open",
       "code": "3324",
       "name": "雙鴻",
       "sector": "AI散熱",
       "entry_price": 1090.0,
-      "last_price": 1095.0,
+      "last_price": 1100.0,
       "best_price": 1100.0,
       "worst_price": 1090.0,
       "score": 10,
@@ -21239,13 +21239,13 @@
       "volume_ratio_at_signal": 0.55,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": 0.459,
+        "latest_pct": 0.917,
         "max_gain": 0.917,
         "max_drawdown": 0.0,
         "pct_5m": 0.459,
         "pct_10m": 0.459
       },
-      "age_minutes": 22.14
+      "age_minutes": 27.26
     },
     {
       "key": "fund_flow:1605:22:39.25",
@@ -21738,13 +21738,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T04:50:26.162567+00:00",
-      "updated_at": "2026-06-05T05:07:33.227435+00:00",
+      "updated_at": "2026-06-05T05:12:40.391970+00:00",
       "status": "open",
       "code": "3324",
       "name": "雙鴻",
       "sector": "AI散熱",
       "entry_price": 1095.0,
-      "last_price": 1095.0,
+      "last_price": 1100.0,
       "best_price": 1100.0,
       "worst_price": 1095.0,
       "score": 9,
@@ -21752,13 +21752,13 @@
       "volume_ratio_at_signal": 0.56,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": 0.0,
+        "latest_pct": 0.457,
         "max_gain": 0.457,
         "max_drawdown": 0.0,
         "pct_5m": 0.0,
         "pct_10m": 0.457
       },
-      "age_minutes": 17.12
+      "age_minutes": 22.24
     },
     {
       "key": "fund_flow:1605:18:39.35",
@@ -22143,13 +22143,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T04:55:22.342770+00:00",
-      "updated_at": "2026-06-05T05:07:33.227441+00:00",
+      "updated_at": "2026-06-05T05:12:40.391976+00:00",
       "status": "open",
       "code": "3324",
       "name": "雙鴻",
       "sector": "AI散熱",
       "entry_price": 1100.0,
-      "last_price": 1095.0,
+      "last_price": 1100.0,
       "best_price": 1100.0,
       "worst_price": 1095.0,
       "score": 9,
@@ -22157,13 +22157,13 @@
       "volume_ratio_at_signal": 0.57,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": -0.455,
+        "latest_pct": 0.0,
         "max_gain": 0.0,
         "max_drawdown": -0.455,
         "pct_5m": 0.0,
         "pct_10m": -0.455
       },
-      "age_minutes": 12.18
+      "age_minutes": 17.3
     },
     {
       "key": "fund_flow:1609:16:39.15",
@@ -22628,13 +22628,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T05:00:36.402610+00:00",
-      "updated_at": "2026-06-05T05:07:33.227447+00:00",
+      "updated_at": "2026-06-05T05:12:40.391982+00:00",
       "status": "open",
       "code": "3324",
       "name": "雙鴻",
       "sector": "AI散熱",
       "entry_price": 1100.0,
-      "last_price": 1095.0,
+      "last_price": 1100.0,
       "best_price": 1100.0,
       "worst_price": 1095.0,
       "score": 14,
@@ -22642,12 +22642,13 @@
       "volume_ratio_at_signal": 0.57,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": -0.455,
+        "latest_pct": 0.0,
         "max_gain": 0.0,
         "max_drawdown": -0.455,
-        "pct_5m": -0.455
+        "pct_5m": -0.455,
+        "pct_10m": 0.0
       },
-      "age_minutes": 6.95
+      "age_minutes": 12.07
     },
     {
       "key": "fund_flow:1609:4:39.2",
@@ -23522,7 +23523,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T05:10:26.743344+00:00",
-      "updated_at": "2026-06-05T05:10:26.743346+00:00",
+      "updated_at": "2026-06-05T05:12:40.391989+00:00",
       "status": "open",
       "code": "3324",
       "name": "雙鴻",
@@ -23535,7 +23536,12 @@
       "change_rate_at_signal": -7.17,
       "volume_ratio_at_signal": 0.58,
       "alert": "資金退潮警報",
-      "results": {}
+      "results": {
+        "latest_pct": 0.0,
+        "max_gain": 0.0,
+        "max_drawdown": 0.0
+      },
+      "age_minutes": 2.23
     },
     {
       "key": "fund_flow:1513:13:170.0",
