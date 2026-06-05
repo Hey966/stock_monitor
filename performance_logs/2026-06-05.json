@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-05T02:56:17.668683+00:00",
+  "updated_at": "2026-06-05T02:56:21.081375+00:00",
   "count": 217,
   "items": [
     {
@@ -299,7 +299,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:25:05.423133+00:00",
-      "updated_at": "2026-06-05T02:51:05.795322+00:00",
+      "updated_at": "2026-06-05T02:56:19.838708+00:00",
       "status": "open",
       "code": "6215",
       "name": "和椿",
@@ -317,9 +317,10 @@
         "max_gain": 0.417,
         "max_drawdown": -0.833,
         "pct_5m": 0.417,
-        "pct_10m": 0.0
+        "pct_10m": 0.0,
+        "pct_30m": -0.417
       },
-      "age_minutes": 26.01
+      "age_minutes": 31.24
     },
     {
       "key": "ai_pool:5347:52:161.5",
@@ -711,7 +712,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:25:12.529259+00:00",
-      "updated_at": "2026-06-05T02:51:05.795340+00:00",
+      "updated_at": "2026-06-05T02:56:19.838730+00:00",
       "status": "open",
       "code": "6215",
       "name": "和椿",
@@ -729,9 +730,10 @@
         "max_gain": 0.417,
         "max_drawdown": -0.833,
         "pct_5m": 0.417,
-        "pct_10m": 0.0
+        "pct_10m": 0.0,
+        "pct_30m": -0.417
       },
-      "age_minutes": 25.89
+      "age_minutes": 31.12
     },
     {
       "key": "ai_pool:3231:66:173.0",
@@ -1799,7 +1801,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:30:19.670194+00:00",
-      "updated_at": "2026-06-05T02:51:05.795351+00:00",
+      "updated_at": "2026-06-05T02:56:19.838745+00:00",
       "status": "open",
       "code": "6215",
       "name": "和椿",
@@ -1819,7 +1821,7 @@
         "pct_5m": -0.415,
         "pct_10m": -0.83
       },
-      "age_minutes": 20.77
+      "age_minutes": 26.0
     },
     {
       "key": "ai_pool:3037:68:958.0",
@@ -3338,7 +3340,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:40:15.726450+00:00",
-      "updated_at": "2026-06-05T02:51:05.795362+00:00",
+      "updated_at": "2026-06-05T02:56:19.838760+00:00",
       "status": "open",
       "code": "6215",
       "name": "和椿",
@@ -3358,7 +3360,7 @@
         "pct_5m": -0.418,
         "pct_10m": 0.0
       },
-      "age_minutes": 10.83
+      "age_minutes": 16.07
     },
     {
       "key": "ai_pool:3661:61:4365.0",
@@ -4066,7 +4068,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:45:15.268678+00:00",
-      "updated_at": "2026-06-05T02:51:05.795371+00:00",
+      "updated_at": "2026-06-05T02:56:19.838773+00:00",
       "status": "open",
       "code": "6215",
       "name": "和椿",
@@ -4083,9 +4085,10 @@
         "latest_pct": 0.42,
         "max_gain": 0.42,
         "max_drawdown": 0.0,
-        "pct_5m": 0.42
+        "pct_5m": 0.42,
+        "pct_10m": 0.42
       },
-      "age_minutes": 5.84
+      "age_minutes": 11.08
     },
     {
       "key": "ai_pool:3231:46:172.0",
@@ -5412,7 +5415,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:55:13.518248+00:00",
-      "updated_at": "2026-06-05T02:55:13.518251+00:00",
+      "updated_at": "2026-06-05T02:56:19.838786+00:00",
       "status": "open",
       "code": "6215",
       "name": "和椿",
@@ -5425,7 +5428,12 @@
       "change_rate_at_signal": 2.13,
       "volume_ratio_at_signal": 1.14,
       "alert": null,
-      "results": {}
+      "results": {
+        "latest_pct": 0.0,
+        "max_gain": 0.0,
+        "max_drawdown": 0.0
+      },
+      "age_minutes": 1.11
     },
     {
       "key": "ai_pool:2454:49:4350.0",
