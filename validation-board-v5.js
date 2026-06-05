@@ -3,10 +3,10 @@
   const $ = (s) => document.querySelector(s);
 
   const MODULE_LABELS = {
-    ai_pool: 'AI選股池',
-    breakout: '突破警報',
-    fund_flow: '資金流向',
-    replay: 'Replay勝率',
+    ai_pool: '選股池實測',
+    breakout: '突破實測',
+    fund_flow: '資金流實測',
+    replay: 'Replay實測',
     monitor: '自動監控'
   };
 
@@ -43,17 +43,17 @@
     return (perf?.modules || []).find(x => x.module === name) || null;
   }
 
-  function bestWinRate(row) {
+  function realWinRate(row) {
     if (!row) return null;
-    return row.win_rate_30m ?? row.win_rate_10m ?? row.win_rate_5m ?? row.win_rate_latest;
+    return row.win_rate_30m ?? null;
   }
 
   function metricText(row) {
     if (!row) return '-';
-    const rate = bestWinRate(row);
+    const rate = realWinRate(row);
     const samples = row.tracked ?? row.signals ?? 0;
-    if (rate === null || rate === undefined) return `樣本 ${samples}筆`;
-    return `勝率 ${rate}%｜樣本 ${samples}筆`;
+    if (rate === null || rate === undefined) return `30分尚無結算｜樣本 ${samples}筆`;
+    return `30分勝率 ${rate}%｜樣本 ${samples}筆`;
   }
 
   function statusText(row) {
@@ -75,8 +75,8 @@
   async function refreshValidationBoard() {
     const title = $('#validationTitle');
     if (!title) return;
-    setText('#validationTitle', '讀取績效中…');
-    setText('#validationSummary', '正在讀取正式模組績效紀錄。');
+    setText('#validationTitle', '讀取實測中…');
+    setText('#validationSummary', '正在讀取正式實測績效紀錄。');
 
     const [perfRes, replayRes] = await Promise.allSettled([
       getJson('/api/performance'),
@@ -86,19 +86,19 @@
     const perf = perfRes.status === 'fulfilled' ? perfRes.value : null;
     const replay = replayRes.status === 'fulfilled' ? replayRes.value : null;
 
-    const ai = moduleByName(perf, 'ai_pool');
+    const pool = moduleByName(perf, 'ai_pool');
     const breakout = moduleByName(perf, 'breakout');
     const fund = moduleByName(perf, 'fund_flow');
     const total = perf?.total_signals ?? 0;
     const tracked = perf?.tracked_results ?? 0;
-    const aiWin = win(bestWinRate(ai));
-    const fundWin = win(bestWinRate(fund));
-    const breakoutWin = win(bestWinRate(breakout));
+    const poolWin = win(realWinRate(pool));
+    const fundWin = win(realWinRate(fund));
+    const breakoutWin = win(realWinRate(breakout));
 
-    setText('#validationTitle', '訊號驗證中心');
-    setText('#validationSummary', `正式績效 ${total} 筆，已追蹤 ${tracked} 筆。AI ${aiWin}｜資金流 ${fundWin}｜突破 ${breakoutWin}。`);
+    setText('#validationTitle', '訊號實測中心');
+    setText('#validationSummary', `正式實測 ${total} 筆，已追蹤 ${tracked} 筆。選股池 ${poolWin}｜資金流 ${fundWin}｜突破 ${breakoutWin}。`);
 
-    renderModule(1, ai, MODULE_LABELS.ai_pool);
+    renderModule(1, pool, MODULE_LABELS.ai_pool);
     renderModule(2, breakout, MODULE_LABELS.breakout);
     renderModule(3, fund, MODULE_LABELS.fund_flow);
 
@@ -111,7 +111,7 @@
     setText('#test5Status', perfOk && replayOk ? '可監控' : '監控異常');
     setText('#test5Metric', '5分鐘排程');
     renderList('#test5List', [
-      `正式績效 API：${perfOk ? '正常' : '異常'}`,
+      `正式實測 API：${perfOk ? '正常' : '異常'}`,
       `Replay API：${replayOk ? '正常' : '異常'}`,
       `績效儲存：${perf?.github_enabled ? 'GitHub JSON' : '本機暫存'}`,
       `今日路徑：${perf?.github_path || '-'}`,
