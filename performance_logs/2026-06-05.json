@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-05T02:25:53.276478+00:00",
+  "updated_at": "2026-06-05T02:25:55.253505+00:00",
   "count": 63,
   "items": [
     {
@@ -148,7 +148,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:25:05.423047+00:00",
-      "updated_at": "2026-06-05T02:25:50.834565+00:00",
+      "updated_at": "2026-06-05T02:25:53.206158+00:00",
       "status": "open",
       "code": "2356",
       "name": "英業達",
@@ -166,7 +166,7 @@
         "max_gain": 0.128,
         "max_drawdown": 0.0
       },
-      "age_minutes": 0.76
+      "age_minutes": 0.8
     },
     {
       "key": "ai_pool:2618:70:38.0",
@@ -218,7 +218,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:25:05.423087+00:00",
-      "updated_at": "2026-06-05T02:25:05.423090+00:00",
+      "updated_at": "2026-06-05T02:25:54.498177+00:00",
       "status": "open",
       "code": "3231",
       "name": "緯創",
@@ -231,7 +231,12 @@
       "change_rate_at_signal": -1.7,
       "volume_ratio_at_signal": 0.41,
       "alert": null,
-      "results": {}
+      "results": {
+        "latest_pct": 0.0,
+        "max_gain": 0.0,
+        "max_drawdown": 0.0
+      },
+      "age_minutes": 0.82
     },
     {
       "key": "ai_pool:2454:53:4390.0",
@@ -598,7 +603,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:25:12.529268+00:00",
-      "updated_at": "2026-06-05T02:25:12.529271+00:00",
+      "updated_at": "2026-06-05T02:25:54.498192+00:00",
       "status": "open",
       "code": "3231",
       "name": "緯創",
@@ -611,7 +616,12 @@
       "change_rate_at_signal": -1.7,
       "volume_ratio_at_signal": 0.41,
       "alert": null,
-      "results": {}
+      "results": {
+        "latest_pct": 0.0,
+        "max_gain": 0.0,
+        "max_drawdown": 0.0
+      },
+      "age_minutes": 0.7
     },
     {
       "key": "ai_pool:2618:61:37.95",
@@ -643,7 +653,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:25:12.529293+00:00",
-      "updated_at": "2026-06-05T02:25:50.834588+00:00",
+      "updated_at": "2026-06-05T02:25:53.206176+00:00",
       "status": "open",
       "code": "2356",
       "name": "英業達",
@@ -661,7 +671,7 @@
         "max_gain": 0.128,
         "max_drawdown": 0.0
       },
-      "age_minutes": 0.64
+      "age_minutes": 0.68
     },
     {
       "key": "ai_pool:3711:57:582.0",
