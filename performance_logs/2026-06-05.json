@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-05T02:31:04.009388+00:00",
+  "updated_at": "2026-06-05T02:31:06.093544+00:00",
   "count": 92,
   "items": [
     {
@@ -278,25 +278,26 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:25:05.423133+00:00",
-      "updated_at": "2026-06-05T02:26:48.368050+00:00",
+      "updated_at": "2026-06-05T02:31:05.300748+00:00",
       "status": "open",
       "code": "6215",
       "name": "和椿",
       "sector": "PCB",
       "entry_price": 120.0,
-      "last_price": 120.0,
-      "best_price": 120.0,
+      "last_price": 120.5,
+      "best_price": 120.5,
       "worst_price": 120.0,
       "score": 53,
       "change_rate_at_signal": 2.56,
       "volume_ratio_at_signal": 1.07,
       "alert": null,
       "results": {
-        "latest_pct": 0.0,
-        "max_gain": 0.0,
-        "max_drawdown": 0.0
+        "latest_pct": 0.417,
+        "max_gain": 0.417,
+        "max_drawdown": 0.0,
+        "pct_5m": 0.417
       },
-      "age_minutes": 1.72
+      "age_minutes": 6.0
     },
     {
       "key": "ai_pool:5347:52:161.5",
@@ -657,25 +658,26 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:25:12.529259+00:00",
-      "updated_at": "2026-06-05T02:26:48.368072+00:00",
+      "updated_at": "2026-06-05T02:31:05.300771+00:00",
       "status": "open",
       "code": "6215",
       "name": "和椿",
       "sector": "PCB",
       "entry_price": 120.0,
-      "last_price": 120.0,
-      "best_price": 120.0,
+      "last_price": 120.5,
+      "best_price": 120.5,
       "worst_price": 120.0,
       "score": 71,
       "change_rate_at_signal": 2.56,
       "volume_ratio_at_signal": 1.07,
       "alert": null,
       "results": {
-        "latest_pct": 0.0,
-        "max_gain": 0.0,
-        "max_drawdown": 0.0
+        "latest_pct": 0.417,
+        "max_gain": 0.417,
+        "max_drawdown": 0.0,
+        "pct_5m": 0.417
       },
-      "age_minutes": 1.6
+      "age_minutes": 5.88
     },
     {
       "key": "ai_pool:3231:66:173.0",
@@ -1659,7 +1661,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:30:19.670194+00:00",
-      "updated_at": "2026-06-05T02:30:19.670197+00:00",
+      "updated_at": "2026-06-05T02:31:05.300787+00:00",
       "status": "open",
       "code": "6215",
       "name": "和椿",
@@ -1672,7 +1674,12 @@
       "change_rate_at_signal": 2.99,
       "volume_ratio_at_signal": 1.08,
       "alert": null,
-      "results": {}
+      "results": {
+        "latest_pct": 0.0,
+        "max_gain": 0.0,
+        "max_drawdown": 0.0
+      },
+      "age_minutes": 0.76
     },
     {
       "key": "ai_pool:3037:68:958.0",
