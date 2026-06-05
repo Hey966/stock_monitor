@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-05T02:46:34.829676+00:00",
+  "updated_at": "2026-06-05T02:46:36.900055+00:00",
   "count": 167,
   "items": [
     {
@@ -399,27 +399,27 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:25:05.423181+00:00",
-      "updated_at": "2026-06-05T02:41:40.881257+00:00",
+      "updated_at": "2026-06-05T02:46:36.354736+00:00",
       "status": "open",
       "code": "3711",
       "name": "日月光投控",
       "sector": "半導體",
       "entry_price": 581.0,
-      "last_price": 579.0,
+      "last_price": 578.0,
       "best_price": 582.0,
-      "worst_price": 579.0,
+      "worst_price": 578.0,
       "score": 48,
       "change_rate_at_signal": -2.02,
       "volume_ratio_at_signal": 0.56,
       "alert": null,
       "results": {
-        "latest_pct": -0.344,
+        "latest_pct": -0.516,
         "max_gain": 0.172,
-        "max_drawdown": -0.344,
+        "max_drawdown": -0.516,
         "pct_5m": 0.172,
         "pct_10m": 0.172
       },
-      "age_minutes": 16.59
+      "age_minutes": 21.52
     },
     {
       "key": "ai_pool:3037:46:949.0",
@@ -804,27 +804,27 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:25:12.529302+00:00",
-      "updated_at": "2026-06-05T02:41:40.881272+00:00",
+      "updated_at": "2026-06-05T02:46:36.354752+00:00",
       "status": "open",
       "code": "3711",
       "name": "日月光投控",
       "sector": "半導體",
       "entry_price": 582.0,
-      "last_price": 579.0,
+      "last_price": 578.0,
       "best_price": 582.0,
-      "worst_price": 579.0,
+      "worst_price": 578.0,
       "score": 57,
       "change_rate_at_signal": -1.85,
       "volume_ratio_at_signal": 0.56,
       "alert": null,
       "results": {
-        "latest_pct": -0.515,
+        "latest_pct": -0.687,
         "max_gain": 0.0,
-        "max_drawdown": -0.515,
+        "max_drawdown": -0.687,
         "pct_5m": 0.0,
         "pct_10m": 0.0
       },
-      "age_minutes": 16.47
+      "age_minutes": 21.4
     },
     {
       "key": "ai_pool:2324:52:41.2",
@@ -1965,27 +1965,27 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:30:19.670264+00:00",
-      "updated_at": "2026-06-05T02:41:40.881283+00:00",
+      "updated_at": "2026-06-05T02:46:36.354762+00:00",
       "status": "open",
       "code": "3711",
       "name": "日月光投控",
       "sector": "半導體",
       "entry_price": 583.0,
-      "last_price": 579.0,
+      "last_price": 578.0,
       "best_price": 583.0,
-      "worst_price": 579.0,
+      "worst_price": 578.0,
       "score": 58,
       "change_rate_at_signal": -1.68,
       "volume_ratio_at_signal": 0.57,
       "alert": null,
       "results": {
-        "latest_pct": -0.686,
+        "latest_pct": -0.858,
         "max_gain": 0.0,
-        "max_drawdown": -0.686,
+        "max_drawdown": -0.858,
         "pct_5m": -0.172,
         "pct_10m": -0.686
       },
-      "age_minutes": 11.35
+      "age_minutes": 16.28
     },
     {
       "key": "ai_pool:5347:54:162.0",
@@ -2613,26 +2613,27 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:35:12.437129+00:00",
-      "updated_at": "2026-06-05T02:41:40.881291+00:00",
+      "updated_at": "2026-06-05T02:46:36.354769+00:00",
       "status": "open",
       "code": "3711",
       "name": "日月光投控",
       "sector": "半導體",
       "entry_price": 583.0,
-      "last_price": 579.0,
+      "last_price": 578.0,
       "best_price": 583.0,
-      "worst_price": 579.0,
+      "worst_price": 578.0,
       "score": 66,
       "change_rate_at_signal": -1.68,
       "volume_ratio_at_signal": 0.58,
       "alert": null,
       "results": {
-        "latest_pct": -0.686,
+        "latest_pct": -0.858,
         "max_gain": 0.0,
-        "max_drawdown": -0.686,
-        "pct_5m": -0.686
+        "max_drawdown": -0.858,
+        "pct_5m": -0.686,
+        "pct_10m": -0.858
       },
-      "age_minutes": 6.47
+      "age_minutes": 11.4
     },
     {
       "key": "ai_pool:3661:65:4390.0",
@@ -3636,25 +3637,26 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:40:27.116611+00:00",
-      "updated_at": "2026-06-05T02:41:40.881301+00:00",
+      "updated_at": "2026-06-05T02:46:36.354777+00:00",
       "status": "open",
       "code": "3711",
       "name": "日月光投控",
       "sector": "半導體",
       "entry_price": 580.0,
-      "last_price": 579.0,
+      "last_price": 578.0,
       "best_price": 580.0,
-      "worst_price": 579.0,
+      "worst_price": 578.0,
       "score": 26,
       "change_rate_at_signal": -2.19,
       "volume_ratio_at_signal": 0.59,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": -0.172,
+        "latest_pct": -0.345,
         "max_gain": 0.0,
-        "max_drawdown": -0.172
+        "max_drawdown": -0.345,
+        "pct_5m": -0.345
       },
-      "age_minutes": 1.23
+      "age_minutes": 6.15
     },
     {
       "key": "fund_flow:2308:35:2345.0",
@@ -4107,7 +4109,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:45:15.268741+00:00",
-      "updated_at": "2026-06-05T02:45:15.268743+00:00",
+      "updated_at": "2026-06-05T02:46:36.354783+00:00",
       "status": "open",
       "code": "3711",
       "name": "日月光投控",
@@ -4120,7 +4122,12 @@
       "change_rate_at_signal": -2.52,
       "volume_ratio_at_signal": 0.6,
       "alert": null,
-      "results": {}
+      "results": {
+        "latest_pct": 0.0,
+        "max_gain": 0.0,
+        "max_drawdown": 0.0
+      },
+      "age_minutes": 1.35
     },
     {
       "key": "ai_pool:2308:25:2350.0",
@@ -4152,20 +4159,25 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:45:25.851534+00:00",
-      "updated_at": "2026-06-05T02:45:25.851549+00:00",
+      "updated_at": "2026-06-05T02:46:36.354788+00:00",
       "status": "open",
       "code": "3711",
       "name": "日月光投控",
       "sector": "半導體",
       "entry_price": 579.0,
-      "last_price": 579.0,
+      "last_price": 578.0,
       "best_price": 579.0,
-      "worst_price": 579.0,
+      "worst_price": 578.0,
       "score": 35,
       "change_rate_at_signal": -2.36,
       "volume_ratio_at_signal": 0.6,
       "alert": "資金退潮警報",
-      "results": {}
+      "results": {
+        "latest_pct": -0.173,
+        "max_gain": 0.0,
+        "max_drawdown": -0.173
+      },
+      "age_minutes": 1.18
     },
     {
       "key": "fund_flow:2308:32:2350.0",
