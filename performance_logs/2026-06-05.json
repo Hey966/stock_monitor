@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-05T03:31:18.861260+00:00",
+  "updated_at": "2026-06-05T03:31:21.274257+00:00",
   "count": 354,
   "items": [
     {
@@ -216,7 +216,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:25:05.423077+00:00",
-      "updated_at": "2026-06-05T03:26:12.446969+00:00",
+      "updated_at": "2026-06-05T03:31:20.690992+00:00",
       "status": "open",
       "code": "2368",
       "name": "金像電",
@@ -237,7 +237,7 @@
         "pct_10m": 1.128,
         "pct_30m": 0.0
       },
-      "age_minutes": 61.12
+      "age_minutes": 66.25
     },
     {
       "key": "ai_pool:3231:58:173.0",
@@ -916,7 +916,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:25:12.529344+00:00",
-      "updated_at": "2026-06-05T03:26:12.446992+00:00",
+      "updated_at": "2026-06-05T03:31:20.691015+00:00",
       "status": "open",
       "code": "2368",
       "name": "金像電",
@@ -937,7 +937,7 @@
         "pct_10m": 0.749,
         "pct_30m": -0.375
       },
-      "age_minutes": 61.0
+      "age_minutes": 66.14
     },
     {
       "key": "ai_pool:8046:48:861.0",
@@ -1924,7 +1924,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:30:19.670225+00:00",
-      "updated_at": "2026-06-05T03:26:12.447006+00:00",
+      "updated_at": "2026-06-05T03:31:20.691028+00:00",
       "status": "open",
       "code": "2368",
       "name": "金像電",
@@ -1945,7 +1945,7 @@
         "pct_10m": -0.743,
         "pct_30m": -0.743
       },
-      "age_minutes": 55.88
+      "age_minutes": 61.02
     },
     {
       "key": "ai_pool:2454:63:4390.0",
@@ -2680,7 +2680,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:35:12.437100+00:00",
-      "updated_at": "2026-06-05T03:26:12.447017+00:00",
+      "updated_at": "2026-06-05T03:31:20.691038+00:00",
       "status": "open",
       "code": "2368",
       "name": "金像電",
@@ -2701,7 +2701,7 @@
         "pct_10m": -1.111,
         "pct_30m": -1.111
       },
-      "age_minutes": 51.0
+      "age_minutes": 56.14
     },
     {
       "key": "ai_pool:3711:66:583.0",
@@ -3324,7 +3324,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:40:15.726402+00:00",
-      "updated_at": "2026-06-05T03:26:12.447028+00:00",
+      "updated_at": "2026-06-05T03:31:20.691048+00:00",
       "status": "open",
       "code": "2368",
       "name": "金像電",
@@ -3345,7 +3345,7 @@
         "pct_10m": -0.746,
         "pct_30m": 0.0
       },
-      "age_minutes": 45.95
+      "age_minutes": 51.08
     },
     {
       "key": "ai_pool:3443:70:4415.0",
@@ -3744,7 +3744,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:40:27.116568+00:00",
-      "updated_at": "2026-06-05T03:26:12.447038+00:00",
+      "updated_at": "2026-06-05T03:31:20.691056+00:00",
       "status": "open",
       "code": "2368",
       "name": "金像電",
@@ -3765,7 +3765,7 @@
         "pct_10m": -0.746,
         "pct_30m": 0.0
       },
-      "age_minutes": 45.76
+      "age_minutes": 50.89
     },
     {
       "key": "fund_flow:2454:31:4355.0",
@@ -4808,7 +4808,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:50:15.682079+00:00",
-      "updated_at": "2026-06-05T03:26:12.447050+00:00",
+      "updated_at": "2026-06-05T03:31:20.691066+00:00",
       "status": "open",
       "code": "2368",
       "name": "金像電",
@@ -4829,7 +4829,7 @@
         "pct_10m": 0.376,
         "pct_30m": 0.376
       },
-      "age_minutes": 35.95
+      "age_minutes": 41.08
     },
     {
       "key": "ai_pool:3661:63:4360.0",
@@ -6179,7 +6179,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:00:25.046041+00:00",
-      "updated_at": "2026-06-05T03:26:12.447064+00:00",
+      "updated_at": "2026-06-05T03:31:20.691078+00:00",
       "status": "open",
       "code": "2368",
       "name": "金像電",
@@ -6197,9 +6197,10 @@
         "max_gain": 0.375,
         "max_drawdown": -1.124,
         "pct_5m": 0.0,
-        "pct_10m": 0.375
+        "pct_10m": 0.375,
+        "pct_30m": -1.124
       },
-      "age_minutes": 25.79
+      "age_minutes": 30.93
     },
     {
       "key": "ai_pool:2454:68:4370.0",
@@ -6751,7 +6752,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:05:11.974167+00:00",
-      "updated_at": "2026-06-05T03:26:12.447075+00:00",
+      "updated_at": "2026-06-05T03:31:20.691087+00:00",
       "status": "open",
       "code": "2368",
       "name": "金像電",
@@ -6771,7 +6772,7 @@
         "pct_5m": 0.375,
         "pct_10m": 0.0
       },
-      "age_minutes": 21.01
+      "age_minutes": 26.15
     },
     {
       "key": "ai_pool:8046:59:865.0",
@@ -8704,7 +8705,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:25:11.681335+00:00",
-      "updated_at": "2026-06-05T03:26:12.447091+00:00",
+      "updated_at": "2026-06-05T03:31:20.691100+00:00",
       "status": "open",
       "code": "2368",
       "name": "金像電",
@@ -8720,9 +8721,10 @@
       "results": {
         "latest_pct": -0.377,
         "max_gain": 0.0,
-        "max_drawdown": -0.377
+        "max_drawdown": -0.377,
+        "pct_5m": -0.377
       },
-      "age_minutes": 1.01
+      "age_minutes": 6.15
     },
     {
       "key": "ai_pool:3661:48:4310.0",
@@ -9299,7 +9301,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:30:18.909616+00:00",
-      "updated_at": "2026-06-05T03:30:18.909618+00:00",
+      "updated_at": "2026-06-05T03:31:20.691126+00:00",
       "status": "open",
       "code": "2368",
       "name": "金像電",
@@ -9312,7 +9314,12 @@
       "change_rate_at_signal": -2.22,
       "volume_ratio_at_signal": 0.79,
       "alert": null,
-      "results": {}
+      "results": {
+        "latest_pct": 0.0,
+        "max_gain": 0.0,
+        "max_drawdown": 0.0
+      },
+      "age_minutes": 1.03
     },
     {
       "key": "ai_pool:2454:43:4305.0",
