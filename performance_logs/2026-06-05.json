@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-05T02:41:46.967229+00:00",
+  "updated_at": "2026-06-05T02:41:49.520866+00:00",
   "count": 142,
   "items": [
     {
@@ -561,27 +561,27 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:25:05.423260+00:00",
-      "updated_at": "2026-06-05T02:36:39.397753+00:00",
+      "updated_at": "2026-06-05T02:41:48.496705+00:00",
       "status": "open",
       "code": "3324",
       "name": "雙鴻",
       "sector": "AI散熱",
       "entry_price": 1125.0,
-      "last_price": 1125.0,
+      "last_price": 1115.0,
       "best_price": 1125.0,
-      "worst_price": 1125.0,
+      "worst_price": 1115.0,
       "score": 32,
       "change_rate_at_signal": -5.06,
       "volume_ratio_at_signal": 0.39,
       "alert": null,
       "results": {
-        "latest_pct": 0.0,
+        "latest_pct": -0.889,
         "max_gain": 0.0,
-        "max_drawdown": 0.0,
+        "max_drawdown": -0.889,
         "pct_5m": 0.0,
         "pct_10m": 0.0
       },
-      "age_minutes": 11.57
+      "age_minutes": 16.72
     },
     {
       "key": "ai_pool:2379:94:643.0",
@@ -2262,26 +2262,27 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:30:30.008530+00:00",
-      "updated_at": "2026-06-05T02:36:39.397773+00:00",
+      "updated_at": "2026-06-05T02:41:48.496735+00:00",
       "status": "open",
       "code": "3324",
       "name": "雙鴻",
       "sector": "AI散熱",
       "entry_price": 1130.0,
-      "last_price": 1125.0,
+      "last_price": 1115.0,
       "best_price": 1130.0,
-      "worst_price": 1125.0,
+      "worst_price": 1115.0,
       "score": 31,
       "change_rate_at_signal": -4.64,
       "volume_ratio_at_signal": 0.39,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": -0.442,
+        "latest_pct": -1.327,
         "max_gain": 0.0,
-        "max_drawdown": -0.442,
-        "pct_5m": -0.442
+        "max_drawdown": -1.327,
+        "pct_5m": -0.442,
+        "pct_10m": -1.327
       },
-      "age_minutes": 6.16
+      "age_minutes": 11.31
     },
     {
       "key": "fund_flow:2409:32:27.8",
