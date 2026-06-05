@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-05T02:56:15.291354+00:00",
+  "updated_at": "2026-06-05T02:56:17.668683+00:00",
   "count": 217,
   "items": [
     {
@@ -463,13 +463,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:25:05.423209+00:00",
-      "updated_at": "2026-06-05T02:51:12.321242+00:00",
+      "updated_at": "2026-06-05T02:56:17.095459+00:00",
       "status": "open",
       "code": "2324",
       "name": "仁寶",
       "sector": "電腦週邊",
       "entry_price": 41.15,
-      "last_price": 41.3,
+      "last_price": 41.5,
       "best_price": 41.7,
       "worst_price": 41.15,
       "score": 41,
@@ -477,13 +477,14 @@
       "volume_ratio_at_signal": 0.47,
       "alert": null,
       "results": {
-        "latest_pct": 0.365,
+        "latest_pct": 0.851,
         "max_gain": 1.337,
         "max_drawdown": 0.0,
         "pct_5m": 0.0,
-        "pct_10m": 0.486
+        "pct_10m": 0.486,
+        "pct_30m": 0.851
       },
-      "age_minutes": 26.11
+      "age_minutes": 31.19
     },
     {
       "key": "ai_pool:3481:40:52.9",
@@ -848,13 +849,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:25:12.529325+00:00",
-      "updated_at": "2026-06-05T02:51:12.321259+00:00",
+      "updated_at": "2026-06-05T02:56:17.095483+00:00",
       "status": "open",
       "code": "2324",
       "name": "仁寶",
       "sector": "電腦週邊",
       "entry_price": 41.2,
-      "last_price": 41.3,
+      "last_price": 41.5,
       "best_price": 41.7,
       "worst_price": 41.15,
       "score": 52,
@@ -862,13 +863,14 @@
       "volume_ratio_at_signal": 0.47,
       "alert": null,
       "results": {
-        "latest_pct": 0.243,
+        "latest_pct": 0.728,
         "max_gain": 1.214,
         "max_drawdown": -0.121,
         "pct_5m": -0.121,
-        "pct_10m": 0.364
+        "pct_10m": 0.364,
+        "pct_30m": 0.728
       },
-      "age_minutes": 26.0
+      "age_minutes": 31.08
     },
     {
       "key": "ai_pool:2330:51:2380.0",
@@ -1418,13 +1420,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:25:16.826520+00:00",
-      "updated_at": "2026-06-05T02:51:12.321266+00:00",
+      "updated_at": "2026-06-05T02:56:17.095497+00:00",
       "status": "open",
       "code": "2324",
       "name": "仁寶",
       "sector": "電腦週邊",
       "entry_price": 41.25,
-      "last_price": 41.3,
+      "last_price": 41.5,
       "best_price": 41.7,
       "worst_price": 41.15,
       "score": 35,
@@ -1432,13 +1434,14 @@
       "volume_ratio_at_signal": 0.47,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": 0.121,
+        "latest_pct": 0.606,
         "max_gain": 1.091,
         "max_drawdown": -0.242,
         "pct_5m": -0.242,
-        "pct_10m": 0.242
+        "pct_10m": 0.242,
+        "pct_30m": 0.606
       },
-      "age_minutes": 25.92
+      "age_minutes": 31.0
     },
     {
       "key": "fund_flow:2409:34:27.8",
@@ -1931,13 +1934,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:30:19.670246+00:00",
-      "updated_at": "2026-06-05T02:51:12.321274+00:00",
+      "updated_at": "2026-06-05T02:56:17.095509+00:00",
       "status": "open",
       "code": "2324",
       "name": "仁寶",
       "sector": "電腦週邊",
       "entry_price": 41.25,
-      "last_price": 41.3,
+      "last_price": 41.5,
       "best_price": 41.7,
       "worst_price": 41.15,
       "score": 60,
@@ -1945,13 +1948,13 @@
       "volume_ratio_at_signal": 0.48,
       "alert": null,
       "results": {
-        "latest_pct": 0.121,
+        "latest_pct": 0.606,
         "max_gain": 1.091,
         "max_drawdown": -0.242,
         "pct_5m": 0.242,
         "pct_10m": 0.121
       },
-      "age_minutes": 20.88
+      "age_minutes": 25.96
     },
     {
       "key": "ai_pool:8046:59:868.0",
@@ -2849,13 +2852,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:35:12.437225+00:00",
-      "updated_at": "2026-06-05T02:51:12.321282+00:00",
+      "updated_at": "2026-06-05T02:56:17.095525+00:00",
       "status": "open",
       "code": "2324",
       "name": "仁寶",
       "sector": "電腦週邊",
       "entry_price": 41.3,
-      "last_price": 41.3,
+      "last_price": 41.5,
       "best_price": 41.7,
       "worst_price": 41.3,
       "score": 43,
@@ -2863,13 +2866,13 @@
       "volume_ratio_at_signal": 0.5,
       "alert": null,
       "results": {
-        "latest_pct": 0.0,
+        "latest_pct": 0.484,
         "max_gain": 0.969,
         "max_drawdown": 0.0,
         "pct_5m": 0.0,
         "pct_10m": 0.969
       },
-      "age_minutes": 16.0
+      "age_minutes": 21.08
     },
     {
       "key": "ai_pool:2382:40:390.5",
@@ -4036,13 +4039,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:45:15.268652+00:00",
-      "updated_at": "2026-06-05T02:51:12.321291+00:00",
+      "updated_at": "2026-06-05T02:56:17.095545+00:00",
       "status": "open",
       "code": "2324",
       "name": "仁寶",
       "sector": "電腦週邊",
       "entry_price": 41.6,
-      "last_price": 41.3,
+      "last_price": 41.5,
       "best_price": 41.7,
       "worst_price": 41.3,
       "score": 57,
@@ -4050,12 +4053,13 @@
       "volume_ratio_at_signal": 0.52,
       "alert": null,
       "results": {
-        "latest_pct": -0.721,
+        "latest_pct": -0.24,
         "max_gain": 0.24,
         "max_drawdown": -0.721,
-        "pct_5m": -0.721
+        "pct_5m": -0.721,
+        "pct_10m": -0.24
       },
-      "age_minutes": 5.95
+      "age_minutes": 11.03
     },
     {
       "key": "ai_pool:6215:50:119.0",
@@ -4713,25 +4717,26 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:50:15.682100+00:00",
-      "updated_at": "2026-06-05T02:51:12.321298+00:00",
+      "updated_at": "2026-06-05T02:56:17.095560+00:00",
       "status": "open",
       "code": "2324",
       "name": "仁寶",
       "sector": "電腦週邊",
       "entry_price": 41.35,
-      "last_price": 41.3,
-      "best_price": 41.35,
+      "last_price": 41.5,
+      "best_price": 41.5,
       "worst_price": 41.3,
       "score": 54,
       "change_rate_at_signal": -2.36,
       "volume_ratio_at_signal": 0.52,
       "alert": null,
       "results": {
-        "latest_pct": -0.121,
-        "max_gain": 0.0,
-        "max_drawdown": -0.121
+        "latest_pct": 0.363,
+        "max_gain": 0.363,
+        "max_drawdown": -0.121,
+        "pct_5m": 0.363
       },
-      "age_minutes": 0.94
+      "age_minutes": 6.02
     },
     {
       "key": "ai_pool:5347:43:160.5",
@@ -5337,20 +5342,25 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:55:13.518219+00:00",
-      "updated_at": "2026-06-05T02:55:13.518221+00:00",
+      "updated_at": "2026-06-05T02:56:17.095573+00:00",
       "status": "open",
       "code": "2324",
       "name": "仁寶",
       "sector": "電腦週邊",
       "entry_price": 41.55,
-      "last_price": 41.55,
+      "last_price": 41.5,
       "best_price": 41.55,
-      "worst_price": 41.55,
+      "worst_price": 41.5,
       "score": 57,
       "change_rate_at_signal": -1.88,
       "volume_ratio_at_signal": 0.53,
       "alert": null,
-      "results": {}
+      "results": {
+        "latest_pct": -0.12,
+        "max_gain": 0.0,
+        "max_drawdown": -0.12
+      },
+      "age_minutes": 1.06
     },
     {
       "key": "ai_pool:3231:56:172.5",
