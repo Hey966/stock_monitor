@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-05T02:26:01.232128+00:00",
+  "updated_at": "2026-06-05T02:26:03.227103+00:00",
   "count": 63,
   "items": [
     {
@@ -373,20 +373,25 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T02:25:05.423192+00:00",
-      "updated_at": "2026-06-05T02:25:05.423195+00:00",
+      "updated_at": "2026-06-05T02:26:02.467385+00:00",
       "status": "open",
       "code": "3037",
       "name": "欣興",
       "sector": "半導體",
       "entry_price": 949.0,
-      "last_price": 949.0,
-      "best_price": 949.0,
+      "last_price": 952.0,
+      "best_price": 952.0,
       "worst_price": 949.0,
       "score": 46,
       "change_rate_at_signal": -2.26,
       "volume_ratio_at_signal": 1.07,
       "alert": null,
-      "results": {}
+      "results": {
+        "latest_pct": 0.316,
+        "max_gain": 0.316,
+        "max_drawdown": 0.0
+      },
+      "age_minutes": 0.95
     },
     {
       "key": "ai_pool:2324:41:41.15",
