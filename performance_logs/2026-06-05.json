@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-05T06:52:20.991493+00:00",
+  "updated_at": "2026-06-05T06:52:25.495676+00:00",
   "count": 930,
   "items": [
     {
@@ -5602,8 +5602,8 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:50:26.323833+00:00",
-      "updated_at": "2026-06-05T06:47:29.935911+00:00",
-      "status": "open",
+      "updated_at": "2026-06-05T06:52:23.733639+00:00",
+      "status": "closed",
       "code": "1605",
       "name": "華新",
       "sector": "電線電纜",
@@ -5621,9 +5621,10 @@
         "max_drawdown": 0.0,
         "pct_5m": 0.896,
         "pct_10m": 0.768,
-        "pct_30m": 1.536
+        "pct_30m": 1.536,
+        "pct_close_proxy": 1.28
       },
-      "age_minutes": 237.06
+      "age_minutes": 241.96
     },
     {
       "key": "ai_pool:2615:100:86.1",
@@ -6106,7 +6107,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:55:23.828247+00:00",
-      "updated_at": "2026-06-05T06:47:29.935921+00:00",
+      "updated_at": "2026-06-05T06:52:23.733659+00:00",
       "status": "open",
       "code": "1605",
       "name": "華新",
@@ -6127,7 +6128,7 @@
         "pct_10m": 0.0,
         "pct_30m": 0.253
       },
-      "age_minutes": 232.1
+      "age_minutes": 237.0
     },
     {
       "key": "fund_flow:3711:28:579.0",
@@ -6834,7 +6835,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:00:36.494230+00:00",
-      "updated_at": "2026-06-05T06:47:29.935929+00:00",
+      "updated_at": "2026-06-05T06:52:23.733672+00:00",
       "status": "open",
       "code": "1605",
       "name": "華新",
@@ -6855,7 +6856,7 @@
         "pct_10m": 0.127,
         "pct_30m": 0.127
       },
-      "age_minutes": 226.89
+      "age_minutes": 231.79
     },
     {
       "key": "fund_flow:1609:15:39.55",
@@ -7338,7 +7339,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:05:22.049935+00:00",
-      "updated_at": "2026-06-05T06:47:29.935936+00:00",
+      "updated_at": "2026-06-05T06:52:23.733685+00:00",
       "status": "open",
       "code": "1605",
       "name": "華新",
@@ -7359,7 +7360,7 @@
         "pct_10m": 0.635,
         "pct_30m": -0.127
       },
-      "age_minutes": 222.13
+      "age_minutes": 227.03
     },
     {
       "key": "ai_pool:2379:86:653.0",
@@ -8150,7 +8151,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:15:14.980073+00:00",
-      "updated_at": "2026-06-05T06:47:29.935944+00:00",
+      "updated_at": "2026-06-05T06:52:23.733701+00:00",
       "status": "open",
       "code": "1605",
       "name": "華新",
@@ -8171,7 +8172,7 @@
         "pct_10m": 0.0,
         "pct_30m": -1.011
       },
-      "age_minutes": 212.25
+      "age_minutes": 217.15
     },
     {
       "key": "ai_pool:2382:24:392.0",
@@ -8682,7 +8683,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T03:20:15.486141+00:00",
-      "updated_at": "2026-06-05T06:47:29.935952+00:00",
+      "updated_at": "2026-06-05T06:52:23.733715+00:00",
       "status": "open",
       "code": "1605",
       "name": "華新",
@@ -8703,7 +8704,7 @@
         "pct_10m": -0.505,
         "pct_30m": -1.263
       },
-      "age_minutes": 207.24
+      "age_minutes": 212.14
     },
     {
       "key": "fund_flow:3017:32:2620.0",
@@ -9270,7 +9271,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:25:22.049931+00:00",
-      "updated_at": "2026-06-05T06:47:29.935959+00:00",
+      "updated_at": "2026-06-05T06:52:23.733729+00:00",
       "status": "open",
       "code": "1605",
       "name": "華新",
@@ -9291,7 +9292,7 @@
         "pct_10m": -0.506,
         "pct_30m": -1.138
       },
-      "age_minutes": 202.13
+      "age_minutes": 207.03
     },
     {
       "key": "fund_flow:2308:31:2330.0",
@@ -10026,7 +10027,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:30:29.753436+00:00",
-      "updated_at": "2026-06-05T06:47:29.935966+00:00",
+      "updated_at": "2026-06-05T06:52:23.733743+00:00",
       "status": "open",
       "code": "1605",
       "name": "華新",
@@ -10047,7 +10048,7 @@
         "pct_10m": -0.381,
         "pct_30m": -0.761
       },
-      "age_minutes": 197.0
+      "age_minutes": 201.9
     },
     {
       "key": "fund_flow:1609:15:39.4",
@@ -10642,7 +10643,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:35:22.792866+00:00",
-      "updated_at": "2026-06-05T06:47:29.935972+00:00",
+      "updated_at": "2026-06-05T06:52:23.733755+00:00",
       "status": "open",
       "code": "1605",
       "name": "華新",
@@ -10663,7 +10664,7 @@
         "pct_10m": -0.382,
         "pct_30m": -0.382
       },
-      "age_minutes": 192.12
+      "age_minutes": 197.02
     },
     {
       "key": "fund_flow:2409:33:27.35",
@@ -11482,7 +11483,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:40:30.328095+00:00",
-      "updated_at": "2026-06-05T06:47:29.935979+00:00",
+      "updated_at": "2026-06-05T06:52:23.733770+00:00",
       "status": "open",
       "code": "1605",
       "name": "華新",
@@ -11503,7 +11504,7 @@
         "pct_10m": -0.382,
         "pct_30m": -0.255
       },
-      "age_minutes": 186.99
+      "age_minutes": 191.89
     },
     {
       "key": "fund_flow:2409:19:27.2",
@@ -12126,7 +12127,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:45:24.850263+00:00",
-      "updated_at": "2026-06-05T06:47:29.935985+00:00",
+      "updated_at": "2026-06-05T06:52:23.733783+00:00",
       "status": "open",
       "code": "1605",
       "name": "華新",
@@ -12147,7 +12148,7 @@
         "pct_10m": -0.255,
         "pct_30m": 0.0
       },
-      "age_minutes": 182.08
+      "age_minutes": 186.98
     },
     {
       "key": "fund_flow:1609:22:39.3",
@@ -12798,7 +12799,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:50:26.956301+00:00",
-      "updated_at": "2026-06-05T06:47:29.935991+00:00",
+      "updated_at": "2026-06-05T06:52:23.733797+00:00",
       "status": "open",
       "code": "1605",
       "name": "華新",
@@ -12819,7 +12820,7 @@
         "pct_10m": 0.0,
         "pct_30m": 0.128
       },
-      "age_minutes": 177.05
+      "age_minutes": 181.95
     },
     {
       "key": "fund_flow:5347:29:160.0",
@@ -13694,7 +13695,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T03:55:23.123621+00:00",
-      "updated_at": "2026-06-05T06:47:29.935998+00:00",
+      "updated_at": "2026-06-05T06:52:23.733810+00:00",
       "status": "open",
       "code": "1605",
       "name": "華新",
@@ -13715,7 +13716,7 @@
         "pct_10m": 0.256,
         "pct_30m": 0.64
       },
-      "age_minutes": 172.11
+      "age_minutes": 177.01
     },
     {
       "key": "ai_pool:2379:96:648.0",
@@ -14394,7 +14395,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T04:00:36.205838+00:00",
-      "updated_at": "2026-06-05T06:47:29.936006+00:00",
+      "updated_at": "2026-06-05T06:52:23.733824+00:00",
       "status": "open",
       "code": "1605",
       "name": "華新",
@@ -14415,7 +14416,7 @@
         "pct_10m": 0.0,
         "pct_30m": 0.0
       },
-      "age_minutes": 166.9
+      "age_minutes": 171.79
     },
     {
       "key": "fund_flow:1609:21:39.15",
@@ -14954,7 +14955,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T04:01:03.697292+00:00",
-      "updated_at": "2026-06-05T06:47:29.936012+00:00",
+      "updated_at": "2026-06-05T06:52:23.733838+00:00",
       "status": "open",
       "code": "1605",
       "name": "華新",
@@ -14975,7 +14976,7 @@
         "pct_10m": 0.128,
         "pct_30m": 0.128
       },
-      "age_minutes": 166.44
+      "age_minutes": 171.33
     },
     {
       "key": "fund_flow:3231:21:171.0",
@@ -15710,7 +15711,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T04:01:59.401314+00:00",
-      "updated_at": "2026-06-05T06:47:29.936019+00:00",
+      "updated_at": "2026-06-05T06:52:23.733850+00:00",
       "status": "open",
       "code": "1605",
       "name": "華新",
@@ -15731,7 +15732,7 @@
         "pct_10m": 0.128,
         "pct_30m": 0.128
       },
-      "age_minutes": 165.51
+      "age_minutes": 170.41
     },
     {
       "key": "fund_flow:1609:18:39.15",
@@ -16774,7 +16775,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T04:05:29.743322+00:00",
-      "updated_at": "2026-06-05T06:47:29.936026+00:00",
+      "updated_at": "2026-06-05T06:52:23.733863+00:00",
       "status": "open",
       "code": "1605",
       "name": "華新",
@@ -16795,7 +16796,7 @@
         "pct_10m": 0.128,
         "pct_30m": 0.128
       },
-      "age_minutes": 162.0
+      "age_minutes": 166.9
     },
     {
       "key": "ai_pool:2615:100:86.0",
@@ -17138,7 +17139,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T04:06:16.935185+00:00",
-      "updated_at": "2026-06-05T06:47:29.936032+00:00",
+      "updated_at": "2026-06-05T06:52:23.733874+00:00",
       "status": "open",
       "code": "1605",
       "name": "華新",
@@ -17159,7 +17160,7 @@
         "pct_10m": 0.0,
         "pct_30m": 0.0
       },
-      "age_minutes": 161.22
+      "age_minutes": 166.11
     },
     {
       "key": "fund_flow:1609:26:39.15",
@@ -17866,7 +17867,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T04:10:27.039965+00:00",
-      "updated_at": "2026-06-05T06:47:29.936038+00:00",
+      "updated_at": "2026-06-05T06:52:23.733886+00:00",
       "status": "open",
       "code": "1605",
       "name": "華新",
@@ -17887,7 +17888,7 @@
         "pct_10m": -0.128,
         "pct_30m": 0.128
       },
-      "age_minutes": 157.05
+      "age_minutes": 161.94
     },
     {
       "key": "fund_flow:1609:20:39.1",
@@ -18314,7 +18315,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T04:15:24.916569+00:00",
-      "updated_at": "2026-06-05T06:47:29.936044+00:00",
+      "updated_at": "2026-06-05T06:52:23.733896+00:00",
       "status": "open",
       "code": "1605",
       "name": "華新",
@@ -18335,7 +18336,7 @@
         "pct_10m": 0.255,
         "pct_30m": 0.128
       },
-      "age_minutes": 152.08
+      "age_minutes": 156.98
     },
     {
       "key": "fund_flow:1609:6:39.15",
@@ -18762,7 +18763,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T04:20:26.594646+00:00",
-      "updated_at": "2026-06-05T06:47:29.936050+00:00",
+      "updated_at": "2026-06-05T06:52:23.733908+00:00",
       "status": "open",
       "code": "1605",
       "name": "華新",
@@ -18783,7 +18784,7 @@
         "pct_10m": -0.128,
         "pct_30m": 0.51
       },
-      "age_minutes": 147.06
+      "age_minutes": 151.95
     },
     {
       "key": "fund_flow:2308:21:2300.0",
@@ -19378,7 +19379,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T04:25:24.727234+00:00",
-      "updated_at": "2026-06-05T06:47:29.936056+00:00",
+      "updated_at": "2026-06-05T06:52:23.733921+00:00",
       "status": "open",
       "code": "1605",
       "name": "華新",
@@ -19399,7 +19400,7 @@
         "pct_10m": -0.254,
         "pct_30m": 0.127
       },
-      "age_minutes": 142.09
+      "age_minutes": 146.98
     },
     {
       "key": "fund_flow:1609:19:39.25",
@@ -19994,7 +19995,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T04:30:30.698309+00:00",
-      "updated_at": "2026-06-05T06:47:29.936062+00:00",
+      "updated_at": "2026-06-05T06:52:23.733933+00:00",
       "status": "open",
       "code": "1605",
       "name": "華新",
@@ -20015,7 +20016,7 @@
         "pct_10m": 0.128,
         "pct_30m": 0.255
       },
-      "age_minutes": 136.99
+      "age_minutes": 141.88
     },
     {
       "key": "ai_pool:2379:71:638.0",
@@ -20330,7 +20331,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T04:35:23.553267+00:00",
-      "updated_at": "2026-06-05T06:47:29.936068+00:00",
+      "updated_at": "2026-06-05T06:52:23.733944+00:00",
       "status": "open",
       "code": "1605",
       "name": "華新",
@@ -20351,7 +20352,7 @@
         "pct_10m": 0.128,
         "pct_30m": 0.383
       },
-      "age_minutes": 132.11
+      "age_minutes": 137.0
     },
     {
       "key": "fund_flow:2356:24:76.3",
@@ -20890,7 +20891,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T04:40:26.770248+00:00",
-      "updated_at": "2026-06-05T06:47:29.936074+00:00",
+      "updated_at": "2026-06-05T06:52:23.733955+00:00",
       "status": "open",
       "code": "1605",
       "name": "華新",
@@ -20911,7 +20912,7 @@
         "pct_10m": 0.382,
         "pct_30m": 0.255
       },
-      "age_minutes": 127.05
+      "age_minutes": 131.95
     },
     {
       "key": "fund_flow:1609:4:39.25",
@@ -21450,7 +21451,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T04:45:24.827170+00:00",
-      "updated_at": "2026-06-05T06:47:29.936079+00:00",
+      "updated_at": "2026-06-05T06:52:23.733968+00:00",
       "status": "open",
       "code": "1605",
       "name": "華新",
@@ -21471,7 +21472,7 @@
         "pct_10m": 0.255,
         "pct_30m": 0.382
       },
-      "age_minutes": 122.09
+      "age_minutes": 126.98
     },
     {
       "key": "fund_flow:1609:10:39.15",
@@ -21982,7 +21983,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T04:50:26.162589+00:00",
-      "updated_at": "2026-06-05T06:47:29.936085+00:00",
+      "updated_at": "2026-06-05T06:52:23.733980+00:00",
       "status": "open",
       "code": "1605",
       "name": "華新",
@@ -22003,7 +22004,7 @@
         "pct_10m": -0.127,
         "pct_30m": 0.635
       },
-      "age_minutes": 117.06
+      "age_minutes": 121.96
     },
     {
       "key": "fund_flow:1609:19:39.2",
@@ -22262,7 +22263,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T04:55:22.342746+00:00",
-      "updated_at": "2026-06-05T06:47:29.936091+00:00",
+      "updated_at": "2026-06-05T06:52:23.733990+00:00",
       "status": "open",
       "code": "1605",
       "name": "華新",
@@ -22283,7 +22284,7 @@
         "pct_10m": -0.127,
         "pct_30m": 0.381
       },
-      "age_minutes": 112.13
+      "age_minutes": 117.02
     },
     {
       "key": "fund_flow:2454:31:4290.0",
@@ -22766,7 +22767,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T05:00:36.402583+00:00",
-      "updated_at": "2026-06-05T06:47:29.936097+00:00",
+      "updated_at": "2026-06-05T06:52:23.734001+00:00",
       "status": "open",
       "code": "1605",
       "name": "華新",
@@ -22787,7 +22788,7 @@
         "pct_10m": 0.127,
         "pct_30m": 0.636
       },
-      "age_minutes": 106.89
+      "age_minutes": 111.79
     },
     {
       "key": "fund_flow:2409:28:27.25",
@@ -23382,7 +23383,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T05:05:23.451814+00:00",
-      "updated_at": "2026-06-05T06:47:29.936103+00:00",
+      "updated_at": "2026-06-05T06:52:23.734011+00:00",
       "status": "open",
       "code": "1605",
       "name": "華新",
@@ -23403,7 +23404,7 @@
         "pct_10m": 0.254,
         "pct_30m": 0.636
       },
-      "age_minutes": 102.11
+      "age_minutes": 107.0
     },
     {
       "key": "fund_flow:1609:17:39.1",
@@ -23774,7 +23775,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T05:10:26.743316+00:00",
-      "updated_at": "2026-06-05T06:47:29.936108+00:00",
+      "updated_at": "2026-06-05T06:52:23.734021+00:00",
       "status": "open",
       "code": "1605",
       "name": "華新",
@@ -23795,7 +23796,7 @@
         "pct_10m": 0.508,
         "pct_30m": 0.381
       },
-      "age_minutes": 97.05
+      "age_minutes": 101.95
     },
     {
       "key": "fund_flow:8046:33:847.0",
@@ -24502,7 +24503,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T05:15:26.380471+00:00",
-      "updated_at": "2026-06-05T06:47:29.936116+00:00",
+      "updated_at": "2026-06-05T06:52:23.734032+00:00",
       "status": "open",
       "code": "1605",
       "name": "華新",
@@ -24523,7 +24524,7 @@
         "pct_10m": 0.508,
         "pct_30m": 0.508
       },
-      "age_minutes": 92.06
+      "age_minutes": 96.96
     },
     {
       "key": "ai_pool:2379:85:642.0",
@@ -24726,7 +24727,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T05:20:15.178307+00:00",
-      "updated_at": "2026-06-05T06:47:29.936122+00:00",
+      "updated_at": "2026-06-05T06:52:23.734043+00:00",
       "status": "open",
       "code": "1605",
       "name": "華新",
@@ -24747,7 +24748,7 @@
         "pct_10m": -0.126,
         "pct_30m": -0.126
       },
-      "age_minutes": 87.25
+      "age_minutes": 92.14
     },
     {
       "key": "fund_flow:2615:100:86.1",
@@ -24838,7 +24839,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T05:20:26.778436+00:00",
-      "updated_at": "2026-06-05T06:47:29.936127+00:00",
+      "updated_at": "2026-06-05T06:52:23.734052+00:00",
       "status": "open",
       "code": "1605",
       "name": "華新",
@@ -24859,7 +24860,7 @@
         "pct_10m": -0.126,
         "pct_30m": -0.126
       },
-      "age_minutes": 87.05
+      "age_minutes": 91.95
     },
     {
       "key": "fund_flow:3661:32:4260.0",
@@ -25342,7 +25343,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-05T05:25:12.305635+00:00",
-      "updated_at": "2026-06-05T06:47:29.936132+00:00",
+      "updated_at": "2026-06-05T06:52:23.734062+00:00",
       "status": "open",
       "code": "1605",
       "name": "華新",
@@ -25363,7 +25364,7 @@
         "pct_10m": 0.0,
         "pct_30m": 0.0
       },
-      "age_minutes": 82.29
+      "age_minutes": 87.19
     },
     {
       "key": "ai_pool:3481:22:53.0",
@@ -25510,7 +25511,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T05:25:23.891551+00:00",
-      "updated_at": "2026-06-05T06:47:29.936137+00:00",
+      "updated_at": "2026-06-05T06:52:23.734071+00:00",
       "status": "open",
       "code": "1605",
       "name": "華新",
@@ -25531,7 +25532,7 @@
         "pct_10m": 0.0,
         "pct_30m": 0.0
       },
-      "age_minutes": 82.1
+      "age_minutes": 87.0
     },
     {
       "key": "fund_flow:1513:30:170.0",
