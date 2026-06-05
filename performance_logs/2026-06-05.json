@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-05T02:27:16.644052+00:00",
+  "updated_at": "2026-06-05T02:27:18.402871+00:00",
   "count": 63,
   "items": [
     {
@@ -1098,7 +1098,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:25:15.330086+00:00",
-      "updated_at": "2026-06-05T02:27:07.809149+00:00",
+      "updated_at": "2026-06-05T02:27:17.876310+00:00",
       "status": "open",
       "code": "1513",
       "name": "中興電",
@@ -1116,7 +1116,7 @@
         "max_gain": 0.0,
         "max_drawdown": 0.0
       },
-      "age_minutes": 1.87
+      "age_minutes": 2.04
     },
     {
       "key": "fund_flow:1605:29:39.35",
@@ -1148,20 +1148,25 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-05T02:25:15.330104+00:00",
-      "updated_at": "2026-06-05T02:25:15.330106+00:00",
+      "updated_at": "2026-06-05T02:27:16.324656+00:00",
       "status": "open",
       "code": "1609",
       "name": "大亞",
       "sector": "電線電纜",
       "entry_price": 39.9,
-      "last_price": 39.9,
+      "last_price": 39.85,
       "best_price": 39.9,
-      "worst_price": 39.9,
+      "worst_price": 39.85,
       "score": 31,
       "change_rate_at_signal": -7.2,
       "volume_ratio_at_signal": 0.22,
       "alert": "資金退潮警報",
-      "results": {}
+      "results": {
+        "latest_pct": -0.125,
+        "max_gain": 0.0,
+        "max_drawdown": -0.125
+      },
+      "age_minutes": 2.02
     },
     {
       "key": "fund_flow:2344:33:162.5",
