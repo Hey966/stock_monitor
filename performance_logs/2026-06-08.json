@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-08T08:50:17.839189+00:00",
+  "updated_at": "2026-06-08T08:50:23.347433+00:00",
   "count": 737,
   "items": [
     {
@@ -7859,8 +7859,8 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T03:00:26.524758+00:00",
-      "updated_at": "2026-06-08T06:56:58.371601+00:00",
-      "status": "open",
+      "updated_at": "2026-06-08T08:50:16.642563+00:00",
+      "status": "closed",
       "code": "6215",
       "name": "和椿",
       "sector": "PCB",
@@ -7878,9 +7878,10 @@
         "max_drawdown": -0.897,
         "pct_5m": -0.448,
         "pct_10m": -0.448,
-        "pct_30m": 0.448
+        "pct_30m": 0.448,
+        "pct_close_proxy": 0.448
       },
-      "age_minutes": 236.53
+      "age_minutes": 349.84
     },
     {
       "key": "ai_pool:2344:48:154.0",
@@ -8394,8 +8395,8 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T03:05:12.938799+00:00",
-      "updated_at": "2026-06-08T06:56:58.371617+00:00",
-      "status": "open",
+      "updated_at": "2026-06-08T08:50:16.642584+00:00",
+      "status": "closed",
       "code": "6215",
       "name": "和椿",
       "sector": "PCB",
@@ -8413,9 +8414,10 @@
         "max_drawdown": -0.45,
         "pct_5m": 0.0,
         "pct_10m": -0.45,
-        "pct_30m": 0.901
+        "pct_30m": 0.901,
+        "pct_close_proxy": 0.901
       },
-      "age_minutes": 231.76
+      "age_minutes": 345.06
     },
     {
       "key": "ai_pool:1513:44:166.5",
@@ -9545,8 +9547,8 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T03:15:25.492275+00:00",
-      "updated_at": "2026-06-08T06:56:58.371628+00:00",
-      "status": "open",
+      "updated_at": "2026-06-08T08:50:16.642598+00:00",
+      "status": "closed",
       "code": "6215",
       "name": "和椿",
       "sector": "PCB",
@@ -9564,9 +9566,10 @@
         "max_drawdown": 0.0,
         "pct_5m": 0.0,
         "pct_10m": 0.905,
-        "pct_30m": 1.357
+        "pct_30m": 1.357,
+        "pct_close_proxy": 1.357
       },
-      "age_minutes": 221.55
+      "age_minutes": 334.85
     },
     {
       "key": "fund_flow:2618:29:36.05",
@@ -10755,8 +10758,8 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T03:25:22.676874+00:00",
-      "updated_at": "2026-06-08T06:56:58.371636+00:00",
-      "status": "open",
+      "updated_at": "2026-06-08T08:50:16.642613+00:00",
+      "status": "closed",
       "code": "6215",
       "name": "和椿",
       "sector": "PCB",
@@ -10774,9 +10777,10 @@
         "max_drawdown": -0.897,
         "pct_5m": 0.448,
         "pct_10m": 0.448,
-        "pct_30m": 0.0
+        "pct_30m": 0.0,
+        "pct_close_proxy": 0.448
       },
-      "age_minutes": 211.59
+      "age_minutes": 324.9
     },
     {
       "key": "fund_flow:2618:27:36.15",
@@ -11793,8 +11797,8 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T03:35:22.952982+00:00",
-      "updated_at": "2026-06-08T06:56:58.371644+00:00",
-      "status": "open",
+      "updated_at": "2026-06-08T08:50:16.642625+00:00",
+      "status": "closed",
       "code": "6215",
       "name": "和椿",
       "sector": "PCB",
@@ -11812,9 +11816,10 @@
         "max_drawdown": -1.339,
         "pct_5m": 0.0,
         "pct_10m": 0.0,
-        "pct_30m": -0.446
+        "pct_30m": -0.446,
+        "pct_close_proxy": 0.0
       },
-      "age_minutes": 201.59
+      "age_minutes": 314.89
     },
     {
       "key": "fund_flow:2609:6:51.6",
@@ -12412,8 +12417,8 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T03:45:15.296383+00:00",
-      "updated_at": "2026-06-08T06:56:58.371650+00:00",
-      "status": "open",
+      "updated_at": "2026-06-08T08:50:16.642635+00:00",
+      "status": "closed",
       "code": "6215",
       "name": "和椿",
       "sector": "PCB",
@@ -12431,9 +12436,10 @@
         "max_drawdown": -1.339,
         "pct_5m": -0.446,
         "pct_10m": -0.446,
-        "pct_30m": -0.893
+        "pct_30m": -0.893,
+        "pct_close_proxy": 0.0
       },
-      "age_minutes": 191.72
+      "age_minutes": 305.02
     },
     {
       "key": "ai_pool:2382:48:373.5",
@@ -12918,8 +12924,8 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T03:50:15.373207+00:00",
-      "updated_at": "2026-06-08T06:56:58.371657+00:00",
-      "status": "open",
+      "updated_at": "2026-06-08T08:50:16.642645+00:00",
+      "status": "closed",
       "code": "6215",
       "name": "和椿",
       "sector": "PCB",
@@ -12937,9 +12943,10 @@
         "max_drawdown": -0.897,
         "pct_5m": 0.0,
         "pct_10m": -0.448,
-        "pct_30m": -0.448
+        "pct_30m": -0.448,
+        "pct_close_proxy": 0.448
       },
-      "age_minutes": 186.72
+      "age_minutes": 300.02
     },
     {
       "key": "ai_pool:2344:56:155.0",
@@ -14715,8 +14722,8 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T04:15:24.781665+00:00",
-      "updated_at": "2026-06-08T08:50:16.050425+00:00",
-      "status": "closed",
+      "updated_at": "2026-06-08T08:13:43.847255+00:00",
+      "status": "open",
       "code": "2330",
       "name": "台積電",
       "sector": "半導體",
@@ -14734,10 +14741,9 @@
         "max_drawdown": -0.649,
         "pct_5m": -0.433,
         "pct_10m": -0.433,
-        "pct_30m": -0.216,
-        "pct_close_proxy": -0.649
+        "pct_30m": -0.216
       },
-      "age_minutes": 274.85
+      "age_minutes": 238.32
     },
     {
       "key": "fund_flow:2379:34:594.0",
@@ -14856,8 +14862,8 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T04:15:24.781727+00:00",
-      "updated_at": "2026-06-08T06:56:58.371667+00:00",
-      "status": "open",
+      "updated_at": "2026-06-08T08:50:16.642661+00:00",
+      "status": "closed",
       "code": "6215",
       "name": "和椿",
       "sector": "PCB",
@@ -14875,9 +14881,10 @@
         "max_drawdown": 0.0,
         "pct_5m": 0.452,
         "pct_10m": 0.0,
-        "pct_30m": 0.0
+        "pct_30m": 0.0,
+        "pct_close_proxy": 1.357
       },
-      "age_minutes": 161.56
+      "age_minutes": 274.86
     },
     {
       "key": "fund_flow:1514:25:122.5",
@@ -15696,8 +15703,8 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T04:25:23.118721+00:00",
-      "updated_at": "2026-06-08T06:56:58.371674+00:00",
-      "status": "open",
+      "updated_at": "2026-06-08T08:50:16.642673+00:00",
+      "status": "closed",
       "code": "6215",
       "name": "和椿",
       "sector": "PCB",
@@ -15715,9 +15722,10 @@
         "max_drawdown": 0.0,
         "pct_5m": 0.0,
         "pct_10m": 0.0,
-        "pct_30m": 0.452
+        "pct_30m": 0.452,
+        "pct_close_proxy": 1.357
       },
-      "age_minutes": 151.59
+      "age_minutes": 264.89
     },
     {
       "key": "fund_flow:2609:7:51.3",
@@ -17432,8 +17440,8 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T04:45:26.544494+00:00",
-      "updated_at": "2026-06-08T08:50:16.050479+00:00",
-      "status": "closed",
+      "updated_at": "2026-06-08T08:13:43.847290+00:00",
+      "status": "open",
       "code": "2330",
       "name": "台積電",
       "sector": "半導體",
@@ -17451,10 +17459,9 @@
         "max_drawdown": -0.434,
         "pct_5m": 0.0,
         "pct_10m": 0.0,
-        "pct_30m": -0.217,
-        "pct_close_proxy": -0.434
+        "pct_30m": -0.217
       },
-      "age_minutes": 244.83
+      "age_minutes": 208.29
     },
     {
       "key": "fund_flow:2382:33:370.5",
@@ -20513,7 +20520,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T05:30:20.350868+00:00",
-      "updated_at": "2026-06-08T08:50:16.050512+00:00",
+      "updated_at": "2026-06-08T08:13:43.847322+00:00",
       "status": "open",
       "code": "2330",
       "name": "台積電",
@@ -20534,7 +20541,7 @@
         "pct_10m": 0.0,
         "pct_30m": 0.0
       },
-      "age_minutes": 199.93
+      "age_minutes": 163.39
     },
     {
       "key": "ai_pool:3231:56:163.5",
@@ -20905,7 +20912,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T06:55:14.245650+00:00",
-      "updated_at": "2026-06-08T06:56:58.371690+00:00",
+      "updated_at": "2026-06-08T08:50:16.642752+00:00",
       "status": "open",
       "code": "6215",
       "name": "和椿",
@@ -20921,9 +20928,12 @@
       "results": {
         "latest_pct": 0.0,
         "max_gain": 0.0,
-        "max_drawdown": 0.0
+        "max_drawdown": 0.0,
+        "pct_5m": 0.0,
+        "pct_10m": 0.0,
+        "pct_30m": 0.0
       },
-      "age_minutes": 1.74
+      "age_minutes": 115.04
     }
   ]
 }
