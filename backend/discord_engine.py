@@ -54,13 +54,41 @@ def _pct(v: Any) -> str:
 
 
 def _score(item: dict[str, Any]) -> int:
-    for key in ["fund_score", "score", "big_player_score", "day_trade_risk"]:
+    for key in ["final_score", "fund_score", "score", "big_player_score", "day_trade_risk"]:
         try:
             if item.get(key) is not None:
                 return int(float(item.get(key)))
         except Exception:
             pass
     return 0
+
+
+def send_radar_top5_alert(scan: dict[str, Any]) -> dict[str, Any]:
+    rows = scan.get("discord_top5") or scan.get("top5") or []
+    rows = [x for x in rows[:5] if str(x.get("final_result") or "") == "可進場"]
+    if not rows:
+        return {"ok": True, "sent": False, "reason": "no_entry_candidates"}
+
+    scanned = int(_num(scan.get("scanned"), 0))
+    universe = int(_num(scan.get("universe_size"), 0))
+    strongest = scan.get("strongest_sector") or {}
+    lines = [
+        "🔥 **STX 台股當沖前5訊號**",
+        f"時間：{_tw_now()}",
+        f"掃描：{scanned}/{universe} 檔",
+        f"最強族群：{strongest.get('sector', '-')}｜{strongest.get('avg_score', '-')}分",
+        "推播條件：規則分析優先 + 無Trap + 非追價 + VWAP/回測確認",
+        "",
+    ]
+    for i, item in enumerate(rows, 1):
+        lines.extend([
+            f"**TOP {i}｜{item.get('code')} {item.get('name') or ''}**",
+            f"現價：{item.get('close', '-')}｜漲跌：{_pct(item.get('change_rate'))}",
+            f"最終分數：{item.get('final_score', '-')}｜規則：{item.get('rule_score', '-')}｜Pro：{item.get('pro_score', '-')}｜族群：{item.get('group_score', '-')}",
+            f"結果：{item.get('final_result', '-')}｜{item.get('final_reason', '-')}",
+            "",
+        ])
+    return _post_discord("\n".join(lines)[:1900])
 
 
 def send_grouped_alerts(
@@ -143,7 +171,7 @@ def _replay_summary(stats: dict[str, Any] | None) -> list[str]:
 
 
 def send_battle_report(scan: dict[str, Any], stats: dict[str, Any] | None = None) -> dict[str, Any]:
-    top = scan.get("top5") or []
+    top = scan.get("discord_top5") or scan.get("top5") or []
     strongest = scan.get("strongest_sector") or {}
     errors = scan.get("errors") or []
     scanned = int(_num(scan.get("scanned"), 0))
@@ -156,7 +184,7 @@ def send_battle_report(scan: dict[str, Any], stats: dict[str, Any] | None = None
         f"掃描：{scanned}/{universe} 檔",
         f"最強族群：{strongest.get('sector', '-')}｜{strongest.get('avg_score', '-')}分",
         "",
-        "🔥 **雷達 TOP10**",
+        "🔥 **最終結果前5**",
     ]
 
     if scanned == 0 and universe > 0:
@@ -166,9 +194,9 @@ def send_battle_report(scan: dict[str, Any], stats: dict[str, Any] | None = None
             for err in errors[:3]:
                 lines.append(f"- {err.get('code', '-')}：{err.get('message', '-')}")
     elif top:
-        for i, item in enumerate(top[:10], 1):
+        for i, item in enumerate(top[:5], 1):
             lines.append(
-                f"{i}. {item.get('code')} {item.get('name') or ''}｜{item.get('sector') or '其他'}｜{item.get('score')}分｜{_pct(item.get('change_rate'))}｜{item.get('mood') or '-'}"
+                f"{i}. {item.get('code')} {item.get('name') or ''}｜{item.get('sector') or '其他'}｜最終{item.get('final_score', item.get('score'))}分｜{_pct(item.get('change_rate'))}｜{item.get('final_result') or item.get('mood') or '-'}"
             )
     else:
         lines.append("本輪沒有達到雷達門檻的標的。")
