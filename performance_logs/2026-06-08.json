@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-08T03:01:55.696462+00:00",
+  "updated_at": "2026-06-08T03:01:58.700537+00:00",
   "count": 281,
   "items": [
     {
@@ -512,7 +512,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T01:00:25.731821+00:00",
-      "updated_at": "2026-06-08T02:56:09.268809+00:00",
+      "updated_at": "2026-06-08T03:01:57.504315+00:00",
       "status": "open",
       "code": "3231",
       "name": "緯創",
@@ -533,7 +533,7 @@
         "pct_10m": 0.0,
         "pct_30m": 1.254
       },
-      "age_minutes": 115.73
+      "age_minutes": 121.53
     },
     {
       "key": "ai_pool:5347:38:149.0",
@@ -2164,7 +2164,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T01:10:16.373970+00:00",
-      "updated_at": "2026-06-08T02:56:09.268830+00:00",
+      "updated_at": "2026-06-08T03:01:57.504367+00:00",
       "status": "open",
       "code": "3231",
       "name": "緯創",
@@ -2185,7 +2185,7 @@
         "pct_10m": 0.938,
         "pct_30m": 0.938
       },
-      "age_minutes": 105.88
+      "age_minutes": 111.69
     },
     {
       "key": "ai_pool:3324:56:1035.0",
@@ -3536,7 +3536,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T01:15:26.200374+00:00",
-      "updated_at": "2026-06-08T02:56:09.268841+00:00",
+      "updated_at": "2026-06-08T03:01:57.504387+00:00",
       "status": "open",
       "code": "3231",
       "name": "緯創",
@@ -3557,7 +3557,7 @@
         "pct_10m": 1.254,
         "pct_30m": 1.254
       },
-      "age_minutes": 100.72
+      "age_minutes": 106.52
     },
     {
       "key": "fund_flow:3017:29:2420.0",
@@ -4414,7 +4414,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T02:35:13.181576+00:00",
-      "updated_at": "2026-06-08T02:56:09.268850+00:00",
+      "updated_at": "2026-06-08T03:01:57.504405+00:00",
       "status": "open",
       "code": "3231",
       "name": "緯創",
@@ -4434,7 +4434,7 @@
         "pct_5m": 0.0,
         "pct_10m": 0.617
       },
-      "age_minutes": 20.93
+      "age_minutes": 26.74
     },
     {
       "key": "ai_pool:2324:38:37.65",
@@ -5548,7 +5548,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T02:45:15.083180+00:00",
-      "updated_at": "2026-06-08T02:56:09.268859+00:00",
+      "updated_at": "2026-06-08T03:01:57.504413+00:00",
       "status": "open",
       "code": "3231",
       "name": "緯創",
@@ -5568,7 +5568,7 @@
         "pct_5m": 0.0,
         "pct_10m": -0.613
       },
-      "age_minutes": 10.9
+      "age_minutes": 16.71
     },
     {
       "key": "ai_pool:3661:48:4090.0",
@@ -6779,7 +6779,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T02:55:12.105063+00:00",
-      "updated_at": "2026-06-08T02:56:09.268867+00:00",
+      "updated_at": "2026-06-08T03:01:57.504422+00:00",
       "status": "open",
       "code": "3231",
       "name": "緯創",
@@ -6795,9 +6795,10 @@
       "results": {
         "latest_pct": -0.308,
         "max_gain": 0.0,
-        "max_drawdown": -0.308
+        "max_drawdown": -0.308,
+        "pct_5m": -0.308
       },
-      "age_minutes": 0.95
+      "age_minutes": 6.76
     },
     {
       "key": "ai_pool:3661:56:4100.0",
@@ -7488,20 +7489,25 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T03:00:26.524740+00:00",
-      "updated_at": "2026-06-08T03:00:26.524742+00:00",
+      "updated_at": "2026-06-08T03:01:57.504429+00:00",
       "status": "open",
       "code": "3231",
       "name": "緯創",
       "sector": "AI伺服器",
       "entry_price": 161.5,
-      "last_price": 161.5,
-      "best_price": 161.5,
+      "last_price": 162.0,
+      "best_price": 162.0,
       "worst_price": 161.5,
       "score": 48,
       "change_rate_at_signal": -5.55,
       "volume_ratio_at_signal": 0.65,
       "alert": null,
-      "results": {}
+      "results": {
+        "latest_pct": 0.31,
+        "max_gain": 0.31,
+        "max_drawdown": 0.0
+      },
+      "age_minutes": 1.52
     },
     {
       "key": "ai_pool:6215:48:111.5",
