@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-08T01:16:49.774778+00:00",
+  "updated_at": "2026-06-08T01:16:52.216315+00:00",
   "count": 140,
   "items": [
     {
@@ -386,13 +386,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T01:00:25.731774+00:00",
-      "updated_at": "2026-06-08T01:11:59.906747+00:00",
+      "updated_at": "2026-06-08T01:16:51.237418+00:00",
       "status": "open",
       "code": "2618",
       "name": "長榮航",
       "sector": "航運",
       "entry_price": 36.35,
-      "last_price": 36.2,
+      "last_price": 36.25,
       "best_price": 36.4,
       "worst_price": 36.2,
       "score": 40,
@@ -400,13 +400,13 @@
       "volume_ratio_at_signal": 0.04,
       "alert": null,
       "results": {
-        "latest_pct": -0.413,
+        "latest_pct": -0.275,
         "max_gain": 0.138,
         "max_drawdown": -0.413,
         "pct_5m": 0.138,
         "pct_10m": -0.413
       },
-      "age_minutes": 11.57
+      "age_minutes": 16.43
     },
     {
       "key": "ai_pool:2317:38:263.5",
@@ -1034,13 +1034,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T01:00:36.720371+00:00",
-      "updated_at": "2026-06-08T01:11:59.906767+00:00",
+      "updated_at": "2026-06-08T01:16:51.237442+00:00",
       "status": "open",
       "code": "2618",
       "name": "長榮航",
       "sector": "航運",
       "entry_price": 36.25,
-      "last_price": 36.2,
+      "last_price": 36.25,
       "best_price": 36.4,
       "worst_price": 36.2,
       "score": 1,
@@ -1048,13 +1048,13 @@
       "volume_ratio_at_signal": 0.04,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": -0.138,
+        "latest_pct": 0.0,
         "max_gain": 0.414,
         "max_drawdown": -0.138,
         "pct_5m": 0.414,
         "pct_10m": -0.138
       },
-      "age_minutes": 11.39
+      "age_minutes": 16.24
     },
     {
       "key": "ai_pool:2615:64:84.4",
@@ -1463,13 +1463,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T01:05:12.805282+00:00",
-      "updated_at": "2026-06-08T01:11:59.906779+00:00",
+      "updated_at": "2026-06-08T01:16:51.237454+00:00",
       "status": "open",
       "code": "2618",
       "name": "長榮航",
       "sector": "航運",
       "entry_price": 36.4,
-      "last_price": 36.2,
+      "last_price": 36.25,
       "best_price": 36.4,
       "worst_price": 36.2,
       "score": 48,
@@ -1477,12 +1477,13 @@
       "volume_ratio_at_signal": 0.23,
       "alert": null,
       "results": {
-        "latest_pct": -0.549,
+        "latest_pct": -0.412,
         "max_gain": 0.0,
         "max_drawdown": -0.549,
-        "pct_5m": -0.549
+        "pct_5m": -0.549,
+        "pct_10m": -0.412
       },
-      "age_minutes": 6.79
+      "age_minutes": 11.64
     },
     {
       "key": "ai_pool:2317:38:264.0",
@@ -1865,13 +1866,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T01:05:22.720797+00:00",
-      "updated_at": "2026-06-08T01:11:59.906788+00:00",
+      "updated_at": "2026-06-08T01:16:51.237465+00:00",
       "status": "open",
       "code": "2618",
       "name": "長榮航",
       "sector": "航運",
       "entry_price": 36.35,
-      "last_price": 36.2,
+      "last_price": 36.25,
       "best_price": 36.4,
       "worst_price": 36.2,
       "score": 28,
@@ -1879,12 +1880,13 @@
       "volume_ratio_at_signal": 0.23,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": -0.413,
+        "latest_pct": -0.275,
         "max_gain": 0.138,
         "max_drawdown": -0.413,
-        "pct_5m": -0.413
+        "pct_5m": -0.413,
+        "pct_10m": -0.275
       },
-      "age_minutes": 6.62
+      "age_minutes": 11.48
     },
     {
       "key": "fund_flow:2356:2:69.2",
@@ -2748,13 +2750,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T01:10:27.018884+00:00",
-      "updated_at": "2026-06-08T01:11:59.906799+00:00",
+      "updated_at": "2026-06-08T01:16:51.237479+00:00",
       "status": "open",
       "code": "2618",
       "name": "長榮航",
       "sector": "航運",
       "entry_price": 36.3,
-      "last_price": 36.2,
+      "last_price": 36.25,
       "best_price": 36.3,
       "worst_price": 36.2,
       "score": 32,
@@ -2762,11 +2764,12 @@
       "volume_ratio_at_signal": 0.33,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": -0.275,
+        "latest_pct": -0.138,
         "max_gain": 0.0,
-        "max_drawdown": -0.275
+        "max_drawdown": -0.275,
+        "pct_5m": -0.138
       },
-      "age_minutes": 1.55
+      "age_minutes": 6.4
     },
     {
       "key": "fund_flow:3481:3:48.35",
