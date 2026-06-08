@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-08T02:56:07.521957+00:00",
+  "updated_at": "2026-06-08T02:56:10.515726+00:00",
   "count": 265,
   "items": [
     {
@@ -512,13 +512,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T01:00:25.731821+00:00",
-      "updated_at": "2026-06-08T02:51:27.729716+00:00",
+      "updated_at": "2026-06-08T02:56:09.268809+00:00",
       "status": "open",
       "code": "3231",
       "name": "緯創",
       "sector": "AI伺服器",
       "entry_price": 159.5,
-      "last_price": 163.0,
+      "last_price": 162.0,
       "best_price": 163.0,
       "worst_price": 158.5,
       "score": 38,
@@ -526,14 +526,14 @@
       "volume_ratio_at_signal": 0.1,
       "alert": null,
       "results": {
-        "latest_pct": 2.194,
+        "latest_pct": 1.567,
         "max_gain": 2.194,
         "max_drawdown": -0.627,
         "pct_5m": 0.0,
         "pct_10m": 0.0,
         "pct_30m": 1.254
       },
-      "age_minutes": 111.03
+      "age_minutes": 115.73
     },
     {
       "key": "ai_pool:5347:38:149.0",
@@ -2164,13 +2164,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T01:10:16.373970+00:00",
-      "updated_at": "2026-06-08T02:51:27.729737+00:00",
+      "updated_at": "2026-06-08T02:56:09.268830+00:00",
       "status": "open",
       "code": "3231",
       "name": "緯創",
       "sector": "AI伺服器",
       "entry_price": 160.0,
-      "last_price": 163.0,
+      "last_price": 162.0,
       "best_price": 163.0,
       "worst_price": 158.5,
       "score": 56,
@@ -2178,14 +2178,14 @@
       "volume_ratio_at_signal": 0.24,
       "alert": null,
       "results": {
-        "latest_pct": 1.875,
+        "latest_pct": 1.25,
         "max_gain": 1.875,
         "max_drawdown": -0.938,
         "pct_5m": -0.938,
         "pct_10m": 0.938,
         "pct_30m": 0.938
       },
-      "age_minutes": 101.19
+      "age_minutes": 105.88
     },
     {
       "key": "ai_pool:3324:56:1035.0",
@@ -3536,13 +3536,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T01:15:26.200374+00:00",
-      "updated_at": "2026-06-08T02:51:27.729747+00:00",
+      "updated_at": "2026-06-08T02:56:09.268841+00:00",
       "status": "open",
       "code": "3231",
       "name": "緯創",
       "sector": "AI伺服器",
       "entry_price": 159.5,
-      "last_price": 163.0,
+      "last_price": 162.0,
       "best_price": 163.0,
       "worst_price": 158.5,
       "score": 34,
@@ -3550,14 +3550,14 @@
       "volume_ratio_at_signal": 0.3,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": 2.194,
+        "latest_pct": 1.567,
         "max_gain": 2.194,
         "max_drawdown": -0.627,
         "pct_5m": 1.254,
         "pct_10m": 1.254,
         "pct_30m": 1.254
       },
-      "age_minutes": 96.03
+      "age_minutes": 100.72
     },
     {
       "key": "fund_flow:3017:29:2420.0",
@@ -4414,13 +4414,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T02:35:13.181576+00:00",
-      "updated_at": "2026-06-08T02:51:27.729755+00:00",
+      "updated_at": "2026-06-08T02:56:09.268850+00:00",
       "status": "open",
       "code": "3231",
       "name": "緯創",
       "sector": "AI伺服器",
       "entry_price": 162.0,
-      "last_price": 163.0,
+      "last_price": 162.0,
       "best_price": 163.0,
       "worst_price": 161.5,
       "score": 38,
@@ -4428,13 +4428,13 @@
       "volume_ratio_at_signal": 0.59,
       "alert": null,
       "results": {
-        "latest_pct": 0.617,
+        "latest_pct": 0.0,
         "max_gain": 0.617,
         "max_drawdown": -0.309,
         "pct_5m": 0.0,
         "pct_10m": 0.617
       },
-      "age_minutes": 16.24
+      "age_minutes": 20.93
     },
     {
       "key": "ai_pool:2324:38:37.65",
@@ -5543,26 +5543,27 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T02:45:15.083180+00:00",
-      "updated_at": "2026-06-08T02:51:27.729764+00:00",
+      "updated_at": "2026-06-08T02:56:09.268859+00:00",
       "status": "open",
       "code": "3231",
       "name": "緯創",
       "sector": "AI伺服器",
       "entry_price": 163.0,
-      "last_price": 163.0,
+      "last_price": 162.0,
       "best_price": 163.0,
-      "worst_price": 163.0,
+      "worst_price": 162.0,
       "score": 48,
       "change_rate_at_signal": -4.67,
       "volume_ratio_at_signal": 0.61,
       "alert": null,
       "results": {
-        "latest_pct": 0.0,
+        "latest_pct": -0.613,
         "max_gain": 0.0,
-        "max_drawdown": 0.0,
-        "pct_5m": 0.0
+        "max_drawdown": -0.613,
+        "pct_5m": 0.0,
+        "pct_10m": -0.613
       },
-      "age_minutes": 6.21
+      "age_minutes": 10.9
     },
     {
       "key": "ai_pool:3661:48:4090.0",
@@ -6715,20 +6716,25 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T02:55:12.105063+00:00",
-      "updated_at": "2026-06-08T02:55:12.105066+00:00",
+      "updated_at": "2026-06-08T02:56:09.268867+00:00",
       "status": "open",
       "code": "3231",
       "name": "緯創",
       "sector": "AI伺服器",
       "entry_price": 162.5,
-      "last_price": 162.5,
+      "last_price": 162.0,
       "best_price": 162.5,
-      "worst_price": 162.5,
+      "worst_price": 162.0,
       "score": 56,
       "change_rate_at_signal": -4.97,
       "volume_ratio_at_signal": 0.64,
       "alert": null,
-      "results": {}
+      "results": {
+        "latest_pct": -0.308,
+        "max_gain": 0.0,
+        "max_drawdown": -0.308
+      },
+      "age_minutes": 0.95
     },
     {
       "key": "ai_pool:3661:56:4100.0",
