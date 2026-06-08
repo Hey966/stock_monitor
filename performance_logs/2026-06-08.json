@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-08T01:16:20.657311+00:00",
+  "updated_at": "2026-06-08T01:16:23.548695+00:00",
   "count": 140,
   "items": [
     {
@@ -278,13 +278,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T01:00:25.731728+00:00",
-      "updated_at": "2026-06-08T01:11:39.674614+00:00",
+      "updated_at": "2026-06-08T01:16:22.121477+00:00",
       "status": "open",
       "code": "1605",
       "name": "華新",
       "sector": "電線電纜",
       "entry_price": 36.2,
-      "last_price": 35.9,
+      "last_price": 35.95,
       "best_price": 36.2,
       "worst_price": 35.9,
       "score": 48,
@@ -292,13 +292,13 @@
       "volume_ratio_at_signal": 0.09,
       "alert": null,
       "results": {
-        "latest_pct": -0.829,
+        "latest_pct": -0.691,
         "max_gain": 0.0,
         "max_drawdown": -0.829,
         "pct_5m": -0.414,
         "pct_10m": -0.829
       },
-      "age_minutes": 11.23
+      "age_minutes": 15.94
     },
     {
       "key": "ai_pool:1609:48:36.3",
@@ -629,13 +629,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T01:00:36.720194+00:00",
-      "updated_at": "2026-06-08T01:11:39.674632+00:00",
+      "updated_at": "2026-06-08T01:16:22.121498+00:00",
       "status": "open",
       "code": "1605",
       "name": "華新",
       "sector": "電線電纜",
       "entry_price": 35.9,
-      "last_price": 35.9,
+      "last_price": 35.95,
       "best_price": 36.05,
       "worst_price": 35.9,
       "score": 27,
@@ -643,13 +643,13 @@
       "volume_ratio_at_signal": 0.09,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": 0.0,
+        "latest_pct": 0.139,
         "max_gain": 0.418,
         "max_drawdown": 0.0,
         "pct_5m": 0.418,
         "pct_10m": 0.0
       },
-      "age_minutes": 11.05
+      "age_minutes": 15.76
     },
     {
       "key": "fund_flow:3037:25:857.0",
@@ -2292,13 +2292,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T01:10:16.374027+00:00",
-      "updated_at": "2026-06-08T01:11:39.674647+00:00",
+      "updated_at": "2026-06-08T01:16:22.121517+00:00",
       "status": "open",
       "code": "1605",
       "name": "華新",
       "sector": "電線電纜",
       "entry_price": 36.15,
-      "last_price": 35.9,
+      "last_price": 35.95,
       "best_price": 36.15,
       "worst_price": 35.9,
       "score": 48,
@@ -2306,11 +2306,12 @@
       "volume_ratio_at_signal": 0.17,
       "alert": null,
       "results": {
-        "latest_pct": -0.692,
+        "latest_pct": -0.553,
         "max_gain": 0.0,
-        "max_drawdown": -0.692
+        "max_drawdown": -0.692,
+        "pct_5m": -0.553
       },
-      "age_minutes": 1.39
+      "age_minutes": 6.1
     },
     {
       "key": "ai_pool:1609:48:36.85",
@@ -3047,20 +3048,25 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T01:15:15.735385+00:00",
-      "updated_at": "2026-06-08T01:15:15.735387+00:00",
+      "updated_at": "2026-06-08T01:16:22.121529+00:00",
       "status": "open",
       "code": "1605",
       "name": "華新",
       "sector": "電線電纜",
       "entry_price": 36.05,
-      "last_price": 36.05,
+      "last_price": 35.95,
       "best_price": 36.05,
-      "worst_price": 36.05,
+      "worst_price": 35.95,
       "score": 48,
       "change_rate_at_signal": -8.84,
       "volume_ratio_at_signal": 0.21,
       "alert": null,
-      "results": {}
+      "results": {
+        "latest_pct": -0.277,
+        "max_gain": 0.0,
+        "max_drawdown": -0.277
+      },
+      "age_minutes": 1.11
     },
     {
       "key": "ai_pool:2330:40:2295.0",
@@ -3472,20 +3478,25 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T01:15:26.200439+00:00",
-      "updated_at": "2026-06-08T01:15:26.200441+00:00",
+      "updated_at": "2026-06-08T01:16:22.121540+00:00",
       "status": "open",
       "code": "1605",
       "name": "華新",
       "sector": "電線電纜",
       "entry_price": 36.05,
-      "last_price": 36.05,
+      "last_price": 35.95,
       "best_price": 36.05,
-      "worst_price": 36.05,
+      "worst_price": 35.95,
       "score": 19,
       "change_rate_at_signal": -8.84,
       "volume_ratio_at_signal": 0.21,
       "alert": "資金退潮警報",
-      "results": {}
+      "results": {
+        "latest_pct": -0.277,
+        "max_gain": 0.0,
+        "max_drawdown": -0.277
+      },
+      "age_minutes": 0.93
     },
     {
       "key": "fund_flow:2382:31:364.0",
