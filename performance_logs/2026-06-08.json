@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-08T02:36:25.947051+00:00",
+  "updated_at": "2026-06-08T02:36:28.827278+00:00",
   "count": 169,
   "items": [
     {
@@ -999,27 +999,28 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T01:00:36.720346+00:00",
-      "updated_at": "2026-06-08T01:16:01.901986+00:00",
+      "updated_at": "2026-06-08T02:36:27.422822+00:00",
       "status": "open",
       "code": "2344",
       "name": "華邦電",
       "sector": "半導體",
       "entry_price": 146.0,
-      "last_price": 149.5,
-      "best_price": 149.5,
+      "last_price": 154.5,
+      "best_price": 154.5,
       "worst_price": 146.0,
       "score": 1,
       "change_rate_at_signal": -9.87,
       "volume_ratio_at_signal": 0.03,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": 2.397,
-        "max_gain": 2.397,
+        "latest_pct": 5.822,
+        "max_gain": 5.822,
         "max_drawdown": 0.0,
         "pct_5m": 0.0,
-        "pct_10m": 1.027
+        "pct_10m": 1.027,
+        "pct_30m": 5.822
       },
-      "age_minutes": 15.42
+      "age_minutes": 95.85
     },
     {
       "key": "fund_flow:2615:20:83.4",
@@ -1989,27 +1990,28 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T01:05:22.720837+00:00",
-      "updated_at": "2026-06-08T01:16:01.902013+00:00",
+      "updated_at": "2026-06-08T02:36:27.422838+00:00",
       "status": "open",
       "code": "2344",
       "name": "華邦電",
       "sector": "半導體",
       "entry_price": 146.0,
-      "last_price": 149.5,
-      "best_price": 149.5,
+      "last_price": 154.5,
+      "best_price": 154.5,
       "worst_price": 146.0,
       "score": 2,
       "change_rate_at_signal": -9.87,
       "volume_ratio_at_signal": 0.05,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": 2.397,
-        "max_gain": 2.397,
+        "latest_pct": 5.822,
+        "max_gain": 5.822,
         "max_drawdown": 0.0,
         "pct_5m": 1.027,
-        "pct_10m": 2.397
+        "pct_10m": 2.397,
+        "pct_30m": 5.822
       },
-      "age_minutes": 10.65
+      "age_minutes": 91.08
     },
     {
       "key": "ai_pool:2330:56:2285.0",
@@ -2808,26 +2810,28 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T01:10:27.018874+00:00",
-      "updated_at": "2026-06-08T01:16:01.902027+00:00",
+      "updated_at": "2026-06-08T02:36:27.422848+00:00",
       "status": "open",
       "code": "2344",
       "name": "華邦電",
       "sector": "半導體",
       "entry_price": 147.5,
-      "last_price": 149.5,
-      "best_price": 149.5,
+      "last_price": 154.5,
+      "best_price": 154.5,
       "worst_price": 147.5,
       "score": 16,
       "change_rate_at_signal": -8.95,
       "volume_ratio_at_signal": 0.17,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": 1.356,
-        "max_gain": 1.356,
+        "latest_pct": 4.746,
+        "max_gain": 4.746,
         "max_drawdown": 0.0,
-        "pct_5m": 1.356
+        "pct_5m": 1.356,
+        "pct_10m": 4.746,
+        "pct_30m": 4.746
       },
-      "age_minutes": 5.58
+      "age_minutes": 86.01
     },
     {
       "key": "fund_flow:2618:32:36.3",
@@ -3378,25 +3382,28 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T01:15:15.735441+00:00",
-      "updated_at": "2026-06-08T01:16:01.902038+00:00",
+      "updated_at": "2026-06-08T02:36:27.422856+00:00",
       "status": "open",
       "code": "2344",
       "name": "華邦電",
       "sector": "半導體",
       "entry_price": 149.5,
-      "last_price": 149.5,
-      "best_price": 149.5,
+      "last_price": 154.5,
+      "best_price": 154.5,
       "worst_price": 149.5,
       "score": 38,
       "change_rate_at_signal": -7.71,
       "volume_ratio_at_signal": 0.26,
       "alert": null,
       "results": {
-        "latest_pct": 0.0,
-        "max_gain": 0.0,
-        "max_drawdown": 0.0
+        "latest_pct": 3.344,
+        "max_gain": 3.344,
+        "max_drawdown": 0.0,
+        "pct_5m": 3.344,
+        "pct_10m": 3.344,
+        "pct_30m": 3.344
       },
-      "age_minutes": 0.77
+      "age_minutes": 81.19
     },
     {
       "key": "ai_pool:2454:30:4025.0",
