@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-08T05:22:38.241666+00:00",
+  "updated_at": "2026-06-08T05:22:41.817146+00:00",
   "count": 712,
   "items": [
     {
@@ -19294,7 +19294,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T05:10:27.697416+00:00",
-      "updated_at": "2026-06-08T05:17:36.988519+00:00",
+      "updated_at": "2026-06-08T05:22:40.386751+00:00",
       "status": "open",
       "code": "2409",
       "name": "友達",
@@ -19311,9 +19311,10 @@
         "latest_pct": 0.0,
         "max_gain": 0.0,
         "max_drawdown": 0.0,
-        "pct_5m": 0.0
+        "pct_5m": 0.0,
+        "pct_10m": 0.0
       },
-      "age_minutes": 7.15
+      "age_minutes": 12.21
     },
     {
       "key": "fund_flow:2609:9:51.4",
