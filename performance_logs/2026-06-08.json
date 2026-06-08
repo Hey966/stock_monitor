@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-08T01:01:13.742936+00:00",
+  "updated_at": "2026-06-08T01:01:15.324475+00:00",
   "count": 39,
   "items": [
     {
@@ -123,7 +123,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T01:00:25.731680+00:00",
-      "updated_at": "2026-06-08T01:00:25.731684+00:00",
+      "updated_at": "2026-06-08T01:01:14.724252+00:00",
       "status": "open",
       "code": "3443",
       "name": "創意",
@@ -136,7 +136,12 @@
       "change_rate_at_signal": -6.26,
       "volume_ratio_at_signal": 0.06,
       "alert": null,
-      "results": {}
+      "results": {
+        "latest_pct": 0.0,
+        "max_gain": 0.0,
+        "max_drawdown": 0.0
+      },
+      "age_minutes": 0.82
     },
     {
       "key": "ai_pool:2376:48:339.5",
