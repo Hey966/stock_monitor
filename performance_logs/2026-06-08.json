@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-08T05:17:14.794584+00:00",
+  "updated_at": "2026-06-08T05:17:18.715779+00:00",
   "count": 700,
   "items": [
     {
@@ -3110,8 +3110,8 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T01:15:15.735297+00:00",
-      "updated_at": "2026-06-08T05:12:16.201093+00:00",
-      "status": "open",
+      "updated_at": "2026-06-08T05:17:17.670076+00:00",
+      "status": "closed",
       "code": "5347",
       "name": "世界",
       "sector": "半導體",
@@ -3129,9 +3129,10 @@
         "max_drawdown": -0.333,
         "pct_5m": 1.333,
         "pct_10m": 1.333,
-        "pct_30m": 1.333
+        "pct_30m": 1.333,
+        "pct_close_proxy": 2.667
       },
-      "age_minutes": 237.01
+      "age_minutes": 242.03
     },
     {
       "key": "ai_pool:1609:56:37.05",
@@ -4396,7 +4397,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T02:35:13.181545+00:00",
-      "updated_at": "2026-06-08T05:12:16.201113+00:00",
+      "updated_at": "2026-06-08T05:17:17.670114+00:00",
       "status": "open",
       "code": "5347",
       "name": "世界",
@@ -4417,7 +4418,7 @@
         "pct_10m": -0.656,
         "pct_30m": -0.656
       },
-      "age_minutes": 157.05
+      "age_minutes": 162.07
     },
     {
       "key": "ai_pool:3017:41:2525.0",
@@ -4928,7 +4929,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T02:40:15.266744+00:00",
-      "updated_at": "2026-06-08T05:12:16.201127+00:00",
+      "updated_at": "2026-06-08T05:17:17.670132+00:00",
       "status": "open",
       "code": "5347",
       "name": "世界",
@@ -4949,7 +4950,7 @@
         "pct_10m": -0.33,
         "pct_30m": 0.0
       },
-      "age_minutes": 152.02
+      "age_minutes": 157.04
     },
     {
       "key": "ai_pool:6215:56:111.0",
@@ -5852,7 +5853,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T02:45:15.083214+00:00",
-      "updated_at": "2026-06-08T05:12:16.201157+00:00",
+      "updated_at": "2026-06-08T05:17:17.670155+00:00",
       "status": "open",
       "code": "5347",
       "name": "世界",
@@ -5873,7 +5874,7 @@
         "pct_10m": 0.331,
         "pct_30m": 0.331
       },
-      "age_minutes": 147.02
+      "age_minutes": 152.04
     },
     {
       "key": "ai_pool:6215:40:110.5",
@@ -6580,7 +6581,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T02:50:15.303935+00:00",
-      "updated_at": "2026-06-08T05:12:16.201174+00:00",
+      "updated_at": "2026-06-08T05:17:17.670176+00:00",
       "status": "open",
       "code": "5347",
       "name": "世界",
@@ -6601,7 +6602,7 @@
         "pct_10m": 0.0,
         "pct_30m": -0.33
       },
-      "age_minutes": 142.01
+      "age_minutes": 147.04
     },
     {
       "key": "ai_pool:6215:48:112.0",
@@ -6748,7 +6749,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T02:50:25.637711+00:00",
-      "updated_at": "2026-06-08T05:12:16.201185+00:00",
+      "updated_at": "2026-06-08T05:17:17.670189+00:00",
       "status": "open",
       "code": "5347",
       "name": "世界",
@@ -6769,7 +6770,7 @@
         "pct_10m": 0.331,
         "pct_30m": 0.0
       },
-      "age_minutes": 141.84
+      "age_minutes": 146.87
     },
     {
       "key": "fund_flow:1609:31:37.35",
@@ -7672,7 +7673,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T03:00:26.524716+00:00",
-      "updated_at": "2026-06-08T05:12:16.201199+00:00",
+      "updated_at": "2026-06-08T05:17:17.670210+00:00",
       "status": "open",
       "code": "5347",
       "name": "世界",
@@ -7693,7 +7694,7 @@
         "pct_10m": -0.329,
         "pct_30m": 0.329
       },
-      "age_minutes": 131.83
+      "age_minutes": 136.85
     },
     {
       "key": "ai_pool:8046:53:838.0",
@@ -9744,7 +9745,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T03:20:14.902998+00:00",
-      "updated_at": "2026-06-08T05:12:16.201218+00:00",
+      "updated_at": "2026-06-08T05:17:17.670243+00:00",
       "status": "open",
       "code": "5347",
       "name": "世界",
@@ -9765,7 +9766,7 @@
         "pct_10m": 0.993,
         "pct_30m": 0.993
       },
-      "age_minutes": 112.02
+      "age_minutes": 117.05
     },
     {
       "key": "ai_pool:1609:48:37.05",
@@ -10528,7 +10529,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T03:25:12.343917+00:00",
-      "updated_at": "2026-06-08T05:12:16.201234+00:00",
+      "updated_at": "2026-06-08T05:17:17.670262+00:00",
       "status": "open",
       "code": "5347",
       "name": "世界",
@@ -10549,7 +10550,7 @@
         "pct_10m": -0.654,
         "pct_30m": -0.654
       },
-      "age_minutes": 107.06
+      "age_minutes": 112.09
     },
     {
       "key": "ai_pool:2308:46:2220.0",
@@ -11256,7 +11257,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T03:30:30.308592+00:00",
-      "updated_at": "2026-06-08T05:12:16.201248+00:00",
+      "updated_at": "2026-06-08T05:17:17.670280+00:00",
       "status": "open",
       "code": "5347",
       "name": "世界",
@@ -11277,7 +11278,7 @@
         "pct_10m": 0.0,
         "pct_30m": 0.0
       },
-      "age_minutes": 101.76
+      "age_minutes": 106.79
     },
     {
       "key": "fund_flow:2344:35:155.0",
@@ -14420,7 +14421,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T04:15:14.557962+00:00",
-      "updated_at": "2026-06-08T05:12:16.201270+00:00",
+      "updated_at": "2026-06-08T05:17:17.670321+00:00",
       "status": "open",
       "code": "5347",
       "name": "世界",
@@ -14441,7 +14442,7 @@
         "pct_10m": 0.0,
         "pct_30m": 0.0
       },
-      "age_minutes": 57.03
+      "age_minutes": 62.05
     },
     {
       "key": "ai_pool:1609:56:36.95",
@@ -14980,7 +14981,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T04:20:15.348711+00:00",
-      "updated_at": "2026-06-08T05:12:16.201282+00:00",
+      "updated_at": "2026-06-08T05:17:17.670338+00:00",
       "status": "open",
       "code": "5347",
       "name": "世界",
@@ -15001,7 +15002,7 @@
         "pct_10m": -0.327,
         "pct_30m": 0.327
       },
-      "age_minutes": 52.01
+      "age_minutes": 57.04
     },
     {
       "key": "ai_pool:2454:56:4035.0",
@@ -15904,7 +15905,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T04:30:21.576629+00:00",
-      "updated_at": "2026-06-08T05:12:16.201296+00:00",
+      "updated_at": "2026-06-08T05:17:17.670381+00:00",
       "status": "open",
       "code": "5347",
       "name": "世界",
@@ -15925,7 +15926,7 @@
         "pct_10m": 0.328,
         "pct_30m": 0.656
       },
-      "age_minutes": 41.91
+      "age_minutes": 46.93
     },
     {
       "key": "ai_pool:1609:40:36.9",
@@ -16464,7 +16465,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T04:35:12.415922+00:00",
-      "updated_at": "2026-06-08T05:12:16.201307+00:00",
+      "updated_at": "2026-06-08T05:17:17.670397+00:00",
       "status": "open",
       "code": "5347",
       "name": "世界",
@@ -16485,7 +16486,7 @@
         "pct_10m": -0.327,
         "pct_30m": 1.307
       },
-      "age_minutes": 37.06
+      "age_minutes": 42.09
     },
     {
       "key": "fund_flow:2368:89:1345.0",
@@ -17553,7 +17554,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T04:50:15.332731+00:00",
-      "updated_at": "2026-06-08T05:12:16.201319+00:00",
+      "updated_at": "2026-06-08T05:17:17.670416+00:00",
       "status": "open",
       "code": "5347",
       "name": "世界",
@@ -17573,7 +17574,7 @@
         "pct_5m": -0.326,
         "pct_10m": 0.0
       },
-      "age_minutes": 22.01
+      "age_minutes": 27.04
     },
     {
       "key": "ai_pool:3037:49:906.0",
@@ -18228,7 +18229,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T05:00:30.824765+00:00",
-      "updated_at": "2026-06-08T05:12:16.201329+00:00",
+      "updated_at": "2026-06-08T05:17:17.670431+00:00",
       "status": "open",
       "code": "5347",
       "name": "世界",
@@ -18248,7 +18249,7 @@
         "pct_5m": 0.649,
         "pct_10m": 0.0
       },
-      "age_minutes": 11.76
+      "age_minutes": 16.78
     },
     {
       "key": "ai_pool:1513:59:168.0",
@@ -18687,7 +18688,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T05:05:14.313130+00:00",
-      "updated_at": "2026-06-08T05:12:16.201360+00:00",
+      "updated_at": "2026-06-08T05:17:17.670445+00:00",
       "status": "open",
       "code": "5347",
       "name": "世界",
@@ -18704,9 +18705,10 @@
         "latest_pct": -0.645,
         "max_gain": 0.0,
         "max_drawdown": -0.645,
-        "pct_5m": -0.645
+        "pct_5m": -0.645,
+        "pct_10m": -0.645
       },
-      "age_minutes": 7.03
+      "age_minutes": 12.06
     },
     {
       "key": "ai_pool:3037:53:913.0",
@@ -19055,7 +19057,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T05:10:16.363932+00:00",
-      "updated_at": "2026-06-08T05:12:16.201373+00:00",
+      "updated_at": "2026-06-08T05:17:17.670458+00:00",
       "status": "open",
       "code": "5347",
       "name": "世界",
@@ -19071,9 +19073,10 @@
       "results": {
         "latest_pct": -0.324,
         "max_gain": 0.0,
-        "max_drawdown": -0.324
+        "max_drawdown": -0.324,
+        "pct_5m": -0.324
       },
-      "age_minutes": 2.0
+      "age_minutes": 7.02
     },
     {
       "key": "ai_pool:1605:56:35.95",
