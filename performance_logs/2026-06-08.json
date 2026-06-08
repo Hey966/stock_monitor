@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-08T04:37:20.058691+00:00",
+  "updated_at": "2026-06-08T04:37:23.751797+00:00",
   "count": 592,
   "items": [
     {
@@ -932,7 +932,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T01:00:36.720308+00:00",
-      "updated_at": "2026-06-08T04:32:23.528373+00:00",
+      "updated_at": "2026-06-08T04:37:22.228949+00:00",
       "status": "open",
       "code": "1514",
       "name": "亞力",
@@ -953,7 +953,7 @@
         "pct_10m": 0.0,
         "pct_30m": 0.0
       },
-      "age_minutes": 211.78
+      "age_minutes": 216.76
     },
     {
       "key": "fund_flow:2409:1:24.4",
@@ -6700,7 +6700,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T02:50:25.637742+00:00",
-      "updated_at": "2026-06-08T04:32:23.528424+00:00",
+      "updated_at": "2026-06-08T04:37:22.229032+00:00",
       "status": "open",
       "code": "1514",
       "name": "亞力",
@@ -6721,7 +6721,7 @@
         "pct_10m": 0.0,
         "pct_30m": 0.0
       },
-      "age_minutes": 101.96
+      "age_minutes": 106.94
     },
     {
       "key": "fund_flow:2609:5:51.3",
@@ -13140,7 +13140,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T03:55:22.253432+00:00",
-      "updated_at": "2026-06-08T04:32:23.528463+00:00",
+      "updated_at": "2026-06-08T04:37:22.229094+00:00",
       "status": "open",
       "code": "1514",
       "name": "亞力",
@@ -13161,7 +13161,7 @@
         "pct_10m": 0.41,
         "pct_30m": 0.41
       },
-      "age_minutes": 37.02
+      "age_minutes": 42.0
     },
     {
       "key": "fund_flow:2618:26:36.35",
@@ -13644,7 +13644,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T04:05:12.635232+00:00",
-      "updated_at": "2026-06-08T04:32:23.528474+00:00",
+      "updated_at": "2026-06-08T04:37:22.229110+00:00",
       "status": "open",
       "code": "1514",
       "name": "亞力",
@@ -13662,9 +13662,10 @@
         "max_gain": 0.0,
         "max_drawdown": -0.407,
         "pct_5m": 0.0,
-        "pct_10m": -0.407
+        "pct_10m": -0.407,
+        "pct_30m": -0.407
       },
-      "age_minutes": 27.18
+      "age_minutes": 32.16
     },
     {
       "key": "ai_pool:3017:48:2555.0",
@@ -14028,7 +14029,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T04:10:16.119841+00:00",
-      "updated_at": "2026-06-08T04:32:23.528484+00:00",
+      "updated_at": "2026-06-08T04:37:22.229122+00:00",
       "status": "open",
       "code": "1514",
       "name": "亞力",
@@ -14048,7 +14049,7 @@
         "pct_5m": -0.81,
         "pct_10m": -0.405
       },
-      "age_minutes": 22.12
+      "age_minutes": 27.1
     },
     {
       "key": "ai_pool:2344:56:155.5",
@@ -14676,7 +14677,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T04:15:24.781738+00:00",
-      "updated_at": "2026-06-08T04:32:23.528494+00:00",
+      "updated_at": "2026-06-08T04:37:22.229135+00:00",
       "status": "open",
       "code": "1514",
       "name": "亞力",
@@ -14696,7 +14697,7 @@
         "pct_5m": 0.408,
         "pct_10m": 0.0
       },
-      "age_minutes": 16.98
+      "age_minutes": 21.96
     },
     {
       "key": "fund_flow:1605:9:35.65",
@@ -15054,7 +15055,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T04:20:25.741312+00:00",
-      "updated_at": "2026-06-08T04:32:23.528504+00:00",
+      "updated_at": "2026-06-08T04:37:22.229147+00:00",
       "status": "open",
       "code": "1514",
       "name": "亞力",
@@ -15074,7 +15075,7 @@
         "pct_5m": -0.407,
         "pct_10m": -0.407
       },
-      "age_minutes": 11.96
+      "age_minutes": 16.94
     },
     {
       "key": "fund_flow:2376:35:345.0",
@@ -15324,7 +15325,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T04:25:12.669766+00:00",
-      "updated_at": "2026-06-08T04:32:23.528513+00:00",
+      "updated_at": "2026-06-08T04:37:22.229157+00:00",
       "status": "open",
       "code": "1514",
       "name": "亞力",
@@ -15341,9 +15342,10 @@
         "latest_pct": 0.41,
         "max_gain": 0.41,
         "max_drawdown": 0.0,
-        "pct_5m": 0.41
+        "pct_5m": 0.41,
+        "pct_10m": 0.41
       },
-      "age_minutes": 7.18
+      "age_minutes": 12.16
     },
     {
       "key": "ai_pool:3037:39:903.0",
@@ -15615,7 +15617,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T04:30:21.576605+00:00",
-      "updated_at": "2026-06-08T04:32:23.528523+00:00",
+      "updated_at": "2026-06-08T04:37:22.229168+00:00",
       "status": "open",
       "code": "1514",
       "name": "亞力",
@@ -15631,9 +15633,10 @@
       "results": {
         "latest_pct": 0.0,
         "max_gain": 0.0,
-        "max_drawdown": 0.0
+        "max_drawdown": 0.0,
+        "pct_5m": 0.0
       },
-      "age_minutes": 2.03
+      "age_minutes": 7.01
     },
     {
       "key": "ai_pool:2618:48:36.3",
@@ -16356,20 +16359,25 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T04:35:23.057993+00:00",
-      "updated_at": "2026-06-08T04:35:23.057996+00:00",
+      "updated_at": "2026-06-08T04:37:22.229183+00:00",
       "status": "open",
       "code": "1514",
       "name": "亞力",
       "sector": "重電",
       "entry_price": 123.0,
-      "last_price": 123.0,
+      "last_price": 122.5,
       "best_price": 123.0,
-      "worst_price": 123.0,
+      "worst_price": 122.5,
       "score": 25,
       "change_rate_at_signal": -8.88,
       "volume_ratio_at_signal": 0.42,
       "alert": "資金退潮警報",
-      "results": {}
+      "results": {
+        "latest_pct": -0.407,
+        "max_gain": 0.0,
+        "max_drawdown": -0.407
+      },
+      "age_minutes": 1.99
     },
     {
       "key": "fund_flow:1605:32:36.05",
