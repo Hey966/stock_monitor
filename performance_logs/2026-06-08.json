@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-08T04:11:48.835049+00:00",
+  "updated_at": "2026-06-08T04:11:52.103908+00:00",
   "count": 507,
   "items": [
     {
@@ -680,13 +680,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T01:00:36.720201+00:00",
-      "updated_at": "2026-06-08T04:06:19.269856+00:00",
+      "updated_at": "2026-06-08T04:11:50.862606+00:00",
       "status": "open",
       "code": "3037",
       "name": "欣興",
       "sector": "半導體",
       "entry_price": 857.0,
-      "last_price": 908.0,
+      "last_price": 907.0,
       "best_price": 922.0,
       "worst_price": 852.0,
       "score": 25,
@@ -694,14 +694,14 @@
       "volume_ratio_at_signal": 0.11,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": 5.951,
+        "latest_pct": 5.834,
         "max_gain": 7.585,
         "max_drawdown": -0.583,
         "pct_5m": 1.75,
         "pct_10m": 2.45,
         "pct_30m": 5.251
       },
-      "age_minutes": 185.71
+      "age_minutes": 191.24
     },
     {
       "key": "fund_flow:1513:35:159.5",
@@ -1296,13 +1296,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T01:05:12.805217+00:00",
-      "updated_at": "2026-06-08T04:06:19.269880+00:00",
+      "updated_at": "2026-06-08T04:11:50.862628+00:00",
       "status": "open",
       "code": "3037",
       "name": "欣興",
       "sector": "半導體",
       "entry_price": 867.0,
-      "last_price": 908.0,
+      "last_price": 907.0,
       "best_price": 922.0,
       "worst_price": 867.0,
       "score": 48,
@@ -1310,14 +1310,14 @@
       "volume_ratio_at_signal": 0.16,
       "alert": null,
       "results": {
-        "latest_pct": 4.729,
+        "latest_pct": 4.614,
         "max_gain": 6.344,
         "max_drawdown": 0.0,
         "pct_5m": 1.269,
         "pct_10m": 0.923,
         "pct_30m": 4.037
       },
-      "age_minutes": 181.11
+      "age_minutes": 186.63
     },
     {
       "key": "ai_pool:3017:48:2415.0",
@@ -2136,13 +2136,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T01:10:16.373961+00:00",
-      "updated_at": "2026-06-08T04:06:19.269895+00:00",
+      "updated_at": "2026-06-08T04:11:50.862645+00:00",
       "status": "open",
       "code": "3037",
       "name": "欣興",
       "sector": "半導體",
       "entry_price": 882.0,
-      "last_price": 908.0,
+      "last_price": 907.0,
       "best_price": 922.0,
       "worst_price": 875.0,
       "score": 56,
@@ -2150,14 +2150,14 @@
       "volume_ratio_at_signal": 0.23,
       "alert": null,
       "results": {
-        "latest_pct": 2.948,
+        "latest_pct": 2.834,
         "max_gain": 4.535,
         "max_drawdown": -0.794,
         "pct_5m": -0.794,
         "pct_10m": 2.268,
         "pct_30m": 2.268
       },
-      "age_minutes": 176.05
+      "age_minutes": 181.57
     },
     {
       "key": "ai_pool:3231:56:160.0",
@@ -2976,13 +2976,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T01:15:15.735276+00:00",
-      "updated_at": "2026-06-08T04:06:19.269909+00:00",
+      "updated_at": "2026-06-08T04:11:50.862665+00:00",
       "status": "open",
       "code": "3037",
       "name": "欣興",
       "sector": "半導體",
       "entry_price": 876.0,
-      "last_price": 908.0,
+      "last_price": 907.0,
       "best_price": 922.0,
       "worst_price": 875.0,
       "score": 56,
@@ -2990,14 +2990,14 @@
       "volume_ratio_at_signal": 0.27,
       "alert": null,
       "results": {
-        "latest_pct": 3.653,
+        "latest_pct": 3.539,
         "max_gain": 5.251,
         "max_drawdown": -0.114,
         "pct_5m": 2.968,
         "pct_10m": 2.968,
         "pct_30m": 2.968
       },
-      "age_minutes": 171.06
+      "age_minutes": 176.59
     },
     {
       "key": "ai_pool:2376:56:345.0",
@@ -4040,13 +4040,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T02:35:13.181479+00:00",
-      "updated_at": "2026-06-08T04:06:19.269932+00:00",
+      "updated_at": "2026-06-08T04:11:50.862683+00:00",
       "status": "open",
       "code": "3037",
       "name": "欣興",
       "sector": "半導體",
       "entry_price": 902.0,
-      "last_price": 908.0,
+      "last_price": 907.0,
       "best_price": 922.0,
       "worst_price": 900.0,
       "score": 56,
@@ -4054,14 +4054,14 @@
       "volume_ratio_at_signal": 0.68,
       "alert": null,
       "results": {
-        "latest_pct": 0.665,
+        "latest_pct": 0.554,
         "max_gain": 2.217,
         "max_drawdown": -0.222,
         "pct_5m": -0.222,
         "pct_10m": 0.222,
         "pct_30m": 0.998
       },
-      "age_minutes": 91.1
+      "age_minutes": 96.63
     },
     {
       "key": "ai_pool:3324:56:1065.0",
@@ -4796,13 +4796,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T02:40:15.266723+00:00",
-      "updated_at": "2026-06-08T04:06:19.269948+00:00",
+      "updated_at": "2026-06-08T04:11:50.862700+00:00",
       "status": "open",
       "code": "3037",
       "name": "欣興",
       "sector": "半導體",
       "entry_price": 901.0,
-      "last_price": 908.0,
+      "last_price": 907.0,
       "best_price": 922.0,
       "worst_price": 900.0,
       "score": 56,
@@ -4810,14 +4810,14 @@
       "volume_ratio_at_signal": 0.68,
       "alert": null,
       "results": {
-        "latest_pct": 0.777,
+        "latest_pct": 0.666,
         "max_gain": 2.331,
         "max_drawdown": -0.111,
         "pct_5m": 0.333,
         "pct_10m": 0.777,
         "pct_30m": 0.777
       },
-      "age_minutes": 86.07
+      "age_minutes": 91.59
     },
     {
       "key": "ai_pool:5347:56:151.5",
@@ -5860,13 +5860,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T02:45:15.083247+00:00",
-      "updated_at": "2026-06-08T04:06:19.269964+00:00",
+      "updated_at": "2026-06-08T04:11:50.862718+00:00",
       "status": "open",
       "code": "3037",
       "name": "欣興",
       "sector": "半導體",
       "entry_price": 902.0,
-      "last_price": 908.0,
+      "last_price": 907.0,
       "best_price": 922.0,
       "worst_price": 902.0,
       "score": 38,
@@ -5874,14 +5874,14 @@
       "volume_ratio_at_signal": 0.69,
       "alert": null,
       "results": {
-        "latest_pct": 0.665,
+        "latest_pct": 0.554,
         "max_gain": 2.217,
         "max_drawdown": 0.0,
         "pct_5m": 0.665,
         "pct_10m": 0.887,
         "pct_30m": 0.776
       },
-      "age_minutes": 81.07
+      "age_minutes": 86.6
     },
     {
       "key": "fund_flow:2379:34:587.0",
@@ -6560,13 +6560,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T02:50:15.303973+00:00",
-      "updated_at": "2026-06-08T04:06:19.269977+00:00",
+      "updated_at": "2026-06-08T04:11:50.862729+00:00",
       "status": "open",
       "code": "3037",
       "name": "欣興",
       "sector": "半導體",
       "entry_price": 907.0,
-      "last_price": 908.0,
+      "last_price": 907.0,
       "best_price": 922.0,
       "worst_price": 907.0,
       "score": 41,
@@ -6574,14 +6574,14 @@
       "volume_ratio_at_signal": 0.7,
       "alert": null,
       "results": {
-        "latest_pct": 0.11,
+        "latest_pct": 0.0,
         "max_gain": 1.654,
         "max_drawdown": 0.0,
         "pct_5m": 0.331,
         "pct_10m": 0.662,
         "pct_30m": 0.0
       },
-      "age_minutes": 76.07
+      "age_minutes": 81.59
     },
     {
       "key": "fund_flow:8046:74:838.0",
@@ -7008,13 +7008,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T02:55:12.105113+00:00",
-      "updated_at": "2026-06-08T04:06:19.269989+00:00",
+      "updated_at": "2026-06-08T04:11:50.862739+00:00",
       "status": "open",
       "code": "3037",
       "name": "欣興",
       "sector": "半導體",
       "entry_price": 910.0,
-      "last_price": 908.0,
+      "last_price": 907.0,
       "best_price": 922.0,
       "worst_price": 907.0,
       "score": 53,
@@ -7022,14 +7022,14 @@
       "volume_ratio_at_signal": 0.71,
       "alert": null,
       "results": {
-        "latest_pct": -0.22,
+        "latest_pct": -0.33,
         "max_gain": 1.319,
         "max_drawdown": -0.33,
         "pct_5m": 0.33,
         "pct_10m": 0.11,
         "pct_30m": 0.659
       },
-      "age_minutes": 71.12
+      "age_minutes": 76.65
     },
     {
       "key": "ai_pool:2615:53:84.0",
@@ -7792,13 +7792,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T03:00:26.524788+00:00",
-      "updated_at": "2026-06-08T04:06:19.270001+00:00",
+      "updated_at": "2026-06-08T04:11:50.862749+00:00",
       "status": "open",
       "code": "3037",
       "name": "欣興",
       "sector": "半導體",
       "entry_price": 910.0,
-      "last_price": 908.0,
+      "last_price": 907.0,
       "best_price": 922.0,
       "worst_price": 907.0,
       "score": 43,
@@ -7806,14 +7806,14 @@
       "volume_ratio_at_signal": 0.72,
       "alert": null,
       "results": {
-        "latest_pct": -0.22,
+        "latest_pct": -0.33,
         "max_gain": 1.319,
         "max_drawdown": -0.33,
         "pct_5m": 0.11,
         "pct_10m": -0.22,
         "pct_30m": 0.989
       },
-      "age_minutes": 65.88
+      "age_minutes": 71.41
     },
     {
       "key": "fund_flow:2368:84:1340.0",
@@ -8408,13 +8408,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T03:10:15.922547+00:00",
-      "updated_at": "2026-06-08T04:06:19.270014+00:00",
+      "updated_at": "2026-06-08T04:11:50.862760+00:00",
       "status": "open",
       "code": "3037",
       "name": "欣興",
       "sector": "半導體",
       "entry_price": 909.0,
-      "last_price": 908.0,
+      "last_price": 907.0,
       "best_price": 922.0,
       "worst_price": 907.0,
       "score": 61,
@@ -8422,14 +8422,14 @@
       "volume_ratio_at_signal": 0.74,
       "alert": null,
       "results": {
-        "latest_pct": -0.11,
+        "latest_pct": -0.22,
         "max_gain": 1.43,
         "max_drawdown": -0.22,
         "pct_5m": 0.0,
         "pct_10m": -0.22,
         "pct_30m": 1.21
       },
-      "age_minutes": 56.06
+      "age_minutes": 61.58
     },
     {
       "key": "ai_pool:3017:59:2525.0",
@@ -9080,13 +9080,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T03:15:15.074843+00:00",
-      "updated_at": "2026-06-08T04:06:19.270027+00:00",
+      "updated_at": "2026-06-08T04:11:50.862770+00:00",
       "status": "open",
       "code": "3037",
       "name": "欣興",
       "sector": "半導體",
       "entry_price": 907.0,
-      "last_price": 908.0,
+      "last_price": 907.0,
       "best_price": 922.0,
       "worst_price": 907.0,
       "score": 51,
@@ -9094,14 +9094,14 @@
       "volume_ratio_at_signal": 0.75,
       "alert": null,
       "results": {
-        "latest_pct": 0.11,
+        "latest_pct": 0.0,
         "max_gain": 1.654,
         "max_drawdown": 0.0,
         "pct_5m": 0.0,
         "pct_10m": 0.992,
         "pct_30m": 0.992
       },
-      "age_minutes": 51.07
+      "age_minutes": 56.6
     },
     {
       "key": "ai_pool:3661:48:4095.0",
@@ -9724,13 +9724,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T03:20:14.903016+00:00",
-      "updated_at": "2026-06-08T04:06:19.270040+00:00",
+      "updated_at": "2026-06-08T04:11:50.862781+00:00",
       "status": "open",
       "code": "3037",
       "name": "欣興",
       "sector": "半導體",
       "entry_price": 906.0,
-      "last_price": 908.0,
+      "last_price": 907.0,
       "best_price": 922.0,
       "worst_price": 906.0,
       "score": 41,
@@ -9738,14 +9738,14 @@
       "volume_ratio_at_signal": 0.76,
       "alert": null,
       "results": {
-        "latest_pct": 0.221,
+        "latest_pct": 0.11,
         "max_gain": 1.766,
         "max_drawdown": 0.0,
         "pct_5m": 1.104,
         "pct_10m": 1.435,
         "pct_30m": 0.993
       },
-      "age_minutes": 46.07
+      "age_minutes": 51.6
     },
     {
       "key": "ai_pool:2376:40:345.0",
@@ -10368,28 +10368,28 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T03:25:12.343889+00:00",
-      "updated_at": "2026-06-08T04:06:19.270053+00:00",
+      "updated_at": "2026-06-08T04:11:50.862792+00:00",
       "status": "open",
       "code": "3037",
       "name": "欣興",
       "sector": "半導體",
       "entry_price": 918.0,
-      "last_price": 908.0,
+      "last_price": 907.0,
       "best_price": 922.0,
-      "worst_price": 908.0,
+      "worst_price": 907.0,
       "score": 48,
       "change_rate_at_signal": -1.6,
       "volume_ratio_at_signal": 0.78,
       "alert": null,
       "results": {
-        "latest_pct": -1.089,
+        "latest_pct": -1.198,
         "max_gain": 0.436,
-        "max_drawdown": -1.089,
+        "max_drawdown": -1.198,
         "pct_5m": 0.109,
         "pct_10m": 0.436,
         "pct_30m": -0.654
       },
-      "age_minutes": 41.12
+      "age_minutes": 46.64
     },
     {
       "key": "ai_pool:2379:48:595.0",
@@ -10732,28 +10732,28 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T03:30:19.535866+00:00",
-      "updated_at": "2026-06-08T04:06:19.270064+00:00",
+      "updated_at": "2026-06-08T04:11:50.862805+00:00",
       "status": "open",
       "code": "3037",
       "name": "欣興",
       "sector": "半導體",
       "entry_price": 921.0,
-      "last_price": 908.0,
+      "last_price": 907.0,
       "best_price": 922.0,
-      "worst_price": 908.0,
+      "worst_price": 907.0,
       "score": 68,
       "change_rate_at_signal": -1.28,
       "volume_ratio_at_signal": 0.8,
       "alert": null,
       "results": {
-        "latest_pct": -1.412,
+        "latest_pct": -1.52,
         "max_gain": 0.109,
-        "max_drawdown": -1.412,
+        "max_drawdown": -1.52,
         "pct_5m": 0.109,
         "pct_10m": -0.109,
         "pct_30m": -1.303
       },
-      "age_minutes": 36.0
+      "age_minutes": 41.52
     },
     {
       "key": "ai_pool:2615:66:84.6",
@@ -12124,27 +12124,27 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T03:45:15.296318+00:00",
-      "updated_at": "2026-06-08T04:06:19.270079+00:00",
+      "updated_at": "2026-06-08T04:11:50.862828+00:00",
       "status": "open",
       "code": "3037",
       "name": "欣興",
       "sector": "半導體",
       "entry_price": 916.0,
-      "last_price": 908.0,
+      "last_price": 907.0,
       "best_price": 916.0,
-      "worst_price": 908.0,
+      "worst_price": 907.0,
       "score": 65,
       "change_rate_at_signal": -1.82,
       "volume_ratio_at_signal": 0.82,
       "alert": null,
       "results": {
-        "latest_pct": -0.873,
+        "latest_pct": -0.983,
         "max_gain": 0.0,
-        "max_drawdown": -0.873,
+        "max_drawdown": -0.983,
         "pct_5m": -0.109,
         "pct_10m": -0.437
       },
-      "age_minutes": 21.07
+      "age_minutes": 26.59
     },
     {
       "key": "ai_pool:3017:64:2550.0",
@@ -12556,27 +12556,27 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T03:50:15.373149+00:00",
-      "updated_at": "2026-06-08T04:06:19.270089+00:00",
+      "updated_at": "2026-06-08T04:11:50.862840+00:00",
       "status": "open",
       "code": "3037",
       "name": "欣興",
       "sector": "半導體",
       "entry_price": 916.0,
-      "last_price": 908.0,
+      "last_price": 907.0,
       "best_price": 916.0,
-      "worst_price": 908.0,
+      "worst_price": 907.0,
       "score": 73,
       "change_rate_at_signal": -1.82,
       "volume_ratio_at_signal": 0.83,
       "alert": null,
       "results": {
-        "latest_pct": -0.873,
+        "latest_pct": -0.983,
         "max_gain": 0.0,
-        "max_drawdown": -0.873,
+        "max_drawdown": -0.983,
         "pct_5m": -0.437,
         "pct_10m": -0.764
       },
-      "age_minutes": 16.06
+      "age_minutes": 21.59
     },
     {
       "key": "ai_pool:3017:67:2560.0",
@@ -12880,27 +12880,27 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T03:55:11.578049+00:00",
-      "updated_at": "2026-06-08T04:06:19.270100+00:00",
+      "updated_at": "2026-06-08T04:11:50.862853+00:00",
       "status": "open",
       "code": "3037",
       "name": "欣興",
       "sector": "半導體",
       "entry_price": 912.0,
-      "last_price": 908.0,
+      "last_price": 907.0,
       "best_price": 912.0,
-      "worst_price": 908.0,
+      "worst_price": 907.0,
       "score": 62,
       "change_rate_at_signal": -2.25,
       "volume_ratio_at_signal": 0.83,
       "alert": null,
       "results": {
-        "latest_pct": -0.439,
+        "latest_pct": -0.548,
         "max_gain": 0.0,
-        "max_drawdown": -0.439,
+        "max_drawdown": -0.548,
         "pct_5m": -0.329,
         "pct_10m": -0.439
       },
-      "age_minutes": 11.13
+      "age_minutes": 16.65
     },
     {
       "key": "ai_pool:2308:56:2225.0",
@@ -13204,26 +13204,27 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T04:00:26.382984+00:00",
-      "updated_at": "2026-06-08T04:06:19.270110+00:00",
+      "updated_at": "2026-06-08T04:11:50.862865+00:00",
       "status": "open",
       "code": "3037",
       "name": "欣興",
       "sector": "半導體",
       "entry_price": 910.0,
-      "last_price": 908.0,
+      "last_price": 907.0,
       "best_price": 910.0,
-      "worst_price": 908.0,
+      "worst_price": 907.0,
       "score": 69,
       "change_rate_at_signal": -2.46,
       "volume_ratio_at_signal": 0.84,
       "alert": null,
       "results": {
-        "latest_pct": -0.22,
+        "latest_pct": -0.33,
         "max_gain": 0.0,
-        "max_drawdown": -0.22,
-        "pct_5m": -0.22
+        "max_drawdown": -0.33,
+        "pct_5m": -0.22,
+        "pct_10m": -0.33
       },
-      "age_minutes": 5.88
+      "age_minutes": 11.41
     },
     {
       "key": "ai_pool:2317:64:269.5",
@@ -13442,25 +13443,26 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T04:05:12.635115+00:00",
-      "updated_at": "2026-06-08T04:06:19.270119+00:00",
+      "updated_at": "2026-06-08T04:11:50.862877+00:00",
       "status": "open",
       "code": "3037",
       "name": "欣興",
       "sector": "半導體",
       "entry_price": 911.0,
-      "last_price": 908.0,
+      "last_price": 907.0,
       "best_price": 911.0,
-      "worst_price": 908.0,
+      "worst_price": 907.0,
       "score": 70,
       "change_rate_at_signal": -2.35,
       "volume_ratio_at_signal": 0.84,
       "alert": null,
       "results": {
-        "latest_pct": -0.329,
+        "latest_pct": -0.439,
         "max_gain": 0.0,
-        "max_drawdown": -0.329
+        "max_drawdown": -0.439,
+        "pct_5m": -0.439
       },
-      "age_minutes": 1.11
+      "age_minutes": 6.64
     },
     {
       "key": "ai_pool:2330:62:2310.0",
@@ -13850,7 +13852,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T04:10:16.119766+00:00",
-      "updated_at": "2026-06-08T04:10:16.119769+00:00",
+      "updated_at": "2026-06-08T04:11:50.862889+00:00",
       "status": "open",
       "code": "3037",
       "name": "欣興",
@@ -13863,7 +13865,12 @@
       "change_rate_at_signal": -2.78,
       "volume_ratio_at_signal": 0.85,
       "alert": null,
-      "results": {}
+      "results": {
+        "latest_pct": 0.0,
+        "max_gain": 0.0,
+        "max_drawdown": 0.0
+      },
+      "age_minutes": 1.58
     },
     {
       "key": "ai_pool:2382:56:371.5",
