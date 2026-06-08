@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-08T06:36:37.009093+00:00",
+  "updated_at": "2026-06-08T06:36:40.911097+00:00",
   "count": 737,
   "items": [
     {
@@ -4096,8 +4096,8 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T02:35:13.181479+00:00",
-      "updated_at": "2026-06-08T06:31:49.635202+00:00",
-      "status": "open",
+      "updated_at": "2026-06-08T06:36:39.437825+00:00",
+      "status": "closed",
       "code": "3037",
       "name": "欣興",
       "sector": "半導體",
@@ -4115,9 +4115,10 @@
         "max_drawdown": -0.222,
         "pct_5m": -0.222,
         "pct_10m": 0.222,
-        "pct_30m": 0.998
+        "pct_30m": 0.998,
+        "pct_close_proxy": 0.998
       },
-      "age_minutes": 236.61
+      "age_minutes": 241.44
     },
     {
       "key": "ai_pool:3324:56:1065.0",
@@ -4864,7 +4865,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T02:40:15.266723+00:00",
-      "updated_at": "2026-06-08T06:31:49.635239+00:00",
+      "updated_at": "2026-06-08T06:36:39.437858+00:00",
       "status": "open",
       "code": "3037",
       "name": "欣興",
@@ -4885,7 +4886,7 @@
         "pct_10m": 0.777,
         "pct_30m": 0.777
       },
-      "age_minutes": 231.57
+      "age_minutes": 236.4
     },
     {
       "key": "ai_pool:5347:56:151.5",
@@ -5928,7 +5929,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T02:45:15.083247+00:00",
-      "updated_at": "2026-06-08T06:31:49.635264+00:00",
+      "updated_at": "2026-06-08T06:36:39.437881+00:00",
       "status": "open",
       "code": "3037",
       "name": "欣興",
@@ -5949,7 +5950,7 @@
         "pct_10m": 0.887,
         "pct_30m": 0.776
       },
-      "age_minutes": 226.58
+      "age_minutes": 231.41
     },
     {
       "key": "fund_flow:2379:34:587.0",
@@ -6628,7 +6629,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T02:50:15.303973+00:00",
-      "updated_at": "2026-06-08T06:31:49.635288+00:00",
+      "updated_at": "2026-06-08T06:36:39.437899+00:00",
       "status": "open",
       "code": "3037",
       "name": "欣興",
@@ -6649,7 +6650,7 @@
         "pct_10m": 0.662,
         "pct_30m": 0.0
       },
-      "age_minutes": 221.57
+      "age_minutes": 226.4
     },
     {
       "key": "fund_flow:8046:74:838.0",
@@ -7076,7 +7077,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T02:55:12.105113+00:00",
-      "updated_at": "2026-06-08T06:31:49.635305+00:00",
+      "updated_at": "2026-06-08T06:36:39.437914+00:00",
       "status": "open",
       "code": "3037",
       "name": "欣興",
@@ -7097,7 +7098,7 @@
         "pct_10m": 0.11,
         "pct_30m": 0.659
       },
-      "age_minutes": 216.63
+      "age_minutes": 221.46
     },
     {
       "key": "ai_pool:2615:53:84.0",
@@ -7860,7 +7861,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T03:00:26.524788+00:00",
-      "updated_at": "2026-06-08T06:31:49.635326+00:00",
+      "updated_at": "2026-06-08T06:36:39.437931+00:00",
       "status": "open",
       "code": "3037",
       "name": "欣興",
@@ -7881,7 +7882,7 @@
         "pct_10m": -0.22,
         "pct_30m": 0.989
       },
-      "age_minutes": 211.39
+      "age_minutes": 216.22
     },
     {
       "key": "fund_flow:2368:84:1340.0",
@@ -8476,7 +8477,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T03:10:15.922547+00:00",
-      "updated_at": "2026-06-08T06:31:49.635366+00:00",
+      "updated_at": "2026-06-08T06:36:39.437958+00:00",
       "status": "open",
       "code": "3037",
       "name": "欣興",
@@ -8497,7 +8498,7 @@
         "pct_10m": -0.22,
         "pct_30m": 1.21
       },
-      "age_minutes": 201.56
+      "age_minutes": 206.39
     },
     {
       "key": "ai_pool:3017:59:2525.0",
@@ -9148,7 +9149,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T03:15:15.074843+00:00",
-      "updated_at": "2026-06-08T06:31:49.635387+00:00",
+      "updated_at": "2026-06-08T06:36:39.437976+00:00",
       "status": "open",
       "code": "3037",
       "name": "欣興",
@@ -9169,7 +9170,7 @@
         "pct_10m": 0.992,
         "pct_30m": 0.992
       },
-      "age_minutes": 196.58
+      "age_minutes": 201.41
     },
     {
       "key": "ai_pool:3661:48:4095.0",
@@ -9792,7 +9793,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T03:20:14.903016+00:00",
-      "updated_at": "2026-06-08T06:31:49.635407+00:00",
+      "updated_at": "2026-06-08T06:36:39.437993+00:00",
       "status": "open",
       "code": "3037",
       "name": "欣興",
@@ -9813,7 +9814,7 @@
         "pct_10m": 1.435,
         "pct_30m": 0.993
       },
-      "age_minutes": 191.58
+      "age_minutes": 196.41
     },
     {
       "key": "ai_pool:2376:40:345.0",
@@ -10436,7 +10437,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T03:25:12.343889+00:00",
-      "updated_at": "2026-06-08T06:31:49.635427+00:00",
+      "updated_at": "2026-06-08T06:36:39.438011+00:00",
       "status": "open",
       "code": "3037",
       "name": "欣興",
@@ -10457,7 +10458,7 @@
         "pct_10m": 0.436,
         "pct_30m": -0.654
       },
-      "age_minutes": 186.62
+      "age_minutes": 191.45
     },
     {
       "key": "ai_pool:2379:48:595.0",
@@ -10800,7 +10801,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T03:30:19.535866+00:00",
-      "updated_at": "2026-06-08T06:31:49.635445+00:00",
+      "updated_at": "2026-06-08T06:36:39.438025+00:00",
       "status": "open",
       "code": "3037",
       "name": "欣興",
@@ -10821,7 +10822,7 @@
         "pct_10m": -0.109,
         "pct_30m": -1.303
       },
-      "age_minutes": 181.5
+      "age_minutes": 186.33
     },
     {
       "key": "ai_pool:2615:66:84.6",
@@ -12200,7 +12201,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T03:45:15.296318+00:00",
-      "updated_at": "2026-06-08T06:31:49.635471+00:00",
+      "updated_at": "2026-06-08T06:36:39.438048+00:00",
       "status": "open",
       "code": "3037",
       "name": "欣興",
@@ -12221,7 +12222,7 @@
         "pct_10m": -0.437,
         "pct_30m": -0.983
       },
-      "age_minutes": 166.57
+      "age_minutes": 171.4
     },
     {
       "key": "ai_pool:3017:64:2550.0",
@@ -12648,7 +12649,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T03:50:15.373149+00:00",
-      "updated_at": "2026-06-08T06:31:49.635488+00:00",
+      "updated_at": "2026-06-08T06:36:39.438062+00:00",
       "status": "open",
       "code": "3037",
       "name": "欣興",
@@ -12669,7 +12670,7 @@
         "pct_10m": -0.764,
         "pct_30m": -1.31
       },
-      "age_minutes": 161.57
+      "age_minutes": 166.4
     },
     {
       "key": "ai_pool:3017:67:2560.0",
@@ -12984,7 +12985,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T03:55:11.578049+00:00",
-      "updated_at": "2026-06-08T06:31:49.635507+00:00",
+      "updated_at": "2026-06-08T06:36:39.438073+00:00",
       "status": "open",
       "code": "3037",
       "name": "欣興",
@@ -13005,7 +13006,7 @@
         "pct_10m": -0.439,
         "pct_30m": -0.877
       },
-      "age_minutes": 156.63
+      "age_minutes": 161.46
     },
     {
       "key": "ai_pool:2308:56:2225.0",
@@ -13320,7 +13321,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T04:00:26.382984+00:00",
-      "updated_at": "2026-06-08T06:31:49.635524+00:00",
+      "updated_at": "2026-06-08T06:36:39.438081+00:00",
       "status": "open",
       "code": "3037",
       "name": "欣興",
@@ -13341,7 +13342,7 @@
         "pct_10m": -0.33,
         "pct_30m": -0.44
       },
-      "age_minutes": 151.39
+      "age_minutes": 156.22
     },
     {
       "key": "ai_pool:2317:64:269.5",
@@ -13572,7 +13573,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T04:05:12.635115+00:00",
-      "updated_at": "2026-06-08T06:31:49.635537+00:00",
+      "updated_at": "2026-06-08T06:36:39.438089+00:00",
       "status": "open",
       "code": "3037",
       "name": "欣興",
@@ -13593,7 +13594,7 @@
         "pct_10m": -0.439,
         "pct_30m": -0.549
       },
-      "age_minutes": 146.62
+      "age_minutes": 151.45
     },
     {
       "key": "ai_pool:2330:62:2310.0",
@@ -14020,7 +14021,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T04:10:16.119766+00:00",
-      "updated_at": "2026-06-08T06:31:49.635552+00:00",
+      "updated_at": "2026-06-08T06:36:39.438104+00:00",
       "status": "open",
       "code": "3037",
       "name": "欣興",
@@ -14041,7 +14042,7 @@
         "pct_10m": -0.331,
         "pct_30m": 0.11
       },
-      "age_minutes": 141.56
+      "age_minutes": 146.39
     },
     {
       "key": "ai_pool:2382:56:371.5",
@@ -14496,7 +14497,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T04:15:14.558028+00:00",
-      "updated_at": "2026-06-08T06:31:49.635570+00:00",
+      "updated_at": "2026-06-08T06:36:39.438116+00:00",
       "status": "open",
       "code": "3037",
       "name": "欣興",
@@ -14517,7 +14518,7 @@
         "pct_10m": -0.331,
         "pct_30m": -0.221
       },
-      "age_minutes": 136.58
+      "age_minutes": 141.41
     },
     {
       "key": "ai_pool:3711:46:536.0",
@@ -14888,7 +14889,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T04:20:15.348673+00:00",
-      "updated_at": "2026-06-08T06:31:49.635587+00:00",
+      "updated_at": "2026-06-08T06:36:39.438127+00:00",
       "status": "open",
       "code": "3037",
       "name": "欣興",
@@ -14909,7 +14910,7 @@
         "pct_10m": 0.11,
         "pct_30m": 0.442
       },
-      "age_minutes": 131.57
+      "age_minutes": 136.4
     },
     {
       "key": "ai_pool:2308:64:2220.0",
@@ -15476,7 +15477,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T04:25:12.669771+00:00",
-      "updated_at": "2026-06-08T06:31:49.635606+00:00",
+      "updated_at": "2026-06-08T06:36:39.438139+00:00",
       "status": "open",
       "code": "3037",
       "name": "欣興",
@@ -15497,14 +15498,14 @@
         "pct_10m": 0.332,
         "pct_30m": 0.332
       },
-      "age_minutes": 126.62
+      "age_minutes": 131.45
     },
     {
       "key": "fund_flow:3037:25:903.0",
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T04:25:23.118675+00:00",
-      "updated_at": "2026-06-08T06:31:49.635618+00:00",
+      "updated_at": "2026-06-08T06:36:39.438150+00:00",
       "status": "open",
       "code": "3037",
       "name": "欣興",
@@ -15525,7 +15526,7 @@
         "pct_10m": 0.332,
         "pct_30m": 0.332
       },
-      "age_minutes": 126.44
+      "age_minutes": 131.27
     },
     {
       "key": "fund_flow:1609:24:36.95",
@@ -15812,7 +15813,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T04:30:21.576617+00:00",
-      "updated_at": "2026-06-08T06:31:49.635633+00:00",
+      "updated_at": "2026-06-08T06:36:39.438162+00:00",
       "status": "open",
       "code": "3037",
       "name": "欣興",
@@ -15833,7 +15834,7 @@
         "pct_10m": 0.442,
         "pct_30m": 0.442
       },
-      "age_minutes": 121.47
+      "age_minutes": 126.3
     },
     {
       "key": "ai_pool:3711:46:535.0",
@@ -15952,7 +15953,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T04:30:31.692770+00:00",
-      "updated_at": "2026-06-08T06:31:49.635647+00:00",
+      "updated_at": "2026-06-08T06:36:39.438170+00:00",
       "status": "open",
       "code": "3037",
       "name": "欣興",
@@ -15973,7 +15974,7 @@
         "pct_10m": 0.442,
         "pct_30m": 0.442
       },
-      "age_minutes": 121.3
+      "age_minutes": 126.13
     },
     {
       "key": "fund_flow:3711:31:535.0",
@@ -16764,7 +16765,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T04:40:16.222882+00:00",
-      "updated_at": "2026-06-08T06:31:49.635667+00:00",
+      "updated_at": "2026-06-08T06:36:39.438179+00:00",
       "status": "open",
       "code": "3037",
       "name": "欣興",
@@ -16785,7 +16786,7 @@
         "pct_10m": 0.0,
         "pct_30m": 0.0
       },
-      "age_minutes": 111.56
+      "age_minutes": 116.39
     },
     {
       "key": "ai_pool:2379:48:592.0",
@@ -17184,7 +17185,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T04:45:15.082669+00:00",
-      "updated_at": "2026-06-08T06:31:49.635681+00:00",
+      "updated_at": "2026-06-08T06:36:39.438187+00:00",
       "status": "open",
       "code": "3037",
       "name": "欣興",
@@ -17205,7 +17206,7 @@
         "pct_10m": 0.11,
         "pct_30m": 0.221
       },
-      "age_minutes": 106.58
+      "age_minutes": 111.41
     },
     {
       "key": "ai_pool:2615:55:84.3",
@@ -17548,7 +17549,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T04:50:15.332754+00:00",
-      "updated_at": "2026-06-08T06:31:49.635695+00:00",
+      "updated_at": "2026-06-08T06:36:39.438194+00:00",
       "status": "open",
       "code": "3037",
       "name": "欣興",
@@ -17569,7 +17570,7 @@
         "pct_10m": 0.221,
         "pct_30m": 0.221
       },
-      "age_minutes": 101.57
+      "age_minutes": 106.4
     },
     {
       "key": "ai_pool:3661:46:4145.0",
@@ -17968,7 +17969,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T04:55:22.580875+00:00",
-      "updated_at": "2026-06-08T06:31:49.635710+00:00",
+      "updated_at": "2026-06-08T06:36:39.438201+00:00",
       "status": "open",
       "code": "3037",
       "name": "欣興",
@@ -17989,7 +17990,7 @@
         "pct_10m": 0.662,
         "pct_30m": 0.11
       },
-      "age_minutes": 96.45
+      "age_minutes": 101.28
     },
     {
       "key": "fund_flow:2379:35:594.0",
@@ -18080,7 +18081,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T05:00:30.824710+00:00",
-      "updated_at": "2026-06-08T06:31:49.635722+00:00",
+      "updated_at": "2026-06-08T06:36:39.438207+00:00",
       "status": "open",
       "code": "3037",
       "name": "欣興",
@@ -18101,7 +18102,7 @@
         "pct_10m": 0.11,
         "pct_30m": 0.33
       },
-      "age_minutes": 91.31
+      "age_minutes": 96.14
     },
     {
       "key": "ai_pool:2308:67:2235.0",
@@ -18724,7 +18725,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T05:05:14.313141+00:00",
-      "updated_at": "2026-06-08T06:31:49.635739+00:00",
+      "updated_at": "2026-06-08T06:36:39.438225+00:00",
       "status": "open",
       "code": "3037",
       "name": "欣興",
@@ -18745,7 +18746,7 @@
         "pct_10m": -0.657,
         "pct_30m": -0.219
       },
-      "age_minutes": 86.59
+      "age_minutes": 91.42
     },
     {
       "key": "ai_pool:3443:52:4270.0",
@@ -19144,7 +19145,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T05:10:16.363967+00:00",
-      "updated_at": "2026-06-08T06:31:49.635754+00:00",
+      "updated_at": "2026-06-08T06:36:39.438234+00:00",
       "status": "open",
       "code": "3037",
       "name": "欣興",
@@ -19165,7 +19166,7 @@
         "pct_10m": -0.22,
         "pct_30m": 0.11
       },
-      "age_minutes": 81.55
+      "age_minutes": 86.38
     },
     {
       "key": "ai_pool:3661:51:4175.0",
@@ -19816,7 +19817,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T05:20:19.321585+00:00",
-      "updated_at": "2026-06-08T06:31:49.635771+00:00",
+      "updated_at": "2026-06-08T06:36:39.438242+00:00",
       "status": "open",
       "code": "3037",
       "name": "欣興",
@@ -19837,7 +19838,7 @@
         "pct_10m": 0.33,
         "pct_30m": 0.33
       },
-      "age_minutes": 71.51
+      "age_minutes": 76.34
     },
     {
       "key": "ai_pool:1513:58:167.5",
@@ -20572,7 +20573,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T05:30:20.350903+00:00",
-      "updated_at": "2026-06-08T06:31:49.635789+00:00",
+      "updated_at": "2026-06-08T06:36:39.438250+00:00",
       "status": "open",
       "code": "3037",
       "name": "欣興",
@@ -20593,7 +20594,7 @@
         "pct_10m": 0.0,
         "pct_30m": 0.0
       },
-      "age_minutes": 61.49
+      "age_minutes": 66.32
     },
     {
       "key": "ai_pool:3443:50:4255.0",
