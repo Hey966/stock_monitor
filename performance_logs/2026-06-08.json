@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-08T01:16:17.951774+00:00",
+  "updated_at": "2026-06-08T01:16:20.657311+00:00",
   "count": 140,
   "items": [
     {
@@ -521,7 +521,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T01:00:25.731836+00:00",
-      "updated_at": "2026-06-08T01:11:12.094595+00:00",
+      "updated_at": "2026-06-08T01:16:19.878557+00:00",
       "status": "open",
       "code": "5347",
       "name": "世界",
@@ -541,7 +541,7 @@
         "pct_5m": -0.336,
         "pct_10m": 0.336
       },
-      "age_minutes": 10.77
+      "age_minutes": 15.9
     },
     {
       "key": "fund_flow:2382:35:361.5",
@@ -602,7 +602,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T01:00:36.720186+00:00",
-      "updated_at": "2026-06-08T01:11:12.094609+00:00",
+      "updated_at": "2026-06-08T01:16:19.878571+00:00",
       "status": "open",
       "code": "5347",
       "name": "世界",
@@ -622,7 +622,7 @@
         "pct_5m": 0.338,
         "pct_10m": 1.014
       },
-      "age_minutes": 10.59
+      "age_minutes": 15.72
     },
     {
       "key": "fund_flow:1605:27:35.9",
@@ -1538,7 +1538,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T01:05:12.805307+00:00",
-      "updated_at": "2026-06-08T01:11:12.094618+00:00",
+      "updated_at": "2026-06-08T01:16:19.878581+00:00",
       "status": "open",
       "code": "5347",
       "name": "世界",
@@ -1555,9 +1555,10 @@
         "latest_pct": -0.333,
         "max_gain": 0.0,
         "max_drawdown": -1.0,
-        "pct_5m": -0.333
+        "pct_5m": -0.333,
+        "pct_10m": -0.333
       },
-      "age_minutes": 5.99
+      "age_minutes": 11.12
     },
     {
       "key": "fund_flow:2376:32:339.0",
@@ -1800,7 +1801,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T01:05:22.720784+00:00",
-      "updated_at": "2026-06-08T01:11:12.094628+00:00",
+      "updated_at": "2026-06-08T01:16:19.878588+00:00",
       "status": "open",
       "code": "5347",
       "name": "世界",
@@ -1817,9 +1818,10 @@
         "latest_pct": 0.336,
         "max_gain": 0.336,
         "max_drawdown": -0.336,
-        "pct_5m": 0.336
+        "pct_5m": 0.336,
+        "pct_10m": 0.336
       },
-      "age_minutes": 5.82
+      "age_minutes": 10.95
     },
     {
       "key": "fund_flow:6215:20:109.0",
@@ -2264,7 +2266,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T01:10:16.374021+00:00",
-      "updated_at": "2026-06-08T01:11:12.094641+00:00",
+      "updated_at": "2026-06-08T01:16:19.878595+00:00",
       "status": "open",
       "code": "5347",
       "name": "世界",
@@ -2280,9 +2282,10 @@
       "results": {
         "latest_pct": -0.664,
         "max_gain": 0.0,
-        "max_drawdown": -0.664
+        "max_drawdown": -0.664,
+        "pct_5m": -0.664
       },
-      "age_minutes": 0.93
+      "age_minutes": 6.06
     },
     {
       "key": "ai_pool:1605:48:36.15",
@@ -2642,7 +2645,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T01:10:27.018854+00:00",
-      "updated_at": "2026-06-08T01:11:12.094653+00:00",
+      "updated_at": "2026-06-08T01:16:19.878601+00:00",
       "status": "open",
       "code": "5347",
       "name": "世界",
@@ -2658,9 +2661,10 @@
       "results": {
         "latest_pct": -0.333,
         "max_gain": 0.0,
-        "max_drawdown": -0.333
+        "max_drawdown": -0.333,
+        "pct_5m": -0.333
       },
-      "age_minutes": 0.75
+      "age_minutes": 5.88
     },
     {
       "key": "fund_flow:2382:17:366.5",
@@ -2838,20 +2842,25 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T01:15:15.735297+00:00",
-      "updated_at": "2026-06-08T01:15:15.735300+00:00",
+      "updated_at": "2026-06-08T01:16:19.878607+00:00",
       "status": "open",
       "code": "5347",
       "name": "世界",
       "sector": "半導體",
       "entry_price": 150.0,
-      "last_price": 150.0,
+      "last_price": 149.5,
       "best_price": 150.0,
-      "worst_price": 150.0,
+      "worst_price": 149.5,
       "score": 56,
       "change_rate_at_signal": -7.12,
       "volume_ratio_at_signal": 0.2,
       "alert": null,
-      "results": {}
+      "results": {
+        "latest_pct": -0.333,
+        "max_gain": 0.0,
+        "max_drawdown": -0.333
+      },
+      "age_minutes": 1.07
     },
     {
       "key": "ai_pool:1609:56:37.05",
