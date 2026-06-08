@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-08T01:15:55.677259+00:00",
+  "updated_at": "2026-06-08T01:15:57.938896+00:00",
   "count": 140,
   "items": [
     {
@@ -1322,7 +1322,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T01:05:12.805243+00:00",
-      "updated_at": "2026-06-08T01:10:54.817980+00:00",
+      "updated_at": "2026-06-08T01:15:57.184282+00:00",
       "status": "open",
       "code": "3661",
       "name": "世芯-KY",
@@ -1339,9 +1339,10 @@
         "latest_pct": -0.125,
         "max_gain": 0.0,
         "max_drawdown": -0.25,
-        "pct_5m": -0.125
+        "pct_5m": -0.125,
+        "pct_10m": -0.125
       },
-      "age_minutes": 5.7
+      "age_minutes": 10.74
     },
     {
       "key": "ai_pool:2379:48:588.0",
@@ -3099,20 +3100,25 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T01:15:15.735432+00:00",
-      "updated_at": "2026-06-08T01:15:15.735435+00:00",
+      "updated_at": "2026-06-08T01:15:57.184301+00:00",
       "status": "open",
       "code": "3661",
       "name": "世芯-KY",
       "sector": "半導體",
       "entry_price": 4005.0,
-      "last_price": 4005.0,
+      "last_price": 3990.0,
       "best_price": 4005.0,
-      "worst_price": 4005.0,
+      "worst_price": 3990.0,
       "score": 38,
       "change_rate_at_signal": -6.53,
       "volume_ratio_at_signal": 0.28,
       "alert": null,
-      "results": {}
+      "results": {
+        "latest_pct": -0.375,
+        "max_gain": 0.0,
+        "max_drawdown": -0.375
+      },
+      "age_minutes": 0.69
     },
     {
       "key": "ai_pool:2344:38:149.5",
@@ -3239,20 +3245,25 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T01:15:26.200396+00:00",
-      "updated_at": "2026-06-08T01:15:26.200397+00:00",
+      "updated_at": "2026-06-08T01:15:57.184308+00:00",
       "status": "open",
       "code": "3661",
       "name": "世芯-KY",
       "sector": "半導體",
       "entry_price": 3970.0,
-      "last_price": 3970.0,
-      "best_price": 3970.0,
+      "last_price": 3990.0,
+      "best_price": 3990.0,
       "worst_price": 3970.0,
       "score": 32,
       "change_rate_at_signal": -7.35,
       "volume_ratio_at_signal": 0.28,
       "alert": "資金退潮警報",
-      "results": {}
+      "results": {
+        "latest_pct": 0.504,
+        "max_gain": 0.504,
+        "max_drawdown": 0.0
+      },
+      "age_minutes": 0.52
     },
     {
       "key": "fund_flow:2376:35:344.0",
