@@ -113,47 +113,65 @@ def send_grouped_alerts(
     return _post_discord("\n".join(lines)[:1900])
 
 
+def _replay_summary(stats: dict[str, Any] | None) -> list[str]:
+    if not stats or not stats.get("ok"):
+        return ["", "📊 **Replay 實測**", "Replay API：未回傳。"]
+    total = int(_num(stats.get("total_signals"), 0))
+    if total <= 0:
+        return ["", "📊 **Replay 實測**", "狀態：尚未啟用｜樣本：0"]
+
+    lines = [
+        "",
+        "📊 **Replay 實測**",
+        f"訊號數：{total}｜勝率：{stats.get('win_rate', '-')}%｜平均：{stats.get('avg_latest_pct', '-')}%｜陷阱攔截：{stats.get('trap_block_count', 0)}",
+    ]
+    latest = stats.get("latest") or []
+    success = []
+    for row in reversed(latest):
+        result = row.get("results") or {}
+        pct = result.get("latest_pct")
+        try:
+            if pct is not None and float(pct) > 0:
+                success.append((row, pct))
+        except Exception:
+            pass
+    if success:
+        lines.append("✅ 最近成功訊號：")
+        for row, pct in success[:5]:
+            lines.append(f"- {row.get('code')}｜{row.get('score')}分｜{_pct(pct)}")
+    return lines
+
+
 def send_battle_report(scan: dict[str, Any], stats: dict[str, Any] | None = None) -> dict[str, Any]:
     top = scan.get("top5") or []
     strongest = scan.get("strongest_sector") or {}
+    errors = scan.get("errors") or []
+    scanned = int(_num(scan.get("scanned"), 0))
+    universe = int(_num(scan.get("universe_size"), 0))
     now = _tw_now()
 
     lines = [
-        "📡 **STX AI 戰情中心｜盤中雷達速報**",
+        "📡 **STX 當沖戰情中心｜盤中雷達速報**",
         f"時間：{now}",
-        f"掃描：{scan.get('scanned', 0)}/{scan.get('universe_size', 0)} 檔",
+        f"掃描：{scanned}/{universe} 檔",
         f"最強族群：{strongest.get('sector', '-')}｜{strongest.get('avg_score', '-')}分",
         "",
         "🔥 **雷達 TOP10**",
     ]
 
-    if top:
+    if scanned == 0 and universe > 0:
+        lines.append("資料源暫時異常，這輪雷達不列入判斷。")
+        if errors:
+            lines.append("錯誤摘要：")
+            for err in errors[:3]:
+                lines.append(f"- {err.get('code', '-')}：{err.get('message', '-')}")
+    elif top:
         for i, item in enumerate(top[:10], 1):
             lines.append(
                 f"{i}. {item.get('code')} {item.get('name') or ''}｜{item.get('sector') or '其他'}｜{item.get('score')}分｜{_pct(item.get('change_rate'))}｜{item.get('mood') or '-'}"
             )
     else:
-        lines.append("尚無雷達資料")
+        lines.append("本輪沒有達到雷達門檻的標的。")
 
-    if stats and stats.get("ok"):
-        lines.extend([
-            "",
-            "📊 **Replay 勝率**",
-            f"訊號數：{stats.get('total_signals', 0)}｜勝率：{stats.get('win_rate', '-')}%｜平均：{stats.get('avg_latest_pct', '-')}%｜陷阱攔截：{stats.get('trap_block_count', 0)}",
-        ])
-        latest = stats.get("latest") or []
-        success = []
-        for row in reversed(latest):
-            result = row.get("results") or {}
-            pct = result.get("latest_pct")
-            try:
-                if pct is not None and float(pct) > 0:
-                    success.append((row, pct))
-            except Exception:
-                pass
-        if success:
-            lines.append("✅ 最近成功訊號：")
-            for row, pct in success[:5]:
-                lines.append(f"- {row.get('code')}｜{row.get('score')}分｜{_pct(pct)}")
-
+    lines.extend(_replay_summary(stats))
     return _post_discord("\n".join(lines)[:1900])
