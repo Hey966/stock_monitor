@@ -99,7 +99,7 @@ async def lifespan(app: FastAPI):
         api.logout()
 
 
-app = FastAPI(title="Stock Monitor Backend", version="0.9.0", lifespan=lifespan)
+app = FastAPI(title="Stock Monitor Backend", version="0.9.1", lifespan=lifespan)
 origins = [x.strip() for x in CORS_ORIGINS.split(",") if x.strip()]
 app.add_middleware(CORSMiddleware, allow_origins=origins if origins else ["*"], allow_credentials=True, allow_methods=["*"], allow_headers=["*"])
 
@@ -248,12 +248,16 @@ def scan_mood(score: int) -> str:
 
 def _rule_score_from_pro(pro: dict[str, Any]) -> tuple[int, list[str]]:
     signals = pro.get("signals") or {}
+    quote = pro.get("quote") or {}
     risks = pro.get("risks") or []
     traps = pro.get("traps") or []
     score = 50
     reasons: list[str] = []
     trap_block = _bool(signals.get("trap_block")) or bool(traps)
-    above_vwap = bool(signals.get("vwap") and _float((pro.get("quote") or {}).get("close")) > _float(signals.get("vwap")))
+    close = _float(quote.get("close"))
+    change_rate = _float(quote.get("change_rate"), 0)
+    volume_ratio = _float(quote.get("volume_ratio"), 0)
+    above_vwap = bool(signals.get("vwap") and close > _float(signals.get("vwap")))
     pullback = _bool(signals.get("pullback_hold_vwap"))
     distance = _float(signals.get("distance_to_vwap_pct"), 0)
     chg3 = _float(signals.get("last_3_bar_change_pct"), 0)
@@ -279,6 +283,18 @@ def _rule_score_from_pro(pro: dict[str, Any]) -> tuple[int, list[str]]:
     if distance >= 2.0 or chg3 >= 2.0:
         score -= 18
         reasons.append("追價風險")
+    if change_rate < 0:
+        score -= 22
+        reasons.append("仍低於平盤")
+    elif change_rate >= 0.5:
+        score += 6
+        reasons.append("站上平盤")
+    if 0 < volume_ratio < 1.0:
+        score -= 12
+        reasons.append("量比不足")
+    elif volume_ratio >= 1.3:
+        score += 6
+        reasons.append("量比放大")
     if red_k:
         score += 5
     if rel_vol >= 1.25:
@@ -293,10 +309,16 @@ def _rule_score_from_pro(pro: dict[str, Any]) -> tuple[int, list[str]]:
 
 
 def _final_result(row: dict[str, Any]) -> tuple[str, str]:
+    change_rate = _float(row.get("change_rate"), 0)
+    volume_ratio = _float(row.get("volume_ratio"), 0)
     if row.get("trap"):
         return "Trap風險", "Trap Engine 阻擋。"
     if row.get("no_chase"):
         return "禁止追價", "急拉或離VWAP過遠，等待回測。"
+    if change_rate < 0:
+        return "反彈觀察", "仍低於平盤，不列入Discord前5。"
+    if 0 < volume_ratio < 1.0:
+        return "量能不足", "量比低於1，訊號不推播。"
     if row["rule_score"] < 60:
         return "禁止進場", "規則分析未達基本門檻。"
     if row["rule_score"] < 70:
@@ -346,7 +368,18 @@ def _build_final_row(code: str, quote: dict[str, Any], pro: dict[str, Any], sect
         "traps": pro.get("traps", []),
         "signals": signals,
     }
-    row["final_score"] = int(round(rule_score * 0.50 + pro_score * 0.25 + group_score * 0.15 + (news_score + chip_score) * 0.10))
+    raw_final_score = int(round(rule_score * 0.50 + pro_score * 0.25 + group_score * 0.15 + (news_score + chip_score) * 0.10))
+    score_cap = 100
+    change_rate = _float(quote.get("change_rate"), 0)
+    volume_ratio = _float(quote.get("volume_ratio"), 0)
+    if change_rate < 0:
+        score_cap = min(score_cap, 69)
+    if 0 < volume_ratio < 1.0:
+        score_cap = min(score_cap, 79)
+    if trap or no_chase:
+        score_cap = min(score_cap, 59)
+    row["score_cap"] = score_cap
+    row["final_score"] = min(raw_final_score, score_cap)
     row["final_result"], row["final_reason"] = _final_result(row)
     return row
 
@@ -400,7 +433,7 @@ def build_market_scan(limit: int = 5, send: bool = False, record: bool = False) 
 
     return {
         "ok": True,
-        "version": "STX Final Radar v1",
+        "version": "STX Final Radar v1.1",
         "universe_size": len(SCAN_UNIVERSE),
         "scanned": len(rows),
         "errors": errors,
