@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-08T05:02:06.418019+00:00",
+  "updated_at": "2026-06-08T05:02:11.094221+00:00",
   "count": 660,
   "items": [
     {
@@ -437,8 +437,8 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T01:00:25.731786+00:00",
-      "updated_at": "2026-06-08T04:56:21.172518+00:00",
-      "status": "open",
+      "updated_at": "2026-06-08T05:02:09.141312+00:00",
+      "status": "closed",
       "code": "2317",
       "name": "鴻海",
       "sector": "AI伺服器",
@@ -456,9 +456,10 @@
         "max_drawdown": -0.38,
         "pct_5m": 0.38,
         "pct_10m": 0.19,
-        "pct_30m": 2.087
+        "pct_30m": 2.087,
+        "pct_close_proxy": 1.898
       },
-      "age_minutes": 235.92
+      "age_minutes": 241.72
     },
     {
       "key": "ai_pool:2454:38:4000.0",
@@ -779,8 +780,8 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T01:00:36.720232+00:00",
-      "updated_at": "2026-06-08T04:56:21.172538+00:00",
-      "status": "open",
+      "updated_at": "2026-06-08T05:02:09.141356+00:00",
+      "status": "closed",
       "code": "2317",
       "name": "鴻海",
       "sector": "AI伺服器",
@@ -798,9 +799,10 @@
         "max_drawdown": 0.0,
         "pct_5m": 0.954,
         "pct_10m": 0.763,
-        "pct_30m": 2.672
+        "pct_30m": 2.672,
+        "pct_close_proxy": 2.481
       },
-      "age_minutes": 235.74
+      "age_minutes": 241.54
     },
     {
       "key": "fund_flow:2454:20:3985.0",
@@ -1568,7 +1570,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T01:05:12.805288+00:00",
-      "updated_at": "2026-06-08T04:56:21.172550+00:00",
+      "updated_at": "2026-06-08T05:02:09.141378+00:00",
       "status": "open",
       "code": "2317",
       "name": "鴻海",
@@ -1589,7 +1591,7 @@
         "pct_10m": 0.379,
         "pct_30m": 1.894
       },
-      "age_minutes": 231.14
+      "age_minutes": 236.94
     },
     {
       "key": "ai_pool:2308:38:2160.0",
@@ -1736,7 +1738,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T01:05:22.720745+00:00",
-      "updated_at": "2026-06-08T04:56:21.172557+00:00",
+      "updated_at": "2026-06-08T05:02:09.141390+00:00",
       "status": "open",
       "code": "2317",
       "name": "鴻海",
@@ -1757,7 +1759,7 @@
         "pct_10m": 0.379,
         "pct_30m": 1.894
       },
-      "age_minutes": 230.97
+      "age_minutes": 236.77
     },
     {
       "key": "fund_flow:3443:23:4120.0",
@@ -2100,7 +2102,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T01:10:16.373945+00:00",
-      "updated_at": "2026-06-08T04:56:21.172564+00:00",
+      "updated_at": "2026-06-08T05:02:09.141402+00:00",
       "status": "open",
       "code": "2317",
       "name": "鴻海",
@@ -2121,7 +2123,7 @@
         "pct_10m": 1.701,
         "pct_30m": 1.701
       },
-      "age_minutes": 226.08
+      "age_minutes": 231.88
     },
     {
       "key": "ai_pool:2382:56:367.5",
@@ -2744,7 +2746,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T01:10:27.018826+00:00",
-      "updated_at": "2026-06-08T04:56:21.172574+00:00",
+      "updated_at": "2026-06-08T05:02:09.141416+00:00",
       "status": "open",
       "code": "2317",
       "name": "鴻海",
@@ -2765,7 +2767,7 @@
         "pct_10m": 1.894,
         "pct_30m": 1.894
       },
-      "age_minutes": 225.9
+      "age_minutes": 231.7
     },
     {
       "key": "fund_flow:3017:22:2420.0",
@@ -3416,7 +3418,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T01:15:15.735422+00:00",
-      "updated_at": "2026-06-08T04:56:21.172582+00:00",
+      "updated_at": "2026-06-08T05:02:09.141430+00:00",
       "status": "open",
       "code": "2317",
       "name": "鴻海",
@@ -3437,7 +3439,7 @@
         "pct_10m": 1.318,
         "pct_30m": 1.318
       },
-      "age_minutes": 221.09
+      "age_minutes": 226.89
     },
     {
       "key": "ai_pool:3661:38:4005.0",
@@ -4200,7 +4202,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T02:35:13.181518+00:00",
-      "updated_at": "2026-06-08T04:56:21.172591+00:00",
+      "updated_at": "2026-06-08T05:02:09.141446+00:00",
       "status": "open",
       "code": "2317",
       "name": "鴻海",
@@ -4221,7 +4223,7 @@
         "pct_10m": 0.743,
         "pct_30m": 0.186
       },
-      "age_minutes": 141.13
+      "age_minutes": 146.93
     },
     {
       "key": "ai_pool:2382:48:364.0",
@@ -5180,7 +5182,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T02:40:15.266863+00:00",
-      "updated_at": "2026-06-08T04:56:21.172601+00:00",
+      "updated_at": "2026-06-08T05:02:09.141463+00:00",
       "status": "open",
       "code": "2317",
       "name": "鴻海",
@@ -5201,7 +5203,7 @@
         "pct_10m": 0.929,
         "pct_30m": 0.186
       },
-      "age_minutes": 136.1
+      "age_minutes": 141.9
     },
     {
       "key": "ai_pool:2382:38:369.0",
@@ -5600,7 +5602,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T02:45:15.083174+00:00",
-      "updated_at": "2026-06-08T04:56:21.172609+00:00",
+      "updated_at": "2026-06-08T05:02:09.141475+00:00",
       "status": "open",
       "code": "2317",
       "name": "鴻海",
@@ -5621,7 +5623,7 @@
         "pct_10m": 0.37,
         "pct_30m": -0.37
       },
-      "age_minutes": 131.1
+      "age_minutes": 136.9
     },
     {
       "key": "ai_pool:3231:48:163.0",
@@ -6216,7 +6218,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T02:50:15.303820+00:00",
-      "updated_at": "2026-06-08T04:56:21.172618+00:00",
+      "updated_at": "2026-06-08T05:02:09.141490+00:00",
       "status": "open",
       "code": "2317",
       "name": "鴻海",
@@ -6237,7 +6239,7 @@
         "pct_10m": -0.185,
         "pct_30m": -1.107
       },
-      "age_minutes": 126.1
+      "age_minutes": 131.9
     },
     {
       "key": "ai_pool:2308:56:2195.0",
@@ -6832,7 +6834,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T02:55:12.105033+00:00",
-      "updated_at": "2026-06-08T04:56:21.172627+00:00",
+      "updated_at": "2026-06-08T05:02:09.141504+00:00",
       "status": "open",
       "code": "2317",
       "name": "鴻海",
@@ -6853,7 +6855,7 @@
         "pct_10m": -0.37,
         "pct_30m": -0.37
       },
-      "age_minutes": 121.15
+      "age_minutes": 126.95
     },
     {
       "key": "ai_pool:2330:63:2315.0",
@@ -8036,7 +8038,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T03:05:12.938693+00:00",
-      "updated_at": "2026-06-08T04:56:21.172638+00:00",
+      "updated_at": "2026-06-08T05:02:09.141521+00:00",
       "status": "open",
       "code": "2317",
       "name": "鴻海",
@@ -8057,7 +8059,7 @@
         "pct_10m": -0.186,
         "pct_30m": 0.0
       },
-      "age_minutes": 111.14
+      "age_minutes": 116.94
     },
     {
       "key": "ai_pool:2376:56:347.0",
@@ -8708,7 +8710,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T03:10:15.922642+00:00",
-      "updated_at": "2026-06-08T04:56:21.172647+00:00",
+      "updated_at": "2026-06-08T05:02:09.141535+00:00",
       "status": "open",
       "code": "2317",
       "name": "鴻海",
@@ -8729,7 +8731,7 @@
         "pct_10m": -0.557,
         "pct_30m": 0.186
       },
-      "age_minutes": 106.09
+      "age_minutes": 111.89
     },
     {
       "key": "ai_pool:2308:46:2210.0",
@@ -9044,7 +9046,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T03:15:15.074815+00:00",
-      "updated_at": "2026-06-08T04:56:21.172653+00:00",
+      "updated_at": "2026-06-08T05:02:09.141547+00:00",
       "status": "open",
       "code": "2317",
       "name": "鴻海",
@@ -9065,7 +9067,7 @@
         "pct_10m": 0.372,
         "pct_30m": 0.745
       },
-      "age_minutes": 101.1
+      "age_minutes": 106.9
     },
     {
       "key": "ai_pool:3324:56:1070.0",
@@ -9548,7 +9550,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T03:20:14.902945+00:00",
-      "updated_at": "2026-06-08T04:56:21.172661+00:00",
+      "updated_at": "2026-06-08T05:02:09.141560+00:00",
       "status": "open",
       "code": "2317",
       "name": "鴻海",
@@ -9569,7 +9571,7 @@
         "pct_10m": 0.746,
         "pct_30m": 0.746
       },
-      "age_minutes": 96.1
+      "age_minutes": 101.9
     },
     {
       "key": "ai_pool:3711:56:532.0",
@@ -10248,7 +10250,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T03:25:12.343844+00:00",
-      "updated_at": "2026-06-08T04:56:21.172668+00:00",
+      "updated_at": "2026-06-08T05:02:09.141572+00:00",
       "status": "open",
       "code": "2317",
       "name": "鴻海",
@@ -10269,7 +10271,7 @@
         "pct_10m": 0.186,
         "pct_30m": 0.558
       },
-      "age_minutes": 91.15
+      "age_minutes": 96.95
     },
     {
       "key": "ai_pool:2454:56:4070.0",
@@ -11312,7 +11314,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T03:35:12.413682+00:00",
-      "updated_at": "2026-06-08T04:56:21.172678+00:00",
+      "updated_at": "2026-06-08T05:02:09.141590+00:00",
       "status": "open",
       "code": "2317",
       "name": "鴻海",
@@ -11333,7 +11335,7 @@
         "pct_10m": 0.185,
         "pct_30m": -0.185
       },
-      "age_minutes": 81.15
+      "age_minutes": 86.95
     },
     {
       "key": "ai_pool:2454:56:4075.0",
@@ -11732,7 +11734,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T03:40:16.271448+00:00",
-      "updated_at": "2026-06-08T04:56:21.172685+00:00",
+      "updated_at": "2026-06-08T05:02:09.141600+00:00",
       "status": "open",
       "code": "2317",
       "name": "鴻海",
@@ -11753,7 +11755,7 @@
         "pct_10m": 0.0,
         "pct_30m": -0.37
       },
-      "age_minutes": 76.08
+      "age_minutes": 81.88
     },
     {
       "key": "ai_pool:3443:58:4260.0",
@@ -12348,7 +12350,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T03:45:15.296435+00:00",
-      "updated_at": "2026-06-08T04:56:21.172692+00:00",
+      "updated_at": "2026-06-08T05:02:09.141613+00:00",
       "status": "open",
       "code": "2317",
       "name": "鴻海",
@@ -12369,7 +12371,7 @@
         "pct_10m": 0.0,
         "pct_30m": -0.37
       },
-      "age_minutes": 71.1
+      "age_minutes": 76.9
     },
     {
       "key": "ai_pool:2454:46:4065.0",
@@ -13300,7 +13302,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T04:00:26.382993+00:00",
-      "updated_at": "2026-06-08T04:56:21.172699+00:00",
+      "updated_at": "2026-06-08T05:02:09.141629+00:00",
       "status": "open",
       "code": "2317",
       "name": "鴻海",
@@ -13321,7 +13323,7 @@
         "pct_10m": -0.186,
         "pct_30m": -0.742
       },
-      "age_minutes": 55.91
+      "age_minutes": 61.71
     },
     {
       "key": "ai_pool:1513:58:165.5",
@@ -14252,7 +14254,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T04:15:14.557910+00:00",
-      "updated_at": "2026-06-08T04:56:21.172706+00:00",
+      "updated_at": "2026-06-08T05:02:09.141643+00:00",
       "status": "open",
       "code": "2317",
       "name": "鴻海",
@@ -14273,7 +14275,7 @@
         "pct_10m": -0.372,
         "pct_30m": -0.558
       },
-      "age_minutes": 41.11
+      "age_minutes": 46.91
     },
     {
       "key": "ai_pool:8046:59:835.0",
@@ -15984,7 +15986,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T04:30:31.692809+00:00",
-      "updated_at": "2026-06-08T04:56:21.172716+00:00",
+      "updated_at": "2026-06-08T05:02:09.141663+00:00",
       "status": "open",
       "code": "2317",
       "name": "鴻海",
@@ -16002,9 +16004,10 @@
         "max_gain": 0.373,
         "max_drawdown": -0.187,
         "pct_5m": -0.187,
-        "pct_10m": -0.187
+        "pct_10m": -0.187,
+        "pct_30m": 0.187
       },
-      "age_minutes": 25.82
+      "age_minutes": 31.62
     },
     {
       "key": "fund_flow:2454:34:4045.0",
@@ -16310,7 +16313,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T04:35:12.415880+00:00",
-      "updated_at": "2026-06-08T04:56:21.172722+00:00",
+      "updated_at": "2026-06-08T05:02:09.141673+00:00",
       "status": "open",
       "code": "2317",
       "name": "鴻海",
@@ -16330,7 +16333,7 @@
         "pct_5m": 0.0,
         "pct_10m": 0.0
       },
-      "age_minutes": 21.15
+      "age_minutes": 26.95
     },
     {
       "key": "ai_pool:2376:48:345.0",
@@ -16877,7 +16880,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T04:40:27.607656+00:00",
-      "updated_at": "2026-06-08T04:56:21.172728+00:00",
+      "updated_at": "2026-06-08T05:02:09.141684+00:00",
       "status": "open",
       "code": "2317",
       "name": "鴻海",
@@ -16897,7 +16900,7 @@
         "pct_5m": 0.0,
         "pct_10m": 0.561
       },
-      "age_minutes": 15.89
+      "age_minutes": 21.69
     },
     {
       "key": "fund_flow:2382:31:371.0",
@@ -17147,7 +17150,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T04:45:15.082739+00:00",
-      "updated_at": "2026-06-08T04:56:21.172734+00:00",
+      "updated_at": "2026-06-08T05:02:09.141695+00:00",
       "status": "open",
       "code": "2317",
       "name": "鴻海",
@@ -17167,7 +17170,7 @@
         "pct_5m": 0.749,
         "pct_10m": 0.562
       },
-      "age_minutes": 11.1
+      "age_minutes": 16.9
     },
     {
       "key": "ai_pool:2308:46:2225.0",
@@ -17363,7 +17366,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T04:50:15.332638+00:00",
-      "updated_at": "2026-06-08T04:56:21.172740+00:00",
+      "updated_at": "2026-06-08T05:02:09.141704+00:00",
       "status": "open",
       "code": "2317",
       "name": "鴻海",
@@ -17380,9 +17383,10 @@
         "latest_pct": 0.0,
         "max_gain": 0.186,
         "max_drawdown": 0.0,
-        "pct_5m": 0.0
+        "pct_5m": 0.0,
+        "pct_10m": 0.0
       },
-      "age_minutes": 6.1
+      "age_minutes": 11.9
     },
     {
       "key": "ai_pool:8046:57:832.0",
