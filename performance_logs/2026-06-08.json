@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-08T01:06:19.344302+00:00",
+  "updated_at": "2026-06-08T01:06:20.917884+00:00",
   "count": 73,
   "items": [
     {
@@ -494,13 +494,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T01:00:25.731836+00:00",
-      "updated_at": "2026-06-08T01:01:16.147494+00:00",
+      "updated_at": "2026-06-08T01:06:20.604579+00:00",
       "status": "open",
       "code": "5347",
       "name": "世界",
       "sector": "半導體",
       "entry_price": 149.0,
-      "last_price": 147.5,
+      "last_price": 148.5,
       "best_price": 149.0,
       "worst_price": 147.5,
       "score": 38,
@@ -508,11 +508,12 @@
       "volume_ratio_at_signal": 0.08,
       "alert": null,
       "results": {
-        "latest_pct": -1.007,
+        "latest_pct": -0.336,
         "max_gain": 0.0,
-        "max_drawdown": -1.007
+        "max_drawdown": -1.007,
+        "pct_5m": -0.336
       },
-      "age_minutes": 0.84
+      "age_minutes": 5.91
     },
     {
       "key": "fund_flow:2382:35:361.5",
@@ -570,25 +571,26 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T01:00:36.720186+00:00",
-      "updated_at": "2026-06-08T01:01:16.147513+00:00",
+      "updated_at": "2026-06-08T01:06:20.604596+00:00",
       "status": "open",
       "code": "5347",
       "name": "世界",
       "sector": "半導體",
       "entry_price": 148.0,
-      "last_price": 147.5,
-      "best_price": 148.0,
+      "last_price": 148.5,
+      "best_price": 148.5,
       "worst_price": 147.5,
       "score": 27,
       "change_rate_at_signal": -8.35,
       "volume_ratio_at_signal": 0.08,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": -0.338,
-        "max_gain": 0.0,
-        "max_drawdown": -0.338
+        "latest_pct": 0.338,
+        "max_gain": 0.338,
+        "max_drawdown": -0.338,
+        "pct_5m": 0.338
       },
-      "age_minutes": 0.66
+      "age_minutes": 5.73
     },
     {
       "key": "fund_flow:1605:27:35.9",
@@ -1420,20 +1422,25 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T01:05:12.805307+00:00",
-      "updated_at": "2026-06-08T01:05:12.805309+00:00",
+      "updated_at": "2026-06-08T01:06:20.604610+00:00",
       "status": "open",
       "code": "5347",
       "name": "世界",
       "sector": "半導體",
       "entry_price": 150.0,
-      "last_price": 150.0,
+      "last_price": 148.5,
       "best_price": 150.0,
-      "worst_price": 150.0,
+      "worst_price": 148.5,
       "score": 38,
       "change_rate_at_signal": -7.12,
       "volume_ratio_at_signal": 0.13,
       "alert": null,
-      "results": {}
+      "results": {
+        "latest_pct": -1.0,
+        "max_gain": 0.0,
+        "max_drawdown": -1.0
+      },
+      "age_minutes": 1.13
     },
     {
       "key": "fund_flow:2376:32:339.0",
@@ -1645,20 +1652,25 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T01:05:22.720784+00:00",
-      "updated_at": "2026-06-08T01:05:22.720786+00:00",
+      "updated_at": "2026-06-08T01:06:20.604620+00:00",
       "status": "open",
       "code": "5347",
       "name": "世界",
       "sector": "半導體",
       "entry_price": 149.0,
-      "last_price": 149.0,
+      "last_price": 148.5,
       "best_price": 149.0,
-      "worst_price": 149.0,
+      "worst_price": 148.5,
       "score": 20,
       "change_rate_at_signal": -7.73,
       "volume_ratio_at_signal": 0.13,
       "alert": "資金退潮警報",
-      "results": {}
+      "results": {
+        "latest_pct": -0.336,
+        "max_gain": 0.0,
+        "max_drawdown": -0.336
+      },
+      "age_minutes": 0.96
     },
     {
       "key": "fund_flow:6215:20:109.0",
