@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-08T01:06:20.917884+00:00",
+  "updated_at": "2026-06-08T01:06:22.920491+00:00",
   "count": 73,
   "items": [
     {
@@ -138,25 +138,26 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T01:00:25.731680+00:00",
-      "updated_at": "2026-06-08T01:01:14.724252+00:00",
+      "updated_at": "2026-06-08T01:06:22.167923+00:00",
       "status": "open",
       "code": "3443",
       "name": "創意",
       "sector": "半導體",
       "entry_price": 4115.0,
-      "last_price": 4115.0,
+      "last_price": 4090.0,
       "best_price": 4115.0,
-      "worst_price": 4115.0,
+      "worst_price": 4090.0,
       "score": 48,
       "change_rate_at_signal": -6.26,
       "volume_ratio_at_signal": 0.06,
       "alert": null,
       "results": {
-        "latest_pct": 0.0,
+        "latest_pct": -0.608,
         "max_gain": 0.0,
-        "max_drawdown": 0.0
+        "max_drawdown": -0.608,
+        "pct_5m": -0.608
       },
-      "age_minutes": 0.82
+      "age_minutes": 5.94
     },
     {
       "key": "ai_pool:2376:48:339.5",
@@ -1077,20 +1078,25 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T01:05:12.805191+00:00",
-      "updated_at": "2026-06-08T01:05:12.805193+00:00",
+      "updated_at": "2026-06-08T01:06:22.167939+00:00",
       "status": "open",
       "code": "3443",
       "name": "創意",
       "sector": "半導體",
       "entry_price": 4120.0,
-      "last_price": 4120.0,
+      "last_price": 4090.0,
       "best_price": 4120.0,
-      "worst_price": 4120.0,
+      "worst_price": 4090.0,
       "score": 56,
       "change_rate_at_signal": -6.15,
       "volume_ratio_at_signal": 0.14,
       "alert": null,
-      "results": {}
+      "results": {
+        "latest_pct": -0.728,
+        "max_gain": 0.0,
+        "max_drawdown": -0.728
+      },
+      "age_minutes": 1.16
     },
     {
       "key": "ai_pool:2368:56:1225.0",
@@ -1542,20 +1548,25 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T01:05:22.720752+00:00",
-      "updated_at": "2026-06-08T01:05:22.720753+00:00",
+      "updated_at": "2026-06-08T01:06:22.167946+00:00",
       "status": "open",
       "code": "3443",
       "name": "創意",
       "sector": "半導體",
       "entry_price": 4120.0,
-      "last_price": 4120.0,
+      "last_price": 4090.0,
       "best_price": 4120.0,
-      "worst_price": 4120.0,
+      "worst_price": 4090.0,
       "score": 23,
       "change_rate_at_signal": -6.15,
       "volume_ratio_at_signal": 0.14,
       "alert": "資金退潮警報",
-      "results": {}
+      "results": {
+        "latest_pct": -0.728,
+        "max_gain": 0.0,
+        "max_drawdown": -0.728
+      },
+      "age_minutes": 0.99
     },
     {
       "key": "fund_flow:3711:33:525.0",
