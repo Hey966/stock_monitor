@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-08T05:16:05.747928+00:00",
+  "updated_at": "2026-06-08T05:16:09.341834+00:00",
   "count": 700,
   "items": [
     {
@@ -3334,8 +3334,8 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T01:15:15.735374+00:00",
-      "updated_at": "2026-06-08T05:11:13.049040+00:00",
-      "status": "open",
+      "updated_at": "2026-06-08T05:16:07.864119+00:00",
+      "status": "closed",
       "code": "1513",
       "name": "中興電",
       "sector": "重電",
@@ -3353,9 +3353,10 @@
         "max_drawdown": -0.307,
         "pct_5m": 1.84,
         "pct_10m": 1.84,
-        "pct_30m": 1.84
+        "pct_30m": 1.84,
+        "pct_close_proxy": 2.761
       },
-      "age_minutes": 235.96
+      "age_minutes": 240.87
     },
     {
       "key": "ai_pool:1605:48:36.05",
@@ -4205,7 +4206,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T02:35:13.181502+00:00",
-      "updated_at": "2026-06-08T05:11:13.049049+00:00",
+      "updated_at": "2026-06-08T05:16:07.864143+00:00",
       "status": "open",
       "code": "1513",
       "name": "中興電",
@@ -4226,7 +4227,7 @@
         "pct_10m": -0.301,
         "pct_30m": 0.301
       },
-      "age_minutes": 156.0
+      "age_minutes": 160.91
     },
     {
       "key": "ai_pool:8046:51:835.0",
@@ -4961,7 +4962,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T02:40:15.266763+00:00",
-      "updated_at": "2026-06-08T05:11:13.049057+00:00",
+      "updated_at": "2026-06-08T05:16:07.864156+00:00",
       "status": "open",
       "code": "1513",
       "name": "中興電",
@@ -4982,7 +4983,7 @@
         "pct_10m": 0.909,
         "pct_30m": 0.909
       },
-      "age_minutes": 150.96
+      "age_minutes": 155.88
     },
     {
       "key": "ai_pool:3017:48:2515.0",
@@ -5325,7 +5326,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T02:40:25.357097+00:00",
-      "updated_at": "2026-06-08T05:11:13.049064+00:00",
+      "updated_at": "2026-06-08T05:16:07.864167+00:00",
       "status": "open",
       "code": "1513",
       "name": "中興電",
@@ -5346,7 +5347,7 @@
         "pct_10m": 1.216,
         "pct_30m": 1.216
       },
-      "age_minutes": 150.79
+      "age_minutes": 155.71
     },
     {
       "key": "fund_flow:2454:24:4045.0",
@@ -5885,7 +5886,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T02:45:15.083227+00:00",
-      "updated_at": "2026-06-08T05:11:13.049072+00:00",
+      "updated_at": "2026-06-08T05:16:07.864179+00:00",
       "status": "open",
       "code": "1513",
       "name": "中興電",
@@ -5906,7 +5907,7 @@
         "pct_10m": 0.302,
         "pct_30m": -0.302
       },
-      "age_minutes": 145.97
+      "age_minutes": 150.88
     },
     {
       "key": "ai_pool:2382:38:371.5",
@@ -7201,7 +7202,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T02:55:12.105150+00:00",
-      "updated_at": "2026-06-08T05:11:13.049080+00:00",
+      "updated_at": "2026-06-08T05:16:07.864196+00:00",
       "status": "open",
       "code": "1513",
       "name": "中興電",
@@ -7222,7 +7223,7 @@
         "pct_10m": 0.301,
         "pct_30m": 0.0
       },
-      "age_minutes": 136.02
+      "age_minutes": 140.93
     },
     {
       "key": "ai_pool:2379:40:590.0",
@@ -7537,7 +7538,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T03:00:26.524691+00:00",
-      "updated_at": "2026-06-08T05:11:13.049086+00:00",
+      "updated_at": "2026-06-08T05:16:07.864205+00:00",
       "status": "open",
       "code": "1513",
       "name": "中興電",
@@ -7558,7 +7559,7 @@
         "pct_10m": 0.301,
         "pct_30m": -0.301
       },
-      "age_minutes": 130.78
+      "age_minutes": 135.69
     },
     {
       "key": "ai_pool:3324:57:1075.0",
@@ -8349,7 +8350,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T03:05:12.938821+00:00",
-      "updated_at": "2026-06-08T05:11:13.049093+00:00",
+      "updated_at": "2026-06-08T05:16:07.864216+00:00",
       "status": "open",
       "code": "1513",
       "name": "中興電",
@@ -8370,7 +8371,7 @@
         "pct_10m": -0.901,
         "pct_30m": -0.601
       },
-      "age_minutes": 126.0
+      "age_minutes": 130.92
     },
     {
       "key": "fund_flow:2618:35:35.95",
@@ -8685,7 +8686,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T03:10:15.922610+00:00",
-      "updated_at": "2026-06-08T05:11:13.049100+00:00",
+      "updated_at": "2026-06-08T05:16:07.864225+00:00",
       "status": "open",
       "code": "1513",
       "name": "中興電",
@@ -8706,7 +8707,7 @@
         "pct_10m": -0.601,
         "pct_30m": 0.0
       },
-      "age_minutes": 120.95
+      "age_minutes": 125.87
     },
     {
       "key": "ai_pool:3324:52:1080.0",
@@ -9077,7 +9078,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T03:15:15.074803+00:00",
-      "updated_at": "2026-06-08T05:11:13.049106+00:00",
+      "updated_at": "2026-06-08T05:16:07.864236+00:00",
       "status": "open",
       "code": "1513",
       "name": "中興電",
@@ -9098,7 +9099,7 @@
         "pct_10m": 0.606,
         "pct_30m": 0.606
       },
-      "age_minutes": 115.97
+      "age_minutes": 120.88
     },
     {
       "key": "ai_pool:2317:56:268.5",
@@ -10617,7 +10618,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T03:25:22.676833+00:00",
-      "updated_at": "2026-06-08T05:11:13.049114+00:00",
+      "updated_at": "2026-06-08T05:16:07.864254+00:00",
       "status": "open",
       "code": "1513",
       "name": "中興電",
@@ -10638,7 +10639,7 @@
         "pct_10m": -0.301,
         "pct_30m": -0.301
       },
-      "age_minutes": 105.84
+      "age_minutes": 110.75
     },
     {
       "key": "fund_flow:2382:35:373.0",
@@ -10925,7 +10926,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T03:30:19.535939+00:00",
-      "updated_at": "2026-06-08T05:11:13.049120+00:00",
+      "updated_at": "2026-06-08T05:16:07.864264+00:00",
       "status": "open",
       "code": "1513",
       "name": "中興電",
@@ -10946,7 +10947,7 @@
         "pct_10m": 0.604,
         "pct_30m": 0.302
       },
-      "age_minutes": 100.89
+      "age_minutes": 105.81
     },
     {
       "key": "ai_pool:2382:48:372.0",
@@ -13389,7 +13390,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T04:00:26.383007+00:00",
-      "updated_at": "2026-06-08T05:11:13.049129+00:00",
+      "updated_at": "2026-06-08T05:16:07.864284+00:00",
       "status": "open",
       "code": "1513",
       "name": "中興電",
@@ -13410,7 +13411,7 @@
         "pct_10m": 0.0,
         "pct_30m": 0.0
       },
-      "age_minutes": 70.78
+      "age_minutes": 75.69
     },
     {
       "key": "ai_pool:2324:56:38.35",
@@ -16749,7 +16750,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T04:40:16.222851+00:00",
-      "updated_at": "2026-06-08T05:11:13.049141+00:00",
+      "updated_at": "2026-06-08T05:16:07.864307+00:00",
       "status": "open",
       "code": "1513",
       "name": "中興電",
@@ -16770,7 +16771,7 @@
         "pct_10m": -0.299,
         "pct_30m": 0.299
       },
-      "age_minutes": 30.95
+      "age_minutes": 35.86
     },
     {
       "key": "ai_pool:3037:51:909.0",
@@ -17167,7 +17168,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T04:45:15.082646+00:00",
-      "updated_at": "2026-06-08T05:11:13.049147+00:00",
+      "updated_at": "2026-06-08T05:16:07.864318+00:00",
       "status": "open",
       "code": "1513",
       "name": "中興電",
@@ -17185,9 +17186,10 @@
         "max_gain": 0.901,
         "max_drawdown": -0.3,
         "pct_5m": 0.0,
-        "pct_10m": 0.3
+        "pct_10m": 0.3,
+        "pct_30m": 0.601
       },
-      "age_minutes": 25.97
+      "age_minutes": 30.88
     },
     {
       "key": "ai_pool:3037:58:905.0",
@@ -18222,7 +18224,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T05:00:30.824779+00:00",
-      "updated_at": "2026-06-08T05:11:13.049156+00:00",
+      "updated_at": "2026-06-08T05:16:07.864330+00:00",
       "status": "open",
       "code": "1513",
       "name": "中興電",
@@ -18242,7 +18244,7 @@
         "pct_5m": 0.0,
         "pct_10m": -0.298
       },
-      "age_minutes": 10.7
+      "age_minutes": 15.62
     },
     {
       "key": "ai_pool:3443:58:4255.0",
@@ -19138,7 +19140,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T05:10:16.364012+00:00",
-      "updated_at": "2026-06-08T05:11:13.049163+00:00",
+      "updated_at": "2026-06-08T05:16:07.864360+00:00",
       "status": "open",
       "code": "1513",
       "name": "中興電",
@@ -19154,9 +19156,10 @@
       "results": {
         "latest_pct": 0.0,
         "max_gain": 0.0,
-        "max_drawdown": 0.0
+        "max_drawdown": 0.0,
+        "pct_5m": 0.0
       },
-      "age_minutes": 0.94
+      "age_minutes": 5.86
     },
     {
       "key": "fund_flow:2368:100:1360.0",
@@ -19314,7 +19317,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T05:15:15.332767+00:00",
-      "updated_at": "2026-06-08T05:15:15.332770+00:00",
+      "updated_at": "2026-06-08T05:16:07.864369+00:00",
       "status": "open",
       "code": "1513",
       "name": "中興電",
@@ -19327,7 +19330,12 @@
       "change_rate_at_signal": -1.75,
       "volume_ratio_at_signal": 0.42,
       "alert": null,
-      "results": {}
+      "results": {
+        "latest_pct": 0.0,
+        "max_gain": 0.0,
+        "max_drawdown": 0.0
+      },
+      "age_minutes": 0.88
     },
     {
       "key": "ai_pool:3661:59:4160.0",
