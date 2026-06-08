@@ -1,7 +1,7 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-08T05:25:14.080181+00:00",
-  "count": 721,
+  "updated_at": "2026-06-08T05:25:24.713532+00:00",
+  "count": 722,
   "items": [
     {
       "key": "ai_pool:2379:56:588.0",
@@ -20133,6 +20133,26 @@
       "change_rate_at_signal": -1.74,
       "volume_ratio_at_signal": 0.6,
       "alert": null,
+      "results": {}
+    },
+    {
+      "key": "fund_flow:1609:29:37.0",
+      "module": "fund_flow",
+      "reason": "api_fund_flow",
+      "created_at": "2026-06-08T05:25:23.261821+00:00",
+      "updated_at": "2026-06-08T05:25:23.261823+00:00",
+      "status": "open",
+      "code": "1609",
+      "name": "大亞",
+      "sector": "電線電纜",
+      "entry_price": 37.0,
+      "last_price": 37.0,
+      "best_price": 37.0,
+      "worst_price": 37.0,
+      "score": 29,
+      "change_rate_at_signal": -5.37,
+      "volume_ratio_at_signal": 0.52,
+      "alert": "資金退潮警報",
       "results": {}
     }
   ]
