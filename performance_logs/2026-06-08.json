@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-08T04:12:18.109624+00:00",
+  "updated_at": "2026-06-08T04:12:21.485565+00:00",
   "count": 507,
   "items": [
     {
@@ -288,13 +288,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T01:00:25.731728+00:00",
-      "updated_at": "2026-06-08T04:07:01.962735+00:00",
+      "updated_at": "2026-06-08T04:12:20.248183+00:00",
       "status": "open",
       "code": "1605",
       "name": "華新",
       "sector": "電線電纜",
       "entry_price": 36.2,
-      "last_price": 35.75,
+      "last_price": 35.7,
       "best_price": 36.2,
       "worst_price": 35.6,
       "score": 48,
@@ -302,14 +302,14 @@
       "volume_ratio_at_signal": 0.09,
       "alert": null,
       "results": {
-        "latest_pct": -1.243,
+        "latest_pct": -1.381,
         "max_gain": 0.0,
         "max_drawdown": -1.657,
         "pct_5m": -0.414,
         "pct_10m": -0.829,
         "pct_30m": -1.105
       },
-      "age_minutes": 186.6
+      "age_minutes": 191.91
     },
     {
       "key": "ai_pool:1609:48:36.3",
@@ -652,13 +652,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T01:00:36.720194+00:00",
-      "updated_at": "2026-06-08T04:07:01.962764+00:00",
+      "updated_at": "2026-06-08T04:12:20.248197+00:00",
       "status": "open",
       "code": "1605",
       "name": "華新",
       "sector": "電線電纜",
       "entry_price": 35.9,
-      "last_price": 35.75,
+      "last_price": 35.7,
       "best_price": 36.05,
       "worst_price": 35.6,
       "score": 27,
@@ -666,14 +666,14 @@
       "volume_ratio_at_signal": 0.09,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": -0.418,
+        "latest_pct": -0.557,
         "max_gain": 0.418,
         "max_drawdown": -0.836,
         "pct_5m": 0.418,
         "pct_10m": 0.0,
         "pct_30m": -0.279
       },
-      "age_minutes": 186.42
+      "age_minutes": 191.73
     },
     {
       "key": "fund_flow:3037:25:857.0",
@@ -2416,13 +2416,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T01:10:16.374027+00:00",
-      "updated_at": "2026-06-08T04:07:01.962792+00:00",
+      "updated_at": "2026-06-08T04:12:20.248209+00:00",
       "status": "open",
       "code": "1605",
       "name": "華新",
       "sector": "電線電纜",
       "entry_price": 36.15,
-      "last_price": 35.75,
+      "last_price": 35.7,
       "best_price": 36.15,
       "worst_price": 35.6,
       "score": 48,
@@ -2430,14 +2430,14 @@
       "volume_ratio_at_signal": 0.17,
       "alert": null,
       "results": {
-        "latest_pct": -1.107,
+        "latest_pct": -1.245,
         "max_gain": 0.0,
         "max_drawdown": -1.521,
         "pct_5m": -0.553,
         "pct_10m": -0.968,
         "pct_30m": -0.968
       },
-      "age_minutes": 176.76
+      "age_minutes": 182.06
     },
     {
       "key": "ai_pool:1609:48:36.85",
@@ -3284,13 +3284,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T01:15:15.735385+00:00",
-      "updated_at": "2026-06-08T04:07:01.962809+00:00",
+      "updated_at": "2026-06-08T04:12:20.248216+00:00",
       "status": "open",
       "code": "1605",
       "name": "華新",
       "sector": "電線電纜",
       "entry_price": 36.05,
-      "last_price": 35.75,
+      "last_price": 35.7,
       "best_price": 36.05,
       "worst_price": 35.6,
       "score": 48,
@@ -3298,14 +3298,14 @@
       "volume_ratio_at_signal": 0.21,
       "alert": null,
       "results": {
-        "latest_pct": -0.832,
+        "latest_pct": -0.971,
         "max_gain": 0.0,
         "max_drawdown": -1.248,
         "pct_5m": -0.693,
         "pct_10m": -0.693,
         "pct_30m": -0.693
       },
-      "age_minutes": 171.77
+      "age_minutes": 177.08
     },
     {
       "key": "ai_pool:2330:40:2295.0",
@@ -3816,13 +3816,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T01:15:26.200439+00:00",
-      "updated_at": "2026-06-08T04:07:01.962825+00:00",
+      "updated_at": "2026-06-08T04:12:20.248222+00:00",
       "status": "open",
       "code": "1605",
       "name": "華新",
       "sector": "電線電纜",
       "entry_price": 36.05,
-      "last_price": 35.75,
+      "last_price": 35.7,
       "best_price": 36.05,
       "worst_price": 35.6,
       "score": 19,
@@ -3830,14 +3830,14 @@
       "volume_ratio_at_signal": 0.21,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": -0.832,
+        "latest_pct": -0.971,
         "max_gain": 0.0,
         "max_drawdown": -1.248,
         "pct_5m": -0.693,
         "pct_10m": -0.693,
         "pct_30m": -0.693
       },
-      "age_minutes": 171.6
+      "age_minutes": 176.9
     },
     {
       "key": "fund_flow:2382:31:364.0",
@@ -4348,13 +4348,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T02:35:13.181558+00:00",
-      "updated_at": "2026-06-08T04:07:01.962839+00:00",
+      "updated_at": "2026-06-08T04:12:20.248228+00:00",
       "status": "open",
       "code": "1605",
       "name": "華新",
       "sector": "電線電纜",
       "entry_price": 35.8,
-      "last_price": 35.75,
+      "last_price": 35.7,
       "best_price": 35.8,
       "worst_price": 35.6,
       "score": 40,
@@ -4362,14 +4362,14 @@
       "volume_ratio_at_signal": 0.6,
       "alert": null,
       "results": {
-        "latest_pct": -0.14,
+        "latest_pct": -0.279,
         "max_gain": 0.0,
         "max_drawdown": -0.559,
         "pct_5m": -0.14,
         "pct_10m": -0.559,
         "pct_30m": -0.559
       },
-      "age_minutes": 91.81
+      "age_minutes": 97.12
     },
     {
       "key": "ai_pool:2609:40:52.0",
@@ -4488,13 +4488,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T02:35:23.609959+00:00",
-      "updated_at": "2026-06-08T04:07:01.962851+00:00",
+      "updated_at": "2026-06-08T04:12:20.248233+00:00",
       "status": "open",
       "code": "1605",
       "name": "華新",
       "sector": "電線電纜",
       "entry_price": 35.8,
-      "last_price": 35.75,
+      "last_price": 35.7,
       "best_price": 35.8,
       "worst_price": 35.6,
       "score": 34,
@@ -4502,14 +4502,14 @@
       "volume_ratio_at_signal": 0.6,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": -0.14,
+        "latest_pct": -0.279,
         "max_gain": 0.0,
         "max_drawdown": -0.559,
         "pct_5m": -0.14,
         "pct_10m": -0.559,
         "pct_30m": -0.559
       },
-      "age_minutes": 91.64
+      "age_minutes": 96.94
     },
     {
       "key": "fund_flow:2454:25:4030.0",
@@ -5104,13 +5104,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T02:40:15.266846+00:00",
-      "updated_at": "2026-06-08T04:07:01.962866+00:00",
+      "updated_at": "2026-06-08T04:12:20.248239+00:00",
       "status": "open",
       "code": "1605",
       "name": "華新",
       "sector": "電線電纜",
       "entry_price": 35.75,
-      "last_price": 35.75,
+      "last_price": 35.7,
       "best_price": 35.75,
       "worst_price": 35.6,
       "score": 40,
@@ -5118,14 +5118,14 @@
       "volume_ratio_at_signal": 0.61,
       "alert": null,
       "results": {
-        "latest_pct": 0.0,
+        "latest_pct": -0.14,
         "max_gain": 0.0,
         "max_drawdown": -0.42,
         "pct_5m": -0.42,
         "pct_10m": -0.42,
         "pct_30m": -0.42
       },
-      "age_minutes": 86.78
+      "age_minutes": 92.08
     },
     {
       "key": "ai_pool:2344:40:153.0",
@@ -5300,13 +5300,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T02:40:25.357112+00:00",
-      "updated_at": "2026-06-08T04:07:01.962877+00:00",
+      "updated_at": "2026-06-08T04:12:20.248244+00:00",
       "status": "open",
       "code": "1605",
       "name": "華新",
       "sector": "電線電纜",
       "entry_price": 35.7,
-      "last_price": 35.75,
+      "last_price": 35.7,
       "best_price": 35.75,
       "worst_price": 35.6,
       "score": 29,
@@ -5314,14 +5314,14 @@
       "volume_ratio_at_signal": 0.61,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": 0.14,
+        "latest_pct": 0.0,
         "max_gain": 0.14,
         "max_drawdown": -0.28,
         "pct_5m": -0.28,
         "pct_10m": -0.28,
         "pct_30m": -0.28
       },
-      "age_minutes": 86.61
+      "age_minutes": 91.91
     },
     {
       "key": "fund_flow:3481:5:48.35",
@@ -6056,13 +6056,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T02:45:25.121201+00:00",
-      "updated_at": "2026-06-08T04:07:01.962892+00:00",
+      "updated_at": "2026-06-08T04:12:20.248251+00:00",
       "status": "open",
       "code": "1605",
       "name": "華新",
       "sector": "電線電纜",
       "entry_price": 35.6,
-      "last_price": 35.75,
+      "last_price": 35.7,
       "best_price": 35.75,
       "worst_price": 35.6,
       "score": 6,
@@ -6070,14 +6070,14 @@
       "volume_ratio_at_signal": 0.64,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": 0.421,
+        "latest_pct": 0.281,
         "max_gain": 0.421,
         "max_drawdown": 0.0,
         "pct_5m": 0.0,
         "pct_10m": 0.0,
         "pct_30m": 0.0
       },
-      "age_minutes": 81.61
+      "age_minutes": 86.92
     },
     {
       "key": "fund_flow:2609:17:51.3",
@@ -7372,13 +7372,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T02:55:21.687923+00:00",
-      "updated_at": "2026-06-08T04:07:01.962932+00:00",
+      "updated_at": "2026-06-08T04:12:20.248258+00:00",
       "status": "open",
       "code": "1605",
       "name": "華新",
       "sector": "電線電纜",
       "entry_price": 35.6,
-      "last_price": 35.75,
+      "last_price": 35.7,
       "best_price": 35.75,
       "worst_price": 35.6,
       "score": 7,
@@ -7386,14 +7386,14 @@
       "volume_ratio_at_signal": 0.67,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": 0.421,
+        "latest_pct": 0.281,
         "max_gain": 0.421,
         "max_drawdown": 0.0,
         "pct_5m": 0.0,
         "pct_10m": 0.0,
         "pct_30m": 0.0
       },
-      "age_minutes": 71.67
+      "age_minutes": 76.98
     },
     {
       "key": "fund_flow:2609:4:51.3",
@@ -13156,13 +13156,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T03:55:22.253490+00:00",
-      "updated_at": "2026-06-08T04:07:01.962972+00:00",
+      "updated_at": "2026-06-08T04:12:20.248275+00:00",
       "status": "open",
       "code": "1605",
       "name": "華新",
       "sector": "電線電纜",
       "entry_price": 35.6,
-      "last_price": 35.75,
+      "last_price": 35.7,
       "best_price": 35.75,
       "worst_price": 35.6,
       "score": 8,
@@ -13170,13 +13170,13 @@
       "volume_ratio_at_signal": 0.75,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": 0.421,
+        "latest_pct": 0.281,
         "max_gain": 0.421,
         "max_drawdown": 0.0,
         "pct_5m": 0.0,
         "pct_10m": 0.421
       },
-      "age_minutes": 11.66
+      "age_minutes": 16.97
     },
     {
       "key": "fund_flow:2609:7:51.6",
@@ -14038,20 +14038,25 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T04:10:26.645503+00:00",
-      "updated_at": "2026-06-08T04:10:26.645522+00:00",
+      "updated_at": "2026-06-08T04:12:20.248282+00:00",
       "status": "open",
       "code": "1605",
       "name": "華新",
       "sector": "電線電纜",
       "entry_price": 35.75,
-      "last_price": 35.75,
+      "last_price": 35.7,
       "best_price": 35.75,
-      "worst_price": 35.75,
+      "worst_price": 35.7,
       "score": 18,
       "change_rate_at_signal": -9.6,
       "volume_ratio_at_signal": 0.82,
       "alert": "資金退潮警報",
-      "results": {}
+      "results": {
+        "latest_pct": -0.14,
+        "max_gain": 0.0,
+        "max_drawdown": -0.14
+      },
+      "age_minutes": 1.89
     },
     {
       "key": "fund_flow:2609:16:51.4",
