@@ -1,5 +1,5 @@
-const CACHE = 'stx-build-013';
-const STATIC_VERSION = 'build-013';
+const CACHE = 'stx-build-016';
+const STATIC_VERSION = 'build-016';
 
 async function clearOldCaches() {
   const keys = await caches.keys();
