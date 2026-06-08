@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-08T06:41:51.210038+00:00",
+  "updated_at": "2026-06-08T06:41:55.211785+00:00",
   "count": 737,
   "items": [
     {
@@ -4937,8 +4937,8 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T02:40:15.266754+00:00",
-      "updated_at": "2026-06-08T06:36:51.515062+00:00",
-      "status": "open",
+      "updated_at": "2026-06-08T06:41:53.695663+00:00",
+      "status": "closed",
       "code": "6215",
       "name": "和椿",
       "sector": "PCB",
@@ -4956,9 +4956,10 @@
         "max_drawdown": -0.45,
         "pct_5m": 0.0,
         "pct_10m": 0.901,
-        "pct_30m": 0.0
+        "pct_30m": 0.0,
+        "pct_close_proxy": 0.901
       },
-      "age_minutes": 236.6
+      "age_minutes": 241.64
     },
     {
       "key": "ai_pool:1513:49:165.0",
@@ -5872,7 +5873,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T02:45:15.083221+00:00",
-      "updated_at": "2026-06-08T06:36:51.515079+00:00",
+      "updated_at": "2026-06-08T06:41:53.695681+00:00",
       "status": "open",
       "code": "6215",
       "name": "和椿",
@@ -5893,7 +5894,7 @@
         "pct_10m": 0.905,
         "pct_30m": 0.0
       },
-      "age_minutes": 231.61
+      "age_minutes": 236.64
     },
     {
       "key": "ai_pool:1513:40:165.5",
@@ -6012,7 +6013,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T02:45:25.121098+00:00",
-      "updated_at": "2026-06-08T06:36:51.515088+00:00",
+      "updated_at": "2026-06-08T06:41:53.695688+00:00",
       "status": "open",
       "code": "6215",
       "name": "和椿",
@@ -6033,7 +6034,7 @@
         "pct_10m": 0.905,
         "pct_30m": 0.0
       },
-      "age_minutes": 231.44
+      "age_minutes": 236.48
     },
     {
       "key": "fund_flow:2382:32:371.5",
@@ -6600,7 +6601,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T02:50:15.303944+00:00",
-      "updated_at": "2026-06-08T06:36:51.515102+00:00",
+      "updated_at": "2026-06-08T06:41:53.695695+00:00",
       "status": "open",
       "code": "6215",
       "name": "和椿",
@@ -6621,7 +6622,7 @@
         "pct_10m": -0.446,
         "pct_30m": -1.339
       },
-      "age_minutes": 226.6
+      "age_minutes": 231.64
     },
     {
       "key": "ai_pool:2344:48:154.5",
@@ -7804,7 +7805,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T03:00:26.524758+00:00",
-      "updated_at": "2026-06-08T06:36:51.515129+00:00",
+      "updated_at": "2026-06-08T06:41:53.695703+00:00",
       "status": "open",
       "code": "6215",
       "name": "和椿",
@@ -7825,7 +7826,7 @@
         "pct_10m": -0.448,
         "pct_30m": 0.448
       },
-      "age_minutes": 216.42
+      "age_minutes": 221.45
     },
     {
       "key": "ai_pool:2344:48:154.0",
@@ -8336,7 +8337,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T03:05:12.938799+00:00",
-      "updated_at": "2026-06-08T06:36:51.515143+00:00",
+      "updated_at": "2026-06-08T06:41:53.695710+00:00",
       "status": "open",
       "code": "6215",
       "name": "和椿",
@@ -8357,7 +8358,7 @@
         "pct_10m": -0.45,
         "pct_30m": 0.901
       },
-      "age_minutes": 211.64
+      "age_minutes": 216.68
     },
     {
       "key": "ai_pool:1513:44:166.5",
@@ -9484,7 +9485,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T03:15:25.492275+00:00",
-      "updated_at": "2026-06-08T06:36:51.515160+00:00",
+      "updated_at": "2026-06-08T06:41:53.695717+00:00",
       "status": "open",
       "code": "6215",
       "name": "和椿",
@@ -9505,7 +9506,7 @@
         "pct_10m": 0.905,
         "pct_30m": 1.357
       },
-      "age_minutes": 201.43
+      "age_minutes": 206.47
     },
     {
       "key": "fund_flow:2618:29:36.05",
@@ -10688,7 +10689,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T03:25:22.676874+00:00",
-      "updated_at": "2026-06-08T06:36:51.515178+00:00",
+      "updated_at": "2026-06-08T06:41:53.695725+00:00",
       "status": "open",
       "code": "6215",
       "name": "和椿",
@@ -10709,7 +10710,7 @@
         "pct_10m": 0.448,
         "pct_30m": 0.0
       },
-      "age_minutes": 191.48
+      "age_minutes": 196.52
     },
     {
       "key": "fund_flow:2618:27:36.15",
@@ -11724,7 +11725,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T03:35:22.952982+00:00",
-      "updated_at": "2026-06-08T06:36:51.515194+00:00",
+      "updated_at": "2026-06-08T06:41:53.695733+00:00",
       "status": "open",
       "code": "6215",
       "name": "和椿",
@@ -11745,7 +11746,7 @@
         "pct_10m": 0.0,
         "pct_30m": -0.446
       },
-      "age_minutes": 181.48
+      "age_minutes": 186.51
     },
     {
       "key": "fund_flow:2609:6:51.6",
@@ -12340,7 +12341,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T03:45:15.296383+00:00",
-      "updated_at": "2026-06-08T06:36:51.515207+00:00",
+      "updated_at": "2026-06-08T06:41:53.695739+00:00",
       "status": "open",
       "code": "6215",
       "name": "和椿",
@@ -12361,7 +12362,7 @@
         "pct_10m": -0.446,
         "pct_30m": -0.893
       },
-      "age_minutes": 171.6
+      "age_minutes": 176.64
     },
     {
       "key": "ai_pool:2382:48:373.5",
@@ -12844,7 +12845,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T03:50:15.373207+00:00",
-      "updated_at": "2026-06-08T06:36:51.515219+00:00",
+      "updated_at": "2026-06-08T06:41:53.695745+00:00",
       "status": "open",
       "code": "6215",
       "name": "和椿",
@@ -12865,7 +12866,7 @@
         "pct_10m": -0.448,
         "pct_30m": -0.448
       },
-      "age_minutes": 166.6
+      "age_minutes": 171.64
     },
     {
       "key": "ai_pool:2344:56:155.0",
@@ -14776,7 +14777,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T04:15:24.781727+00:00",
-      "updated_at": "2026-06-08T06:36:51.515238+00:00",
+      "updated_at": "2026-06-08T06:41:53.695754+00:00",
       "status": "open",
       "code": "6215",
       "name": "和椿",
@@ -14797,7 +14798,7 @@
         "pct_10m": 0.0,
         "pct_30m": 0.0
       },
-      "age_minutes": 141.45
+      "age_minutes": 146.48
     },
     {
       "key": "fund_flow:1514:25:122.5",
@@ -15616,7 +15617,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T04:25:23.118721+00:00",
-      "updated_at": "2026-06-08T06:36:51.515252+00:00",
+      "updated_at": "2026-06-08T06:41:53.695761+00:00",
       "status": "open",
       "code": "6215",
       "name": "和椿",
@@ -15637,7 +15638,7 @@
         "pct_10m": 0.0,
         "pct_30m": 0.452
       },
-      "age_minutes": 131.47
+      "age_minutes": 136.51
     },
     {
       "key": "fund_flow:2609:7:51.3",
