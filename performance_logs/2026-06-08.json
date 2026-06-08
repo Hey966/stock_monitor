@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-08T05:01:55.412035+00:00",
+  "updated_at": "2026-06-08T05:01:58.839195+00:00",
   "count": 660,
   "items": [
     {
@@ -152,8 +152,8 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T01:00:25.731680+00:00",
-      "updated_at": "2026-06-08T04:56:39.859923+00:00",
-      "status": "open",
+      "updated_at": "2026-06-08T05:01:57.607316+00:00",
+      "status": "closed",
       "code": "3443",
       "name": "創意",
       "sector": "半導體",
@@ -171,9 +171,10 @@
         "max_drawdown": -0.851,
         "pct_5m": -0.608,
         "pct_10m": 0.0,
-        "pct_30m": 0.972
+        "pct_30m": 0.972,
+        "pct_close_proxy": 3.402
       },
-      "age_minutes": 236.24
+      "age_minutes": 241.53
     },
     {
       "key": "ai_pool:2376:48:339.5",
@@ -1200,7 +1201,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T01:05:12.805191+00:00",
-      "updated_at": "2026-06-08T04:56:39.859947+00:00",
+      "updated_at": "2026-06-08T05:01:57.607377+00:00",
       "status": "open",
       "code": "3443",
       "name": "創意",
@@ -1221,7 +1222,7 @@
         "pct_10m": -0.971,
         "pct_30m": 0.85
       },
-      "age_minutes": 231.45
+      "age_minutes": 236.75
     },
     {
       "key": "ai_pool:2368:56:1225.0",
@@ -1760,7 +1761,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T01:05:22.720752+00:00",
-      "updated_at": "2026-06-08T04:56:39.859956+00:00",
+      "updated_at": "2026-06-08T05:01:57.607397+00:00",
       "status": "open",
       "code": "3443",
       "name": "創意",
@@ -1781,7 +1782,7 @@
         "pct_10m": -0.971,
         "pct_30m": 0.85
       },
-      "age_minutes": 231.29
+      "age_minutes": 236.58
     },
     {
       "key": "fund_flow:3711:33:525.0",
@@ -2348,7 +2349,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T01:10:16.374008+00:00",
-      "updated_at": "2026-06-08T04:56:39.859964+00:00",
+      "updated_at": "2026-06-08T05:01:57.607414+00:00",
       "status": "open",
       "code": "3443",
       "name": "創意",
@@ -2369,7 +2370,7 @@
         "pct_10m": 1.218,
         "pct_30m": 1.218
       },
-      "age_minutes": 226.39
+      "age_minutes": 231.69
     },
     {
       "key": "ai_pool:8046:48:793.0",
@@ -3356,7 +3357,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T01:15:15.735403+00:00",
-      "updated_at": "2026-06-08T04:56:39.859974+00:00",
+      "updated_at": "2026-06-08T05:01:57.607435+00:00",
       "status": "open",
       "code": "3443",
       "name": "創意",
@@ -3377,7 +3378,7 @@
         "pct_10m": 1.218,
         "pct_30m": 1.218
       },
-      "age_minutes": 221.4
+      "age_minutes": 226.7
     },
     {
       "key": "ai_pool:3711:40:525.0",
@@ -3720,7 +3721,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T01:15:26.200414+00:00",
-      "updated_at": "2026-06-08T04:56:39.859982+00:00",
+      "updated_at": "2026-06-08T05:01:57.607449+00:00",
       "status": "open",
       "code": "3443",
       "name": "創意",
@@ -3741,7 +3742,7 @@
         "pct_10m": 1.838,
         "pct_30m": 1.838
       },
-      "age_minutes": 221.23
+      "age_minutes": 226.52
     },
     {
       "key": "fund_flow:3711:28:525.0",
@@ -4252,7 +4253,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T02:35:13.181533+00:00",
-      "updated_at": "2026-06-08T04:56:39.859989+00:00",
+      "updated_at": "2026-06-08T05:01:57.607464+00:00",
       "status": "open",
       "code": "3443",
       "name": "創意",
@@ -4273,7 +4274,7 @@
         "pct_10m": 0.962,
         "pct_30m": 1.562
       },
-      "age_minutes": 141.44
+      "age_minutes": 146.74
     },
     {
       "key": "ai_pool:2376:48:345.5",
@@ -5680,7 +5681,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T02:45:15.083195+00:00",
-      "updated_at": "2026-06-08T04:56:39.859999+00:00",
+      "updated_at": "2026-06-08T05:01:57.607489+00:00",
       "status": "open",
       "code": "3443",
       "name": "創意",
@@ -5701,7 +5702,7 @@
         "pct_10m": -0.474,
         "pct_30m": 0.355
       },
-      "age_minutes": 131.41
+      "age_minutes": 136.71
     },
     {
       "key": "ai_pool:1609:48:37.35",
@@ -6268,7 +6269,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T02:50:15.303840+00:00",
-      "updated_at": "2026-06-08T04:56:39.860008+00:00",
+      "updated_at": "2026-06-08T05:01:57.607505+00:00",
       "status": "open",
       "code": "3443",
       "name": "創意",
@@ -6289,7 +6290,7 @@
         "pct_10m": 1.075,
         "pct_30m": 1.195
       },
-      "age_minutes": 126.41
+      "age_minutes": 131.71
     },
     {
       "key": "ai_pool:2376:56:347.5",
@@ -7248,7 +7249,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T02:55:12.105186+00:00",
-      "updated_at": "2026-06-08T04:56:39.860016+00:00",
+      "updated_at": "2026-06-08T05:01:57.607524+00:00",
       "status": "open",
       "code": "3443",
       "name": "創意",
@@ -7269,7 +7270,7 @@
         "pct_10m": 1.077,
         "pct_30m": 2.153
       },
-      "age_minutes": 121.46
+      "age_minutes": 126.76
     },
     {
       "key": "ai_pool:2324:38:37.9",
@@ -8200,7 +8201,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T03:05:12.938767+00:00",
-      "updated_at": "2026-06-08T04:56:39.860023+00:00",
+      "updated_at": "2026-06-08T05:01:57.607542+00:00",
       "status": "open",
       "code": "3443",
       "name": "創意",
@@ -8221,7 +8222,7 @@
         "pct_10m": 0.237,
         "pct_30m": 0.592
       },
-      "age_minutes": 111.45
+      "age_minutes": 116.74
     },
     {
       "key": "ai_pool:3711:48:533.0",
@@ -8536,7 +8537,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T03:10:15.922580+00:00",
-      "updated_at": "2026-06-08T04:56:39.860030+00:00",
+      "updated_at": "2026-06-08T05:01:57.607555+00:00",
       "status": "open",
       "code": "3443",
       "name": "創意",
@@ -8557,7 +8558,7 @@
         "pct_10m": 0.0,
         "pct_30m": 0.59
       },
-      "age_minutes": 106.4
+      "age_minutes": 111.69
     },
     {
       "key": "ai_pool:3711:56:536.0",
@@ -9152,7 +9153,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T03:15:15.074856+00:00",
-      "updated_at": "2026-06-08T04:56:39.860037+00:00",
+      "updated_at": "2026-06-08T05:01:57.607571+00:00",
       "status": "open",
       "code": "3443",
       "name": "創意",
@@ -9173,7 +9174,7 @@
         "pct_10m": 1.546,
         "pct_30m": 0.951
       },
-      "age_minutes": 101.41
+      "age_minutes": 106.71
     },
     {
       "key": "ai_pool:2379:48:594.0",
@@ -10524,7 +10525,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T03:25:12.343956+00:00",
-      "updated_at": "2026-06-08T04:56:39.860045+00:00",
+      "updated_at": "2026-06-08T05:01:57.607594+00:00",
       "status": "open",
       "code": "3443",
       "name": "創意",
@@ -10545,7 +10546,7 @@
         "pct_10m": -0.352,
         "pct_30m": -0.352
       },
-      "age_minutes": 91.46
+      "age_minutes": 96.75
     },
     {
       "key": "fund_flow:1513:33:166.0",
@@ -10804,7 +10805,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T03:30:19.535891+00:00",
-      "updated_at": "2026-06-08T04:56:39.860051+00:00",
+      "updated_at": "2026-06-08T05:01:57.607605+00:00",
       "status": "open",
       "code": "3443",
       "name": "創意",
@@ -10825,7 +10826,7 @@
         "pct_10m": -0.699,
         "pct_30m": -0.932
       },
-      "age_minutes": 86.34
+      "age_minutes": 91.63
     },
     {
       "key": "ai_pool:3324:60:1080.0",
@@ -11392,7 +11393,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T03:35:12.413708+00:00",
-      "updated_at": "2026-06-08T04:56:39.860057+00:00",
+      "updated_at": "2026-06-08T05:01:57.607620+00:00",
       "status": "open",
       "code": "3443",
       "name": "創意",
@@ -11413,7 +11414,7 @@
         "pct_10m": -0.118,
         "pct_30m": -0.353
       },
-      "age_minutes": 81.46
+      "age_minutes": 86.75
     },
     {
       "key": "ai_pool:3231:48:162.0",
@@ -11756,7 +11757,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T03:40:16.271466+00:00",
-      "updated_at": "2026-06-08T04:56:39.860063+00:00",
+      "updated_at": "2026-06-08T05:01:57.607633+00:00",
       "status": "open",
       "code": "3443",
       "name": "創意",
@@ -11777,7 +11778,7 @@
         "pct_10m": 0.117,
         "pct_30m": -0.704
       },
-      "age_minutes": 76.39
+      "age_minutes": 81.69
     },
     {
       "key": "ai_pool:1609:56:37.15",
@@ -12428,7 +12429,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T03:45:15.296452+00:00",
-      "updated_at": "2026-06-08T04:56:39.860069+00:00",
+      "updated_at": "2026-06-08T05:01:57.607647+00:00",
       "status": "open",
       "code": "3443",
       "name": "創意",
@@ -12449,7 +12450,7 @@
         "pct_10m": 0.118,
         "pct_30m": -0.707
       },
-      "age_minutes": 71.41
+      "age_minutes": 76.71
     },
     {
       "key": "fund_flow:2368:82:1335.0",
@@ -12484,7 +12485,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T03:45:26.283016+00:00",
-      "updated_at": "2026-06-08T04:56:39.860074+00:00",
+      "updated_at": "2026-06-08T05:01:57.607656+00:00",
       "status": "open",
       "code": "3443",
       "name": "創意",
@@ -12505,7 +12506,7 @@
         "pct_10m": 0.118,
         "pct_30m": -0.707
       },
-      "age_minutes": 71.23
+      "age_minutes": 76.52
     },
     {
       "key": "fund_flow:2609:31:51.4",
@@ -12820,7 +12821,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T03:50:15.373243+00:00",
-      "updated_at": "2026-06-08T04:56:39.860080+00:00",
+      "updated_at": "2026-06-08T05:01:57.607668+00:00",
       "status": "open",
       "code": "3443",
       "name": "創意",
@@ -12841,7 +12842,7 @@
         "pct_10m": -0.352,
         "pct_30m": -0.821
       },
-      "age_minutes": 66.41
+      "age_minutes": 71.7
     },
     {
       "key": "fund_flow:2368:85:1335.0",
@@ -13408,7 +13409,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T04:00:36.448256+00:00",
-      "updated_at": "2026-06-08T04:56:39.860085+00:00",
+      "updated_at": "2026-06-08T05:01:57.607679+00:00",
       "status": "open",
       "code": "3443",
       "name": "創意",
@@ -13429,7 +13430,7 @@
         "pct_10m": -0.471,
         "pct_30m": -0.471
       },
-      "age_minutes": 56.06
+      "age_minutes": 61.35
     },
     {
       "key": "fund_flow:2618:30:36.3",
@@ -14500,7 +14501,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T04:15:14.558071+00:00",
-      "updated_at": "2026-06-08T04:56:39.860094+00:00",
+      "updated_at": "2026-06-08T05:01:57.607694+00:00",
       "status": "open",
       "code": "3443",
       "name": "創意",
@@ -14521,7 +14522,7 @@
         "pct_10m": 0.355,
         "pct_30m": -0.118
       },
-      "age_minutes": 41.42
+      "age_minutes": 46.72
     },
     {
       "key": "fund_flow:2368:90:1350.0",
@@ -15032,7 +15033,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T04:20:15.348815+00:00",
-      "updated_at": "2026-06-08T04:56:39.860100+00:00",
+      "updated_at": "2026-06-08T05:01:57.607705+00:00",
       "status": "open",
       "code": "3443",
       "name": "創意",
@@ -15053,7 +15054,7 @@
         "pct_10m": 0.0,
         "pct_30m": 0.473
       },
-      "age_minutes": 36.41
+      "age_minutes": 41.7
     },
     {
       "key": "ai_pool:2324:48:38.35",
@@ -15340,7 +15341,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T04:25:12.669755+00:00",
-      "updated_at": "2026-06-08T04:56:39.860106+00:00",
+      "updated_at": "2026-06-08T05:01:57.607714+00:00",
       "status": "open",
       "code": "3443",
       "name": "創意",
@@ -15361,7 +15362,7 @@
         "pct_10m": 0.118,
         "pct_30m": 0.472
       },
-      "age_minutes": 31.45
+      "age_minutes": 36.75
     },
     {
       "key": "ai_pool:2376:48:344.0",
@@ -16223,7 +16224,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T04:35:12.415795+00:00",
-      "updated_at": "2026-06-08T04:56:39.860113+00:00",
+      "updated_at": "2026-06-08T05:01:57.607726+00:00",
       "status": "open",
       "code": "3443",
       "name": "創意",
@@ -16243,7 +16244,7 @@
         "pct_5m": 0.0,
         "pct_10m": -0.59
       },
-      "age_minutes": 21.46
+      "age_minutes": 26.75
     },
     {
       "key": "ai_pool:2324:56:38.5",
@@ -17725,7 +17726,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T04:55:11.982229+00:00",
-      "updated_at": "2026-06-08T04:56:39.860122+00:00",
+      "updated_at": "2026-06-08T05:01:57.607740+00:00",
       "status": "open",
       "code": "3443",
       "name": "創意",
@@ -17741,9 +17742,10 @@
       "results": {
         "latest_pct": 0.236,
         "max_gain": 0.236,
-        "max_drawdown": 0.0
+        "max_drawdown": 0.0,
+        "pct_5m": 0.236
       },
-      "age_minutes": 1.46
+      "age_minutes": 6.76
     },
     {
       "key": "ai_pool:2618:56:36.35",
@@ -18102,7 +18104,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T05:00:30.824786+00:00",
-      "updated_at": "2026-06-08T05:00:30.824788+00:00",
+      "updated_at": "2026-06-08T05:01:57.607750+00:00",
       "status": "open",
       "code": "3443",
       "name": "創意",
@@ -18115,7 +18117,12 @@
       "change_rate_at_signal": -3.07,
       "volume_ratio_at_signal": 0.71,
       "alert": null,
-      "results": {}
+      "results": {
+        "latest_pct": 0.0,
+        "max_gain": 0.0,
+        "max_drawdown": 0.0
+      },
+      "age_minutes": 1.45
     },
     {
       "key": "ai_pool:2454:56:4050.0",
