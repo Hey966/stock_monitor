@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-08T06:47:23.921139+00:00",
+  "updated_at": "2026-06-08T06:47:27.783535+00:00",
   "count": 737,
   "items": [
     {
@@ -5837,8 +5837,8 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T02:45:15.083208+00:00",
-      "updated_at": "2026-06-08T06:42:21.830167+00:00",
-      "status": "open",
+      "updated_at": "2026-06-08T06:47:26.232639+00:00",
+      "status": "closed",
       "code": "2379",
       "name": "瑞昱",
       "sector": "半導體",
@@ -5856,9 +5856,10 @@
         "max_drawdown": 0.0,
         "pct_5m": 0.681,
         "pct_10m": 0.681,
-        "pct_30m": 1.363
+        "pct_30m": 1.363,
+        "pct_close_proxy": 1.533
       },
-      "age_minutes": 237.11
+      "age_minutes": 242.19
     },
     {
       "key": "ai_pool:5347:40:151.0",
@@ -6010,8 +6011,8 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T02:45:25.121062+00:00",
-      "updated_at": "2026-06-08T06:42:21.830192+00:00",
-      "status": "open",
+      "updated_at": "2026-06-08T06:47:26.232660+00:00",
+      "status": "closed",
       "code": "2379",
       "name": "瑞昱",
       "sector": "半導體",
@@ -6029,9 +6030,10 @@
         "max_drawdown": 0.0,
         "pct_5m": 0.681,
         "pct_10m": 0.681,
-        "pct_30m": 1.363
+        "pct_30m": 1.363,
+        "pct_close_proxy": 1.533
       },
-      "age_minutes": 236.95
+      "age_minutes": 242.02
     },
     {
       "key": "fund_flow:6215:34:110.5",
@@ -6576,7 +6578,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T02:50:15.303926+00:00",
-      "updated_at": "2026-06-08T06:42:21.830209+00:00",
+      "updated_at": "2026-06-08T06:47:26.232673+00:00",
       "status": "open",
       "code": "2379",
       "name": "瑞昱",
@@ -6597,7 +6599,7 @@
         "pct_10m": -0.338,
         "pct_30m": 0.169
       },
-      "age_minutes": 232.11
+      "age_minutes": 237.18
     },
     {
       "key": "ai_pool:5347:48:151.5",
@@ -7276,7 +7278,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T02:55:12.105159+00:00",
-      "updated_at": "2026-06-08T06:42:21.830228+00:00",
+      "updated_at": "2026-06-08T06:47:26.232686+00:00",
       "status": "open",
       "code": "2379",
       "name": "瑞昱",
@@ -7297,7 +7299,7 @@
         "pct_10m": 0.169,
         "pct_30m": 0.678
       },
-      "age_minutes": 227.16
+      "age_minutes": 232.24
     },
     {
       "key": "ai_pool:2454:38:4045.0",
@@ -8872,7 +8874,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T03:10:15.922653+00:00",
-      "updated_at": "2026-06-08T06:42:21.830255+00:00",
+      "updated_at": "2026-06-08T06:47:26.232701+00:00",
       "status": "open",
       "code": "2379",
       "name": "瑞昱",
@@ -8893,14 +8895,14 @@
         "pct_10m": 0.169,
         "pct_30m": 0.846
       },
-      "age_minutes": 212.1
+      "age_minutes": 217.17
     },
     {
       "key": "fund_flow:2379:34:593.0",
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T03:10:26.300040+00:00",
-      "updated_at": "2026-06-08T06:42:21.830265+00:00",
+      "updated_at": "2026-06-08T06:47:26.232709+00:00",
       "status": "open",
       "code": "2379",
       "name": "瑞昱",
@@ -8921,7 +8923,7 @@
         "pct_10m": -0.169,
         "pct_30m": 0.506
       },
-      "age_minutes": 211.93
+      "age_minutes": 217.0
     },
     {
       "key": "fund_flow:2376:34:346.5",
@@ -9292,7 +9294,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T03:15:15.074863+00:00",
-      "updated_at": "2026-06-08T06:42:21.830277+00:00",
+      "updated_at": "2026-06-08T06:47:26.232719+00:00",
       "status": "open",
       "code": "2379",
       "name": "瑞昱",
@@ -9313,7 +9315,7 @@
         "pct_10m": 0.0,
         "pct_30m": 0.0
       },
-      "age_minutes": 207.11
+      "age_minutes": 212.19
     },
     {
       "key": "ai_pool:2308:46:2195.0",
@@ -9404,7 +9406,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T03:15:25.492229+00:00",
-      "updated_at": "2026-06-08T06:42:21.830286+00:00",
+      "updated_at": "2026-06-08T06:47:26.232727+00:00",
       "status": "open",
       "code": "2379",
       "name": "瑞昱",
@@ -9425,7 +9427,7 @@
         "pct_10m": 0.0,
         "pct_30m": 0.0
       },
-      "age_minutes": 206.94
+      "age_minutes": 212.01
     },
     {
       "key": "fund_flow:2382:34:372.0",
@@ -10524,7 +10526,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T03:25:12.343908+00:00",
-      "updated_at": "2026-06-08T06:42:21.830305+00:00",
+      "updated_at": "2026-06-08T06:47:26.232741+00:00",
       "status": "open",
       "code": "2379",
       "name": "瑞昱",
@@ -10545,7 +10547,7 @@
         "pct_10m": 0.504,
         "pct_30m": -0.168
       },
-      "age_minutes": 197.16
+      "age_minutes": 202.23
     },
     {
       "key": "ai_pool:5347:48:153.0",
@@ -11028,7 +11030,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T03:30:19.535973+00:00",
-      "updated_at": "2026-06-08T06:42:21.830318+00:00",
+      "updated_at": "2026-06-08T06:47:26.232751+00:00",
       "status": "open",
       "code": "2379",
       "name": "瑞昱",
@@ -11049,7 +11051,7 @@
         "pct_10m": 0.0,
         "pct_30m": -0.503
       },
-      "age_minutes": 192.04
+      "age_minutes": 197.11
     },
     {
       "key": "ai_pool:1609:48:36.95",
@@ -11616,7 +11618,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T03:35:12.413733+00:00",
-      "updated_at": "2026-06-08T06:42:21.830331+00:00",
+      "updated_at": "2026-06-08T06:47:26.232761+00:00",
       "status": "open",
       "code": "2379",
       "name": "瑞昱",
@@ -11637,7 +11639,7 @@
         "pct_10m": -0.503,
         "pct_30m": -0.67
       },
-      "age_minutes": 187.16
+      "age_minutes": 192.23
     },
     {
       "key": "ai_pool:1609:48:37.1",
@@ -12512,7 +12514,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T03:45:15.296446+00:00",
-      "updated_at": "2026-06-08T06:42:21.830372+00:00",
+      "updated_at": "2026-06-08T06:47:26.232772+00:00",
       "status": "open",
       "code": "2379",
       "name": "瑞昱",
@@ -12533,7 +12535,7 @@
         "pct_10m": 0.0,
         "pct_30m": 0.168
       },
-      "age_minutes": 177.11
+      "age_minutes": 182.18
     },
     {
       "key": "ai_pool:3443:38:4245.0",
@@ -13128,7 +13130,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T03:55:11.578091+00:00",
-      "updated_at": "2026-06-08T06:42:21.830393+00:00",
+      "updated_at": "2026-06-08T06:47:26.232783+00:00",
       "status": "open",
       "code": "2379",
       "name": "瑞昱",
@@ -13149,7 +13151,7 @@
         "pct_10m": -0.336,
         "pct_30m": 0.0
       },
-      "age_minutes": 167.17
+      "age_minutes": 172.24
     },
     {
       "key": "ai_pool:3017:49:2560.0",
@@ -13828,7 +13830,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T04:05:12.635265+00:00",
-      "updated_at": "2026-06-08T06:42:21.830409+00:00",
+      "updated_at": "2026-06-08T06:47:26.232794+00:00",
       "status": "open",
       "code": "2379",
       "name": "瑞昱",
@@ -13849,7 +13851,7 @@
         "pct_10m": 0.337,
         "pct_30m": 0.337
       },
-      "age_minutes": 157.15
+      "age_minutes": 162.23
     },
     {
       "key": "ai_pool:2618:48:36.25",
@@ -13884,7 +13886,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T04:05:23.013556+00:00",
-      "updated_at": "2026-06-08T06:42:21.830418+00:00",
+      "updated_at": "2026-06-08T06:47:26.232802+00:00",
       "status": "open",
       "code": "2379",
       "name": "瑞昱",
@@ -13905,7 +13907,7 @@
         "pct_10m": 0.337,
         "pct_30m": 0.337
       },
-      "age_minutes": 156.98
+      "age_minutes": 162.05
     },
     {
       "key": "fund_flow:2382:21:371.5",
@@ -14696,7 +14698,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T04:15:24.781678+00:00",
-      "updated_at": "2026-06-08T06:42:21.830434+00:00",
+      "updated_at": "2026-06-08T06:47:26.232814+00:00",
       "status": "open",
       "code": "2379",
       "name": "瑞昱",
@@ -14717,7 +14719,7 @@
         "pct_10m": 0.168,
         "pct_30m": -0.337
       },
-      "age_minutes": 146.95
+      "age_minutes": 152.02
     },
     {
       "key": "fund_flow:2382:23:372.0",
@@ -15088,7 +15090,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T04:20:15.348770+00:00",
-      "updated_at": "2026-06-08T06:42:21.830446+00:00",
+      "updated_at": "2026-06-08T06:47:26.232823+00:00",
       "status": "open",
       "code": "2379",
       "name": "瑞昱",
@@ -15109,7 +15111,7 @@
         "pct_10m": -0.168,
         "pct_30m": -0.839
       },
-      "age_minutes": 142.11
+      "age_minutes": 147.18
     },
     {
       "key": "ai_pool:3017:54:2540.0",
@@ -15984,7 +15986,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T04:30:31.692732+00:00",
-      "updated_at": "2026-06-08T06:42:21.830463+00:00",
+      "updated_at": "2026-06-08T06:47:26.232834+00:00",
       "status": "open",
       "code": "2379",
       "name": "瑞昱",
@@ -16005,7 +16007,7 @@
         "pct_10m": -0.84,
         "pct_30m": -0.336
       },
-      "age_minutes": 131.84
+      "age_minutes": 136.91
     },
     {
       "key": "fund_flow:3037:30:904.0",
@@ -16852,7 +16854,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T04:40:16.222920+00:00",
-      "updated_at": "2026-06-08T06:42:21.830479+00:00",
+      "updated_at": "2026-06-08T06:47:26.232846+00:00",
       "status": "open",
       "code": "2379",
       "name": "瑞昱",
@@ -16873,7 +16875,7 @@
         "pct_10m": -0.169,
         "pct_30m": 0.507
       },
-      "age_minutes": 122.09
+      "age_minutes": 127.17
     },
     {
       "key": "ai_pool:2344:48:153.5",
@@ -18056,7 +18058,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T04:55:22.580884+00:00",
-      "updated_at": "2026-06-08T06:42:21.830497+00:00",
+      "updated_at": "2026-06-08T06:47:26.232857+00:00",
       "status": "open",
       "code": "2379",
       "name": "瑞昱",
@@ -18077,7 +18079,7 @@
         "pct_10m": 0.168,
         "pct_30m": -0.673
       },
-      "age_minutes": 106.99
+      "age_minutes": 112.06
     },
     {
       "key": "fund_flow:2344:30:154.5",
@@ -18868,7 +18870,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T05:05:27.188018+00:00",
-      "updated_at": "2026-06-08T06:42:21.830512+00:00",
+      "updated_at": "2026-06-08T06:47:26.232868+00:00",
       "status": "open",
       "code": "2379",
       "name": "瑞昱",
@@ -18889,7 +18891,7 @@
         "pct_10m": 0.0,
         "pct_30m": 0.168
       },
-      "age_minutes": 96.91
+      "age_minutes": 101.98
     },
     {
       "key": "fund_flow:1609:35:37.0",
@@ -19680,7 +19682,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T05:15:26.040083+00:00",
-      "updated_at": "2026-06-08T06:42:21.830527+00:00",
+      "updated_at": "2026-06-08T06:47:26.232879+00:00",
       "status": "open",
       "code": "2379",
       "name": "瑞昱",
@@ -19701,7 +19703,7 @@
         "pct_10m": -0.84,
         "pct_30m": 0.168
       },
-      "age_minutes": 86.93
+      "age_minutes": 92.0
     },
     {
       "key": "fund_flow:3443:30:4235.0",
