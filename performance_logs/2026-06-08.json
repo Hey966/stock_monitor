@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-08T02:36:23.221597+00:00",
+  "updated_at": "2026-06-08T02:36:25.947051+00:00",
   "count": 169,
   "items": [
     {
@@ -890,27 +890,28 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T01:00:36.720295+00:00",
-      "updated_at": "2026-06-08T01:16:14.519896+00:00",
+      "updated_at": "2026-06-08T02:36:25.199115+00:00",
       "status": "open",
       "code": "2324",
       "name": "仁寶",
       "sector": "電腦週邊",
       "entry_price": 37.3,
-      "last_price": 37.45,
-      "best_price": 37.45,
+      "last_price": 37.6,
+      "best_price": 37.6,
       "worst_price": 37.3,
       "score": 2,
       "change_rate_at_signal": -9.9,
       "volume_ratio_at_signal": 0.04,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": 0.402,
-        "max_gain": 0.402,
+        "latest_pct": 0.804,
+        "max_gain": 0.804,
         "max_drawdown": 0.0,
         "pct_5m": 0.0,
-        "pct_10m": 0.0
+        "pct_10m": 0.0,
+        "pct_30m": 0.804
       },
-      "age_minutes": 15.63
+      "age_minutes": 95.81
     },
     {
       "key": "fund_flow:1514:2:121.5",
@@ -3078,25 +3079,28 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T01:15:15.735337+00:00",
-      "updated_at": "2026-06-08T01:16:14.519915+00:00",
+      "updated_at": "2026-06-08T02:36:25.199147+00:00",
       "status": "open",
       "code": "2324",
       "name": "仁寶",
       "sector": "電腦週邊",
       "entry_price": 37.55,
-      "last_price": 37.45,
-      "best_price": 37.55,
+      "last_price": 37.6,
+      "best_price": 37.6,
       "worst_price": 37.45,
       "score": 48,
       "change_rate_at_signal": -9.29,
       "volume_ratio_at_signal": 0.19,
       "alert": null,
       "results": {
-        "latest_pct": -0.266,
-        "max_gain": 0.0,
-        "max_drawdown": -0.266
+        "latest_pct": 0.133,
+        "max_gain": 0.133,
+        "max_drawdown": -0.266,
+        "pct_5m": 0.133,
+        "pct_10m": 0.133,
+        "pct_30m": 0.133
       },
-      "age_minutes": 0.98
+      "age_minutes": 81.16
     },
     {
       "key": "ai_pool:2368:48:1250.0",
@@ -3592,25 +3596,28 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T01:15:26.200408+00:00",
-      "updated_at": "2026-06-08T01:16:14.519923+00:00",
+      "updated_at": "2026-06-08T02:36:25.199160+00:00",
       "status": "open",
       "code": "2324",
       "name": "仁寶",
       "sector": "電腦週邊",
       "entry_price": 37.5,
-      "last_price": 37.45,
-      "best_price": 37.5,
+      "last_price": 37.6,
+      "best_price": 37.6,
       "worst_price": 37.45,
       "score": 34,
       "change_rate_at_signal": -9.42,
       "volume_ratio_at_signal": 0.19,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": -0.133,
-        "max_gain": 0.0,
-        "max_drawdown": -0.133
+        "latest_pct": 0.267,
+        "max_gain": 0.267,
+        "max_drawdown": -0.133,
+        "pct_5m": 0.267,
+        "pct_10m": 0.267,
+        "pct_30m": 0.267
       },
-      "age_minutes": 0.81
+      "age_minutes": 80.98
     },
     {
       "key": "fund_flow:3443:26:4080.0",
@@ -4268,20 +4275,25 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T02:35:13.181582+00:00",
-      "updated_at": "2026-06-08T02:35:13.181584+00:00",
+      "updated_at": "2026-06-08T02:36:25.199174+00:00",
       "status": "open",
       "code": "2324",
       "name": "仁寶",
       "sector": "電腦週邊",
       "entry_price": 37.65,
-      "last_price": 37.65,
+      "last_price": 37.6,
       "best_price": 37.65,
-      "worst_price": 37.65,
+      "worst_price": 37.6,
       "score": 38,
       "change_rate_at_signal": -9.05,
       "volume_ratio_at_signal": 0.43,
       "alert": null,
-      "results": {}
+      "results": {
+        "latest_pct": -0.133,
+        "max_gain": 0.0,
+        "max_drawdown": -0.133
+      },
+      "age_minutes": 1.2
     },
     {
       "key": "fund_flow:1605:34:35.8",
