@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-08T04:11:34.416847+00:00",
+  "updated_at": "2026-06-08T04:11:38.074822+00:00",
   "count": 507,
   "items": [
     {
@@ -316,13 +316,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T01:00:25.731739+00:00",
-      "updated_at": "2026-06-08T04:06:32.700644+00:00",
+      "updated_at": "2026-06-08T04:11:36.549556+00:00",
       "status": "open",
       "code": "1609",
       "name": "大亞",
       "sector": "電線電纜",
       "entry_price": 36.3,
-      "last_price": 37.1,
+      "last_price": 36.95,
       "best_price": 37.4,
       "worst_price": 36.3,
       "score": 48,
@@ -330,14 +330,14 @@
       "volume_ratio_at_signal": 0.04,
       "alert": null,
       "results": {
-        "latest_pct": 2.204,
+        "latest_pct": 1.791,
         "max_gain": 3.03,
         "max_drawdown": 0.0,
         "pct_5m": 1.102,
         "pct_10m": 1.24,
         "pct_30m": 2.893
       },
-      "age_minutes": 186.12
+      "age_minutes": 191.18
     },
     {
       "key": "ai_pool:3017:40:2370.0",
@@ -1240,13 +1240,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T01:05:12.805204+00:00",
-      "updated_at": "2026-06-08T04:06:32.700668+00:00",
+      "updated_at": "2026-06-08T04:11:36.549580+00:00",
       "status": "open",
       "code": "1609",
       "name": "大亞",
       "sector": "電線電纜",
       "entry_price": 36.8,
-      "last_price": 37.1,
+      "last_price": 36.95,
       "best_price": 37.4,
       "worst_price": 36.7,
       "score": 56,
@@ -1254,14 +1254,14 @@
       "volume_ratio_at_signal": 0.08,
       "alert": null,
       "results": {
-        "latest_pct": 0.815,
+        "latest_pct": 0.408,
         "max_gain": 1.63,
         "max_drawdown": -0.272,
         "pct_5m": -0.136,
         "pct_10m": 0.408,
         "pct_30m": 1.495
       },
-      "age_minutes": 181.33
+      "age_minutes": 186.4
     },
     {
       "key": "ai_pool:2382:48:366.0",
@@ -1828,13 +1828,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T01:05:22.720772+00:00",
-      "updated_at": "2026-06-08T04:06:32.700682+00:00",
+      "updated_at": "2026-06-08T04:11:36.549592+00:00",
       "status": "open",
       "code": "1609",
       "name": "大亞",
       "sector": "電線電纜",
       "entry_price": 36.7,
-      "last_price": 37.1,
+      "last_price": 36.95,
       "best_price": 37.4,
       "worst_price": 36.7,
       "score": 34,
@@ -1842,14 +1842,14 @@
       "volume_ratio_at_signal": 0.08,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": 1.09,
+        "latest_pct": 0.681,
         "max_gain": 1.907,
         "max_drawdown": 0.0,
         "pct_5m": 0.136,
         "pct_10m": 0.681,
         "pct_30m": 1.771
       },
-      "age_minutes": 181.17
+      "age_minutes": 186.23
     },
     {
       "key": "fund_flow:2382:17:365.0",
@@ -2444,13 +2444,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T01:10:16.374033+00:00",
-      "updated_at": "2026-06-08T04:06:32.700695+00:00",
+      "updated_at": "2026-06-08T04:11:36.549605+00:00",
       "status": "open",
       "code": "1609",
       "name": "大亞",
       "sector": "電線電纜",
       "entry_price": 36.85,
-      "last_price": 37.1,
+      "last_price": 36.95,
       "best_price": 37.4,
       "worst_price": 36.75,
       "score": 48,
@@ -2458,14 +2458,14 @@
       "volume_ratio_at_signal": 0.12,
       "alert": null,
       "results": {
-        "latest_pct": 0.678,
+        "latest_pct": 0.271,
         "max_gain": 1.493,
         "max_drawdown": -0.271,
         "pct_5m": 0.271,
         "pct_10m": 1.357,
         "pct_30m": 1.357
       },
-      "age_minutes": 176.27
+      "age_minutes": 181.34
     },
     {
       "key": "ai_pool:2615:46:84.1",
@@ -3060,13 +3060,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T01:15:15.735309+00:00",
-      "updated_at": "2026-06-08T04:06:32.700707+00:00",
+      "updated_at": "2026-06-08T04:11:36.549618+00:00",
       "status": "open",
       "code": "1609",
       "name": "大亞",
       "sector": "電線電纜",
       "entry_price": 37.05,
-      "last_price": 37.1,
+      "last_price": 36.95,
       "best_price": 37.4,
       "worst_price": 36.95,
       "score": 56,
@@ -3074,14 +3074,14 @@
       "volume_ratio_at_signal": 0.15,
       "alert": null,
       "results": {
-        "latest_pct": 0.135,
+        "latest_pct": -0.27,
         "max_gain": 0.945,
         "max_drawdown": -0.27,
         "pct_5m": 0.81,
         "pct_10m": 0.81,
         "pct_30m": 0.81
       },
-      "age_minutes": 171.28
+      "age_minutes": 176.35
     },
     {
       "key": "ai_pool:3017:48:2425.0",
@@ -4572,13 +4572,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T02:35:23.610024+00:00",
-      "updated_at": "2026-06-08T04:06:32.700724+00:00",
+      "updated_at": "2026-06-08T04:11:36.549638+00:00",
       "status": "open",
       "code": "1609",
       "name": "大亞",
       "sector": "電線電纜",
       "entry_price": 37.3,
-      "last_price": 37.1,
+      "last_price": 36.95,
       "best_price": 37.4,
       "worst_price": 36.95,
       "score": 34,
@@ -4586,14 +4586,14 @@
       "volume_ratio_at_signal": 0.31,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": -0.536,
+        "latest_pct": -0.938,
         "max_gain": 0.268,
         "max_drawdown": -0.938,
         "pct_5m": -0.402,
         "pct_10m": 0.134,
         "pct_30m": 0.0
       },
-      "age_minutes": 91.15
+      "age_minutes": 96.22
     },
     {
       "key": "fund_flow:2615:32:84.1",
@@ -5048,13 +5048,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T02:40:15.266828+00:00",
-      "updated_at": "2026-06-08T04:06:32.700736+00:00",
+      "updated_at": "2026-06-08T04:11:36.549650+00:00",
       "status": "open",
       "code": "1609",
       "name": "大亞",
       "sector": "電線電纜",
       "entry_price": 37.15,
-      "last_price": 37.1,
+      "last_price": 36.95,
       "best_price": 37.4,
       "worst_price": 36.95,
       "score": 48,
@@ -5062,14 +5062,14 @@
       "volume_ratio_at_signal": 0.32,
       "alert": null,
       "results": {
-        "latest_pct": -0.135,
+        "latest_pct": -0.538,
         "max_gain": 0.673,
         "max_drawdown": -0.538,
         "pct_5m": 0.538,
         "pct_10m": 0.673,
         "pct_30m": 0.404
       },
-      "age_minutes": 86.29
+      "age_minutes": 91.35
     },
     {
       "key": "ai_pool:2308:46:2185.0",
@@ -5692,13 +5692,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T02:45:15.083202+00:00",
-      "updated_at": "2026-06-08T04:06:32.700748+00:00",
+      "updated_at": "2026-06-08T04:11:36.549662+00:00",
       "status": "open",
       "code": "1609",
       "name": "大亞",
       "sector": "電線電纜",
       "entry_price": 37.35,
-      "last_price": 37.1,
+      "last_price": 36.95,
       "best_price": 37.4,
       "worst_price": 36.95,
       "score": 48,
@@ -5706,14 +5706,14 @@
       "volume_ratio_at_signal": 0.32,
       "alert": null,
       "results": {
-        "latest_pct": -0.669,
+        "latest_pct": -1.071,
         "max_gain": 0.134,
         "max_drawdown": -1.071,
         "pct_5m": 0.134,
         "pct_10m": -0.134,
         "pct_30m": -0.535
       },
-      "age_minutes": 81.29
+      "age_minutes": 86.36
     },
     {
       "key": "ai_pool:2379:40:587.0",
@@ -6672,13 +6672,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T02:50:25.637723+00:00",
-      "updated_at": "2026-06-08T04:06:32.700761+00:00",
+      "updated_at": "2026-06-08T04:11:36.549675+00:00",
       "status": "open",
       "code": "1609",
       "name": "大亞",
       "sector": "電線電纜",
       "entry_price": 37.35,
-      "last_price": 37.1,
+      "last_price": 36.95,
       "best_price": 37.4,
       "worst_price": 36.95,
       "score": 31,
@@ -6686,14 +6686,14 @@
       "volume_ratio_at_signal": 0.33,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": -0.669,
+        "latest_pct": -1.071,
         "max_gain": 0.134,
         "max_drawdown": -1.071,
         "pct_5m": -0.134,
         "pct_10m": 0.0,
         "pct_30m": -0.669
       },
-      "age_minutes": 76.12
+      "age_minutes": 81.18
     },
     {
       "key": "fund_flow:1514:3:121.5",
@@ -6980,13 +6980,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T02:55:12.105103+00:00",
-      "updated_at": "2026-06-08T04:06:32.700771+00:00",
+      "updated_at": "2026-06-08T04:11:36.549684+00:00",
       "status": "open",
       "code": "1609",
       "name": "大亞",
       "sector": "電線電纜",
       "entry_price": 37.35,
-      "last_price": 37.1,
+      "last_price": 36.95,
       "best_price": 37.35,
       "worst_price": 36.95,
       "score": 56,
@@ -6994,14 +6994,14 @@
       "volume_ratio_at_signal": 0.34,
       "alert": null,
       "results": {
-        "latest_pct": -0.669,
+        "latest_pct": -1.071,
         "max_gain": 0.0,
         "max_drawdown": -1.071,
         "pct_5m": 0.0,
         "pct_10m": -0.134,
         "pct_30m": -0.535
       },
-      "age_minutes": 71.34
+      "age_minutes": 76.41
     },
     {
       "key": "ai_pool:3037:53:910.0",
@@ -8100,13 +8100,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T03:05:12.938735+00:00",
-      "updated_at": "2026-06-08T04:06:32.700784+00:00",
+      "updated_at": "2026-06-08T04:11:36.549698+00:00",
       "status": "open",
       "code": "1609",
       "name": "大亞",
       "sector": "電線電纜",
       "entry_price": 37.3,
-      "last_price": 37.1,
+      "last_price": 36.95,
       "best_price": 37.3,
       "worst_price": 36.95,
       "score": 56,
@@ -8114,14 +8114,14 @@
       "volume_ratio_at_signal": 0.34,
       "alert": null,
       "results": {
-        "latest_pct": -0.536,
+        "latest_pct": -0.938,
         "max_gain": 0.0,
         "max_drawdown": -0.938,
         "pct_5m": 0.0,
         "pct_10m": -0.402,
         "pct_30m": -0.536
       },
-      "age_minutes": 61.33
+      "age_minutes": 66.39
     },
     {
       "key": "ai_pool:3017:52:2530.0",
@@ -9668,13 +9668,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T03:20:14.903004+00:00",
-      "updated_at": "2026-06-08T04:06:32.700801+00:00",
+      "updated_at": "2026-06-08T04:11:36.549714+00:00",
       "status": "open",
       "code": "1609",
       "name": "大亞",
       "sector": "電線電纜",
       "entry_price": 37.05,
-      "last_price": 37.1,
+      "last_price": 36.95,
       "best_price": 37.15,
       "worst_price": 36.95,
       "score": 48,
@@ -9682,14 +9682,14 @@
       "volume_ratio_at_signal": 0.36,
       "alert": null,
       "results": {
-        "latest_pct": 0.135,
+        "latest_pct": -0.27,
         "max_gain": 0.27,
         "max_drawdown": -0.27,
         "pct_5m": 0.27,
         "pct_10m": -0.27,
         "pct_30m": -0.27
       },
-      "age_minutes": 46.3
+      "age_minutes": 51.36
     },
     {
       "key": "ai_pool:2615:45:84.2",
@@ -10340,13 +10340,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T03:25:12.343880+00:00",
-      "updated_at": "2026-06-08T04:06:32.700813+00:00",
+      "updated_at": "2026-06-08T04:11:36.549725+00:00",
       "status": "open",
       "code": "1609",
       "name": "大亞",
       "sector": "電線電纜",
       "entry_price": 37.1,
-      "last_price": 37.1,
+      "last_price": 36.95,
       "best_price": 37.15,
       "worst_price": 36.95,
       "score": 56,
@@ -10354,14 +10354,14 @@
       "volume_ratio_at_signal": 0.36,
       "alert": null,
       "results": {
-        "latest_pct": 0.0,
+        "latest_pct": -0.404,
         "max_gain": 0.135,
         "max_drawdown": -0.404,
         "pct_5m": -0.404,
         "pct_10m": 0.0,
         "pct_30m": -0.135
       },
-      "age_minutes": 41.34
+      "age_minutes": 46.4
     },
     {
       "key": "ai_pool:3037:48:918.0",
@@ -10928,13 +10928,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T03:30:19.535985+00:00",
-      "updated_at": "2026-06-08T04:06:32.700824+00:00",
+      "updated_at": "2026-06-08T04:11:36.549737+00:00",
       "status": "open",
       "code": "1609",
       "name": "大亞",
       "sector": "電線電纜",
       "entry_price": 36.95,
-      "last_price": 37.1,
+      "last_price": 36.95,
       "best_price": 37.15,
       "worst_price": 36.95,
       "score": 48,
@@ -10942,14 +10942,14 @@
       "volume_ratio_at_signal": 0.37,
       "alert": null,
       "results": {
-        "latest_pct": 0.406,
+        "latest_pct": 0.0,
         "max_gain": 0.541,
         "max_drawdown": 0.0,
         "pct_5m": 0.406,
         "pct_10m": 0.541,
         "pct_30m": 0.406
       },
-      "age_minutes": 36.22
+      "age_minutes": 41.28
     },
     {
       "key": "ai_pool:2454:46:4060.0",
@@ -11124,13 +11124,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T03:30:30.308584+00:00",
-      "updated_at": "2026-06-08T04:06:32.700833+00:00",
+      "updated_at": "2026-06-08T04:11:36.549745+00:00",
       "status": "open",
       "code": "1609",
       "name": "大亞",
       "sector": "電線電纜",
       "entry_price": 36.95,
-      "last_price": 37.1,
+      "last_price": 36.95,
       "best_price": 37.15,
       "worst_price": 36.95,
       "score": 34,
@@ -11138,14 +11138,14 @@
       "volume_ratio_at_signal": 0.37,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": 0.406,
+        "latest_pct": 0.0,
         "max_gain": 0.541,
         "max_drawdown": 0.0,
         "pct_5m": 0.406,
         "pct_10m": 0.541,
         "pct_30m": 0.406
       },
-      "age_minutes": 36.04
+      "age_minutes": 41.1
     },
     {
       "key": "fund_flow:5347:34:152.5",
@@ -11516,13 +11516,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T03:35:12.413739+00:00",
-      "updated_at": "2026-06-08T04:06:32.700843+00:00",
+      "updated_at": "2026-06-08T04:11:36.549754+00:00",
       "status": "open",
       "code": "1609",
       "name": "大亞",
       "sector": "電線電纜",
       "entry_price": 37.1,
-      "last_price": 37.1,
+      "last_price": 36.95,
       "best_price": 37.15,
       "worst_price": 36.95,
       "score": 48,
@@ -11530,14 +11530,14 @@
       "volume_ratio_at_signal": 0.38,
       "alert": null,
       "results": {
-        "latest_pct": 0.0,
+        "latest_pct": -0.404,
         "max_gain": 0.135,
         "max_drawdown": -0.404,
         "pct_5m": 0.135,
         "pct_10m": 0.135,
         "pct_30m": 0.0
       },
-      "age_minutes": 31.34
+      "age_minutes": 36.4
     },
     {
       "key": "ai_pool:3711:46:537.0",
@@ -11767,13 +11767,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T03:40:16.271486+00:00",
-      "updated_at": "2026-06-08T04:06:32.700853+00:00",
+      "updated_at": "2026-06-08T04:11:36.549765+00:00",
       "status": "open",
       "code": "1609",
       "name": "大亞",
       "sector": "電線電纜",
       "entry_price": 37.15,
-      "last_price": 37.1,
+      "last_price": 36.95,
       "best_price": 37.15,
       "worst_price": 36.95,
       "score": 56,
@@ -11781,13 +11781,14 @@
       "volume_ratio_at_signal": 0.39,
       "alert": null,
       "results": {
-        "latest_pct": -0.135,
+        "latest_pct": -0.538,
         "max_gain": 0.0,
         "max_drawdown": -0.538,
         "pct_5m": 0.0,
-        "pct_10m": -0.538
+        "pct_10m": -0.538,
+        "pct_30m": -0.538
       },
-      "age_minutes": 26.27
+      "age_minutes": 31.34
     },
     {
       "key": "ai_pool:2330:52:2310.0",
@@ -13717,25 +13718,26 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T04:05:23.013595+00:00",
-      "updated_at": "2026-06-08T04:06:32.700869+00:00",
+      "updated_at": "2026-06-08T04:11:36.549783+00:00",
       "status": "open",
       "code": "1609",
       "name": "大亞",
       "sector": "電線電纜",
       "entry_price": 37.05,
-      "last_price": 37.1,
+      "last_price": 36.95,
       "best_price": 37.1,
-      "worst_price": 37.05,
+      "worst_price": 36.95,
       "score": 31,
       "change_rate_at_signal": -5.24,
       "volume_ratio_at_signal": 0.41,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": 0.135,
+        "latest_pct": -0.27,
         "max_gain": 0.135,
-        "max_drawdown": 0.0
+        "max_drawdown": -0.27,
+        "pct_5m": -0.27
       },
-      "age_minutes": 1.16
+      "age_minutes": 6.23
     },
     {
       "key": "fund_flow:2609:23:51.7",
