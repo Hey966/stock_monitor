@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-08T02:36:54.070235+00:00",
+  "updated_at": "2026-06-08T02:36:56.126615+00:00",
   "count": 169,
   "items": [
     {
@@ -931,7 +931,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T01:00:36.720308+00:00",
-      "updated_at": "2026-06-08T01:16:48.795092+00:00",
+      "updated_at": "2026-06-08T02:36:55.602968+00:00",
       "status": "open",
       "code": "1514",
       "name": "亞力",
@@ -949,9 +949,10 @@
         "max_gain": 0.0,
         "max_drawdown": 0.0,
         "pct_5m": 0.0,
-        "pct_10m": 0.0
+        "pct_10m": 0.0,
+        "pct_30m": 0.0
       },
-      "age_minutes": 16.2
+      "age_minutes": 96.31
     },
     {
       "key": "fund_flow:2409:1:24.4",
