@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-08T02:36:58.409522+00:00",
+  "updated_at": "2026-06-08T02:37:00.899593+00:00",
   "count": 169,
   "items": [
     {
@@ -987,7 +987,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T01:00:36.720333+00:00",
-      "updated_at": "2026-06-08T01:16:55.846281+00:00",
+      "updated_at": "2026-06-08T02:36:59.915842+00:00",
       "status": "open",
       "code": "3481",
       "name": "群創",
@@ -1005,9 +1005,10 @@
         "max_gain": 0.0,
         "max_drawdown": 0.0,
         "pct_5m": 0.0,
-        "pct_10m": 0.0
+        "pct_10m": 0.0,
+        "pct_30m": 0.0
       },
-      "age_minutes": 16.32
+      "age_minutes": 96.39
     },
     {
       "key": "fund_flow:2344:1:146.0",
@@ -2913,7 +2914,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T01:10:27.018935+00:00",
-      "updated_at": "2026-06-08T01:16:55.846317+00:00",
+      "updated_at": "2026-06-08T02:36:59.915863+00:00",
       "status": "open",
       "code": "3481",
       "name": "群創",
@@ -2930,9 +2931,11 @@
         "latest_pct": 0.0,
         "max_gain": 0.0,
         "max_drawdown": 0.0,
-        "pct_5m": 0.0
+        "pct_5m": 0.0,
+        "pct_10m": 0.0,
+        "pct_30m": 0.0
       },
-      "age_minutes": 6.48
+      "age_minutes": 86.55
     },
     {
       "key": "ai_pool:2308:56:2210.0",
@@ -4594,7 +4597,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T02:35:23.610110+00:00",
-      "updated_at": "2026-06-08T02:35:23.610114+00:00",
+      "updated_at": "2026-06-08T02:36:59.915875+00:00",
       "status": "open",
       "code": "3481",
       "name": "群創",
@@ -4607,7 +4610,12 @@
       "change_rate_at_signal": -9.96,
       "volume_ratio_at_signal": 0.33,
       "alert": "資金退潮警報",
-      "results": {}
+      "results": {
+        "latest_pct": 0.0,
+        "max_gain": 0.0,
+        "max_drawdown": 0.0
+      },
+      "age_minutes": 1.61
     },
     {
       "key": "fund_flow:2618:34:36.0",
