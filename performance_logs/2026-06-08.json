@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-08T04:46:40.109030+00:00",
+  "updated_at": "2026-06-08T04:46:42.709785+00:00",
   "count": 621,
   "items": [
     {
@@ -484,13 +484,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T01:00:25.731809+00:00",
-      "updated_at": "2026-06-08T04:41:43.763762+00:00",
+      "updated_at": "2026-06-08T04:46:42.274580+00:00",
       "status": "open",
       "code": "2382",
       "name": "廣達",
       "sector": "AI伺服器",
       "entry_price": 362.5,
-      "last_price": 372.0,
+      "last_price": 370.5,
       "best_price": 375.0,
       "worst_price": 362.5,
       "score": 38,
@@ -498,14 +498,14 @@
       "volume_ratio_at_signal": 0.05,
       "alert": null,
       "results": {
-        "latest_pct": 2.621,
+        "latest_pct": 2.207,
         "max_gain": 3.448,
         "max_drawdown": 0.0,
         "pct_5m": 1.517,
         "pct_10m": 1.103,
         "pct_30m": 0.276
       },
-      "age_minutes": 221.3
+      "age_minutes": 226.28
     },
     {
       "key": "ai_pool:3231:38:159.5",
@@ -568,13 +568,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T01:00:36.720152+00:00",
-      "updated_at": "2026-06-08T04:41:43.763792+00:00",
+      "updated_at": "2026-06-08T04:46:42.274603+00:00",
       "status": "open",
       "code": "2382",
       "name": "廣達",
       "sector": "AI伺服器",
       "entry_price": 361.5,
-      "last_price": 372.0,
+      "last_price": 370.5,
       "best_price": 375.0,
       "worst_price": 361.5,
       "score": 35,
@@ -582,14 +582,14 @@
       "volume_ratio_at_signal": 0.05,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": 2.905,
+        "latest_pct": 2.49,
         "max_gain": 3.734,
         "max_drawdown": 0.0,
         "pct_5m": 1.798,
         "pct_10m": 1.383,
         "pct_30m": 0.553
       },
-      "age_minutes": 221.12
+      "age_minutes": 226.09
     },
     {
       "key": "fund_flow:2376:30:340.0",
@@ -1268,13 +1268,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T01:05:12.805211+00:00",
-      "updated_at": "2026-06-08T04:41:43.763812+00:00",
+      "updated_at": "2026-06-08T04:46:42.274619+00:00",
       "status": "open",
       "code": "2382",
       "name": "廣達",
       "sector": "AI伺服器",
       "entry_price": 366.0,
-      "last_price": 372.0,
+      "last_price": 370.5,
       "best_price": 375.0,
       "worst_price": 362.5,
       "score": 48,
@@ -1282,14 +1282,14 @@
       "volume_ratio_at_signal": 0.1,
       "alert": null,
       "results": {
-        "latest_pct": 1.639,
+        "latest_pct": 1.23,
         "max_gain": 2.459,
         "max_drawdown": -0.956,
         "pct_5m": 0.137,
         "pct_10m": -0.956,
         "pct_30m": -0.683
       },
-      "age_minutes": 216.52
+      "age_minutes": 221.49
     },
     {
       "key": "ai_pool:3037:48:867.0",
@@ -1856,13 +1856,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T01:05:22.720778+00:00",
-      "updated_at": "2026-06-08T04:41:43.763828+00:00",
+      "updated_at": "2026-06-08T04:46:42.274633+00:00",
       "status": "open",
       "code": "2382",
       "name": "廣達",
       "sector": "AI伺服器",
       "entry_price": 365.0,
-      "last_price": 372.0,
+      "last_price": 370.5,
       "best_price": 375.0,
       "worst_price": 362.5,
       "score": 17,
@@ -1870,14 +1870,14 @@
       "volume_ratio_at_signal": 0.1,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": 1.918,
+        "latest_pct": 1.507,
         "max_gain": 2.74,
         "max_drawdown": -0.685,
         "pct_5m": 0.411,
         "pct_10m": -0.685,
         "pct_30m": -0.411
       },
-      "age_minutes": 216.35
+      "age_minutes": 221.33
     },
     {
       "key": "fund_flow:5347:20:149.0",
@@ -2108,13 +2108,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T01:10:16.373953+00:00",
-      "updated_at": "2026-06-08T04:41:43.763840+00:00",
+      "updated_at": "2026-06-08T04:46:42.274643+00:00",
       "status": "open",
       "code": "2382",
       "name": "廣達",
       "sector": "AI伺服器",
       "entry_price": 367.5,
-      "last_price": 372.0,
+      "last_price": 370.5,
       "best_price": 375.0,
       "worst_price": 362.5,
       "score": 56,
@@ -2122,14 +2122,14 @@
       "volume_ratio_at_signal": 0.14,
       "alert": null,
       "results": {
-        "latest_pct": 1.224,
+        "latest_pct": 0.816,
         "max_gain": 2.041,
         "max_drawdown": -1.361,
         "pct_5m": -1.361,
         "pct_10m": -1.088,
         "pct_30m": -1.088
       },
-      "age_minutes": 211.46
+      "age_minutes": 216.43
     },
     {
       "key": "ai_pool:3037:56:882.0",
@@ -2836,13 +2836,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T01:10:27.018864+00:00",
-      "updated_at": "2026-06-08T04:41:43.763858+00:00",
+      "updated_at": "2026-06-08T04:46:42.274658+00:00",
       "status": "open",
       "code": "2382",
       "name": "廣達",
       "sector": "AI伺服器",
       "entry_price": 366.5,
-      "last_price": 372.0,
+      "last_price": 370.5,
       "best_price": 375.0,
       "worst_price": 362.5,
       "score": 17,
@@ -2850,14 +2850,14 @@
       "volume_ratio_at_signal": 0.15,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": 1.501,
+        "latest_pct": 1.091,
         "max_gain": 2.319,
         "max_drawdown": -1.091,
         "pct_5m": -1.091,
         "pct_10m": -0.819,
         "pct_30m": -0.819
       },
-      "age_minutes": 211.28
+      "age_minutes": 216.25
     },
     {
       "key": "fund_flow:2344:16:147.5",
@@ -3844,13 +3844,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T01:15:26.200445+00:00",
-      "updated_at": "2026-06-08T04:41:43.763878+00:00",
+      "updated_at": "2026-06-08T04:46:42.274672+00:00",
       "status": "open",
       "code": "2382",
       "name": "廣達",
       "sector": "AI伺服器",
       "entry_price": 364.0,
-      "last_price": 372.0,
+      "last_price": 370.5,
       "best_price": 375.0,
       "worst_price": 362.5,
       "score": 31,
@@ -3858,14 +3858,14 @@
       "volume_ratio_at_signal": 0.21,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": 2.198,
+        "latest_pct": 1.786,
         "max_gain": 3.022,
         "max_drawdown": -0.412,
         "pct_5m": -0.137,
         "pct_10m": -0.137,
         "pct_30m": -0.137
       },
-      "age_minutes": 206.29
+      "age_minutes": 211.27
     },
     {
       "key": "fund_flow:2615:30:83.4",
@@ -4208,13 +4208,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T02:35:13.181524+00:00",
-      "updated_at": "2026-06-08T04:41:43.763893+00:00",
+      "updated_at": "2026-06-08T04:46:42.274682+00:00",
       "status": "open",
       "code": "2382",
       "name": "廣達",
       "sector": "AI伺服器",
       "entry_price": 364.0,
-      "last_price": 372.0,
+      "last_price": 370.5,
       "best_price": 375.0,
       "worst_price": 363.5,
       "score": 48,
@@ -4222,14 +4222,14 @@
       "volume_ratio_at_signal": 0.44,
       "alert": null,
       "results": {
-        "latest_pct": 2.198,
+        "latest_pct": 1.786,
         "max_gain": 3.022,
         "max_drawdown": -0.137,
         "pct_5m": 1.374,
         "pct_10m": 2.198,
         "pct_30m": 2.473
       },
-      "age_minutes": 126.51
+      "age_minutes": 131.48
     },
     {
       "key": "ai_pool:3443:48:4160.0",
@@ -5188,13 +5188,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T02:40:15.266871+00:00",
-      "updated_at": "2026-06-08T04:41:43.763914+00:00",
+      "updated_at": "2026-06-08T04:46:42.274697+00:00",
       "status": "open",
       "code": "2382",
       "name": "廣達",
       "sector": "AI伺服器",
       "entry_price": 369.0,
-      "last_price": 372.0,
+      "last_price": 370.5,
       "best_price": 375.0,
       "worst_price": 369.0,
       "score": 38,
@@ -5202,14 +5202,14 @@
       "volume_ratio_at_signal": 0.46,
       "alert": null,
       "results": {
-        "latest_pct": 0.813,
+        "latest_pct": 0.407,
         "max_gain": 1.626,
         "max_drawdown": 0.0,
         "pct_5m": 0.813,
         "pct_10m": 0.678,
         "pct_30m": 1.22
       },
-      "age_minutes": 121.47
+      "age_minutes": 126.45
     },
     {
       "key": "fund_flow:2368:81:1320.0",
@@ -5832,13 +5832,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T02:45:15.083241+00:00",
-      "updated_at": "2026-06-08T04:41:43.763930+00:00",
+      "updated_at": "2026-06-08T04:46:42.274709+00:00",
       "status": "open",
       "code": "2382",
       "name": "廣達",
       "sector": "AI伺服器",
       "entry_price": 371.5,
-      "last_price": 372.0,
+      "last_price": 370.5,
       "best_price": 375.0,
       "worst_price": 370.5,
       "score": 38,
@@ -5846,14 +5846,14 @@
       "volume_ratio_at_signal": 0.48,
       "alert": null,
       "results": {
-        "latest_pct": 0.135,
+        "latest_pct": -0.269,
         "max_gain": 0.942,
         "max_drawdown": -0.269,
         "pct_5m": 0.0,
         "pct_10m": 0.135,
         "pct_30m": 0.0
       },
-      "age_minutes": 116.48
+      "age_minutes": 121.45
     },
     {
       "key": "ai_pool:3037:38:902.0",
@@ -5944,13 +5944,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T02:45:25.121111+00:00",
-      "updated_at": "2026-06-08T04:41:43.763943+00:00",
+      "updated_at": "2026-06-08T04:46:42.274718+00:00",
       "status": "open",
       "code": "2382",
       "name": "廣達",
       "sector": "AI伺服器",
       "entry_price": 371.5,
-      "last_price": 372.0,
+      "last_price": 370.5,
       "best_price": 375.0,
       "worst_price": 370.5,
       "score": 32,
@@ -5958,14 +5958,14 @@
       "volume_ratio_at_signal": 0.48,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": 0.135,
+        "latest_pct": -0.269,
         "max_gain": 0.942,
         "max_drawdown": -0.269,
         "pct_5m": 0.0,
         "pct_10m": 0.135,
         "pct_30m": 0.0
       },
-      "age_minutes": 116.31
+      "age_minutes": 121.29
     },
     {
       "key": "fund_flow:3661:30:4090.0",
@@ -7204,13 +7204,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T02:55:12.105177+00:00",
-      "updated_at": "2026-06-08T04:41:43.763967+00:00",
+      "updated_at": "2026-06-08T04:46:42.274733+00:00",
       "status": "open",
       "code": "2382",
       "name": "廣達",
       "sector": "AI伺服器",
       "entry_price": 372.0,
-      "last_price": 372.0,
+      "last_price": 370.5,
       "best_price": 375.0,
       "worst_price": 370.5,
       "score": 38,
@@ -7218,14 +7218,14 @@
       "volume_ratio_at_signal": 0.51,
       "alert": null,
       "results": {
-        "latest_pct": 0.0,
+        "latest_pct": -0.403,
         "max_gain": 0.806,
         "max_drawdown": -0.403,
         "pct_5m": 0.134,
         "pct_10m": 0.269,
         "pct_30m": 0.269
       },
-      "age_minutes": 106.53
+      "age_minutes": 111.5
     },
     {
       "key": "ai_pool:3443:38:4180.0",
@@ -7652,13 +7652,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T03:00:26.524734+00:00",
-      "updated_at": "2026-06-08T04:41:43.763983+00:00",
+      "updated_at": "2026-06-08T04:46:42.274744+00:00",
       "status": "open",
       "code": "2382",
       "name": "廣達",
       "sector": "AI伺服器",
       "entry_price": 373.0,
-      "last_price": 372.0,
+      "last_price": 370.5,
       "best_price": 375.0,
       "worst_price": 370.5,
       "score": 48,
@@ -7666,14 +7666,14 @@
       "volume_ratio_at_signal": 0.52,
       "alert": null,
       "results": {
-        "latest_pct": -0.268,
+        "latest_pct": -0.67,
         "max_gain": 0.536,
         "max_drawdown": -0.67,
         "pct_5m": 0.0,
         "pct_10m": 0.134,
         "pct_30m": -0.268
       },
-      "age_minutes": 101.29
+      "age_minutes": 106.26
     },
     {
       "key": "ai_pool:3231:48:161.5",
@@ -8492,13 +8492,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T03:10:15.922565+00:00",
-      "updated_at": "2026-06-08T04:41:43.764004+00:00",
+      "updated_at": "2026-06-08T04:46:42.274755+00:00",
       "status": "open",
       "code": "2382",
       "name": "廣達",
       "sector": "AI伺服器",
       "entry_price": 373.0,
-      "last_price": 372.0,
+      "last_price": 370.5,
       "best_price": 375.0,
       "worst_price": 370.5,
       "score": 56,
@@ -8506,14 +8506,14 @@
       "volume_ratio_at_signal": 0.54,
       "alert": null,
       "results": {
-        "latest_pct": -0.268,
+        "latest_pct": -0.67,
         "max_gain": 0.536,
         "max_drawdown": -0.67,
         "pct_5m": -0.402,
         "pct_10m": -0.536,
         "pct_30m": 0.134
       },
-      "age_minutes": 91.46
+      "age_minutes": 96.44
     },
     {
       "key": "ai_pool:3443:56:4235.0",
@@ -9220,13 +9220,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T03:15:15.074912+00:00",
-      "updated_at": "2026-06-08T04:41:43.764020+00:00",
+      "updated_at": "2026-06-08T04:46:42.274766+00:00",
       "status": "open",
       "code": "2382",
       "name": "廣達",
       "sector": "AI伺服器",
       "entry_price": 371.0,
-      "last_price": 372.0,
+      "last_price": 370.5,
       "best_price": 375.0,
       "worst_price": 370.5,
       "score": 38,
@@ -9234,14 +9234,14 @@
       "volume_ratio_at_signal": 0.55,
       "alert": null,
       "results": {
-        "latest_pct": 0.27,
+        "latest_pct": -0.135,
         "max_gain": 1.078,
         "max_drawdown": -0.135,
         "pct_5m": 0.0,
         "pct_10m": 0.539,
         "pct_30m": 0.809
       },
-      "age_minutes": 86.48
+      "age_minutes": 91.45
     },
     {
       "key": "fund_flow:2368:84:1325.0",
@@ -9304,13 +9304,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T03:15:25.492241+00:00",
-      "updated_at": "2026-06-08T04:41:43.764032+00:00",
+      "updated_at": "2026-06-08T04:46:42.274774+00:00",
       "status": "open",
       "code": "2382",
       "name": "廣達",
       "sector": "AI伺服器",
       "entry_price": 372.0,
-      "last_price": 372.0,
+      "last_price": 370.5,
       "best_price": 375.0,
       "worst_price": 370.5,
       "score": 34,
@@ -9318,14 +9318,14 @@
       "volume_ratio_at_signal": 0.55,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": 0.0,
+        "latest_pct": -0.403,
         "max_gain": 0.806,
         "max_drawdown": -0.403,
         "pct_5m": -0.269,
         "pct_10m": 0.269,
         "pct_30m": 0.538
       },
-      "age_minutes": 86.3
+      "age_minutes": 91.28
     },
     {
       "key": "fund_flow:2376:25:345.5",
@@ -9584,13 +9584,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T03:20:14.902979+00:00",
-      "updated_at": "2026-06-08T04:41:43.764044+00:00",
+      "updated_at": "2026-06-08T04:46:42.274783+00:00",
       "status": "open",
       "code": "2382",
       "name": "廣達",
       "sector": "AI伺服器",
       "entry_price": 370.0,
-      "last_price": 372.0,
+      "last_price": 370.5,
       "best_price": 375.0,
       "worst_price": 370.0,
       "score": 48,
@@ -9598,14 +9598,14 @@
       "volume_ratio_at_signal": 0.57,
       "alert": null,
       "results": {
-        "latest_pct": 0.541,
+        "latest_pct": 0.135,
         "max_gain": 1.351,
         "max_drawdown": 0.0,
         "pct_5m": 0.811,
         "pct_10m": 0.541,
         "pct_30m": 1.081
       },
-      "age_minutes": 81.48
+      "age_minutes": 86.46
     },
     {
       "key": "ai_pool:3324:48:1070.0",
@@ -9892,13 +9892,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T03:20:25.739825+00:00",
-      "updated_at": "2026-06-08T04:41:43.764055+00:00",
+      "updated_at": "2026-06-08T04:46:42.274792+00:00",
       "status": "open",
       "code": "2382",
       "name": "廣達",
       "sector": "AI伺服器",
       "entry_price": 370.5,
-      "last_price": 372.0,
+      "last_price": 370.5,
       "best_price": 375.0,
       "worst_price": 370.5,
       "score": 20,
@@ -9906,14 +9906,14 @@
       "volume_ratio_at_signal": 0.57,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": 0.405,
+        "latest_pct": 0.0,
         "max_gain": 1.215,
         "max_drawdown": 0.0,
         "pct_5m": 0.675,
         "pct_10m": 0.405,
         "pct_30m": 0.945
       },
-      "age_minutes": 81.3
+      "age_minutes": 86.28
     },
     {
       "key": "fund_flow:2344:25:153.5",
@@ -10564,13 +10564,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T03:25:22.676864+00:00",
-      "updated_at": "2026-06-08T04:41:43.764070+00:00",
+      "updated_at": "2026-06-08T04:46:42.274805+00:00",
       "status": "open",
       "code": "2382",
       "name": "廣達",
       "sector": "AI伺服器",
       "entry_price": 373.0,
-      "last_price": 372.0,
+      "last_price": 370.5,
       "best_price": 375.0,
       "worst_price": 370.5,
       "score": 35,
@@ -10578,14 +10578,14 @@
       "volume_ratio_at_signal": 0.58,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": -0.268,
+        "latest_pct": -0.67,
         "max_gain": 0.536,
         "max_drawdown": -0.67,
         "pct_5m": -0.268,
         "pct_10m": 0.134,
         "pct_30m": 0.536
       },
-      "age_minutes": 76.35
+      "age_minutes": 81.33
     },
     {
       "key": "fund_flow:6215:31:111.5",
@@ -10872,13 +10872,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T03:30:19.535950+00:00",
-      "updated_at": "2026-06-08T04:41:43.764083+00:00",
+      "updated_at": "2026-06-08T04:46:42.274815+00:00",
       "status": "open",
       "code": "2382",
       "name": "廣達",
       "sector": "AI伺服器",
       "entry_price": 372.0,
-      "last_price": 372.0,
+      "last_price": 370.5,
       "best_price": 375.0,
       "worst_price": 370.5,
       "score": 48,
@@ -10886,14 +10886,14 @@
       "volume_ratio_at_signal": 0.58,
       "alert": null,
       "results": {
-        "latest_pct": 0.0,
+        "latest_pct": -0.403,
         "max_gain": 0.806,
         "max_drawdown": -0.403,
         "pct_5m": 0.403,
         "pct_10m": 0.403,
         "pct_30m": 0.269
       },
-      "age_minutes": 71.4
+      "age_minutes": 76.38
     },
     {
       "key": "ai_pool:2379:48:596.0",
@@ -11880,13 +11880,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T03:40:16.271574+00:00",
-      "updated_at": "2026-06-08T04:41:43.764100+00:00",
+      "updated_at": "2026-06-08T04:46:42.274828+00:00",
       "status": "open",
       "code": "2382",
       "name": "廣達",
       "sector": "AI伺服器",
       "entry_price": 374.0,
-      "last_price": 372.0,
+      "last_price": 370.5,
       "best_price": 375.0,
       "worst_price": 370.5,
       "score": 38,
@@ -11894,14 +11894,14 @@
       "volume_ratio_at_signal": 0.6,
       "alert": null,
       "results": {
-        "latest_pct": -0.535,
+        "latest_pct": -0.936,
         "max_gain": 0.267,
         "max_drawdown": -0.936,
         "pct_5m": 0.0,
         "pct_10m": 0.0,
         "pct_30m": -0.535
       },
-      "age_minutes": 61.46
+      "age_minutes": 66.43
     },
     {
       "key": "ai_pool:3661:38:4140.0",
@@ -11992,13 +11992,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T03:40:26.938185+00:00",
-      "updated_at": "2026-06-08T04:41:43.764111+00:00",
+      "updated_at": "2026-06-08T04:46:42.274837+00:00",
       "status": "open",
       "code": "2382",
       "name": "廣達",
       "sector": "AI伺服器",
       "entry_price": 374.5,
-      "last_price": 372.0,
+      "last_price": 370.5,
       "best_price": 375.0,
       "worst_price": 370.5,
       "score": 32,
@@ -12006,14 +12006,14 @@
       "volume_ratio_at_signal": 0.6,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": -0.668,
+        "latest_pct": -1.068,
         "max_gain": 0.134,
         "max_drawdown": -1.068,
         "pct_5m": -0.134,
         "pct_10m": -0.134,
         "pct_30m": -0.668
       },
-      "age_minutes": 61.28
+      "age_minutes": 66.26
     },
     {
       "key": "fund_flow:2324:32:38.15",
@@ -12272,13 +12272,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T03:45:15.296410+00:00",
-      "updated_at": "2026-06-08T04:41:43.764124+00:00",
+      "updated_at": "2026-06-08T04:46:42.274848+00:00",
       "status": "open",
       "code": "2382",
       "name": "廣達",
       "sector": "AI伺服器",
       "entry_price": 373.5,
-      "last_price": 372.0,
+      "last_price": 370.5,
       "best_price": 375.0,
       "worst_price": 370.5,
       "score": 48,
@@ -12286,14 +12286,14 @@
       "volume_ratio_at_signal": 0.61,
       "alert": null,
       "results": {
-        "latest_pct": -0.402,
+        "latest_pct": -0.803,
         "max_gain": 0.402,
         "max_drawdown": -0.803,
         "pct_5m": 0.134,
         "pct_10m": 0.402,
         "pct_30m": -0.402
       },
-      "age_minutes": 56.47
+      "age_minutes": 61.45
     },
     {
       "key": "ai_pool:2344:48:155.5",
@@ -12664,13 +12664,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T03:50:15.373182+00:00",
-      "updated_at": "2026-06-08T04:41:43.764137+00:00",
+      "updated_at": "2026-06-08T04:46:42.274859+00:00",
       "status": "open",
       "code": "2382",
       "name": "廣達",
       "sector": "AI伺服器",
       "entry_price": 373.5,
-      "last_price": 372.0,
+      "last_price": 370.5,
       "best_price": 375.0,
       "worst_price": 370.5,
       "score": 56,
@@ -12678,14 +12678,14 @@
       "volume_ratio_at_signal": 0.62,
       "alert": null,
       "results": {
-        "latest_pct": -0.402,
+        "latest_pct": -0.803,
         "max_gain": 0.402,
         "max_drawdown": -0.803,
         "pct_5m": 0.402,
         "pct_10m": -0.134,
         "pct_30m": -0.134
       },
-      "age_minutes": 51.47
+      "age_minutes": 56.45
     },
     {
       "key": "ai_pool:2308:56:2215.0",
@@ -13784,13 +13784,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T04:05:23.013587+00:00",
-      "updated_at": "2026-06-08T04:41:43.764157+00:00",
+      "updated_at": "2026-06-08T04:46:42.274873+00:00",
       "status": "open",
       "code": "2382",
       "name": "廣達",
       "sector": "AI伺服器",
       "entry_price": 371.5,
-      "last_price": 372.0,
+      "last_price": 370.5,
       "best_price": 373.0,
       "worst_price": 370.5,
       "score": 21,
@@ -13798,14 +13798,14 @@
       "volume_ratio_at_signal": 0.65,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": 0.135,
+        "latest_pct": -0.269,
         "max_gain": 0.404,
         "max_drawdown": -0.269,
         "pct_5m": 0.135,
         "pct_10m": 0.135,
         "pct_30m": 0.135
       },
-      "age_minutes": 36.35
+      "age_minutes": 41.32
     },
     {
       "key": "fund_flow:1609:31:37.05",
@@ -13980,13 +13980,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T04:10:16.119785+00:00",
-      "updated_at": "2026-06-08T04:41:43.764170+00:00",
+      "updated_at": "2026-06-08T04:46:42.274882+00:00",
       "status": "open",
       "code": "2382",
       "name": "廣達",
       "sector": "AI伺服器",
       "entry_price": 371.5,
-      "last_price": 372.0,
+      "last_price": 370.5,
       "best_price": 373.0,
       "worst_price": 370.5,
       "score": 56,
@@ -13994,14 +13994,14 @@
       "volume_ratio_at_signal": 0.66,
       "alert": null,
       "results": {
-        "latest_pct": 0.135,
+        "latest_pct": -0.269,
         "max_gain": 0.404,
         "max_drawdown": -0.269,
         "pct_5m": 0.135,
         "pct_10m": 0.404,
         "pct_30m": 0.135
       },
-      "age_minutes": 31.46
+      "age_minutes": 36.44
     },
     {
       "key": "ai_pool:3711:56:535.0",
@@ -14288,13 +14288,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T04:15:14.557933+00:00",
-      "updated_at": "2026-06-08T04:41:43.764183+00:00",
+      "updated_at": "2026-06-08T04:46:42.274893+00:00",
       "status": "open",
       "code": "2382",
       "name": "廣達",
       "sector": "AI伺服器",
       "entry_price": 372.5,
-      "last_price": 372.0,
+      "last_price": 370.5,
       "best_price": 373.0,
       "worst_price": 370.5,
       "score": 56,
@@ -14302,13 +14302,14 @@
       "volume_ratio_at_signal": 0.67,
       "alert": null,
       "results": {
-        "latest_pct": -0.134,
+        "latest_pct": -0.537,
         "max_gain": 0.134,
         "max_drawdown": -0.537,
         "pct_5m": 0.134,
-        "pct_10m": -0.537
+        "pct_10m": -0.537,
+        "pct_30m": -0.537
       },
-      "age_minutes": 26.49
+      "age_minutes": 31.46
     },
     {
       "key": "ai_pool:5347:56:152.5",
@@ -14592,13 +14593,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T04:15:24.781689+00:00",
-      "updated_at": "2026-06-08T04:41:43.764194+00:00",
+      "updated_at": "2026-06-08T04:46:42.274904+00:00",
       "status": "open",
       "code": "2382",
       "name": "廣達",
       "sector": "AI伺服器",
       "entry_price": 372.0,
-      "last_price": 372.0,
+      "last_price": 370.5,
       "best_price": 373.0,
       "worst_price": 370.5,
       "score": 23,
@@ -14606,13 +14607,14 @@
       "volume_ratio_at_signal": 0.67,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": 0.0,
+        "latest_pct": -0.403,
         "max_gain": 0.269,
         "max_drawdown": -0.403,
         "pct_5m": 0.269,
-        "pct_10m": -0.403
+        "pct_10m": -0.403,
+        "pct_30m": -0.403
       },
-      "age_minutes": 26.32
+      "age_minutes": 31.29
     },
     {
       "key": "fund_flow:2376:30:345.5",
@@ -15267,13 +15269,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T04:25:12.669738+00:00",
-      "updated_at": "2026-06-08T04:41:43.764208+00:00",
+      "updated_at": "2026-06-08T04:46:42.274915+00:00",
       "status": "open",
       "code": "2382",
       "name": "廣達",
       "sector": "AI伺服器",
       "entry_price": 371.0,
-      "last_price": 372.0,
+      "last_price": 370.5,
       "best_price": 372.0,
       "worst_price": 370.5,
       "score": 48,
@@ -15281,13 +15283,13 @@
       "volume_ratio_at_signal": 0.69,
       "alert": null,
       "results": {
-        "latest_pct": 0.27,
+        "latest_pct": -0.135,
         "max_gain": 0.27,
         "max_drawdown": -0.135,
         "pct_5m": 0.0,
         "pct_10m": 0.27
       },
-      "age_minutes": 16.52
+      "age_minutes": 21.49
     },
     {
       "key": "ai_pool:3443:48:4235.0",
@@ -15618,13 +15620,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T04:30:21.576587+00:00",
-      "updated_at": "2026-06-08T04:41:43.764220+00:00",
+      "updated_at": "2026-06-08T04:46:42.274925+00:00",
       "status": "open",
       "code": "2382",
       "name": "廣達",
       "sector": "AI伺服器",
       "entry_price": 370.5,
-      "last_price": 372.0,
+      "last_price": 370.5,
       "best_price": 372.0,
       "worst_price": 370.5,
       "score": 48,
@@ -15632,13 +15634,13 @@
       "volume_ratio_at_signal": 0.7,
       "alert": null,
       "results": {
-        "latest_pct": 0.405,
+        "latest_pct": 0.0,
         "max_gain": 0.405,
         "max_drawdown": 0.0,
         "pct_5m": 0.405,
         "pct_10m": 0.405
       },
-      "age_minutes": 11.37
+      "age_minutes": 16.34
     },
     {
       "key": "ai_pool:1514:48:122.5",
@@ -16369,26 +16371,27 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T04:35:23.057974+00:00",
-      "updated_at": "2026-06-08T04:41:43.764233+00:00",
+      "updated_at": "2026-06-08T04:46:42.274939+00:00",
       "status": "open",
       "code": "2382",
       "name": "廣達",
       "sector": "AI伺服器",
       "entry_price": 371.0,
-      "last_price": 372.0,
+      "last_price": 370.5,
       "best_price": 372.0,
-      "worst_price": 371.0,
+      "worst_price": 370.5,
       "score": 34,
       "change_rate_at_signal": -4.99,
       "volume_ratio_at_signal": 0.71,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": 0.27,
+        "latest_pct": -0.135,
         "max_gain": 0.27,
-        "max_drawdown": 0.0,
-        "pct_5m": 0.27
+        "max_drawdown": -0.135,
+        "pct_5m": 0.27,
+        "pct_10m": -0.135
       },
-      "age_minutes": 6.35
+      "age_minutes": 11.32
     },
     {
       "key": "fund_flow:2344:34:154.0",
@@ -16805,25 +16808,26 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T04:40:27.607663+00:00",
-      "updated_at": "2026-06-08T04:41:43.764244+00:00",
+      "updated_at": "2026-06-08T04:46:42.274949+00:00",
       "status": "open",
       "code": "2382",
       "name": "廣達",
       "sector": "AI伺服器",
       "entry_price": 371.0,
-      "last_price": 372.0,
+      "last_price": 370.5,
       "best_price": 372.0,
-      "worst_price": 371.0,
+      "worst_price": 370.5,
       "score": 31,
       "change_rate_at_signal": -4.99,
       "volume_ratio_at_signal": 0.72,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": 0.27,
+        "latest_pct": -0.135,
         "max_gain": 0.27,
-        "max_drawdown": 0.0
+        "max_drawdown": -0.135,
+        "pct_5m": -0.135
       },
-      "age_minutes": 1.27
+      "age_minutes": 6.24
     },
     {
       "key": "fund_flow:1514:23:122.5",
@@ -17120,7 +17124,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T04:45:26.544533+00:00",
-      "updated_at": "2026-06-08T04:45:26.544537+00:00",
+      "updated_at": "2026-06-08T04:46:42.274960+00:00",
       "status": "open",
       "code": "2382",
       "name": "廣達",
@@ -17133,7 +17137,12 @@
       "change_rate_at_signal": -5.12,
       "volume_ratio_at_signal": 0.73,
       "alert": "資金退潮警報",
-      "results": {}
+      "results": {
+        "latest_pct": 0.0,
+        "max_gain": 0.0,
+        "max_drawdown": 0.0
+      },
+      "age_minutes": 1.26
     },
     {
       "key": "fund_flow:1609:28:37.0",
