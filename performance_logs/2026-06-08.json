@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-08T03:06:41.099525+00:00",
+  "updated_at": "2026-06-08T03:06:44.111626+00:00",
   "count": 298,
   "items": [
     {
@@ -8,13 +8,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T01:00:25.731536+00:00",
-      "updated_at": "2026-06-08T03:01:51.635639+00:00",
+      "updated_at": "2026-06-08T03:06:42.885913+00:00",
       "status": "open",
       "code": "2379",
       "name": "瑞昱",
       "sector": "半導體",
       "entry_price": 588.0,
-      "last_price": 589.0,
+      "last_price": 591.0,
       "best_price": 595.0,
       "worst_price": 583.0,
       "score": 56,
@@ -22,14 +22,14 @@
       "volume_ratio_at_signal": 0.06,
       "alert": null,
       "results": {
-        "latest_pct": 0.17,
+        "latest_pct": 0.51,
         "max_gain": 1.19,
         "max_drawdown": -0.85,
         "pct_5m": 0.51,
         "pct_10m": 1.19,
         "pct_30m": -0.85
       },
-      "age_minutes": 121.43
+      "age_minutes": 126.29
     },
     {
       "key": "ai_pool:2368:56:1210.0",
@@ -1408,13 +1408,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T01:05:12.805255+00:00",
-      "updated_at": "2026-06-08T03:01:51.635661+00:00",
+      "updated_at": "2026-06-08T03:06:42.885932+00:00",
       "status": "open",
       "code": "2379",
       "name": "瑞昱",
       "sector": "半導體",
       "entry_price": 588.0,
-      "last_price": 589.0,
+      "last_price": 591.0,
       "best_price": 595.0,
       "worst_price": 583.0,
       "score": 48,
@@ -1422,14 +1422,14 @@
       "volume_ratio_at_signal": 0.1,
       "alert": null,
       "results": {
-        "latest_pct": 0.17,
+        "latest_pct": 0.51,
         "max_gain": 1.19,
         "max_drawdown": -0.85,
         "pct_5m": 1.19,
         "pct_10m": -0.17,
         "pct_30m": -0.85
       },
-      "age_minutes": 116.65
+      "age_minutes": 121.5
     },
     {
       "key": "ai_pool:8046:48:773.0",
@@ -1660,13 +1660,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T01:05:22.720727+00:00",
-      "updated_at": "2026-06-08T03:01:51.635670+00:00",
+      "updated_at": "2026-06-08T03:06:42.885939+00:00",
       "status": "open",
       "code": "2379",
       "name": "瑞昱",
       "sector": "半導體",
       "entry_price": 588.0,
-      "last_price": 589.0,
+      "last_price": 591.0,
       "best_price": 595.0,
       "worst_price": 583.0,
       "score": 30,
@@ -1674,14 +1674,14 @@
       "volume_ratio_at_signal": 0.1,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": 0.17,
+        "latest_pct": 0.51,
         "max_gain": 1.19,
         "max_drawdown": -0.85,
         "pct_5m": 1.19,
         "pct_10m": -0.17,
         "pct_30m": -0.85
       },
-      "age_minutes": 116.48
+      "age_minutes": 121.34
     },
     {
       "key": "fund_flow:2609:33:52.2",
@@ -2780,13 +2780,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T01:10:27.018844+00:00",
-      "updated_at": "2026-06-08T03:01:51.635679+00:00",
+      "updated_at": "2026-06-08T03:06:42.885947+00:00",
       "status": "open",
       "code": "2379",
       "name": "瑞昱",
       "sector": "半導體",
       "entry_price": 594.0,
-      "last_price": 589.0,
+      "last_price": 591.0,
       "best_price": 595.0,
       "worst_price": 583.0,
       "score": 23,
@@ -2794,14 +2794,14 @@
       "volume_ratio_at_signal": 0.12,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": -0.842,
+        "latest_pct": -0.505,
         "max_gain": 0.168,
         "max_drawdown": -1.852,
         "pct_5m": -1.178,
         "pct_10m": -1.852,
         "pct_30m": -1.852
       },
-      "age_minutes": 111.41
+      "age_minutes": 116.26
     },
     {
       "key": "fund_flow:5347:29:150.0",
@@ -3760,13 +3760,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T01:15:26.200425+00:00",
-      "updated_at": "2026-06-08T03:01:51.635688+00:00",
+      "updated_at": "2026-06-08T03:06:42.885956+00:00",
       "status": "open",
       "code": "2379",
       "name": "瑞昱",
       "sector": "半導體",
       "entry_price": 588.0,
-      "last_price": 589.0,
+      "last_price": 591.0,
       "best_price": 591.0,
       "worst_price": 583.0,
       "score": 21,
@@ -3774,14 +3774,14 @@
       "volume_ratio_at_signal": 0.14,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": 0.17,
+        "latest_pct": 0.51,
         "max_gain": 0.51,
         "max_drawdown": -0.85,
         "pct_5m": -0.85,
         "pct_10m": -0.85,
         "pct_30m": -0.85
       },
-      "age_minutes": 106.42
+      "age_minutes": 111.28
     },
     {
       "key": "fund_flow:6215:26:108.5",
@@ -4650,13 +4650,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T02:35:23.610062+00:00",
-      "updated_at": "2026-06-08T03:01:51.635695+00:00",
+      "updated_at": "2026-06-08T03:06:42.885964+00:00",
       "status": "open",
       "code": "2379",
       "name": "瑞昱",
       "sector": "半導體",
       "entry_price": 583.0,
-      "last_price": 589.0,
+      "last_price": 591.0,
       "best_price": 591.0,
       "worst_price": 583.0,
       "score": 29,
@@ -4664,13 +4664,14 @@
       "volume_ratio_at_signal": 0.4,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": 1.029,
+        "latest_pct": 1.372,
         "max_gain": 1.372,
         "max_drawdown": 0.0,
         "pct_5m": 0.858,
-        "pct_10m": 0.686
+        "pct_10m": 0.686,
+        "pct_30m": 1.372
       },
-      "age_minutes": 26.47
+      "age_minutes": 31.32
     },
     {
       "key": "fund_flow:3481:4:48.35",
@@ -5676,13 +5677,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T02:45:15.083208+00:00",
-      "updated_at": "2026-06-08T03:01:51.635703+00:00",
+      "updated_at": "2026-06-08T03:06:42.885971+00:00",
       "status": "open",
       "code": "2379",
       "name": "瑞昱",
       "sector": "半導體",
       "entry_price": 587.0,
-      "last_price": 589.0,
+      "last_price": 591.0,
       "best_price": 591.0,
       "worst_price": 587.0,
       "score": 40,
@@ -5690,13 +5691,13 @@
       "volume_ratio_at_signal": 0.43,
       "alert": null,
       "results": {
-        "latest_pct": 0.341,
+        "latest_pct": 0.681,
         "max_gain": 0.681,
         "max_drawdown": 0.0,
         "pct_5m": 0.681,
         "pct_10m": 0.681
       },
-      "age_minutes": 16.61
+      "age_minutes": 21.46
     },
     {
       "key": "ai_pool:5347:40:151.0",
@@ -5838,13 +5839,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T02:45:25.121062+00:00",
-      "updated_at": "2026-06-08T03:01:51.635712+00:00",
+      "updated_at": "2026-06-08T03:06:42.885976+00:00",
       "status": "open",
       "code": "2379",
       "name": "瑞昱",
       "sector": "半導體",
       "entry_price": 587.0,
-      "last_price": 589.0,
+      "last_price": 591.0,
       "best_price": 591.0,
       "worst_price": 587.0,
       "score": 34,
@@ -5852,13 +5853,13 @@
       "volume_ratio_at_signal": 0.43,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": 0.341,
+        "latest_pct": 0.681,
         "max_gain": 0.681,
         "max_drawdown": 0.0,
         "pct_5m": 0.681,
         "pct_10m": 0.681
       },
-      "age_minutes": 16.44
+      "age_minutes": 21.3
     },
     {
       "key": "fund_flow:6215:34:110.5",
@@ -6378,13 +6379,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T02:50:15.303926+00:00",
-      "updated_at": "2026-06-08T03:01:51.635725+00:00",
+      "updated_at": "2026-06-08T03:06:42.885982+00:00",
       "status": "open",
       "code": "2379",
       "name": "瑞昱",
       "sector": "半導體",
       "entry_price": 591.0,
-      "last_price": 589.0,
+      "last_price": 591.0,
       "best_price": 591.0,
       "worst_price": 589.0,
       "score": 48,
@@ -6392,13 +6393,13 @@
       "volume_ratio_at_signal": 0.45,
       "alert": null,
       "results": {
-        "latest_pct": -0.338,
+        "latest_pct": 0.0,
         "max_gain": 0.0,
         "max_drawdown": -0.338,
         "pct_5m": 0.0,
         "pct_10m": -0.338
       },
-      "age_minutes": 11.61
+      "age_minutes": 16.46
     },
     {
       "key": "ai_pool:5347:48:151.5",
@@ -7053,13 +7054,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T02:55:12.105159+00:00",
-      "updated_at": "2026-06-08T03:01:51.635739+00:00",
+      "updated_at": "2026-06-08T03:06:42.885989+00:00",
       "status": "open",
       "code": "2379",
       "name": "瑞昱",
       "sector": "半導體",
       "entry_price": 590.0,
-      "last_price": 589.0,
+      "last_price": 591.0,
       "best_price": 591.0,
       "worst_price": 589.0,
       "score": 40,
@@ -7067,12 +7068,13 @@
       "volume_ratio_at_signal": 0.46,
       "alert": null,
       "results": {
-        "latest_pct": -0.169,
+        "latest_pct": 0.169,
         "max_gain": 0.169,
         "max_drawdown": -0.169,
-        "pct_5m": -0.169
+        "pct_5m": -0.169,
+        "pct_10m": 0.169
       },
-      "age_minutes": 6.66
+      "age_minutes": 11.51
     },
     {
       "key": "ai_pool:2454:38:4045.0",
