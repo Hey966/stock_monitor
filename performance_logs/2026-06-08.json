@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-08T02:36:51.691184+00:00",
+  "updated_at": "2026-06-08T02:36:54.070235+00:00",
   "count": 169,
   "items": [
     {
@@ -875,7 +875,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T01:00:36.720282+00:00",
-      "updated_at": "2026-06-08T01:16:46.702099+00:00",
+      "updated_at": "2026-06-08T02:36:53.307940+00:00",
       "status": "open",
       "code": "2356",
       "name": "英業達",
@@ -893,9 +893,10 @@
         "max_gain": 0.0,
         "max_drawdown": 0.0,
         "pct_5m": 0.0,
-        "pct_10m": 0.0
+        "pct_10m": 0.0,
+        "pct_30m": 0.0
       },
-      "age_minutes": 16.17
+      "age_minutes": 96.28
     },
     {
       "key": "fund_flow:2324:2:37.3",
@@ -1960,7 +1961,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T01:05:22.720804+00:00",
-      "updated_at": "2026-06-08T01:16:46.702117+00:00",
+      "updated_at": "2026-06-08T02:36:53.307957+00:00",
       "status": "open",
       "code": "2356",
       "name": "英業達",
@@ -1978,9 +1979,10 @@
         "max_gain": 0.0,
         "max_drawdown": 0.0,
         "pct_5m": 0.0,
-        "pct_10m": 0.0
+        "pct_10m": 0.0,
+        "pct_30m": 0.0
       },
-      "age_minutes": 11.4
+      "age_minutes": 91.51
     },
     {
       "key": "fund_flow:2409:2:24.4",
