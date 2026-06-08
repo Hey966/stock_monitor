@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-08T02:47:08.207007+00:00",
+  "updated_at": "2026-06-08T02:47:10.729783+00:00",
   "count": 219,
   "items": [
     {
@@ -372,7 +372,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T01:00:25.731762+00:00",
-      "updated_at": "2026-06-08T02:42:01.433643+00:00",
+      "updated_at": "2026-06-08T02:47:10.379836+00:00",
       "status": "open",
       "code": "2609",
       "name": "陽明",
@@ -393,7 +393,7 @@
         "pct_10m": -0.192,
         "pct_30m": -0.192
       },
-      "age_minutes": 101.6
+      "age_minutes": 106.74
     },
     {
       "key": "ai_pool:2618:40:36.35",
@@ -736,7 +736,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T01:00:36.720218+00:00",
-      "updated_at": "2026-06-08T02:42:01.433675+00:00",
+      "updated_at": "2026-06-08T02:47:10.379858+00:00",
       "status": "open",
       "code": "2609",
       "name": "陽明",
@@ -757,7 +757,7 @@
         "pct_10m": -0.192,
         "pct_30m": -0.192
       },
-      "age_minutes": 101.41
+      "age_minutes": 106.56
     },
     {
       "key": "fund_flow:2317:20:262.0",
@@ -1492,7 +1492,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T01:05:12.805276+00:00",
-      "updated_at": "2026-06-08T02:42:01.433690+00:00",
+      "updated_at": "2026-06-08T02:47:10.379871+00:00",
       "status": "open",
       "code": "2609",
       "name": "陽明",
@@ -1513,7 +1513,7 @@
         "pct_10m": -0.766,
         "pct_30m": -0.383
       },
-      "age_minutes": 96.81
+      "age_minutes": 101.96
     },
     {
       "key": "ai_pool:2618:48:36.4",
@@ -1688,7 +1688,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T01:05:22.720737+00:00",
-      "updated_at": "2026-06-08T02:42:01.433698+00:00",
+      "updated_at": "2026-06-08T02:47:10.379880+00:00",
       "status": "open",
       "code": "2609",
       "name": "陽明",
@@ -1709,7 +1709,7 @@
         "pct_10m": -0.766,
         "pct_30m": -0.383
       },
-      "age_minutes": 96.65
+      "age_minutes": 101.79
     },
     {
       "key": "fund_flow:2317:29:264.0",
@@ -3900,7 +3900,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T01:15:26.200482+00:00",
-      "updated_at": "2026-06-08T02:42:01.433723+00:00",
+      "updated_at": "2026-06-08T02:47:10.379901+00:00",
       "status": "open",
       "code": "2609",
       "name": "陽明",
@@ -3921,7 +3921,7 @@
         "pct_10m": 0.58,
         "pct_30m": 0.58
       },
-      "age_minutes": 86.59
+      "age_minutes": 91.74
     },
     {
       "key": "ai_pool:2368:73:1325.0",
@@ -4360,7 +4360,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T02:35:13.181564+00:00",
-      "updated_at": "2026-06-08T02:42:01.433738+00:00",
+      "updated_at": "2026-06-08T02:47:10.379913+00:00",
       "status": "open",
       "code": "2609",
       "name": "陽明",
@@ -4377,9 +4377,10 @@
         "latest_pct": -1.346,
         "max_gain": 0.0,
         "max_drawdown": -1.346,
-        "pct_5m": -1.346
+        "pct_5m": -1.346,
+        "pct_10m": -1.346
       },
-      "age_minutes": 6.8
+      "age_minutes": 11.95
     },
     {
       "key": "ai_pool:2454:38:4030.0",
@@ -5282,7 +5283,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T02:40:25.357146+00:00",
-      "updated_at": "2026-06-08T02:42:01.433752+00:00",
+      "updated_at": "2026-06-08T02:47:10.379925+00:00",
       "status": "open",
       "code": "2609",
       "name": "陽明",
@@ -5298,9 +5299,10 @@
       "results": {
         "latest_pct": 0.0,
         "max_gain": 0.0,
-        "max_drawdown": 0.0
+        "max_drawdown": 0.0,
+        "pct_5m": 0.0
       },
-      "age_minutes": 1.6
+      "age_minutes": 6.75
     },
     {
       "key": "ai_pool:2368:83:1330.0",
@@ -5932,7 +5934,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T02:45:25.121212+00:00",
-      "updated_at": "2026-06-08T02:45:25.121216+00:00",
+      "updated_at": "2026-06-08T02:47:10.379936+00:00",
       "status": "open",
       "code": "2609",
       "name": "陽明",
@@ -5945,7 +5947,12 @@
       "change_rate_at_signal": -5.87,
       "volume_ratio_at_signal": 0.36,
       "alert": "資金退潮警報",
-      "results": {}
+      "results": {
+        "latest_pct": 0.0,
+        "max_gain": 0.0,
+        "max_drawdown": 0.0
+      },
+      "age_minutes": 1.75
     },
     {
       "key": "fund_flow:2618:22:36.1",
