@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-08T02:41:42.777208+00:00",
+  "updated_at": "2026-06-08T02:41:44.810577+00:00",
   "count": 192,
   "items": [
     {
@@ -512,28 +512,28 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T01:00:25.731821+00:00",
-      "updated_at": "2026-06-08T02:36:34.849744+00:00",
+      "updated_at": "2026-06-08T02:41:44.276962+00:00",
       "status": "open",
       "code": "3231",
       "name": "緯創",
       "sector": "AI伺服器",
       "entry_price": 159.5,
-      "last_price": 161.5,
-      "best_price": 161.5,
+      "last_price": 162.0,
+      "best_price": 162.0,
       "worst_price": 158.5,
       "score": 38,
       "change_rate_at_signal": -6.72,
       "volume_ratio_at_signal": 0.1,
       "alert": null,
       "results": {
-        "latest_pct": 1.254,
-        "max_gain": 1.254,
+        "latest_pct": 1.567,
+        "max_gain": 1.567,
         "max_drawdown": -0.627,
         "pct_5m": 0.0,
         "pct_10m": 0.0,
         "pct_30m": 1.254
       },
-      "age_minutes": 96.15
+      "age_minutes": 101.31
     },
     {
       "key": "ai_pool:5347:38:149.0",
@@ -2164,28 +2164,28 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T01:10:16.373970+00:00",
-      "updated_at": "2026-06-08T02:36:34.849767+00:00",
+      "updated_at": "2026-06-08T02:41:44.276983+00:00",
       "status": "open",
       "code": "3231",
       "name": "緯創",
       "sector": "AI伺服器",
       "entry_price": 160.0,
-      "last_price": 161.5,
-      "best_price": 161.5,
+      "last_price": 162.0,
+      "best_price": 162.0,
       "worst_price": 158.5,
       "score": 56,
       "change_rate_at_signal": -6.43,
       "volume_ratio_at_signal": 0.24,
       "alert": null,
       "results": {
-        "latest_pct": 0.938,
-        "max_gain": 0.938,
+        "latest_pct": 1.25,
+        "max_gain": 1.25,
         "max_drawdown": -0.938,
         "pct_5m": -0.938,
         "pct_10m": 0.938,
         "pct_30m": 0.938
       },
-      "age_minutes": 86.31
+      "age_minutes": 91.47
     },
     {
       "key": "ai_pool:3324:56:1035.0",
@@ -3536,28 +3536,28 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T01:15:26.200374+00:00",
-      "updated_at": "2026-06-08T02:36:34.849779+00:00",
+      "updated_at": "2026-06-08T02:41:44.276994+00:00",
       "status": "open",
       "code": "3231",
       "name": "緯創",
       "sector": "AI伺服器",
       "entry_price": 159.5,
-      "last_price": 161.5,
-      "best_price": 161.5,
+      "last_price": 162.0,
+      "best_price": 162.0,
       "worst_price": 158.5,
       "score": 34,
       "change_rate_at_signal": -6.72,
       "volume_ratio_at_signal": 0.3,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": 1.254,
-        "max_gain": 1.254,
+        "latest_pct": 1.567,
+        "max_gain": 1.567,
         "max_drawdown": -0.627,
         "pct_5m": 1.254,
         "pct_10m": 1.254,
         "pct_30m": 1.254
       },
-      "age_minutes": 81.14
+      "age_minutes": 86.3
     },
     {
       "key": "fund_flow:3017:29:2420.0",
@@ -4394,13 +4394,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T02:35:13.181576+00:00",
-      "updated_at": "2026-06-08T02:36:34.849788+00:00",
+      "updated_at": "2026-06-08T02:41:44.277002+00:00",
       "status": "open",
       "code": "3231",
       "name": "緯創",
       "sector": "AI伺服器",
       "entry_price": 162.0,
-      "last_price": 161.5,
+      "last_price": 162.0,
       "best_price": 162.0,
       "worst_price": 161.5,
       "score": 38,
@@ -4408,11 +4408,12 @@
       "volume_ratio_at_signal": 0.59,
       "alert": null,
       "results": {
-        "latest_pct": -0.309,
+        "latest_pct": 0.0,
         "max_gain": 0.0,
-        "max_drawdown": -0.309
+        "max_drawdown": -0.309,
+        "pct_5m": 0.0
       },
-      "age_minutes": 1.36
+      "age_minutes": 6.52
     },
     {
       "key": "ai_pool:2324:38:37.65",
