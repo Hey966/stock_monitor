@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-08T04:27:27.760441+00:00",
+  "updated_at": "2026-06-08T04:27:30.903087+00:00",
   "count": 556,
   "items": [
     {
@@ -372,13 +372,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T01:00:25.731762+00:00",
-      "updated_at": "2026-06-08T04:22:29.891302+00:00",
+      "updated_at": "2026-06-08T04:27:29.848034+00:00",
       "status": "open",
       "code": "2609",
       "name": "陽明",
       "sector": "航運",
       "entry_price": 52.1,
-      "last_price": 51.5,
+      "last_price": 51.3,
       "best_price": 52.1,
       "worst_price": 51.2,
       "score": 40,
@@ -386,14 +386,14 @@
       "volume_ratio_at_signal": 0.02,
       "alert": null,
       "results": {
-        "latest_pct": -1.152,
+        "latest_pct": -1.536,
         "max_gain": 0.0,
         "max_drawdown": -1.727,
         "pct_5m": -0.384,
         "pct_10m": -0.192,
         "pct_30m": -0.192
       },
-      "age_minutes": 202.07
+      "age_minutes": 207.07
     },
     {
       "key": "ai_pool:2618:40:36.35",
@@ -736,13 +736,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T01:00:36.720218+00:00",
-      "updated_at": "2026-06-08T04:22:29.891337+00:00",
+      "updated_at": "2026-06-08T04:27:29.848059+00:00",
       "status": "open",
       "code": "2609",
       "name": "陽明",
       "sector": "航運",
       "entry_price": 52.1,
-      "last_price": 51.5,
+      "last_price": 51.3,
       "best_price": 52.1,
       "worst_price": 51.2,
       "score": 19,
@@ -750,14 +750,14 @@
       "volume_ratio_at_signal": 0.02,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": -1.152,
+        "latest_pct": -1.536,
         "max_gain": 0.0,
         "max_drawdown": -1.727,
         "pct_5m": -0.384,
         "pct_10m": -0.192,
         "pct_30m": -0.192
       },
-      "age_minutes": 201.89
+      "age_minutes": 206.89
     },
     {
       "key": "fund_flow:2317:20:262.0",
@@ -1492,13 +1492,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T01:05:12.805276+00:00",
-      "updated_at": "2026-06-08T04:22:29.891371+00:00",
+      "updated_at": "2026-06-08T04:27:29.848074+00:00",
       "status": "open",
       "code": "2609",
       "name": "陽明",
       "sector": "航運",
       "entry_price": 52.2,
-      "last_price": 51.5,
+      "last_price": 51.3,
       "best_price": 52.2,
       "worst_price": 51.2,
       "score": 48,
@@ -1506,14 +1506,14 @@
       "volume_ratio_at_signal": 0.07,
       "alert": null,
       "results": {
-        "latest_pct": -1.341,
+        "latest_pct": -1.724,
         "max_gain": 0.0,
         "max_drawdown": -1.916,
         "pct_5m": -0.383,
         "pct_10m": -0.766,
         "pct_30m": -0.383
       },
-      "age_minutes": 197.28
+      "age_minutes": 202.28
     },
     {
       "key": "ai_pool:2618:48:36.4",
@@ -1688,13 +1688,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T01:05:22.720737+00:00",
-      "updated_at": "2026-06-08T04:22:29.891383+00:00",
+      "updated_at": "2026-06-08T04:27:29.848084+00:00",
       "status": "open",
       "code": "2609",
       "name": "陽明",
       "sector": "航運",
       "entry_price": 52.2,
-      "last_price": 51.5,
+      "last_price": 51.3,
       "best_price": 52.2,
       "worst_price": 51.2,
       "score": 33,
@@ -1702,14 +1702,14 @@
       "volume_ratio_at_signal": 0.08,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": -1.341,
+        "latest_pct": -1.724,
         "max_gain": 0.0,
         "max_drawdown": -1.916,
         "pct_5m": -0.383,
         "pct_10m": -0.766,
         "pct_30m": -0.383
       },
-      "age_minutes": 197.12
+      "age_minutes": 202.12
     },
     {
       "key": "fund_flow:2317:29:264.0",
@@ -3900,13 +3900,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T01:15:26.200482+00:00",
-      "updated_at": "2026-06-08T04:22:29.891409+00:00",
+      "updated_at": "2026-06-08T04:27:29.848106+00:00",
       "status": "open",
       "code": "2609",
       "name": "陽明",
       "sector": "航運",
       "entry_price": 51.7,
-      "last_price": 51.5,
+      "last_price": 51.3,
       "best_price": 52.0,
       "worst_price": 51.2,
       "score": 19,
@@ -3914,14 +3914,14 @@
       "volume_ratio_at_signal": 0.15,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": -0.387,
+        "latest_pct": -0.774,
         "max_gain": 0.58,
         "max_drawdown": -0.967,
         "pct_5m": 0.58,
         "pct_10m": 0.58,
         "pct_30m": 0.58
       },
-      "age_minutes": 187.06
+      "age_minutes": 192.06
     },
     {
       "key": "ai_pool:2368:73:1325.0",
@@ -4376,13 +4376,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T02:35:13.181564+00:00",
-      "updated_at": "2026-06-08T04:22:29.891420+00:00",
+      "updated_at": "2026-06-08T04:27:29.848118+00:00",
       "status": "open",
       "code": "2609",
       "name": "陽明",
       "sector": "航運",
       "entry_price": 52.0,
-      "last_price": 51.5,
+      "last_price": 51.3,
       "best_price": 52.0,
       "worst_price": 51.2,
       "score": 40,
@@ -4390,14 +4390,14 @@
       "volume_ratio_at_signal": 0.32,
       "alert": null,
       "results": {
-        "latest_pct": -0.962,
+        "latest_pct": -1.346,
         "max_gain": 0.0,
         "max_drawdown": -1.538,
         "pct_5m": -1.346,
         "pct_10m": -1.346,
         "pct_30m": -1.538
       },
-      "age_minutes": 107.28
+      "age_minutes": 112.28
     },
     {
       "key": "ai_pool:2454:38:4030.0",
@@ -5356,13 +5356,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T02:40:25.357146+00:00",
-      "updated_at": "2026-06-08T04:22:29.891435+00:00",
+      "updated_at": "2026-06-08T04:27:29.848133+00:00",
       "status": "open",
       "code": "2609",
       "name": "陽明",
       "sector": "航運",
       "entry_price": 51.3,
-      "last_price": 51.5,
+      "last_price": 51.3,
       "best_price": 51.7,
       "worst_price": 51.2,
       "score": 26,
@@ -5370,14 +5370,14 @@
       "volume_ratio_at_signal": 0.35,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": 0.39,
+        "latest_pct": 0.0,
         "max_gain": 0.78,
         "max_drawdown": -0.195,
         "pct_5m": 0.0,
         "pct_10m": 0.195,
         "pct_30m": 0.195
       },
-      "age_minutes": 102.08
+      "age_minutes": 107.07
     },
     {
       "key": "ai_pool:2368:83:1330.0",
@@ -6084,13 +6084,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T02:45:25.121212+00:00",
-      "updated_at": "2026-06-08T04:22:29.891449+00:00",
+      "updated_at": "2026-06-08T04:27:29.848147+00:00",
       "status": "open",
       "code": "2609",
       "name": "陽明",
       "sector": "航運",
       "entry_price": 51.3,
-      "last_price": 51.5,
+      "last_price": 51.3,
       "best_price": 51.7,
       "worst_price": 51.2,
       "score": 17,
@@ -6098,14 +6098,14 @@
       "volume_ratio_at_signal": 0.36,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": 0.39,
+        "latest_pct": 0.0,
         "max_gain": 0.78,
         "max_drawdown": -0.195,
         "pct_5m": 0.195,
         "pct_10m": 0.39,
         "pct_30m": 0.195
       },
-      "age_minutes": 97.08
+      "age_minutes": 102.08
     },
     {
       "key": "fund_flow:2618:22:36.1",
@@ -6728,13 +6728,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T02:50:25.637782+00:00",
-      "updated_at": "2026-06-08T04:22:29.891462+00:00",
+      "updated_at": "2026-06-08T04:27:29.848158+00:00",
       "status": "open",
       "code": "2609",
       "name": "陽明",
       "sector": "航運",
       "entry_price": 51.3,
-      "last_price": 51.5,
+      "last_price": 51.3,
       "best_price": 51.7,
       "worst_price": 51.2,
       "score": 5,
@@ -6742,14 +6742,14 @@
       "volume_ratio_at_signal": 0.38,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": 0.39,
+        "latest_pct": 0.0,
         "max_gain": 0.78,
         "max_drawdown": -0.195,
         "pct_5m": 0.39,
         "pct_10m": 0.0,
         "pct_30m": 0.0
       },
-      "age_minutes": 92.07
+      "age_minutes": 97.07
     },
     {
       "key": "ai_pool:2368:79:1340.0",
@@ -7400,13 +7400,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T02:55:21.687936+00:00",
-      "updated_at": "2026-06-08T04:22:29.891476+00:00",
+      "updated_at": "2026-06-08T04:27:29.848171+00:00",
       "status": "open",
       "code": "2609",
       "name": "陽明",
       "sector": "航運",
       "entry_price": 51.3,
-      "last_price": 51.5,
+      "last_price": 51.3,
       "best_price": 51.7,
       "worst_price": 51.2,
       "score": 4,
@@ -7414,14 +7414,14 @@
       "volume_ratio_at_signal": 0.39,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": 0.39,
+        "latest_pct": 0.0,
         "max_gain": 0.78,
         "max_drawdown": -0.195,
         "pct_5m": 0.0,
         "pct_10m": -0.195,
         "pct_30m": 0.195
       },
-      "age_minutes": 87.14
+      "age_minutes": 92.14
     },
     {
       "key": "ai_pool:2330:70:2310.0",
@@ -7848,13 +7848,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T03:00:37.352580+00:00",
-      "updated_at": "2026-06-08T04:22:29.891486+00:00",
+      "updated_at": "2026-06-08T04:27:29.848196+00:00",
       "status": "open",
       "code": "2609",
       "name": "陽明",
       "sector": "航運",
       "entry_price": 51.3,
-      "last_price": 51.5,
+      "last_price": 51.3,
       "best_price": 51.7,
       "worst_price": 51.2,
       "score": 31,
@@ -7862,14 +7862,14 @@
       "volume_ratio_at_signal": 0.4,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": 0.39,
+        "latest_pct": 0.0,
         "max_gain": 0.78,
         "max_drawdown": -0.195,
         "pct_5m": -0.195,
         "pct_10m": 0.195,
         "pct_30m": 0.195
       },
-      "age_minutes": 81.88
+      "age_minutes": 86.87
     },
     {
       "key": "ai_pool:2368:82:1345.0",
@@ -8324,13 +8324,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T03:05:23.775476+00:00",
-      "updated_at": "2026-06-08T04:22:29.891498+00:00",
+      "updated_at": "2026-06-08T04:27:29.848208+00:00",
       "status": "open",
       "code": "2609",
       "name": "陽明",
       "sector": "航運",
       "entry_price": 51.3,
-      "last_price": 51.5,
+      "last_price": 51.3,
       "best_price": 51.7,
       "worst_price": 51.2,
       "score": 19,
@@ -8338,14 +8338,14 @@
       "volume_ratio_at_signal": 0.41,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": 0.39,
+        "latest_pct": 0.0,
         "max_gain": 0.78,
         "max_drawdown": -0.195,
         "pct_5m": 0.195,
         "pct_10m": 0.195,
         "pct_30m": 0.195
       },
-      "age_minutes": 77.1
+      "age_minutes": 82.1
     },
     {
       "key": "ai_pool:2368:77:1335.0",
@@ -8828,13 +8828,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T03:10:26.300146+00:00",
-      "updated_at": "2026-06-08T04:22:29.891509+00:00",
+      "updated_at": "2026-06-08T04:27:29.848217+00:00",
       "status": "open",
       "code": "2609",
       "name": "陽明",
       "sector": "航運",
       "entry_price": 51.3,
-      "last_price": 51.5,
+      "last_price": 51.3,
       "best_price": 51.7,
       "worst_price": 51.3,
       "score": 33,
@@ -8842,14 +8842,14 @@
       "volume_ratio_at_signal": 0.42,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": 0.39,
+        "latest_pct": 0.0,
         "max_gain": 0.78,
         "max_drawdown": 0.0,
         "pct_5m": 0.195,
         "pct_10m": 0.0,
         "pct_30m": 0.78
       },
-      "age_minutes": 72.06
+      "age_minutes": 77.06
     },
     {
       "key": "fund_flow:2618:25:36.0",
@@ -9444,13 +9444,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T03:15:25.492369+00:00",
-      "updated_at": "2026-06-08T04:22:29.891522+00:00",
+      "updated_at": "2026-06-08T04:27:29.848229+00:00",
       "status": "open",
       "code": "2609",
       "name": "陽明",
       "sector": "航運",
       "entry_price": 51.2,
-      "last_price": 51.5,
+      "last_price": 51.3,
       "best_price": 51.7,
       "worst_price": 51.2,
       "score": 22,
@@ -9458,14 +9458,14 @@
       "volume_ratio_at_signal": 0.43,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": 0.586,
+        "latest_pct": 0.195,
         "max_gain": 0.977,
         "max_drawdown": 0.0,
         "pct_5m": 0.195,
         "pct_10m": 0.391,
         "pct_30m": 0.586
       },
-      "age_minutes": 67.07
+      "age_minutes": 72.07
     },
     {
       "key": "ai_pool:8046:73:830.0",
@@ -10032,13 +10032,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T03:20:25.739889+00:00",
-      "updated_at": "2026-06-08T04:22:29.891533+00:00",
+      "updated_at": "2026-06-08T04:27:29.848240+00:00",
       "status": "open",
       "code": "2609",
       "name": "陽明",
       "sector": "航運",
       "entry_price": 51.3,
-      "last_price": 51.5,
+      "last_price": 51.3,
       "best_price": 51.7,
       "worst_price": 51.3,
       "score": 8,
@@ -10046,14 +10046,14 @@
       "volume_ratio_at_signal": 0.44,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": 0.39,
+        "latest_pct": 0.0,
         "max_gain": 0.78,
         "max_drawdown": 0.0,
         "pct_5m": 0.195,
         "pct_10m": 0.195,
         "pct_30m": 0.78
       },
-      "age_minutes": 62.07
+      "age_minutes": 67.07
     },
     {
       "key": "ai_pool:2330:69:2305.0",
@@ -10648,13 +10648,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T03:25:22.676923+00:00",
-      "updated_at": "2026-06-08T04:22:29.891560+00:00",
+      "updated_at": "2026-06-08T04:27:29.848251+00:00",
       "status": "open",
       "code": "2609",
       "name": "陽明",
       "sector": "航運",
       "entry_price": 51.3,
-      "last_price": 51.5,
+      "last_price": 51.3,
       "best_price": 51.7,
       "worst_price": 51.3,
       "score": 10,
@@ -10662,14 +10662,14 @@
       "volume_ratio_at_signal": 0.46,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": 0.39,
+        "latest_pct": 0.0,
         "max_gain": 0.78,
         "max_drawdown": 0.0,
         "pct_5m": 0.195,
         "pct_10m": 0.195,
         "pct_30m": 0.585
       },
-      "age_minutes": 57.12
+      "age_minutes": 62.12
     },
     {
       "key": "ai_pool:2368:87:1340.0",
@@ -11208,13 +11208,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T03:30:30.308640+00:00",
-      "updated_at": "2026-06-08T04:22:29.891573+00:00",
+      "updated_at": "2026-06-08T04:27:29.848261+00:00",
       "status": "open",
       "code": "2609",
       "name": "陽明",
       "sector": "航運",
       "entry_price": 51.4,
-      "last_price": 51.5,
+      "last_price": 51.3,
       "best_price": 51.7,
       "worst_price": 51.3,
       "score": 7,
@@ -11222,14 +11222,14 @@
       "volume_ratio_at_signal": 0.47,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": 0.195,
+        "latest_pct": -0.195,
         "max_gain": 0.584,
         "max_drawdown": -0.195,
         "pct_5m": 0.0,
         "pct_10m": 0.584,
         "pct_30m": 0.0
       },
-      "age_minutes": 51.99
+      "age_minutes": 56.99
     },
     {
       "key": "ai_pool:8046:64:842.0",
@@ -11656,13 +11656,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T03:35:22.953024+00:00",
-      "updated_at": "2026-06-08T04:22:29.891583+00:00",
+      "updated_at": "2026-06-08T04:27:29.848271+00:00",
       "status": "open",
       "code": "2609",
       "name": "陽明",
       "sector": "航運",
       "entry_price": 51.6,
-      "last_price": 51.5,
+      "last_price": 51.3,
       "best_price": 51.7,
       "worst_price": 51.3,
       "score": 6,
@@ -11670,14 +11670,14 @@
       "volume_ratio_at_signal": 0.48,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": -0.194,
+        "latest_pct": -0.581,
         "max_gain": 0.194,
         "max_drawdown": -0.581,
         "pct_5m": 0.194,
         "pct_10m": -0.194,
         "pct_30m": 0.194
       },
-      "age_minutes": 47.12
+      "age_minutes": 52.11
     },
     {
       "key": "ai_pool:8046:81:841.0",
@@ -12048,13 +12048,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T03:40:26.938200+00:00",
-      "updated_at": "2026-06-08T04:22:29.891594+00:00",
+      "updated_at": "2026-06-08T04:27:29.848280+00:00",
       "status": "open",
       "code": "2609",
       "name": "陽明",
       "sector": "航運",
       "entry_price": 51.7,
-      "last_price": 51.5,
+      "last_price": 51.3,
       "best_price": 51.7,
       "worst_price": 51.3,
       "score": 29,
@@ -12062,14 +12062,14 @@
       "volume_ratio_at_signal": 0.5,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": -0.387,
+        "latest_pct": -0.774,
         "max_gain": 0.0,
         "max_drawdown": -0.774,
         "pct_5m": -0.387,
         "pct_10m": 0.0,
         "pct_30m": -0.387
       },
-      "age_minutes": 42.05
+      "age_minutes": 47.05
     },
     {
       "key": "fund_flow:2618:30:36.1",
@@ -12496,13 +12496,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T03:45:26.283053+00:00",
-      "updated_at": "2026-06-08T04:22:29.891604+00:00",
+      "updated_at": "2026-06-08T04:27:29.848290+00:00",
       "status": "open",
       "code": "2609",
       "name": "陽明",
       "sector": "航運",
       "entry_price": 51.4,
-      "last_price": 51.5,
+      "last_price": 51.3,
       "best_price": 51.7,
       "worst_price": 51.3,
       "score": 31,
@@ -12510,14 +12510,14 @@
       "volume_ratio_at_signal": 0.51,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": 0.195,
+        "latest_pct": -0.195,
         "max_gain": 0.584,
         "max_drawdown": -0.195,
         "pct_5m": 0.584,
         "pct_10m": 0.389,
         "pct_30m": -0.195
       },
-      "age_minutes": 37.06
+      "age_minutes": 42.06
     },
     {
       "key": "fund_flow:2618:25:36.15",
@@ -12860,13 +12860,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T03:50:26.407851+00:00",
-      "updated_at": "2026-06-08T04:22:29.891615+00:00",
+      "updated_at": "2026-06-08T04:27:29.848300+00:00",
       "status": "open",
       "code": "2609",
       "name": "陽明",
       "sector": "航運",
       "entry_price": 51.5,
-      "last_price": 51.5,
+      "last_price": 51.3,
       "best_price": 51.7,
       "worst_price": 51.3,
       "score": 9,
@@ -12874,14 +12874,14 @@
       "volume_ratio_at_signal": 0.52,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": 0.0,
+        "latest_pct": -0.388,
         "max_gain": 0.388,
         "max_drawdown": -0.388,
         "pct_5m": 0.194,
         "pct_10m": -0.194,
         "pct_30m": 0.0
       },
-      "age_minutes": 32.06
+      "age_minutes": 37.06
     },
     {
       "key": "ai_pool:8046:78:836.0",
@@ -13224,13 +13224,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T03:55:22.253499+00:00",
-      "updated_at": "2026-06-08T04:22:29.891624+00:00",
+      "updated_at": "2026-06-08T04:27:29.848310+00:00",
       "status": "open",
       "code": "2609",
       "name": "陽明",
       "sector": "航運",
       "entry_price": 51.6,
-      "last_price": 51.5,
+      "last_price": 51.3,
       "best_price": 51.7,
       "worst_price": 51.3,
       "score": 7,
@@ -13238,13 +13238,14 @@
       "volume_ratio_at_signal": 0.53,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": -0.194,
+        "latest_pct": -0.581,
         "max_gain": 0.194,
         "max_drawdown": -0.581,
         "pct_5m": -0.388,
-        "pct_10m": 0.194
+        "pct_10m": 0.194,
+        "pct_30m": -0.581
       },
-      "age_minutes": 27.13
+      "age_minutes": 32.13
     },
     {
       "key": "ai_pool:3037:69:910.0",
@@ -13440,13 +13441,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T04:00:36.448321+00:00",
-      "updated_at": "2026-06-08T04:22:29.891633+00:00",
+      "updated_at": "2026-06-08T04:27:29.848318+00:00",
       "status": "open",
       "code": "2609",
       "name": "陽明",
       "sector": "航運",
       "entry_price": 51.5,
-      "last_price": 51.5,
+      "last_price": 51.3,
       "best_price": 51.7,
       "worst_price": 51.3,
       "score": 6,
@@ -13454,13 +13455,13 @@
       "volume_ratio_at_signal": 0.55,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": 0.0,
+        "latest_pct": -0.388,
         "max_gain": 0.388,
         "max_drawdown": -0.388,
         "pct_5m": 0.388,
         "pct_10m": 0.0
       },
-      "age_minutes": 21.89
+      "age_minutes": 26.89
     },
     {
       "key": "ai_pool:2368:74:1350.0",
@@ -13818,13 +13819,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T04:05:23.013602+00:00",
-      "updated_at": "2026-06-08T04:22:29.891644+00:00",
+      "updated_at": "2026-06-08T04:27:29.848328+00:00",
       "status": "open",
       "code": "2609",
       "name": "陽明",
       "sector": "航運",
       "entry_price": 51.7,
-      "last_price": 51.5,
+      "last_price": 51.3,
       "best_price": 51.7,
       "worst_price": 51.3,
       "score": 23,
@@ -13832,13 +13833,13 @@
       "volume_ratio_at_signal": 0.56,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": -0.387,
+        "latest_pct": -0.774,
         "max_gain": 0.0,
         "max_drawdown": -0.774,
         "pct_5m": -0.387,
         "pct_10m": -0.774
       },
-      "age_minutes": 17.11
+      "age_minutes": 22.11
     },
     {
       "key": "ai_pool:2368:84:1350.0",
@@ -14142,13 +14143,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T04:10:26.645571+00:00",
-      "updated_at": "2026-06-08T04:22:29.891654+00:00",
+      "updated_at": "2026-06-08T04:27:29.848337+00:00",
       "status": "open",
       "code": "2609",
       "name": "陽明",
       "sector": "航運",
       "entry_price": 51.4,
-      "last_price": 51.5,
+      "last_price": 51.3,
       "best_price": 51.5,
       "worst_price": 51.3,
       "score": 16,
@@ -14156,13 +14157,13 @@
       "volume_ratio_at_signal": 0.58,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": 0.195,
+        "latest_pct": -0.195,
         "max_gain": 0.195,
         "max_drawdown": -0.195,
         "pct_5m": -0.195,
         "pct_10m": 0.195
       },
-      "age_minutes": 12.05
+      "age_minutes": 17.05
     },
     {
       "key": "ai_pool:2368:92:1350.0",
@@ -15424,7 +15425,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T04:25:23.118750+00:00",
-      "updated_at": "2026-06-08T04:25:23.118752+00:00",
+      "updated_at": "2026-06-08T04:27:29.848369+00:00",
       "status": "open",
       "code": "2609",
       "name": "陽明",
@@ -15437,7 +15438,12 @@
       "change_rate_at_signal": -5.87,
       "volume_ratio_at_signal": 0.61,
       "alert": "資金退潮警報",
-      "results": {}
+      "results": {
+        "latest_pct": 0.0,
+        "max_gain": 0.0,
+        "max_drawdown": 0.0
+      },
+      "age_minutes": 2.11
     }
   ]
 }
