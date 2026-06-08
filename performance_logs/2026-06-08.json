@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-08T05:01:27.486600+00:00",
+  "updated_at": "2026-06-08T05:01:31.209390+00:00",
   "count": 660,
   "items": [
     {
@@ -347,8 +347,8 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T01:00:25.731751+00:00",
-      "updated_at": "2026-06-08T04:57:02.276287+00:00",
-      "status": "open",
+      "updated_at": "2026-06-08T05:01:29.703537+00:00",
+      "status": "closed",
       "code": "3017",
       "name": "奇鋐",
       "sector": "AI散熱",
@@ -366,9 +366,10 @@
         "max_drawdown": 0.0,
         "pct_5m": 1.266,
         "pct_10m": 2.532,
-        "pct_30m": 6.54
+        "pct_30m": 6.54,
+        "pct_close_proxy": 7.595
       },
-      "age_minutes": 236.61
+      "age_minutes": 241.07
     },
     {
       "key": "ai_pool:2609:40:52.1",
@@ -1330,7 +1331,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T01:05:12.805223+00:00",
-      "updated_at": "2026-06-08T04:57:02.276314+00:00",
+      "updated_at": "2026-06-08T05:01:29.703557+00:00",
       "status": "open",
       "code": "3017",
       "name": "奇鋐",
@@ -1351,7 +1352,7 @@
         "pct_10m": 0.207,
         "pct_30m": 4.555
       },
-      "age_minutes": 231.82
+      "age_minutes": 236.28
     },
     {
       "key": "ai_pool:3324:48:1030.0",
@@ -2590,7 +2591,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T01:10:16.374093+00:00",
-      "updated_at": "2026-06-08T04:57:02.276335+00:00",
+      "updated_at": "2026-06-08T05:01:29.703568+00:00",
       "status": "open",
       "code": "3017",
       "name": "奇鋐",
@@ -2611,7 +2612,7 @@
         "pct_10m": 3.696,
         "pct_30m": 3.696
       },
-      "age_minutes": 226.77
+      "age_minutes": 231.22
     },
     {
       "key": "fund_flow:3324:28:1030.0",
@@ -2758,7 +2759,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T01:10:27.018836+00:00",
-      "updated_at": "2026-06-08T04:57:02.276483+00:00",
+      "updated_at": "2026-06-08T05:01:29.703575+00:00",
       "status": "open",
       "code": "3017",
       "name": "奇鋐",
@@ -2779,7 +2780,7 @@
         "pct_10m": 4.339,
         "pct_30m": 4.339
       },
-      "age_minutes": 226.59
+      "age_minutes": 231.04
     },
     {
       "key": "fund_flow:2379:23:594.0",
@@ -3094,7 +3095,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T01:15:15.735318+00:00",
-      "updated_at": "2026-06-08T04:57:02.276504+00:00",
+      "updated_at": "2026-06-08T05:01:29.703581+00:00",
       "status": "open",
       "code": "3017",
       "name": "奇鋐",
@@ -3115,7 +3116,7 @@
         "pct_10m": 4.124,
         "pct_30m": 4.124
       },
-      "age_minutes": 221.78
+      "age_minutes": 226.23
     },
     {
       "key": "ai_pool:3324:48:1025.0",
@@ -3570,7 +3571,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T01:15:26.200382+00:00",
-      "updated_at": "2026-06-08T04:57:02.276521+00:00",
+      "updated_at": "2026-06-08T05:01:29.703587+00:00",
       "status": "open",
       "code": "3017",
       "name": "奇鋐",
@@ -3591,7 +3592,7 @@
         "pct_10m": 4.339,
         "pct_30m": 4.339
       },
-      "age_minutes": 221.6
+      "age_minutes": 226.06
     },
     {
       "key": "fund_flow:3324:32:1025.0",
@@ -4326,7 +4327,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T02:35:13.181552+00:00",
-      "updated_at": "2026-06-08T04:57:02.276540+00:00",
+      "updated_at": "2026-06-08T05:01:29.703594+00:00",
       "status": "open",
       "code": "3017",
       "name": "奇鋐",
@@ -4347,7 +4348,7 @@
         "pct_10m": -0.396,
         "pct_30m": 0.198
       },
-      "age_minutes": 141.82
+      "age_minutes": 146.28
     },
     {
       "key": "ai_pool:1605:40:35.8",
@@ -4914,7 +4915,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T02:40:15.266772+00:00",
-      "updated_at": "2026-06-08T04:57:02.276557+00:00",
+      "updated_at": "2026-06-08T05:01:29.703601+00:00",
       "status": "open",
       "code": "3017",
       "name": "奇鋐",
@@ -4935,7 +4936,7 @@
         "pct_10m": 0.398,
         "pct_30m": 0.596
       },
-      "age_minutes": 136.78
+      "age_minutes": 141.24
     },
     {
       "key": "ai_pool:3661:48:4105.0",
@@ -5502,7 +5503,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T02:45:15.083154+00:00",
-      "updated_at": "2026-06-08T04:57:02.276575+00:00",
+      "updated_at": "2026-06-08T05:01:29.703608+00:00",
       "status": "open",
       "code": "3017",
       "name": "奇鋐",
@@ -5523,7 +5524,7 @@
         "pct_10m": 0.996,
         "pct_30m": 0.598
       },
-      "age_minutes": 131.79
+      "age_minutes": 136.24
     },
     {
       "key": "ai_pool:2324:56:37.7",
@@ -6874,7 +6875,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T02:55:12.105053+00:00",
-      "updated_at": "2026-06-08T04:57:02.276603+00:00",
+      "updated_at": "2026-06-08T05:01:29.703618+00:00",
       "status": "open",
       "code": "3017",
       "name": "奇鋐",
@@ -6895,7 +6896,7 @@
         "pct_10m": 0.397,
         "pct_30m": 0.794
       },
-      "age_minutes": 121.84
+      "age_minutes": 126.29
     },
     {
       "key": "ai_pool:3231:56:162.5",
@@ -7630,7 +7631,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T03:00:26.524728+00:00",
-      "updated_at": "2026-06-08T04:57:02.276622+00:00",
+      "updated_at": "2026-06-08T05:01:29.703625+00:00",
       "status": "open",
       "code": "3017",
       "name": "奇鋐",
@@ -7651,7 +7652,7 @@
         "pct_10m": 0.198,
         "pct_30m": 0.99
       },
-      "age_minutes": 116.6
+      "age_minutes": 121.05
     },
     {
       "key": "ai_pool:2382:48:373.0",
@@ -8134,7 +8135,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T03:05:12.938742+00:00",
-      "updated_at": "2026-06-08T04:57:02.276638+00:00",
+      "updated_at": "2026-06-08T05:01:29.703631+00:00",
       "status": "open",
       "code": "3017",
       "name": "奇鋐",
@@ -8155,7 +8156,7 @@
         "pct_10m": -0.198,
         "pct_30m": 0.593
       },
-      "age_minutes": 111.82
+      "age_minutes": 116.28
     },
     {
       "key": "ai_pool:3231:48:162.5",
@@ -8442,7 +8443,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T03:10:15.922553+00:00",
-      "updated_at": "2026-06-08T04:57:02.276653+00:00",
+      "updated_at": "2026-06-08T05:01:29.703636+00:00",
       "status": "open",
       "code": "3017",
       "name": "奇鋐",
@@ -8463,7 +8464,7 @@
         "pct_10m": -0.198,
         "pct_30m": 0.792
       },
-      "age_minutes": 106.77
+      "age_minutes": 111.23
     },
     {
       "key": "ai_pool:2454:56:4060.0",
@@ -9814,7 +9815,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T03:20:14.903047+00:00",
-      "updated_at": "2026-06-08T04:57:02.276681+00:00",
+      "updated_at": "2026-06-08T05:01:29.703644+00:00",
       "status": "open",
       "code": "3017",
       "name": "奇鋐",
@@ -9835,7 +9836,7 @@
         "pct_10m": 1.392,
         "pct_30m": 1.789
       },
-      "age_minutes": 96.79
+      "age_minutes": 101.25
     },
     {
       "key": "fund_flow:2368:80:1325.0",
@@ -10486,7 +10487,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T03:25:12.343936+00:00",
-      "updated_at": "2026-06-08T04:57:02.276700+00:00",
+      "updated_at": "2026-06-08T05:01:29.703651+00:00",
       "status": "open",
       "code": "3017",
       "name": "奇鋐",
@@ -10507,7 +10508,7 @@
         "pct_10m": 0.0,
         "pct_30m": 0.589
       },
-      "age_minutes": 91.83
+      "age_minutes": 96.29
     },
     {
       "key": "ai_pool:3443:41:4265.0",
@@ -11018,7 +11019,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T03:30:19.536016+00:00",
-      "updated_at": "2026-06-08T04:57:02.276715+00:00",
+      "updated_at": "2026-06-08T05:01:29.703657+00:00",
       "status": "open",
       "code": "3017",
       "name": "奇鋐",
@@ -11039,7 +11040,7 @@
         "pct_10m": -0.196,
         "pct_30m": 0.392
       },
-      "age_minutes": 86.71
+      "age_minutes": 91.17
     },
     {
       "key": "ai_pool:3661:41:4160.0",
@@ -12166,7 +12167,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T03:45:15.296324+00:00",
-      "updated_at": "2026-06-08T04:57:02.276736+00:00",
+      "updated_at": "2026-06-08T05:01:29.703664+00:00",
       "status": "open",
       "code": "3017",
       "name": "奇鋐",
@@ -12187,7 +12188,7 @@
         "pct_10m": 0.392,
         "pct_30m": -0.196
       },
-      "age_minutes": 71.78
+      "age_minutes": 76.24
     },
     {
       "key": "ai_pool:8046:62:839.0",
@@ -12614,7 +12615,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T03:50:15.373156+00:00",
-      "updated_at": "2026-06-08T04:57:02.276749+00:00",
+      "updated_at": "2026-06-08T05:01:29.703670+00:00",
       "status": "open",
       "code": "3017",
       "name": "奇鋐",
@@ -12635,7 +12636,7 @@
         "pct_10m": 0.0,
         "pct_30m": -0.586
       },
-      "age_minutes": 66.78
+      "age_minutes": 71.24
     },
     {
       "key": "ai_pool:3711:64:537.0",
@@ -13034,7 +13035,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T03:55:11.578115+00:00",
-      "updated_at": "2026-06-08T04:57:02.276761+00:00",
+      "updated_at": "2026-06-08T05:01:29.703676+00:00",
       "status": "open",
       "code": "3017",
       "name": "奇鋐",
@@ -13055,7 +13056,7 @@
         "pct_10m": -0.586,
         "pct_30m": -0.977
       },
-      "age_minutes": 61.84
+      "age_minutes": 66.3
     },
     {
       "key": "ai_pool:3661:48:4135.0",
@@ -13678,7 +13679,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T04:05:12.635253+00:00",
-      "updated_at": "2026-06-08T04:57:02.276777+00:00",
+      "updated_at": "2026-06-08T05:01:29.703682+00:00",
       "status": "open",
       "code": "3017",
       "name": "奇鋐",
@@ -13699,7 +13700,7 @@
         "pct_10m": -0.391,
         "pct_30m": -0.587
       },
-      "age_minutes": 51.83
+      "age_minutes": 56.28
     },
     {
       "key": "ai_pool:2379:48:593.0",
@@ -13930,7 +13931,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T04:10:16.119748+00:00",
-      "updated_at": "2026-06-08T04:57:02.276789+00:00",
+      "updated_at": "2026-06-08T05:01:29.703688+00:00",
       "status": "open",
       "code": "3017",
       "name": "奇鋐",
@@ -13951,7 +13952,7 @@
         "pct_10m": 0.197,
         "pct_30m": 0.0
       },
-      "age_minutes": 46.77
+      "age_minutes": 51.23
     },
     {
       "key": "ai_pool:3037:59:907.0",
@@ -14994,7 +14995,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T04:20:15.348798+00:00",
-      "updated_at": "2026-06-08T04:57:02.276807+00:00",
+      "updated_at": "2026-06-08T05:01:29.703695+00:00",
       "status": "open",
       "code": "3017",
       "name": "奇鋐",
@@ -15015,7 +15016,7 @@
         "pct_10m": 0.0,
         "pct_30m": 0.0
       },
-      "age_minutes": 36.78
+      "age_minutes": 41.24
     },
     {
       "key": "ai_pool:3443:48:4230.0",
@@ -15274,7 +15275,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T04:25:12.669709+00:00",
-      "updated_at": "2026-06-08T04:57:02.276820+00:00",
+      "updated_at": "2026-06-08T05:01:29.703700+00:00",
       "status": "open",
       "code": "3017",
       "name": "奇鋐",
@@ -15295,7 +15296,7 @@
         "pct_10m": 0.197,
         "pct_30m": 0.592
       },
-      "age_minutes": 31.83
+      "age_minutes": 36.28
     },
     {
       "key": "ai_pool:2382:48:371.0",
