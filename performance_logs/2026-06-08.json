@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-08T06:37:37.210895+00:00",
+  "updated_at": "2026-06-08T06:37:41.188798+00:00",
   "count": 737,
   "items": [
     {
@@ -4764,8 +4764,8 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T02:35:23.610110+00:00",
-      "updated_at": "2026-06-08T06:32:48.765606+00:00",
-      "status": "open",
+      "updated_at": "2026-06-08T06:37:39.678898+00:00",
+      "status": "closed",
       "code": "3481",
       "name": "群創",
       "sector": "面板",
@@ -4783,9 +4783,10 @@
         "max_drawdown": 0.0,
         "pct_5m": 0.0,
         "pct_10m": 0.0,
-        "pct_30m": 0.0
+        "pct_30m": 0.0,
+        "pct_close_proxy": 0.0
       },
-      "age_minutes": 237.42
+      "age_minutes": 242.27
     },
     {
       "key": "fund_flow:2618:34:36.0",
@@ -5409,7 +5410,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T02:40:25.357139+00:00",
-      "updated_at": "2026-06-08T06:32:48.765622+00:00",
+      "updated_at": "2026-06-08T06:37:39.678915+00:00",
       "status": "open",
       "code": "3481",
       "name": "群創",
@@ -5430,7 +5431,7 @@
         "pct_10m": 0.0,
         "pct_30m": 0.0
       },
-      "age_minutes": 232.39
+      "age_minutes": 237.24
     },
     {
       "key": "fund_flow:2609:26:51.3",
@@ -15237,7 +15238,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T04:20:25.741394+00:00",
-      "updated_at": "2026-06-08T06:32:48.765652+00:00",
+      "updated_at": "2026-06-08T06:37:39.678952+00:00",
       "status": "open",
       "code": "3481",
       "name": "群創",
@@ -15258,7 +15259,7 @@
         "pct_10m": 0.0,
         "pct_30m": 0.0
       },
-      "age_minutes": 132.38
+      "age_minutes": 137.23
     },
     {
       "key": "ai_pool:2368:98:1345.0",
