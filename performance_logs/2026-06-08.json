@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-08T04:06:53.884719+00:00",
+  "updated_at": "2026-06-08T04:06:56.504458+00:00",
   "count": 495,
   "items": [
     {
@@ -932,13 +932,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T01:00:36.720308+00:00",
-      "updated_at": "2026-06-08T04:01:45.674668+00:00",
+      "updated_at": "2026-06-08T04:06:55.712701+00:00",
       "status": "open",
       "code": "1514",
       "name": "亞力",
       "sector": "重電",
       "entry_price": 121.5,
-      "last_price": 123.0,
+      "last_price": 122.5,
       "best_price": 123.0,
       "worst_price": 121.5,
       "score": 2,
@@ -946,14 +946,14 @@
       "volume_ratio_at_signal": 0.04,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": 1.235,
+        "latest_pct": 0.823,
         "max_gain": 1.235,
         "max_drawdown": 0.0,
         "pct_5m": 0.0,
         "pct_10m": 0.0,
         "pct_30m": 0.0
       },
-      "age_minutes": 181.15
+      "age_minutes": 186.32
     },
     {
       "key": "fund_flow:2409:1:24.4",
@@ -6700,13 +6700,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T02:50:25.637742+00:00",
-      "updated_at": "2026-06-08T04:01:45.674701+00:00",
+      "updated_at": "2026-06-08T04:06:55.712755+00:00",
       "status": "open",
       "code": "1514",
       "name": "亞力",
       "sector": "重電",
       "entry_price": 121.5,
-      "last_price": 123.0,
+      "last_price": 122.5,
       "best_price": 123.0,
       "worst_price": 121.5,
       "score": 3,
@@ -6714,14 +6714,14 @@
       "volume_ratio_at_signal": 0.14,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": 1.235,
+        "latest_pct": 0.823,
         "max_gain": 1.235,
         "max_drawdown": 0.0,
         "pct_5m": 0.0,
         "pct_10m": 0.0,
         "pct_30m": 0.0
       },
-      "age_minutes": 71.33
+      "age_minutes": 76.5
     },
     {
       "key": "fund_flow:2609:5:51.3",
@@ -13084,13 +13084,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T03:55:22.253432+00:00",
-      "updated_at": "2026-06-08T04:01:45.674722+00:00",
+      "updated_at": "2026-06-08T04:06:55.712797+00:00",
       "status": "open",
       "code": "1514",
       "name": "亞力",
       "sector": "重電",
       "entry_price": 122.0,
-      "last_price": 123.0,
+      "last_price": 122.5,
       "best_price": 123.0,
       "worst_price": 122.0,
       "score": 29,
@@ -13098,12 +13098,13 @@
       "volume_ratio_at_signal": 0.32,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": 0.82,
+        "latest_pct": 0.41,
         "max_gain": 0.82,
         "max_drawdown": 0.0,
-        "pct_5m": 0.82
+        "pct_5m": 0.82,
+        "pct_10m": 0.41
       },
-      "age_minutes": 6.39
+      "age_minutes": 11.56
     },
     {
       "key": "fund_flow:2618:26:36.35",
@@ -13543,20 +13544,25 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T04:05:12.635232+00:00",
-      "updated_at": "2026-06-08T04:05:12.635235+00:00",
+      "updated_at": "2026-06-08T04:06:55.712809+00:00",
       "status": "open",
       "code": "1514",
       "name": "亞力",
       "sector": "重電",
       "entry_price": 123.0,
-      "last_price": 123.0,
+      "last_price": 122.5,
       "best_price": 123.0,
-      "worst_price": 123.0,
+      "worst_price": 122.5,
       "score": 56,
       "change_rate_at_signal": -8.88,
       "volume_ratio_at_signal": 0.36,
       "alert": null,
-      "results": {}
+      "results": {
+        "latest_pct": -0.407,
+        "max_gain": 0.0,
+        "max_drawdown": -0.407
+      },
+      "age_minutes": 1.72
     },
     {
       "key": "ai_pool:3017:48:2555.0",
