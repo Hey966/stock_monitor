@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-08T02:51:25.926862+00:00",
+  "updated_at": "2026-06-08T02:51:28.497381+00:00",
   "count": 241,
   "items": [
     {
@@ -512,7 +512,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T01:00:25.731821+00:00",
-      "updated_at": "2026-06-08T02:46:32.750862+00:00",
+      "updated_at": "2026-06-08T02:51:27.729716+00:00",
       "status": "open",
       "code": "3231",
       "name": "緯創",
@@ -533,7 +533,7 @@
         "pct_10m": 0.0,
         "pct_30m": 1.254
       },
-      "age_minutes": 106.12
+      "age_minutes": 111.03
     },
     {
       "key": "ai_pool:5347:38:149.0",
@@ -2164,7 +2164,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T01:10:16.373970+00:00",
-      "updated_at": "2026-06-08T02:46:32.750881+00:00",
+      "updated_at": "2026-06-08T02:51:27.729737+00:00",
       "status": "open",
       "code": "3231",
       "name": "緯創",
@@ -2185,7 +2185,7 @@
         "pct_10m": 0.938,
         "pct_30m": 0.938
       },
-      "age_minutes": 96.27
+      "age_minutes": 101.19
     },
     {
       "key": "ai_pool:3324:56:1035.0",
@@ -3536,7 +3536,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T01:15:26.200374+00:00",
-      "updated_at": "2026-06-08T02:46:32.750892+00:00",
+      "updated_at": "2026-06-08T02:51:27.729747+00:00",
       "status": "open",
       "code": "3231",
       "name": "緯創",
@@ -3557,7 +3557,7 @@
         "pct_10m": 1.254,
         "pct_30m": 1.254
       },
-      "age_minutes": 91.11
+      "age_minutes": 96.03
     },
     {
       "key": "fund_flow:3017:29:2420.0",
@@ -4414,7 +4414,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T02:35:13.181576+00:00",
-      "updated_at": "2026-06-08T02:46:32.750901+00:00",
+      "updated_at": "2026-06-08T02:51:27.729755+00:00",
       "status": "open",
       "code": "3231",
       "name": "緯創",
@@ -4434,7 +4434,7 @@
         "pct_5m": 0.0,
         "pct_10m": 0.617
       },
-      "age_minutes": 11.33
+      "age_minutes": 16.24
     },
     {
       "key": "ai_pool:2324:38:37.65",
@@ -5525,7 +5525,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T02:45:15.083180+00:00",
-      "updated_at": "2026-06-08T02:46:32.750909+00:00",
+      "updated_at": "2026-06-08T02:51:27.729764+00:00",
       "status": "open",
       "code": "3231",
       "name": "緯創",
@@ -5541,9 +5541,10 @@
       "results": {
         "latest_pct": 0.0,
         "max_gain": 0.0,
-        "max_drawdown": 0.0
+        "max_drawdown": 0.0,
+        "pct_5m": 0.0
       },
-      "age_minutes": 1.29
+      "age_minutes": 6.21
     },
     {
       "key": "ai_pool:3661:48:4090.0",
