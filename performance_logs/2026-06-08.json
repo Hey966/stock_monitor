@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-08T01:11:23.024173+00:00",
+  "updated_at": "2026-06-08T01:11:25.566032+00:00",
   "count": 105,
   "items": [
     {
@@ -1274,7 +1274,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T01:05:12.805230+00:00",
-      "updated_at": "2026-06-08T01:06:09.981201+00:00",
+      "updated_at": "2026-06-08T01:11:24.571189+00:00",
       "status": "open",
       "code": "3324",
       "name": "雙鴻",
@@ -1290,9 +1290,10 @@
       "results": {
         "latest_pct": 0.0,
         "max_gain": 0.0,
-        "max_drawdown": 0.0
+        "max_drawdown": 0.0,
+        "pct_5m": 0.0
       },
-      "age_minutes": 0.95
+      "age_minutes": 6.2
     },
     {
       "key": "ai_pool:3661:48:3995.0",
@@ -2025,20 +2026,25 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T01:10:16.373977+00:00",
-      "updated_at": "2026-06-08T01:10:16.373978+00:00",
+      "updated_at": "2026-06-08T01:11:24.571213+00:00",
       "status": "open",
       "code": "3324",
       "name": "雙鴻",
       "sector": "AI散熱",
       "entry_price": 1035.0,
-      "last_price": 1035.0,
+      "last_price": 1030.0,
       "best_price": 1035.0,
-      "worst_price": 1035.0,
+      "worst_price": 1030.0,
       "score": 56,
       "change_rate_at_signal": -6.75,
       "volume_ratio_at_signal": 0.18,
       "alert": null,
-      "results": {}
+      "results": {
+        "latest_pct": -0.483,
+        "max_gain": 0.0,
+        "max_drawdown": -0.483
+      },
+      "age_minutes": 1.14
     },
     {
       "key": "ai_pool:2376:56:343.0",
@@ -2375,7 +2381,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T01:10:27.018765+00:00",
-      "updated_at": "2026-06-08T01:10:27.018779+00:00",
+      "updated_at": "2026-06-08T01:11:24.571226+00:00",
       "status": "open",
       "code": "3324",
       "name": "雙鴻",
@@ -2388,7 +2394,12 @@
       "change_rate_at_signal": -7.2,
       "volume_ratio_at_signal": 0.18,
       "alert": "資金退潮警報",
-      "results": {}
+      "results": {
+        "latest_pct": 0.0,
+        "max_gain": 0.0,
+        "max_drawdown": 0.0
+      },
+      "age_minutes": 0.96
     },
     {
       "key": "fund_flow:2368:32:1255.0",
