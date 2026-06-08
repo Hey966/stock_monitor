@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-08T06:56:15.174397+00:00",
+  "updated_at": "2026-06-08T06:56:19.112840+00:00",
   "count": 737,
   "items": [
     {
@@ -6968,8 +6968,8 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T02:55:12.105043+00:00",
-      "updated_at": "2026-06-08T06:51:16.515856+00:00",
-      "status": "open",
+      "updated_at": "2026-06-08T06:56:17.563981+00:00",
+      "status": "closed",
       "code": "2330",
       "name": "台積電",
       "sector": "半導體",
@@ -6987,9 +6987,10 @@
         "max_drawdown": -0.864,
         "pct_5m": 0.216,
         "pct_10m": 0.0,
-        "pct_30m": -0.216
+        "pct_30m": -0.216,
+        "pct_close_proxy": -0.864
       },
-      "age_minutes": 236.07
+      "age_minutes": 241.09
     },
     {
       "key": "ai_pool:3017:58:2520.0",
@@ -7561,7 +7562,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T03:00:26.524674+00:00",
-      "updated_at": "2026-06-08T06:51:16.515867+00:00",
+      "updated_at": "2026-06-08T06:56:17.564001+00:00",
       "status": "open",
       "code": "2330",
       "name": "台積電",
@@ -7582,7 +7583,7 @@
         "pct_10m": 0.216,
         "pct_30m": -0.216
       },
-      "age_minutes": 230.83
+      "age_minutes": 235.85
     },
     {
       "key": "ai_pool:1513:60:166.0",
@@ -8037,7 +8038,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T03:05:12.938663+00:00",
-      "updated_at": "2026-06-08T06:51:16.515875+00:00",
+      "updated_at": "2026-06-08T06:56:17.564011+00:00",
       "status": "open",
       "code": "2330",
       "name": "台積電",
@@ -8058,7 +8059,7 @@
         "pct_10m": -0.432,
         "pct_30m": -0.216
       },
-      "age_minutes": 226.06
+      "age_minutes": 231.08
     },
     {
       "key": "ai_pool:2454:64:4055.0",
@@ -9633,7 +9634,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T03:20:14.902938+00:00",
-      "updated_at": "2026-06-08T06:51:16.515886+00:00",
+      "updated_at": "2026-06-08T06:56:17.564025+00:00",
       "status": "open",
       "code": "2330",
       "name": "台積電",
@@ -9654,7 +9655,7 @@
         "pct_10m": 0.217,
         "pct_30m": 0.435
       },
-      "age_minutes": 211.03
+      "age_minutes": 216.04
     },
     {
       "key": "ai_pool:2317:56:268.0",
@@ -10193,7 +10194,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T03:25:12.343763+00:00",
-      "updated_at": "2026-06-08T06:51:16.515893+00:00",
+      "updated_at": "2026-06-08T06:56:17.564033+00:00",
       "status": "open",
       "code": "2330",
       "name": "台積電",
@@ -10214,7 +10215,7 @@
         "pct_10m": 0.217,
         "pct_30m": 0.0
       },
-      "age_minutes": 206.07
+      "age_minutes": 211.09
     },
     {
       "key": "ai_pool:2368:69:1340.0",
@@ -11929,7 +11930,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T03:40:16.271508+00:00",
-      "updated_at": "2026-06-08T06:51:16.515903+00:00",
+      "updated_at": "2026-06-08T06:56:17.564045+00:00",
       "status": "open",
       "code": "2330",
       "name": "台積電",
@@ -11950,7 +11951,7 @@
         "pct_10m": 0.0,
         "pct_30m": -0.216
       },
-      "age_minutes": 191.0
+      "age_minutes": 196.02
     },
     {
       "key": "ai_pool:2454:46:4080.0",
@@ -13665,7 +13666,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T04:05:12.635142+00:00",
-      "updated_at": "2026-06-08T06:51:16.515912+00:00",
+      "updated_at": "2026-06-08T06:56:17.564056+00:00",
       "status": "open",
       "code": "2330",
       "name": "台積電",
@@ -13686,7 +13687,7 @@
         "pct_10m": -0.216,
         "pct_30m": -0.216
       },
-      "age_minutes": 166.06
+      "age_minutes": 171.08
     },
     {
       "key": "ai_pool:8046:58:834.0",
@@ -14673,7 +14674,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T04:15:24.781665+00:00",
-      "updated_at": "2026-06-08T06:51:16.515919+00:00",
+      "updated_at": "2026-06-08T06:56:17.564064+00:00",
       "status": "open",
       "code": "2330",
       "name": "台積電",
@@ -14694,7 +14695,7 @@
         "pct_10m": -0.433,
         "pct_30m": -0.216
       },
-      "age_minutes": 155.86
+      "age_minutes": 160.88
     },
     {
       "key": "fund_flow:2379:34:594.0",
@@ -17389,7 +17390,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T04:45:26.544494+00:00",
-      "updated_at": "2026-06-08T06:51:16.515931+00:00",
+      "updated_at": "2026-06-08T06:56:17.564076+00:00",
       "status": "open",
       "code": "2330",
       "name": "台積電",
@@ -17410,7 +17411,7 @@
         "pct_10m": 0.0,
         "pct_30m": -0.217
       },
-      "age_minutes": 125.83
+      "age_minutes": 130.85
     },
     {
       "key": "fund_flow:2382:33:370.5",
@@ -20469,7 +20470,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T05:30:20.350868+00:00",
-      "updated_at": "2026-06-08T06:51:16.515942+00:00",
+      "updated_at": "2026-06-08T06:56:17.564089+00:00",
       "status": "open",
       "code": "2330",
       "name": "台積電",
@@ -20490,7 +20491,7 @@
         "pct_10m": 0.0,
         "pct_30m": 0.0
       },
-      "age_minutes": 80.94
+      "age_minutes": 85.95
     },
     {
       "key": "ai_pool:3231:56:163.5",
