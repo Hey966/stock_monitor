@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-08T01:06:34.829952+00:00",
+  "updated_at": "2026-06-08T01:06:36.811970+00:00",
   "count": 73,
   "items": [
     {
@@ -812,7 +812,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T01:00:36.720282+00:00",
-      "updated_at": "2026-06-08T01:01:33.665845+00:00",
+      "updated_at": "2026-06-08T01:06:36.031761+00:00",
       "status": "open",
       "code": "2356",
       "name": "英業達",
@@ -828,9 +828,10 @@
       "results": {
         "latest_pct": 0.0,
         "max_gain": 0.0,
-        "max_drawdown": 0.0
+        "max_drawdown": 0.0,
+        "pct_5m": 0.0
       },
-      "age_minutes": 0.95
+      "age_minutes": 5.99
     },
     {
       "key": "fund_flow:2324:2:37.3",
@@ -1779,7 +1780,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T01:05:22.720804+00:00",
-      "updated_at": "2026-06-08T01:05:22.720806+00:00",
+      "updated_at": "2026-06-08T01:06:36.031775+00:00",
       "status": "open",
       "code": "2356",
       "name": "英業達",
@@ -1792,7 +1793,12 @@
       "change_rate_at_signal": -9.89,
       "volume_ratio_at_signal": 0.04,
       "alert": "資金退潮警報",
-      "results": {}
+      "results": {
+        "latest_pct": 0.0,
+        "max_gain": 0.0,
+        "max_drawdown": 0.0
+      },
+      "age_minutes": 1.22
     },
     {
       "key": "fund_flow:2409:2:24.4",
