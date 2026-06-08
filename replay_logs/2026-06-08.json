@@ -1,13 +1,13 @@
 {
   "version": "STX Replay Storage v2 GitHub JSON Edition",
-  "updated_at": "2026-06-08T07:27:01.914972+00:00",
+  "updated_at": "2026-06-08T07:38:51.726138+00:00",
   "count": 1,
   "items": [
     {
       "key": "2317:97:strong:269.5",
       "created_at": "2026-06-08T07:00:32.510025+00:00",
-      "updated_at": "2026-06-08T07:27:01.110620+00:00",
-      "status": "open",
+      "updated_at": "2026-06-08T07:38:51.315586+00:00",
+      "status": "closed",
       "code": "2317",
       "name": "鴻海",
       "score": 97,
@@ -17,7 +17,7 @@
       "last_price": 269.5,
       "best_price": 269.5,
       "worst_price": 269.5,
-      "age_minutes": 26.48,
+      "age_minutes": 38.31,
       "trap_block": false,
       "traps": [],
       "market_sync": {
@@ -42,7 +42,8 @@
         "max_gain": 0.0,
         "max_drawdown": 0.0,
         "pct_5m": 0.0,
-        "pct_10m": 0.0
+        "pct_10m": 0.0,
+        "pct_30m": 0.0
       }
     }
   ]
