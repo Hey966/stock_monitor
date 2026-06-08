@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-08T02:47:01.897997+00:00",
+  "updated_at": "2026-06-08T02:47:04.828304+00:00",
   "count": 219,
   "items": [
     {
@@ -988,7 +988,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T01:00:36.720333+00:00",
-      "updated_at": "2026-06-08T02:41:58.948498+00:00",
+      "updated_at": "2026-06-08T02:47:03.624942+00:00",
       "status": "open",
       "code": "3481",
       "name": "群創",
@@ -1009,7 +1009,7 @@
         "pct_10m": 0.0,
         "pct_30m": 0.0
       },
-      "age_minutes": 101.37
+      "age_minutes": 106.45
     },
     {
       "key": "fund_flow:2344:1:146.0",
@@ -2920,7 +2920,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T01:10:27.018935+00:00",
-      "updated_at": "2026-06-08T02:41:58.948526+00:00",
+      "updated_at": "2026-06-08T02:47:03.624966+00:00",
       "status": "open",
       "code": "3481",
       "name": "群創",
@@ -2941,7 +2941,7 @@
         "pct_10m": 0.0,
         "pct_30m": 0.0
       },
-      "age_minutes": 91.53
+      "age_minutes": 96.61
     },
     {
       "key": "ai_pool:2308:56:2210.0",
@@ -4654,7 +4654,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T02:35:23.610110+00:00",
-      "updated_at": "2026-06-08T02:41:58.948545+00:00",
+      "updated_at": "2026-06-08T02:47:03.624982+00:00",
       "status": "open",
       "code": "3481",
       "name": "群創",
@@ -4671,9 +4671,10 @@
         "latest_pct": 0.0,
         "max_gain": 0.0,
         "max_drawdown": 0.0,
-        "pct_5m": 0.0
+        "pct_5m": 0.0,
+        "pct_10m": 0.0
       },
-      "age_minutes": 6.59
+      "age_minutes": 11.67
     },
     {
       "key": "fund_flow:2618:34:36.0",
@@ -5251,7 +5252,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T02:40:25.357139+00:00",
-      "updated_at": "2026-06-08T02:41:58.948553+00:00",
+      "updated_at": "2026-06-08T02:47:03.624993+00:00",
       "status": "open",
       "code": "3481",
       "name": "群創",
@@ -5267,9 +5268,10 @@
       "results": {
         "latest_pct": 0.0,
         "max_gain": 0.0,
-        "max_drawdown": 0.0
+        "max_drawdown": 0.0,
+        "pct_5m": 0.0
       },
-      "age_minutes": 1.56
+      "age_minutes": 6.64
     },
     {
       "key": "fund_flow:2609:26:51.3",
