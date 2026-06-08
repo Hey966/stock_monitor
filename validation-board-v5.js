@@ -1,6 +1,9 @@
 (() => {
   const API = 'https://stock-monitor-b6d6.onrender.com';
   const $ = (s) => document.querySelector(s);
+  let latestRows = [];
+  let latestPerf = null;
+  let latestReplay = null;
 
   const MODULE_LABELS = {
     ai_pool: '選股池實測',
@@ -52,10 +55,6 @@
     return row.win_rate_30m ?? null;
   }
 
-  function settledCountFromLatest(row) {
-    return (row?.latest || []).filter(x => Number.isFinite(Number((x.results || {}).pct_30m))).length;
-  }
-
   function metricText(row) {
     if (!hasSignals(row)) return '-';
     const rate = realWinRate(row);
@@ -95,11 +94,142 @@
     }, `${label} 尚無績效紀錄`);
   }
 
+  function num(v) {
+    const n = Number(v);
+    return Number.isFinite(n) ? n : '';
+  }
+
+  function returnPct(entry, close) {
+    const e = Number(entry);
+    const c = Number(close);
+    if (!Number.isFinite(e) || !Number.isFinite(c) || e === 0) return '';
+    return Number((((c - e) / e) * 100).toFixed(2));
+  }
+
+  function validationResult(row) {
+    const finalResult = row.final_result || row.finalResult || row.level || row.action || '';
+    const ret = returnPct(row.entry_price ?? row.close ?? row.price, row.close_price ?? row.close_result ?? row.results?.close_price);
+    if (!/可進場|entry|strong/i.test(String(finalResult))) return '觀察';
+    if (ret === '') return '待收盤';
+    return Number(ret) > 0 ? '成功' : '失敗';
+  }
+
+  function collectRows(perf, replay) {
+    const rows = [];
+    (perf?.modules || []).forEach(module => {
+      (module.latest || []).forEach((x, i) => {
+        rows.push({
+          source: MODULE_LABELS[module.module] || module.module,
+          rank: i + 1,
+          code: x.code,
+          name: x.name || '',
+          analysis_time: x.time || x.created_at || '',
+          entry_price: x.entry_price ?? x.close ?? x.price ?? '',
+          close_price: x.results?.close_price ?? x.results?.latest_price ?? '',
+          high_price: x.results?.high_price ?? '',
+          low_price: x.results?.low_price ?? '',
+          final_result: x.final_result || x.level || x.action || '',
+          final_score: x.final_score ?? x.score ?? '',
+          rule_score: x.rule_score ?? '',
+          pro_score: x.pro_score ?? x.score ?? '',
+          group_score: x.group_score ?? x.sector_score ?? '',
+          news_score: x.news_score ?? '',
+          chip_score: x.chip_score ?? '',
+          trap: x.trap ?? x.trap_block ?? '',
+          no_chase: x.no_chase ?? x.chase_block ?? '',
+          above_vwap: x.above_vwap ?? '',
+          pullback_confirmed: x.pullback_confirmed ?? '',
+          discord_pushed: x.discord_pushed ?? (i < 5 && module.module === 'ai_pool'),
+          return_pct: x.results?.latest_pct ?? x.results?.pct_30m ?? '',
+          max_profit_pct: x.results?.max_gain ?? '',
+          max_drawdown_pct: x.results?.max_loss ?? '',
+          validation_result: validationResult(x)
+        });
+      });
+    });
+
+    (replay?.latest || []).slice().reverse().forEach((x, i) => {
+      rows.push({
+        source: 'Replay實測',
+        rank: i + 1,
+        code: x.code,
+        name: x.name || '',
+        analysis_time: x.time || x.created_at || '',
+        entry_price: x.entry_price ?? x.close ?? '',
+        close_price: x.results?.close_price ?? x.results?.latest_price ?? '',
+        high_price: x.results?.high_price ?? '',
+        low_price: x.results?.low_price ?? '',
+        final_result: x.final_result || x.level || '',
+        final_score: x.final_score ?? x.score ?? '',
+        rule_score: x.rule_score ?? '',
+        pro_score: x.pro_score ?? x.score ?? '',
+        group_score: x.group_score ?? '',
+        news_score: x.news_score ?? '',
+        chip_score: x.chip_score ?? '',
+        trap: x.trap ?? x.trap_block ?? '',
+        no_chase: x.no_chase ?? '',
+        above_vwap: x.above_vwap ?? '',
+        pullback_confirmed: x.pullback_confirmed ?? '',
+        discord_pushed: x.discord_pushed ?? false,
+        return_pct: x.results?.latest_pct ?? x.results?.pct_30m ?? '',
+        max_profit_pct: x.results?.max_gain ?? '',
+        max_drawdown_pct: x.results?.max_loss ?? '',
+        validation_result: validationResult(x)
+      });
+    });
+    return rows;
+  }
+
+  function csvEscape(v) {
+    const text = String(v ?? '');
+    if (/[",\n\r]/.test(text)) return `"${text.replace(/"/g, '""')}"`;
+    return text;
+  }
+
+  function downloadCsv() {
+    const headers = [
+      'date','source','analysis_time','rank','stock_id','stock_name','entry_price','close_price','high_price','low_price','final_result','final_score','rule_score','pro_score','group_score','news_score','chip_score','trap','no_chase','above_vwap','pullback_confirmed','discord_pushed','return_pct','max_profit_pct','max_drawdown_pct','validation_result'
+    ];
+    const today = new Date().toISOString().slice(0, 10);
+    const body = latestRows.map(row => [
+      today,row.source,row.analysis_time,row.rank,row.code,row.name,row.entry_price,row.close_price,row.high_price,row.low_price,row.final_result,row.final_score,row.rule_score,row.pro_score,row.group_score,row.news_score,row.chip_score,row.trap,row.no_chase,row.above_vwap,row.pullback_confirmed,row.discord_pushed,row.return_pct,row.max_profit_pct,row.max_drawdown_pct,row.validation_result
+    ].map(csvEscape).join(','));
+    const csv = [headers.join(','), ...body].join('\n');
+    const blob = new Blob(['\ufeff' + csv], { type: 'text/csv;charset=utf-8;' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `STX_validation_${today}.csv`;
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+    URL.revokeObjectURL(url);
+  }
+
+  function ensureDownloadPanel() {
+    if ($('#validationDownloadPanel')) return;
+    const page = $('#page-validation');
+    if (!page) return;
+    const panel = document.createElement('section');
+    panel.id = 'validationDownloadPanel';
+    panel.className = 'analysis-panel terminal-analysis-board';
+    panel.innerHTML = `
+      <h3>下載當日驗證結果</h3>
+      <p id="validationDownloadText">系統會匯出今日即時分析、收盤比對、報酬率與驗證結果。下載後可上傳給 ChatGPT 判斷如何修正模型。</p>
+      <div class="watch-input" style="margin-top:12px">
+        <input id="validationRowsCount" readonly value="等待資料" />
+        <button id="downloadValidationCsv">下載CSV</button>
+      </div>
+    `;
+    page.appendChild(panel);
+  }
+
   async function refreshValidationBoard() {
     const title = $('#validationTitle');
     if (!title) return;
+    ensureDownloadPanel();
     setText('#validationTitle', '讀取實測中…');
-    setText('#validationSummary', '正在讀取正式實測績效紀錄。');
+    setText('#validationSummary', '正在讀取當日即時分析與正式實測績效紀錄。');
 
     const [perfRes, replayRes] = await Promise.allSettled([
       getJson('/api/performance'),
@@ -108,18 +238,21 @@
 
     const perf = perfRes.status === 'fulfilled' ? perfRes.value : null;
     const replay = replayRes.status === 'fulfilled' ? replayRes.value : null;
+    latestPerf = perf;
+    latestReplay = replay;
+    latestRows = collectRows(perf, replay);
 
     const pool = moduleByName(perf, 'ai_pool');
     const breakout = moduleByName(perf, 'breakout');
     const fund = moduleByName(perf, 'fund_flow');
-    const total = perf?.total_signals ?? 0;
-    const tracked = perf?.tracked_results ?? 0;
+    const total = perf?.total_signals ?? latestRows.length;
+    const tracked = perf?.tracked_results ?? latestRows.filter(x => x.validation_result !== '待收盤').length;
     const poolWin = win(realWinRate(pool));
     const fundWin = win(realWinRate(fund));
     const breakoutWin = win(realWinRate(breakout));
 
     setText('#validationTitle', '實測績效中心');
-    setText('#validationSummary', `正式實測 ${total} 筆，已追蹤 ${tracked} 筆。選股池 ${poolWin}｜資金流 ${fundWin}｜突破 ${breakoutWin}。`);
+    setText('#validationSummary', `正式實測 ${total} 筆，已追蹤 ${tracked} 筆。選股池 ${poolWin}｜資金流 ${fundWin}｜突破 ${breakoutWin}。可於頁面最下方下載 CSV。`);
 
     renderModule(1, pool, MODULE_LABELS.ai_pool);
     renderModule(2, breakout, MODULE_LABELS.breakout);
@@ -139,11 +272,17 @@
       `Replay API：${replayOk ? '正常' : '異常'}`,
       `績效儲存：${perf?.github_enabled ? 'GitHub JSON' : '本機暫存'}`,
       `今日路徑：${perf?.github_path || '-'}`,
-      '自動推播：台灣時間 09:00～14:55'
+      '自動推播：只允許雷達頁全市場最終排名前5'
     ], (x) => `<span>${x}</span>`);
+
+    setText('#validationRowsCount', `可下載 ${latestRows.length} 筆`);
   }
 
   window.STX_VALIDATION_REFRESH = refreshValidationBoard;
+  window.STX_DOWNLOAD_VALIDATION_CSV = downloadCsv;
+  document.addEventListener('click', e => {
+    if (e.target && e.target.id === 'downloadValidationCsv') downloadCsv();
+  }, true);
   window.addEventListener('load', () => {
     setTimeout(refreshValidationBoard, 1200);
     setInterval(() => {
