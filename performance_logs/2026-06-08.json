@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-08T01:06:06.748805+00:00",
+  "updated_at": "2026-06-08T01:06:08.763716+00:00",
   "count": 73,
   "items": [
     {
@@ -312,25 +312,26 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T01:00:25.731751+00:00",
-      "updated_at": "2026-06-08T01:01:13.159008+00:00",
+      "updated_at": "2026-06-08T01:06:07.983906+00:00",
       "status": "open",
       "code": "3017",
       "name": "奇鋐",
       "sector": "AI散熱",
       "entry_price": 2370.0,
-      "last_price": 2385.0,
-      "best_price": 2385.0,
+      "last_price": 2400.0,
+      "best_price": 2400.0,
       "worst_price": 2370.0,
       "score": 40,
       "change_rate_at_signal": -8.84,
       "volume_ratio_at_signal": 0.11,
       "alert": null,
       "results": {
-        "latest_pct": 0.633,
-        "max_gain": 0.633,
-        "max_drawdown": 0.0
+        "latest_pct": 1.266,
+        "max_gain": 1.266,
+        "max_drawdown": 0.0,
+        "pct_5m": 1.266
       },
-      "age_minutes": 0.79
+      "age_minutes": 5.7
     },
     {
       "key": "ai_pool:2609:40:52.1",
@@ -1174,20 +1175,25 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T01:05:12.805223+00:00",
-      "updated_at": "2026-06-08T01:05:12.805224+00:00",
+      "updated_at": "2026-06-08T01:06:07.983931+00:00",
       "status": "open",
       "code": "3017",
       "name": "奇鋐",
       "sector": "AI散熱",
       "entry_price": 2415.0,
-      "last_price": 2415.0,
+      "last_price": 2400.0,
       "best_price": 2415.0,
-      "worst_price": 2415.0,
+      "worst_price": 2400.0,
       "score": 48,
       "change_rate_at_signal": -7.11,
       "volume_ratio_at_signal": 0.17,
       "alert": null,
-      "results": {}
+      "results": {
+        "latest_pct": -0.621,
+        "max_gain": 0.0,
+        "max_drawdown": -0.621
+      },
+      "age_minutes": 0.92
     },
     {
       "key": "ai_pool:3324:48:1030.0",
