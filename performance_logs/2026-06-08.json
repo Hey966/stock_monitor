@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-08T04:31:39.896520+00:00",
+  "updated_at": "2026-06-08T04:31:43.081144+00:00",
   "count": 578,
   "items": [
     {
@@ -176,13 +176,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T01:00:25.731693+00:00",
-      "updated_at": "2026-06-08T04:26:38.468916+00:00",
+      "updated_at": "2026-06-08T04:31:42.037512+00:00",
       "status": "open",
       "code": "2376",
       "name": "技嘉",
       "sector": "電腦週邊",
       "entry_price": 339.5,
-      "last_price": 344.0,
+      "last_price": 344.5,
       "best_price": 348.0,
       "worst_price": 339.0,
       "score": 48,
@@ -190,14 +190,14 @@
       "volume_ratio_at_signal": 0.07,
       "alert": null,
       "results": {
-        "latest_pct": 1.325,
+        "latest_pct": 1.473,
         "max_gain": 2.504,
         "max_drawdown": -0.147,
         "pct_5m": 0.0,
         "pct_10m": 1.178,
         "pct_30m": 1.62
       },
-      "age_minutes": 206.21
+      "age_minutes": 211.27
     },
     {
       "key": "ai_pool:8046:48:765.0",
@@ -596,13 +596,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T01:00:36.720178+00:00",
-      "updated_at": "2026-06-08T04:26:38.468939+00:00",
+      "updated_at": "2026-06-08T04:31:42.037538+00:00",
       "status": "open",
       "code": "2376",
       "name": "技嘉",
       "sector": "電腦週邊",
       "entry_price": 340.0,
-      "last_price": 344.0,
+      "last_price": 344.5,
       "best_price": 348.0,
       "worst_price": 339.0,
       "score": 30,
@@ -610,14 +610,14 @@
       "volume_ratio_at_signal": 0.07,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": 1.176,
+        "latest_pct": 1.324,
         "max_gain": 2.353,
         "max_drawdown": -0.294,
         "pct_5m": -0.147,
         "pct_10m": 1.029,
         "pct_30m": 1.471
       },
-      "age_minutes": 206.03
+      "age_minutes": 211.09
     },
     {
       "key": "fund_flow:5347:27:148.0",
@@ -1632,13 +1632,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T01:05:22.720701+00:00",
-      "updated_at": "2026-06-08T04:26:38.468953+00:00",
+      "updated_at": "2026-06-08T04:31:42.037557+00:00",
       "status": "open",
       "code": "2376",
       "name": "技嘉",
       "sector": "電腦週邊",
       "entry_price": 339.0,
-      "last_price": 344.0,
+      "last_price": 344.5,
       "best_price": 348.0,
       "worst_price": 339.0,
       "score": 32,
@@ -1646,14 +1646,14 @@
       "volume_ratio_at_signal": 0.14,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": 1.475,
+        "latest_pct": 1.622,
         "max_gain": 2.655,
         "max_drawdown": 0.0,
         "pct_5m": 1.327,
         "pct_10m": 1.327,
         "pct_30m": 1.77
       },
-      "age_minutes": 201.26
+      "age_minutes": 206.32
     },
     {
       "key": "fund_flow:2379:30:588.0",
@@ -2220,13 +2220,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T01:10:16.373983+00:00",
-      "updated_at": "2026-06-08T04:26:38.468964+00:00",
+      "updated_at": "2026-06-08T04:31:42.037571+00:00",
       "status": "open",
       "code": "2376",
       "name": "技嘉",
       "sector": "電腦週邊",
       "entry_price": 343.0,
-      "last_price": 344.0,
+      "last_price": 344.5,
       "best_price": 348.0,
       "worst_price": 343.0,
       "score": 56,
@@ -2234,14 +2234,14 @@
       "volume_ratio_at_signal": 0.19,
       "alert": null,
       "results": {
-        "latest_pct": 0.292,
+        "latest_pct": 0.437,
         "max_gain": 1.458,
         "max_drawdown": 0.0,
         "pct_5m": 0.146,
         "pct_10m": 0.583,
         "pct_30m": 0.583
       },
-      "age_minutes": 196.37
+      "age_minutes": 201.43
     },
     {
       "key": "ai_pool:2368:56:1255.0",
@@ -3004,13 +3004,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T01:15:15.735287+00:00",
-      "updated_at": "2026-06-08T04:26:38.468976+00:00",
+      "updated_at": "2026-06-08T04:31:42.037585+00:00",
       "status": "open",
       "code": "2376",
       "name": "技嘉",
       "sector": "電腦週邊",
       "entry_price": 345.0,
-      "last_price": 344.0,
+      "last_price": 344.5,
       "best_price": 348.0,
       "worst_price": 343.5,
       "score": 56,
@@ -3018,14 +3018,14 @@
       "volume_ratio_at_signal": 0.26,
       "alert": null,
       "results": {
-        "latest_pct": -0.29,
+        "latest_pct": -0.145,
         "max_gain": 0.87,
         "max_drawdown": -0.435,
         "pct_5m": 0.0,
         "pct_10m": 0.0,
         "pct_30m": 0.0
       },
-      "age_minutes": 191.38
+      "age_minutes": 196.44
     },
     {
       "key": "ai_pool:5347:56:150.0",
@@ -3648,13 +3648,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T01:15:26.200402+00:00",
-      "updated_at": "2026-06-08T04:26:38.468987+00:00",
+      "updated_at": "2026-06-08T04:31:42.037598+00:00",
       "status": "open",
       "code": "2376",
       "name": "技嘉",
       "sector": "電腦週邊",
       "entry_price": 344.0,
-      "last_price": 344.0,
+      "last_price": 344.5,
       "best_price": 348.0,
       "worst_price": 343.5,
       "score": 35,
@@ -3662,14 +3662,14 @@
       "volume_ratio_at_signal": 0.27,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": 0.0,
+        "latest_pct": 0.145,
         "max_gain": 1.163,
         "max_drawdown": -0.145,
         "pct_5m": 0.291,
         "pct_10m": 0.291,
         "pct_30m": 0.291
       },
-      "age_minutes": 191.2
+      "age_minutes": 196.26
     },
     {
       "key": "fund_flow:2324:34:37.5",
@@ -4264,13 +4264,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T02:35:13.181539+00:00",
-      "updated_at": "2026-06-08T04:26:38.468998+00:00",
+      "updated_at": "2026-06-08T04:31:42.037612+00:00",
       "status": "open",
       "code": "2376",
       "name": "技嘉",
       "sector": "電腦週邊",
       "entry_price": 345.5,
-      "last_price": 344.0,
+      "last_price": 344.5,
       "best_price": 348.0,
       "worst_price": 344.0,
       "score": 48,
@@ -4278,14 +4278,14 @@
       "volume_ratio_at_signal": 0.58,
       "alert": null,
       "results": {
-        "latest_pct": -0.434,
+        "latest_pct": -0.289,
         "max_gain": 0.724,
         "max_drawdown": -0.434,
         "pct_5m": 0.0,
         "pct_10m": 0.579,
         "pct_30m": 0.289
       },
-      "age_minutes": 111.42
+      "age_minutes": 116.48
     },
     {
       "key": "ai_pool:5347:48:152.5",
@@ -6280,13 +6280,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T02:50:15.303852+00:00",
-      "updated_at": "2026-06-08T04:26:38.469015+00:00",
+      "updated_at": "2026-06-08T04:31:42.037631+00:00",
       "status": "open",
       "code": "2376",
       "name": "技嘉",
       "sector": "電腦週邊",
       "entry_price": 347.5,
-      "last_price": 344.0,
+      "last_price": 344.5,
       "best_price": 348.0,
       "worst_price": 344.0,
       "score": 56,
@@ -6294,14 +6294,14 @@
       "volume_ratio_at_signal": 0.62,
       "alert": null,
       "results": {
-        "latest_pct": -1.007,
+        "latest_pct": -0.863,
         "max_gain": 0.144,
         "max_drawdown": -1.007,
         "pct_5m": -0.144,
         "pct_10m": -0.144,
         "pct_30m": -0.719
       },
-      "age_minutes": 96.39
+      "age_minutes": 101.45
     },
     {
       "key": "ai_pool:2330:51:2305.0",
@@ -7540,13 +7540,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T03:00:26.524710+00:00",
-      "updated_at": "2026-06-08T04:26:38.469031+00:00",
+      "updated_at": "2026-06-08T04:31:42.037648+00:00",
       "status": "open",
       "code": "2376",
       "name": "技嘉",
       "sector": "電腦週邊",
       "entry_price": 346.0,
-      "last_price": 344.0,
+      "last_price": 344.5,
       "best_price": 348.0,
       "worst_price": 344.0,
       "score": 56,
@@ -7554,14 +7554,14 @@
       "volume_ratio_at_signal": 0.63,
       "alert": null,
       "results": {
-        "latest_pct": -0.578,
+        "latest_pct": -0.434,
         "max_gain": 0.578,
         "max_drawdown": -0.578,
         "pct_5m": 0.145,
         "pct_10m": 0.145,
         "pct_30m": 0.145
       },
-      "age_minutes": 86.2
+      "age_minutes": 91.26
     },
     {
       "key": "ai_pool:5347:56:152.0",
@@ -8044,13 +8044,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T03:05:12.938705+00:00",
-      "updated_at": "2026-06-08T04:26:38.469042+00:00",
+      "updated_at": "2026-06-08T04:31:42.037659+00:00",
       "status": "open",
       "code": "2376",
       "name": "技嘉",
       "sector": "電腦週邊",
       "entry_price": 347.0,
-      "last_price": 344.0,
+      "last_price": 344.5,
       "best_price": 348.0,
       "worst_price": 344.0,
       "score": 56,
@@ -8058,14 +8058,14 @@
       "volume_ratio_at_signal": 0.63,
       "alert": null,
       "results": {
-        "latest_pct": -0.865,
+        "latest_pct": -0.72,
         "max_gain": 0.288,
         "max_drawdown": -0.865,
         "pct_5m": -0.144,
         "pct_10m": -0.432,
         "pct_30m": 0.0
       },
-      "age_minutes": 81.43
+      "age_minutes": 86.48
     },
     {
       "key": "ai_pool:2324:56:38.0",
@@ -8800,13 +8800,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T03:10:26.300080+00:00",
-      "updated_at": "2026-06-08T04:26:38.469053+00:00",
+      "updated_at": "2026-06-08T04:31:42.037667+00:00",
       "status": "open",
       "code": "2376",
       "name": "技嘉",
       "sector": "電腦週邊",
       "entry_price": 346.5,
-      "last_price": 344.0,
+      "last_price": 344.5,
       "best_price": 348.0,
       "worst_price": 344.0,
       "score": 34,
@@ -8814,14 +8814,14 @@
       "volume_ratio_at_signal": 0.63,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": -0.722,
+        "latest_pct": -0.577,
         "max_gain": 0.433,
         "max_drawdown": -0.722,
         "pct_5m": -0.289,
         "pct_10m": -0.433,
         "pct_30m": 0.289
       },
-      "age_minutes": 76.2
+      "age_minutes": 81.26
     },
     {
       "key": "fund_flow:2609:33:51.3",
@@ -9332,13 +9332,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T03:15:25.492254+00:00",
-      "updated_at": "2026-06-08T04:26:38.469063+00:00",
+      "updated_at": "2026-06-08T04:31:42.037673+00:00",
       "status": "open",
       "code": "2376",
       "name": "技嘉",
       "sector": "電腦週邊",
       "entry_price": 345.5,
-      "last_price": 344.0,
+      "last_price": 344.5,
       "best_price": 348.0,
       "worst_price": 344.0,
       "score": 25,
@@ -9346,14 +9346,14 @@
       "volume_ratio_at_signal": 0.64,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": -0.434,
+        "latest_pct": -0.289,
         "max_gain": 0.724,
         "max_drawdown": -0.434,
         "pct_5m": -0.145,
         "pct_10m": 0.289,
         "pct_30m": 0.724
       },
-      "age_minutes": 71.22
+      "age_minutes": 76.28
     },
     {
       "key": "fund_flow:2324:25:37.95",
@@ -9752,13 +9752,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T03:20:14.903022+00:00",
-      "updated_at": "2026-06-08T04:26:38.469073+00:00",
+      "updated_at": "2026-06-08T04:31:42.037679+00:00",
       "status": "open",
       "code": "2376",
       "name": "技嘉",
       "sector": "電腦週邊",
       "entry_price": 345.0,
-      "last_price": 344.0,
+      "last_price": 344.5,
       "best_price": 348.0,
       "worst_price": 344.0,
       "score": 40,
@@ -9766,14 +9766,14 @@
       "volume_ratio_at_signal": 0.64,
       "alert": null,
       "results": {
-        "latest_pct": -0.29,
+        "latest_pct": -0.145,
         "max_gain": 0.87,
         "max_drawdown": -0.29,
         "pct_5m": 0.435,
         "pct_10m": 0.435,
         "pct_30m": 0.725
       },
-      "age_minutes": 66.39
+      "age_minutes": 71.45
     },
     {
       "key": "ai_pool:2454:38:4035.0",
@@ -9948,13 +9948,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T03:20:25.739838+00:00",
-      "updated_at": "2026-06-08T04:26:38.469082+00:00",
+      "updated_at": "2026-06-08T04:31:42.037684+00:00",
       "status": "open",
       "code": "2376",
       "name": "技嘉",
       "sector": "電腦週邊",
       "entry_price": 345.0,
-      "last_price": 344.0,
+      "last_price": 344.5,
       "best_price": 348.0,
       "worst_price": 344.0,
       "score": 24,
@@ -9962,14 +9962,14 @@
       "volume_ratio_at_signal": 0.65,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": -0.29,
+        "latest_pct": -0.145,
         "max_gain": 0.87,
         "max_drawdown": -0.29,
         "pct_5m": 0.435,
         "pct_10m": 0.435,
         "pct_30m": 0.725
       },
-      "age_minutes": 66.21
+      "age_minutes": 71.27
     },
     {
       "key": "fund_flow:2324:23:37.95",
@@ -11068,13 +11068,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T03:30:19.536049+00:00",
-      "updated_at": "2026-06-08T04:26:38.469094+00:00",
+      "updated_at": "2026-06-08T04:31:42.037692+00:00",
       "status": "open",
       "code": "2376",
       "name": "技嘉",
       "sector": "電腦週邊",
       "entry_price": 346.5,
-      "last_price": 344.0,
+      "last_price": 344.5,
       "best_price": 348.0,
       "worst_price": 344.0,
       "score": 38,
@@ -11082,14 +11082,14 @@
       "volume_ratio_at_signal": 0.66,
       "alert": null,
       "results": {
-        "latest_pct": -0.722,
+        "latest_pct": -0.577,
         "max_gain": 0.433,
         "max_drawdown": -0.722,
         "pct_5m": 0.144,
         "pct_10m": 0.289,
         "pct_30m": 0.144
       },
-      "age_minutes": 56.32
+      "age_minutes": 61.38
     },
     {
       "key": "fund_flow:2368:83:1340.0",
@@ -11460,13 +11460,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T03:35:12.413727+00:00",
-      "updated_at": "2026-06-08T04:26:38.469103+00:00",
+      "updated_at": "2026-06-08T04:31:42.037698+00:00",
       "status": "open",
       "code": "2376",
       "name": "技嘉",
       "sector": "電腦週邊",
       "entry_price": 346.5,
-      "last_price": 344.0,
+      "last_price": 344.5,
       "best_price": 348.0,
       "worst_price": 344.0,
       "score": 48,
@@ -11474,14 +11474,14 @@
       "volume_ratio_at_signal": 0.66,
       "alert": null,
       "results": {
-        "latest_pct": -0.722,
+        "latest_pct": -0.577,
         "max_gain": 0.433,
         "max_drawdown": -0.722,
         "pct_5m": 0.289,
         "pct_10m": 0.433,
         "pct_30m": -0.144
       },
-      "age_minutes": 51.43
+      "age_minutes": 56.49
     },
     {
       "key": "ai_pool:2379:48:597.0",
@@ -11936,13 +11936,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T03:40:16.271592+00:00",
-      "updated_at": "2026-06-08T04:26:38.469112+00:00",
+      "updated_at": "2026-06-08T04:31:42.037704+00:00",
       "status": "open",
       "code": "2376",
       "name": "技嘉",
       "sector": "電腦週邊",
       "entry_price": 347.5,
-      "last_price": 344.0,
+      "last_price": 344.5,
       "best_price": 348.0,
       "worst_price": 344.0,
       "score": 38,
@@ -11950,14 +11950,14 @@
       "volume_ratio_at_signal": 0.67,
       "alert": null,
       "results": {
-        "latest_pct": -1.007,
+        "latest_pct": -0.863,
         "max_gain": 0.144,
         "max_drawdown": -1.007,
         "pct_5m": 0.144,
         "pct_10m": 0.0,
         "pct_30m": -0.432
       },
-      "age_minutes": 46.37
+      "age_minutes": 51.43
     },
     {
       "key": "fund_flow:8046:73:841.0",
@@ -14579,13 +14579,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T04:15:24.781703+00:00",
-      "updated_at": "2026-06-08T04:26:38.469130+00:00",
+      "updated_at": "2026-06-08T04:31:42.037715+00:00",
       "status": "open",
       "code": "2376",
       "name": "技嘉",
       "sector": "電腦週邊",
       "entry_price": 345.5,
-      "last_price": 344.0,
+      "last_price": 344.5,
       "best_price": 345.5,
       "worst_price": 344.0,
       "score": 30,
@@ -14593,13 +14593,13 @@
       "volume_ratio_at_signal": 0.71,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": -0.434,
+        "latest_pct": -0.289,
         "max_gain": 0.0,
         "max_drawdown": -0.434,
         "pct_5m": -0.145,
         "pct_10m": -0.434
       },
-      "age_minutes": 11.23
+      "age_minutes": 16.29
     },
     {
       "key": "fund_flow:2344:33:155.5",
@@ -15060,13 +15060,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T04:20:25.741324+00:00",
-      "updated_at": "2026-06-08T04:26:38.469140+00:00",
+      "updated_at": "2026-06-08T04:31:42.037722+00:00",
       "status": "open",
       "code": "2376",
       "name": "技嘉",
       "sector": "電腦週邊",
       "entry_price": 345.0,
-      "last_price": 344.0,
+      "last_price": 344.5,
       "best_price": 345.0,
       "worst_price": 344.0,
       "score": 35,
@@ -15074,12 +15074,13 @@
       "volume_ratio_at_signal": 0.72,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": -0.29,
+        "latest_pct": -0.145,
         "max_gain": 0.0,
         "max_drawdown": -0.29,
-        "pct_5m": -0.29
+        "pct_5m": -0.29,
+        "pct_10m": -0.145
       },
-      "age_minutes": 6.21
+      "age_minutes": 11.27
     },
     {
       "key": "fund_flow:3481:6:48.35",
@@ -15265,25 +15266,26 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T04:25:12.669760+00:00",
-      "updated_at": "2026-06-08T04:26:38.469149+00:00",
+      "updated_at": "2026-06-08T04:31:42.037728+00:00",
       "status": "open",
       "code": "2376",
       "name": "技嘉",
       "sector": "電腦週邊",
       "entry_price": 344.0,
-      "last_price": 344.0,
-      "best_price": 344.0,
+      "last_price": 344.5,
+      "best_price": 344.5,
       "worst_price": 344.0,
       "score": 48,
       "change_rate_at_signal": -6.77,
       "volume_ratio_at_signal": 0.73,
       "alert": null,
       "results": {
-        "latest_pct": 0.0,
-        "max_gain": 0.0,
-        "max_drawdown": 0.0
+        "latest_pct": 0.145,
+        "max_gain": 0.145,
+        "max_drawdown": 0.0,
+        "pct_5m": 0.145
       },
-      "age_minutes": 1.43
+      "age_minutes": 6.49
     },
     {
       "key": "ai_pool:1514:40:122.0",
@@ -15897,7 +15899,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T04:30:31.692843+00:00",
-      "updated_at": "2026-06-08T04:30:31.692844+00:00",
+      "updated_at": "2026-06-08T04:31:42.037736+00:00",
       "status": "open",
       "code": "2376",
       "name": "技嘉",
@@ -15910,7 +15912,12 @@
       "change_rate_at_signal": -6.63,
       "volume_ratio_at_signal": 0.73,
       "alert": "資金退潮警報",
-      "results": {}
+      "results": {
+        "latest_pct": 0.0,
+        "max_gain": 0.0,
+        "max_drawdown": 0.0
+      },
+      "age_minutes": 1.17
     },
     {
       "key": "fund_flow:2618:24:36.25",
