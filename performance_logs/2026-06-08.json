@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-08T02:36:56.126615+00:00",
+  "updated_at": "2026-06-08T02:36:58.409522+00:00",
   "count": 169,
   "items": [
     {
@@ -959,7 +959,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T01:00:36.720320+00:00",
-      "updated_at": "2026-06-08T01:16:53.840898+00:00",
+      "updated_at": "2026-06-08T02:36:57.642415+00:00",
       "status": "open",
       "code": "2409",
       "name": "友達",
@@ -977,9 +977,10 @@
         "max_gain": 0.0,
         "max_drawdown": 0.0,
         "pct_5m": 0.0,
-        "pct_10m": 0.0
+        "pct_10m": 0.0,
+        "pct_30m": 0.0
       },
-      "age_minutes": 16.29
+      "age_minutes": 96.35
     },
     {
       "key": "fund_flow:3481:2:48.35",
@@ -1990,7 +1991,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T01:05:22.720825+00:00",
-      "updated_at": "2026-06-08T01:16:53.840925+00:00",
+      "updated_at": "2026-06-08T02:36:57.642435+00:00",
       "status": "open",
       "code": "2409",
       "name": "友達",
@@ -2008,9 +2009,10 @@
         "max_gain": 0.0,
         "max_drawdown": 0.0,
         "pct_5m": 0.0,
-        "pct_10m": 0.0
+        "pct_10m": 0.0,
+        "pct_30m": 0.0
       },
-      "age_minutes": 11.52
+      "age_minutes": 91.58
     },
     {
       "key": "fund_flow:2344:2:146.0",
