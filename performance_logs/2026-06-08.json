@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-08T02:41:13.546932+00:00",
+  "updated_at": "2026-06-08T02:41:16.019597+00:00",
   "count": 192,
   "items": [
     {
@@ -1352,7 +1352,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T01:05:12.805230+00:00",
-      "updated_at": "2026-06-08T02:36:15.587580+00:00",
+      "updated_at": "2026-06-08T02:41:15.024062+00:00",
       "status": "open",
       "code": "3324",
       "name": "雙鴻",
@@ -1373,7 +1373,7 @@
         "pct_10m": 0.0,
         "pct_30m": 3.398
       },
-      "age_minutes": 91.05
+      "age_minutes": 96.04
     },
     {
       "key": "ai_pool:3661:48:3995.0",
@@ -2192,7 +2192,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T01:10:16.373977+00:00",
-      "updated_at": "2026-06-08T02:36:15.587605+00:00",
+      "updated_at": "2026-06-08T02:41:15.024086+00:00",
       "status": "open",
       "code": "3324",
       "name": "雙鴻",
@@ -2213,7 +2213,7 @@
         "pct_10m": 2.899,
         "pct_30m": 2.899
       },
-      "age_minutes": 85.99
+      "age_minutes": 90.98
     },
     {
       "key": "ai_pool:2376:56:343.0",
@@ -2612,7 +2612,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T01:10:27.018765+00:00",
-      "updated_at": "2026-06-08T02:36:15.587619+00:00",
+      "updated_at": "2026-06-08T02:41:15.024100+00:00",
       "status": "open",
       "code": "3324",
       "name": "雙鴻",
@@ -2633,7 +2633,7 @@
         "pct_10m": 3.398,
         "pct_30m": 3.398
       },
-      "age_minutes": 85.81
+      "age_minutes": 90.8
     },
     {
       "key": "fund_flow:2368:32:1255.0",
@@ -3116,7 +3116,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T01:15:15.735327+00:00",
-      "updated_at": "2026-06-08T02:36:15.587633+00:00",
+      "updated_at": "2026-06-08T02:41:15.024107+00:00",
       "status": "open",
       "code": "3324",
       "name": "雙鴻",
@@ -3137,7 +3137,7 @@
         "pct_10m": 3.902,
         "pct_30m": 3.902
       },
-      "age_minutes": 81.0
+      "age_minutes": 85.99
     },
     {
       "key": "ai_pool:2324:48:37.55",
@@ -3592,7 +3592,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T01:15:26.200389+00:00",
-      "updated_at": "2026-06-08T02:36:15.587646+00:00",
+      "updated_at": "2026-06-08T02:41:15.024113+00:00",
       "status": "open",
       "code": "3324",
       "name": "雙鴻",
@@ -3613,7 +3613,7 @@
         "pct_10m": 3.902,
         "pct_30m": 3.902
       },
-      "age_minutes": 80.82
+      "age_minutes": 85.81
     },
     {
       "key": "fund_flow:3661:32:3970.0",
@@ -4058,7 +4058,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T02:35:13.181490+00:00",
-      "updated_at": "2026-06-08T02:36:15.587658+00:00",
+      "updated_at": "2026-06-08T02:41:15.024120+00:00",
       "status": "open",
       "code": "3324",
       "name": "雙鴻",
@@ -4074,9 +4074,10 @@
       "results": {
         "latest_pct": 0.0,
         "max_gain": 0.0,
-        "max_drawdown": 0.0
+        "max_drawdown": 0.0,
+        "pct_5m": 0.0
       },
-      "age_minutes": 1.04
+      "age_minutes": 6.03
     },
     {
       "key": "ai_pool:3661:56:4110.0",
