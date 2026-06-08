@@ -1,7 +1,7 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-08T03:05:14.646380+00:00",
-  "count": 296,
+  "updated_at": "2026-06-08T03:05:24.983797+00:00",
+  "count": 298,
   "items": [
     {
       "key": "ai_pool:2379:56:588.0",
@@ -7972,6 +7972,46 @@
       "change_rate_at_signal": -2.34,
       "volume_ratio_at_signal": 0.34,
       "alert": null,
+      "results": {}
+    },
+    {
+      "key": "fund_flow:2618:35:35.95",
+      "module": "fund_flow",
+      "reason": "api_fund_flow",
+      "created_at": "2026-06-08T03:05:23.775324+00:00",
+      "updated_at": "2026-06-08T03:05:23.775327+00:00",
+      "status": "open",
+      "code": "2618",
+      "name": "長榮航",
+      "sector": "航運",
+      "entry_price": 35.95,
+      "last_price": 35.95,
+      "best_price": 35.95,
+      "worst_price": 35.95,
+      "score": 35,
+      "change_rate_at_signal": -4.64,
+      "volume_ratio_at_signal": 0.83,
+      "alert": "資金退潮警報",
+      "results": {}
+    },
+    {
+      "key": "fund_flow:2609:19:51.3",
+      "module": "fund_flow",
+      "reason": "api_fund_flow",
+      "created_at": "2026-06-08T03:05:23.775476+00:00",
+      "updated_at": "2026-06-08T03:05:23.775479+00:00",
+      "status": "open",
+      "code": "2609",
+      "name": "陽明",
+      "sector": "航運",
+      "entry_price": 51.3,
+      "last_price": 51.3,
+      "best_price": 51.3,
+      "worst_price": 51.3,
+      "score": 19,
+      "change_rate_at_signal": -5.87,
+      "volume_ratio_at_signal": 0.41,
+      "alert": "資金退潮警報",
       "results": {}
     }
   ]
