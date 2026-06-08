@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-08T06:57:31.033446+00:00",
+  "updated_at": "2026-06-08T06:57:34.539693+00:00",
   "count": 737,
   "items": [
     {
@@ -7548,8 +7548,8 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T02:55:21.687936+00:00",
-      "updated_at": "2026-06-08T06:52:30.916504+00:00",
-      "status": "open",
+      "updated_at": "2026-06-08T06:57:33.637144+00:00",
+      "status": "closed",
       "code": "2609",
       "name": "陽明",
       "sector": "航運",
@@ -7567,9 +7567,10 @@
         "max_drawdown": -0.195,
         "pct_5m": 0.0,
         "pct_10m": -0.195,
-        "pct_30m": 0.195
+        "pct_30m": 0.195,
+        "pct_close_proxy": 0.78
       },
-      "age_minutes": 237.15
+      "age_minutes": 242.2
     },
     {
       "key": "ai_pool:2330:70:2310.0",
@@ -7996,7 +7997,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T03:00:37.352580+00:00",
-      "updated_at": "2026-06-08T06:52:30.916516+00:00",
+      "updated_at": "2026-06-08T06:57:33.637163+00:00",
       "status": "open",
       "code": "2609",
       "name": "陽明",
@@ -8017,7 +8018,7 @@
         "pct_10m": 0.195,
         "pct_30m": 0.195
       },
-      "age_minutes": 231.89
+      "age_minutes": 236.94
     },
     {
       "key": "ai_pool:2368:82:1345.0",
@@ -8472,7 +8473,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T03:05:23.775476+00:00",
-      "updated_at": "2026-06-08T06:52:30.916526+00:00",
+      "updated_at": "2026-06-08T06:57:33.637172+00:00",
       "status": "open",
       "code": "2609",
       "name": "陽明",
@@ -8493,7 +8494,7 @@
         "pct_10m": 0.195,
         "pct_30m": 0.195
       },
-      "age_minutes": 227.12
+      "age_minutes": 232.16
     },
     {
       "key": "ai_pool:2368:77:1335.0",
@@ -8976,7 +8977,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T03:10:26.300146+00:00",
-      "updated_at": "2026-06-08T06:52:30.916537+00:00",
+      "updated_at": "2026-06-08T06:57:33.637179+00:00",
       "status": "open",
       "code": "2609",
       "name": "陽明",
@@ -8997,7 +8998,7 @@
         "pct_10m": 0.0,
         "pct_30m": 0.78
       },
-      "age_minutes": 222.08
+      "age_minutes": 227.12
     },
     {
       "key": "fund_flow:2618:25:36.0",
@@ -9592,7 +9593,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T03:15:25.492369+00:00",
-      "updated_at": "2026-06-08T06:52:30.916550+00:00",
+      "updated_at": "2026-06-08T06:57:33.637187+00:00",
       "status": "open",
       "code": "2609",
       "name": "陽明",
@@ -9613,7 +9614,7 @@
         "pct_10m": 0.391,
         "pct_30m": 0.586
       },
-      "age_minutes": 217.09
+      "age_minutes": 222.14
     },
     {
       "key": "ai_pool:8046:73:830.0",
@@ -10180,7 +10181,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T03:20:25.739889+00:00",
-      "updated_at": "2026-06-08T06:52:30.916562+00:00",
+      "updated_at": "2026-06-08T06:57:33.637193+00:00",
       "status": "open",
       "code": "2609",
       "name": "陽明",
@@ -10201,7 +10202,7 @@
         "pct_10m": 0.195,
         "pct_30m": 0.78
       },
-      "age_minutes": 212.09
+      "age_minutes": 217.13
     },
     {
       "key": "ai_pool:2330:69:2305.0",
@@ -10796,7 +10797,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T03:25:22.676923+00:00",
-      "updated_at": "2026-06-08T06:52:30.916573+00:00",
+      "updated_at": "2026-06-08T06:57:33.637200+00:00",
       "status": "open",
       "code": "2609",
       "name": "陽明",
@@ -10817,7 +10818,7 @@
         "pct_10m": 0.195,
         "pct_30m": 0.585
       },
-      "age_minutes": 207.14
+      "age_minutes": 212.18
     },
     {
       "key": "ai_pool:2368:87:1340.0",
@@ -11356,7 +11357,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T03:30:30.308640+00:00",
-      "updated_at": "2026-06-08T06:52:30.916583+00:00",
+      "updated_at": "2026-06-08T06:57:33.637207+00:00",
       "status": "open",
       "code": "2609",
       "name": "陽明",
@@ -11377,7 +11378,7 @@
         "pct_10m": 0.584,
         "pct_30m": 0.0
       },
-      "age_minutes": 202.01
+      "age_minutes": 207.06
     },
     {
       "key": "ai_pool:8046:64:842.0",
@@ -11804,7 +11805,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T03:35:22.953024+00:00",
-      "updated_at": "2026-06-08T06:52:30.916593+00:00",
+      "updated_at": "2026-06-08T06:57:33.637213+00:00",
       "status": "open",
       "code": "2609",
       "name": "陽明",
@@ -11825,7 +11826,7 @@
         "pct_10m": -0.194,
         "pct_30m": 0.194
       },
-      "age_minutes": 197.13
+      "age_minutes": 202.18
     },
     {
       "key": "ai_pool:8046:81:841.0",
@@ -12196,7 +12197,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T03:40:26.938200+00:00",
-      "updated_at": "2026-06-08T06:52:30.916604+00:00",
+      "updated_at": "2026-06-08T06:57:33.637220+00:00",
       "status": "open",
       "code": "2609",
       "name": "陽明",
@@ -12217,7 +12218,7 @@
         "pct_10m": 0.0,
         "pct_30m": -0.387
       },
-      "age_minutes": 192.07
+      "age_minutes": 197.11
     },
     {
       "key": "fund_flow:2618:30:36.1",
@@ -12644,7 +12645,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T03:45:26.283053+00:00",
-      "updated_at": "2026-06-08T06:52:30.916615+00:00",
+      "updated_at": "2026-06-08T06:57:33.637226+00:00",
       "status": "open",
       "code": "2609",
       "name": "陽明",
@@ -12665,7 +12666,7 @@
         "pct_10m": 0.389,
         "pct_30m": -0.195
       },
-      "age_minutes": 187.08
+      "age_minutes": 192.12
     },
     {
       "key": "fund_flow:2618:25:36.15",
@@ -13008,7 +13009,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T03:50:26.407851+00:00",
-      "updated_at": "2026-06-08T06:52:30.916627+00:00",
+      "updated_at": "2026-06-08T06:57:33.637232+00:00",
       "status": "open",
       "code": "2609",
       "name": "陽明",
@@ -13029,7 +13030,7 @@
         "pct_10m": -0.194,
         "pct_30m": 0.0
       },
-      "age_minutes": 182.08
+      "age_minutes": 187.12
     },
     {
       "key": "ai_pool:8046:78:836.0",
@@ -13372,7 +13373,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T03:55:22.253499+00:00",
-      "updated_at": "2026-06-08T06:52:30.916637+00:00",
+      "updated_at": "2026-06-08T06:57:33.637238+00:00",
       "status": "open",
       "code": "2609",
       "name": "陽明",
@@ -13393,7 +13394,7 @@
         "pct_10m": 0.194,
         "pct_30m": -0.581
       },
-      "age_minutes": 177.14
+      "age_minutes": 182.19
     },
     {
       "key": "ai_pool:3037:69:910.0",
@@ -13596,7 +13597,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T04:00:36.448321+00:00",
-      "updated_at": "2026-06-08T06:52:30.916660+00:00",
+      "updated_at": "2026-06-08T06:57:33.637244+00:00",
       "status": "open",
       "code": "2609",
       "name": "陽明",
@@ -13617,7 +13618,7 @@
         "pct_10m": 0.0,
         "pct_30m": -0.194
       },
-      "age_minutes": 171.91
+      "age_minutes": 176.95
     },
     {
       "key": "ai_pool:2368:74:1350.0",
@@ -13988,7 +13989,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T04:05:23.013602+00:00",
-      "updated_at": "2026-06-08T06:52:30.916672+00:00",
+      "updated_at": "2026-06-08T06:57:33.637250+00:00",
       "status": "open",
       "code": "2609",
       "name": "陽明",
@@ -14009,7 +14010,7 @@
         "pct_10m": -0.774,
         "pct_30m": -0.58
       },
-      "age_minutes": 167.13
+      "age_minutes": 172.18
     },
     {
       "key": "ai_pool:2368:84:1350.0",
@@ -14324,7 +14325,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T04:10:26.645571+00:00",
-      "updated_at": "2026-06-08T06:52:30.916682+00:00",
+      "updated_at": "2026-06-08T06:57:33.637256+00:00",
       "status": "open",
       "code": "2609",
       "name": "陽明",
@@ -14345,7 +14346,7 @@
         "pct_10m": 0.195,
         "pct_30m": -0.195
       },
-      "age_minutes": 162.07
+      "age_minutes": 167.12
     },
     {
       "key": "ai_pool:2368:92:1350.0",
@@ -15696,7 +15697,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T04:25:23.118750+00:00",
-      "updated_at": "2026-06-08T06:52:30.916700+00:00",
+      "updated_at": "2026-06-08T06:57:33.637265+00:00",
       "status": "open",
       "code": "2609",
       "name": "陽明",
@@ -15717,7 +15718,7 @@
         "pct_10m": 0.195,
         "pct_30m": 0.0
       },
-      "age_minutes": 147.13
+      "age_minutes": 152.18
     },
     {
       "key": "ai_pool:2368:90:1345.0",
@@ -16312,7 +16313,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T04:30:31.692888+00:00",
-      "updated_at": "2026-06-08T06:52:30.916712+00:00",
+      "updated_at": "2026-06-08T06:57:33.637272+00:00",
       "status": "open",
       "code": "2609",
       "name": "陽明",
@@ -16333,7 +16334,7 @@
         "pct_10m": 0.195,
         "pct_30m": 0.391
       },
-      "age_minutes": 141.99
+      "age_minutes": 147.03
     },
     {
       "key": "ai_pool:3661:56:4145.0",
@@ -16704,7 +16705,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T04:35:23.058045+00:00",
-      "updated_at": "2026-06-08T06:52:30.916722+00:00",
+      "updated_at": "2026-06-08T06:57:33.637277+00:00",
       "status": "open",
       "code": "2609",
       "name": "陽明",
@@ -16725,7 +16726,7 @@
         "pct_10m": 0.0,
         "pct_30m": 0.195
       },
-      "age_minutes": 137.13
+      "age_minutes": 142.18
     },
     {
       "key": "ai_pool:2308:58:2230.0",
@@ -17124,7 +17125,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T04:40:27.607697+00:00",
-      "updated_at": "2026-06-08T06:52:30.916732+00:00",
+      "updated_at": "2026-06-08T06:57:33.637283+00:00",
       "status": "open",
       "code": "2609",
       "name": "陽明",
@@ -17145,7 +17146,7 @@
         "pct_10m": 0.195,
         "pct_30m": 0.781
       },
-      "age_minutes": 132.06
+      "age_minutes": 137.1
     },
     {
       "key": "ai_pool:8046:75:832.0",
@@ -17516,7 +17517,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T04:45:26.544599+00:00",
-      "updated_at": "2026-06-08T06:52:30.916741+00:00",
+      "updated_at": "2026-06-08T06:57:33.637288+00:00",
       "status": "open",
       "code": "2609",
       "name": "陽明",
@@ -17537,7 +17538,7 @@
         "pct_10m": 0.0,
         "pct_30m": 0.585
       },
-      "age_minutes": 127.07
+      "age_minutes": 132.12
     },
     {
       "key": "ai_pool:2317:64:268.5",
@@ -17740,7 +17741,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T04:50:26.028685+00:00",
-      "updated_at": "2026-06-08T06:52:30.916749+00:00",
+      "updated_at": "2026-06-08T06:57:33.637294+00:00",
       "status": "open",
       "code": "2609",
       "name": "陽明",
@@ -17761,7 +17762,7 @@
         "pct_10m": 0.0,
         "pct_30m": 0.389
       },
-      "age_minutes": 122.08
+      "age_minutes": 127.13
     },
     {
       "key": "ai_pool:2368:100:1350.0",
@@ -18132,7 +18133,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T04:55:22.580937+00:00",
-      "updated_at": "2026-06-08T06:52:30.916759+00:00",
+      "updated_at": "2026-06-08T06:57:33.637299+00:00",
       "status": "open",
       "code": "2609",
       "name": "陽明",
@@ -18153,7 +18154,7 @@
         "pct_10m": 0.586,
         "pct_30m": 0.977
       },
-      "age_minutes": 117.14
+      "age_minutes": 122.18
     },
     {
       "key": "ai_pool:3037:68:908.0",
@@ -18608,7 +18609,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T05:00:41.803178+00:00",
-      "updated_at": "2026-06-08T06:52:30.916769+00:00",
+      "updated_at": "2026-06-08T06:57:33.637305+00:00",
       "status": "open",
       "code": "2609",
       "name": "陽明",
@@ -18629,7 +18630,7 @@
         "pct_10m": 0.194,
         "pct_30m": 0.388
       },
-      "age_minutes": 111.82
+      "age_minutes": 116.86
     },
     {
       "key": "ai_pool:2368:86:1360.0",
@@ -18972,7 +18973,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T05:05:27.188059+00:00",
-      "updated_at": "2026-06-08T06:52:30.916778+00:00",
+      "updated_at": "2026-06-08T06:57:33.637311+00:00",
       "status": "open",
       "code": "2609",
       "name": "陽明",
@@ -18993,7 +18994,7 @@
         "pct_10m": 0.0,
         "pct_30m": 0.194
       },
-      "age_minutes": 107.06
+      "age_minutes": 112.11
     },
     {
       "key": "ai_pool:2368:100:1360.0",
@@ -19448,7 +19449,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T05:10:27.697431+00:00",
-      "updated_at": "2026-06-08T06:52:30.916787+00:00",
+      "updated_at": "2026-06-08T06:57:33.637316+00:00",
       "status": "open",
       "code": "2609",
       "name": "陽明",
@@ -19469,7 +19470,7 @@
         "pct_10m": 0.389,
         "pct_30m": 0.584
       },
-      "age_minutes": 102.05
+      "age_minutes": 107.1
     },
     {
       "key": "ai_pool:2368:94:1355.0",
@@ -19756,7 +19757,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T05:15:26.040121+00:00",
-      "updated_at": "2026-06-08T06:52:30.916796+00:00",
+      "updated_at": "2026-06-08T06:57:33.637323+00:00",
       "status": "open",
       "code": "2609",
       "name": "陽明",
@@ -19777,7 +19778,7 @@
         "pct_10m": 0.388,
         "pct_30m": 0.388
       },
-      "age_minutes": 97.08
+      "age_minutes": 102.13
     },
     {
       "key": "ai_pool:2368:100:1355.0",
@@ -20120,7 +20121,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T05:20:30.982231+00:00",
-      "updated_at": "2026-06-08T06:52:30.916805+00:00",
+      "updated_at": "2026-06-08T06:57:33.637329+00:00",
       "status": "open",
       "code": "2609",
       "name": "陽明",
@@ -20141,7 +20142,7 @@
         "pct_10m": 0.194,
         "pct_30m": 0.194
       },
-      "age_minutes": 92.0
+      "age_minutes": 97.04
     },
     {
       "key": "ai_pool:2368:86:1365.0",
@@ -20792,7 +20793,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T05:30:30.939900+00:00",
-      "updated_at": "2026-06-08T06:52:30.916815+00:00",
+      "updated_at": "2026-06-08T06:57:33.637334+00:00",
       "status": "open",
       "code": "2609",
       "name": "陽明",
@@ -20813,7 +20814,7 @@
         "pct_10m": 0.0,
         "pct_30m": 0.0
       },
-      "age_minutes": 82.0
+      "age_minutes": 87.04
     },
     {
       "key": "ai_pool:2618:65:36.4",
