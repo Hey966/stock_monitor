@@ -1,7 +1,7 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-08T03:50:16.841126+00:00",
-  "count": 458,
+  "updated_at": "2026-06-08T03:50:27.851099+00:00",
+  "count": 460,
   "items": [
     {
       "key": "ai_pool:2379:56:588.0",
@@ -12588,6 +12588,46 @@
       "change_rate_at_signal": -2.84,
       "volume_ratio_at_signal": 0.63,
       "alert": null,
+      "results": {}
+    },
+    {
+      "key": "fund_flow:2368:85:1335.0",
+      "module": "fund_flow",
+      "reason": "api_fund_flow",
+      "created_at": "2026-06-08T03:50:26.407767+00:00",
+      "updated_at": "2026-06-08T03:50:26.407784+00:00",
+      "status": "open",
+      "code": "2368",
+      "name": "金像電",
+      "sector": "PCB",
+      "entry_price": 1335.0,
+      "last_price": 1335.0,
+      "best_price": 1335.0,
+      "worst_price": 1335.0,
+      "score": 85,
+      "change_rate_at_signal": 1.52,
+      "volume_ratio_at_signal": 0.69,
+      "alert": "大戶進場警報",
+      "results": {}
+    },
+    {
+      "key": "fund_flow:2609:9:51.5",
+      "module": "fund_flow",
+      "reason": "api_fund_flow",
+      "created_at": "2026-06-08T03:50:26.407851+00:00",
+      "updated_at": "2026-06-08T03:50:26.407854+00:00",
+      "status": "open",
+      "code": "2609",
+      "name": "陽明",
+      "sector": "航運",
+      "entry_price": 51.5,
+      "last_price": 51.5,
+      "best_price": 51.5,
+      "worst_price": 51.5,
+      "score": 9,
+      "change_rate_at_signal": -5.5,
+      "volume_ratio_at_signal": 0.52,
+      "alert": "資金退潮警報",
       "results": {}
     }
   ]
