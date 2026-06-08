@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-08T05:16:25.511370+00:00",
+  "updated_at": "2026-06-08T05:16:29.311375+00:00",
   "count": 700,
   "items": [
     {
@@ -3024,8 +3024,8 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T01:15:15.735249+00:00",
-      "updated_at": "2026-06-08T05:11:02.097264+00:00",
-      "status": "open",
+      "updated_at": "2026-06-08T05:16:27.774998+00:00",
+      "status": "closed",
       "code": "2308",
       "name": "台達電",
       "sector": "重電",
@@ -3043,9 +3043,10 @@
         "max_drawdown": -1.584,
         "pct_5m": -0.905,
         "pct_10m": -0.905,
-        "pct_30m": -0.905
+        "pct_30m": -0.905,
+        "pct_close_proxy": 1.357
       },
-      "age_minutes": 235.77
+      "age_minutes": 241.2
     },
     {
       "key": "ai_pool:3037:56:876.0",
@@ -4100,7 +4101,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T02:35:13.181472+00:00",
-      "updated_at": "2026-06-08T05:11:02.097274+00:00",
+      "updated_at": "2026-06-08T05:16:27.775026+00:00",
       "status": "open",
       "code": "2308",
       "name": "台達電",
@@ -4121,7 +4122,7 @@
         "pct_10m": -0.685,
         "pct_30m": 0.685
       },
-      "age_minutes": 155.82
+      "age_minutes": 161.24
     },
     {
       "key": "ai_pool:3037:56:902.0",
@@ -5164,7 +5165,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T02:40:15.266837+00:00",
-      "updated_at": "2026-06-08T05:11:02.097282+00:00",
+      "updated_at": "2026-06-08T05:16:27.775042+00:00",
       "status": "open",
       "code": "2308",
       "name": "台達電",
@@ -5185,7 +5186,7 @@
         "pct_10m": 0.229,
         "pct_30m": 1.144
       },
-      "age_minutes": 150.78
+      "age_minutes": 156.21
     },
     {
       "key": "ai_pool:1605:40:35.75",
@@ -5556,7 +5557,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T02:45:15.083147+00:00",
-      "updated_at": "2026-06-08T05:11:02.097289+00:00",
+      "updated_at": "2026-06-08T05:16:27.775054+00:00",
       "status": "open",
       "code": "2308",
       "name": "台達電",
@@ -5577,7 +5578,7 @@
         "pct_10m": 0.688,
         "pct_30m": 0.917
       },
-      "age_minutes": 145.78
+      "age_minutes": 151.21
     },
     {
       "key": "ai_pool:3017:56:2510.0",
@@ -6312,7 +6313,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T02:50:15.303830+00:00",
-      "updated_at": "2026-06-08T05:11:02.097300+00:00",
+      "updated_at": "2026-06-08T05:16:27.775067+00:00",
       "status": "open",
       "code": "2308",
       "name": "台達電",
@@ -6333,7 +6334,7 @@
         "pct_10m": 0.683,
         "pct_30m": 0.228
       },
-      "age_minutes": 140.78
+      "age_minutes": 146.21
     },
     {
       "key": "ai_pool:3443:56:4185.0",
@@ -7180,7 +7181,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T02:55:12.105140+00:00",
-      "updated_at": "2026-06-08T05:11:02.097314+00:00",
+      "updated_at": "2026-06-08T05:16:27.775080+00:00",
       "status": "open",
       "code": "2308",
       "name": "台達電",
@@ -7201,7 +7202,7 @@
         "pct_10m": 0.227,
         "pct_30m": 0.682
       },
-      "age_minutes": 135.83
+      "age_minutes": 141.26
     },
     {
       "key": "ai_pool:1513:42:166.0",
@@ -8048,7 +8049,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T03:05:12.938678+00:00",
-      "updated_at": "2026-06-08T05:11:02.097328+00:00",
+      "updated_at": "2026-06-08T05:16:27.775095+00:00",
       "status": "open",
       "code": "2308",
       "name": "台達電",
@@ -8069,7 +8070,7 @@
         "pct_10m": -0.227,
         "pct_30m": 0.454
       },
-      "age_minutes": 125.82
+      "age_minutes": 131.25
     },
     {
       "key": "ai_pool:8046:63:838.0",
@@ -8804,7 +8805,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T03:10:15.922648+00:00",
-      "updated_at": "2026-06-08T05:11:02.097338+00:00",
+      "updated_at": "2026-06-08T05:16:27.775109+00:00",
       "status": "open",
       "code": "2308",
       "name": "台達電",
@@ -8825,7 +8826,7 @@
         "pct_10m": -0.452,
         "pct_30m": 0.226
       },
-      "age_minutes": 120.77
+      "age_minutes": 126.2
     },
     {
       "key": "ai_pool:2379:40:591.0",
@@ -9280,7 +9281,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T03:15:15.074891+00:00",
-      "updated_at": "2026-06-08T05:11:02.097358+00:00",
+      "updated_at": "2026-06-08T05:16:27.775120+00:00",
       "status": "open",
       "code": "2308",
       "name": "台達電",
@@ -9301,7 +9302,7 @@
         "pct_10m": 0.911,
         "pct_30m": 0.683
       },
-      "age_minutes": 115.78
+      "age_minutes": 121.21
     },
     {
       "key": "ai_pool:2382:38:371.0",
@@ -10540,7 +10541,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T03:25:12.343926+00:00",
-      "updated_at": "2026-06-08T05:11:02.097369+00:00",
+      "updated_at": "2026-06-08T05:16:27.775134+00:00",
       "status": "open",
       "code": "2308",
       "name": "台達電",
@@ -10561,7 +10562,7 @@
         "pct_10m": -0.225,
         "pct_30m": 0.0
       },
-      "age_minutes": 105.83
+      "age_minutes": 111.26
     },
     {
       "key": "ai_pool:3017:45:2545.0",
@@ -11072,7 +11073,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T03:30:19.536006+00:00",
-      "updated_at": "2026-06-08T05:11:02.097376+00:00",
+      "updated_at": "2026-06-08T05:16:27.775145+00:00",
       "status": "open",
       "code": "2308",
       "name": "台達電",
@@ -11093,7 +11094,7 @@
         "pct_10m": 0.0,
         "pct_30m": 0.226
       },
-      "age_minutes": 100.71
+      "age_minutes": 106.14
     },
     {
       "key": "ai_pool:3017:46:2550.0",
@@ -12780,7 +12781,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T03:50:15.373188+00:00",
-      "updated_at": "2026-06-08T05:11:02.097386+00:00",
+      "updated_at": "2026-06-08T05:16:27.775176+00:00",
       "status": "open",
       "code": "2308",
       "name": "台達電",
@@ -12801,7 +12802,7 @@
         "pct_10m": 0.226,
         "pct_30m": 0.226
       },
-      "age_minutes": 80.78
+      "age_minutes": 86.21
     },
     {
       "key": "ai_pool:2324:56:38.3",
@@ -13032,7 +13033,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T03:55:11.578067+00:00",
-      "updated_at": "2026-06-08T05:11:02.097396+00:00",
+      "updated_at": "2026-06-08T05:16:27.775185+00:00",
       "status": "open",
       "code": "2308",
       "name": "台達電",
@@ -13053,7 +13054,7 @@
         "pct_10m": 0.0,
         "pct_30m": -0.674
       },
-      "age_minutes": 75.84
+      "age_minutes": 81.27
     },
     {
       "key": "ai_pool:3231:56:163.0",
@@ -13704,7 +13705,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T04:05:12.635175+00:00",
-      "updated_at": "2026-06-08T05:11:02.097409+00:00",
+      "updated_at": "2026-06-08T05:16:27.775198+00:00",
       "status": "open",
       "code": "2308",
       "name": "台達電",
@@ -13725,7 +13726,7 @@
         "pct_10m": -0.225,
         "pct_30m": 0.45
       },
-      "age_minutes": 65.82
+      "age_minutes": 71.25
     },
     {
       "key": "ai_pool:1514:56:123.0",
@@ -14936,7 +14937,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T04:20:15.348692+00:00",
-      "updated_at": "2026-06-08T05:11:02.097423+00:00",
+      "updated_at": "2026-06-08T05:16:27.775213+00:00",
       "status": "open",
       "code": "2308",
       "name": "台達電",
@@ -14957,7 +14958,7 @@
         "pct_10m": 0.225,
         "pct_30m": 0.45
       },
-      "age_minutes": 50.78
+      "age_minutes": 56.21
     },
     {
       "key": "ai_pool:5347:64:153.0",
@@ -15300,7 +15301,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T04:25:12.669671+00:00",
-      "updated_at": "2026-06-08T05:11:02.097430+00:00",
+      "updated_at": "2026-06-08T05:16:27.775224+00:00",
       "status": "open",
       "code": "2308",
       "name": "台達電",
@@ -15321,7 +15322,7 @@
         "pct_10m": 0.677,
         "pct_30m": 0.677
       },
-      "age_minutes": 45.82
+      "age_minutes": 51.25
     },
     {
       "key": "ai_pool:8046:57:833.0",
@@ -15720,7 +15721,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T04:30:21.576533+00:00",
-      "updated_at": "2026-06-08T05:11:02.097435+00:00",
+      "updated_at": "2026-06-08T05:16:27.775234+00:00",
       "status": "open",
       "code": "2308",
       "name": "台達電",
@@ -15741,7 +15742,7 @@
         "pct_10m": 0.0,
         "pct_30m": 0.449
       },
-      "age_minutes": 40.68
+      "age_minutes": 46.1
     },
     {
       "key": "ai_pool:2382:48:370.5",
@@ -16672,7 +16673,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T04:40:16.222809+00:00",
-      "updated_at": "2026-06-08T05:11:02.097443+00:00",
+      "updated_at": "2026-06-08T05:16:27.775247+00:00",
       "status": "open",
       "code": "2308",
       "name": "台達電",
@@ -16693,7 +16694,7 @@
         "pct_10m": 0.0,
         "pct_30m": 0.448
       },
-      "age_minutes": 30.76
+      "age_minutes": 36.19
     },
     {
       "key": "ai_pool:2376:56:345.5",
@@ -17285,7 +17286,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T04:45:15.082779+00:00",
-      "updated_at": "2026-06-08T05:11:02.097449+00:00",
+      "updated_at": "2026-06-08T05:16:27.775259+00:00",
       "status": "open",
       "code": "2308",
       "name": "台達電",
@@ -17303,9 +17304,10 @@
         "max_gain": 0.899,
         "max_drawdown": 0.0,
         "pct_5m": 0.225,
-        "pct_10m": 0.225
+        "pct_10m": 0.225,
+        "pct_30m": 0.674
       },
-      "age_minutes": 25.78
+      "age_minutes": 31.21
     },
     {
       "key": "ai_pool:3661:46:4130.0",
@@ -17827,7 +17829,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T04:55:11.982204+00:00",
-      "updated_at": "2026-06-08T05:11:02.097455+00:00",
+      "updated_at": "2026-06-08T05:16:27.775269+00:00",
       "status": "open",
       "code": "2308",
       "name": "台達電",
@@ -17847,7 +17849,7 @@
         "pct_5m": 0.0,
         "pct_10m": 0.447
       },
-      "age_minutes": 15.84
+      "age_minutes": 21.26
     },
     {
       "key": "ai_pool:3443:56:4245.0",
@@ -18097,7 +18099,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T05:00:30.824718+00:00",
-      "updated_at": "2026-06-08T05:11:02.097461+00:00",
+      "updated_at": "2026-06-08T05:16:27.775278+00:00",
       "status": "open",
       "code": "2308",
       "name": "台達電",
@@ -18117,7 +18119,7 @@
         "pct_5m": 0.447,
         "pct_10m": 0.224
       },
-      "age_minutes": 10.52
+      "age_minutes": 15.95
     },
     {
       "key": "ai_pool:8046:66:831.0",
@@ -18583,7 +18585,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T05:05:14.313066+00:00",
-      "updated_at": "2026-06-08T05:11:02.097467+00:00",
+      "updated_at": "2026-06-08T05:16:27.775290+00:00",
       "status": "open",
       "code": "2308",
       "name": "台達電",
@@ -18600,9 +18602,10 @@
         "latest_pct": -0.223,
         "max_gain": 0.0,
         "max_drawdown": -0.223,
-        "pct_5m": -0.223
+        "pct_5m": -0.223,
+        "pct_10m": -0.223
       },
-      "age_minutes": 5.8
+      "age_minutes": 11.22
     },
     {
       "key": "ai_pool:3661:68:4170.0",
@@ -18949,7 +18952,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T05:10:16.363861+00:00",
-      "updated_at": "2026-06-08T05:11:02.097473+00:00",
+      "updated_at": "2026-06-08T05:16:27.775300+00:00",
       "status": "open",
       "code": "2308",
       "name": "台達電",
@@ -18965,9 +18968,10 @@
       "results": {
         "latest_pct": -0.223,
         "max_gain": 0.0,
-        "max_drawdown": -0.223
+        "max_drawdown": -0.223,
+        "pct_5m": -0.223
       },
-      "age_minutes": 0.76
+      "age_minutes": 6.19
     },
     {
       "key": "ai_pool:3324:60:1095.0",
