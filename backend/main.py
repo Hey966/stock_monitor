@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import os
+import time
 from contextlib import asynccontextmanager
 from datetime import date, timedelta
 from statistics import mean
@@ -16,12 +17,7 @@ from news_engine import get_news_payload
 from chips_engine import get_chips_payload
 from discord_engine import send_battle_report, send_discord_alert, send_grouped_alerts, send_radar_top5_alert
 from fund_flow_engine import build_fund_flow_report
-from performance_engine import (
-    get_module_performance,
-    get_performance_logs,
-    record_module_signals,
-    update_module_results,
-)
+from performance_engine import get_module_performance, get_performance_logs, record_module_signals, update_module_results
 from pro_engine import build_pro_analysis
 from replay_engine import get_logs, get_stats, save_signal, update_results
 from stx_query_engine import build_stx_query_response
@@ -31,6 +27,7 @@ SHIOAJI_API_KEY = os.getenv("SHIOAJI_API_KEY", "")
 SHIOAJI_SECRET_KEY = os.getenv("SHIOAJI_SECRET_KEY", "")
 CORS_ORIGINS = os.getenv("CORS_ORIGINS", "*")
 api: sj.Shioaji | None = None
+LAST_RELOGIN_AT = 0.0
 
 SCAN_UNIVERSE = [
     "2330", "2317", "2454", "2382", "2308", "3037", "3231", "3017", "3324", "3661",
@@ -86,20 +83,41 @@ class KBarsResponse(BaseModel):
     message: str | None = None
 
 
+def login_shioaji(force: bool = False) -> None:
+    global api, LAST_RELOGIN_AT
+    if not SHIOAJI_API_KEY or not SHIOAJI_SECRET_KEY:
+        print("Shioaji keys are not set.")
+        return
+    now = time.time()
+    if force and now - LAST_RELOGIN_AT < 3:
+        return
+    LAST_RELOGIN_AT = now
+    try:
+        if api is not None:
+            try:
+                api.logout()
+            except Exception:
+                pass
+        api = sj.Shioaji(simulation=True)
+        api.login(api_key=SHIOAJI_API_KEY, secret_key=SHIOAJI_SECRET_KEY)
+    except Exception as exc:
+        print(f"Shioaji login failed: {exc}")
+
+
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     global api
     api = sj.Shioaji(simulation=True)
-    if SHIOAJI_API_KEY and SHIOAJI_SECRET_KEY:
-        api.login(api_key=SHIOAJI_API_KEY, secret_key=SHIOAJI_SECRET_KEY)
-    else:
-        print("Shioaji keys are not set.")
+    login_shioaji(force=True)
     yield
     if api is not None:
-        api.logout()
+        try:
+            api.logout()
+        except Exception:
+            pass
 
 
-app = FastAPI(title="Stock Monitor Backend", version="0.9.1", lifespan=lifespan)
+app = FastAPI(title="Stock Monitor Backend", version="0.9.2", lifespan=lifespan)
 origins = [x.strip() for x in CORS_ORIGINS.split(",") if x.strip()]
 app.add_middleware(CORSMiddleware, allow_origins=origins if origins else ["*"], allow_credentials=True, allow_methods=["*"], allow_headers=["*"])
 
@@ -126,6 +144,8 @@ def _bool(v: Any) -> bool:
 
 def get_stock_contract(code: str):
     if api is None:
+        login_shioaji(force=True)
+    if api is None:
         raise HTTPException(status_code=503, detail="Shioaji API is not initialized")
     try:
         return api.Contracts.Stocks[code]
@@ -140,14 +160,10 @@ def normalize_kbars(kbars: Any) -> list[KBarItem]:
     return rows
 
 
-def make_quote_payload(code: str) -> tuple[Any, dict[str, Any]]:
+def _quote_from_snapshot(code: str, contract: Any) -> dict[str, Any]:
     if api is None:
-        raise HTTPException(status_code=503, detail="Shioaji API is not initialized")
-    contract = get_stock_contract(code)
-    try:
-        snapshot = api.snapshots([contract])[0]
-    except Exception as exc:
-        raise HTTPException(status_code=502, detail=f"Failed to fetch quote from Shioaji: {exc}") from exc
+        raise RuntimeError("Shioaji API is not initialized")
+    snapshot = api.snapshots([contract])[0]
     raw = snapshot.__dict__.copy()
     close = pick_number(raw, "close")
     change_price = pick_number(raw, "change_price")
@@ -157,11 +173,28 @@ def make_quote_payload(code: str) -> tuple[Any, dict[str, Any]]:
         change_price = float(close) - float(reference)
     if change_rate is None and change_price is not None and reference:
         change_rate = float(change_price) / float(reference) * 100
-    payload = dict(code=code, name=getattr(contract, "name", None), close=close, open=pick_number(raw, "open"), high=pick_number(raw, "high"), low=pick_number(raw, "low"), volume=pick_number(raw, "total_volume", "volume"), change_price=change_price, change_rate=change_rate, buy_price=pick_number(raw, "buy_price"), buy_volume=pick_number(raw, "buy_volume"), sell_price=pick_number(raw, "sell_price"), sell_volume=pick_number(raw, "sell_volume"), volume_ratio=pick_number(raw, "volume_ratio"), average_price=pick_number(raw, "average_price"), raw=raw)
-    return contract, payload
+    return dict(code=code, name=getattr(contract, "name", None), close=close, open=pick_number(raw, "open"), high=pick_number(raw, "high"), low=pick_number(raw, "low"), volume=pick_number(raw, "total_volume", "volume"), change_price=change_price, change_rate=change_rate, buy_price=pick_number(raw, "buy_price"), buy_volume=pick_number(raw, "buy_volume"), sell_price=pick_number(raw, "sell_price"), sell_volume=pick_number(raw, "sell_volume"), volume_ratio=pick_number(raw, "volume_ratio"), average_price=pick_number(raw, "average_price"), raw=raw)
+
+
+def make_quote_payload(code: str) -> tuple[Any, dict[str, Any]]:
+    contract = get_stock_contract(code)
+    try:
+        return contract, _quote_from_snapshot(code, contract)
+    except Exception as first_exc:
+        msg = str(first_exc)
+        if "Session error" in msg or "SolClient" in msg or "send request" in msg or "not login" in msg.lower():
+            login_shioaji(force=True)
+            contract = get_stock_contract(code)
+            try:
+                return contract, _quote_from_snapshot(code, contract)
+            except Exception as second_exc:
+                raise HTTPException(status_code=502, detail=f"Failed to fetch quote from Shioaji after relogin: {second_exc}") from second_exc
+        raise HTTPException(status_code=502, detail=f"Failed to fetch quote from Shioaji: {first_exc}") from first_exc
 
 
 def fetch_kbar_rows(contract: Any, days: int = 5) -> tuple[list[KBarItem], date | None, date | None]:
+    if api is None:
+        login_shioaji(force=True)
     if api is None:
         raise HTTPException(status_code=503, detail="Shioaji API is not initialized")
     end = date.today()
@@ -171,7 +204,11 @@ def fetch_kbar_rows(contract: Any, days: int = 5) -> tuple[list[KBarItem], date 
         try:
             rows = normalize_kbars(api.kbars(contract, start=start.isoformat(), end=end.isoformat()))
         except Exception as exc:
-            raise HTTPException(status_code=502, detail=f"Failed to fetch kbars from Shioaji: {exc}") from exc
+            if "Session error" in str(exc) or "SolClient" in str(exc):
+                login_shioaji(force=True)
+                rows = normalize_kbars(api.kbars(contract, start=start.isoformat(), end=end.isoformat()))
+            else:
+                raise HTTPException(status_code=502, detail=f"Failed to fetch kbars from Shioaji: {exc}") from exc
         if len(rows) >= 3:
             used_start, used_end = start, end
             break
@@ -264,47 +301,31 @@ def _rule_score_from_pro(pro: dict[str, Any]) -> tuple[int, list[str]]:
     red_k = _bool(signals.get("red_k"))
     rel_vol = _float(signals.get("relative_volume"), 0)
     orderbook = _float(signals.get("orderbook_imbalance"), 0)
-
     if trap_block:
-        score -= 35
-        reasons.append("Trap或禁止追價")
+        score -= 35; reasons.append("Trap或禁止追價")
     if above_vwap:
-        score += 18
-        reasons.append("站上VWAP")
+        score += 18; reasons.append("站上VWAP")
     else:
-        score -= 18
-        reasons.append("未站上VWAP")
+        score -= 18; reasons.append("未站上VWAP")
     if pullback:
-        score += 24
-        reasons.append("回測不破")
+        score += 24; reasons.append("回測不破")
     else:
-        score -= 12
-        reasons.append("尚未完成回測不破")
+        score -= 12; reasons.append("尚未完成回測不破")
     if distance >= 2.0 or chg3 >= 2.0:
-        score -= 18
-        reasons.append("追價風險")
+        score -= 18; reasons.append("追價風險")
     if change_rate < 0:
-        score -= 22
-        reasons.append("仍低於平盤")
+        score -= 22; reasons.append("仍低於平盤")
     elif change_rate >= 0.5:
-        score += 6
-        reasons.append("站上平盤")
+        score += 6; reasons.append("站上平盤")
     if 0 < volume_ratio < 1.0:
-        score -= 12
-        reasons.append("量比不足")
+        score -= 12; reasons.append("量比不足")
     elif volume_ratio >= 1.3:
-        score += 6
-        reasons.append("量比放大")
-    if red_k:
-        score += 5
-    if rel_vol >= 1.25:
-        score += 6
-    if orderbook >= 0.25:
-        score += 7
-    elif orderbook <= -0.25:
-        score -= 10
-    if risks:
-        score -= min(len(risks), 4) * 2
+        score += 6; reasons.append("量比放大")
+    if red_k: score += 5
+    if rel_vol >= 1.25: score += 6
+    if orderbook >= 0.25: score += 7
+    elif orderbook <= -0.25: score -= 10
+    if risks: score -= min(len(risks), 4) * 2
     return max(0, min(100, int(round(score)))), reasons
 
 
@@ -338,43 +359,12 @@ def _build_final_row(code: str, quote: dict[str, Any], pro: dict[str, Any], sect
     pullback = _bool(signals.get("pullback_hold_vwap"))
     news_score = 0
     chip_score = 0
-    row = {
-        "code": code,
-        "name": quote.get("name"),
-        "sector": sector,
-        "close": quote.get("close"),
-        "open": quote.get("open"),
-        "high": quote.get("high"),
-        "low": quote.get("low"),
-        "change_rate": quote.get("change_rate"),
-        "volume_ratio": quote.get("volume_ratio"),
-        "buy_volume": quote.get("buy_volume"),
-        "sell_volume": quote.get("sell_volume"),
-        "score": pro_score,
-        "pro_score": pro_score,
-        "rule_score": rule_score,
-        "group_score": group_score,
-        "news_score": news_score,
-        "chip_score": chip_score,
-        "trap": trap,
-        "trap_block": trap,
-        "no_chase": no_chase,
-        "above_vwap": above_vwap,
-        "pullback_confirmed": pullback,
-        "mood": scan_mood(pro_score),
-        "rule_reasons": rule_reasons,
-        "pro_action": pro.get("action"),
-        "risks": pro.get("risks", []),
-        "traps": pro.get("traps", []),
-        "signals": signals,
-    }
+    row = {"code": code, "name": quote.get("name"), "sector": sector, "close": quote.get("close"), "open": quote.get("open"), "high": quote.get("high"), "low": quote.get("low"), "change_rate": quote.get("change_rate"), "volume_ratio": quote.get("volume_ratio"), "buy_volume": quote.get("buy_volume"), "sell_volume": quote.get("sell_volume"), "score": pro_score, "pro_score": pro_score, "rule_score": rule_score, "group_score": group_score, "news_score": news_score, "chip_score": chip_score, "trap": trap, "trap_block": trap, "no_chase": no_chase, "above_vwap": above_vwap, "pullback_confirmed": pullback, "mood": scan_mood(pro_score), "rule_reasons": rule_reasons, "pro_action": pro.get("action"), "risks": pro.get("risks", []), "traps": pro.get("traps", []), "signals": signals}
     raw_final_score = int(round(rule_score * 0.50 + pro_score * 0.25 + group_score * 0.15 + (news_score + chip_score) * 0.10))
     score_cap = 100
-    change_rate = _float(quote.get("change_rate"), 0)
-    volume_ratio = _float(quote.get("volume_ratio"), 0)
-    if change_rate < 0:
+    if _float(quote.get("change_rate"), 0) < 0:
         score_cap = min(score_cap, 69)
-    if 0 < volume_ratio < 1.0:
+    if 0 < _float(quote.get("volume_ratio"), 0) < 1.0:
         score_cap = min(score_cap, 79)
     if trap or no_chase:
         score_cap = min(score_cap, 59)
@@ -388,7 +378,6 @@ def build_market_scan(limit: int = 5, send: bool = False, record: bool = False) 
     rows: list[dict[str, Any]] = []
     errors: list[dict[str, str]] = []
     raw_rows: list[tuple[str, dict[str, Any], dict[str, Any], str]] = []
-
     for code in SCAN_UNIVERSE:
         try:
             contract, quote = make_quote_payload(code)
@@ -399,22 +388,18 @@ def build_market_scan(limit: int = 5, send: bool = False, record: bool = False) 
                 pro = {"code": code, "name": quote.get("name"), "score": scan_score(quote), "signals": {}, "risks": ["K線或Pro資料不足"], "traps": [], "quote": {k: v for k, v in quote.items() if k != "raw"}}
             raw_rows.append((code, quote, pro, SECTOR_MAP.get(code, "其他")))
         except Exception as exc:
-            errors.append({"code": code, "message": str(exc)[:120]})
-
+            errors.append({"code": code, "message": str(exc)[:160]})
     sector_scores: dict[str, int] = {}
     for sector in sorted({x[3] for x in raw_rows}):
         sector_items = [int(_float(x[2].get("score"), 0)) for x in raw_rows if x[3] == sector]
         sector_scores[sector] = int(round(mean(sector_items))) if sector_items else 0
-
     for code, quote, pro, sector in raw_rows:
         rows.append(_build_final_row(code, quote, pro, sector, sector_scores.get(sector, 0)))
-
     ranked = sorted(rows, key=lambda x: x["final_score"], reverse=True)
     candidates = [x for x in ranked if x.get("final_result") == "可進場"]
     for i, item in enumerate(ranked, 1):
         item["rank"] = i
         item["discord_pushed"] = item in candidates[:5]
-
     sector_map: dict[str, dict[str, Any]] = {}
     for item in ranked:
         row = sector_map.setdefault(item["sector"], {"sector": item["sector"], "count": 0, "score_sum": 0, "top_codes": []})
@@ -427,27 +412,9 @@ def build_market_scan(limit: int = 5, send: bool = False, record: bool = False) 
         row["avg_score"] = round(row["score_sum"] / max(row["count"], 1), 2)
         sectors.append(row)
     sectors.sort(key=lambda x: (x["avg_score"], x["count"]), reverse=True)
-
     recorded = record_module_signals("ai_pool", candidates[:5], reason="radar_final_top5", limit=5) if record and candidates else None
     sent = send_radar_top5_alert({"discord_top5": candidates[:5], "scanned": len(rows), "universe_size": len(SCAN_UNIVERSE), "strongest_sector": sectors[0] if sectors else None}) if send else None
-
-    return {
-        "ok": True,
-        "version": "STX Final Radar v1.1",
-        "universe_size": len(SCAN_UNIVERSE),
-        "scanned": len(rows),
-        "errors": errors,
-        "top5": ranked[:limit],
-        "items": ranked,
-        "rankings": ranked,
-        "final_rankings": ranked,
-        "discord_top5": candidates[:5],
-        "entry_candidates": candidates,
-        "sectors": sectors[:5],
-        "strongest_sector": sectors[0] if sectors else None,
-        "recorded": recorded,
-        "sent": sent,
-    }
+    return {"ok": True, "version": "STX Final Radar v1.2", "universe_size": len(SCAN_UNIVERSE), "scanned": len(rows), "errors": errors, "top5": ranked[:limit], "items": ranked, "rankings": ranked, "final_rankings": ranked, "discord_top5": candidates[:5], "entry_candidates": candidates, "sectors": sectors[:5], "strongest_sector": sectors[0] if sectors else None, "recorded": recorded, "sent": sent}
 
 
 def build_ai_pool(limit: int = 20, record: bool = False) -> dict[str, Any]:
@@ -486,20 +453,7 @@ def build_fund_flow(limit: int = 20, send: bool = False, record: bool = False) -
 def build_cron_run(limit: int = 20, send: bool = True) -> dict[str, Any]:
     scan = build_market_scan(limit=max(limit, 10), send=send, record=True)
     perf = get_module_performance()
-    return {
-        "ok": True,
-        "version": "STX Scheduler v2",
-        "limit": limit,
-        "send": bool(send),
-        "radar_top5": scan.get("discord_top5", []),
-        "recorded": scan.get("recorded"),
-        "sent": scan.get("sent"),
-        "performance": {
-            "total_signals": perf.get("total_signals"),
-            "tracked_results": perf.get("tracked_results"),
-            "github_path": perf.get("github_path"),
-        },
-    }
+    return {"ok": True, "version": "STX Scheduler v2", "limit": limit, "send": bool(send), "radar_top5": scan.get("discord_top5", []), "recorded": scan.get("recorded"), "sent": scan.get("sent"), "performance": {"total_signals": perf.get("total_signals"), "tracked_results": perf.get("tracked_results"), "github_path": perf.get("github_path")}}
 
 
 @app.get("/")
@@ -509,7 +463,7 @@ def root():
 
 @app.get("/health")
 def health():
-    return {"ok": True, "logged_in": bool(api and api.stock_account)}
+    return {"ok": True, "logged_in": bool(api and api.stock_account), "version": "0.9.2"}
 
 
 @app.get("/api/news")
