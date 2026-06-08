@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-08T06:57:18.916175+00:00",
+  "updated_at": "2026-06-08T06:57:22.850238+00:00",
   "count": 737,
   "items": [
     {
@@ -7344,8 +7344,8 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T02:55:12.105177+00:00",
-      "updated_at": "2026-06-08T06:52:18.743084+00:00",
-      "status": "open",
+      "updated_at": "2026-06-08T06:57:21.388978+00:00",
+      "status": "closed",
       "code": "2382",
       "name": "廣達",
       "sector": "AI伺服器",
@@ -7363,9 +7363,10 @@
         "max_drawdown": -0.403,
         "pct_5m": 0.134,
         "pct_10m": 0.269,
-        "pct_30m": 0.269
+        "pct_30m": 0.269,
+        "pct_close_proxy": 1.21
       },
-      "age_minutes": 237.11
+      "age_minutes": 242.15
     },
     {
       "key": "ai_pool:3443:38:4180.0",
@@ -7797,7 +7798,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T03:00:26.524734+00:00",
-      "updated_at": "2026-06-08T06:52:18.743115+00:00",
+      "updated_at": "2026-06-08T06:57:21.388996+00:00",
       "status": "open",
       "code": "2382",
       "name": "廣達",
@@ -7818,7 +7819,7 @@
         "pct_10m": 0.134,
         "pct_30m": -0.268
       },
-      "age_minutes": 231.87
+      "age_minutes": 236.91
     },
     {
       "key": "ai_pool:3231:48:161.5",
@@ -8637,7 +8638,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T03:10:15.922565+00:00",
-      "updated_at": "2026-06-08T06:52:18.743136+00:00",
+      "updated_at": "2026-06-08T06:57:21.389005+00:00",
       "status": "open",
       "code": "2382",
       "name": "廣達",
@@ -8658,7 +8659,7 @@
         "pct_10m": -0.536,
         "pct_30m": 0.134
       },
-      "age_minutes": 222.05
+      "age_minutes": 227.09
     },
     {
       "key": "ai_pool:3443:56:4235.0",
@@ -9365,7 +9366,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T03:15:15.074912+00:00",
-      "updated_at": "2026-06-08T06:52:18.743153+00:00",
+      "updated_at": "2026-06-08T06:57:21.389012+00:00",
       "status": "open",
       "code": "2382",
       "name": "廣達",
@@ -9386,7 +9387,7 @@
         "pct_10m": 0.539,
         "pct_30m": 0.809
       },
-      "age_minutes": 217.06
+      "age_minutes": 222.11
     },
     {
       "key": "fund_flow:2368:84:1325.0",
@@ -9449,7 +9450,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T03:15:25.492241+00:00",
-      "updated_at": "2026-06-08T06:52:18.743179+00:00",
+      "updated_at": "2026-06-08T06:57:21.389018+00:00",
       "status": "open",
       "code": "2382",
       "name": "廣達",
@@ -9470,7 +9471,7 @@
         "pct_10m": 0.269,
         "pct_30m": 0.538
       },
-      "age_minutes": 216.89
+      "age_minutes": 221.93
     },
     {
       "key": "fund_flow:2376:25:345.5",
@@ -9729,7 +9730,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T03:20:14.902979+00:00",
-      "updated_at": "2026-06-08T06:52:18.743192+00:00",
+      "updated_at": "2026-06-08T06:57:21.389024+00:00",
       "status": "open",
       "code": "2382",
       "name": "廣達",
@@ -9750,7 +9751,7 @@
         "pct_10m": 0.541,
         "pct_30m": 1.081
       },
-      "age_minutes": 212.06
+      "age_minutes": 217.11
     },
     {
       "key": "ai_pool:3324:48:1070.0",
@@ -10037,7 +10038,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T03:20:25.739825+00:00",
-      "updated_at": "2026-06-08T06:52:18.743204+00:00",
+      "updated_at": "2026-06-08T06:57:21.389029+00:00",
       "status": "open",
       "code": "2382",
       "name": "廣達",
@@ -10058,7 +10059,7 @@
         "pct_10m": 0.405,
         "pct_30m": 0.945
       },
-      "age_minutes": 211.88
+      "age_minutes": 216.93
     },
     {
       "key": "fund_flow:2344:25:153.5",
@@ -10709,7 +10710,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T03:25:22.676864+00:00",
-      "updated_at": "2026-06-08T06:52:18.743221+00:00",
+      "updated_at": "2026-06-08T06:57:21.389036+00:00",
       "status": "open",
       "code": "2382",
       "name": "廣達",
@@ -10730,7 +10731,7 @@
         "pct_10m": 0.134,
         "pct_30m": 0.536
       },
-      "age_minutes": 206.93
+      "age_minutes": 211.98
     },
     {
       "key": "fund_flow:6215:31:111.5",
@@ -11017,7 +11018,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T03:30:19.535950+00:00",
-      "updated_at": "2026-06-08T06:52:18.743234+00:00",
+      "updated_at": "2026-06-08T06:57:21.389041+00:00",
       "status": "open",
       "code": "2382",
       "name": "廣達",
@@ -11038,7 +11039,7 @@
         "pct_10m": 0.403,
         "pct_30m": 0.269
       },
-      "age_minutes": 201.99
+      "age_minutes": 207.03
     },
     {
       "key": "ai_pool:2379:48:596.0",
@@ -12025,7 +12026,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T03:40:16.271574+00:00",
-      "updated_at": "2026-06-08T06:52:18.743252+00:00",
+      "updated_at": "2026-06-08T06:57:21.389049+00:00",
       "status": "open",
       "code": "2382",
       "name": "廣達",
@@ -12046,7 +12047,7 @@
         "pct_10m": 0.0,
         "pct_30m": -0.535
       },
-      "age_minutes": 192.04
+      "age_minutes": 197.09
     },
     {
       "key": "ai_pool:3661:38:4140.0",
@@ -12137,7 +12138,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T03:40:26.938185+00:00",
-      "updated_at": "2026-06-08T06:52:18.743263+00:00",
+      "updated_at": "2026-06-08T06:57:21.389054+00:00",
       "status": "open",
       "code": "2382",
       "name": "廣達",
@@ -12158,7 +12159,7 @@
         "pct_10m": -0.134,
         "pct_30m": -0.668
       },
-      "age_minutes": 191.86
+      "age_minutes": 196.91
     },
     {
       "key": "fund_flow:2324:32:38.15",
@@ -12417,7 +12418,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T03:45:15.296410+00:00",
-      "updated_at": "2026-06-08T06:52:18.743274+00:00",
+      "updated_at": "2026-06-08T06:57:21.389059+00:00",
       "status": "open",
       "code": "2382",
       "name": "廣達",
@@ -12438,7 +12439,7 @@
         "pct_10m": 0.402,
         "pct_30m": -0.402
       },
-      "age_minutes": 187.06
+      "age_minutes": 192.1
     },
     {
       "key": "ai_pool:2344:48:155.5",
@@ -12809,7 +12810,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T03:50:15.373182+00:00",
-      "updated_at": "2026-06-08T06:52:18.743288+00:00",
+      "updated_at": "2026-06-08T06:57:21.389065+00:00",
       "status": "open",
       "code": "2382",
       "name": "廣達",
@@ -12830,7 +12831,7 @@
         "pct_10m": -0.134,
         "pct_30m": -0.134
       },
-      "age_minutes": 182.06
+      "age_minutes": 187.1
     },
     {
       "key": "ai_pool:2308:56:2215.0",
@@ -13929,7 +13930,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T04:05:23.013587+00:00",
-      "updated_at": "2026-06-08T06:52:18.743306+00:00",
+      "updated_at": "2026-06-08T06:57:21.389073+00:00",
       "status": "open",
       "code": "2382",
       "name": "廣達",
@@ -13950,7 +13951,7 @@
         "pct_10m": 0.135,
         "pct_30m": 0.135
       },
-      "age_minutes": 166.93
+      "age_minutes": 171.97
     },
     {
       "key": "fund_flow:1609:31:37.05",
@@ -14125,7 +14126,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T04:10:16.119785+00:00",
-      "updated_at": "2026-06-08T06:52:18.743317+00:00",
+      "updated_at": "2026-06-08T06:57:21.389078+00:00",
       "status": "open",
       "code": "2382",
       "name": "廣達",
@@ -14146,7 +14147,7 @@
         "pct_10m": 0.404,
         "pct_30m": 0.135
       },
-      "age_minutes": 162.04
+      "age_minutes": 167.09
     },
     {
       "key": "ai_pool:3711:56:535.0",
@@ -14433,7 +14434,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T04:15:14.557933+00:00",
-      "updated_at": "2026-06-08T06:52:18.743330+00:00",
+      "updated_at": "2026-06-08T06:57:21.389084+00:00",
       "status": "open",
       "code": "2382",
       "name": "廣達",
@@ -14454,7 +14455,7 @@
         "pct_10m": -0.537,
         "pct_30m": -0.537
       },
-      "age_minutes": 157.07
+      "age_minutes": 162.11
     },
     {
       "key": "ai_pool:5347:56:152.5",
@@ -14741,7 +14742,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T04:15:24.781689+00:00",
-      "updated_at": "2026-06-08T06:52:18.743362+00:00",
+      "updated_at": "2026-06-08T06:57:21.389090+00:00",
       "status": "open",
       "code": "2382",
       "name": "廣達",
@@ -14762,7 +14763,7 @@
         "pct_10m": -0.403,
         "pct_30m": -0.403
       },
-      "age_minutes": 156.9
+      "age_minutes": 161.94
     },
     {
       "key": "fund_flow:2376:30:345.5",
@@ -15441,7 +15442,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T04:25:12.669738+00:00",
-      "updated_at": "2026-06-08T06:52:18.743381+00:00",
+      "updated_at": "2026-06-08T06:57:21.389096+00:00",
       "status": "open",
       "code": "2382",
       "name": "廣達",
@@ -15462,7 +15463,7 @@
         "pct_10m": 0.27,
         "pct_30m": 0.135
       },
-      "age_minutes": 147.1
+      "age_minutes": 152.15
     },
     {
       "key": "ai_pool:3443:48:4235.0",
@@ -15805,7 +15806,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T04:30:21.576587+00:00",
-      "updated_at": "2026-06-08T06:52:18.743394+00:00",
+      "updated_at": "2026-06-08T06:57:21.389102+00:00",
       "status": "open",
       "code": "2382",
       "name": "廣達",
@@ -15826,7 +15827,7 @@
         "pct_10m": 0.405,
         "pct_30m": 0.405
       },
-      "age_minutes": 141.95
+      "age_minutes": 147.0
     },
     {
       "key": "ai_pool:1514:48:122.5",
@@ -16589,7 +16590,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T04:35:23.057974+00:00",
-      "updated_at": "2026-06-08T06:52:18.743411+00:00",
+      "updated_at": "2026-06-08T06:57:21.389110+00:00",
       "status": "open",
       "code": "2382",
       "name": "廣達",
@@ -16610,7 +16611,7 @@
         "pct_10m": -0.135,
         "pct_30m": 0.539
       },
-      "age_minutes": 136.93
+      "age_minutes": 141.97
     },
     {
       "key": "fund_flow:2344:34:154.0",
@@ -17065,7 +17066,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T04:40:27.607663+00:00",
-      "updated_at": "2026-06-08T06:52:18.743425+00:00",
+      "updated_at": "2026-06-08T06:57:21.389116+00:00",
       "status": "open",
       "code": "2382",
       "name": "廣達",
@@ -17086,7 +17087,7 @@
         "pct_10m": 0.27,
         "pct_30m": 0.539
       },
-      "age_minutes": 131.85
+      "age_minutes": 136.9
     },
     {
       "key": "fund_flow:1514:23:122.5",
@@ -17429,7 +17430,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T04:45:26.544533+00:00",
-      "updated_at": "2026-06-08T06:52:18.743438+00:00",
+      "updated_at": "2026-06-08T06:57:21.389122+00:00",
       "status": "open",
       "code": "2382",
       "name": "廣達",
@@ -17450,7 +17451,7 @@
         "pct_10m": 0.27,
         "pct_30m": 0.81
       },
-      "age_minutes": 126.87
+      "age_minutes": 131.91
     },
     {
       "key": "fund_flow:1609:28:37.0",
@@ -19585,7 +19586,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T05:15:15.332846+00:00",
-      "updated_at": "2026-06-08T06:52:18.743460+00:00",
+      "updated_at": "2026-06-08T06:57:21.389132+00:00",
       "status": "open",
       "code": "2382",
       "name": "廣達",
@@ -19606,7 +19607,7 @@
         "pct_10m": -0.267,
         "pct_30m": 0.668
       },
-      "age_minutes": 97.06
+      "age_minutes": 102.1
     },
     {
       "key": "ai_pool:3711:56:541.0",
