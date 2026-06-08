@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-08T02:36:35.877822+00:00",
+  "updated_at": "2026-06-08T02:36:38.402016+00:00",
   "count": 169,
   "items": [
     {
@@ -314,27 +314,28 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T01:00:25.731739+00:00",
-      "updated_at": "2026-06-08T01:16:25.148367+00:00",
+      "updated_at": "2026-06-08T02:36:37.428162+00:00",
       "status": "open",
       "code": "1609",
       "name": "大亞",
       "sector": "電線電纜",
       "entry_price": 36.3,
-      "last_price": 36.95,
-      "best_price": 36.95,
+      "last_price": 37.35,
+      "best_price": 37.35,
       "worst_price": 36.3,
       "score": 48,
       "change_rate_at_signal": -7.16,
       "volume_ratio_at_signal": 0.04,
       "alert": null,
       "results": {
-        "latest_pct": 1.791,
-        "max_gain": 1.791,
+        "latest_pct": 2.893,
+        "max_gain": 2.893,
         "max_drawdown": 0.0,
         "pct_5m": 1.102,
-        "pct_10m": 1.24
+        "pct_10m": 1.24,
+        "pct_30m": 2.893
       },
-      "age_minutes": 15.99
+      "age_minutes": 96.19
     },
     {
       "key": "ai_pool:3017:40:2370.0",
@@ -1225,27 +1226,28 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T01:05:12.805204+00:00",
-      "updated_at": "2026-06-08T01:16:25.148392+00:00",
+      "updated_at": "2026-06-08T02:36:37.428187+00:00",
       "status": "open",
       "code": "1609",
       "name": "大亞",
       "sector": "電線電纜",
       "entry_price": 36.8,
-      "last_price": 36.95,
-      "best_price": 36.95,
+      "last_price": 37.35,
+      "best_price": 37.35,
       "worst_price": 36.7,
       "score": 56,
       "change_rate_at_signal": -5.88,
       "volume_ratio_at_signal": 0.08,
       "alert": null,
       "results": {
-        "latest_pct": 0.408,
-        "max_gain": 0.408,
+        "latest_pct": 1.495,
+        "max_gain": 1.495,
         "max_drawdown": -0.272,
         "pct_5m": -0.136,
-        "pct_10m": 0.408
+        "pct_10m": 0.408,
+        "pct_30m": 1.495
       },
-      "age_minutes": 11.21
+      "age_minutes": 91.41
     },
     {
       "key": "ai_pool:2382:48:366.0",
@@ -1805,27 +1807,28 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T01:05:22.720772+00:00",
-      "updated_at": "2026-06-08T01:16:25.148408+00:00",
+      "updated_at": "2026-06-08T02:36:37.428200+00:00",
       "status": "open",
       "code": "1609",
       "name": "大亞",
       "sector": "電線電纜",
       "entry_price": 36.7,
-      "last_price": 36.95,
-      "best_price": 36.95,
+      "last_price": 37.35,
+      "best_price": 37.35,
       "worst_price": 36.7,
       "score": 34,
       "change_rate_at_signal": -6.13,
       "volume_ratio_at_signal": 0.08,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": 0.681,
-        "max_gain": 0.681,
+        "latest_pct": 1.771,
+        "max_gain": 1.771,
         "max_drawdown": 0.0,
         "pct_5m": 0.136,
-        "pct_10m": 0.681
+        "pct_10m": 0.681,
+        "pct_30m": 1.771
       },
-      "age_minutes": 11.04
+      "age_minutes": 91.25
     },
     {
       "key": "fund_flow:2382:17:365.0",
@@ -2412,26 +2415,28 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T01:10:16.374033+00:00",
-      "updated_at": "2026-06-08T01:16:25.148422+00:00",
+      "updated_at": "2026-06-08T02:36:37.428212+00:00",
       "status": "open",
       "code": "1609",
       "name": "大亞",
       "sector": "電線電纜",
       "entry_price": 36.85,
-      "last_price": 36.95,
-      "best_price": 36.95,
+      "last_price": 37.35,
+      "best_price": 37.35,
       "worst_price": 36.75,
       "score": 48,
       "change_rate_at_signal": -5.75,
       "volume_ratio_at_signal": 0.12,
       "alert": null,
       "results": {
-        "latest_pct": 0.271,
-        "max_gain": 0.271,
+        "latest_pct": 1.357,
+        "max_gain": 1.357,
         "max_drawdown": -0.271,
-        "pct_5m": 0.271
+        "pct_5m": 0.271,
+        "pct_10m": 1.357,
+        "pct_30m": 1.357
       },
-      "age_minutes": 6.15
+      "age_minutes": 86.35
     },
     {
       "key": "ai_pool:2615:46:84.1",
@@ -3014,25 +3019,28 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T01:15:15.735309+00:00",
-      "updated_at": "2026-06-08T01:16:25.148433+00:00",
+      "updated_at": "2026-06-08T02:36:37.428224+00:00",
       "status": "open",
       "code": "1609",
       "name": "大亞",
       "sector": "電線電纜",
       "entry_price": 37.05,
-      "last_price": 36.95,
-      "best_price": 37.05,
+      "last_price": 37.35,
+      "best_price": 37.35,
       "worst_price": 36.95,
       "score": 56,
       "change_rate_at_signal": -5.24,
       "volume_ratio_at_signal": 0.15,
       "alert": null,
       "results": {
-        "latest_pct": -0.27,
-        "max_gain": 0.0,
-        "max_drawdown": -0.27
+        "latest_pct": 0.81,
+        "max_gain": 0.81,
+        "max_drawdown": -0.27,
+        "pct_5m": 0.81,
+        "pct_10m": 0.81,
+        "pct_30m": 0.81
       },
-      "age_minutes": 1.16
+      "age_minutes": 81.36
     },
     {
       "key": "ai_pool:3017:48:2425.0",
@@ -4413,20 +4421,25 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T02:35:23.610024+00:00",
-      "updated_at": "2026-06-08T02:35:23.610028+00:00",
+      "updated_at": "2026-06-08T02:36:37.428239+00:00",
       "status": "open",
       "code": "1609",
       "name": "大亞",
       "sector": "電線電纜",
       "entry_price": 37.3,
-      "last_price": 37.3,
-      "best_price": 37.3,
+      "last_price": 37.35,
+      "best_price": 37.35,
       "worst_price": 37.3,
       "score": 34,
       "change_rate_at_signal": -4.6,
       "volume_ratio_at_signal": 0.31,
       "alert": "資金退潮警報",
-      "results": {}
+      "results": {
+        "latest_pct": 0.134,
+        "max_gain": 0.134,
+        "max_drawdown": 0.0
+      },
+      "age_minutes": 1.23
     },
     {
       "key": "fund_flow:2615:32:84.1",
