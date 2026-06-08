@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-08T05:16:02.240795+00:00",
+  "updated_at": "2026-06-08T05:16:05.747928+00:00",
   "count": 700,
   "items": [
     {
@@ -3277,13 +3277,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T01:15:15.735356+00:00",
-      "updated_at": "2026-06-08T05:11:05.609567+00:00",
-      "status": "open",
+      "updated_at": "2026-06-08T05:16:04.508184+00:00",
+      "status": "closed",
       "code": "8046",
       "name": "南電",
       "sector": "半導體",
       "entry_price": 785.0,
-      "last_price": 834.0,
+      "last_price": 833.0,
       "best_price": 845.0,
       "worst_price": 780.0,
       "score": 48,
@@ -3291,14 +3291,15 @@
       "volume_ratio_at_signal": 0.21,
       "alert": null,
       "results": {
-        "latest_pct": 6.242,
+        "latest_pct": 6.115,
         "max_gain": 7.643,
         "max_drawdown": -0.637,
         "pct_5m": 6.115,
         "pct_10m": 6.115,
-        "pct_30m": 6.115
+        "pct_30m": 6.115,
+        "pct_close_proxy": 6.115
       },
-      "age_minutes": 235.83
+      "age_minutes": 240.81
     },
     {
       "key": "ai_pool:6215:48:109.0",
@@ -4232,13 +4233,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T02:35:13.181508+00:00",
-      "updated_at": "2026-06-08T05:11:05.609584+00:00",
+      "updated_at": "2026-06-08T05:16:04.508208+00:00",
       "status": "open",
       "code": "8046",
       "name": "南電",
       "sector": "半導體",
       "entry_price": 835.0,
-      "last_price": 834.0,
+      "last_price": 833.0,
       "best_price": 845.0,
       "worst_price": 831.0,
       "score": 51,
@@ -4246,14 +4247,14 @@
       "volume_ratio_at_signal": 0.73,
       "alert": null,
       "results": {
-        "latest_pct": -0.12,
+        "latest_pct": -0.24,
         "max_gain": 1.198,
         "max_drawdown": -0.479,
         "pct_5m": -0.479,
         "pct_10m": -0.12,
         "pct_30m": 0.24
       },
-      "age_minutes": 155.87
+      "age_minutes": 160.86
     },
     {
       "key": "ai_pool:2317:48:269.0",
@@ -5100,13 +5101,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T02:40:15.266819+00:00",
-      "updated_at": "2026-06-08T05:11:05.609600+00:00",
+      "updated_at": "2026-06-08T05:16:04.508224+00:00",
       "status": "open",
       "code": "8046",
       "name": "南電",
       "sector": "半導體",
       "entry_price": 831.0,
-      "last_price": 834.0,
+      "last_price": 833.0,
       "best_price": 845.0,
       "worst_price": 831.0,
       "score": 48,
@@ -5114,14 +5115,14 @@
       "volume_ratio_at_signal": 0.74,
       "alert": null,
       "results": {
-        "latest_pct": 0.361,
+        "latest_pct": 0.241,
         "max_gain": 1.685,
         "max_drawdown": 0.0,
         "pct_5m": 0.361,
         "pct_10m": 0.963,
         "pct_30m": 0.722
       },
-      "age_minutes": 150.84
+      "age_minutes": 155.82
     },
     {
       "key": "ai_pool:1609:48:37.15",
@@ -5492,13 +5493,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T02:45:15.083125+00:00",
-      "updated_at": "2026-06-08T05:11:05.609612+00:00",
+      "updated_at": "2026-06-08T05:16:04.508238+00:00",
       "status": "open",
       "code": "8046",
       "name": "南電",
       "sector": "半導體",
       "entry_price": 832.0,
-      "last_price": 834.0,
+      "last_price": 833.0,
       "best_price": 845.0,
       "worst_price": 831.0,
       "score": 67,
@@ -5506,14 +5507,14 @@
       "volume_ratio_at_signal": 0.74,
       "alert": null,
       "results": {
-        "latest_pct": 0.24,
+        "latest_pct": 0.12,
         "max_gain": 1.562,
         "max_drawdown": -0.12,
         "pct_5m": 0.841,
         "pct_10m": 0.721,
         "pct_30m": 0.12
       },
-      "age_minutes": 145.84
+      "age_minutes": 150.82
     },
     {
       "key": "ai_pool:2454:56:4020.0",
@@ -6248,13 +6249,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T02:50:15.303809+00:00",
-      "updated_at": "2026-06-08T05:11:05.609627+00:00",
+      "updated_at": "2026-06-08T05:16:04.508252+00:00",
       "status": "open",
       "code": "8046",
       "name": "南電",
       "sector": "半導體",
       "entry_price": 838.0,
-      "last_price": 834.0,
+      "last_price": 833.0,
       "best_price": 845.0,
       "worst_price": 831.0,
       "score": 71,
@@ -6262,14 +6263,14 @@
       "volume_ratio_at_signal": 0.75,
       "alert": null,
       "results": {
-        "latest_pct": -0.477,
+        "latest_pct": -0.597,
         "max_gain": 0.835,
         "max_drawdown": -0.835,
         "pct_5m": 0.0,
         "pct_10m": 0.477,
         "pct_30m": -0.239
       },
-      "age_minutes": 140.84
+      "age_minutes": 145.82
     },
     {
       "key": "ai_pool:2317:64:271.0",
@@ -6668,13 +6669,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T02:50:25.637667+00:00",
-      "updated_at": "2026-06-08T05:11:05.609638+00:00",
+      "updated_at": "2026-06-08T05:16:04.508265+00:00",
       "status": "open",
       "code": "8046",
       "name": "南電",
       "sector": "半導體",
       "entry_price": 838.0,
-      "last_price": 834.0,
+      "last_price": 833.0,
       "best_price": 845.0,
       "worst_price": 831.0,
       "score": 74,
@@ -6682,14 +6683,14 @@
       "volume_ratio_at_signal": 0.75,
       "alert": "大戶進場警報",
       "results": {
-        "latest_pct": -0.477,
+        "latest_pct": -0.597,
         "max_gain": 0.835,
         "max_drawdown": -0.835,
         "pct_5m": 0.0,
         "pct_10m": 0.477,
         "pct_30m": -0.239
       },
-      "age_minutes": 140.67
+      "age_minutes": 145.65
     },
     {
       "key": "fund_flow:2454:35:4025.0",
@@ -6864,13 +6865,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T02:55:12.105020+00:00",
-      "updated_at": "2026-06-08T05:11:05.609647+00:00",
+      "updated_at": "2026-06-08T05:16:04.508275+00:00",
       "status": "open",
       "code": "8046",
       "name": "南電",
       "sector": "半導體",
       "entry_price": 839.0,
-      "last_price": 834.0,
+      "last_price": 833.0,
       "best_price": 845.0,
       "worst_price": 831.0,
       "score": 72,
@@ -6878,14 +6879,14 @@
       "volume_ratio_at_signal": 0.76,
       "alert": null,
       "results": {
-        "latest_pct": -0.596,
+        "latest_pct": -0.715,
         "max_gain": 0.715,
         "max_drawdown": -0.954,
         "pct_5m": 0.358,
         "pct_10m": -0.238,
         "pct_30m": 0.477
       },
-      "age_minutes": 135.89
+      "age_minutes": 140.87
     },
     {
       "key": "ai_pool:2317:64:270.5",
@@ -7368,13 +7369,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T02:55:21.687803+00:00",
-      "updated_at": "2026-06-08T05:11:05.609659+00:00",
+      "updated_at": "2026-06-08T05:16:04.508284+00:00",
       "status": "open",
       "code": "8046",
       "name": "南電",
       "sector": "半導體",
       "entry_price": 839.0,
-      "last_price": 834.0,
+      "last_price": 833.0,
       "best_price": 845.0,
       "worst_price": 831.0,
       "score": 74,
@@ -7382,14 +7383,14 @@
       "volume_ratio_at_signal": 0.76,
       "alert": "大戶進場警報",
       "results": {
-        "latest_pct": -0.596,
+        "latest_pct": -0.715,
         "max_gain": 0.715,
         "max_drawdown": -0.954,
         "pct_5m": 0.358,
         "pct_10m": -0.238,
         "pct_30m": 0.477
       },
-      "age_minutes": 135.73
+      "age_minutes": 140.71
     },
     {
       "key": "fund_flow:2454:33:4045.0",
@@ -7676,13 +7677,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T03:00:26.524723+00:00",
-      "updated_at": "2026-06-08T05:11:05.609670+00:00",
+      "updated_at": "2026-06-08T05:16:04.508291+00:00",
       "status": "open",
       "code": "8046",
       "name": "南電",
       "sector": "半導體",
       "entry_price": 838.0,
-      "last_price": 834.0,
+      "last_price": 833.0,
       "best_price": 845.0,
       "worst_price": 831.0,
       "score": 53,
@@ -7690,14 +7691,14 @@
       "volume_ratio_at_signal": 0.76,
       "alert": null,
       "results": {
-        "latest_pct": -0.477,
+        "latest_pct": -0.597,
         "max_gain": 0.835,
         "max_drawdown": -0.835,
         "pct_5m": -0.119,
         "pct_10m": -0.119,
         "pct_30m": 0.835
       },
-      "age_minutes": 130.65
+      "age_minutes": 135.63
     },
     {
       "key": "ai_pool:3017:51:2525.0",
@@ -8068,13 +8069,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T03:05:12.938685+00:00",
-      "updated_at": "2026-06-08T05:11:05.609682+00:00",
+      "updated_at": "2026-06-08T05:16:04.508297+00:00",
       "status": "open",
       "code": "8046",
       "name": "南電",
       "sector": "半導體",
       "entry_price": 838.0,
-      "last_price": 834.0,
+      "last_price": 833.0,
       "best_price": 845.0,
       "worst_price": 831.0,
       "score": 63,
@@ -8082,14 +8083,14 @@
       "volume_ratio_at_signal": 0.78,
       "alert": null,
       "results": {
-        "latest_pct": -0.477,
+        "latest_pct": -0.597,
         "max_gain": 0.835,
         "max_drawdown": -0.835,
         "pct_5m": -0.119,
         "pct_10m": -0.597,
         "pct_30m": 0.358
       },
-      "age_minutes": 125.88
+      "age_minutes": 130.86
     },
     {
       "key": "ai_pool:2317:56:269.5",
@@ -8460,13 +8461,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T03:10:15.922540+00:00",
-      "updated_at": "2026-06-08T05:11:05.609694+00:00",
+      "updated_at": "2026-06-08T05:16:04.508304+00:00",
       "status": "open",
       "code": "8046",
       "name": "南電",
       "sector": "半導體",
       "entry_price": 837.0,
-      "last_price": 834.0,
+      "last_price": 833.0,
       "best_price": 845.0,
       "worst_price": 831.0,
       "score": 70,
@@ -8474,14 +8475,14 @@
       "volume_ratio_at_signal": 0.78,
       "alert": null,
       "results": {
-        "latest_pct": -0.358,
+        "latest_pct": -0.478,
         "max_gain": 0.956,
         "max_drawdown": -0.717,
         "pct_5m": -0.478,
         "pct_10m": -0.119,
         "pct_30m": 0.239
       },
-      "age_minutes": 120.83
+      "age_minutes": 125.81
     },
     {
       "key": "ai_pool:3037:61:909.0",
@@ -9048,13 +9049,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T03:15:15.074793+00:00",
-      "updated_at": "2026-06-08T05:11:05.609708+00:00",
+      "updated_at": "2026-06-08T05:16:04.508311+00:00",
       "status": "open",
       "code": "8046",
       "name": "南電",
       "sector": "半導體",
       "entry_price": 833.0,
-      "last_price": 834.0,
+      "last_price": 833.0,
       "best_price": 845.0,
       "worst_price": 831.0,
       "score": 59,
@@ -9062,14 +9063,14 @@
       "volume_ratio_at_signal": 0.78,
       "alert": null,
       "results": {
-        "latest_pct": 0.12,
+        "latest_pct": 0.0,
         "max_gain": 1.441,
         "max_drawdown": -0.24,
         "pct_5m": 0.36,
         "pct_10m": 1.2,
         "pct_30m": 0.84
       },
-      "age_minutes": 115.84
+      "age_minutes": 120.82
     },
     {
       "key": "ai_pool:1513:57:165.0",
@@ -9552,13 +9553,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T03:20:14.902927+00:00",
-      "updated_at": "2026-06-08T05:11:05.609719+00:00",
+      "updated_at": "2026-06-08T05:16:04.508318+00:00",
       "status": "open",
       "code": "8046",
       "name": "南電",
       "sector": "半導體",
       "entry_price": 830.0,
-      "last_price": 834.0,
+      "last_price": 833.0,
       "best_price": 845.0,
       "worst_price": 830.0,
       "score": 73,
@@ -9566,14 +9567,14 @@
       "volume_ratio_at_signal": 0.8,
       "alert": null,
       "results": {
-        "latest_pct": 0.482,
+        "latest_pct": 0.361,
         "max_gain": 1.807,
         "max_drawdown": 0.0,
         "pct_5m": 1.566,
         "pct_10m": 1.807,
         "pct_30m": 0.843
       },
-      "age_minutes": 110.85
+      "age_minutes": 115.83
     },
     {
       "key": "ai_pool:2330:68:2300.0",
@@ -10196,13 +10197,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T03:25:12.343805+00:00",
-      "updated_at": "2026-06-08T05:11:05.609733+00:00",
+      "updated_at": "2026-06-08T05:16:04.508324+00:00",
       "status": "open",
       "code": "8046",
       "name": "南電",
       "sector": "半導體",
       "entry_price": 843.0,
-      "last_price": 834.0,
+      "last_price": 833.0,
       "best_price": 845.0,
       "worst_price": 831.0,
       "score": 65,
@@ -10210,14 +10211,14 @@
       "volume_ratio_at_signal": 0.82,
       "alert": null,
       "results": {
-        "latest_pct": -1.068,
+        "latest_pct": -1.186,
         "max_gain": 0.237,
         "max_drawdown": -1.423,
         "pct_5m": 0.237,
         "pct_10m": -0.237,
         "pct_30m": -0.83
       },
-      "age_minutes": 105.89
+      "age_minutes": 110.87
     },
     {
       "key": "ai_pool:2615:65:84.5",
@@ -10784,13 +10785,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T03:30:19.535841+00:00",
-      "updated_at": "2026-06-08T05:11:05.609745+00:00",
+      "updated_at": "2026-06-08T05:16:04.508331+00:00",
       "status": "open",
       "code": "8046",
       "name": "南電",
       "sector": "半導體",
       "entry_price": 845.0,
-      "last_price": 834.0,
+      "last_price": 833.0,
       "best_price": 845.0,
       "worst_price": 831.0,
       "score": 76,
@@ -10798,14 +10799,14 @@
       "volume_ratio_at_signal": 0.85,
       "alert": null,
       "results": {
-        "latest_pct": -1.302,
+        "latest_pct": -1.42,
         "max_gain": 0.0,
         "max_drawdown": -1.657,
         "pct_5m": -0.473,
         "pct_10m": -0.71,
         "pct_30m": -1.065
       },
-      "age_minutes": 100.77
+      "age_minutes": 105.75
     },
     {
       "key": "ai_pool:3037:68:921.0",
@@ -11316,13 +11317,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T03:35:12.413668+00:00",
-      "updated_at": "2026-06-08T05:11:05.609756+00:00",
+      "updated_at": "2026-06-08T05:16:04.508356+00:00",
       "status": "open",
       "code": "8046",
       "name": "南電",
       "sector": "半導體",
       "entry_price": 842.0,
-      "last_price": 834.0,
+      "last_price": 833.0,
       "best_price": 842.0,
       "worst_price": 831.0,
       "score": 64,
@@ -11330,14 +11331,14 @@
       "volume_ratio_at_signal": 0.85,
       "alert": null,
       "results": {
-        "latest_pct": -0.95,
+        "latest_pct": -1.069,
         "max_gain": 0.0,
         "max_drawdown": -1.306,
         "pct_5m": -0.356,
         "pct_10m": -0.238,
         "pct_30m": -0.95
       },
-      "age_minutes": 95.89
+      "age_minutes": 100.87
     },
     {
       "key": "ai_pool:2615:57:84.5",
@@ -11764,13 +11765,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T03:40:16.268318+00:00",
-      "updated_at": "2026-06-08T05:11:05.609768+00:00",
+      "updated_at": "2026-06-08T05:16:04.508370+00:00",
       "status": "open",
       "code": "8046",
       "name": "南電",
       "sector": "半導體",
       "entry_price": 841.0,
-      "last_price": 834.0,
+      "last_price": 833.0,
       "best_price": 841.0,
       "worst_price": 831.0,
       "score": 81,
@@ -11778,14 +11779,14 @@
       "volume_ratio_at_signal": 0.86,
       "alert": null,
       "results": {
-        "latest_pct": -0.832,
+        "latest_pct": -0.951,
         "max_gain": 0.0,
         "max_drawdown": -1.189,
         "pct_5m": -0.119,
         "pct_10m": -0.476,
         "pct_30m": -0.595
       },
-      "age_minutes": 90.82
+      "age_minutes": 95.8
     },
     {
       "key": "ai_pool:2317:64:270.0",
@@ -12044,13 +12045,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T03:40:26.938157+00:00",
-      "updated_at": "2026-06-08T05:11:05.609779+00:00",
+      "updated_at": "2026-06-08T05:16:04.508381+00:00",
       "status": "open",
       "code": "8046",
       "name": "南電",
       "sector": "半導體",
       "entry_price": 841.0,
-      "last_price": 834.0,
+      "last_price": 833.0,
       "best_price": 841.0,
       "worst_price": 831.0,
       "score": 73,
@@ -12058,14 +12059,14 @@
       "volume_ratio_at_signal": 0.86,
       "alert": "大戶進場警報",
       "results": {
-        "latest_pct": -0.832,
+        "latest_pct": -0.951,
         "max_gain": 0.0,
         "max_drawdown": -1.189,
         "pct_5m": -0.119,
         "pct_10m": -0.476,
         "pct_30m": -0.595
       },
-      "age_minutes": 90.64
+      "age_minutes": 95.63
     },
     {
       "key": "fund_flow:2382:32:374.5",
@@ -12268,13 +12269,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T03:45:15.296330+00:00",
-      "updated_at": "2026-06-08T05:11:05.609789+00:00",
+      "updated_at": "2026-06-08T05:16:04.508387+00:00",
       "status": "open",
       "code": "8046",
       "name": "南電",
       "sector": "半導體",
       "entry_price": 839.0,
-      "last_price": 834.0,
+      "last_price": 833.0,
       "best_price": 840.0,
       "worst_price": 831.0,
       "score": 62,
@@ -12282,14 +12283,14 @@
       "volume_ratio_at_signal": 0.86,
       "alert": null,
       "results": {
-        "latest_pct": -0.596,
+        "latest_pct": -0.715,
         "max_gain": 0.119,
         "max_drawdown": -0.954,
         "pct_5m": -0.238,
         "pct_10m": -0.358,
         "pct_30m": -0.477
       },
-      "age_minutes": 85.84
+      "age_minutes": 90.82
     },
     {
       "key": "ai_pool:3661:56:4135.0",
@@ -12632,13 +12633,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T03:50:15.373141+00:00",
-      "updated_at": "2026-06-08T05:11:05.609800+00:00",
+      "updated_at": "2026-06-08T05:16:04.508394+00:00",
       "status": "open",
       "code": "8046",
       "name": "南電",
       "sector": "半導體",
       "entry_price": 837.0,
-      "last_price": 834.0,
+      "last_price": 833.0,
       "best_price": 837.0,
       "worst_price": 831.0,
       "score": 78,
@@ -12646,14 +12647,14 @@
       "volume_ratio_at_signal": 0.87,
       "alert": null,
       "results": {
-        "latest_pct": -0.358,
+        "latest_pct": -0.478,
         "max_gain": 0.0,
         "max_drawdown": -0.717,
         "pct_5m": -0.119,
         "pct_10m": -0.119,
         "pct_30m": -0.358
       },
-      "age_minutes": 80.84
+      "age_minutes": 85.82
     },
     {
       "key": "ai_pool:3037:73:916.0",
@@ -12968,13 +12969,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T03:55:11.578024+00:00",
-      "updated_at": "2026-06-08T05:11:05.609810+00:00",
+      "updated_at": "2026-06-08T05:16:04.508400+00:00",
       "status": "open",
       "code": "8046",
       "name": "南電",
       "sector": "半導體",
       "entry_price": 836.0,
-      "last_price": 834.0,
+      "last_price": 833.0,
       "best_price": 836.0,
       "worst_price": 831.0,
       "score": 78,
@@ -12982,14 +12983,14 @@
       "volume_ratio_at_signal": 0.87,
       "alert": null,
       "results": {
-        "latest_pct": -0.239,
+        "latest_pct": -0.359,
         "max_gain": 0.0,
         "max_drawdown": -0.598,
         "pct_5m": 0.0,
         "pct_10m": -0.239,
         "pct_30m": -0.359
       },
-      "age_minutes": 75.9
+      "age_minutes": 80.88
     },
     {
       "key": "ai_pool:3037:62:912.0",
@@ -13640,13 +13641,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T04:05:12.635155+00:00",
-      "updated_at": "2026-06-08T05:11:05.609823+00:00",
+      "updated_at": "2026-06-08T05:16:04.508407+00:00",
       "status": "open",
       "code": "8046",
       "name": "南電",
       "sector": "半導體",
       "entry_price": 834.0,
-      "last_price": 834.0,
+      "last_price": 833.0,
       "best_price": 836.0,
       "worst_price": 831.0,
       "score": 58,
@@ -13654,14 +13655,14 @@
       "volume_ratio_at_signal": 0.88,
       "alert": null,
       "results": {
-        "latest_pct": 0.0,
+        "latest_pct": -0.12,
         "max_gain": 0.24,
         "max_drawdown": -0.36,
         "pct_5m": 0.24,
         "pct_10m": 0.12,
         "pct_30m": -0.12
       },
-      "age_minutes": 65.88
+      "age_minutes": 70.86
     },
     {
       "key": "ai_pool:3324:57:1090.0",
@@ -13976,13 +13977,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T04:10:16.119727+00:00",
-      "updated_at": "2026-06-08T05:11:05.609834+00:00",
+      "updated_at": "2026-06-08T05:16:04.508413+00:00",
       "status": "open",
       "code": "8046",
       "name": "南電",
       "sector": "半導體",
       "entry_price": 835.0,
-      "last_price": 834.0,
+      "last_price": 833.0,
       "best_price": 836.0,
       "worst_price": 831.0,
       "score": 77,
@@ -13990,14 +13991,14 @@
       "volume_ratio_at_signal": 0.89,
       "alert": null,
       "results": {
-        "latest_pct": -0.12,
+        "latest_pct": -0.24,
         "max_gain": 0.12,
         "max_drawdown": -0.479,
         "pct_5m": 0.0,
         "pct_10m": -0.12,
         "pct_30m": 0.0
       },
-      "age_minutes": 60.82
+      "age_minutes": 65.81
     },
     {
       "key": "ai_pool:3017:62:2540.0",
@@ -14340,13 +14341,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T04:15:14.557921+00:00",
-      "updated_at": "2026-06-08T05:11:05.609846+00:00",
+      "updated_at": "2026-06-08T05:16:04.508420+00:00",
       "status": "open",
       "code": "8046",
       "name": "南電",
       "sector": "半導體",
       "entry_price": 835.0,
-      "last_price": 834.0,
+      "last_price": 833.0,
       "best_price": 836.0,
       "worst_price": 831.0,
       "score": 59,
@@ -14354,14 +14355,14 @@
       "volume_ratio_at_signal": 0.89,
       "alert": null,
       "results": {
-        "latest_pct": -0.12,
+        "latest_pct": -0.24,
         "max_gain": 0.12,
         "max_drawdown": -0.479,
         "pct_5m": -0.12,
         "pct_10m": -0.24,
         "pct_30m": -0.359
       },
-      "age_minutes": 55.85
+      "age_minutes": 60.83
     },
     {
       "key": "ai_pool:2382:56:372.5",
@@ -14872,13 +14873,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T04:20:15.348654+00:00",
-      "updated_at": "2026-06-08T05:11:05.609858+00:00",
+      "updated_at": "2026-06-08T05:16:04.508426+00:00",
       "status": "open",
       "code": "8046",
       "name": "南電",
       "sector": "半導體",
       "entry_price": 834.0,
-      "last_price": 834.0,
+      "last_price": 833.0,
       "best_price": 836.0,
       "worst_price": 831.0,
       "score": 76,
@@ -14886,14 +14887,14 @@
       "volume_ratio_at_signal": 0.89,
       "alert": null,
       "results": {
-        "latest_pct": 0.0,
+        "latest_pct": -0.12,
         "max_gain": 0.24,
         "max_drawdown": -0.36,
         "pct_5m": -0.12,
         "pct_10m": -0.36,
         "pct_30m": 0.0
       },
-      "age_minutes": 50.84
+      "age_minutes": 55.82
     },
     {
       "key": "ai_pool:3037:66:905.0",
@@ -15320,13 +15321,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T04:25:12.669677+00:00",
-      "updated_at": "2026-06-08T05:11:05.609869+00:00",
+      "updated_at": "2026-06-08T05:16:04.508437+00:00",
       "status": "open",
       "code": "8046",
       "name": "南電",
       "sector": "半導體",
       "entry_price": 833.0,
-      "last_price": 834.0,
+      "last_price": 833.0,
       "best_price": 836.0,
       "worst_price": 831.0,
       "score": 57,
@@ -15334,14 +15335,14 @@
       "volume_ratio_at_signal": 0.9,
       "alert": null,
       "results": {
-        "latest_pct": 0.12,
+        "latest_pct": 0.0,
         "max_gain": 0.36,
         "max_drawdown": -0.24,
         "pct_5m": -0.24,
         "pct_10m": 0.0,
         "pct_30m": -0.24
       },
-      "age_minutes": 45.88
+      "age_minutes": 50.86
     },
     {
       "key": "ai_pool:3017:53:2535.0",
@@ -15684,13 +15685,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T04:30:21.576525+00:00",
-      "updated_at": "2026-06-08T05:11:05.609879+00:00",
+      "updated_at": "2026-06-08T05:16:04.508449+00:00",
       "status": "open",
       "code": "8046",
       "name": "南電",
       "sector": "半導體",
       "entry_price": 831.0,
-      "last_price": 834.0,
+      "last_price": 833.0,
       "best_price": 836.0,
       "worst_price": 831.0,
       "score": 74,
@@ -15698,14 +15699,14 @@
       "volume_ratio_at_signal": 0.91,
       "alert": null,
       "results": {
-        "latest_pct": 0.361,
+        "latest_pct": 0.241,
         "max_gain": 0.602,
         "max_drawdown": 0.0,
         "pct_5m": 0.241,
         "pct_10m": 0.481,
         "pct_30m": 0.0
       },
-      "age_minutes": 40.73
+      "age_minutes": 45.72
     },
     {
       "key": "ai_pool:2308:64:2225.0",
@@ -17084,13 +17085,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T04:45:15.082593+00:00",
-      "updated_at": "2026-06-08T05:11:05.609895+00:00",
+      "updated_at": "2026-06-08T05:16:04.508463+00:00",
       "status": "open",
       "code": "8046",
       "name": "南電",
       "sector": "半導體",
       "entry_price": 832.0,
-      "last_price": 834.0,
+      "last_price": 833.0,
       "best_price": 836.0,
       "worst_price": 831.0,
       "score": 75,
@@ -17098,13 +17099,14 @@
       "volume_ratio_at_signal": 0.92,
       "alert": null,
       "results": {
-        "latest_pct": 0.24,
+        "latest_pct": 0.12,
         "max_gain": 0.481,
         "max_drawdown": -0.12,
         "pct_5m": 0.24,
-        "pct_10m": -0.12
+        "pct_10m": -0.12,
+        "pct_30m": 0.12
       },
-      "age_minutes": 25.84
+      "age_minutes": 30.82
     },
     {
       "key": "ai_pool:3711:64:536.0",
@@ -17491,13 +17493,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T04:50:15.332685+00:00",
-      "updated_at": "2026-06-08T05:11:05.609906+00:00",
+      "updated_at": "2026-06-08T05:16:04.508469+00:00",
       "status": "open",
       "code": "8046",
       "name": "南電",
       "sector": "半導體",
       "entry_price": 832.0,
-      "last_price": 834.0,
+      "last_price": 833.0,
       "best_price": 836.0,
       "worst_price": 831.0,
       "score": 57,
@@ -17505,13 +17507,13 @@
       "volume_ratio_at_signal": 0.93,
       "alert": null,
       "results": {
-        "latest_pct": 0.24,
+        "latest_pct": 0.12,
         "max_gain": 0.481,
         "max_drawdown": -0.12,
         "pct_5m": -0.12,
         "pct_10m": -0.12
       },
-      "age_minutes": 20.84
+      "age_minutes": 25.82
     },
     {
       "key": "ai_pool:5347:56:153.5",
@@ -18112,13 +18114,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T05:00:30.824732+00:00",
-      "updated_at": "2026-06-08T05:11:05.609919+00:00",
+      "updated_at": "2026-06-08T05:16:04.508476+00:00",
       "status": "open",
       "code": "8046",
       "name": "南電",
       "sector": "半導體",
       "entry_price": 831.0,
-      "last_price": 834.0,
+      "last_price": 833.0,
       "best_price": 836.0,
       "worst_price": 831.0,
       "score": 66,
@@ -18126,13 +18128,13 @@
       "volume_ratio_at_signal": 0.95,
       "alert": null,
       "results": {
-        "latest_pct": 0.361,
+        "latest_pct": 0.241,
         "max_gain": 0.602,
         "max_drawdown": 0.0,
         "pct_5m": 0.602,
         "pct_10m": 0.361
       },
-      "age_minutes": 10.58
+      "age_minutes": 15.56
     },
     {
       "key": "ai_pool:3231:64:162.0",
@@ -18727,26 +18729,27 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T05:05:27.187985+00:00",
-      "updated_at": "2026-06-08T05:11:05.609934+00:00",
+      "updated_at": "2026-06-08T05:16:04.508483+00:00",
       "status": "open",
       "code": "8046",
       "name": "南電",
       "sector": "半導體",
       "entry_price": 836.0,
-      "last_price": 834.0,
+      "last_price": 833.0,
       "best_price": 836.0,
-      "worst_price": 834.0,
+      "worst_price": 833.0,
       "score": 78,
       "change_rate_at_signal": -1.06,
       "volume_ratio_at_signal": 0.96,
       "alert": "大戶進場警報",
       "results": {
-        "latest_pct": -0.239,
+        "latest_pct": -0.359,
         "max_gain": 0.0,
-        "max_drawdown": -0.239,
-        "pct_5m": -0.239
+        "max_drawdown": -0.359,
+        "pct_5m": -0.239,
+        "pct_10m": -0.359
       },
-      "age_minutes": 5.64
+      "age_minutes": 10.62
     },
     {
       "key": "fund_flow:2379:35:595.0",
@@ -18883,25 +18886,26 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T05:10:16.363813+00:00",
-      "updated_at": "2026-06-08T05:11:05.609943+00:00",
+      "updated_at": "2026-06-08T05:16:04.508489+00:00",
       "status": "open",
       "code": "8046",
       "name": "南電",
       "sector": "半導體",
       "entry_price": 834.0,
-      "last_price": 834.0,
+      "last_price": 833.0,
       "best_price": 834.0,
-      "worst_price": 834.0,
+      "worst_price": 833.0,
       "score": 68,
       "change_rate_at_signal": -1.3,
       "volume_ratio_at_signal": 0.97,
       "alert": null,
       "results": {
-        "latest_pct": 0.0,
+        "latest_pct": -0.12,
         "max_gain": 0.0,
-        "max_drawdown": 0.0
+        "max_drawdown": -0.12,
+        "pct_5m": -0.12
       },
-      "age_minutes": 0.82
+      "age_minutes": 5.8
     },
     {
       "key": "ai_pool:3711:64:542.0",
