@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-08T01:16:28.610520+00:00",
+  "updated_at": "2026-06-08T01:16:30.841266+00:00",
   "count": 140,
   "items": [
     {
@@ -170,7 +170,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T01:00:25.731693+00:00",
-      "updated_at": "2026-06-08T01:11:08.019790+00:00",
+      "updated_at": "2026-06-08T01:16:30.071428+00:00",
       "status": "open",
       "code": "2376",
       "name": "技嘉",
@@ -190,7 +190,7 @@
         "pct_5m": 0.0,
         "pct_10m": 1.178
       },
-      "age_minutes": 10.7
+      "age_minutes": 16.07
     },
     {
       "key": "ai_pool:8046:48:765.0",
@@ -575,7 +575,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T01:00:36.720178+00:00",
-      "updated_at": "2026-06-08T01:11:08.019814+00:00",
+      "updated_at": "2026-06-08T01:16:30.071446+00:00",
       "status": "open",
       "code": "2376",
       "name": "技嘉",
@@ -595,7 +595,7 @@
         "pct_5m": -0.147,
         "pct_10m": 1.029
       },
-      "age_minutes": 10.52
+      "age_minutes": 15.89
     },
     {
       "key": "fund_flow:5347:27:148.0",
@@ -1567,7 +1567,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T01:05:22.720701+00:00",
-      "updated_at": "2026-06-08T01:11:08.019833+00:00",
+      "updated_at": "2026-06-08T01:16:30.071461+00:00",
       "status": "open",
       "code": "2376",
       "name": "技嘉",
@@ -1584,9 +1584,10 @@
         "latest_pct": 1.327,
         "max_gain": 1.327,
         "max_drawdown": 0.0,
-        "pct_5m": 1.327
+        "pct_5m": 1.327,
+        "pct_10m": 1.327
       },
-      "age_minutes": 5.75
+      "age_minutes": 11.12
     },
     {
       "key": "fund_flow:2379:30:588.0",
@@ -2116,7 +2117,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T01:10:16.373983+00:00",
-      "updated_at": "2026-06-08T01:11:08.019846+00:00",
+      "updated_at": "2026-06-08T01:16:30.071473+00:00",
       "status": "open",
       "code": "2376",
       "name": "技嘉",
@@ -2132,9 +2133,10 @@
       "results": {
         "latest_pct": 0.146,
         "max_gain": 0.146,
-        "max_drawdown": 0.0
+        "max_drawdown": 0.0,
+        "pct_5m": 0.146
       },
-      "age_minutes": 0.86
+      "age_minutes": 6.23
     },
     {
       "key": "ai_pool:2368:56:1255.0",
@@ -2828,20 +2830,25 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T01:15:15.735287+00:00",
-      "updated_at": "2026-06-08T01:15:15.735290+00:00",
+      "updated_at": "2026-06-08T01:16:30.071483+00:00",
       "status": "open",
       "code": "2376",
       "name": "技嘉",
       "sector": "電腦週邊",
       "entry_price": 345.0,
-      "last_price": 345.0,
+      "last_price": 343.5,
       "best_price": 345.0,
-      "worst_price": 345.0,
+      "worst_price": 343.5,
       "score": 56,
       "change_rate_at_signal": -6.5,
       "volume_ratio_at_signal": 0.26,
       "alert": null,
-      "results": {}
+      "results": {
+        "latest_pct": -0.435,
+        "max_gain": 0.0,
+        "max_drawdown": -0.435
+      },
+      "age_minutes": 1.24
     },
     {
       "key": "ai_pool:5347:56:150.0",
@@ -3368,20 +3375,25 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T01:15:26.200402+00:00",
-      "updated_at": "2026-06-08T01:15:26.200404+00:00",
+      "updated_at": "2026-06-08T01:16:30.071494+00:00",
       "status": "open",
       "code": "2376",
       "name": "技嘉",
       "sector": "電腦週邊",
       "entry_price": 344.0,
-      "last_price": 344.0,
+      "last_price": 343.5,
       "best_price": 344.0,
-      "worst_price": 344.0,
+      "worst_price": 343.5,
       "score": 35,
       "change_rate_at_signal": -6.77,
       "volume_ratio_at_signal": 0.27,
       "alert": "資金退潮警報",
-      "results": {}
+      "results": {
+        "latest_pct": -0.145,
+        "max_gain": 0.0,
+        "max_drawdown": -0.145
+      },
+      "age_minutes": 1.06
     },
     {
       "key": "fund_flow:2324:34:37.5",
