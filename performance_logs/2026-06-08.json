@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-08T01:01:02.839565+00:00",
+  "updated_at": "2026-06-08T01:01:04.467163+00:00",
   "count": 39,
   "items": [
     {
@@ -153,20 +153,25 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T01:00:25.731700+00:00",
-      "updated_at": "2026-06-08T01:00:25.731702+00:00",
+      "updated_at": "2026-06-08T01:01:03.921488+00:00",
       "status": "open",
       "code": "8046",
       "name": "南電",
       "sector": "半導體",
       "entry_price": 765.0,
-      "last_price": 765.0,
-      "best_price": 765.0,
+      "last_price": 770.0,
+      "best_price": 770.0,
       "worst_price": 765.0,
       "score": 48,
       "change_rate_at_signal": -9.46,
       "volume_ratio_at_signal": 0.05,
       "alert": null,
-      "results": {}
+      "results": {
+        "latest_pct": 0.654,
+        "max_gain": 0.654,
+        "max_drawdown": 0.0
+      },
+      "age_minutes": 0.64
     },
     {
       "key": "ai_pool:6215:48:108.5",
