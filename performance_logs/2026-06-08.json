@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-08T03:12:24.719235+00:00",
+  "updated_at": "2026-06-08T03:12:27.630403+00:00",
   "count": 317,
   "items": [
     {
@@ -288,7 +288,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T01:00:25.731728+00:00",
-      "updated_at": "2026-06-08T03:07:07.427896+00:00",
+      "updated_at": "2026-06-08T03:12:26.622170+00:00",
       "status": "open",
       "code": "1605",
       "name": "華新",
@@ -309,7 +309,7 @@
         "pct_10m": -0.829,
         "pct_30m": -1.105
       },
-      "age_minutes": 126.69
+      "age_minutes": 132.01
     },
     {
       "key": "ai_pool:1609:48:36.3",
@@ -652,7 +652,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T01:00:36.720194+00:00",
-      "updated_at": "2026-06-08T03:07:07.427913+00:00",
+      "updated_at": "2026-06-08T03:12:26.622204+00:00",
       "status": "open",
       "code": "1605",
       "name": "華新",
@@ -673,7 +673,7 @@
         "pct_10m": 0.0,
         "pct_30m": -0.279
       },
-      "age_minutes": 126.51
+      "age_minutes": 131.83
     },
     {
       "key": "fund_flow:3037:25:857.0",
@@ -2416,7 +2416,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T01:10:16.374027+00:00",
-      "updated_at": "2026-06-08T03:07:07.427925+00:00",
+      "updated_at": "2026-06-08T03:12:26.622228+00:00",
       "status": "open",
       "code": "1605",
       "name": "華新",
@@ -2437,7 +2437,7 @@
         "pct_10m": -0.968,
         "pct_30m": -0.968
       },
-      "age_minutes": 116.85
+      "age_minutes": 122.17
     },
     {
       "key": "ai_pool:1609:48:36.85",
@@ -3284,7 +3284,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T01:15:15.735385+00:00",
-      "updated_at": "2026-06-08T03:07:07.427933+00:00",
+      "updated_at": "2026-06-08T03:12:26.622246+00:00",
       "status": "open",
       "code": "1605",
       "name": "華新",
@@ -3305,7 +3305,7 @@
         "pct_10m": -0.693,
         "pct_30m": -0.693
       },
-      "age_minutes": 111.86
+      "age_minutes": 117.18
     },
     {
       "key": "ai_pool:2330:40:2295.0",
@@ -3816,7 +3816,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T01:15:26.200439+00:00",
-      "updated_at": "2026-06-08T03:07:07.427939+00:00",
+      "updated_at": "2026-06-08T03:12:26.622259+00:00",
       "status": "open",
       "code": "1605",
       "name": "華新",
@@ -3837,7 +3837,7 @@
         "pct_10m": -0.693,
         "pct_30m": -0.693
       },
-      "age_minutes": 111.69
+      "age_minutes": 117.01
     },
     {
       "key": "fund_flow:2382:31:364.0",
@@ -4348,7 +4348,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T02:35:13.181558+00:00",
-      "updated_at": "2026-06-08T03:07:07.427946+00:00",
+      "updated_at": "2026-06-08T03:12:26.622273+00:00",
       "status": "open",
       "code": "1605",
       "name": "華新",
@@ -4369,7 +4369,7 @@
         "pct_10m": -0.559,
         "pct_30m": -0.559
       },
-      "age_minutes": 31.9
+      "age_minutes": 37.22
     },
     {
       "key": "ai_pool:2609:40:52.0",
@@ -4488,7 +4488,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T02:35:23.609959+00:00",
-      "updated_at": "2026-06-08T03:07:07.427952+00:00",
+      "updated_at": "2026-06-08T03:12:26.622284+00:00",
       "status": "open",
       "code": "1605",
       "name": "華新",
@@ -4509,7 +4509,7 @@
         "pct_10m": -0.559,
         "pct_30m": -0.559
       },
-      "age_minutes": 31.73
+      "age_minutes": 37.05
     },
     {
       "key": "fund_flow:2454:25:4030.0",
@@ -5104,7 +5104,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T02:40:15.266846+00:00",
-      "updated_at": "2026-06-08T03:07:07.427959+00:00",
+      "updated_at": "2026-06-08T03:12:26.622298+00:00",
       "status": "open",
       "code": "1605",
       "name": "華新",
@@ -5122,9 +5122,10 @@
         "max_gain": 0.0,
         "max_drawdown": -0.42,
         "pct_5m": -0.42,
-        "pct_10m": -0.42
+        "pct_10m": -0.42,
+        "pct_30m": -0.42
       },
-      "age_minutes": 26.87
+      "age_minutes": 32.19
     },
     {
       "key": "ai_pool:2344:40:153.0",
@@ -5299,7 +5300,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T02:40:25.357112+00:00",
-      "updated_at": "2026-06-08T03:07:07.427964+00:00",
+      "updated_at": "2026-06-08T03:12:26.622310+00:00",
       "status": "open",
       "code": "1605",
       "name": "華新",
@@ -5317,9 +5318,10 @@
         "max_gain": 0.14,
         "max_drawdown": -0.28,
         "pct_5m": -0.28,
-        "pct_10m": -0.28
+        "pct_10m": -0.28,
+        "pct_30m": -0.28
       },
-      "age_minutes": 26.7
+      "age_minutes": 32.02
     },
     {
       "key": "fund_flow:3481:5:48.35",
@@ -6030,7 +6032,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T02:45:25.121201+00:00",
-      "updated_at": "2026-06-08T03:07:07.427971+00:00",
+      "updated_at": "2026-06-08T03:12:26.622323+00:00",
       "status": "open",
       "code": "1605",
       "name": "華新",
@@ -6050,7 +6052,7 @@
         "pct_5m": 0.0,
         "pct_10m": 0.0
       },
-      "age_minutes": 21.71
+      "age_minutes": 27.03
     },
     {
       "key": "fund_flow:2609:17:51.3",
@@ -7299,7 +7301,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T02:55:21.687923+00:00",
-      "updated_at": "2026-06-08T03:07:07.427978+00:00",
+      "updated_at": "2026-06-08T03:12:26.622358+00:00",
       "status": "open",
       "code": "1605",
       "name": "華新",
@@ -7319,7 +7321,7 @@
         "pct_5m": 0.0,
         "pct_10m": 0.0
       },
-      "age_minutes": 11.76
+      "age_minutes": 17.08
     },
     {
       "key": "fund_flow:2609:4:51.3",
