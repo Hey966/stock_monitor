@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-08T06:57:07.536567+00:00",
+  "updated_at": "2026-06-08T06:57:10.642243+00:00",
   "count": 737,
   "items": [
     {
@@ -7171,8 +7171,8 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T02:55:12.105122+00:00",
-      "updated_at": "2026-06-08T06:52:07.004089+00:00",
-      "status": "open",
+      "updated_at": "2026-06-08T06:57:09.799530+00:00",
+      "status": "closed",
       "code": "2615",
       "name": "萬海",
       "sector": "航運",
@@ -7190,9 +7190,10 @@
         "max_drawdown": 0.0,
         "pct_5m": 0.0,
         "pct_10m": 0.0,
-        "pct_30m": 0.595
+        "pct_30m": 0.595,
+        "pct_close_proxy": 0.714
       },
-      "age_minutes": 236.91
+      "age_minutes": 241.96
     },
     {
       "key": "ai_pool:3324:49:1075.0",
@@ -7908,7 +7909,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T03:00:26.524781+00:00",
-      "updated_at": "2026-06-08T06:52:07.004107+00:00",
+      "updated_at": "2026-06-08T06:57:09.799558+00:00",
       "status": "open",
       "code": "2615",
       "name": "萬海",
@@ -7929,7 +7930,7 @@
         "pct_10m": 0.476,
         "pct_30m": 0.833
       },
-      "age_minutes": 231.67
+      "age_minutes": 236.72
     },
     {
       "key": "ai_pool:3037:43:910.0",
@@ -8720,7 +8721,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T03:10:15.922599+00:00",
-      "updated_at": "2026-06-08T06:52:07.004117+00:00",
+      "updated_at": "2026-06-08T06:57:09.799573+00:00",
       "status": "open",
       "code": "2615",
       "name": "萬海",
@@ -8741,7 +8742,7 @@
         "pct_10m": -0.355,
         "pct_30m": 0.355
       },
-      "age_minutes": 221.85
+      "age_minutes": 226.9
     },
     {
       "key": "ai_pool:1513:54:166.5",
@@ -9084,7 +9085,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T03:15:15.074772+00:00",
-      "updated_at": "2026-06-08T06:52:07.004123+00:00",
+      "updated_at": "2026-06-08T06:57:09.799585+00:00",
       "status": "open",
       "code": "2615",
       "name": "萬海",
@@ -9105,7 +9106,7 @@
         "pct_10m": 0.237,
         "pct_30m": 0.593
       },
-      "age_minutes": 216.87
+      "age_minutes": 221.91
     },
     {
       "key": "ai_pool:8046:59:833.0",
@@ -9840,7 +9841,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T03:20:14.903010+00:00",
-      "updated_at": "2026-06-08T06:52:07.004130+00:00",
+      "updated_at": "2026-06-08T06:57:09.799600+00:00",
       "status": "open",
       "code": "2615",
       "name": "萬海",
@@ -9861,7 +9862,7 @@
         "pct_10m": 0.594,
         "pct_30m": 0.238
       },
-      "age_minutes": 211.87
+      "age_minutes": 216.91
     },
     {
       "key": "ai_pool:3037:41:906.0",
@@ -10288,7 +10289,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T03:25:12.343815+00:00",
-      "updated_at": "2026-06-08T06:52:07.004135+00:00",
+      "updated_at": "2026-06-08T06:57:09.799611+00:00",
       "status": "open",
       "code": "2615",
       "name": "萬海",
@@ -10309,7 +10310,7 @@
         "pct_10m": 0.0,
         "pct_30m": -0.237
       },
-      "age_minutes": 206.91
+      "age_minutes": 211.96
     },
     {
       "key": "ai_pool:3324:62:1085.0",
@@ -10904,7 +10905,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T03:30:19.535879+00:00",
-      "updated_at": "2026-06-08T06:52:07.004141+00:00",
+      "updated_at": "2026-06-08T06:57:09.799625+00:00",
       "status": "open",
       "code": "2615",
       "name": "萬海",
@@ -10925,7 +10926,7 @@
         "pct_10m": 0.118,
         "pct_30m": -0.591
       },
-      "age_minutes": 201.79
+      "age_minutes": 206.84
     },
     {
       "key": "ai_pool:3443:62:4290.0",
@@ -11408,7 +11409,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T03:35:12.413676+00:00",
-      "updated_at": "2026-06-08T06:52:07.004147+00:00",
+      "updated_at": "2026-06-08T06:57:09.799638+00:00",
       "status": "open",
       "code": "2615",
       "name": "萬海",
@@ -11429,7 +11430,7 @@
         "pct_10m": 0.355,
         "pct_30m": -0.473
       },
-      "age_minutes": 196.91
+      "age_minutes": 201.96
     },
     {
       "key": "ai_pool:2317:56:270.0",
@@ -12248,7 +12249,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T03:45:15.296308+00:00",
-      "updated_at": "2026-06-08T06:52:07.004154+00:00",
+      "updated_at": "2026-06-08T06:57:09.799655+00:00",
       "status": "open",
       "code": "2615",
       "name": "萬海",
@@ -12269,7 +12270,7 @@
         "pct_10m": -0.472,
         "pct_30m": -0.59
       },
-      "age_minutes": 186.86
+      "age_minutes": 191.91
     },
     {
       "key": "ai_pool:3037:65:916.0",
@@ -13508,7 +13509,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T04:00:26.383074+00:00",
-      "updated_at": "2026-06-08T06:52:07.004162+00:00",
+      "updated_at": "2026-06-08T06:57:09.799677+00:00",
       "status": "open",
       "code": "2615",
       "name": "萬海",
@@ -13529,7 +13530,7 @@
         "pct_10m": -0.119,
         "pct_30m": 0.0
       },
-      "age_minutes": 171.68
+      "age_minutes": 176.72
     },
     {
       "key": "fund_flow:3443:30:4250.0",
@@ -14544,7 +14545,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T04:15:14.557990+00:00",
-      "updated_at": "2026-06-08T06:52:07.004169+00:00",
+      "updated_at": "2026-06-08T06:57:09.799694+00:00",
       "status": "open",
       "code": "2615",
       "name": "萬海",
@@ -14565,7 +14566,7 @@
         "pct_10m": -0.238,
         "pct_30m": 0.119
       },
-      "age_minutes": 156.87
+      "age_minutes": 161.92
     },
     {
       "key": "ai_pool:3037:49:907.0",
@@ -17288,7 +17289,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T04:45:15.082728+00:00",
-      "updated_at": "2026-06-08T06:52:07.004179+00:00",
+      "updated_at": "2026-06-08T06:57:09.799721+00:00",
       "status": "open",
       "code": "2615",
       "name": "萬海",
@@ -17309,7 +17310,7 @@
         "pct_10m": 0.0,
         "pct_30m": 0.474
       },
-      "age_minutes": 126.87
+      "age_minutes": 131.91
     },
     {
       "key": "ai_pool:2317:48:267.0",
@@ -19136,7 +19137,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T05:10:16.363887+00:00",
-      "updated_at": "2026-06-08T06:52:07.004187+00:00",
+      "updated_at": "2026-06-08T06:57:09.799740+00:00",
       "status": "open",
       "code": "2615",
       "name": "萬海",
@@ -19157,7 +19158,7 @@
         "pct_10m": -0.236,
         "pct_30m": -0.118
       },
-      "age_minutes": 101.84
+      "age_minutes": 106.89
     },
     {
       "key": "ai_pool:5347:56:154.5",
@@ -20368,7 +20369,7 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T05:25:12.584919+00:00",
-      "updated_at": "2026-06-08T06:52:07.004194+00:00",
+      "updated_at": "2026-06-08T06:57:09.799755+00:00",
       "status": "open",
       "code": "2615",
       "name": "萬海",
@@ -20389,7 +20390,7 @@
         "pct_10m": 0.0,
         "pct_30m": 0.0
       },
-      "age_minutes": 86.91
+      "age_minutes": 91.95
     },
     {
       "key": "fund_flow:1609:29:37.0",
