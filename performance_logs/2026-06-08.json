@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-08T05:07:28.344041+00:00",
+  "updated_at": "2026-06-08T05:07:32.056025+00:00",
   "count": 673,
   "items": [
     {
@@ -2036,8 +2036,8 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T01:05:22.720804+00:00",
-      "updated_at": "2026-06-08T05:02:44.380892+00:00",
-      "status": "open",
+      "updated_at": "2026-06-08T05:07:30.767155+00:00",
+      "status": "closed",
       "code": "2356",
       "name": "英業達",
       "sector": "電腦週邊",
@@ -2055,9 +2055,10 @@
         "max_drawdown": 0.0,
         "pct_5m": 0.0,
         "pct_10m": 0.0,
-        "pct_30m": 0.0
+        "pct_30m": 0.0,
+        "pct_close_proxy": 0.0
       },
-      "age_minutes": 237.36
+      "age_minutes": 242.13
     },
     {
       "key": "fund_flow:2409:2:24.4",
@@ -18744,7 +18745,7 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T05:05:27.188036+00:00",
-      "updated_at": "2026-06-08T05:05:27.188038+00:00",
+      "updated_at": "2026-06-08T05:07:30.767333+00:00",
       "status": "open",
       "code": "2356",
       "name": "英業達",
@@ -18757,7 +18758,12 @@
       "change_rate_at_signal": -9.89,
       "volume_ratio_at_signal": 0.14,
       "alert": "資金退潮警報",
-      "results": {}
+      "results": {
+        "latest_pct": 0.0,
+        "max_gain": 0.0,
+        "max_drawdown": 0.0
+      },
+      "age_minutes": 2.06
     },
     {
       "key": "fund_flow:2609:12:51.6",
