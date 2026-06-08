@@ -43,32 +43,55 @@
     return (perf?.modules || []).find(x => x.module === name) || null;
   }
 
+  function hasSignals(row) {
+    return Boolean(row && Number(row.signals || 0) > 0);
+  }
+
   function realWinRate(row) {
-    if (!row) return null;
+    if (!hasSignals(row)) return null;
     return row.win_rate_30m ?? null;
   }
 
+  function settledCountFromLatest(row) {
+    return (row?.latest || []).filter(x => Number.isFinite(Number((x.results || {}).pct_30m))).length;
+  }
+
   function metricText(row) {
-    if (!row) return '-';
+    if (!hasSignals(row)) return '-';
     const rate = realWinRate(row);
-    const samples = row.tracked ?? row.signals ?? 0;
-    if (rate === null || rate === undefined) return `30分尚無結算｜樣本 ${samples}筆`;
-    return `30分勝率 ${rate}%｜樣本 ${samples}筆`;
+    const tracked = row.tracked ?? row.signals ?? 0;
+    const settledHint = row.tracked_30m ?? row.settled_30m ?? null;
+    const sampleText = Number.isFinite(Number(settledHint)) ? `30分樣本 ${settledHint}筆` : `追蹤 ${tracked}筆`;
+    if (rate === null || rate === undefined) return `30分尚無結算｜${sampleText}`;
+    return `30分勝率 ${rate}%｜${sampleText}`;
   }
 
   function statusText(row) {
-    if (!row) return '尚無紀錄';
+    if (!hasSignals(row)) return '尚無紀錄';
     if ((row.tracked || 0) > 0) return '已追蹤';
-    if ((row.signals || 0) > 0) return '待驗證';
-    return '尚無訊號';
+    return '待驗證';
+  }
+
+  function row30mText(x) {
+    const r = x.results || {};
+    if (Number.isFinite(Number(r.pct_30m))) return `30分 ${pct(r.pct_30m)}`;
+    const age = Number(x.age_minutes || 0);
+    if (age > 0 && age < 30) return `30分未結算`;
+    return `30分 -`;
+  }
+
+  function rowLatestText(x) {
+    const r = x.results || {};
+    if (Number.isFinite(Number(r.latest_pct))) return `最新 ${pct(r.latest_pct)}`;
+    return '最新 -';
   }
 
   function renderModule(testNo, row, label) {
     setText(`#test${testNo}Status`, statusText(row));
     setText(`#test${testNo}Metric`, metricText(row));
-    renderList(`#test${testNo}List`, row?.latest || [], (x, i) => {
-      const r = x.results || {};
-      return `<span>${i + 1}. ${x.code} ${x.name || ''}｜${x.score ?? '-'}分｜最新 ${pct(r.latest_pct)}｜30分 ${pct(r.pct_30m)}</span>`;
+    const rows = hasSignals(row) ? (row.latest || []) : [];
+    renderList(`#test${testNo}List`, rows, (x, i) => {
+      return `<span>${i + 1}. ${x.code} ${x.name || ''}｜${x.score ?? '-'}分｜${rowLatestText(x)}｜${row30mText(x)}</span>`;
     }, `${label} 尚無績效紀錄`);
   }
 
@@ -95,16 +118,17 @@
     const fundWin = win(realWinRate(fund));
     const breakoutWin = win(realWinRate(breakout));
 
-    setText('#validationTitle', '訊號實測中心');
+    setText('#validationTitle', '實測績效中心');
     setText('#validationSummary', `正式實測 ${total} 筆，已追蹤 ${tracked} 筆。選股池 ${poolWin}｜資金流 ${fundWin}｜突破 ${breakoutWin}。`);
 
     renderModule(1, pool, MODULE_LABELS.ai_pool);
     renderModule(2, breakout, MODULE_LABELS.breakout);
     renderModule(3, fund, MODULE_LABELS.fund_flow);
 
-    setText('#test4Status', replay?.ok ? ((replay.total_signals || 0) > 0 ? '已追蹤' : '尚無Replay樣本') : 'API錯誤');
-    setText('#test4Metric', replay?.win_rate === null || replay?.win_rate === undefined ? `樣本 ${replay?.total_signals || 0}筆` : `勝率 ${replay.win_rate}%｜樣本 ${replay?.total_signals || 0}筆`);
-    renderList('#test4List', replay?.latest?.slice(-5).reverse() || [], (x, i) => `<span>${i + 1}. ${x.code}｜${x.score}分｜${x.level || '-'}｜最新 ${pct((x.results || {}).latest_pct)}</span>`, '尚無Replay紀錄');
+    const replayCount = replay?.total_signals || 0;
+    setText('#test4Status', replay?.ok ? (replayCount > 0 ? '已追蹤' : '尚未啟用') : 'API錯誤');
+    setText('#test4Metric', replayCount > 0 ? (replay?.win_rate === null || replay?.win_rate === undefined ? `樣本 ${replayCount}筆` : `勝率 ${replay.win_rate}%｜樣本 ${replayCount}筆`) : '-');
+    renderList('#test4List', replayCount > 0 ? (replay?.latest?.slice(-5).reverse() || []) : [], (x, i) => `<span>${i + 1}. ${x.code}｜${x.score}分｜${x.level || '-'}｜最新 ${pct((x.results || {}).latest_pct)}</span>`, 'Replay 尚未啟用');
 
     const perfOk = Boolean(perf?.ok);
     const replayOk = Boolean(replay?.ok);
