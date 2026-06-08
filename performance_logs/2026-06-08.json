@@ -1,6 +1,6 @@
 {
   "version": "STX Module Performance v1",
-  "updated_at": "2026-06-08T01:16:30.841266+00:00",
+  "updated_at": "2026-06-08T01:16:33.832427+00:00",
   "count": 140,
   "items": [
     {
@@ -35,13 +35,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T01:00:25.731584+00:00",
-      "updated_at": "2026-06-08T01:11:09.873605+00:00",
+      "updated_at": "2026-06-08T01:16:32.416717+00:00",
       "status": "open",
       "code": "2368",
       "name": "金像電",
       "sector": "PCB",
       "entry_price": 1210.0,
-      "last_price": 1250.0,
+      "last_price": 1245.0,
       "best_price": 1250.0,
       "worst_price": 1200.0,
       "score": 56,
@@ -49,13 +49,13 @@
       "volume_ratio_at_signal": 0.04,
       "alert": null,
       "results": {
-        "latest_pct": 3.306,
+        "latest_pct": 2.893,
         "max_gain": 3.306,
         "max_drawdown": -0.826,
         "pct_5m": 2.893,
         "pct_10m": 3.306
       },
-      "age_minutes": 10.74
+      "age_minutes": 16.11
     },
     {
       "key": "ai_pool:2615:51:83.7",
@@ -1168,13 +1168,13 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T01:05:12.805197+00:00",
-      "updated_at": "2026-06-08T01:11:09.873627+00:00",
+      "updated_at": "2026-06-08T01:16:32.416746+00:00",
       "status": "open",
       "code": "2368",
       "name": "金像電",
       "sector": "PCB",
       "entry_price": 1225.0,
-      "last_price": 1250.0,
+      "last_price": 1245.0,
       "best_price": 1250.0,
       "worst_price": 1225.0,
       "score": 56,
@@ -1182,12 +1182,13 @@
       "volume_ratio_at_signal": 0.07,
       "alert": null,
       "results": {
-        "latest_pct": 2.041,
+        "latest_pct": 1.633,
         "max_gain": 2.041,
         "max_drawdown": 0.0,
-        "pct_5m": 2.041
+        "pct_5m": 2.041,
+        "pct_10m": 1.633
       },
-      "age_minutes": 5.95
+      "age_minutes": 11.33
     },
     {
       "key": "ai_pool:1609:56:36.8",
@@ -1726,13 +1727,13 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T01:05:22.720764+00:00",
-      "updated_at": "2026-06-08T01:11:09.873638+00:00",
+      "updated_at": "2026-06-08T01:16:32.416761+00:00",
       "status": "open",
       "code": "2368",
       "name": "金像電",
       "sector": "PCB",
       "entry_price": 1225.0,
-      "last_price": 1250.0,
+      "last_price": 1245.0,
       "best_price": 1250.0,
       "worst_price": 1225.0,
       "score": 34,
@@ -1740,12 +1741,13 @@
       "volume_ratio_at_signal": 0.07,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": 2.041,
+        "latest_pct": 1.633,
         "max_gain": 2.041,
         "max_drawdown": 0.0,
-        "pct_5m": 2.041
+        "pct_5m": 2.041,
+        "pct_10m": 1.633
       },
-      "age_minutes": 5.79
+      "age_minutes": 11.16
     },
     {
       "key": "fund_flow:1609:34:36.7",
@@ -2143,25 +2145,26 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T01:10:16.373989+00:00",
-      "updated_at": "2026-06-08T01:11:09.873649+00:00",
+      "updated_at": "2026-06-08T01:16:32.416776+00:00",
       "status": "open",
       "code": "2368",
       "name": "金像電",
       "sector": "PCB",
       "entry_price": 1255.0,
-      "last_price": 1250.0,
+      "last_price": 1245.0,
       "best_price": 1255.0,
-      "worst_price": 1250.0,
+      "worst_price": 1245.0,
       "score": 56,
       "change_rate_at_signal": -4.56,
       "volume_ratio_at_signal": 0.12,
       "alert": null,
       "results": {
-        "latest_pct": -0.398,
+        "latest_pct": -0.797,
         "max_gain": 0.0,
-        "max_drawdown": -0.398
+        "max_drawdown": -0.797,
+        "pct_5m": -0.797
       },
-      "age_minutes": 0.89
+      "age_minutes": 6.27
     },
     {
       "key": "ai_pool:1513:56:163.0",
@@ -2502,25 +2505,26 @@
       "module": "fund_flow",
       "reason": "api_fund_flow",
       "created_at": "2026-06-08T01:10:27.018792+00:00",
-      "updated_at": "2026-06-08T01:11:09.873659+00:00",
+      "updated_at": "2026-06-08T01:16:32.416787+00:00",
       "status": "open",
       "code": "2368",
       "name": "金像電",
       "sector": "PCB",
       "entry_price": 1255.0,
-      "last_price": 1250.0,
+      "last_price": 1245.0,
       "best_price": 1255.0,
-      "worst_price": 1250.0,
+      "worst_price": 1245.0,
       "score": 32,
       "change_rate_at_signal": -4.56,
       "volume_ratio_at_signal": 0.12,
       "alert": "資金退潮警報",
       "results": {
-        "latest_pct": -0.398,
+        "latest_pct": -0.797,
         "max_gain": 0.0,
-        "max_drawdown": -0.398
+        "max_drawdown": -0.797,
+        "pct_5m": -0.797
       },
-      "age_minutes": 0.71
+      "age_minutes": 6.09
     },
     {
       "key": "fund_flow:3711:33:526.0",
@@ -2975,20 +2979,25 @@
       "module": "ai_pool",
       "reason": "api_ai_pool",
       "created_at": "2026-06-08T01:15:15.735347+00:00",
-      "updated_at": "2026-06-08T01:15:15.735349+00:00",
+      "updated_at": "2026-06-08T01:16:32.416795+00:00",
       "status": "open",
       "code": "2368",
       "name": "金像電",
       "sector": "PCB",
       "entry_price": 1250.0,
-      "last_price": 1250.0,
+      "last_price": 1245.0,
       "best_price": 1250.0,
-      "worst_price": 1250.0,
+      "worst_price": 1245.0,
       "score": 48,
       "change_rate_at_signal": -4.94,
       "volume_ratio_at_signal": 0.15,
       "alert": null,
-      "results": {}
+      "results": {
+        "latest_pct": -0.4,
+        "max_gain": 0.0,
+        "max_drawdown": -0.4
+      },
+      "age_minutes": 1.28
     },
     {
       "key": "ai_pool:8046:48:785.0",
