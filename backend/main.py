@@ -44,7 +44,6 @@ SECTOR_MAP = {
     "2615": "航運", "2609": "航運", "2618": "航運", "2409": "面板", "3481": "面板",
 }
 
-
 class QuoteResponse(BaseModel):
     code: str
     name: str | None = None
@@ -63,7 +62,6 @@ class QuoteResponse(BaseModel):
     average_price: float | None = None
     raw: dict[str, Any]
 
-
 class KBarItem(BaseModel):
     ts: str
     open: float
@@ -71,7 +69,6 @@ class KBarItem(BaseModel):
     low: float
     close: float
     volume: int | float
-
 
 class KBarsResponse(BaseModel):
     code: str
@@ -81,7 +78,6 @@ class KBarsResponse(BaseModel):
     start: str | None = None
     end: str | None = None
     message: str | None = None
-
 
 def login_shioaji(force: bool = False) -> None:
     global api, LAST_RELOGIN_AT
@@ -106,7 +102,6 @@ def login_shioaji(force: bool = False) -> None:
     except Exception as exc:
         print(f"Shioaji login failed: {exc}")
 
-
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     global api
@@ -119,18 +114,15 @@ async def lifespan(app: FastAPI):
         except Exception:
             pass
 
-
-app = FastAPI(title="Stock Monitor Backend", version="0.9.3", lifespan=lifespan)
+app = FastAPI(title="Stock Monitor Backend", version="0.9.4", lifespan=lifespan)
 origins = [x.strip() for x in CORS_ORIGINS.split(",") if x.strip()]
 app.add_middleware(CORSMiddleware, allow_origins=origins if origins else ["*"], allow_credentials=True, allow_methods=["*"], allow_headers=["*"])
-
 
 def pick_number(raw: dict[str, Any], *keys: str):
     for key in keys:
         if raw.get(key) is not None:
             return raw.get(key)
     return None
-
 
 def _float(v: Any, default: float = 0.0) -> float:
     try:
@@ -140,10 +132,8 @@ def _float(v: Any, default: float = 0.0) -> float:
     except Exception:
         return default
 
-
 def _bool(v: Any) -> bool:
     return v is True or v == "true" or v == 1 or v == "1"
-
 
 def _try_get_contract(container: Any, code: str):
     try:
@@ -155,13 +145,11 @@ def _try_get_contract(container: Any, code: str):
     except Exception:
         return None
 
-
 def get_stock_contract(code: str):
     if api is None:
         login_shioaji(force=True)
     if api is None:
         raise HTTPException(status_code=503, detail="Shioaji API is not initialized")
-
     stocks = getattr(api.Contracts, "Stocks", None)
     for market in [stocks, getattr(stocks, "TSE", None), getattr(stocks, "OTC", None), getattr(stocks, "OES", None)]:
         if market is None:
@@ -169,7 +157,6 @@ def get_stock_contract(code: str):
         contract = _try_get_contract(market, code)
         if contract is not None:
             return contract
-
     login_shioaji(force=True)
     stocks = getattr(api.Contracts, "Stocks", None)
     for market in [stocks, getattr(stocks, "TSE", None), getattr(stocks, "OTC", None), getattr(stocks, "OES", None)]:
@@ -178,16 +165,13 @@ def get_stock_contract(code: str):
         contract = _try_get_contract(market, code)
         if contract is not None:
             return contract
-
     raise HTTPException(status_code=404, detail=f"Cannot find stock code: {code}")
-
 
 def normalize_kbars(kbars: Any) -> list[KBarItem]:
     rows = []
     for ts, o, h, l, c, v in zip(getattr(kbars, "ts", []), getattr(kbars, "Open", []), getattr(kbars, "High", []), getattr(kbars, "Low", []), getattr(kbars, "Close", []), getattr(kbars, "Volume", []), strict=False):
         rows.append(KBarItem(ts=str(ts), open=float(o), high=float(h), low=float(l), close=float(c), volume=float(v)))
     return rows
-
 
 def _quote_from_snapshot(code: str, contract: Any) -> dict[str, Any]:
     if api is None:
@@ -204,7 +188,6 @@ def _quote_from_snapshot(code: str, contract: Any) -> dict[str, Any]:
         change_rate = float(change_price) / float(reference) * 100
     return dict(code=code, name=getattr(contract, "name", None), close=close, open=pick_number(raw, "open"), high=pick_number(raw, "high"), low=pick_number(raw, "low"), volume=pick_number(raw, "total_volume", "volume"), change_price=change_price, change_rate=change_rate, buy_price=pick_number(raw, "buy_price"), buy_volume=pick_number(raw, "buy_volume"), sell_price=pick_number(raw, "sell_price"), sell_volume=pick_number(raw, "sell_volume"), volume_ratio=pick_number(raw, "volume_ratio"), average_price=pick_number(raw, "average_price"), raw=raw)
 
-
 def make_quote_payload(code: str) -> tuple[Any, dict[str, Any]]:
     contract = get_stock_contract(code)
     try:
@@ -219,7 +202,6 @@ def make_quote_payload(code: str) -> tuple[Any, dict[str, Any]]:
             except Exception as second_exc:
                 raise HTTPException(status_code=502, detail=f"Failed to fetch quote from Shioaji after relogin: {second_exc}") from second_exc
         raise HTTPException(status_code=502, detail=f"Failed to fetch quote from Shioaji: {first_exc}") from first_exc
-
 
 def fetch_kbar_rows(contract: Any, days: int = 5) -> tuple[list[KBarItem], date | None, date | None]:
     if api is None:
@@ -243,7 +225,6 @@ def fetch_kbar_rows(contract: Any, days: int = 5) -> tuple[list[KBarItem], date 
             break
     return rows, used_start, used_end
 
-
 def market_payload_for(code: str) -> dict[str, Any] | None:
     if code == "2330":
         return None
@@ -252,7 +233,6 @@ def market_payload_for(code: str) -> dict[str, Any] | None:
         return {k: v for k, v in market_quote.items() if k != "raw"}
     except Exception:
         return None
-
 
 def scan_score(quote: dict[str, Any]) -> int:
     score = 50
@@ -265,10 +245,7 @@ def scan_score(quote: dict[str, Any]) -> int:
     avg = _float(quote.get("average_price"))
     buy = _float(quote.get("buy_volume"))
     sell = _float(quote.get("sell_volume"))
-    if change > 0:
-        score += min(change * 6, 20)
-    else:
-        score += max(change * 6, -20)
+    score += min(change * 6, 20) if change > 0 else max(change * 6, -20)
     if vol_ratio >= 2:
         score += 16
     elif vol_ratio >= 1.3:
@@ -299,7 +276,6 @@ def scan_score(quote: dict[str, Any]) -> int:
         score -= 10
     return max(0, min(100, int(round(score))))
 
-
 def scan_mood(score: int) -> str:
     if score >= 85:
         return "強勢攻擊"
@@ -310,7 +286,6 @@ def scan_mood(score: int) -> str:
     if score >= 50:
         return "中性"
     return "轉弱"
-
 
 def _rule_score_from_pro(pro: dict[str, Any]) -> tuple[int, list[str]]:
     signals = pro.get("signals") or {}
@@ -350,13 +325,17 @@ def _rule_score_from_pro(pro: dict[str, Any]) -> tuple[int, list[str]]:
         score -= 12; reasons.append("量比不足")
     elif volume_ratio >= 1.3:
         score += 6; reasons.append("量比放大")
-    if red_k: score += 5
-    if rel_vol >= 1.25: score += 6
-    if orderbook >= 0.25: score += 7
-    elif orderbook <= -0.25: score -= 10
-    if risks: score -= min(len(risks), 4) * 2
+    if red_k:
+        score += 5
+    if rel_vol >= 1.25:
+        score += 6
+    if orderbook >= 0.25:
+        score += 7
+    elif orderbook <= -0.25:
+        score -= 10
+    if risks:
+        score -= min(len(risks), 4) * 2
     return max(0, min(100, int(round(score)))), reasons
-
 
 def _final_result(row: dict[str, Any]) -> tuple[str, str]:
     change_rate = _float(row.get("change_rate"), 0)
@@ -377,7 +356,6 @@ def _final_result(row: dict[str, Any]) -> tuple[str, str]:
         return "可進場", "規則、Pro、族群與VWAP結構同步。"
     return "等待", "條件未完全同步。"
 
-
 def _build_final_row(code: str, quote: dict[str, Any], pro: dict[str, Any], sector: str, group_score: int = 0) -> dict[str, Any]:
     signals = pro.get("signals") or {}
     pro_score = int(_float(pro.get("score"), scan_score(quote)))
@@ -386,10 +364,8 @@ def _build_final_row(code: str, quote: dict[str, Any], pro: dict[str, Any], sect
     no_chase = trap or _float(signals.get("distance_to_vwap_pct"), 0) >= 2 or _float(signals.get("last_3_bar_change_pct"), 0) >= 2
     above_vwap = bool(signals.get("vwap") and _float(quote.get("close")) > _float(signals.get("vwap")))
     pullback = _bool(signals.get("pullback_hold_vwap"))
-    news_score = 0
-    chip_score = 0
-    row = {"code": code, "name": quote.get("name"), "sector": sector, "close": quote.get("close"), "open": quote.get("open"), "high": quote.get("high"), "low": quote.get("low"), "change_rate": quote.get("change_rate"), "volume_ratio": quote.get("volume_ratio"), "buy_volume": quote.get("buy_volume"), "sell_volume": quote.get("sell_volume"), "score": pro_score, "pro_score": pro_score, "rule_score": rule_score, "group_score": group_score, "news_score": news_score, "chip_score": chip_score, "trap": trap, "trap_block": trap, "no_chase": no_chase, "above_vwap": above_vwap, "pullback_confirmed": pullback, "mood": scan_mood(pro_score), "rule_reasons": rule_reasons, "pro_action": pro.get("action"), "risks": pro.get("risks", []), "traps": pro.get("traps", []), "signals": signals}
-    raw_final_score = int(round(rule_score * 0.50 + pro_score * 0.25 + group_score * 0.15 + (news_score + chip_score) * 0.10))
+    row = {"code": code, "name": quote.get("name"), "sector": sector, "close": quote.get("close"), "open": quote.get("open"), "high": quote.get("high"), "low": quote.get("low"), "change_rate": quote.get("change_rate"), "volume_ratio": quote.get("volume_ratio"), "buy_volume": quote.get("buy_volume"), "sell_volume": quote.get("sell_volume"), "score": pro_score, "pro_score": pro_score, "rule_score": rule_score, "group_score": group_score, "news_score": 0, "chip_score": 0, "trap": trap, "trap_block": trap, "no_chase": no_chase, "above_vwap": above_vwap, "pullback_confirmed": pullback, "mood": scan_mood(pro_score), "rule_reasons": rule_reasons, "pro_action": pro.get("action"), "risks": pro.get("risks", []), "traps": pro.get("traps", []), "signals": signals}
+    raw_final_score = int(round(rule_score * 0.50 + pro_score * 0.25 + group_score * 0.15))
     score_cap = 100
     if _float(quote.get("change_rate"), 0) < 0:
         score_cap = min(score_cap, 69)
@@ -401,7 +377,6 @@ def _build_final_row(code: str, quote: dict[str, Any], pro: dict[str, Any], sect
     row["final_score"] = min(raw_final_score, score_cap)
     row["final_result"], row["final_reason"] = _final_result(row)
     return row
-
 
 def build_market_scan(limit: int = 5, send: bool = False, record: bool = False) -> dict[str, Any]:
     rows: list[dict[str, Any]] = []
@@ -426,9 +401,11 @@ def build_market_scan(limit: int = 5, send: bool = False, record: bool = False) 
         rows.append(_build_final_row(code, quote, pro, sector, sector_scores.get(sector, 0)))
     ranked = sorted(rows, key=lambda x: x["final_score"], reverse=True)
     candidates = [x for x in ranked if x.get("final_result") == "可進場"]
+    validation_top5 = ranked[:5]
     for i, item in enumerate(ranked, 1):
         item["rank"] = i
         item["discord_pushed"] = item in candidates[:5]
+        item["validation_recorded"] = item in validation_top5
     sector_map: dict[str, dict[str, Any]] = {}
     for item in ranked:
         row = sector_map.setdefault(item["sector"], {"sector": item["sector"], "count": 0, "score_sum": 0, "top_codes": []})
@@ -441,10 +418,9 @@ def build_market_scan(limit: int = 5, send: bool = False, record: bool = False) 
         row["avg_score"] = round(row["score_sum"] / max(row["count"], 1), 2)
         sectors.append(row)
     sectors.sort(key=lambda x: (x["avg_score"], x["count"]), reverse=True)
-    recorded = record_module_signals("ai_pool", candidates[:5], reason="radar_final_top5", limit=5) if record and candidates else None
+    recorded = record_module_signals("radar_final", validation_top5, reason="radar_final_rank_top5", limit=5) if record and validation_top5 else None
     sent = send_radar_top5_alert({"discord_top5": candidates[:5], "scanned": len(rows), "universe_size": len(SCAN_UNIVERSE), "strongest_sector": sectors[0] if sectors else None}) if send else None
-    return {"ok": True, "version": "STX Final Radar v1.3", "universe_size": len(SCAN_UNIVERSE), "scanned": len(rows), "errors": errors, "top5": ranked[:limit], "items": ranked, "rankings": ranked, "final_rankings": ranked, "discord_top5": candidates[:5], "entry_candidates": candidates, "sectors": sectors[:5], "strongest_sector": sectors[0] if sectors else None, "recorded": recorded, "sent": sent}
-
+    return {"ok": True, "version": "STX Final Radar v1.4", "universe_size": len(SCAN_UNIVERSE), "scanned": len(rows), "errors": errors, "top5": ranked[:limit], "items": ranked, "rankings": ranked, "final_rankings": ranked, "validation_top5": validation_top5, "discord_top5": candidates[:5], "entry_candidates": candidates, "sectors": sectors[:5], "strongest_sector": sectors[0] if sectors else None, "recorded": recorded, "sent": sent}
 
 def build_ai_pool(limit: int = 20, record: bool = False) -> dict[str, Any]:
     scan = build_market_scan(limit=max(limit, 10), record=record)
@@ -459,7 +435,6 @@ def build_ai_pool(limit: int = 20, record: bool = False) -> dict[str, Any]:
     sector_rank.sort(key=lambda x: (x["avg_score"], x["count"]), reverse=True)
     return {"ok": True, "version": "AI Pool v2", "pool_size": len(items), "top20": items, "sectors": sector_rank, "source": "final_market_scan", "recorded": scan.get("recorded")}
 
-
 def build_breakout_alerts(limit: int = 20, min_score: int = 85, send: bool = False, record: bool = False) -> dict[str, Any]:
     scan = build_market_scan(limit=max(limit, 10), send=False, record=False)
     alerts = [x for x in scan.get("entry_candidates", []) if int(x.get("final_score") or 0) >= min_score][:limit]
@@ -467,7 +442,6 @@ def build_breakout_alerts(limit: int = 20, min_score: int = 85, send: bool = Fal
         send_radar_top5_alert({**scan, "discord_top5": alerts[:5]})
     recorded = record_module_signals("breakout", alerts, reason="api_breakout_final", limit=limit) if record else None
     return {"ok": True, "version": "Breakout Alert v2", "checked": scan.get("scanned", 0), "alert_count": len(alerts), "alerts": alerts, "sent": bool(send and alerts), "recorded": recorded}
-
 
 def build_fund_flow(limit: int = 20, send: bool = False, record: bool = False) -> dict[str, Any]:
     scan = build_market_scan(limit=max(10, min(limit, 30)), send=False, record=False)
@@ -478,18 +452,16 @@ def build_fund_flow(limit: int = 20, send: bool = False, record: bool = False) -
     report["recorded"] = record_module_signals("fund_flow", report.get("alerts", []), reason="api_fund_flow", limit=limit) if record else None
     return report
 
-
 def build_cron_run(limit: int = 20, send: bool = True) -> dict[str, Any]:
     scan = build_market_scan(limit=max(limit, 10), send=send, record=True)
     perf = get_module_performance()
-    return {"ok": True, "version": "STX Scheduler v2", "limit": limit, "send": bool(send), "radar_top5": scan.get("discord_top5", []), "recorded": scan.get("recorded"), "sent": scan.get("sent"), "performance": {"total_signals": perf.get("total_signals"), "tracked_results": perf.get("tracked_results"), "github_path": perf.get("github_path")}}
-
+    return {"ok": True, "version": "STX Scheduler v3", "limit": limit, "send": bool(send), "radar_top5": scan.get("discord_top5", []), "validation_top5": scan.get("validation_top5", []), "recorded": scan.get("recorded"), "sent": scan.get("sent"), "performance": {"total_signals": perf.get("total_signals"), "tracked_results": perf.get("tracked_results"), "github_path": perf.get("github_path")}}
 
 @app.get("/")
 def root(): return {"status": "ok", "message": "Stock Monitor Backend is running"}
 
 @app.get("/health")
-def health(): return {"ok": True, "logged_in": bool(api and api.stock_account), "version": "0.9.3"}
+def health(): return {"ok": True, "logged_in": bool(api and api.stock_account), "version": "0.9.4"}
 
 @app.get("/api/news")
 def get_news(code: str = Query(...), name: str = Query(...), symbol: str | None = Query(None)):
