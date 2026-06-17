@@ -1,23 +1,21 @@
-const CACHE = 'stx-build-016';
-const STATIC_VERSION = 'build-016';
+const CACHE = 'stx-build-017';
+const STATIC_VERSION = 'build-017';
 
-async function clearOldCaches() {
+async function clearAllCaches() {
   const keys = await caches.keys();
-  await Promise.all(
-    keys.map((key) => {
-      if (key !== CACHE || key.startsWith('stx-build-')) return caches.delete(key);
-      return Promise.resolve(false);
-    })
-  );
+  await Promise.all(keys.map((key) => caches.delete(key)));
 }
 
 self.addEventListener('install', (event) => {
-  self.skipWaiting();
+  event.waitUntil((async () => {
+    await clearAllCaches();
+    await self.skipWaiting();
+  })());
 });
 
 self.addEventListener('activate', (event) => {
   event.waitUntil((async () => {
-    await clearOldCaches();
+    await clearAllCaches();
     await self.clients.claim();
     const clients = await self.clients.matchAll({ type: 'window', includeUncontrolled: true });
     for (const client of clients) {
@@ -27,9 +25,10 @@ self.addEventListener('activate', (event) => {
 });
 
 self.addEventListener('message', (event) => {
-  if (event.data && event.data.type === 'CLEAR_STX_CACHE') {
+  if (event.data && (event.data.type === 'CLEAR_STX_CACHE' || event.data.type === 'SKIP_WAITING')) {
     event.waitUntil((async () => {
-      await clearOldCaches();
+      await clearAllCaches();
+      await self.skipWaiting();
       const clients = await self.clients.matchAll({ type: 'window', includeUncontrolled: true });
       for (const client of clients) {
         client.postMessage({ type: 'STX_CACHE_CLEARED', version: STATIC_VERSION });
@@ -39,22 +38,6 @@ self.addEventListener('message', (event) => {
 });
 
 self.addEventListener('fetch', (event) => {
-  event.respondWith((async () => {
-    const req = event.request;
-    const url = new URL(req.url);
-
-    if (req.method !== 'GET') return fetch(req);
-
-    if (
-      url.pathname.endsWith('.js') ||
-      url.pathname.endsWith('.css') ||
-      url.pathname.endsWith('.html') ||
-      url.pathname.endsWith('manifest.json') ||
-      url.pathname.endsWith('/')
-    ) {
-      return fetch(req, { cache: 'no-store' });
-    }
-
-    return fetch(req).catch(() => caches.match(req));
-  })());
+  if (event.request.method !== 'GET') return;
+  event.respondWith(fetch(event.request, { cache: 'no-store' }));
 });
