@@ -99,7 +99,10 @@ def login_shioaji(force: bool = False) -> None:
             except Exception:
                 pass
         api = sj.Shioaji(simulation=True)
-        api.login(api_key=SHIOAJI_API_KEY, secret_key=SHIOAJI_SECRET_KEY)
+        try:
+            api.login(api_key=SHIOAJI_API_KEY, secret_key=SHIOAJI_SECRET_KEY, fetch_contract=True)
+        except TypeError:
+            api.login(api_key=SHIOAJI_API_KEY, secret_key=SHIOAJI_SECRET_KEY)
     except Exception as exc:
         print(f"Shioaji login failed: {exc}")
 
@@ -117,7 +120,7 @@ async def lifespan(app: FastAPI):
             pass
 
 
-app = FastAPI(title="Stock Monitor Backend", version="0.9.2", lifespan=lifespan)
+app = FastAPI(title="Stock Monitor Backend", version="0.9.3", lifespan=lifespan)
 origins = [x.strip() for x in CORS_ORIGINS.split(",") if x.strip()]
 app.add_middleware(CORSMiddleware, allow_origins=origins if origins else ["*"], allow_credentials=True, allow_methods=["*"], allow_headers=["*"])
 
@@ -142,15 +145,41 @@ def _bool(v: Any) -> bool:
     return v is True or v == "true" or v == 1 or v == "1"
 
 
+def _try_get_contract(container: Any, code: str):
+    try:
+        return container[code]
+    except Exception:
+        pass
+    try:
+        return getattr(container, code)
+    except Exception:
+        return None
+
+
 def get_stock_contract(code: str):
     if api is None:
         login_shioaji(force=True)
     if api is None:
         raise HTTPException(status_code=503, detail="Shioaji API is not initialized")
-    try:
-        return api.Contracts.Stocks[code]
-    except Exception as exc:
-        raise HTTPException(status_code=404, detail=f"Cannot find stock code: {code}") from exc
+
+    stocks = getattr(api.Contracts, "Stocks", None)
+    for market in [stocks, getattr(stocks, "TSE", None), getattr(stocks, "OTC", None), getattr(stocks, "OES", None)]:
+        if market is None:
+            continue
+        contract = _try_get_contract(market, code)
+        if contract is not None:
+            return contract
+
+    login_shioaji(force=True)
+    stocks = getattr(api.Contracts, "Stocks", None)
+    for market in [stocks, getattr(stocks, "TSE", None), getattr(stocks, "OTC", None), getattr(stocks, "OES", None)]:
+        if market is None:
+            continue
+        contract = _try_get_contract(market, code)
+        if contract is not None:
+            return contract
+
+    raise HTTPException(status_code=404, detail=f"Cannot find stock code: {code}")
 
 
 def normalize_kbars(kbars: Any) -> list[KBarItem]:
@@ -414,7 +443,7 @@ def build_market_scan(limit: int = 5, send: bool = False, record: bool = False) 
     sectors.sort(key=lambda x: (x["avg_score"], x["count"]), reverse=True)
     recorded = record_module_signals("ai_pool", candidates[:5], reason="radar_final_top5", limit=5) if record and candidates else None
     sent = send_radar_top5_alert({"discord_top5": candidates[:5], "scanned": len(rows), "universe_size": len(SCAN_UNIVERSE), "strongest_sector": sectors[0] if sectors else None}) if send else None
-    return {"ok": True, "version": "STX Final Radar v1.2", "universe_size": len(SCAN_UNIVERSE), "scanned": len(rows), "errors": errors, "top5": ranked[:limit], "items": ranked, "rankings": ranked, "final_rankings": ranked, "discord_top5": candidates[:5], "entry_candidates": candidates, "sectors": sectors[:5], "strongest_sector": sectors[0] if sectors else None, "recorded": recorded, "sent": sent}
+    return {"ok": True, "version": "STX Final Radar v1.3", "universe_size": len(SCAN_UNIVERSE), "scanned": len(rows), "errors": errors, "top5": ranked[:limit], "items": ranked, "rankings": ranked, "final_rankings": ranked, "discord_top5": candidates[:5], "entry_candidates": candidates, "sectors": sectors[:5], "strongest_sector": sectors[0] if sectors else None, "recorded": recorded, "sent": sent}
 
 
 def build_ai_pool(limit: int = 20, record: bool = False) -> dict[str, Any]:
@@ -457,66 +486,42 @@ def build_cron_run(limit: int = 20, send: bool = True) -> dict[str, Any]:
 
 
 @app.get("/")
-def root():
-    return {"status": "ok", "message": "Stock Monitor Backend is running"}
-
+def root(): return {"status": "ok", "message": "Stock Monitor Backend is running"}
 
 @app.get("/health")
-def health():
-    return {"ok": True, "logged_in": bool(api and api.stock_account), "version": "0.9.2"}
-
+def health(): return {"ok": True, "logged_in": bool(api and api.stock_account), "version": "0.9.3"}
 
 @app.get("/api/news")
 def get_news(code: str = Query(...), name: str = Query(...), symbol: str | None = Query(None)):
-    try:
-        return get_news_payload(code=code, name=name, symbol=symbol)
-    except Exception as exc:
-        raise HTTPException(status_code=502, detail=f"Failed to fetch news: {exc}") from exc
-
+    try: return get_news_payload(code=code, name=name, symbol=symbol)
+    except Exception as exc: raise HTTPException(status_code=502, detail=f"Failed to fetch news: {exc}") from exc
 
 @app.get("/api/chips")
 def get_chips(code: str = Query(...)):
-    try:
-        return get_chips_payload(code=code)
-    except Exception as exc:
-        raise HTTPException(status_code=502, detail=f"Failed to fetch chips: {exc}") from exc
-
+    try: return get_chips_payload(code=code)
+    except Exception as exc: raise HTTPException(status_code=502, detail=f"Failed to fetch chips: {exc}") from exc
 
 @app.get("/api/discord-alert")
 def discord_alert(code: str = Query(...), score: int = Query(...), title: str = Query("STX 警報"), message: str = Query("盤中警報觸發")):
-    try:
-        return send_discord_alert({"code": code, "score": score, "title": title, "message": message})
-    except Exception as exc:
-        raise HTTPException(status_code=502, detail=f"Failed to send discord alert: {exc}") from exc
-
+    try: return send_discord_alert({"code": code, "score": score, "title": title, "message": message})
+    except Exception as exc: raise HTTPException(status_code=502, detail=f"Failed to send discord alert: {exc}") from exc
 
 @app.get("/api/discord-battle-report")
 def discord_battle_report(limit: int = Query(10, ge=1, le=50)):
-    try:
-        scan = build_market_scan(limit=limit)
-        stats = get_stats()
-        return send_battle_report(scan, stats)
-    except Exception as exc:
-        raise HTTPException(status_code=502, detail=f"Failed to send Discord battle report: {exc}") from exc
-
+    try: return send_battle_report(build_market_scan(limit=limit), get_stats())
+    except Exception as exc: raise HTTPException(status_code=502, detail=f"Failed to send Discord battle report: {exc}") from exc
 
 @app.get("/api/cron-run")
 def cron_run(limit: int = Query(20, ge=5, le=50), send: bool = Query(True)):
-    try:
-        return build_cron_run(limit=limit, send=send)
-    except Exception as exc:
-        raise HTTPException(status_code=502, detail=f"Failed to run scheduler: {exc}") from exc
-
+    try: return build_cron_run(limit=limit, send=send)
+    except Exception as exc: raise HTTPException(status_code=502, detail=f"Failed to run scheduler: {exc}") from exc
 
 @app.get("/api/stx-query")
 def stx_query(q: str = Query(...), limit: int = Query(5, ge=1, le=10)):
     try:
         scan = build_market_scan(limit=max(limit, 10))
-        fund_report = build_fund_flow_report(scan, limit=20)
-        return build_stx_query_response(q=q, scan=scan, fund_report=fund_report, limit=limit)
-    except Exception as exc:
-        raise HTTPException(status_code=502, detail=f"Failed to run STX query: {exc}") from exc
-
+        return build_stx_query_response(q=q, scan=scan, fund_report=build_fund_flow_report(scan, limit=20), limit=limit)
+    except Exception as exc: raise HTTPException(status_code=502, detail=f"Failed to run STX query: {exc}") from exc
 
 @app.get("/api/pro-analysis")
 def get_pro_analysis(code: str = Query(...)):
@@ -529,63 +534,40 @@ def get_pro_analysis(code: str = Query(...)):
         update_module_results(code, quote.get("close"))
         analysis["replay"] = replay
         return analysis
-    except HTTPException:
-        raise
-    except Exception as exc:
-        raise HTTPException(status_code=502, detail=f"Failed to run pro analysis: {exc}") from exc
-
+    except HTTPException: raise
+    except Exception as exc: raise HTTPException(status_code=502, detail=f"Failed to run pro analysis: {exc}") from exc
 
 @app.get("/api/market-scan")
 def market_scan(limit: int = Query(5, ge=1, le=50), send: bool = Query(False), record: bool = Query(False), final: bool = Query(True)):
-    try:
-        return build_market_scan(limit=limit, send=send, record=record)
-    except Exception as exc:
-        raise HTTPException(status_code=502, detail=f"Failed to run market scan: {exc}") from exc
-
+    try: return build_market_scan(limit=limit, send=send, record=record)
+    except Exception as exc: raise HTTPException(status_code=502, detail=f"Failed to run market scan: {exc}") from exc
 
 @app.get("/api/ai-pool")
 def ai_pool(limit: int = Query(20, ge=5, le=50), record: bool = Query(False)):
-    try:
-        return build_ai_pool(limit=limit, record=record)
-    except Exception as exc:
-        raise HTTPException(status_code=502, detail=f"Failed to build AI pool: {exc}") from exc
-
+    try: return build_ai_pool(limit=limit, record=record)
+    except Exception as exc: raise HTTPException(status_code=502, detail=f"Failed to build AI pool: {exc}") from exc
 
 @app.get("/api/breakout-alerts")
 def breakout_alerts(limit: int = Query(20, ge=5, le=50), min_score: int = Query(85, ge=70, le=100), send: bool = Query(False), record: bool = Query(False)):
-    try:
-        return build_breakout_alerts(limit=limit, min_score=min_score, send=send, record=record)
-    except Exception as exc:
-        raise HTTPException(status_code=502, detail=f"Failed to build breakout alerts: {exc}") from exc
-
+    try: return build_breakout_alerts(limit=limit, min_score=min_score, send=send, record=record)
+    except Exception as exc: raise HTTPException(status_code=502, detail=f"Failed to build breakout alerts: {exc}") from exc
 
 @app.get("/api/fund-flow")
 def fund_flow(limit: int = Query(20, ge=5, le=50), send: bool = Query(False), record: bool = Query(False)):
-    try:
-        return build_fund_flow(limit=limit, send=send, record=record)
-    except Exception as exc:
-        raise HTTPException(status_code=502, detail=f"Failed to build fund flow report: {exc}") from exc
-
+    try: return build_fund_flow(limit=limit, send=send, record=record)
+    except Exception as exc: raise HTTPException(status_code=502, detail=f"Failed to build fund flow report: {exc}") from exc
 
 @app.get("/api/performance")
-def performance():
-    return get_module_performance()
-
+def performance(): return get_module_performance()
 
 @app.get("/api/performance-log")
-def performance_log(limit: int = Query(200, ge=1, le=1000)):
-    return get_performance_logs(limit=limit)
-
+def performance_log(limit: int = Query(200, ge=1, le=1000)): return get_performance_logs(limit=limit)
 
 @app.get("/api/replay-log")
-def replay_log(limit: int = Query(100, ge=1, le=500)):
-    return get_logs(limit=limit)
-
+def replay_log(limit: int = Query(100, ge=1, le=500)): return get_logs(limit=limit)
 
 @app.get("/api/replay-stats")
-def replay_stats():
-    return get_stats()
-
+def replay_stats(): return get_stats()
 
 @app.get("/api/quote", response_model=QuoteResponse)
 def get_quote(code: str = Query(...)):
@@ -593,7 +575,6 @@ def get_quote(code: str = Query(...)):
     update_results(code, quote.get("close"))
     update_module_results(code, quote.get("close"))
     return QuoteResponse(**quote)
-
 
 @app.get("/api/kbars", response_model=KBarsResponse)
 def get_kbars(code: str = Query(...), days: int = Query(5, ge=1, le=10)):
