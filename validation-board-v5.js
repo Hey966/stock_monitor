@@ -6,6 +6,7 @@
   let latestReplay = null;
 
   const MODULE_LABELS = {
+    radar_final: '雷達最終排名實測',
     ai_pool: '選股池實測',
     breakout: '突破實測',
     fund_flow: '資金流實測',
@@ -75,8 +76,8 @@
     const r = x.results || {};
     if (Number.isFinite(Number(r.pct_30m))) return `30分 ${pct(r.pct_30m)}`;
     const age = Number(x.age_minutes || 0);
-    if (age > 0 && age < 30) return `30分未結算`;
-    return `30分 -`;
+    if (age > 0 && age < 30) return '30分未結算';
+    return '30分 -';
   }
 
   function rowLatestText(x) {
@@ -85,12 +86,16 @@
     return '最新 -';
   }
 
+  function resultText(x) {
+    return x.final_result || x.level || x.action || x.reason || '-';
+  }
+
   function renderModule(testNo, row, label) {
     setText(`#test${testNo}Status`, statusText(row));
     setText(`#test${testNo}Metric`, metricText(row));
     const rows = hasSignals(row) ? (row.latest || []) : [];
     renderList(`#test${testNo}List`, rows, (x, i) => {
-      return `<span>${i + 1}. ${x.code} ${x.name || ''}｜${x.score ?? '-'}分｜${rowLatestText(x)}｜${row30mText(x)}</span>`;
+      return `<span>${i + 1}. ${x.code} ${x.name || ''}｜${x.score ?? '-'}分｜${resultText(x)}｜${rowLatestText(x)}｜${row30mText(x)}</span>`;
     }, `${label} 尚無績效紀錄`);
   }
 
@@ -128,7 +133,7 @@
           close_price: x.results?.close_price ?? x.results?.latest_price ?? '',
           high_price: x.results?.high_price ?? '',
           low_price: x.results?.low_price ?? '',
-          final_result: x.final_result || x.level || x.action || '',
+          final_result: x.final_result || x.level || x.action || x.reason || '',
           final_score: x.final_score ?? x.score ?? '',
           rule_score: x.rule_score ?? '',
           pro_score: x.pro_score ?? x.score ?? '',
@@ -139,7 +144,7 @@
           no_chase: x.no_chase ?? x.chase_block ?? '',
           above_vwap: x.above_vwap ?? '',
           pullback_confirmed: x.pullback_confirmed ?? '',
-          discord_pushed: x.discord_pushed ?? (i < 5 && module.module === 'ai_pool'),
+          discord_pushed: x.discord_pushed ?? false,
           return_pct: x.results?.latest_pct ?? x.results?.pct_30m ?? '',
           max_profit_pct: x.results?.max_gain ?? '',
           max_drawdown_pct: x.results?.max_loss ?? '',
@@ -187,13 +192,9 @@
   }
 
   function downloadCsv() {
-    const headers = [
-      'date','source','analysis_time','rank','stock_id','stock_name','entry_price','close_price','high_price','low_price','final_result','final_score','rule_score','pro_score','group_score','news_score','chip_score','trap','no_chase','above_vwap','pullback_confirmed','discord_pushed','return_pct','max_profit_pct','max_drawdown_pct','validation_result'
-    ];
+    const headers = ['date','source','analysis_time','rank','stock_id','stock_name','entry_price','close_price','high_price','low_price','final_result','final_score','rule_score','pro_score','group_score','news_score','chip_score','trap','no_chase','above_vwap','pullback_confirmed','discord_pushed','return_pct','max_profit_pct','max_drawdown_pct','validation_result'];
     const today = new Date().toISOString().slice(0, 10);
-    const body = latestRows.map(row => [
-      today,row.source,row.analysis_time,row.rank,row.code,row.name,row.entry_price,row.close_price,row.high_price,row.low_price,row.final_result,row.final_score,row.rule_score,row.pro_score,row.group_score,row.news_score,row.chip_score,row.trap,row.no_chase,row.above_vwap,row.pullback_confirmed,row.discord_pushed,row.return_pct,row.max_profit_pct,row.max_drawdown_pct,row.validation_result
-    ].map(csvEscape).join(','));
+    const body = latestRows.map(row => [today,row.source,row.analysis_time,row.rank,row.code,row.name,row.entry_price,row.close_price,row.high_price,row.low_price,row.final_result,row.final_score,row.rule_score,row.pro_score,row.group_score,row.news_score,row.chip_score,row.trap,row.no_chase,row.above_vwap,row.pullback_confirmed,row.discord_pushed,row.return_pct,row.max_profit_pct,row.max_drawdown_pct,row.validation_result].map(csvEscape).join(','));
     const csv = [headers.join(','), ...body].join('\n');
     const blob = new Blob(['\ufeff' + csv], { type: 'text/csv;charset=utf-8;' });
     const url = URL.createObjectURL(blob);
@@ -242,19 +243,19 @@
     latestReplay = replay;
     latestRows = collectRows(perf, replay);
 
-    const pool = moduleByName(perf, 'ai_pool');
+    const radar = moduleByName(perf, 'radar_final');
     const breakout = moduleByName(perf, 'breakout');
     const fund = moduleByName(perf, 'fund_flow');
     const total = perf?.total_signals ?? latestRows.length;
     const tracked = perf?.tracked_results ?? latestRows.filter(x => x.validation_result !== '待收盤').length;
-    const poolWin = win(realWinRate(pool));
+    const radarWin = win(realWinRate(radar));
     const fundWin = win(realWinRate(fund));
     const breakoutWin = win(realWinRate(breakout));
 
     setText('#validationTitle', '實測績效中心');
-    setText('#validationSummary', `正式實測 ${total} 筆，已追蹤 ${tracked} 筆。選股池 ${poolWin}｜資金流 ${fundWin}｜突破 ${breakoutWin}。可於頁面最下方下載 CSV。`);
+    setText('#validationSummary', `正式實測 ${total} 筆，已追蹤 ${tracked} 筆。雷達排名 ${radarWin}｜資金流 ${fundWin}｜突破 ${breakoutWin}。可於頁面最下方下載 CSV。`);
 
-    renderModule(1, pool, MODULE_LABELS.ai_pool);
+    renderModule(1, radar, MODULE_LABELS.radar_final);
     renderModule(2, breakout, MODULE_LABELS.breakout);
     renderModule(3, fund, MODULE_LABELS.fund_flow);
 
@@ -272,7 +273,8 @@
       `Replay API：${replayOk ? '正常' : '異常'}`,
       `績效儲存：${perf?.github_enabled ? 'GitHub JSON' : '本機暫存'}`,
       `今日路徑：${perf?.github_path || '-'}`,
-      '自動推播：只允許雷達頁全市場最終排名前5'
+      'Discord：只推可進場前5',
+      '驗證：記錄雷達最終排名前5'
     ], (x) => `<span>${x}</span>`);
 
     setText('#validationRowsCount', `可下載 ${latestRows.length} 筆`);
